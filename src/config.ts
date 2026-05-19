@@ -36,3 +36,4 @@ export const SPOTIFY_CLIENT_SECRET = spotifyClientSecret;
 export const SPOTIFY_REDIRECT_URI = spotifyRedirectUri;
 export const SPOTIFY_PLAYLIST_ID = spotifyPlaylistId;
 export const SPOTIFY_REFRESH_TOKEN = spotifyRefreshToken;
+export const PODCASTS_CONFIG_PATH = process.env.PODCASTS_CONFIG_PATH ?? 'podcasts.toml';
