@@ -29,11 +29,11 @@ export async function replacePlaylist(
 ): Promise<void> {
   const uris = playlistToUris(playlist);
   const [first, ...rest] = _.chunk(uris, 100);
-  await spotifyClient.playlists.updatePlaylistItems(playlistId, { uris: first ?? [] });
+  await spotifyClient.makeRequest('PUT', `playlists/${playlistId}/items`, { uris: first ?? [] });
   for (const chunk of rest) {
-    await spotifyClient.playlists.addItemsToPlaylist(playlistId, chunk);
+    await spotifyClient.makeRequest('POST', `playlists/${playlistId}/items`, { uris: chunk });
   }
-  await spotifyClient.playlists.changePlaylistDetails(playlistId, {
+  await spotifyClient.makeRequest('PUT', `playlists/${playlistId}`, {
     name: 'Daily Drive',
     description: playlistDescription(),
   });

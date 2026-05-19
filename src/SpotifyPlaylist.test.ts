@@ -57,7 +57,7 @@ describe('replacePlaylist', () => {
     const observed: { uris?: string[]; details?: Record<string, unknown> } = {};
 
     mswServer.use(
-      http.put('https://api.spotify.com/v1/playlists/playlist123/tracks', async ({ request }) => {
+      http.put('https://api.spotify.com/v1/playlists/playlist123/items', async ({ request }) => {
         const body = (await request.json()) as { uris: string[] };
         observed.uris = body.uris;
         return HttpResponse.json({ snapshot_id: 'snap_after_replace' });
