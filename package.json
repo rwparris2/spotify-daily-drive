@@ -10,10 +10,11 @@
     "typecheck": "tsc --noEmit",
     "build": "tsc",
     "start": "tsx src/index.ts",
-    "bootstrap-auth": "tsx src/bootstrap-auth.ts",
+    "bootstrap-auth": "tsx src/SpotifyBootstrapAuth.ts",
     "format": "prettier --write \"src/**/*.ts\""
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.24",
     "@types/node": "^22.5.0",
     "prettier": "^3.3.3",
     "tsx": "^4.19.0",
@@ -21,6 +22,7 @@
   },
   "dependencies": {
     "@spotify/web-api-ts-sdk": "^1.2.0",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "lodash": "^4.18.1"
   }
 }

@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir } from 'fs/promises';
 import { dirname } from 'path';
 import type { Track } from '@spotify/web-api-ts-sdk';
 
-const CACHE_PATH = '.cache/playlist-items.json';
+const CACHE_PATH = '.cache/spotify-playlist-tracks.json';
 
 type CacheEntry = { snapshotId: string; tracks: Track[] };
 type CacheShape = Record<string, CacheEntry>;
@@ -27,7 +27,7 @@ async function persist(): Promise<void> {
   await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
 }
 
-export async function getCachedTracks(
+export async function getCachedPlaylistTracks(
   playlistId: string,
   currentSnapshotId: string,
 ): Promise<Track[] | undefined> {
@@ -36,12 +36,7 @@ export async function getCachedTracks(
   return entry?.snapshotId === currentSnapshotId ? entry.tracks : undefined;
 }
 
-export async function getAllCachedTracks(): Promise<Track[]> {
-  const store = await load();
-  return Object.values(store).flatMap((e) => e.tracks);
-}
-
-export async function setCachedTracks(
+export async function setCachedPlaylistTracks(
   playlistId: string,
   snapshotId: string,
   tracks: Track[],
