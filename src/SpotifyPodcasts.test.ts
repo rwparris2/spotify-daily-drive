@@ -42,8 +42,8 @@ describe('fetchSpotifyPodcasts', () => {
     expect(episodes[1]?.id).toBe('thedaily_ep');
   });
 
-  it('falls through to the other pool when a pinned news show has no fresh episode', async () => {
-    mockShowEpisodes('upfirst', [ep('upfirst', '2020-01-01')]);
+  it('falls through to the other pool when a pinned latest_only show has its newest already played', async () => {
+    mockShowEpisodes('upfirst', [ep('upfirst', '2026-05-18', true)]);
     mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
     for (const id of OTHER_SHOW_IDS) {
       mockShowEpisodes(id, [freshEpisode(id)]);
@@ -55,20 +55,21 @@ describe('fetchSpotifyPodcasts', () => {
     expect(episodes[1]?.id).toBe('thedaily_ep');
   });
 
-  it('skips fully_played episodes', async () => {
-    mockShowEpisodes('upfirst', [
-      ep('upfirst', '2026-05-18', true, '_newest'),
-      ep('upfirst', '2026-05-17', false, '_older'),
-    ]);
+  it('falls back to next-newest non-fully-played episode for non-latest_only shows', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
     mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
-    for (const id of OTHER_SHOW_IDS) {
+    mockShowEpisodes('otherA', [
+      ep('otherA', '2026-05-18', true, '_newest'),
+      ep('otherA', '2026-05-17', false, '_older'),
+    ]);
+    for (const id of OTHER_SHOW_IDS.slice(1)) {
       mockShowEpisodes(id, [freshEpisode(id)]);
     }
 
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
 
-    const upFirstEp = episodes.find((e) => e.id.startsWith('upfirst_ep'));
-    expect(upFirstEp?.id).toBe('upfirst_ep_older');
+    const otherAEp = episodes.find((e) => e.id.startsWith('otherA_ep'));
+    expect(otherAEp?.id).toBe('otherA_ep_older');
   });
 
   it('continues past a show whose episode fetch errors out', async () => {
@@ -138,5 +139,36 @@ describe('fetchSpotifyPodcasts', () => {
 
     expect(episodes).toHaveLength(6);
     expect(new Set(episodes.map((e) => e.id)).size).toBe(6);
+  });
+
+  it('latest_only: picks the single newest episode even when older than 6 months', async () => {
+    mockShowEpisodes('upfirst', [
+      ep('upfirst', '2020-01-01', false, '_newest'),
+      ep('upfirst', '2019-12-31', false, '_older'),
+    ]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(episodes[0]?.id).toBe('upfirst_ep_newest');
+  });
+
+  it('latest_only: skips the show entirely when the newest episode is fully_played', async () => {
+    mockShowEpisodes('upfirst', [
+      ep('upfirst', '2026-05-18', true, '_newest'),
+      ep('upfirst', '2026-05-17', false, '_older'),
+    ]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(episodes.map((e) => e.id)).not.toContain('upfirst_ep_newest');
+    expect(episodes.map((e) => e.id)).not.toContain('upfirst_ep_older');
   });
 });
