@@ -17,13 +17,6 @@ export const NEWS_FRESHNESS_MS = 48 * 60 * 60 * 1000;
 export const OTHER_FRESHNESS_MS = 90 * 24 * 60 * 60 * 1000;
 export const EPISODES_PER_SHOW = 5;
 
-export const NEWS_FALLBACK_CHAIN = [
-  'NPR News Now',
-  'Today Explained',
-  'Throughline',
-  'FiveThirtyEight Politics',
-];
-
 export type ShowConfig = PodcastConfig['shows'][number];
 
 export type SkipReason =
@@ -84,8 +77,9 @@ export async function selectPodcastSlots(
       const primary = findByPinSlot(config, slot);
       if (primary) {
         primaryName = primary.name;
-        const chain = buildNewsChain(config, primary, used);
-        pick = await firstEligible(chain, NEWS_FRESHNESS_MS, now);
+        if (!used.has(primary.spotify_show_id)) {
+          pick = await pickLatestEligible(primary, NEWS_FRESHNESS_MS, now);
+        }
         if (!pick) reason = 'no_fresh_unplayed_episode';
       } else {
         reason = 'show_not_in_config';
@@ -110,39 +104,6 @@ export async function selectPodcastSlots(
 
 function findByPinSlot(config: PodcastConfig, slot: number): ShowConfig | undefined {
   return config.shows.find((s) => s.pin_slot === slot);
-}
-
-function findByName(config: PodcastConfig, name: string): ShowConfig | undefined {
-  return config.shows.find((s) => s.name === name);
-}
-
-function buildNewsChain(
-  config: PodcastConfig,
-  primary: ShowConfig,
-  exclude: Set<string>,
-): ShowConfig[] {
-  const chain: ShowConfig[] = [];
-  if (!exclude.has(primary.spotify_show_id)) chain.push(primary);
-  for (const name of NEWS_FALLBACK_CHAIN) {
-    const show = findByName(config, name);
-    if (!show) continue;
-    if (show.spotify_show_id === primary.spotify_show_id) continue;
-    if (exclude.has(show.spotify_show_id)) continue;
-    chain.push(show);
-  }
-  return chain;
-}
-
-async function firstEligible(
-  candidates: ShowConfig[],
-  freshnessMs: number,
-  now: Date,
-): Promise<EpisodeCandidate | undefined> {
-  for (const show of candidates) {
-    const pick = await pickLatestEligible(show, freshnessMs, now);
-    if (pick) return pick;
-  }
-  return undefined;
 }
 
 async function pickLatestEligible(

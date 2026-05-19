@@ -51,7 +51,7 @@ pin_slot          = 1                        # optional; reserves a fixed slot (
 
 - Slot 1 is pinned to whichever show has `pin_slot = 1` (currently Up First); slot 2 to `pin_slot = 2` (currently The Daily).
 - Slots 3-8 are sampled at random from shows with `category = "other"`.
-- News-slot fallback chain when the pinned show has nothing fresh + unplayed: NPR News Now → Today Explained → Throughline → FiveThirtyEight Politics (filtered to whatever's actually in `podcasts.toml`). If the whole chain is dry the slot is filled from the "other" pool.
+- If a pinned show has no fresh + unplayed episode (e.g. weekends for Up First), that slot is filled from the "other" pool instead.
 
 ## Selection rules
 

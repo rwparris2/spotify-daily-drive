@@ -60,9 +60,8 @@ describe('selectPodcastSlots', () => {
     expect(skipped).toEqual([]);
   });
 
-  it('falls back through the news chain when Up First has no fresh episode', async () => {
+  it('falls through to the other pool when the pinned news show has no fresh episode', async () => {
     mockShowEpisodes('upfirst', [ep('upfirst', '2026-04-01')]);
-    mockShowEpisodes('nprnewsnow', [ep('nprnewsnow', '2026-05-18')]);
     mockShowEpisodes('thedaily', [ep('thedaily', '2026-05-18')]);
     mockShowEpisodes('otherA', [ep('otherA', '2026-05-15')]);
     mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
@@ -77,30 +76,8 @@ describe('selectPodcastSlots', () => {
       shuffle: (items) => [...items],
     });
 
-    expect(episodes[0]?.show_id).toBe('nprnewsnow');
+    expect(episodes[0]?.show_id).toBe('otherA');
     expect(episodes[1]?.show_id).toBe('thedaily');
-  });
-
-  it("excludes the slot 1 show from slot 2's fallback chain", async () => {
-    mockShowEpisodes('upfirst', [ep('upfirst', '2026-04-01')]);
-    mockShowEpisodes('thedaily', [ep('thedaily', '2026-04-01')]);
-    mockShowEpisodes('nprnewsnow', [ep('nprnewsnow', '2026-05-18')]);
-    mockShowEpisodes('todayexplained', [ep('todayexplained', '2026-05-18')]);
-    mockShowEpisodes('otherA', [ep('otherA', '2026-05-15')]);
-    mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
-    mockShowEpisodes('otherC', [ep('otherC', '2026-05-15')]);
-    mockShowEpisodes('otherD', [ep('otherD', '2026-05-15')]);
-    mockShowEpisodes('otherE', [ep('otherE', '2026-05-15')]);
-    mockShowEpisodes('otherF', [ep('otherF', '2026-05-15')]);
-
-    const { episodes } = await selectPodcastSlots(baseConfig, {
-      numberOfPodcasts: 8,
-      now: NOW,
-      shuffle: (items) => [...items],
-    });
-
-    expect(episodes[0]?.show_id).toBe('nprnewsnow');
-    expect(episodes[1]?.show_id).toBe('todayexplained');
   });
 
   it('substitutes the next sampled "other" show when one has no fresh-unplayed episode', async () => {
@@ -150,11 +127,9 @@ describe('selectPodcastSlots', () => {
     expect(episodes[0]?.spotify_episode_id).toBe('upfirst_ep_older');
   });
 
-  it('falls back to the other pool for news slots when the news chain is exhausted', async () => {
+  it('fills all slots from the other pool when both pinned news shows are dry', async () => {
     mockShowEpisodesEmpty('upfirst');
     mockShowEpisodesEmpty('thedaily');
-    mockShowEpisodesEmpty('nprnewsnow');
-    mockShowEpisodesEmpty('todayexplained');
     mockShowEpisodes('otherA', [ep('otherA', '2026-05-15')]);
     mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
     mockShowEpisodes('otherC', [ep('otherC', '2026-05-15')]);
