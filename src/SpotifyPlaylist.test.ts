@@ -1,21 +1,19 @@
-import type { Track } from '@spotify/web-api-ts-sdk';
+import type { SimplifiedEpisode, Track } from '@spotify/web-api-ts-sdk';
 import { http, HttpResponse } from 'msw';
 import { describe, expect, it } from 'vitest';
 import { mswServer } from './__tests__/mswServer.js';
 import { assemblePlan } from './DailyDrivePlan.js';
-import type { EpisodeCandidate } from './SpotifyPodcasts.js';
 import { planDescription, planToUris, replacePlaylist } from './SpotifyPlaylist.js';
 
-function ep(id: string, showId: string, showName: string): EpisodeCandidate {
+function ep(id: string, name: string): SimplifiedEpisode {
   return {
-    show_id: showId,
-    show_name: showName,
-    spotify_episode_id: id,
-    title: `Episode ${id}`,
+    id,
+    name,
     release_date: '2026-05-18',
     duration_ms: 30 * 60 * 1000,
-    fully_played: false,
-  };
+    is_playable: true,
+    uri: `spotify:episode:${id}`,
+  } as unknown as SimplifiedEpisode;
 }
 
 function tr(id: string): Track {
@@ -23,10 +21,7 @@ function tr(id: string): Track {
 }
 
 function makePlan() {
-  const episodes = [
-    ep('e1', 'show1', 'Up First from NPR'),
-    ep('e2', 'show2', 'The Daily'),
-  ];
+  const episodes = [ep('e1', 'Up First May 18'), ep('e2', 'The Daily May 18')];
   const tracks = Array.from({ length: 5 }, (_, i) => tr(`t${i + 1}`));
   return assemblePlan(episodes, tracks, {
     numberOfPodcasts: 2,
@@ -49,9 +44,9 @@ describe('planToUris', () => {
 });
 
 describe('planDescription', () => {
-  it('includes the run date and unique show names in order', () => {
+  it('includes the run date and episode names in order', () => {
     const plan = makePlan();
-    expect(planDescription(plan)).toBe('Daily Drive · 2026-05-18 · Up First from NPR, The Daily');
+    expect(planDescription(plan)).toBe('Daily Drive · 2026-05-18 · Up First May 18, The Daily May 18');
   });
 });
 
@@ -80,7 +75,7 @@ describe('replacePlaylist', () => {
     expect(observed.uris).toEqual(planToUris(plan));
     expect(observed.details).toEqual({
       name: 'Daily Drive',
-      description: 'Daily Drive · 2026-05-18 · Up First from NPR, The Daily',
+      description: 'Daily Drive · 2026-05-18 · Up First May 18, The Daily May 18',
     });
   });
 });

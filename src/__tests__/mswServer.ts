@@ -18,6 +18,7 @@ type EpisodeFixture = {
   release_date: string;
   duration_ms?: number;
   fully_played?: boolean;
+  is_playable?: boolean;
 };
 
 export function mockShowEpisodes(showId: string, episodes: EpisodeFixture[]): void {
@@ -29,6 +30,7 @@ export function mockShowEpisodes(showId: string, episodes: EpisodeFixture[]): vo
           name: ep.name,
           release_date: ep.release_date,
           duration_ms: ep.duration_ms ?? 30 * 60 * 1000,
+          is_playable: ep.is_playable ?? true,
           resume_point: { fully_played: ep.fully_played ?? false, resume_position_ms: 0 },
         })),
         total: episodes.length,

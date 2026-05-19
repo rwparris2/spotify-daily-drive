@@ -2,6 +2,7 @@ import { IHandleErrors, SpotifyApi, type AccessToken } from '@spotify/web-api-ts
 
 import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN } from './config.js';
 
+console.log('Authenticating with Spotify...');
 const basic = Buffer.from(`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`).toString('base64');
 const response = await fetch('https://accounts.spotify.com/api/token', {
   method: 'POST',
@@ -40,9 +41,7 @@ const rateLimitedFetch: typeof fetch = async (input, init) => {
       console.warn(`429 on ${url} after ${maxAttempts} attempts; giving up`);
       return res;
     }
-    console.warn(
-      `429 on ${url} — backing off ${retryAfter}s (attempt ${attempt}/${maxAttempts})`,
-    );
+    console.warn(`429 on ${url} — backing off ${retryAfter}s (attempt ${attempt}/${maxAttempts})`);
     await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000));
   }
   return fetch(input, init);

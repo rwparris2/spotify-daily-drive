@@ -1,148 +1,72 @@
 import _ from 'lodash';
-import type { MaxInt } from '@spotify/web-api-ts-sdk';
-import type { PodcastConfig } from './PodcastConfig.js';
+import type { SimplifiedEpisode } from '@spotify/web-api-ts-sdk';
+import { loadPodcastConfig, type PodcastConfig } from './PodcastConfig.js';
 import { spotifyClient } from './SpotifyClient.js';
 
-export type EpisodeCandidate = {
-  show_id: string;
-  show_name: string;
-  spotify_episode_id: string;
-  title: string;
-  release_date: string;
-  duration_ms: number;
-  fully_played: boolean;
-};
+type PodcastShowConfig = PodcastConfig['shows'][number];
 
-export const NEWS_FRESHNESS_MS = 48 * 60 * 60 * 1000;
-export const OTHER_FRESHNESS_MS = 90 * 24 * 60 * 60 * 1000;
-export const EPISODES_PER_SHOW = 5;
+const RELEASE_CUTOFF_MONTHS = 6;
 
-export type ShowConfig = PodcastConfig['shows'][number];
-
-export type SkipReason =
-  | 'show_not_in_config'
-  | 'no_fresh_unplayed_episode'
-  | 'fetch_failed'
-  | 'pool_exhausted';
-
-export type SkipLog = {
-  slot?: number;
-  show_name?: string;
-  reason: SkipReason;
-};
-
-export type SelectPodcastSlotsResult = {
-  episodes: EpisodeCandidate[];
-  skipped: SkipLog[];
-};
-
-export type SelectPodcastSlotsOpts = {
+export const fetchSpotifyPodcasts = async (opts: {
   numberOfPodcasts: number;
-  now?: Date;
-  shuffle?: <T>(items: T[]) => T[];
-};
+  config?: PodcastConfig;
+}): Promise<SimplifiedEpisode[]> => {
+  const config = opts.config ?? (await loadPodcastConfig());
 
-export async function selectPodcastSlots(
-  config: PodcastConfig,
-  opts: SelectPodcastSlotsOpts,
-): Promise<SelectPodcastSlotsResult> {
-  const { numberOfPodcasts: N } = opts;
-  const now = opts.now ?? new Date();
-  const shuffle = opts.shuffle ?? _.shuffle;
-  const skipped: SkipLog[] = [];
-  const episodes: EpisodeCandidate[] = [];
-  const used = new Set<string>();
+  const cutoff = new Date();
+  cutoff.setMonth(cutoff.getMonth() - RELEASE_CUTOFF_MONTHS);
 
-  const otherPool = shuffle(
-    config.shows.filter((s) => s.category === 'other' && s.pin_slot === undefined),
-  );
-  let otherCursor = 0;
+  const usedShowIds = new Set<string>();
+  const exhaustedShowIds = new Set<string>();
+  const selected: SimplifiedEpisode[] = [];
 
-  const pickFromOtherPool = async (): Promise<EpisodeCandidate | undefined> => {
-    while (otherCursor < otherPool.length) {
-      const show = otherPool[otherCursor++]!;
-      if (used.has(show.spotify_show_id)) continue;
-      const result = await pickLatestEligible(show, OTHER_FRESHNESS_MS, now);
-      if (result.episode) return result.episode;
-      skipped.push({ show_name: show.name, reason: result.reason ?? 'no_fresh_unplayed_episode' });
+  const tryPick = async (
+    filter: (s: PodcastShowConfig) => boolean,
+  ): Promise<SimplifiedEpisode | undefined> => {
+    const pool = config.shows.filter(
+      (s) =>
+        filter(s) &&
+        !usedShowIds.has(s.spotify_show_id) &&
+        !exhaustedShowIds.has(s.spotify_show_id),
+    );
+    while (pool.length) {
+      const idx = _.random(pool.length - 1);
+      const show = pool.splice(idx, 1)[0]!;
+      const episode = await pickLatestEligibleEpisode(show, cutoff);
+      if (episode) {
+        usedShowIds.add(show.spotify_show_id);
+        return episode;
+      }
+      exhaustedShowIds.add(show.spotify_show_id);
     }
     return undefined;
   };
 
-  for (let slot = 1; slot <= N; slot++) {
-    let pick: EpisodeCandidate | undefined;
-    let primaryName: string | undefined;
-    let reason: SkipReason | undefined;
-
-    if (slot <= 2) {
-      const primary = findByPinSlot(config, slot);
-      if (primary) {
-        primaryName = primary.name;
-        if (!used.has(primary.spotify_show_id)) {
-          const result = await pickLatestEligible(primary, NEWS_FRESHNESS_MS, now);
-          pick = result.episode;
-          reason = result.reason;
-        }
-      } else {
-        reason = 'show_not_in_config';
-      }
-    }
-
-    if (!pick) {
-      pick = await pickFromOtherPool();
-      if (!pick && reason === undefined) reason = 'pool_exhausted';
-    }
-
-    if (pick) {
-      episodes.push(pick);
-      used.add(pick.show_id);
-    } else {
-      skipped.push({ slot, show_name: primaryName, reason: reason ?? 'pool_exhausted' });
-    }
+  for (let slot = 1; slot <= opts.numberOfPodcasts; slot++) {
+    const pinned = await tryPick((s) => s.pin_slot === slot);
+    const episode = pinned ?? (await tryPick((s) => s.pin_slot === undefined));
+    if (episode) selected.push(episode);
   }
 
-  return { episodes, skipped };
-}
+  return selected;
+};
 
-function findByPinSlot(config: PodcastConfig, slot: number): ShowConfig | undefined {
-  return config.shows.find((s) => s.pin_slot === slot);
-}
-
-type PickResult = { episode?: EpisodeCandidate; reason?: SkipReason };
-
-async function pickLatestEligible(
-  show: ShowConfig,
-  freshnessMs: number,
-  now: Date,
-): Promise<PickResult> {
-  let episodes: EpisodeCandidate[];
+async function pickLatestEligibleEpisode(
+  show: PodcastShowConfig,
+  cutoff: Date,
+): Promise<SimplifiedEpisode | undefined> {
+  let episodes: SimplifiedEpisode[];
   try {
-    episodes = await fetchShowEpisodes(show, EPISODES_PER_SHOW);
+    const page = await spotifyClient.shows.episodes(show.spotify_show_id, 'US', 25);
+    episodes = page.items;
   } catch (e) {
-    console.error(`Failed to fetch episodes for "${show.name}":`, (e as Error).message);
-    return { reason: 'fetch_failed' };
+    console.error(`Error fetching episodes for "${show.name}":`, (e as Error).message);
+    return undefined;
   }
-  const cutoff = now.getTime() - freshnessMs;
   const eligible = episodes
-    .filter((ep) => !ep.fully_played)
-    .filter((ep) => Date.parse(ep.release_date) >= cutoff)
+    .filter((ep) => ep.is_playable)
+    .filter((ep) => Date.parse(ep.release_date) >= cutoff.getTime())
+    .filter((ep) => !(ep.resume_point?.fully_played ?? false))
     .sort((a, b) => Date.parse(b.release_date) - Date.parse(a.release_date));
-  const pick = eligible[0];
-  return pick ? { episode: pick } : { reason: 'no_fresh_unplayed_episode' };
-}
-
-async function fetchShowEpisodes(show: ShowConfig, limit: number): Promise<EpisodeCandidate[]> {
-  const capped = Math.min(Math.max(limit, 1), 50) as MaxInt<50>;
-  const page = await spotifyClient.shows.episodes(show.spotify_show_id, 'US', capped);
-  return page.items
-    .filter((ep): ep is NonNullable<typeof ep> => ep !== null)
-    .map((ep) => ({
-      show_id: show.spotify_show_id,
-      show_name: show.name,
-      spotify_episode_id: ep.id,
-      title: ep.name,
-      release_date: ep.release_date,
-      duration_ms: ep.duration_ms,
-      fully_played: ep.resume_point?.fully_played ?? false,
-    }));
+  return eligible[0];
 }

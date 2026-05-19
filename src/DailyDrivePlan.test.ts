@@ -1,4 +1,4 @@
-import type { Track } from '@spotify/web-api-ts-sdk';
+import type { SimplifiedEpisode, Track } from '@spotify/web-api-ts-sdk';
 import { describe, expect, it } from 'vitest';
 import {
   assemblePlan,
@@ -6,17 +6,16 @@ import {
   largestViableN,
   songsNeeded,
 } from './DailyDrivePlan.js';
-import type { EpisodeCandidate } from './SpotifyPodcasts.js';
 
-function ep(id: string): EpisodeCandidate {
+function ep(id: string): SimplifiedEpisode {
   return {
-    show_id: `${id}_show`,
-    spotify_episode_id: id,
-    title: `Episode ${id}`,
+    id,
+    name: `Episode ${id}`,
     release_date: '2026-05-18',
     duration_ms: 30 * 60 * 1000,
-    fully_played: false,
-  };
+    is_playable: true,
+    uri: `spotify:episode:${id}`,
+  } as unknown as SimplifiedEpisode;
 }
 
 function tr(id: string): Track {

@@ -1,8 +1,7 @@
-import type { Track } from '@spotify/web-api-ts-sdk';
-import type { EpisodeCandidate } from './SpotifyPodcasts.js';
+import type { SimplifiedEpisode, Track } from '@spotify/web-api-ts-sdk';
 
 export type PlanItem =
-  | { kind: 'podcast'; episode: EpisodeCandidate; slot: number }
+  | { kind: 'podcast'; episode: SimplifiedEpisode; slot: number }
   | { kind: 'song'; track: Track };
 
 export type DailyDrivePlan = {
@@ -35,7 +34,7 @@ export function largestViableN(
 }
 
 export function assemblePlan(
-  episodes: EpisodeCandidate[],
+  episodes: SimplifiedEpisode[],
   tracks: Track[],
   opts: { numberOfPodcasts: number; dryRun: boolean; now?: Date },
 ): DailyDrivePlan {

@@ -1,18 +1,16 @@
-import { describe, expect, it } from 'vitest';
+import { http, HttpResponse } from 'msw';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import {
   mockShowEpisodes,
   mockShowEpisodesEmpty,
   mockShowEpisodesError,
+  mswServer,
 } from './__tests__/mswServer.js';
 import type { PodcastConfig } from './PodcastConfig.js';
-import { selectPodcastSlots } from './SpotifyPodcasts.js';
-
-const NOW = new Date('2026-05-18T12:00:00Z');
+import { fetchSpotifyPodcasts } from './SpotifyPodcasts.js';
 
 const upFirst = { name: 'Up First from NPR', spotify_show_id: 'upfirst', category: 'news', pin_slot: 1 };
 const theDaily = { name: 'The Daily', spotify_show_id: 'thedaily', category: 'news', pin_slot: 2 };
-const nprNewsNow = { name: 'NPR News Now', spotify_show_id: 'nprnewsnow', category: 'news' };
-const todayExplained = { name: 'Today Explained', spotify_show_id: 'todayexplained', category: 'news' };
 const otherA = { name: 'Other A', spotify_show_id: 'otherA', category: 'other' };
 const otherB = { name: 'Other B', spotify_show_id: 'otherB', category: 'other' };
 const otherC = { name: 'Other C', spotify_show_id: 'otherC', category: 'other' };
@@ -21,7 +19,7 @@ const otherE = { name: 'Other E', spotify_show_id: 'otherE', category: 'other' }
 const otherF = { name: 'Other F', spotify_show_id: 'otherF', category: 'other' };
 
 const baseConfig: PodcastConfig = {
-  shows: [upFirst, theDaily, nprNewsNow, todayExplained, otherA, otherB, otherC, otherD, otherE, otherF],
+  shows: [upFirst, theDaily, otherA, otherB, otherC, otherD, otherE, otherF],
 };
 
 function ep(showId: string, releaseDate: string, fullyPlayed = false, suffix = '') {
@@ -33,155 +31,133 @@ function ep(showId: string, releaseDate: string, fullyPlayed = false, suffix = '
   };
 }
 
-describe('selectPodcastSlots', () => {
-  it('picks Up First for slot 1 and The Daily for slot 2 when both fresh + unplayed', async () => {
-    mockShowEpisodes('upfirst', [ep('upfirst', '2026-05-18')]);
-    mockShowEpisodes('thedaily', [ep('thedaily', '2026-05-18')]);
-    mockShowEpisodes('otherA', [ep('otherA', '2026-05-10')]);
-    mockShowEpisodes('otherB', [ep('otherB', '2026-05-11')]);
-    mockShowEpisodes('otherC', [ep('otherC', '2026-05-12')]);
-    mockShowEpisodes('otherD', [ep('otherD', '2026-05-13')]);
-    mockShowEpisodes('otherE', [ep('otherE', '2026-05-14')]);
-    mockShowEpisodes('otherF', [ep('otherF', '2026-05-15')]);
+function freshEpisode(showId: string) {
+  return ep(showId, new Date().toISOString().slice(0, 10));
+}
 
-    const { episodes, skipped } = await selectPodcastSlots(baseConfig, {
-      numberOfPodcasts: 8,
-      now: NOW,
-      shuffle: (items) => [...items],
-    });
+afterEach(() => {
+  vi.restoreAllMocks();
+});
+
+describe('fetchSpotifyPodcasts', () => {
+  it('returns N episodes with pinned slots filled first', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const s of [otherA, otherB, otherC, otherD, otherE, otherF]) {
+      mockShowEpisodes(s.spotify_show_id, [freshEpisode(s.spotify_show_id)]);
+    }
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8, config: baseConfig });
 
     expect(episodes).toHaveLength(8);
-    expect(episodes[0]?.show_id).toBe('upfirst');
-    expect(episodes[1]?.show_id).toBe('thedaily');
-    expect(episodes.slice(2).map((e) => e.show_id)).toEqual([
-      'otherA',
-      'otherB',
-      'otherC',
-      'otherD',
-      'otherE',
-      'otherF',
-    ]);
-    expect(skipped).toEqual([]);
+    expect(episodes[0]?.id).toBe('upfirst_ep');
+    expect(episodes[1]?.id).toBe('thedaily_ep');
   });
 
-  it('falls through to the other pool when the pinned news show has no fresh episode', async () => {
-    mockShowEpisodes('upfirst', [ep('upfirst', '2026-04-01')]);
-    mockShowEpisodes('thedaily', [ep('thedaily', '2026-05-18')]);
-    mockShowEpisodes('otherA', [ep('otherA', '2026-05-15')]);
-    mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
-    mockShowEpisodes('otherC', [ep('otherC', '2026-05-15')]);
-    mockShowEpisodes('otherD', [ep('otherD', '2026-05-15')]);
-    mockShowEpisodes('otherE', [ep('otherE', '2026-05-15')]);
-    mockShowEpisodes('otherF', [ep('otherF', '2026-05-15')]);
+  it('falls through to the other pool when a pinned news show has no fresh episode', async () => {
+    mockShowEpisodes('upfirst', [ep('upfirst', '2020-01-01')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const s of [otherA, otherB, otherC, otherD, otherE, otherF]) {
+      mockShowEpisodes(s.spotify_show_id, [freshEpisode(s.spotify_show_id)]);
+    }
 
-    const { episodes } = await selectPodcastSlots(baseConfig, {
-      numberOfPodcasts: 8,
-      now: NOW,
-      shuffle: (items) => [...items],
-    });
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8, config: baseConfig });
 
-    expect(episodes[0]?.show_id).toBe('otherA');
-    expect(episodes[1]?.show_id).toBe('thedaily');
+    expect(episodes.map((e) => e.id)).not.toContain('upfirst_ep');
+    expect(episodes[1]?.id).toBe('thedaily_ep');
   });
 
-  it('substitutes the next sampled "other" show when one has no fresh-unplayed episode', async () => {
-    mockShowEpisodes('upfirst', [ep('upfirst', '2026-05-18')]);
-    mockShowEpisodes('thedaily', [ep('thedaily', '2026-05-18')]);
-    mockShowEpisodes('otherA', [ep('otherA', '2025-01-01')]);
-    mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
-    mockShowEpisodes('otherC', [ep('otherC', '2026-05-15')]);
-    mockShowEpisodes('otherD', [ep('otherD', '2026-05-15')]);
-    mockShowEpisodes('otherE', [ep('otherE', '2026-05-15')]);
-    mockShowEpisodes('otherF', [ep('otherF', '2026-05-15')]);
-
-    const { episodes, skipped } = await selectPodcastSlots(baseConfig, {
-      numberOfPodcasts: 7,
-      now: NOW,
-      shuffle: (items) => [...items],
-    });
-
-    expect(episodes).toHaveLength(7);
-    expect(episodes.map((e) => e.show_id)).not.toContain('otherA');
-    expect(skipped).toContainEqual({
-      show_name: 'Other A',
-      reason: 'no_fresh_unplayed_episode',
-    });
-  });
-
-  it('skips fully_played episodes and picks the next-latest', async () => {
+  it('skips fully_played episodes', async () => {
     mockShowEpisodes('upfirst', [
       ep('upfirst', '2026-05-18', true, '_newest'),
       ep('upfirst', '2026-05-17', false, '_older'),
     ]);
-    mockShowEpisodes('thedaily', [ep('thedaily', '2026-05-18')]);
-    mockShowEpisodes('otherA', [ep('otherA', '2026-05-15')]);
-    mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
-    mockShowEpisodes('otherC', [ep('otherC', '2026-05-15')]);
-    mockShowEpisodes('otherD', [ep('otherD', '2026-05-15')]);
-    mockShowEpisodes('otherE', [ep('otherE', '2026-05-15')]);
-    mockShowEpisodes('otherF', [ep('otherF', '2026-05-15')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const s of [otherA, otherB, otherC, otherD, otherE, otherF]) {
+      mockShowEpisodes(s.spotify_show_id, [freshEpisode(s.spotify_show_id)]);
+    }
 
-    const { episodes } = await selectPodcastSlots(baseConfig, {
-      numberOfPodcasts: 8,
-      now: NOW,
-      shuffle: (items) => [...items],
-    });
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8, config: baseConfig });
 
-    expect(episodes[0]?.show_id).toBe('upfirst');
-    expect(episodes[0]?.spotify_episode_id).toBe('upfirst_ep_older');
+    const upFirstEp = episodes.find((e) => e.id.startsWith('upfirst_ep'));
+    expect(upFirstEp?.id).toBe('upfirst_ep_older');
   });
 
-  it('records fetch_failed and continues when a show fetch errors out', async () => {
-    mockShowEpisodes('upfirst', [ep('upfirst', '2026-05-18')]);
-    mockShowEpisodes('thedaily', [ep('thedaily', '2026-05-18')]);
+  it('continues past a show whose episode fetch errors out', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
     mockShowEpisodesError('otherA');
-    mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
-    mockShowEpisodes('otherC', [ep('otherC', '2026-05-15')]);
-    mockShowEpisodes('otherD', [ep('otherD', '2026-05-15')]);
-    mockShowEpisodes('otherE', [ep('otherE', '2026-05-15')]);
-    mockShowEpisodes('otherF', [ep('otherF', '2026-05-15')]);
+    for (const s of [otherB, otherC, otherD, otherE, otherF]) {
+      mockShowEpisodes(s.spotify_show_id, [freshEpisode(s.spotify_show_id)]);
+    }
+    vi.spyOn(console, 'error').mockImplementation(() => {});
 
-    const { episodes, skipped } = await selectPodcastSlots(baseConfig, {
-      numberOfPodcasts: 7,
-      now: NOW,
-      shuffle: (items) => [...items],
-    });
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 7, config: baseConfig });
 
     expect(episodes).toHaveLength(7);
-    expect(episodes.map((e) => e.show_id)).not.toContain('otherA');
-    expect(skipped).toContainEqual({
-      show_name: 'Other A',
-      reason: 'fetch_failed',
-    });
+    expect(episodes.map((e) => e.id)).not.toContain('otherA_ep');
+  });
+
+  it('does not pick the same show twice across slots', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const s of [otherA, otherB, otherC, otherD, otherE, otherF]) {
+      mockShowEpisodes(s.spotify_show_id, [freshEpisode(s.spotify_show_id)]);
+    }
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8, config: baseConfig });
+
+    const ids = episodes.map((e) => e.id);
+    expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it('does not re-fetch a show whose first lookup returned nothing eligible', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    mockShowEpisodes('otherA', []);
+    for (const s of [otherB, otherC, otherD, otherE, otherF]) {
+      mockShowEpisodes(s.spotify_show_id, [freshEpisode(s.spotify_show_id)]);
+    }
+
+    let otherACallCount = 0;
+    mswServer.use(
+      http.get('https://api.spotify.com/v1/shows/otherA/episodes', () => {
+        otherACallCount++;
+        return HttpResponse.json({
+          items: [],
+          total: 0,
+          limit: 50,
+          offset: 0,
+          next: null,
+          previous: null,
+          href: '',
+        });
+      }),
+    );
+
+    await fetchSpotifyPodcasts({ numberOfPodcasts: 8, config: baseConfig });
+
+    expect(otherACallCount).toBeLessThanOrEqual(1);
   });
 
   it('fills all slots from the other pool when both pinned news shows are dry', async () => {
     mockShowEpisodesEmpty('upfirst');
     mockShowEpisodesEmpty('thedaily');
-    mockShowEpisodes('otherA', [ep('otherA', '2026-05-15')]);
-    mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
-    mockShowEpisodes('otherC', [ep('otherC', '2026-05-15')]);
-    mockShowEpisodes('otherD', [ep('otherD', '2026-05-15')]);
-    mockShowEpisodes('otherE', [ep('otherE', '2026-05-15')]);
-    mockShowEpisodes('otherF', [ep('otherF', '2026-05-15')]);
-    mockShowEpisodes('otherG', [ep('otherG', '2026-05-15')]);
-    mockShowEpisodes('otherH', [ep('otherH', '2026-05-15')]);
+    for (const s of [otherA, otherB, otherC, otherD, otherE, otherF]) {
+      mockShowEpisodes(s.spotify_show_id, [freshEpisode(s.spotify_show_id)]);
+    }
+    const extras = [
+      { name: 'Other G', spotify_show_id: 'otherG', category: 'other' },
+      { name: 'Other H', spotify_show_id: 'otherH', category: 'other' },
+    ];
+    mockShowEpisodes('otherG', [freshEpisode('otherG')]);
+    mockShowEpisodes('otherH', [freshEpisode('otherH')]);
 
-    const fullConfig: PodcastConfig = {
-      shows: [
-        ...baseConfig.shows,
-        { name: 'Other G', spotify_show_id: 'otherG', category: 'other' },
-        { name: 'Other H', spotify_show_id: 'otherH', category: 'other' },
-      ],
-    };
+    const fullConfig: PodcastConfig = { shows: [...baseConfig.shows, ...extras] };
 
-    const { episodes } = await selectPodcastSlots(fullConfig, {
-      numberOfPodcasts: 8,
-      now: NOW,
-      shuffle: (items) => [...items],
-    });
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8, config: fullConfig });
 
     expect(episodes).toHaveLength(8);
-    expect(new Set(episodes.map((e) => e.show_id)).size).toBe(8);
+    expect(new Set(episodes.map((e) => e.id)).size).toBe(8);
   });
 });

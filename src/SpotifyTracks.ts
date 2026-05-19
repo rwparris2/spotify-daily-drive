@@ -59,9 +59,12 @@ async function fetchSongsFromPlayList(
   return { tracks: results, complete };
 }
 
-async function playlistTracks() {
+async function playlistTracks(options: { numberOfTracks: number }): Promise<Track[]> {
   const playlists = await fetchAllPlaylists();
-  const playlistsToFetch = _.sampleSize(playlists, 5);
+  const playlistsToFetch = _.sampleSize(
+    playlists,
+    Math.min(3, Math.ceil(options.numberOfTracks / 3)),
+  );
   let results: Track[] = [];
   for (const p of playlistsToFetch) {
     const cached = await getCachedPlaylistTracks(p.id, p.snapshot_id);
@@ -80,11 +83,11 @@ async function playlistTracks() {
   return _(results)
     .chain()
     .uniqBy((t) => t.id)
-    .sampleSize(20)
+    .sampleSize(options.numberOfTracks)
     .value();
 }
 
-async function topTracks() {
+async function topTracks(options: { numberOfTracks: number }): Promise<Track[]> {
   let topItemsShortTerm: Track[] = [];
   try {
     topItemsShortTerm = await spotifyClient.currentUser
@@ -116,11 +119,11 @@ async function topTracks() {
   return _(allTopItems)
     .chain()
     .uniqBy((t) => t.id)
-    .sampleSize(20)
+    .sampleSize(options.numberOfTracks)
     .value();
 }
 
-async function recentlyPlayedTracks() {
+async function recentlyPlayedTracks(options: { numberOfTracks: number }) {
   let recentlyPlayedTracks: Track[] = [];
   try {
     recentlyPlayedTracks = await spotifyClient.player
@@ -134,11 +137,11 @@ async function recentlyPlayedTracks() {
   return _(recentlyPlayedTracks)
     .chain()
     .uniqBy((t) => t.id)
-    .sampleSize(20)
+    .sampleSize(options.numberOfTracks)
     .value();
 }
 
-async function savedTracks() {
+async function savedTracks(options: { numberOfTracks: number }): Promise<Track[]> {
   let totalSavedTracks = 0;
   try {
     totalSavedTracks = await spotifyClient.currentUser.tracks.savedTracks(1).then((r) => r.total);
@@ -165,18 +168,25 @@ async function savedTracks() {
   return _(results)
     .chain()
     .uniqBy((t) => t.id)
-    .sampleSize(20)
+    .sampleSize(options.numberOfTracks)
     .value();
 }
 
-export async function fetchSpotifyTracks(target = 60): Promise<Track[]> {
+export async function fetchSpotifyTracks(options: { numberOfTracks: number }): Promise<Track[]> {
+  const requiredContributionPerSource = Math.ceil(options.numberOfTracks / 3);
   const allAvailableTracks = (
-    await Promise.all([playlistTracks(), topTracks(), recentlyPlayedTracks(), savedTracks()])
+    await Promise.all([
+      // playlistTracks({ numberOfTracks: requiredContributionPerSource }),
+      topTracks({ numberOfTracks: requiredContributionPerSource }),
+      recentlyPlayedTracks({ numberOfTracks: requiredContributionPerSource }),
+      savedTracks({ numberOfTracks: requiredContributionPerSource }),
+    ])
   ).flat();
   return _(allAvailableTracks)
     .chain()
+    .filter((t) => !!t)
     .uniqBy((t) => t.id)
     .shuffle()
-    .sampleSize(target)
+    .sampleSize(options.numberOfTracks)
     .value();
 }

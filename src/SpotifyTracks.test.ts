@@ -3,7 +3,6 @@ import {
   mockRecentlyPlayed,
   mockSavedTracks,
   mockTopTracks,
-  mockUserPlaylists,
   type TrackFixture,
 } from './__tests__/mswServer.js';
 import { fetchSpotifyTracks } from './SpotifyTracks.js';
@@ -15,7 +14,6 @@ function range(prefix: string, n: number): TrackFixture[] {
 describe('fetchSpotifyTracks', () => {
   it('returns unique tracks deduped across sources, capped at target', async () => {
     const overlap = { id: 'shared_track' };
-    mockUserPlaylists([{ id: 'p1', tracks: [overlap, ...range('p', 5)] }]);
     mockTopTracks({
       short_term: [overlap, ...range('top', 5)],
       medium_term: range('topM', 5),
@@ -24,7 +22,7 @@ describe('fetchSpotifyTracks', () => {
     mockRecentlyPlayed([overlap, ...range('rp', 5)]);
     mockSavedTracks([...range('sv', 5)]);
 
-    const tracks = await fetchSpotifyTracks(60);
+    const tracks = await fetchSpotifyTracks({ numberOfTracks: 60 });
 
     const ids = tracks.map((t) => t.id);
     expect(new Set(ids).size).toBe(ids.length);
@@ -34,12 +32,11 @@ describe('fetchSpotifyTracks', () => {
   });
 
   it('still returns tracks when some sources are empty', async () => {
-    mockUserPlaylists([]);
     mockTopTracks({ short_term: range('top', 10) });
     mockRecentlyPlayed([]);
     mockSavedTracks([]);
 
-    const tracks = await fetchSpotifyTracks(60);
+    const tracks = await fetchSpotifyTracks({ numberOfTracks: 60 });
 
     expect(tracks.length).toBeGreaterThan(0);
     expect(tracks.length).toBeLessThanOrEqual(10);
@@ -47,7 +44,6 @@ describe('fetchSpotifyTracks', () => {
   });
 
   it('reaches close to the target when many candidates are available', async () => {
-    mockUserPlaylists([{ id: 'p1', tracks: range('p', 30) }]);
     mockTopTracks({
       short_term: range('topS', 30),
       medium_term: range('topM', 30),
@@ -56,7 +52,7 @@ describe('fetchSpotifyTracks', () => {
     mockRecentlyPlayed(range('rp', 30));
     mockSavedTracks(range('sv', 50));
 
-    const tracks = await fetchSpotifyTracks(60);
+    const tracks = await fetchSpotifyTracks({ numberOfTracks: 60 });
 
     expect(tracks.length).toBeGreaterThanOrEqual(40);
     expect(tracks.length).toBeLessThanOrEqual(60);

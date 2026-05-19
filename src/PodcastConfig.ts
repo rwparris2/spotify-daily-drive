@@ -6,9 +6,9 @@ export type PodcastConfig = {
   shows: {
     name: string;
     spotify_show_id: string;
-    category: string;
     itunes_categories?: string[];
     pin_slot?: number;
+    latest_only?: boolean;
   }[];
 };
 
