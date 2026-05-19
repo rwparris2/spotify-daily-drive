@@ -36,11 +36,6 @@ export async function getCachedTracks(
   return entry?.snapshotId === currentSnapshotId ? entry.tracks : undefined;
 }
 
-export async function getStaleCachedTracks(playlistId: string): Promise<Track[] | undefined> {
-  const store = await load();
-  return store[playlistId]?.tracks;
-}
-
 export async function getAllCachedTracks(): Promise<Track[]> {
   const store = await load();
   return Object.values(store).flatMap((e) => e.tracks);

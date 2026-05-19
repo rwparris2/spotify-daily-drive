@@ -3,7 +3,6 @@ import { spotifyClient } from './SpotifyClient.js';
 import {
   getAllCachedTracks,
   getCachedTracks,
-  getStaleCachedTracks,
   setCachedTracks,
 } from './playlistItemsCache.js';
 
@@ -69,16 +68,7 @@ async function fetchAllTracksFromAllPlaylists(): Promise<Track[]> {
       await setCachedTracks(p.id, p.snapshot_id, playlistTracks);
       results = [...results, ...playlistTracks];
     } catch (e) {
-      const stale = await getStaleCachedTracks(p.id);
-      if (stale) {
-        console.warn(
-          `Fetch failed for ${p.name}; using stale cache (${stale.length} tracks).`,
-          e,
-        );
-        results = [...results, ...stale];
-      } else {
-        console.warn(`Fetch failed for ${p.name} and no cache available; skipping.`, e);
-      }
+      console.warn(`Fetch failed for ${p.name}; skipping.`, e);
     }
   }
   return results;
