@@ -2,10 +2,10 @@ import type { SimplifiedEpisode, Track } from '@spotify/web-api-ts-sdk';
 import { http, HttpResponse } from 'msw';
 import { describe, expect, it } from 'vitest';
 import { mswServer } from './__tests__/mswServer.js';
-import type { PlaylistItem } from './PlaylistItem.js';
+import type { DailyDrivePlaylistItem } from './DailyDrivePlaylistItem.js';
 import { playlistDescription, playlistToUris, replacePlaylist } from './SpotifyPlaylist.js';
 
-function ep(id: string): PlaylistItem {
+function ep(id: string): DailyDrivePlaylistItem {
   return {
     episode: {
       id,
@@ -15,13 +15,13 @@ function ep(id: string): PlaylistItem {
   };
 }
 
-function tr(id: string): PlaylistItem {
+function tr(id: string): DailyDrivePlaylistItem {
   return {
     track: { id, name: `Track ${id}`, uri: `spotify:track:${id}` } as unknown as Track,
   };
 }
 
-const samplePlaylist: PlaylistItem[] = [
+const samplePlaylist: DailyDrivePlaylistItem[] = [
   ep('e1'),
   tr('t1'),
   tr('t2'),
@@ -57,14 +57,11 @@ describe('replacePlaylist', () => {
     const observed: { uris?: string[]; details?: Record<string, unknown> } = {};
 
     mswServer.use(
-      http.put(
-        'https://api.spotify.com/v1/playlists/playlist123/tracks',
-        async ({ request }) => {
-          const body = (await request.json()) as { uris: string[] };
-          observed.uris = body.uris;
-          return HttpResponse.json({ snapshot_id: 'snap_after_replace' });
-        },
-      ),
+      http.put('https://api.spotify.com/v1/playlists/playlist123/tracks', async ({ request }) => {
+        const body = (await request.json()) as { uris: string[] };
+        observed.uris = body.uris;
+        return HttpResponse.json({ snapshot_id: 'snap_after_replace' });
+      }),
       http.put('https://api.spotify.com/v1/playlists/playlist123', async ({ request }) => {
         observed.details = (await request.json()) as Record<string, unknown>;
         return new HttpResponse(null, { status: 200 });

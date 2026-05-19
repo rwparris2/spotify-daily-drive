@@ -45,7 +45,8 @@ async function fetchSongsFromPlayList(
         'GET',
         `playlists/${playlistId}/items?limit=${pageSize}&offset=${currentPage * pageSize}`,
       );
-      results = [...results, ...page.items.map((x) => x.track)];
+      const pageTracks = page.items.map((x) => x.track).filter((t): t is Track => t != null);
+      results = [...results, ...pageTracks];
       hasNextPage = !!page.next;
       currentPage += 1;
     } catch (e) {

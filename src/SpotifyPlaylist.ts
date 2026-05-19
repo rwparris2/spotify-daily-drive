@@ -1,12 +1,12 @@
 import _ from 'lodash';
 import { spotifyClient } from './SpotifyClient.js';
-import { PlaylistItem } from './PlaylistItem.js';
+import { DailyDrivePlaylistItem } from './DailyDrivePlaylistItem.js';
 
 function isNotUndefined<T>(input: T | undefined): input is T {
   return input !== undefined;
 }
 
-export function playlistToUris(playlist: PlaylistItem[]): string[] {
+export function playlistToUris(playlist: DailyDrivePlaylistItem[]): string[] {
   return playlist
     .map((it) => {
       if ('episode' in it) {
@@ -20,10 +20,13 @@ export function playlistToUris(playlist: PlaylistItem[]): string[] {
 
 export function playlistDescription(): string {
   const date = new Date().toISOString().slice(0, 10);
-  return `Daily Drive · ${date}}`;
+  return `Daily Drive · ${date}`;
 }
 
-export async function replacePlaylist(playlistId: string, playlist: PlaylistItem[]): Promise<void> {
+export async function replacePlaylist(
+  playlistId: string,
+  playlist: DailyDrivePlaylistItem[],
+): Promise<void> {
   const uris = playlistToUris(playlist);
   const [first, ...rest] = _.chunk(uris, 100);
   await spotifyClient.playlists.updatePlaylistItems(playlistId, { uris: first ?? [] });

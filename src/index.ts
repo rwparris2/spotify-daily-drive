@@ -3,7 +3,7 @@ import { fetchSpotifyTracks } from './SpotifyTracks.js';
 import { fetchSpotifyPodcasts } from './SpotifyPodcasts.js';
 import { replacePlaylist } from './SpotifyPlaylist.js';
 import { SPOTIFY_PLAYLIST_ID } from './config.js';
-import { PlaylistItem } from './PlaylistItem.js';
+import { DailyDrivePlaylistItem } from './DailyDrivePlaylistItem.js';
 
 const NUMBER_OF_PODCASTS = 8;
 
@@ -22,7 +22,7 @@ if (podcasts.length === 0) {
   podcasts.push(undefined);
 }
 
-const playlist: PlaylistItem[] = [];
+const playlist: DailyDrivePlaylistItem[] = [];
 for (let i = 0; i < podcasts.length; i++) {
   const p = podcasts[i];
   if (p) playlist.push({ episode: p });
