@@ -2,6 +2,7 @@ import 'dotenv/config';
 import { createServer } from 'http';
 import { execFile } from 'child_process';
 import { randomBytes } from 'crypto';
+import { spotifyClient } from './SpotifyClient.js';
 
 const SCOPES = [
   'playlist-modify-private',
@@ -125,26 +126,13 @@ const server = createServer(async (req, res) => {
 });
 
 async function createDailyDrivePlaylist(accessToken: string): Promise<string | undefined> {
-  const meRes = await fetch('https://api.spotify.com/v1/me', {
-    headers: { Authorization: `Bearer ${accessToken}` },
-  });
-  if (!meRes.ok) {
-    console.error(`Could not look up current user: ${meRes.status} ${await meRes.text()}`);
-    return undefined;
-  }
-  const me = (await meRes.json()) as { id: string };
-
-  const createRes = await fetch(`https://api.spotify.com/v1/users/${me.id}/playlists`, {
+  const createRes = await fetch('https://api.spotify.com/v1/me/playlists', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${accessToken}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({
-      name: 'Daily Drive',
-      public: true,
-      description: 'Daily Drive — auto-generated podcast + music mix.',
-    }),
+    body: JSON.stringify({ name: 'My Daily Drive', public: false }),
   });
   if (!createRes.ok) {
     console.error(`Playlist create failed: ${createRes.status} ${await createRes.text()}`);
