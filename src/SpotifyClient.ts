@@ -1,0 +1,50 @@
+import { IHandleErrors, SpotifyApi, type AccessToken } from '@spotify/web-api-ts-sdk';
+
+import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN } from './config.js';
+
+const basic = Buffer.from(`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`).toString('base64');
+const response = await fetch('https://accounts.spotify.com/api/token', {
+  method: 'POST',
+  headers: {
+    Authorization: `Basic ${basic}`,
+    'Content-Type': 'application/x-www-form-urlencoded',
+  },
+  body: new URLSearchParams({
+    grant_type: 'refresh_token',
+    refresh_token: SPOTIFY_REFRESH_TOKEN,
+  }),
+});
+
+if (!response.ok) {
+  throw new Error(`Spotify token refresh failed: ${response.status} ${await response.text()}`);
+}
+
+const token = (await response.json()) as AccessToken;
+token.refresh_token ??= SPOTIFY_REFRESH_TOKEN;
+
+const rateLimitedFetch: typeof fetch = async (input, init) => {
+  const maxAttempts = 5;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const res = await fetch(input, init);
+    if (res.status !== 429) return res;
+
+    const retryAfter = Number(res.headers.get('retry-after') ?? 1);
+    if (retryAfter > 60) {
+      throw new Error(
+        `Spotify Retry-After=${retryAfter}s (~${Math.round(retryAfter / 60)}min). ` +
+          `Hard rate-limit — wait it out before re-running.`,
+      );
+    }
+    if (attempt === maxAttempts) {
+      console.warn(`429 received after ${maxAttempts} attempts; giving up`);
+      return res;
+    }
+    console.warn(`429 received — backing off ${retryAfter}s (attempt ${attempt}/${maxAttempts})`);
+    await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000));
+  }
+  return fetch(input, init);
+};
+
+export const spotifyClient = SpotifyApi.withAccessToken(SPOTIFY_CLIENT_ID, token, {
+  fetch: rateLimitedFetch,
+});

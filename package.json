@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "build": "tsc",
     "start": "tsx src/index.ts",
-    "bootstrap-auth": "tsx src/bootstrap/authBootstrap.ts",
+    "bootstrap-auth": "tsx src/bootstrap-auth.ts",
     "format": "prettier --write \"src/**/*.ts\""
   },
   "devDependencies": {
@@ -18,5 +18,9 @@
     "prettier": "^3.3.3",
     "tsx": "^4.19.0",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@spotify/web-api-ts-sdk": "^1.2.0",
+    "dotenv": "^17.4.2"
   }
 }
