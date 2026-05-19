@@ -9,9 +9,12 @@ const SCOPES = [
   'playlist-read-collaborative',
   'playlist-read-private',
   'user-library-read',
+  'user-read-playback-position',
   'user-read-recently-played',
   'user-top-read',
 ];
+
+const existingPlaylistId = process.env.SPOTIFY_PLAYLIST_ID;
 
 const clientId = process.env.SPOTIFY_CLIENT_ID;
 const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
@@ -106,8 +109,50 @@ const server = createServer(async (req, res) => {
   console.log('\nAdd this line to your .env (replacing any existing SPOTIFY_REFRESH_TOKEN):\n');
   console.log(`SPOTIFY_REFRESH_TOKEN=${token.refresh_token}\n`);
 
+  if (!existingPlaylistId) {
+    const playlistId = await createDailyDrivePlaylist(token.access_token);
+    if (playlistId) {
+      console.log('\n=== Spotify Playlist ===\n');
+      console.log(`Created public playlist "Daily Drive" → ${playlistId}`);
+      console.log('\nAdd this line to your .env:\n');
+      console.log(`SPOTIFY_PLAYLIST_ID=${playlistId}\n`);
+    }
+  } else {
+    console.log(`(SPOTIFY_PLAYLIST_ID already set: ${existingPlaylistId} — leaving it alone.)\n`);
+  }
+
   server.close();
 });
+
+async function createDailyDrivePlaylist(accessToken: string): Promise<string | undefined> {
+  const meRes = await fetch('https://api.spotify.com/v1/me', {
+    headers: { Authorization: `Bearer ${accessToken}` },
+  });
+  if (!meRes.ok) {
+    console.error(`Could not look up current user: ${meRes.status} ${await meRes.text()}`);
+    return undefined;
+  }
+  const me = (await meRes.json()) as { id: string };
+
+  const createRes = await fetch(`https://api.spotify.com/v1/users/${me.id}/playlists`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: 'Daily Drive',
+      public: true,
+      description: 'Daily Drive — auto-generated podcast + music mix.',
+    }),
+  });
+  if (!createRes.ok) {
+    console.error(`Playlist create failed: ${createRes.status} ${await createRes.text()}`);
+    return undefined;
+  }
+  const playlist = (await createRes.json()) as { id: string };
+  return playlist.id;
+}
 
 server.listen(port, '127.0.0.1', () => {
   console.log(`Listening on ${redirectUri}`);
