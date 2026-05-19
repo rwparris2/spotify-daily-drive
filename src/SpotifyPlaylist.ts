@@ -1,27 +1,30 @@
 import _ from 'lodash';
-import type { DailyDrivePlan } from './DailyDrivePlan.js';
 import { spotifyClient } from './SpotifyClient.js';
+import { PlaylistItem } from './PlaylistItem.js';
 
-export function planToUris(plan: DailyDrivePlan): string[] {
-  return plan.items.map((it) =>
-    it.kind === 'podcast'
-      ? `spotify:episode:${it.episode.id}`
-      : `spotify:track:${it.track.id}`,
-  );
+function isNotUndefined<T>(input: T | undefined): input is T {
+  return input !== undefined;
 }
 
-export function planDescription(plan: DailyDrivePlan): string {
-  const date = plan.generated_at.slice(0, 10);
-  const episodeNames = _(plan.items)
-    .chain()
-    .filter((it): it is Extract<typeof it, { kind: 'podcast' }> => it.kind === 'podcast')
-    .map((it) => it.episode.name)
-    .value();
-  return `Daily Drive · ${date} · ${episodeNames.join(', ')}`;
+export function playlistToUris(playlist: PlaylistItem[]): string[] {
+  return playlist
+    .map((it) => {
+      if ('episode' in it) {
+        return `spotify:episode:${it.episode.id}`;
+      } else if ('track' in it) {
+        return `spotify:track:${it.track.id}`;
+      }
+    })
+    .filter(isNotUndefined);
 }
 
-export async function replacePlaylist(playlistId: string, plan: DailyDrivePlan): Promise<void> {
-  const uris = planToUris(plan);
+export function playlistDescription(): string {
+  const date = new Date().toISOString().slice(0, 10);
+  return `Daily Drive · ${date}}`;
+}
+
+export async function replacePlaylist(playlistId: string, playlist: PlaylistItem[]): Promise<void> {
+  const uris = playlistToUris(playlist);
   const [first, ...rest] = _.chunk(uris, 100);
   await spotifyClient.playlists.updatePlaylistItems(playlistId, { uris: first ?? [] });
   for (const chunk of rest) {
@@ -29,6 +32,6 @@ export async function replacePlaylist(playlistId: string, plan: DailyDrivePlan):
   }
   await spotifyClient.playlists.changePlaylistDetails(playlistId, {
     name: 'Daily Drive',
-    description: planDescription(plan),
+    description: playlistDescription(),
   });
 }

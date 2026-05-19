@@ -9,9 +9,8 @@ const RELEASE_CUTOFF_MONTHS = 6;
 
 export const fetchSpotifyPodcasts = async (opts: {
   numberOfPodcasts: number;
-  config?: PodcastConfig;
 }): Promise<SimplifiedEpisode[]> => {
-  const config = opts.config ?? (await loadPodcastConfig());
+  const config = await loadPodcastConfig();
 
   const cutoff = new Date();
   cutoff.setMonth(cutoff.getMonth() - RELEASE_CUTOFF_MONTHS);

@@ -1,6 +1,5 @@
 import { Page, PlaylistedTrack, SimplifiedPlaylist, Track } from '@spotify/web-api-ts-sdk';
 import { spotifyClient } from './SpotifyClient.js';
-import { getCachedPlaylistTracks, setCachedPlaylistTracks } from './SpotifyPlaylistTracksCache.js';
 import _ from 'lodash';
 import { SPOTIFY_PLAYLIST_ID } from './config.js';
 
@@ -67,17 +66,7 @@ async function playlistTracks(options: { numberOfTracks: number }): Promise<Trac
   );
   let results: Track[] = [];
   for (const p of playlistsToFetch) {
-    const cached = await getCachedPlaylistTracks(p.id, p.snapshot_id);
-    if (cached) {
-      console.log(`Cache hit for ${p.name} (${cached.length} tracks)`);
-      results = [...results, ...cached];
-      continue;
-    }
-
-    const { tracks, complete } = await fetchSongsFromPlayList(p.id);
-    if (complete) {
-      await setCachedPlaylistTracks(p.id, p.snapshot_id, tracks);
-    }
+    const { tracks } = await fetchSongsFromPlayList(p.id);
     results = [...results, ...tracks];
   }
   return _(results)
@@ -176,7 +165,7 @@ export async function fetchSpotifyTracks(options: { numberOfTracks: number }): P
   const requiredContributionPerSource = Math.ceil(options.numberOfTracks / 3);
   const allAvailableTracks = (
     await Promise.all([
-      // playlistTracks({ numberOfTracks: requiredContributionPerSource }),
+      playlistTracks({ numberOfTracks: requiredContributionPerSource }),
       topTracks({ numberOfTracks: requiredContributionPerSource }),
       recentlyPlayedTracks({ numberOfTracks: requiredContributionPerSource }),
       savedTracks({ numberOfTracks: requiredContributionPerSource }),

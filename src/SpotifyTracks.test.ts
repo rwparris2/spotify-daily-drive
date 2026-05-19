@@ -3,6 +3,7 @@ import {
   mockRecentlyPlayed,
   mockSavedTracks,
   mockTopTracks,
+  mockUserPlaylists,
   type TrackFixture,
 } from './__tests__/mswServer.js';
 import { fetchSpotifyTracks } from './SpotifyTracks.js';
@@ -14,6 +15,7 @@ function range(prefix: string, n: number): TrackFixture[] {
 describe('fetchSpotifyTracks', () => {
   it('returns unique tracks deduped across sources, capped at target', async () => {
     const overlap = { id: 'shared_track' };
+    mockUserPlaylists([{ id: 'p1', tracks: [overlap, ...range('p', 5)] }]);
     mockTopTracks({
       short_term: [overlap, ...range('top', 5)],
       medium_term: range('topM', 5),
@@ -32,6 +34,7 @@ describe('fetchSpotifyTracks', () => {
   });
 
   it('still returns tracks when some sources are empty', async () => {
+    mockUserPlaylists([]);
     mockTopTracks({ short_term: range('top', 10) });
     mockRecentlyPlayed([]);
     mockSavedTracks([]);
@@ -44,6 +47,7 @@ describe('fetchSpotifyTracks', () => {
   });
 
   it('reaches close to the target when many candidates are available', async () => {
+    mockUserPlaylists([{ id: 'p1', tracks: range('p', 30) }]);
     mockTopTracks({
       short_term: range('topS', 30),
       medium_term: range('topM', 30),
