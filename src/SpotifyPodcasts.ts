@@ -62,10 +62,17 @@ async function pickLatestEligibleEpisode(
     console.error(`Error fetching episodes for "${show.name}":`, (e as Error).message);
     return undefined;
   }
-  const eligible = episodes
+  const playable = episodes
     .filter((ep) => ep.is_playable)
-    .filter((ep) => Date.parse(ep.release_date) >= cutoff.getTime())
-    .filter((ep) => !(ep.resume_point?.fully_played ?? false))
     .sort((a, b) => Date.parse(b.release_date) - Date.parse(a.release_date));
-  return eligible[0];
+
+  if (show.latest_only) {
+    const newest = playable[0];
+    if (!newest || (newest.resume_point?.fully_played ?? false)) return undefined;
+    return newest;
+  }
+
+  return playable
+    .filter((ep) => Date.parse(ep.release_date) >= cutoff.getTime())
+    .filter((ep) => !(ep.resume_point?.fully_played ?? false))[0];
 }
