@@ -45,3 +45,120 @@ export function mockShowEpisodes(showId: string, episodes: EpisodeFixture[]): vo
 export function mockShowEpisodesEmpty(showId: string): void {
   mockShowEpisodes(showId, []);
 }
+
+export type TrackFixture = {
+  id: string;
+  name?: string;
+  artist?: string;
+};
+
+function trackJson(t: TrackFixture) {
+  return {
+    id: t.id,
+    name: t.name ?? `Track ${t.id}`,
+    artists: [{ name: t.artist ?? 'Artist', id: `${t.id}_artist` }],
+    album: { name: 'Album', id: `${t.id}_album`, images: [] },
+    duration_ms: 200_000,
+    uri: `spotify:track:${t.id}`,
+    type: 'track',
+  };
+}
+
+export type PlaylistFixture = {
+  id: string;
+  name?: string;
+  snapshot_id?: string;
+  tracks: TrackFixture[];
+};
+
+export function mockUserPlaylists(playlists: PlaylistFixture[]): void {
+  mswServer.use(
+    http.get('https://api.spotify.com/v1/me/playlists', () =>
+      HttpResponse.json({
+        items: playlists.map((p) => ({
+          id: p.id,
+          name: p.name ?? `Playlist ${p.id}`,
+          snapshot_id: p.snapshot_id ?? `${p.id}_snap`,
+        })),
+        total: playlists.length,
+        limit: 50,
+        offset: 0,
+        next: null,
+        previous: null,
+        href: '',
+      }),
+    ),
+    ...playlists.map((p) =>
+      http.get(`https://api.spotify.com/v1/playlists/${p.id}/items`, () =>
+        HttpResponse.json({
+          items: p.tracks.map((t) => ({ track: trackJson(t) })),
+          total: p.tracks.length,
+          limit: 50,
+          offset: 0,
+          next: null,
+          previous: null,
+          href: '',
+        }),
+      ),
+    ),
+  );
+}
+
+export function mockTopTracks(
+  perHorizon: { short_term?: TrackFixture[]; medium_term?: TrackFixture[]; long_term?: TrackFixture[] },
+): void {
+  mswServer.use(
+    http.get('https://api.spotify.com/v1/me/top/tracks', ({ request }) => {
+      const url = new URL(request.url);
+      const horizon = url.searchParams.get('time_range') as
+        | 'short_term'
+        | 'medium_term'
+        | 'long_term'
+        | null;
+      const tracks = (horizon && perHorizon[horizon]) ?? [];
+      return HttpResponse.json({
+        items: tracks.map(trackJson),
+        total: tracks.length,
+        limit: 50,
+        offset: 0,
+        next: null,
+        previous: null,
+        href: '',
+      });
+    }),
+  );
+}
+
+export function mockRecentlyPlayed(tracks: TrackFixture[]): void {
+  mswServer.use(
+    http.get('https://api.spotify.com/v1/me/player/recently-played', () =>
+      HttpResponse.json({
+        items: tracks.map((t) => ({ track: trackJson(t), played_at: new Date().toISOString() })),
+        next: null,
+        cursors: { after: '', before: '' },
+        limit: 50,
+        href: '',
+      }),
+    ),
+  );
+}
+
+export function mockSavedTracks(tracks: TrackFixture[]): void {
+  mswServer.use(
+    http.get('https://api.spotify.com/v1/me/tracks', ({ request }) => {
+      const url = new URL(request.url);
+      const limit = Number(url.searchParams.get('limit') ?? 5);
+      const offset = Number(url.searchParams.get('offset') ?? 0);
+      const slice = tracks.slice(offset, offset + limit);
+      return HttpResponse.json({
+        items: slice.map((t) => ({ track: trackJson(t), added_at: new Date().toISOString() })),
+        total: tracks.length,
+        limit,
+        offset,
+        next: null,
+        previous: null,
+        href: '',
+      });
+    }),
+  );
+}

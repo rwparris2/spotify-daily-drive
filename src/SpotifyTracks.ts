@@ -79,7 +79,7 @@ async function playlistTracks() {
   return _(results)
     .chain()
     .uniqBy((t) => t.id)
-    .sampleSize(10)
+    .sampleSize(20)
     .value();
 }
 
@@ -115,7 +115,7 @@ async function topTracks() {
   return _(allTopItems)
     .chain()
     .uniqBy((t) => t.id)
-    .sampleSize(10)
+    .sampleSize(20)
     .value();
 }
 
@@ -133,7 +133,7 @@ async function recentlyPlayedTracks() {
   return _(recentlyPlayedTracks)
     .chain()
     .uniqBy((t) => t.id)
-    .sampleSize(10)
+    .sampleSize(20)
     .value();
 }
 
@@ -164,13 +164,13 @@ async function savedTracks() {
   return _(results)
     .chain()
     .uniqBy((t) => t.id)
-    .sampleSize(10)
+    .sampleSize(20)
     .value();
 }
 
-export async function fetchSpotifyTracks() {
+export async function fetchSpotifyTracks(target = 60): Promise<Track[]> {
   const allAvailableTracks = (
     await Promise.all([playlistTracks(), topTracks(), recentlyPlayedTracks(), savedTracks()])
   ).flat();
-  return _.sampleSize(allAvailableTracks, 40);
+  return _(allAvailableTracks).chain().uniqBy((t) => t.id).sampleSize(target).value();
 }

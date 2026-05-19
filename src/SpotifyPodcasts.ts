@@ -5,6 +5,7 @@ import { spotifyClient } from './SpotifyClient.js';
 
 export type EpisodeCandidate = {
   show_id: string;
+  show_name: string;
   spotify_episode_id: string;
   title: string;
   release_date: string;
@@ -149,7 +150,7 @@ async function pickLatestEligible(
   freshnessMs: number,
   now: Date,
 ): Promise<EpisodeCandidate | undefined> {
-  const episodes = await fetchShowEpisodes(show.spotify_show_id, EPISODES_PER_SHOW);
+  const episodes = await fetchShowEpisodes(show, EPISODES_PER_SHOW);
   const cutoff = now.getTime() - freshnessMs;
   const eligible = episodes
     .filter((ep) => !ep.fully_played)
@@ -158,13 +159,14 @@ async function pickLatestEligible(
   return eligible[0];
 }
 
-async function fetchShowEpisodes(showId: string, limit: number): Promise<EpisodeCandidate[]> {
+async function fetchShowEpisodes(show: ShowConfig, limit: number): Promise<EpisodeCandidate[]> {
   const capped = Math.min(Math.max(limit, 1), 50) as MaxInt<50>;
-  const page = await spotifyClient.shows.episodes(showId, 'US', capped);
+  const page = await spotifyClient.shows.episodes(show.spotify_show_id, 'US', capped);
   return page.items
     .filter((ep): ep is NonNullable<typeof ep> => ep !== null)
     .map((ep) => ({
-      show_id: showId,
+      show_id: show.spotify_show_id,
+      show_name: show.name,
       spotify_episode_id: ep.id,
       title: ep.name,
       release_date: ep.release_date,

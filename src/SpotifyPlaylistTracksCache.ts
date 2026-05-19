@@ -2,7 +2,8 @@ import { readFile, writeFile, mkdir } from 'fs/promises';
 import { dirname } from 'path';
 import type { Track } from '@spotify/web-api-ts-sdk';
 
-const CACHE_PATH = '.cache/spotify-playlist-tracks.json';
+const CACHE_PATH =
+  process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH ?? '.cache/spotify-playlist-tracks.json';
 
 type CacheEntry = { snapshotId: string; tracks: Track[] };
 type CacheShape = Record<string, CacheEntry>;
