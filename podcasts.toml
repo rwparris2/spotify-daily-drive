@@ -1,4 +1,18 @@
 [[shows]]
+name = "Up First from NPR"
+spotify_show_id = "2mTUnDkuKUkhiueKcVWoP0"
+category = "news"
+itunes_categories = [ "News", "Daily News" ]
+pin_slot = 1
+
+[[shows]]
+name = "The Daily"
+spotify_show_id = "3IM0lmZxpFAY7CwMuv9H4g"
+category = "news"
+itunes_categories = [ "News", "Daily News" ]
+pin_slot = 2
+
+[[shows]]
 name = "30 for 30 Podcasts"
 spotify_show_id = "3nZo0GuEfiOMacTbOb2ESE"
 category = "other"
@@ -305,13 +319,6 @@ category = "other"
 itunes_categories = [ "Arts", "Education", "History" ]
 
 [[shows]]
-name = "The Daily"
-spotify_show_id = "3IM0lmZxpFAY7CwMuv9H4g"
-category = "news"
-itunes_categories = [ "News", "Daily News" ]
-pin_slot = 2
-
-[[shows]]
 name = "The Daily Stoic"
 spotify_show_id = "7fY99FB3bNyn7nEdXCoBeB"
 category = "other"
@@ -390,13 +397,6 @@ name = "Two's Complement"
 spotify_show_id = "52irDllU36Y3mOBbBIxyNd"
 category = "other"
 itunes_categories = [ "Technology", "Software Development" ]
-
-[[shows]]
-name = "Up First from NPR"
-spotify_show_id = "2mTUnDkuKUkhiueKcVWoP0"
-category = "news"
-itunes_categories = [ "News", "Daily News" ]
-pin_slot = 1
 
 [[shows]]
 name = "What to Carry, What to Burn"
