@@ -1,4 +1,4 @@
-import { Page, PlaylistedTrack, SimplifiedPlaylist, Track } from '@spotify/web-api-ts-sdk';
+import { Page, SimplifiedPlaylist, Track } from '@spotify/web-api-ts-sdk';
 import { spotifyClient } from './SpotifyClient.js';
 import { getCachedPlaylistTracks, setCachedPlaylistTracks } from './SpotifyPlaylistTracksCache.js';
 import { fetchListenBrainzRecommendations } from './ListenBrainz.js';
@@ -32,6 +32,8 @@ async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
   return results;
 }
 
+type PlaylistItemsPage = Page<{ item?: Track | null; track?: Track | null }>;
+
 async function fetchSongsFromPlayList(
   playlistId: string,
 ): Promise<{ tracks: Track[]; complete: boolean }> {
@@ -43,11 +45,13 @@ async function fetchSongsFromPlayList(
   let results: Track[] = [];
   while (hasNextPage) {
     try {
-      const page = await spotifyClient.makeRequest<Page<PlaylistedTrack<Track>>>(
+      const page = await spotifyClient.makeRequest<PlaylistItemsPage>(
         'GET',
         `playlists/${playlistId}/items?limit=${pageSize}&offset=${currentPage * pageSize}`,
       );
-      const pageTracks = page.items.map((x) => x.track).filter((t): t is Track => t != null);
+      const pageTracks = page.items
+        .map((x) => x.item ?? x.track)
+        .filter((t): t is Track => t != null);
       results = [...results, ...pageTracks];
       hasNextPage = !!page.next;
       currentPage += 1;
