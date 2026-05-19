@@ -23,6 +23,7 @@ const token = (await response.json()) as AccessToken;
 token.refresh_token ??= SPOTIFY_REFRESH_TOKEN;
 
 const rateLimitedFetch: typeof fetch = async (input, init) => {
+  const url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
   const maxAttempts = 5;
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     const res = await fetch(input, init);
@@ -31,15 +32,17 @@ const rateLimitedFetch: typeof fetch = async (input, init) => {
     const retryAfter = Number(res.headers.get('retry-after') ?? 1);
     if (retryAfter > 60) {
       throw new Error(
-        `Spotify Retry-After=${retryAfter}s (~${Math.round(retryAfter / 60)}min). ` +
+        `Spotify 429 on ${url}: Retry-After=${retryAfter}s (~${Math.round(retryAfter / 60)}min). ` +
           `Hard rate-limit — wait it out before re-running.`,
       );
     }
     if (attempt === maxAttempts) {
-      console.warn(`429 received after ${maxAttempts} attempts; giving up`);
+      console.warn(`429 on ${url} after ${maxAttempts} attempts; giving up`);
       return res;
     }
-    console.warn(`429 received — backing off ${retryAfter}s (attempt ${attempt}/${maxAttempts})`);
+    console.warn(
+      `429 on ${url} — backing off ${retryAfter}s (attempt ${attempt}/${maxAttempts})`,
+    );
     await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000));
   }
   return fetch(input, init);

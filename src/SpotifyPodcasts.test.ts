@@ -1,5 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { mockShowEpisodes, mockShowEpisodesEmpty } from './__tests__/mswServer.js';
+import {
+  mockShowEpisodes,
+  mockShowEpisodesEmpty,
+  mockShowEpisodesError,
+} from './__tests__/mswServer.js';
 import type { PodcastConfig } from './PodcastConfig.js';
 import { selectPodcastSlots } from './SpotifyPodcasts.js';
 
@@ -125,6 +129,30 @@ describe('selectPodcastSlots', () => {
 
     expect(episodes[0]?.show_id).toBe('upfirst');
     expect(episodes[0]?.spotify_episode_id).toBe('upfirst_ep_older');
+  });
+
+  it('records fetch_failed and continues when a show fetch errors out', async () => {
+    mockShowEpisodes('upfirst', [ep('upfirst', '2026-05-18')]);
+    mockShowEpisodes('thedaily', [ep('thedaily', '2026-05-18')]);
+    mockShowEpisodesError('otherA');
+    mockShowEpisodes('otherB', [ep('otherB', '2026-05-15')]);
+    mockShowEpisodes('otherC', [ep('otherC', '2026-05-15')]);
+    mockShowEpisodes('otherD', [ep('otherD', '2026-05-15')]);
+    mockShowEpisodes('otherE', [ep('otherE', '2026-05-15')]);
+    mockShowEpisodes('otherF', [ep('otherF', '2026-05-15')]);
+
+    const { episodes, skipped } = await selectPodcastSlots(baseConfig, {
+      numberOfPodcasts: 7,
+      now: NOW,
+      shuffle: (items) => [...items],
+    });
+
+    expect(episodes).toHaveLength(7);
+    expect(episodes.map((e) => e.show_id)).not.toContain('otherA');
+    expect(skipped).toContainEqual({
+      show_name: 'Other A',
+      reason: 'fetch_failed',
+    });
   });
 
   it('fills all slots from the other pool when both pinned news shows are dry', async () => {

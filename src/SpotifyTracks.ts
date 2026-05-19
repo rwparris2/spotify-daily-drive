@@ -1,10 +1,8 @@
 import { Page, PlaylistedTrack, SimplifiedPlaylist, Track } from '@spotify/web-api-ts-sdk';
 import { spotifyClient } from './SpotifyClient.js';
-import {
-  getCachedPlaylistTracks,
-  setCachedPlaylistTracks,
-} from './SpotifyPlaylistTracksCache.js';
+import { getCachedPlaylistTracks, setCachedPlaylistTracks } from './SpotifyPlaylistTracksCache.js';
 import _ from 'lodash';
+import { SPOTIFY_PLAYLIST_ID } from './config.js';
 
 async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
   const pageSize = 50;
@@ -26,6 +24,9 @@ async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
       hasNextPage = false;
     }
   }
+
+  // remove the target playlist from the list of playlists to pull songs from, to avoid duplicates and stale data
+  results = results.filter((p) => p.id != SPOTIFY_PLAYLIST_ID);
 
   return results;
 }
@@ -172,5 +173,10 @@ export async function fetchSpotifyTracks(target = 60): Promise<Track[]> {
   const allAvailableTracks = (
     await Promise.all([playlistTracks(), topTracks(), recentlyPlayedTracks(), savedTracks()])
   ).flat();
-  return _(allAvailableTracks).chain().uniqBy((t) => t.id).sampleSize(target).value();
+  return _(allAvailableTracks)
+    .chain()
+    .uniqBy((t) => t.id)
+    .shuffle()
+    .sampleSize(target)
+    .value();
 }

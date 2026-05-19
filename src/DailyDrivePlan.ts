@@ -22,6 +22,18 @@ export function songsNeeded(numberOfPodcasts: number): number {
   return ((numberOfPodcasts + 1) * (numberOfPodcasts + 2)) / 2 - 1;
 }
 
+export function largestViableN(
+  numEpisodes: number,
+  numTracks: number,
+  cap: number,
+): number {
+  let n = 0;
+  while (n + 1 <= numEpisodes && n + 1 <= cap && songsNeeded(n + 1) <= numTracks) {
+    n++;
+  }
+  return n;
+}
+
 export function assemblePlan(
   episodes: EpisodeCandidate[],
   tracks: Track[],

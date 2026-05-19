@@ -22,6 +22,7 @@ export type ShowConfig = PodcastConfig['shows'][number];
 export type SkipReason =
   | 'show_not_in_config'
   | 'no_fresh_unplayed_episode'
+  | 'fetch_failed'
   | 'pool_exhausted';
 
 export type SkipLog = {
@@ -61,9 +62,9 @@ export async function selectPodcastSlots(
     while (otherCursor < otherPool.length) {
       const show = otherPool[otherCursor++]!;
       if (used.has(show.spotify_show_id)) continue;
-      const pick = await pickLatestEligible(show, OTHER_FRESHNESS_MS, now);
-      if (pick) return pick;
-      skipped.push({ show_name: show.name, reason: 'no_fresh_unplayed_episode' });
+      const result = await pickLatestEligible(show, OTHER_FRESHNESS_MS, now);
+      if (result.episode) return result.episode;
+      skipped.push({ show_name: show.name, reason: result.reason ?? 'no_fresh_unplayed_episode' });
     }
     return undefined;
   };
@@ -78,9 +79,10 @@ export async function selectPodcastSlots(
       if (primary) {
         primaryName = primary.name;
         if (!used.has(primary.spotify_show_id)) {
-          pick = await pickLatestEligible(primary, NEWS_FRESHNESS_MS, now);
+          const result = await pickLatestEligible(primary, NEWS_FRESHNESS_MS, now);
+          pick = result.episode;
+          reason = result.reason;
         }
-        if (!pick) reason = 'no_fresh_unplayed_episode';
       } else {
         reason = 'show_not_in_config';
       }
@@ -106,18 +108,27 @@ function findByPinSlot(config: PodcastConfig, slot: number): ShowConfig | undefi
   return config.shows.find((s) => s.pin_slot === slot);
 }
 
+type PickResult = { episode?: EpisodeCandidate; reason?: SkipReason };
+
 async function pickLatestEligible(
   show: ShowConfig,
   freshnessMs: number,
   now: Date,
-): Promise<EpisodeCandidate | undefined> {
-  const episodes = await fetchShowEpisodes(show, EPISODES_PER_SHOW);
+): Promise<PickResult> {
+  let episodes: EpisodeCandidate[];
+  try {
+    episodes = await fetchShowEpisodes(show, EPISODES_PER_SHOW);
+  } catch (e) {
+    console.error(`Failed to fetch episodes for "${show.name}":`, (e as Error).message);
+    return { reason: 'fetch_failed' };
+  }
   const cutoff = now.getTime() - freshnessMs;
   const eligible = episodes
     .filter((ep) => !ep.fully_played)
     .filter((ep) => Date.parse(ep.release_date) >= cutoff)
     .sort((a, b) => Date.parse(b.release_date) - Date.parse(a.release_date));
-  return eligible[0];
+  const pick = eligible[0];
+  return pick ? { episode: pick } : { reason: 'no_fresh_unplayed_episode' };
 }
 
 async function fetchShowEpisodes(show: ShowConfig, limit: number): Promise<EpisodeCandidate[]> {

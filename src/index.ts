@@ -1,5 +1,5 @@
 import { SPOTIFY_PLAYLIST_ID } from './config.js';
-import { assemblePlan, songsNeeded } from './DailyDrivePlan.js';
+import { assemblePlan, largestViableN, songsNeeded } from './DailyDrivePlan.js';
 import type { PlanItem } from './DailyDrivePlan.js';
 import { loadPodcastConfig } from './PodcastConfig.js';
 import { replacePlaylist } from './SpotifyPlaylist.js';
@@ -17,8 +17,24 @@ const [podcastResult, tracks] = await Promise.all([
   fetchSpotifyTracks(songsNeeded(NUMBER_OF_PODCASTS) + 16),
 ]);
 
-const plan = assemblePlan(podcastResult.episodes, tracks, {
-  numberOfPodcasts: NUMBER_OF_PODCASTS,
+const effectiveN = largestViableN(podcastResult.episodes.length, tracks.length, NUMBER_OF_PODCASTS);
+
+if (effectiveN === 0) {
+  console.error(
+    `Cannot assemble a playlist: have ${podcastResult.episodes.length} podcasts, ${tracks.length} songs.`,
+  );
+  process.exit(1);
+}
+
+if (effectiveN < NUMBER_OF_PODCASTS) {
+  console.warn(
+    `Scaling N from ${NUMBER_OF_PODCASTS} down to ${effectiveN} ` +
+      `(have ${podcastResult.episodes.length} podcasts, ${tracks.length} songs).`,
+  );
+}
+
+const plan = assemblePlan(podcastResult.episodes.slice(0, effectiveN), tracks, {
+  numberOfPodcasts: effectiveN,
   dryRun,
 });
 

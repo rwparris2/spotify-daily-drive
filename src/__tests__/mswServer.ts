@@ -46,6 +46,17 @@ export function mockShowEpisodesEmpty(showId: string): void {
   mockShowEpisodes(showId, []);
 }
 
+export function mockShowEpisodesError(showId: string, status = 429, retryAfterSeconds = 3600): void {
+  mswServer.use(
+    http.get(`https://api.spotify.com/v1/shows/${showId}/episodes`, () =>
+      new HttpResponse('rate limited', {
+        status,
+        headers: { 'retry-after': String(retryAfterSeconds) },
+      }),
+    ),
+  );
+}
+
 export type TrackFixture = {
   id: string;
   name?: string;

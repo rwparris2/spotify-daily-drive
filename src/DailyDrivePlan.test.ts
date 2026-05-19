@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
   assemblePlan,
   InsufficientCandidatesError,
+  largestViableN,
   songsNeeded,
 } from './DailyDrivePlan.js';
 import type { EpisodeCandidate } from './SpotifyPodcasts.js';
@@ -27,6 +28,27 @@ describe('songsNeeded', () => {
     expect(songsNeeded(5)).toBe(20);
     expect(songsNeeded(8)).toBe(44);
     expect(songsNeeded(1)).toBe(2);
+  });
+});
+
+describe('largestViableN', () => {
+  it('returns the cap when both inputs are sufficient', () => {
+    expect(largestViableN(8, 44, 8)).toBe(8);
+    expect(largestViableN(20, 200, 8)).toBe(8);
+  });
+
+  it('scales down when episodes are short', () => {
+    expect(largestViableN(5, 200, 8)).toBe(5);
+  });
+
+  it('scales down when tracks are short', () => {
+    expect(largestViableN(8, 20, 8)).toBe(5);
+    expect(largestViableN(8, 19, 8)).toBe(4);
+  });
+
+  it('returns 0 when nothing is viable', () => {
+    expect(largestViableN(0, 100, 8)).toBe(0);
+    expect(largestViableN(8, 1, 8)).toBe(0);
   });
 });
 
