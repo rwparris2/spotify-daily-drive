@@ -29,6 +29,9 @@ async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
   // remove the target playlist from the list of playlists to pull songs from, to avoid duplicates and stale data
   results = results.filter((p) => p.id != SPOTIFY_PLAYLIST_ID);
 
+  // Spotify-owned playlists (Daily Mix, Discover Weekly, etc.) reject /items for third-party apps since Nov 2024
+  results = results.filter((p) => p.owner?.id !== 'spotify');
+
   return results;
 }
 
