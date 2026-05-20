@@ -3,15 +3,17 @@ import { spotifyClient } from './SpotifyClient.js';
 
 const LB_BASE = 'https://api.listenbrainz.org';
 
+type MusicBrainzId = string;
+
 type ValidateTokenResponse = { valid: boolean; user_name?: string };
 type RecommendationsResponse = {
-  payload?: { mbids?: { recording_mbid: string; score: number }[] };
+  payload?: { mbids?: { recording_mbid: MusicBrainzId; score: number }[] };
 };
 type RecordingMetadata = {
   recording?: { name?: string };
   artist?: { name?: string };
 };
-type MetadataResponse = Record<string, RecordingMetadata | undefined>;
+type MetadataResponse = Record<MusicBrainzId, RecordingMetadata | undefined>;
 
 export async function fetchListenBrainzRecommendations(options: {
   numberOfTracks: number;
@@ -25,15 +27,15 @@ export async function fetchListenBrainzRecommendations(options: {
   const username = await validateListenBrainzToken(token);
   if (!username) return [];
 
-  const mbids = await fetchRecommendationMbids(username, options.numberOfTracks * 3);
-  if (mbids.length === 0) return [];
+  const musicBrainzIds = await fetchRecommendations(username, options.numberOfTracks * 3);
+  if (musicBrainzIds.length === 0) return [];
 
-  const metadata = await fetchRecordingMetadata(mbids);
+  const metadata = await fetchRecordingMetadata(musicBrainzIds);
 
   const tracks: Track[] = [];
-  for (const mbid of mbids) {
+  for (const musicBrainzId of musicBrainzIds) {
     if (tracks.length >= options.numberOfTracks) break;
-    const meta = metadata[mbid];
+    const meta = metadata[musicBrainzId];
     const artistName = meta?.artist?.name;
     const trackName = meta?.recording?.name;
     if (!artistName || !trackName) continue;
@@ -65,7 +67,7 @@ async function validateListenBrainzToken(token: string): Promise<string | undefi
   }
 }
 
-async function fetchRecommendationMbids(username: string, count: number): Promise<string[]> {
+async function fetchRecommendations(username: string, count: number): Promise<MusicBrainzId[]> {
   try {
     const res = await fetch(
       `${LB_BASE}/1/cf/recommendation/user/${encodeURIComponent(username)}/recording?count=${count}`,
@@ -83,21 +85,23 @@ async function fetchRecommendationMbids(username: string, count: number): Promis
       return [];
     }
     const data = JSON.parse(text) as RecommendationsResponse;
-    const mbids = data.payload?.mbids?.map((m) => m.recording_mbid) ?? [];
-    if (mbids.length === 0) {
+    const musicBrainzIds = data.payload?.mbids?.map((m) => m.recording_mbid) ?? [];
+    if (musicBrainzIds.length === 0) {
       console.warn(`ListenBrainz returned no recommendations for "${username}".`);
     }
-    return mbids;
+    return musicBrainzIds;
   } catch (e) {
     console.error('ListenBrainz recommendations error:', (e as Error).message);
     return [];
   }
 }
 
-async function fetchRecordingMetadata(mbids: string[]): Promise<MetadataResponse> {
+async function fetchRecordingMetadata(
+  musicBrainzIds: MusicBrainzId[],
+): Promise<MetadataResponse> {
   try {
     const res = await fetch(
-      `${LB_BASE}/1/metadata/recording?recording_mbids=${mbids.join(',')}&inc=artist`,
+      `${LB_BASE}/1/metadata/recording?recording_mbids=${musicBrainzIds.join(',')}&inc=artist`,
     );
     if (!res.ok) {
       console.error(`ListenBrainz metadata failed: ${res.status}`);
