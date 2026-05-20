@@ -2,7 +2,6 @@ import 'dotenv/config';
 import { createServer } from 'http';
 import { execFile } from 'child_process';
 import { randomBytes } from 'crypto';
-import { spotifyClient } from './SpotifyClient.js';
 
 const SCOPES = [
   'playlist-modify-private',
