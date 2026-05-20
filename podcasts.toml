@@ -5,9 +5,15 @@ pin_slot = 1
 latest_only = true
 
 [[shows]]
+name = "BirdNote Daily"
+spotify_show_id = "6jQh9jTz81rZzv7WwrtiAi"
+pin_slot = 2
+latest_only = true
+
+[[shows]]
 name = "The Daily"
 spotify_show_id = "3IM0lmZxpFAY7CwMuv9H4g"
-pin_slot = 2
+pin_slot = 3
 latest_only = true
 
 [[shows]]
