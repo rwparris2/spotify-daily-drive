@@ -31,6 +31,8 @@ export async function replacePlaylist(
     );
     process.exit(1);
   }
+  // Spotify caps uris at 100 per request: PUT replaces existing items (used once for the first
+  // chunk), subsequent chunks must be POSTed to append.
   const [first, ...rest] = _.chunk(uris, 100);
   try {
     await spotifyClient.makeRequest('PUT', `playlists/${playlistId}/items`, { uris: first ?? [] });

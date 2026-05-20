@@ -21,6 +21,8 @@ if (!response.ok) {
 }
 
 const token = (await response.json()) as AccessToken;
+// Spotify omits refresh_token from refresh responses when the existing token is still valid;
+// carry the old one forward so subsequent runs still have something to refresh with.
 token.refresh_token ??= SPOTIFY_REFRESH_TOKEN;
 
 export const rateLimitedFetch: typeof fetch = async (input, init) => {
@@ -32,6 +34,9 @@ export const rateLimitedFetch: typeof fetch = async (input, init) => {
 
     const retryAfterRaw = Number(res.headers.get('retry-after'));
     const retryAfter = Number.isFinite(retryAfterRaw) && retryAfterRaw >= 0 ? retryAfterRaw : 1;
+    // 60s threshold: shorter pauses are typical bursty-traffic throttling and worth waiting out.
+    // Longer Retry-After values usually indicate the daily quota cap — sleeping through that would
+    // hold the cron job for hours, so fail fast and let the next scheduled run pick it up instead.
     if (retryAfter > 60) {
       throw new Error(
         `Spotify 429 on ${url}: Retry-After=${retryAfter}s (~${Math.round(retryAfter / 60)}min). ` +

@@ -68,6 +68,8 @@ async function pickLatestEligibleEpisode(
     .sort((a, b) => Date.parse(b.release_date) - Date.parse(a.release_date));
 
   if (show.latest_only) {
+    // latest_only shows (like the news) are pointless once stale —
+    // if today's episode is already played, surface nothing rather than backfill an older one.
     const newest = playable[0];
     if (!newest || (newest.resume_point?.fully_played ?? false)) return undefined;
     return newest;
