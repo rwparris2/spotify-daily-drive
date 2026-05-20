@@ -63,7 +63,7 @@ async function pickLatestEligibleEpisode(
     return undefined;
   }
   const playable = episodes
-    .filter((ep) => ep.is_playable)
+    .filter((ep): ep is SimplifiedEpisode => ep != null && ep.is_playable)
     .sort((a, b) => Date.parse(b.release_date) - Date.parse(a.release_date));
 
   if (show.latest_only) {
