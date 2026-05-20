@@ -55,7 +55,7 @@ async function fetchSongsFromPlayList(
       );
       const pageTracks = page.items
         .map((x) => x.item ?? x.track)
-        .filter((t): t is Track => t != null);
+        .filter((t): t is Track => t != null && t.type === 'track');
       results = [...results, ...pageTracks];
       hasNextPage = !!page.next;
       currentPage += 1;
