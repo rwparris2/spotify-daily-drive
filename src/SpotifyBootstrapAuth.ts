@@ -39,89 +39,104 @@ authUrl.searchParams.set('state', state);
 authUrl.searchParams.set('show_dialog', 'true');
 
 const server = createServer(async (req, res) => {
-  if (!req.url) return;
-  const url = new URL(req.url, redirectUri);
-  if (url.pathname !== callbackPath) {
-    res.writeHead(404).end('Not found');
-    return;
-  }
+  try {
+    if (!req.url) return;
+    const url = new URL(req.url, redirectUri);
+    if (url.pathname !== callbackPath) {
+      res.writeHead(404).end('Not found');
+      return;
+    }
 
-  const code = url.searchParams.get('code');
-  const returnedState = url.searchParams.get('state');
-  const error = url.searchParams.get('error');
+    const code = url.searchParams.get('code');
+    const returnedState = url.searchParams.get('state');
+    const error = url.searchParams.get('error');
 
-  if (error) {
-    res.writeHead(400).end(`Auth error: ${error}`);
-    console.error(`Authorization failed: ${error}`);
-    server.close();
-    process.exit(1);
-  }
+    if (error) {
+      res.writeHead(400).end(`Auth error: ${error}`);
+      console.error(`Authorization failed: ${error}`);
+      server.close();
+      process.exit(1);
+    }
 
-  if (returnedState !== state) {
-    res.writeHead(400).end('State mismatch');
-    console.error('State mismatch — possible CSRF attempt');
-    server.close();
-    process.exit(1);
-  }
+    if (returnedState !== state) {
+      res.writeHead(400).end('State mismatch');
+      console.error('State mismatch — possible CSRF attempt');
+      server.close();
+      process.exit(1);
+    }
 
-  if (!code) {
-    res.writeHead(400).end('Missing code');
-    server.close();
-    process.exit(1);
-  }
+    if (!code) {
+      res.writeHead(400).end('Missing code');
+      console.error('Authorization callback missing "code" query param');
+      server.close();
+      process.exit(1);
+    }
 
-  const basic = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
-  const tokenRes = await fetch('https://accounts.spotify.com/api/token', {
-    method: 'POST',
-    headers: {
-      Authorization: `Basic ${basic}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: new URLSearchParams({
-      grant_type: 'authorization_code',
-      code,
-      redirect_uri: redirectUri,
-    }),
-  });
+    const basic = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
+    const tokenRes = await fetch('https://accounts.spotify.com/api/token', {
+      method: 'POST',
+      headers: {
+        Authorization: `Basic ${basic}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams({
+        grant_type: 'authorization_code',
+        code,
+        redirect_uri: redirectUri,
+      }),
+    });
 
-  if (!tokenRes.ok) {
-    const body = await tokenRes.text();
-    res.writeHead(500).end(`Token exchange failed: ${body}`);
-    console.error(`Token exchange failed: ${tokenRes.status} ${body}`);
-    server.close();
-    process.exit(1);
-  }
+    if (!tokenRes.ok) {
+      const body = await tokenRes.text();
+      res.writeHead(500).end(`Token exchange failed: ${body}`);
+      console.error(`Token exchange failed: ${tokenRes.status} ${body}`);
+      server.close();
+      process.exit(1);
+    }
 
-  const token = (await tokenRes.json()) as {
-    access_token: string;
-    refresh_token: string;
-    scope: string;
-    expires_in: number;
-  };
+    const token = (await tokenRes.json()) as {
+      access_token: string;
+      refresh_token: string;
+      scope: string;
+      expires_in: number;
+    };
 
-  res
-    .writeHead(200, { 'Content-Type': 'text/html' })
-    .end('<h1>Authorized</h1><p>You can close this window and return to the terminal.</p>');
+    res
+      .writeHead(200, { 'Content-Type': 'text/html' })
+      .end('<h1>Authorized</h1><p>You can close this window and return to the terminal.</p>');
 
-  console.log('\n=== Spotify Refresh Token ===\n');
-  console.log(token.refresh_token);
-  console.log('\nGranted scopes:', token.scope);
-  console.log('\nAdd this line to your .env (replacing any existing SPOTIFY_REFRESH_TOKEN):\n');
-  console.log(`SPOTIFY_REFRESH_TOKEN=${token.refresh_token}\n`);
+    console.log('\n=== Spotify Refresh Token ===\n');
+    console.log(token.refresh_token);
+    console.log('\nGranted scopes:', token.scope);
+    console.log('\nAdd this line to your .env (replacing any existing SPOTIFY_REFRESH_TOKEN):\n');
+    console.log(`SPOTIFY_REFRESH_TOKEN=${token.refresh_token}\n`);
 
-  if (!existingPlaylistId) {
-    const playlistId = await createDailyDrivePlaylist(token.access_token);
-    if (playlistId) {
+    if (!existingPlaylistId) {
+      const playlistId = await createDailyDrivePlaylist(token.access_token);
+      if (!playlistId) {
+        console.error(
+          'Playlist creation failed — bootstrap is incomplete. Re-run bootstrap-auth after resolving the upstream error.',
+        );
+        server.close();
+        process.exit(1);
+      }
       console.log('\n=== Spotify Playlist ===\n');
       console.log(`Created public playlist "Daily Drive" → ${playlistId}`);
       console.log('\nAdd this line to your .env:\n');
       console.log(`SPOTIFY_PLAYLIST_ID=${playlistId}\n`);
+    } else {
+      console.log(`(SPOTIFY_PLAYLIST_ID already set: ${existingPlaylistId} — leaving it alone.)\n`);
     }
-  } else {
-    console.log(`(SPOTIFY_PLAYLIST_ID already set: ${existingPlaylistId} — leaving it alone.)\n`);
-  }
 
-  server.close();
+    server.close();
+  } catch (e) {
+    console.error('Bootstrap auth handler failed:', e);
+    if (!res.headersSent) {
+      res.writeHead(500).end(`Internal error: ${(e as Error).message}`);
+    }
+    server.close();
+    process.exit(1);
+  }
 });
 
 async function createDailyDrivePlaylist(accessToken: string): Promise<string | undefined> {
