@@ -97,22 +97,28 @@ async function fetchRecommendations(username: string, count: number): Promise<Mu
   }
 }
 
+const LB_METADATA_CHUNK_SIZE = 25;
+
 async function fetchRecordingMetadata(
   musicBrainzIds: MusicBrainzId[],
 ): Promise<MetadataResponse> {
-  try {
-    const res = await fetch(
-      `${LB_BASE}/1/metadata/recording?recording_mbids=${musicBrainzIds.join(',')}&inc=artist`,
-    );
-    if (!res.ok) {
-      console.error(`ListenBrainz metadata failed: ${res.status}`);
-      return {};
+  const merged: MetadataResponse = {};
+  for (let i = 0; i < musicBrainzIds.length; i += LB_METADATA_CHUNK_SIZE) {
+    const chunk = musicBrainzIds.slice(i, i + LB_METADATA_CHUNK_SIZE);
+    try {
+      const res = await fetch(
+        `${LB_BASE}/1/metadata/recording?recording_mbids=${chunk.join(',')}&inc=artist`,
+      );
+      if (!res.ok) {
+        console.error(`ListenBrainz metadata failed: ${res.status}`);
+        continue;
+      }
+      Object.assign(merged, (await res.json()) as MetadataResponse);
+    } catch (e) {
+      console.error('ListenBrainz metadata error:', (e as Error).message);
     }
-    return (await res.json()) as MetadataResponse;
-  } catch (e) {
-    console.error('ListenBrainz metadata error:', (e as Error).message);
-    return {};
   }
+  return merged;
 }
 
 async function searchSpotifyTrack(
