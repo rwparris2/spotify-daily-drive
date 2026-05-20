@@ -81,7 +81,7 @@ async function playlistTracks(options: { numberOfTracks: number }): Promise<Sour
     const cached = await getCachedPlaylistTracks(p.id, p.snapshot_id);
     if (cached) {
       console.log(`Cache hit for ${p.name} (${cached.length} tracks)`);
-      results = [...results, ...cached.map((track) => ({ track, source }))];
+      results = [...results, ...cached.map((track): SourcedTrack => ({ kind: 'track', track, source }))];
       continue;
     }
     const { tracks, complete } = await fetchSongsFromPlayList(p.id);
@@ -95,7 +95,7 @@ async function playlistTracks(options: { numberOfTracks: number }): Promise<Sour
         );
       }
     }
-    results = [...results, ...tracks.map((track) => ({ track, source }))];
+    results = [...results, ...tracks.map((track): SourcedTrack => ({ kind: 'track', track, source }))];
   }
   return _(results)
     .chain()
@@ -111,7 +111,7 @@ async function topTracks(options: { numberOfTracks: number }): Promise<SourcedTr
     try {
       const page = await spotifyClient.currentUser.topItems('tracks', term, 50);
       for (const track of page.items) {
-        allTopItems.push({ track, source: `top track - ${term}` });
+        allTopItems.push({ kind: 'track', track, source: `top track - ${term}` });
       }
     } catch (e) {
       console.error(`Error fetching topTracks ${term}`, e);
@@ -141,7 +141,7 @@ async function recentlyPlayedTracks(options: {
   return _(tracks)
     .chain()
     .uniqBy((t) => t.id)
-    .map((track): SourcedTrack => ({ track, source: 'recently listened' }))
+    .map((track): SourcedTrack => ({ kind: 'track', track, source: 'recently listened' }))
     .sampleSize(options.numberOfTracks)
     .value();
 }
@@ -173,7 +173,7 @@ async function savedTracks(options: { numberOfTracks: number }): Promise<Sourced
   return _(results)
     .chain()
     .uniqBy((t) => t.id)
-    .map((track): SourcedTrack => ({ track, source: 'saved track' }))
+    .map((track): SourcedTrack => ({ kind: 'track', track, source: 'saved track' }))
     .sampleSize(options.numberOfTracks)
     .value();
 }

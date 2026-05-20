@@ -42,13 +42,17 @@ for (let i = 0; i < podcasts.length; i++) {
 console.log(`Playlist assembled with ${playlist.length} items`);
 playlist.forEach((item, i) => {
   const n = String(i + 1).padStart(2, ' ');
-  if ('episode' in item) {
-    console.log(
-      `${n}. 🎙  ${item.episode.name}  [${item.episode.release_date}]  (${item.source})`,
-    );
-  } else {
-    const artists = item.track.artists.map((a) => a.name).join(', ');
-    console.log(`${n}. 🎵  ${artists} — ${item.track.name}  (${item.source})`);
+  switch (item.kind) {
+    case 'episode':
+      console.log(
+        `${n}. 🎙  ${item.episode.name}  [${item.episode.release_date}]  (${item.source})`,
+      );
+      break;
+    case 'track': {
+      const artists = item.track.artists.map((a) => a.name).join(', ');
+      console.log(`${n}. 🎵  ${artists} — ${item.track.name}  (${item.source})`);
+      break;
+    }
   }
 });
 

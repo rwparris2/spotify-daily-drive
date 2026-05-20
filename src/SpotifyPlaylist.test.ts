@@ -7,6 +7,7 @@ import { playlistDescription, playlistToUris, replacePlaylist } from './SpotifyP
 
 function ep(id: string): DailyDrivePlaylistItem {
   return {
+    kind: 'episode',
     episode: {
       id,
       name: `Episode ${id}`,
@@ -18,6 +19,7 @@ function ep(id: string): DailyDrivePlaylistItem {
 
 function tr(id: string): DailyDrivePlaylistItem {
   return {
+    kind: 'track',
     track: { id, name: `Track ${id}`, uri: `spotify:track:${id}` } as unknown as Track,
     source: 'top track - short_term',
   };

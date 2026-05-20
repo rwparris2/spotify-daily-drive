@@ -45,7 +45,7 @@ export const fetchSpotifyPodcasts = async (opts: {
   for (let slot = 1; slot <= opts.numberOfPodcasts; slot++) {
     const pinned = await tryPick((s) => s.pin_slot === slot);
     const episode = pinned ?? (await tryPick((s) => s.pin_slot === undefined));
-    if (episode) selected.push({ episode, source: 'podcasts.toml' });
+    if (episode) selected.push({ kind: 'episode', episode, source: 'podcasts.toml' });
   }
 
   return selected;

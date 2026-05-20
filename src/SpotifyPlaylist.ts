@@ -2,20 +2,15 @@ import _ from 'lodash';
 import { spotifyClient } from './SpotifyClient.js';
 import { DailyDrivePlaylistItem } from './DailyDrivePlaylistItem.js';
 
-function isNotUndefined<T>(input: T | undefined): input is T {
-  return input !== undefined;
-}
-
 export function playlistToUris(playlist: DailyDrivePlaylistItem[]): string[] {
-  return playlist
-    .map((it) => {
-      if ('episode' in it) {
+  return playlist.map((it) => {
+    switch (it.kind) {
+      case 'episode':
         return `spotify:episode:${it.episode.id}`;
-      } else if ('track' in it) {
+      case 'track':
         return `spotify:track:${it.track.id}`;
-      }
-    })
-    .filter(isNotUndefined);
+    }
+  });
 }
 
 export function playlistDescription(): string {

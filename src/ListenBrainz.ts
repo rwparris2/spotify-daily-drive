@@ -41,7 +41,7 @@ export async function fetchListenBrainzRecommendations(options: {
     const trackName = meta?.recording?.name;
     if (!artistName || !trackName) continue;
     const hit = await searchSpotifyTrack(artistName, trackName);
-    if (hit) tracks.push({ track: hit, source: 'listenbrainz suggestion' });
+    if (hit) tracks.push({ kind: 'track', track: hit, source: 'listenbrainz suggestion' });
   }
 
   return tracks;
