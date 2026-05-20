@@ -35,6 +35,15 @@ for (let i = 0; i < podcasts.length; i++) {
 }
 
 console.log(`Playlist assembled with ${playlist.length} items`);
+playlist.forEach((item, i) => {
+  const n = String(i + 1).padStart(2, ' ');
+  if ('episode' in item) {
+    console.log(`${n}. 🎙  ${item.episode.name}  [${item.episode.release_date}]`);
+  } else {
+    const artists = item.track.artists.map((a) => a.name).join(', ');
+    console.log(`${n}. 🎵  ${artists} — ${item.track.name}`);
+  }
+});
 
 if (dryRun) {
   console.log('\nDRY RUN — no Spotify changes.');
