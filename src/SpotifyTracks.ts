@@ -30,9 +30,10 @@ async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
   // Excluding the target playlist prevents yesterday's Daily Drive from seeding today's.
   results = results.filter((p) => p.id != SPOTIFY_PLAYLIST_ID);
 
-  // Spotify-owned algorithmic playlists (Daily Mix, Discover Weekly, etc.) return 404 on
-  // /playlists/{id}/items for third-party apps; filtering by owner avoids one error per playlist.
-  results = results.filter((p) => p.owner?.id !== 'spotify');
+  // Since Nov 2024 Spotify restricts /playlists/{id}/items to playlists owned by the
+  // authenticated user; followed playlists (artists, labels, other users) 403.
+  const me = await spotifyClient.currentUser.profile();
+  results = results.filter((p) => p.owner?.id === me.id);
 
   return results;
 }
@@ -40,7 +41,7 @@ async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
 type PlaylistItemsPage = Page<{ item?: Track | null; track?: Track | null }>;
 
 async function fetchSongsFromPlayList(
-  playlistId: string,
+  playlist: SimplifiedPlaylist,
 ): Promise<{ tracks: Track[]; complete: boolean }> {
   const pageSize = 50;
   let currentPage = 0;
@@ -52,7 +53,7 @@ async function fetchSongsFromPlayList(
     try {
       const page = await spotifyClient.makeRequest<PlaylistItemsPage>(
         'GET',
-        `playlists/${playlistId}/items?limit=${pageSize}&offset=${currentPage * pageSize}`,
+        `playlists/${playlist.id}/items?limit=${pageSize}&offset=${currentPage * pageSize}`,
       );
       const pageTracks = page.items
         .map((x) => x.item ?? x.track)
@@ -61,7 +62,10 @@ async function fetchSongsFromPlayList(
       hasNextPage = !!page.next;
       currentPage += 1;
     } catch (e) {
-      console.error('Error fetching playlist songs', e);
+      console.error(
+        `Error fetching playlist songs from "${playlist.name}" (id=${playlist.id}, owner=${playlist.owner?.id})`,
+        e,
+      );
       hasNextPage = false;
       complete = false;
     }
@@ -85,7 +89,7 @@ async function playlistTracks(options: { numberOfTracks: number }): Promise<Sour
       results = [...results, ...cached.map((track): SourcedTrack => ({ kind: 'track', track, source }))];
       continue;
     }
-    const { tracks, complete } = await fetchSongsFromPlayList(p.id);
+    const { tracks, complete } = await fetchSongsFromPlayList(p);
     if (complete) {
       try {
         await setCachedPlaylistTracks(p.id, p.snapshot_id, tracks);
