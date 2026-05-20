@@ -30,9 +30,6 @@ export async function fetchListenBrainzRecommendations(options: {
 
   const metadata = await fetchRecordingMetadata(mbids);
 
-  console.log(mbids);
-  console.log(metadata);
-
   const tracks: Track[] = [];
   for (const mbid of mbids) {
     if (tracks.length >= options.numberOfTracks) break;

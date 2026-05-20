@@ -1,6 +1,6 @@
 # Daily Drive
 
-A CLI that rebuilds a single persistent Spotify playlist every morning by interleaving 8 podcast episodes with songs from your Spotify activity in an n+1 pattern (Pod, 2 songs, Pod, 3 songs, …, Pod, 9 songs) — 8 podcasts + 44 songs = 52 items, always ending on songs.
+A CLI that rebuilds a single persistent Spotify playlist by interleaving fresh podcast episodes with songs drawn from your Spotify activity. Each podcast is followed by a block of songs, with successive blocks growing in size so the playlist ends on a long song tail.
 
 ## Setup
 
@@ -16,6 +16,7 @@ A CLI that rebuilds a single persistent Spotify playlist every morning by interl
    SPOTIFY_PLAYLIST_ID=     # filled by bootstrap-auth (or paste an existing id)
    # SPOTIFY_REDIRECT_URI=http://127.0.0.1:8888/callback  # optional
    # PODCASTS_CONFIG_PATH=podcasts.toml                   # optional
+   # LISTENBRAINZ_USER_TOKEN=                             # optional; enables ListenBrainz recommendations
    ```
 
 3. **Bootstrap auth**:
@@ -23,7 +24,7 @@ A CLI that rebuilds a single persistent Spotify playlist every morning by interl
    npm install
    npm run bootstrap-auth
    ```
-   Opens Spotify's authorize screen. After approval, the script prints a `SPOTIFY_REFRESH_TOKEN` and — if `SPOTIFY_PLAYLIST_ID` isn't set — creates a public playlist named "Daily Drive" and prints its id. Paste both into `.env`.
+   Opens Spotify's authorize screen. After approval, the script prints a `SPOTIFY_REFRESH_TOKEN` and — if `SPOTIFY_PLAYLIST_ID` isn't set — creates a private playlist and prints its id. Paste both into `.env`.
 
    Re-run this if you change OAuth scopes.
 
@@ -36,6 +37,10 @@ npm start                # print the plan AND rewrite the playlist
 
 The dry run hits the read-side of the Spotify API (shows, episodes, your tracks) but never modifies the playlist.
 
+## Scheduled run
+
+[.github/workflows/daily-drive.yml](.github/workflows/daily-drive.yml) runs the CLI on a cron schedule and commits the refreshed playlist-tracks cache back to the repo. Required GitHub Actions secrets: `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, `SPOTIFY_PLAYLIST_ID`.
+
 ## `podcasts.toml`
 
 The source of truth for which shows are eligible. Hand-maintained.
@@ -44,21 +49,24 @@ The source of truth for which shows are eligible. Hand-maintained.
 [[shows]]
 name              = "Up First from NPR"      # required
 spotify_show_id   = "2mTUnDkuKUkhiueKcVWoP0" # required (from open.spotify.com/show/<id>)
-category          = "news"                   # "news" | "other", required
 itunes_categories = [ "News", "Daily News" ] # optional, informational
-pin_slot          = 1                        # optional; reserves a fixed slot (1 or 2)
+pin_slot          = 1                        # optional; reserves a fixed slot number
+latest_only       = true                     # optional; take newest playable episode, ignoring the freshness window
 ```
 
-- Slot 1 is pinned to whichever show has `pin_slot = 1` (currently Up First); slot 2 to `pin_slot = 2` (currently The Daily).
-- Slots 3-8 are sampled at random from shows with `category = "other"`.
-- If a pinned show has no fresh + unplayed episode (e.g. weekends for Up First), that slot is filled from the "other" pool instead.
+- Shows with a `pin_slot` are tried for that slot first; remaining slots are filled by random sampling from shows without `pin_slot`.
+- If a pinned show has no eligible episode (e.g. the latest is already `fully_played`), that slot is filled from the unpinned pool instead.
 
 ## Selection rules
 
-- **News slots (1-2)**: latest episode released within the last 48h that isn't `fully_played`.
-- **Other slots (3-8)**: latest episode released within the last 3 months that isn't `fully_played`. Show order is random per run; a show with no eligible episode is skipped and the next sample tried.
-- **No state file** — repetitiveness is avoided by `_.sampleSize` plus the `fully_played` filter.
-- **Songs** are drawn from four sources (random user playlists, top tracks across short/medium/long horizons, recently played, and saved tracks), deduped globally by track id, and sampled to fill the song slots.
+- **`latest_only` shows** (typically the pinned daily news shows): take the newest playable episode that isn't `fully_played`, no date cutoff.
+- **Other shows**: latest playable episode released recently and not `fully_played`. Show order is random per run; a show with no eligible episode is skipped and the next sample tried.
+- **No state file** — repetitiveness is avoided by random sampling plus the `fully_played` filter.
+- **Songs** are drawn from multiple sources (random user playlists, top tracks across short/medium/long horizons, recently played, saved tracks, and — if `LISTENBRAINZ_USER_TOKEN` is set — ListenBrainz collaborative-filter recommendations), deduped globally by track id, and sampled to fill the song slots.
+
+## Partial failures are intentional
+
+A Daily Drive run is best-effort. If an API call fails partway through — a track-source helper errors out, a playlist's pagination breaks mid-fetch, an episode lookup for one show fails, or one chunked write to the target playlist rejects — the run continues with whatever data did succeed. The resulting playlist may be shorter or biased toward the sources that worked. This is deliberate: a smaller playlist is better than no playlist on a scheduled run, and the alternative (hard-fail on any hiccup) would mean frequent silent gaps. Look at `console.error` lines in the run output if something seems off.
 
 ## Tests
 
@@ -69,12 +77,16 @@ npm run test:watch
 
 Tests use [MSW](https://mswjs.io/) to intercept Spotify HTTP calls and return canned responses — no network, no real credentials needed.
 
+## Caching
+
+Tracks fetched from your user playlists are cached at `.cache/spotify-playlist-tracks.json`, keyed by playlist id and snapshot id. The scheduled GitHub Actions workflow commits this file back to the repo so the cache survives across runs.
+
 ## Troubleshooting
 
-- **`Spotify Retry-After=…` error** — Spotify is hard-rate-limiting; wait it out before re-running. The client backs off automatically for `Retry-After ≤ 60s`.
+- **`Spotify Retry-After=…` error** — Spotify is hard-rate-limiting; wait it out before re-running. The client backs off automatically for short retry windows.
 - **Missing scope errors after changing OAuth scopes** — re-run `npm run bootstrap-auth` to mint a new refresh token with the updated scopes.
-- **Fewer than 8 podcasts in the plan** — every "other" show without a fresh-unplayed episode was skipped. Check the `Skipped:` block in the output for reasons.
+- **Fewer podcasts than expected in the plan** — every eligible show was exhausted (no playable, non-`fully_played` episode within the cutoff). Check the `console.error` output for per-show fetch failures.
 
 ## Out of scope
 
-GitHub Actions cron scheduling, state.json / back-to-back avoidance, longest-not-heard ranking, and Discover Weekly as a dedicated source are all deferred. See [docs/plans/implementation-plan.md](docs/plans/implementation-plan.md) for the current build plan.
+State file / back-to-back avoidance, longest-not-heard ranking, and Discover Weekly as a dedicated source are all deferred.
