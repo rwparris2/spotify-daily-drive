@@ -30,7 +30,8 @@ const rateLimitedFetch: typeof fetch = async (input, init) => {
     const res = await fetch(input, init);
     if (res.status !== 429) return res;
 
-    const retryAfter = Number(res.headers.get('retry-after') ?? 1);
+    const retryAfterRaw = Number(res.headers.get('retry-after'));
+    const retryAfter = Number.isFinite(retryAfterRaw) && retryAfterRaw >= 0 ? retryAfterRaw : 1;
     if (retryAfter > 60) {
       throw new Error(
         `Spotify 429 on ${url}: Retry-After=${retryAfter}s (~${Math.round(retryAfter / 60)}min). ` +
@@ -38,13 +39,14 @@ const rateLimitedFetch: typeof fetch = async (input, init) => {
       );
     }
     if (attempt === maxAttempts) {
-      console.warn(`429 on ${url} after ${maxAttempts} attempts; giving up`);
-      return res;
+      throw new Error(
+        `Spotify 429 on ${url} after ${maxAttempts} attempts (Retry-After=${retryAfter}s); giving up`,
+      );
     }
     console.warn(`429 on ${url} — backing off ${retryAfter}s (attempt ${attempt}/${maxAttempts})`);
     await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000));
   }
-  return fetch(input, init);
+  throw new Error(`rateLimitedFetch: unreachable — loop exited without returning (${url})`);
 };
 
 export const spotifyClient = SpotifyApi.withAccessToken(SPOTIFY_CLIENT_ID, token, {
