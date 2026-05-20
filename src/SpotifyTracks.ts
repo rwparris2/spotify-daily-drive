@@ -86,7 +86,14 @@ async function playlistTracks(options: { numberOfTracks: number }): Promise<Sour
     }
     const { tracks, complete } = await fetchSongsFromPlayList(p.id);
     if (complete) {
-      await setCachedPlaylistTracks(p.id, p.snapshot_id, tracks);
+      try {
+        await setCachedPlaylistTracks(p.id, p.snapshot_id, tracks);
+      } catch (e) {
+        console.error(
+          `Failed to persist cache for playlist "${p.name}" (${p.id}):`,
+          (e as Error).message,
+        );
+      }
     }
     results = [...results, ...tracks.map((track) => ({ track, source }))];
   }
