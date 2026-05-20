@@ -119,7 +119,9 @@ async function searchSpotifyTrack(
   artistName: string,
   trackName: string,
 ): Promise<Track | undefined> {
-  const query = `track:"${trackName}" artist:"${artistName}"`;
+  const safeTrack = trackName.replace(/"/g, '');
+  const safeArtist = artistName.replace(/"/g, '');
+  const query = `track:"${safeTrack}" artist:"${safeArtist}"`;
   try {
     const result = await spotifyClient.search(query, ['track'], undefined, 1);
     return result.tracks?.items?.[0];
