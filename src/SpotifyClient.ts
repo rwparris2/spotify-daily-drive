@@ -23,7 +23,7 @@ if (!response.ok) {
 const token = (await response.json()) as AccessToken;
 token.refresh_token ??= SPOTIFY_REFRESH_TOKEN;
 
-const rateLimitedFetch: typeof fetch = async (input, init) => {
+export const rateLimitedFetch: typeof fetch = async (input, init) => {
   const url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
   const maxAttempts = 5;
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {

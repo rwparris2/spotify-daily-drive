@@ -1,9 +1,11 @@
+import { http, HttpResponse } from 'msw';
 import { describe, expect, it } from 'vitest';
 import {
   mockRecentlyPlayed,
   mockSavedTracks,
   mockTopTracks,
   mockUserPlaylists,
+  mswServer,
   type TrackFixture,
 } from './__tests__/mswServer.js';
 import { fetchSpotifyTracks } from './SpotifyTracks.js';
@@ -47,6 +49,49 @@ describe('fetchSpotifyTracks', () => {
     expect(tracks.length).toBeGreaterThan(0);
     expect(tracks.length).toBeLessThanOrEqual(10);
     expect(new Set(tracks.map((t) => t.track.id)).size).toBe(tracks.length);
+  });
+
+  it('still produces tracks when an individual source 500s (partial-failure isolation)', async () => {
+    mockUserPlaylists([{ id: 'p1', tracks: range('p', 10) }]);
+    mockTopTracks({}); // empty; we'll override below
+    mockRecentlyPlayed(range('rp', 10));
+    mockSavedTracks(range('sv', 10));
+    mswServer.use(
+      http.get('https://api.spotify.com/v1/me/top/tracks', () =>
+        new HttpResponse('boom', { status: 500 }),
+      ),
+    );
+
+    const tracks = await fetchSpotifyTracks({ numberOfTracks: 30 });
+
+    expect(tracks.length).toBeGreaterThan(0);
+  });
+
+  it('drops embedded podcast episodes that appear in user playlists', async () => {
+    mockUserPlaylists([{ id: 'p1', tracks: range('p', 5) }]);
+    mockTopTracks({});
+    mockRecentlyPlayed([]);
+    mockSavedTracks([]);
+    // override the playlist items handler to mix a non-track item in
+    mswServer.use(
+      http.get('https://api.spotify.com/v1/playlists/p1/items', () =>
+        HttpResponse.json({
+          items: [
+            { track: { id: 'real', uri: 'spotify:track:real', name: 'Real', artists: [{ name: 'A' }], album: { name: 'B', images: [] }, duration_ms: 1, type: 'track' } },
+            { track: { id: 'ep1', uri: 'spotify:episode:ep1', name: 'Episode', type: 'episode' } },
+          ],
+          total: 2,
+          limit: 50,
+          offset: 0,
+          next: null,
+          previous: null,
+          href: '',
+        }),
+      ),
+    );
+
+    const tracks = await fetchSpotifyTracks({ numberOfTracks: 30 });
+    expect(tracks.some((t) => t.track.id === 'ep1')).toBe(false);
   });
 
   it('reaches close to the target when many candidates are available', async () => {
