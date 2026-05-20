@@ -12,12 +12,27 @@ let cache: CacheShape | undefined;
 
 async function load(): Promise<CacheShape> {
   if (cache) return cache;
+  let raw: string;
   try {
-    const raw = await readFile(CACHE_PATH, 'utf8');
+    raw = await readFile(CACHE_PATH, 'utf8');
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code === 'ENOENT') {
+      cache = {};
+      return cache;
+    }
+    throw new Error(
+      `Failed to read playlist tracks cache at ${CACHE_PATH}: ${(e as Error).message}`,
+      { cause: e },
+    );
+  }
+  try {
     cache = JSON.parse(raw) as CacheShape;
   } catch (e) {
-    if ((e as NodeJS.ErrnoException).code !== 'ENOENT') throw e;
-    cache = {};
+    throw new Error(
+      `Playlist tracks cache at ${CACHE_PATH} is corrupt (${(e as Error).message}). ` +
+        `Delete the file to rebuild from scratch.`,
+      { cause: e },
+    );
   }
   return cache;
 }
