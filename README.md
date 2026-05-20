@@ -11,13 +11,19 @@ Builds a Spotify playlist every morning by interleaving fresh podcast episodes w
 
 I found myself missing Spotify's Daily Drive playlist, so I built a script to generate something similar for me.
 
+## How it works
+
+Each run interleaves fresh podcast episodes (one per show, picked from `podcasts.toml`) with tracks sampled from your Spotify activity — top tracks, recently played, saved library, and your own playlists. Optionally pulls collaborative-filter recommendations from [ListenBrainz](https://listenbrainz.org/) as an extra song source. The result replaces the contents of a single persistent playlist, so the URL never changes — just refresh the playlist in your client.
+
+There's no state file: variety comes from random sampling and Spotify's `fully_played` flag (so you don't get the same episode twice).
+
 ## Quick Start
 
-1. Create a Spotify app at <https://developer.spotify.com/dashboard> and add `http://127.0.0.1:8888/callback` as a redirect URI.
+1. **Register a Spotify app** at <https://developer.spotify.com/dashboard> and add `http://127.0.0.1:8888/callback` as a redirect URI.
 
-2. Copy `.env.template` to `.env` and fill in `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET`. `SPOTIFY_REFRESH_TOKEN` and `SPOTIFY_PLAYLIST_ID` get filled in by the next step.
+2. **Configure environment.** Copy `.env.template` to `.env` and fill in `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET`. Leave `SPOTIFY_REFRESH_TOKEN` and `SPOTIFY_PLAYLIST_ID` blank — the next step fills them in.
 
-3. Edit `podcasts.toml` to list the shows you want:
+3. **Pick your podcasts.** Edit `podcasts.toml`:
 
    ```toml
    [[shows]]
@@ -27,16 +33,31 @@ I found myself missing Spotify's Daily Drive playlist, so I built a script to ge
    latest_only     = true                        # optional; always take newest episode
    ```
 
-4. Install, authorize, and run:
+   Unpinned shows are sampled randomly to fill remaining slots; pinned shows fall back to the unpinned pool if exhausted.
+
+4. **Bootstrap auth (one-time).**
 
    ```bash
    npm install
-   npm run bootstrap-auth     # one-time; mints the refresh token and (optionally) creates the playlist
-   npm start -- --dry-run     # preview the plan
+   npm run bootstrap-auth
+   ```
+
+   This opens the Spotify authorize page in your browser, mints a long-lived refresh token, and — if `SPOTIFY_PLAYLIST_ID` is unset — creates a fresh private "My Daily Drive" playlist for you. It prints the values to paste into `.env`. Re-run it any time you change OAuth scopes.
+
+5. **Run it.**
+
+   ```bash
+   npm start -- --dry-run     # preview the plan, no mutation
    npm start                  # rebuild the playlist for real
    ```
 
-To run it on a schedule, push to GitHub — [`.github/workflows/daily-drive.yml`](.github/workflows/daily-drive.yml) runs the CLI on a daily cron. Add `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, and `SPOTIFY_PLAYLIST_ID` as Actions secrets.
+### Schedule it on GitHub Actions
+
+Push to GitHub — [`.github/workflows/daily-drive.yml`](.github/workflows/daily-drive.yml) runs the CLI on a daily cron and commits the refreshed track cache back to the repo so it persists across runs. Add `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, and `SPOTIFY_PLAYLIST_ID` as Actions secrets.
+
+### Optional: ListenBrainz
+
+Set `LISTENBRAINZ_USER_TOKEN` (from <https://listenbrainz.org/profile/>) to mix in collaborative-filter recommendations. Unset, it's skipped silently.
 
 ## Tests
 
