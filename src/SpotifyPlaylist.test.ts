@@ -12,12 +12,14 @@ function ep(id: string): DailyDrivePlaylistItem {
       name: `Episode ${id}`,
       uri: `spotify:episode:${id}`,
     } as unknown as SimplifiedEpisode,
+    source: 'podcasts.toml',
   };
 }
 
 function tr(id: string): DailyDrivePlaylistItem {
   return {
     track: { id, name: `Track ${id}`, uri: `spotify:track:${id}` } as unknown as Track,
+    source: 'top track - short_term',
   };
 }
 

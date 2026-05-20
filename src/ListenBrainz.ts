@@ -1,5 +1,6 @@
 import type { Track } from '@spotify/web-api-ts-sdk';
 import { spotifyClient } from './SpotifyClient.js';
+import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
 
 const LB_BASE = 'https://api.listenbrainz.org';
 
@@ -17,7 +18,7 @@ type MetadataResponse = Record<MusicBrainzId, RecordingMetadata | undefined>;
 
 export async function fetchListenBrainzRecommendations(options: {
   numberOfTracks: number;
-}): Promise<Track[]> {
+}): Promise<SourcedTrack[]> {
   const token = process.env.LISTENBRAINZ_USER_TOKEN;
   if (!token) {
     console.warn('LISTENBRAINZ_USER_TOKEN not set; skipping ListenBrainz recommendations.');
@@ -32,7 +33,7 @@ export async function fetchListenBrainzRecommendations(options: {
 
   const metadata = await fetchRecordingMetadata(musicBrainzIds);
 
-  const tracks: Track[] = [];
+  const tracks: SourcedTrack[] = [];
   for (const musicBrainzId of musicBrainzIds) {
     if (tracks.length >= options.numberOfTracks) break;
     const meta = metadata[musicBrainzId];
@@ -40,7 +41,7 @@ export async function fetchListenBrainzRecommendations(options: {
     const trackName = meta?.recording?.name;
     if (!artistName || !trackName) continue;
     const hit = await searchSpotifyTrack(artistName, trackName);
-    if (hit) tracks.push(hit);
+    if (hit) tracks.push({ track: hit, source: 'listenbrainz suggestion' });
   }
 
   return tracks;

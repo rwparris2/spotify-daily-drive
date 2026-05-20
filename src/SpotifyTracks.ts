@@ -4,6 +4,7 @@ import { getCachedPlaylistTracks, setCachedPlaylistTracks } from './SpotifyPlayl
 import { fetchListenBrainzRecommendations } from './ListenBrainz.js';
 import _ from 'lodash';
 import { SPOTIFY_PLAYLIST_ID } from './config.js';
+import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
 
 async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
   const pageSize = 50;
@@ -68,73 +69,61 @@ async function fetchSongsFromPlayList(
   return { tracks: results, complete };
 }
 
-async function playlistTracks(options: { numberOfTracks: number }): Promise<Track[]> {
+async function playlistTracks(options: { numberOfTracks: number }): Promise<SourcedTrack[]> {
   const playlists = await fetchAllPlaylists();
   const playlistsToFetch = _.sampleSize(
     playlists,
     Math.min(3, Math.ceil(options.numberOfTracks / 3)),
   );
-  let results: Track[] = [];
+  let results: SourcedTrack[] = [];
   for (const p of playlistsToFetch) {
+    const source = `user playlist - ${p.name}`;
     const cached = await getCachedPlaylistTracks(p.id, p.snapshot_id);
     if (cached) {
       console.log(`Cache hit for ${p.name} (${cached.length} tracks)`);
-      results = [...results, ...cached];
+      results = [...results, ...cached.map((track) => ({ track, source }))];
       continue;
     }
     const { tracks, complete } = await fetchSongsFromPlayList(p.id);
     if (complete) {
       await setCachedPlaylistTracks(p.id, p.snapshot_id, tracks);
     }
-    results = [...results, ...tracks];
+    results = [...results, ...tracks.map((track) => ({ track, source }))];
   }
   return _(results)
     .chain()
-    .uniqBy((t) => t.id)
+    .uniqBy((t) => t.track.id)
     .sampleSize(options.numberOfTracks)
     .value();
 }
 
-async function topTracks(options: { numberOfTracks: number }): Promise<Track[]> {
-  let topItemsShortTerm: Track[] = [];
-  try {
-    topItemsShortTerm = await spotifyClient.currentUser
-      .topItems('tracks', 'short_term', 50)
-      .then((page) => page.items);
-  } catch (e) {
-    console.error('Error fetching topTracks short term', e);
+async function topTracks(options: { numberOfTracks: number }): Promise<SourcedTrack[]> {
+  const terms = ['short_term', 'medium_term', 'long_term'] as const;
+  const allTopItems: SourcedTrack[] = [];
+  for (const term of terms) {
+    try {
+      const page = await spotifyClient.currentUser.topItems('tracks', term, 50);
+      for (const track of page.items) {
+        allTopItems.push({ track, source: `top track - ${term}` });
+      }
+    } catch (e) {
+      console.error(`Error fetching topTracks ${term}`, e);
+    }
   }
 
-  let topItemsMediumTerm: Track[] = [];
-  try {
-    topItemsMediumTerm = await spotifyClient.currentUser
-      .topItems('tracks', 'medium_term', 50)
-      .then((page) => page.items);
-  } catch (e) {
-    console.error('Error fetching topTracks medium term', e);
-  }
-
-  let topItemsLongTerm: Track[] = [];
-  try {
-    topItemsLongTerm = await spotifyClient.currentUser
-      .topItems('tracks', 'long_term', 50)
-      .then((page) => page.items);
-  } catch (e) {
-    console.error('Error fetching topTracks long term', e);
-  }
-
-  const allTopItems = [...topItemsShortTerm, ...topItemsMediumTerm, ...topItemsLongTerm];
   return _(allTopItems)
     .chain()
-    .uniqBy((t) => t.id)
+    .uniqBy((t) => t.track.id)
     .sampleSize(options.numberOfTracks)
     .value();
 }
 
-async function recentlyPlayedTracks(options: { numberOfTracks: number }) {
-  let recentlyPlayedTracks: Track[] = [];
+async function recentlyPlayedTracks(options: {
+  numberOfTracks: number;
+}): Promise<SourcedTrack[]> {
+  let tracks: Track[] = [];
   try {
-    recentlyPlayedTracks = await spotifyClient.player
+    tracks = await spotifyClient.player
       .getRecentlyPlayedTracks(50)
       .then((page) => page.items)
       .then((items) => items.map((i) => i.track));
@@ -142,14 +131,15 @@ async function recentlyPlayedTracks(options: { numberOfTracks: number }) {
     console.error('Error fetching recently played tracks', e);
   }
 
-  return _(recentlyPlayedTracks)
+  return _(tracks)
     .chain()
     .uniqBy((t) => t.id)
+    .map((track): SourcedTrack => ({ track, source: 'recently listened' }))
     .sampleSize(options.numberOfTracks)
     .value();
 }
 
-async function savedTracks(options: { numberOfTracks: number }): Promise<Track[]> {
+async function savedTracks(options: { numberOfTracks: number }): Promise<SourcedTrack[]> {
   let totalSavedTracks = 0;
   try {
     totalSavedTracks = await spotifyClient.currentUser.tracks.savedTracks(1).then((r) => r.total);
@@ -176,11 +166,14 @@ async function savedTracks(options: { numberOfTracks: number }): Promise<Track[]
   return _(results)
     .chain()
     .uniqBy((t) => t.id)
+    .map((track): SourcedTrack => ({ track, source: 'saved track' }))
     .sampleSize(options.numberOfTracks)
     .value();
 }
 
-export async function fetchSpotifyTracks(options: { numberOfTracks: number }): Promise<Track[]> {
+export async function fetchSpotifyTracks(options: {
+  numberOfTracks: number;
+}): Promise<SourcedTrack[]> {
   const requiredContributionPerSource = Math.ceil(options.numberOfTracks / 4);
   const allAvailableTracks = (
     await Promise.all([
@@ -194,8 +187,8 @@ export async function fetchSpotifyTracks(options: { numberOfTracks: number }): P
 
   return _(allAvailableTracks)
     .chain()
-    .filter((t) => !!t)
-    .uniqBy((t) => t.id)
+    .filter((t) => !!t.track)
+    .uniqBy((t) => t.track.id)
     .sampleSize(options.numberOfTracks)
     .value();
 }

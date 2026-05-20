@@ -1,18 +1,23 @@
-import { SimplifiedEpisode, Track } from '@spotify/web-api-ts-sdk';
 import { fetchSpotifyTracks } from './SpotifyTracks.js';
 import { fetchSpotifyPodcasts } from './SpotifyPodcasts.js';
 import { replacePlaylist } from './SpotifyPlaylist.js';
 import { SPOTIFY_PLAYLIST_ID } from './config.js';
-import { DailyDrivePlaylistItem } from './DailyDrivePlaylistItem.js';
+import {
+  DailyDrivePlaylistItem,
+  SourcedEpisode,
+  SourcedTrack,
+} from './DailyDrivePlaylistItem.js';
 
 const NUMBER_OF_PODCASTS = 8;
 
 const dryRun = process.argv.includes('--dry-run');
 
-let podcasts: (SimplifiedEpisode | undefined)[] = await fetchSpotifyPodcasts({
+let podcasts: (SourcedEpisode | undefined)[] = await fetchSpotifyPodcasts({
   numberOfPodcasts: NUMBER_OF_PODCASTS,
 });
-const tracks: Track[] = await fetchSpotifyTracks({ numberOfTracks: NUMBER_OF_PODCASTS * 5 });
+const tracks: SourcedTrack[] = await fetchSpotifyTracks({
+  numberOfTracks: NUMBER_OF_PODCASTS * 5,
+});
 
 // HACK
 // if we somehow did not get any podcasts, we won't get any tracks either
@@ -25,12 +30,12 @@ if (podcasts.length === 0) {
 const playlist: DailyDrivePlaylistItem[] = [];
 for (let i = 0; i < podcasts.length; i++) {
   const p = podcasts[i];
-  if (p) playlist.push({ episode: p });
+  if (p) playlist.push(p);
 
   const numSongs = i === podcasts.length - 1 ? tracks.length : i + 2;
   for (let j = 0; j < numSongs; j++) {
     const t = tracks.shift();
-    if (t) playlist.push({ track: t });
+    if (t) playlist.push(t);
   }
 }
 
@@ -38,10 +43,12 @@ console.log(`Playlist assembled with ${playlist.length} items`);
 playlist.forEach((item, i) => {
   const n = String(i + 1).padStart(2, ' ');
   if ('episode' in item) {
-    console.log(`${n}. 🎙  ${item.episode.name}  [${item.episode.release_date}]`);
+    console.log(
+      `${n}. 🎙  ${item.episode.name}  [${item.episode.release_date}]  (${item.source})`,
+    );
   } else {
     const artists = item.track.artists.map((a) => a.name).join(', ');
-    console.log(`${n}. 🎵  ${artists} — ${item.track.name}`);
+    console.log(`${n}. 🎵  ${artists} — ${item.track.name}  (${item.source})`);
   }
 });
 

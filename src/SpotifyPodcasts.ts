@@ -2,6 +2,7 @@ import _ from 'lodash';
 import type { SimplifiedEpisode } from '@spotify/web-api-ts-sdk';
 import { loadPodcastConfig, type PodcastConfig } from './PodcastConfig.js';
 import { spotifyClient } from './SpotifyClient.js';
+import type { SourcedEpisode } from './DailyDrivePlaylistItem.js';
 
 type PodcastShowConfig = PodcastConfig['shows'][number];
 
@@ -9,7 +10,7 @@ const RELEASE_CUTOFF_MONTHS = 6;
 
 export const fetchSpotifyPodcasts = async (opts: {
   numberOfPodcasts: number;
-}): Promise<SimplifiedEpisode[]> => {
+}): Promise<SourcedEpisode[]> => {
   const config = await loadPodcastConfig();
 
   const cutoff = new Date();
@@ -17,7 +18,7 @@ export const fetchSpotifyPodcasts = async (opts: {
 
   const usedShowIds = new Set<string>();
   const exhaustedShowIds = new Set<string>();
-  const selected: SimplifiedEpisode[] = [];
+  const selected: SourcedEpisode[] = [];
 
   const tryPick = async (
     filter: (s: PodcastShowConfig) => boolean,
@@ -44,7 +45,7 @@ export const fetchSpotifyPodcasts = async (opts: {
   for (let slot = 1; slot <= opts.numberOfPodcasts; slot++) {
     const pinned = await tryPick((s) => s.pin_slot === slot);
     const episode = pinned ?? (await tryPick((s) => s.pin_slot === undefined));
-    if (episode) selected.push(episode);
+    if (episode) selected.push({ episode, source: 'podcasts.toml' });
   }
 
   return selected;

@@ -26,11 +26,14 @@ describe('fetchSpotifyTracks', () => {
 
     const tracks = await fetchSpotifyTracks({ numberOfTracks: 60 });
 
-    const ids = tracks.map((t) => t.id);
+    const ids = tracks.map((t) => t.track.id);
     expect(new Set(ids).size).toBe(ids.length);
     expect(ids.length).toBeLessThanOrEqual(60);
     expect(ids.length).toBeGreaterThan(0);
     expect(ids.filter((id) => id === 'shared_track').length).toBeLessThanOrEqual(1);
+    for (const t of tracks) {
+      expect(t.source).toBeTruthy();
+    }
   });
 
   it('still returns tracks when some sources are empty', async () => {
@@ -43,7 +46,7 @@ describe('fetchSpotifyTracks', () => {
 
     expect(tracks.length).toBeGreaterThan(0);
     expect(tracks.length).toBeLessThanOrEqual(10);
-    expect(new Set(tracks.map((t) => t.id)).size).toBe(tracks.length);
+    expect(new Set(tracks.map((t) => t.track.id)).size).toBe(tracks.length);
   });
 
   it('reaches close to the target when many candidates are available', async () => {
@@ -60,6 +63,6 @@ describe('fetchSpotifyTracks', () => {
 
     expect(tracks.length).toBeGreaterThanOrEqual(40);
     expect(tracks.length).toBeLessThanOrEqual(60);
-    expect(new Set(tracks.map((t) => t.id)).size).toBe(tracks.length);
+    expect(new Set(tracks.map((t) => t.track.id)).size).toBe(tracks.length);
   });
 });

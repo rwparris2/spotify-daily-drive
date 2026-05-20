@@ -38,8 +38,8 @@ describe('fetchSpotifyPodcasts', () => {
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
 
     expect(episodes).toHaveLength(8);
-    expect(episodes[0]?.id).toBe('upfirst_ep');
-    expect(episodes[1]?.id).toBe('thedaily_ep');
+    expect(episodes[0]?.episode.id).toBe('upfirst_ep');
+    expect(episodes[1]?.episode.id).toBe('thedaily_ep');
   });
 
   it('falls through to the other pool when a pinned latest_only show has its newest already played', async () => {
@@ -51,8 +51,8 @@ describe('fetchSpotifyPodcasts', () => {
 
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
 
-    expect(episodes.map((e) => e.id)).not.toContain('upfirst_ep');
-    expect(episodes[1]?.id).toBe('thedaily_ep');
+    expect(episodes.map((e) => e.episode.id)).not.toContain('upfirst_ep');
+    expect(episodes[1]?.episode.id).toBe('thedaily_ep');
   });
 
   it('falls back to next-newest non-fully-played episode for non-latest_only shows', async () => {
@@ -68,8 +68,8 @@ describe('fetchSpotifyPodcasts', () => {
 
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
 
-    const otherAEp = episodes.find((e) => e.id.startsWith('otherA_ep'));
-    expect(otherAEp?.id).toBe('otherA_ep_older');
+    const otherAEp = episodes.find((e) => e.episode.id.startsWith('otherA_ep'));
+    expect(otherAEp?.episode.id).toBe('otherA_ep_older');
   });
 
   it('continues past a show whose episode fetch errors out', async () => {
@@ -84,7 +84,7 @@ describe('fetchSpotifyPodcasts', () => {
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 7 });
 
     expect(episodes).toHaveLength(7);
-    expect(episodes.map((e) => e.id)).not.toContain('otherA_ep');
+    expect(episodes.map((e) => e.episode.id)).not.toContain('otherA_ep');
   });
 
   it('does not pick the same show twice across slots', async () => {
@@ -96,7 +96,7 @@ describe('fetchSpotifyPodcasts', () => {
 
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
 
-    const ids = episodes.map((e) => e.id);
+    const ids = episodes.map((e) => e.episode.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
 
@@ -138,7 +138,7 @@ describe('fetchSpotifyPodcasts', () => {
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 6 });
 
     expect(episodes).toHaveLength(6);
-    expect(new Set(episodes.map((e) => e.id)).size).toBe(6);
+    expect(new Set(episodes.map((e) => e.episode.id)).size).toBe(6);
   });
 
   it('latest_only: picks the single newest episode even when older than 6 months', async () => {
@@ -153,7 +153,7 @@ describe('fetchSpotifyPodcasts', () => {
 
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
 
-    expect(episodes[0]?.id).toBe('upfirst_ep_newest');
+    expect(episodes[0]?.episode.id).toBe('upfirst_ep_newest');
   });
 
   it('latest_only: skips the show entirely when the newest episode is fully_played', async () => {
@@ -168,7 +168,7 @@ describe('fetchSpotifyPodcasts', () => {
 
     const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
 
-    expect(episodes.map((e) => e.id)).not.toContain('upfirst_ep_newest');
-    expect(episodes.map((e) => e.id)).not.toContain('upfirst_ep_older');
+    expect(episodes.map((e) => e.episode.id)).not.toContain('upfirst_ep_newest');
+    expect(episodes.map((e) => e.episode.id)).not.toContain('upfirst_ep_older');
   });
 });
