@@ -1,14 +1,12 @@
 [[shows]]
 name = "Up First from NPR"
 spotify_show_id = "2mTUnDkuKUkhiueKcVWoP0"
-itunes_categories = ["News", "Daily News"]
 pin_slot = 1
 latest_only = true
 
 [[shows]]
 name = "The Daily"
 spotify_show_id = "3IM0lmZxpFAY7CwMuv9H4g"
-itunes_categories = ["News", "Daily News"]
 pin_slot = 2
 latest_only = true
 
@@ -19,22 +17,18 @@ spotify_show_id = "3nZo0GuEfiOMacTbOb2ESE"
 [[shows]]
 name = "99% Invisible"
 spotify_show_id = "2VRS1IJCTn2Nlkg33ZVfkM"
-itunes_categories = ["Arts", "Design"]
 
 [[shows]]
 name = "A Bootiful Podcast"
 spotify_show_id = "5eyimRNrvZStATQk8by82A"
-itunes_categories = ["Technology", "News", "Tech News"]
 
 [[shows]]
 name = "ABCs of Parenting Adult Children"
 spotify_show_id = "23acQu8UkkKLr8ImfN52ln"
-itunes_categories = ["Kids & Family", "Parenting", "Education"]
 
 [[shows]]
 name = "airhacks.fm podcast with adam bien"
 spotify_show_id = "6nOTQLa2uZxeyGpMW8eppS"
-itunes_categories = ["Technology"]
 
 [[shows]]
 name = "Broken Ground"
@@ -43,7 +37,6 @@ spotify_show_id = "4BOMSR1qHT7vt3nCsFnF3G"
 [[shows]]
 name = "CaSE: Conversations about Software Engineering"
 spotify_show_id = "5KRybj1mOAcVNaho9s7jCi"
-itunes_categories = ["Technology"]
 
 [[shows]]
 name = "Comedy Central Stand-Up"
@@ -52,28 +45,18 @@ spotify_show_id = "1LGe0PWykDBzIDaUctJhby"
 [[shows]]
 name = "Criminal"
 spotify_show_id = "3ictIqfumbmEuWdt9xWQp5"
-itunes_categories = ["True Crime", "Society & Culture"]
 
 [[shows]]
 name = "Dan Carlin's Hardcore History"
 spotify_show_id = "72qiPaoDRf8HkGKEChvG5q"
-itunes_categories = ["History"]
 
 [[shows]]
 name = "Effective Engineering Manager"
 spotify_show_id = "3s3B19HpeQLrSOalA0rmGo"
-itunes_categories = [
-    "Business",
-    "Management",
-    "Technology",
-    "Education",
-    "Self-Improvement",
-]
 
 [[shows]]
 name = "Fall of Civilizations Podcast"
 spotify_show_id = "44DE64rRpX1cFIQUlqQtvi"
-itunes_categories = ["History"]
 
 [[shows]]
 name = "Flightless Bird"
@@ -82,38 +65,31 @@ spotify_show_id = "0TY5qJWU2bH9DSX9Gsx8VN"
 [[shows]]
 name = "FoundMyFitness"
 spotify_show_id = "5QjpaU0o1Q2MkVZwwG3y7d"
-itunes_categories = ["Health & Fitness", "Medicine", "Nutrition"]
 
 [[shows]]
 name = "Freakonomics Radio"
 spotify_show_id = "6z4NLXyHPga1UmSJsPK7G1"
-itunes_categories = ["Society & Culture", "Documentary"]
 
 [[shows]]
 name = "Full Stack Radio"
 spotify_show_id = "0Ddvex5OtYOvhyyK6ckG3A"
-itunes_categories = ["Technology"]
 
 [[shows]]
 name = "GD POLITICS"
 spotify_show_id = "3XUkLfwsKGL1n7DF2tbyQS"
-itunes_categories = ["News"]
 latest_only = true
 
 [[shows]]
 name = "GOTO - The Brightest Minds in Tech"
 spotify_show_id = "1X1lCb4auIZoQKyYiC2PYM"
-itunes_categories = ["Technology", "News", "Tech News", "Science"]
 
 [[shows]]
 name = "Happy Path Programming"
 spotify_show_id = "25XAbgCB7VeHgREPSUzBYY"
-itunes_categories = ["Technology"]
 
 [[shows]]
 name = "Home Cooking"
 spotify_show_id = "1K6SiDxdGacAmhMQIvdJUL"
-itunes_categories = ["Arts", "Food"]
 
 [[shows]]
 name = "Home of the Brave"
@@ -122,7 +98,6 @@ spotify_show_id = "0VNylaQQ2L0DiPoaDAax7k"
 [[shows]]
 name = "Huberman Lab"
 spotify_show_id = "79CkJF3UJTHFV8Dse3Oy0P"
-itunes_categories = ["Health & Fitness", "Science", "Life Sciences"]
 
 [[shows]]
 name = "In Our Headphones"
@@ -131,27 +106,18 @@ spotify_show_id = "5g9S5OSGCduou3Ufn3Tz5i"
 [[shows]]
 name = "Inside Java"
 spotify_show_id = "434ZpirtxvKZmW3yWICCsR"
-itunes_categories = ["Technology"]
 
 [[shows]]
 name = "Invisibilia"
 spotify_show_id = "1Tgsr2BDHLSQ44YsOwoguj"
-itunes_categories = [
-    "Society & Culture",
-    "Personal Journals",
-    "Science",
-    "Social Sciences",
-]
 
 [[shows]]
 name = "Java Off-Heap"
 spotify_show_id = "6uHXDdtXmcsWZWhIOWkHsF"
-itunes_categories = ["News", "Tech News"]
 
 [[shows]]
 name = "Let's Talk About Myths, Baby! | Greek Mythology & the Ancient Mediterranean"
 spotify_show_id = "6S9jAhlyZtr5dj2tqYXeJ6"
-itunes_categories = ["History", "Arts", "Comedy"]
 
 [[shows]]
 name = "Live From Don't Tell Comedy"
@@ -160,18 +126,15 @@ spotify_show_id = "78sw99DhVbbNg3g1MGCeSM"
 [[shows]]
 name = "Magic Mics Podcast"
 spotify_show_id = "35p9JGGXN973O1Nn7G4J8d"
-itunes_categories = ["Leisure", "Games", "Hobbies"]
 latest_only = true
 
 [[shows]]
 name = "Mike Birbiglia's Working It Out"
 spotify_show_id = "2ux2xJbEpqls09oSD1LUHI"
-itunes_categories = ["Comedy", "Comedy Interviews"]
 
 [[shows]]
 name = "MIT Supply Chain Frontiers"
 spotify_show_id = "6kUFt2eTqRk0uOFAQc3jOb"
-itunes_categories = ["Business", "Management", "Education"]
 
 [[shows]]
 name = "Nature is the Solution"
@@ -180,34 +143,23 @@ spotify_show_id = "43bWgkIaH36IYEvXuZ67bS"
 [[shows]]
 name = "Netflix Is A Daily Joke"
 spotify_show_id = "0e2HFBiiGl9hMjZsk4WIvW"
-itunes_categories = ["Comedy", "Stand-Up", "TV & Film"]
 
 [[shows]]
 name = "Note to Self"
 spotify_show_id = "4kwUFLq1kXZeji9IVYDIUz"
-itunes_categories = [
-    "Technology",
-    "Education",
-    "Self-Improvement",
-    "Society & Culture",
-    "Relationships",
-]
 
 [[shows]]
 name = "NPR Music"
 spotify_show_id = "10LYbliXlNZe1VStsTkcC0"
-itunes_categories = ["Music"]
 
 [[shows]]
 name = "NPR News Now"
 spotify_show_id = "6BRSvIBNQnB68GuoXJRCnQ"
-itunes_categories = ["News", "Daily News"]
 latest_only = true
 
 [[shows]]
 name = "Ologies with Alie Ward"
 spotify_show_id = "5nvRkVMH58SelKZYZFZx1S"
-itunes_categories = ["Science", "Comedy", "Society & Culture"]
 
 [[shows]]
 name = "Pale Blue Pod"
@@ -224,28 +176,18 @@ spotify_show_id = "643AlboIMnQgdvFMjJ1V01"
 [[shows]]
 name = "Programming Throwdown"
 spotify_show_id = "274Z0vXSCYxddYGj2hLJ8r"
-itunes_categories = ["Education", "How To", "News", "Tech News"]
 
 [[shows]]
 name = "Radiolab"
 spotify_show_id = "2hmkzUtix0qTqvtpPcMzEL"
-itunes_categories = [
-    "Science",
-    "Natural Sciences",
-    "Society & Culture",
-    "Documentary",
-    "History",
-]
 
 [[shows]]
 name = "REWORK"
 spotify_show_id = "5JxcIaIkN8zx3Zy7yD9snv"
-itunes_categories = ["Business", "Management"]
 
 [[shows]]
 name = "Risky Business with Nate Silver and Maria Konnikova"
 spotify_show_id = "1kEQxTvQ7PUTUmvjcJrpwZ"
-itunes_categories = ["News", "Politics", "Society & Culture", "Sports"]
 
 [[shows]]
 name = "Science Vs"
@@ -254,32 +196,26 @@ spotify_show_id = "5lY4b5PGOvMuOYOjOVEcb9"
 [[shows]]
 name = "SmartLess"
 spotify_show_id = "0Yzd0g8NYmn27k2HFNplv7"
-itunes_categories = ["Comedy", "Education", "Society & Culture"]
 
 [[shows]]
 name = "Soft Skills Engineering"
 spotify_show_id = "59I1XnvAB9fQzSj9SIKCoI"
-itunes_categories = ["Technology"]
 
 [[shows]]
 name = "Software Engineering Daily"
 spotify_show_id = "6UCtBYL29hwhw4YbTdX83N"
-itunes_categories = ["News", "Tech News", "Technology"]
 
 [[shows]]
 name = "Software Engineering Radio - the podcast for professional software developers"
 spotify_show_id = "6UO3XQclSuNnGxB39QdAnL"
-itunes_categories = ["Technology", "Education"]
 
 [[shows]]
 name = "StaffEng"
 spotify_show_id = "4GUCKSlaFqQiShJBOP4nEe"
-itunes_categories = ["Technology"]
 
 [[shows]]
 name = "The Allusionist"
 spotify_show_id = "7sQ5gz1B7kWT9VxCHVRq4D"
-itunes_categories = ["Arts", "Education", "History"]
 
 [[shows]]
 name = "The Daily Stoic"
@@ -288,27 +224,22 @@ spotify_show_id = "7fY99FB3bNyn7nEdXCoBeB"
 [[shows]]
 name = "The InfoQ Podcast"
 spotify_show_id = "4NhWaYYpPWgWRDAOqeRQbj"
-itunes_categories = ["Technology"]
 
 [[shows]]
 name = "The Inquiry"
 spotify_show_id = "6kkyreLXgOD3tuizoTYW1N"
-itunes_categories = ["News", "News Commentary"]
 
 [[shows]]
 name = "The Pragmatic Engineer"
 spotify_show_id = "2Bho9xCbOQMWMJ7UKmqCzD"
-itunes_categories = ["Technology", "News", "Tech News"]
 
 [[shows]]
 name = "The Tim Ferriss Show"
 spotify_show_id = "5qSUyCrk9KR69lEiXbjwXM"
-itunes_categories = ["Business", "Entrepreneurship"]
 
 [[shows]]
 name = "The Weekly Show with Jon Stewart"
 spotify_show_id = "0sxpFsg449GC8TPtrRVCUW"
-itunes_categories = ["Comedy", "News", "News Commentary", "Politics"]
 
 [[shows]]
 name = "Theoretically Speaking"
@@ -317,12 +248,10 @@ spotify_show_id = "3sBBPfPH2QX077NxfTNeSD"
 [[shows]]
 name = "This American Life"
 spotify_show_id = "41zWZdWCpVQrKj7ykQnXRc"
-itunes_categories = ["Society & Culture", "Arts", "News"]
 
 [[shows]]
 name = "This Day in AI Podcast"
 spotify_show_id = "6qk8KB3SzVw14vuKneLG8o"
-itunes_categories = ["Technology", "News", "Tech News"]
 
 [[shows]]
 name = "Thriving Kids"
@@ -331,7 +260,6 @@ spotify_show_id = "7Knas1fk859Vul6SuOTk3Z"
 [[shows]]
 name = "Throughline"
 spotify_show_id = "0vYTIMav7el5VXq5n5pxhI"
-itunes_categories = ["History", "Society & Culture", "Documentary"]
 
 [[shows]]
 name = "Today, Explained"
@@ -340,12 +268,10 @@ spotify_show_id = "3pXx5SXzXwJxnf4A5pWN2A"
 [[shows]]
 name = "Twenty Thousand Hertz"
 spotify_show_id = "4E8CLD9KUvrwNPjTP4WGrf"
-itunes_categories = ["Arts", "Design", "Music", "Music Commentary"]
 
 [[shows]]
 name = "Two's Complement"
 spotify_show_id = "52irDllU36Y3mOBbBIxyNd"
-itunes_categories = ["Technology", "Software Development"]
 
 [[shows]]
 name = "What to Carry, What to Burn"
@@ -362,4 +288,3 @@ spotify_show_id = "464Xkx160AJUvaov7osKtY"
 [[shows]]
 name = "You know, for search, an Elastic podcast"
 spotify_show_id = "6DLhSV2P7aBQemyUcTVZKE"
-itunes_categories = ["Technology"]
