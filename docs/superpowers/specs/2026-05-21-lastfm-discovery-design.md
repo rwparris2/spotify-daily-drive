@@ -42,26 +42,34 @@ The per-source contribution target stays at `Math.ceil(numberOfTracks / 4)` — 
 
 ## Algorithm inside `fetchLastFmDiscoveries`
 
-1. **Derive seed sets** from the input `seedTracks`:
-   - **~6 seed tracks** — `_.sampleSize(seedTracks, 6)`
-   - **~4 seed artists** — unique artist names extracted from `seedTracks` (use the first artist of each track), then `_.sampleSize(..., 4)`
-2. **Track similarity** — for each seed track, `GET track.getSimilar?artist=X&track=Y&limit=30`. Returns up to 30 similar tracks with artist + track name.
-3. **Artist similarity** — for each seed artist:
-   - `GET artist.getSimilar?artist=X&limit=10` → up to 10 similar artists
-   - For each similar artist, `GET artist.getTopTracks?artist=X&limit=2` → 2 representative tracks
-4. **Filter** — drop any candidate whose artist (case-insensitive) appears in the seed-artist set. We want discovery, not "more songs by artists we already have queued".
-5. **Resolve to Spotify** — for each remaining candidate, `spotifyClient.search('track:"X" artist:"Y"', ['track'], 1)` and take the top hit. Same pattern as `ListenBrainz.ts:searchSpotifyTrack`. Candidates that don't resolve are silently dropped.
-6. **Tag and return** — wrap each resolved `Track` as `SourcedTrack` with descriptive source strings:
-   - `last.fm — similar track to "<seed track name>"` for `track.getSimilar` results
-   - `last.fm — similar artist to <seed artist name>` for `artist.getSimilar` results
-7. **Dedupe and sample** — `uniqBy(track.id)` then `sampleSize(numberOfTracks)`.
+Two independent sampling passes — one for track-similarity, one for artist-similarity — so a track being picked for one pass doesn't disqualify it from the other.
+
+1. **Track-similarity pass**
+   - `trackSeeds = _.sampleSize(seedTracks, 15)` — 15 random seed tracks.
+   - For each seed: `GET track.getSimilar?artist=X&track=Y&limit=30&api_key=...` → up to 30 similar tracks.
+   - Collect all results into a candidate pool, tagged `last.fm — similar track to "<seed track name>"`.
+
+2. **Artist-similarity pass**
+   - `artistSeedTracks = _.sampleSize(seedTracks, 5)` — 5 random seed tracks, independently sampled from the track-similarity seeds.
+   - For each seed track, take its first artist name (`track.artists[0].name`) and run the chain:
+     - `GET artist.getSimilar?artist=X&limit=20&api_key=...` → up to 20 similar artists.
+     - `sampleSize(similarArtists, 5)` → pick 5 random similar artists per seed (variety > determinism).
+     - For each of those 5: `GET artist.getTopTracks?artist=X&limit=50&api_key=...` → up to 50 top tracks for that artist.
+     - `sampleSize(topTracks, 2)` → randomly sample 2 tracks from those top 50. Sampling (rather than always taking #1/#2) ensures the same similar artist yields different tracks across runs.
+   - Collect all results into the candidate pool, tagged `last.fm — similar artist to <seed artist name>`.
+
+3. **Filter** — drop any candidate whose artist (case-insensitive) appears in the seed-artist set (the 5 artists from the artist-similarity pass, plus the artists of the 15 track-similarity seeds). We want discovery, not "more songs by artists we already have queued".
+
+4. **Resolve to Spotify** — for each remaining candidate, `spotifyClient.search('track:"X" artist:"Y"', ['track'], 1)` and take the top hit. Same pattern as `ListenBrainz.ts:searchSpotifyTrack`. Candidates that don't resolve are silently dropped.
+
+5. **Dedupe and sample** — `uniqBy(track.id)` then `sampleSize(numberOfTracks)`.
 
 ### API budget per run
 
-- `track.getSimilar`: ~6 calls
-- `artist.getSimilar`: ~4 calls
-- `artist.getTopTracks`: ~4 × 10 = ~40 calls
-- **Total: ~50 Last.fm calls per run.** Run sequentially (one at a time) to stay polite. Last.fm has no published rate limit; 5 req/sec is the community norm. ~50 calls at that pace is ~10s — acceptable for a once-daily job.
+- `track.getSimilar`: 15 calls
+- `artist.getSimilar`: 5 calls
+- `artist.getTopTracks`: 5 seeds × 5 sampled similar artists = 25 calls
+- **Total: 45 Last.fm calls per run.** Run sequentially (one at a time) to stay polite. Last.fm has no published rate limit; 5 req/sec is the community norm. 45 calls at that pace is ~9s — acceptable for a once-daily job.
 
 ## Configuration
 
@@ -107,8 +115,10 @@ Response shape (relevant fields):
 ### `artist.getSimilar`
 
 ```text
-?method=artist.getSimilar&artist=<name>&limit=10&api_key=<KEY>&format=json
+?method=artist.getSimilar&artist=<name>&limit=20&api_key=<KEY>&format=json
 ```
+
+(We fetch 20 and `sampleSize(..., 5)` internally — sampling adds variety across runs.)
 
 Response shape:
 
@@ -126,8 +136,10 @@ Response shape:
 ### `artist.getTopTracks`
 
 ```text
-?method=artist.getTopTracks&artist=<name>&limit=2&api_key=<KEY>&format=json
+?method=artist.getTopTracks&artist=<name>&limit=50&api_key=<KEY>&format=json
 ```
+
+(We fetch 50 and `sampleSize(..., 2)` internally — same variety-across-runs rationale as `artist.getSimilar`.)
 
 Response shape:
 
