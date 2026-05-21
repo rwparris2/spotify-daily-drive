@@ -1,7 +1,12 @@
+import type { Track } from '@spotify/web-api-ts-sdk';
 import { http, HttpResponse } from 'msw';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { mswServer } from './__tests__/mswServer.js';
 import { fetchListenBrainzRecommendations } from './ListenBrainz.js';
+import {
+  getCachedListenBrainzTrack,
+  setCachedListenBrainzTrack,
+} from './ListenBrainzSpotifyCache.js';
 
 function mockValidate(username = 'user', valid = true) {
   return http.get('https://api.listenbrainz.org/1/validate-token', () =>
@@ -145,5 +150,43 @@ describe('fetchListenBrainzRecommendations', () => {
     await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
     expect(largestBatch).toBeLessThanOrEqual(25);
     expect(metadataCalls).toBe(Math.ceil(60 / 25));
+  });
+
+  it('uses the cached Spotify track and skips metadata + search on a cache hit', async () => {
+    // Pre-seed: cache hit for cache-hit-mbid-1, cache miss (negative) for cache-hit-mbid-2.
+    const cachedTrack = {
+      id: 'cached-spot-1',
+      name: 'Cached T1',
+      uri: 'spotify:track:cached-spot-1',
+      artists: [{ name: 'A1' }],
+      type: 'track',
+    } as unknown as Track;
+    await setCachedListenBrainzTrack('cache-hit-mbid-1', cachedTrack);
+    await setCachedListenBrainzTrack('cache-hit-mbid-2', null);
+
+    let metadataCalls = 0;
+    let searchCalls = 0;
+    mswServer.use(
+      mockValidate(),
+      mockRecommendations(['cache-hit-mbid-1', 'cache-hit-mbid-2']),
+      http.get('https://api.listenbrainz.org/1/metadata/recording', () => {
+        metadataCalls += 1;
+        return HttpResponse.json({});
+      }),
+      http.get('https://api.spotify.com/v1/search', () => {
+        searchCalls += 1;
+        return HttpResponse.json({ tracks: { items: [] } });
+      }),
+    );
+
+    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+    expect(metadataCalls).toBe(0);
+    expect(searchCalls).toBe(0);
+    expect(result).toHaveLength(1);
+    expect(result[0]).toMatchObject({
+      kind: 'track',
+      source: 'listenbrainz suggestion',
+      track: { id: 'cached-spot-1' },
+    });
   });
 });

@@ -1,6 +1,10 @@
 import type { Track } from '@spotify/web-api-ts-sdk';
 import { spotifyClient } from './SpotifyClient.js';
 import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
+import {
+  getCachedListenBrainzTrack,
+  setCachedListenBrainzTrack,
+} from './ListenBrainzSpotifyCache.js';
 
 const LB_BASE = 'https://api.listenbrainz.org';
 
@@ -31,20 +35,59 @@ export async function fetchListenBrainzRecommendations(options: {
   const musicBrainzIds = await fetchRecommendations(username, options.numberOfTracks * 3);
   if (musicBrainzIds.length === 0) return [];
 
-  const metadata = await fetchRecordingMetadata(musicBrainzIds);
+  const cachedByMbid = new Map<MusicBrainzId, Track | null>();
+  const uncachedMbids: MusicBrainzId[] = [];
+  for (const mbid of musicBrainzIds) {
+    const cached = await getCachedListenBrainzTrack(mbid);
+    if (cached === undefined) {
+      uncachedMbids.push(mbid);
+    } else {
+      cachedByMbid.set(mbid, cached);
+    }
+  }
+  if (cachedByMbid.size > 0) {
+    console.log(
+      `ListenBrainz cache: ${cachedByMbid.size} hit(s), ${uncachedMbids.length} miss(es)`,
+    );
+  }
+
+  const metadata: MetadataResponse =
+    uncachedMbids.length > 0 ? await fetchRecordingMetadata(uncachedMbids) : {};
 
   const tracks: SourcedTrack[] = [];
   for (const musicBrainzId of musicBrainzIds) {
     if (tracks.length >= options.numberOfTracks) break;
+
+    if (cachedByMbid.has(musicBrainzId)) {
+      const cached = cachedByMbid.get(musicBrainzId);
+      if (cached) tracks.push({ kind: 'track', track: cached, source: 'listenbrainz suggestion' });
+      continue;
+    }
+
     const meta = metadata[musicBrainzId];
     const artistName = meta?.artist?.name;
     const trackName = meta?.recording?.name;
-    if (!artistName || !trackName) continue;
+    if (!artistName || !trackName) {
+      await persistCacheEntry(musicBrainzId, null);
+      continue;
+    }
     const hit = await searchSpotifyTrack(artistName, trackName);
+    await persistCacheEntry(musicBrainzId, hit ?? null);
     if (hit) tracks.push({ kind: 'track', track: hit, source: 'listenbrainz suggestion' });
   }
 
   return tracks;
+}
+
+async function persistCacheEntry(mbid: MusicBrainzId, value: Track | null): Promise<void> {
+  try {
+    await setCachedListenBrainzTrack(mbid, value);
+  } catch (e) {
+    console.error(
+      `Failed to persist ListenBrainz→Spotify cache for mbid ${mbid}:`,
+      (e as Error).message,
+    );
+  }
 }
 
 async function validateListenBrainzToken(token: string): Promise<string | undefined> {
