@@ -1,7 +1,12 @@
+import type { Track } from '@spotify/web-api-ts-sdk';
 import { http, HttpResponse } from 'msw';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { mswServer } from './__tests__/mswServer.js';
 import { fetchListenBrainzRecommendations } from './ListenBrainz.js';
+import {
+  getCachedListenBrainzTrack,
+  setCachedListenBrainzTrack,
+} from './ListenBrainzSpotifyCache.js';
 
 function mockValidate(username = 'user', valid = true) {
   return http.get('https://api.listenbrainz.org/1/validate-token', () =>
@@ -10,12 +15,10 @@ function mockValidate(username = 'user', valid = true) {
 }
 
 function mockRecommendations(mbids: string[]) {
-  return http.get(
-    'https://api.listenbrainz.org/1/cf/recommendation/user/:username/recording',
-    () =>
-      HttpResponse.json({
-        payload: { mbids: mbids.map((id) => ({ recording_mbid: id, score: 1 })) },
-      }),
+  return http.get('https://api.listenbrainz.org/1/cf/recommendation/user/:username/recording', () =>
+    HttpResponse.json({
+      payload: { mbids: mbids.map((id) => ({ recording_mbid: id, score: 1 })) },
+    }),
   );
 }
 
@@ -24,7 +27,8 @@ function mockMetadata(map: Record<string, { artist: string; track: string }>) {
     const ids = new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
     const result: Record<string, unknown> = {};
     for (const id of ids) {
-      if (map[id]) result[id] = { artist: { name: map[id].artist }, recording: { name: map[id].track } };
+      if (map[id])
+        result[id] = { artist: { name: map[id].artist }, recording: { name: map[id].track } };
     }
     return HttpResponse.json(result);
   });
@@ -118,9 +122,7 @@ describe('fetchListenBrainzRecommendations', () => {
 
   it('chunks metadata calls to 25 mbids per request', async () => {
     const mbids = Array.from({ length: 60 }, (_, i) => `mbid-${i}`);
-    const metaMap = Object.fromEntries(
-      mbids.map((id) => [id, { artist: 'A', track: `T${id}` }]),
-    );
+    const metaMap = Object.fromEntries(mbids.map((id) => [id, { artist: 'A', track: `T${id}` }]));
     let metadataCalls = 0;
     let largestBatch = 0;
     mswServer.use(
@@ -128,8 +130,7 @@ describe('fetchListenBrainzRecommendations', () => {
       mockRecommendations(mbids),
       http.get('https://api.listenbrainz.org/1/metadata/recording', ({ request }) => {
         metadataCalls += 1;
-        const ids =
-          new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
+        const ids = new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
         largestBatch = Math.max(largestBatch, ids.length);
         const result: Record<string, unknown> = {};
         for (const id of ids) {
@@ -145,5 +146,71 @@ describe('fetchListenBrainzRecommendations', () => {
     await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
     expect(largestBatch).toBeLessThanOrEqual(25);
     expect(metadataCalls).toBe(Math.ceil(60 / 25));
+  });
+
+  it('uses the cached Spotify track and skips metadata + search on a cache hit', async () => {
+    // Pre-seed: cache hit for cache-hit-mbid-1, cache miss (negative) for cache-hit-mbid-2.
+    const cachedTrack = {
+      id: 'cached-spot-1',
+      name: 'Cached T1',
+      uri: 'spotify:track:cached-spot-1',
+      artists: [{ name: 'A1' }],
+      type: 'track',
+    } as unknown as Track;
+    await setCachedListenBrainzTrack('cache-hit-mbid-1', cachedTrack);
+    await setCachedListenBrainzTrack('cache-hit-mbid-2', null);
+
+    let metadataCalls = 0;
+    let searchCalls = 0;
+    mswServer.use(
+      mockValidate(),
+      mockRecommendations(['cache-hit-mbid-1', 'cache-hit-mbid-2']),
+      http.get('https://api.listenbrainz.org/1/metadata/recording', () => {
+        metadataCalls += 1;
+        return HttpResponse.json({});
+      }),
+      http.get('https://api.spotify.com/v1/search', () => {
+        searchCalls += 1;
+        return HttpResponse.json({ tracks: { items: [] } });
+      }),
+    );
+
+    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+    expect(metadataCalls).toBe(0);
+    expect(searchCalls).toBe(0);
+    expect(result).toHaveLength(1);
+    expect(result[0]).toMatchObject({
+      kind: 'track',
+      source: 'listenbrainz suggestion',
+      track: { id: 'cached-spot-1' },
+    });
+  });
+
+  it('persists negative cache entries when Spotify search returns no match', async () => {
+    mswServer.use(
+      mockValidate(),
+      mockRecommendations(['mbid-miss']),
+      mockMetadata({ 'mbid-miss': { artist: 'A', track: 'T' } }),
+      mockSpotifySearch(null),
+    );
+    await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+
+    const { getCachedListenBrainzTrack } = await import('./ListenBrainzSpotifyCache.js');
+    expect(await getCachedListenBrainzTrack('mbid-miss')).toBeNull();
+  });
+
+  it('persists negative cache entries when metadata lacks artist or track name', async () => {
+    mswServer.use(
+      mockValidate(),
+      mockRecommendations(['mbid-meta-bad']),
+      http.get('https://api.listenbrainz.org/1/metadata/recording', () =>
+        HttpResponse.json({ 'mbid-meta-bad': { recording: { name: 'T' } } }),
+      ),
+      mockSpotifySearch(null),
+    );
+    await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+
+    const { getCachedListenBrainzTrack } = await import('./ListenBrainzSpotifyCache.js');
+    expect(await getCachedListenBrainzTrack('mbid-meta-bad')).toBeNull();
   });
 });
