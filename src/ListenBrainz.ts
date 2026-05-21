@@ -142,9 +142,7 @@ async function fetchRecommendations(username: string, count: number): Promise<Mu
 
 const LB_METADATA_CHUNK_SIZE = 25;
 
-async function fetchRecordingMetadata(
-  musicBrainzIds: MusicBrainzId[],
-): Promise<MetadataResponse> {
+async function fetchRecordingMetadata(musicBrainzIds: MusicBrainzId[]): Promise<MetadataResponse> {
   const merged: MetadataResponse = {};
   for (let i = 0; i < musicBrainzIds.length; i += LB_METADATA_CHUNK_SIZE) {
     const chunk = musicBrainzIds.slice(i, i + LB_METADATA_CHUNK_SIZE);

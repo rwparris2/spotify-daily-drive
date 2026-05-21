@@ -43,17 +43,12 @@ async function persist(): Promise<void> {
   await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
 }
 
-export async function getCachedListenBrainzTrack(
-  mbid: string,
-): Promise<Track | null | undefined> {
+export async function getCachedListenBrainzTrack(mbid: string): Promise<Track | null | undefined> {
   const store = await load();
   return mbid in store ? store[mbid] : undefined;
 }
 
-export async function setCachedListenBrainzTrack(
-  mbid: string,
-  track: Track | null,
-): Promise<void> {
+export async function setCachedListenBrainzTrack(mbid: string, track: Track | null): Promise<void> {
   const store = await load();
   store[mbid] = track;
   await persist();

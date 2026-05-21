@@ -60,9 +60,8 @@ describe('ListenBrainzSpotifyCache', () => {
     const originalPath = process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH;
     process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH = corruptPath;
     try {
-      const { getCachedListenBrainzTrack: fresh } = await import(
-        './ListenBrainzSpotifyCache.js?corrupt'
-      );
+      const { getCachedListenBrainzTrack: fresh } =
+        await import('./ListenBrainzSpotifyCache.js?corrupt');
       await expect(fresh('any')).rejects.toThrow(/corrupt|Delete the file/);
     } finally {
       if (originalPath === undefined) delete process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH;

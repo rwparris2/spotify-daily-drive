@@ -15,12 +15,10 @@ function mockValidate(username = 'user', valid = true) {
 }
 
 function mockRecommendations(mbids: string[]) {
-  return http.get(
-    'https://api.listenbrainz.org/1/cf/recommendation/user/:username/recording',
-    () =>
-      HttpResponse.json({
-        payload: { mbids: mbids.map((id) => ({ recording_mbid: id, score: 1 })) },
-      }),
+  return http.get('https://api.listenbrainz.org/1/cf/recommendation/user/:username/recording', () =>
+    HttpResponse.json({
+      payload: { mbids: mbids.map((id) => ({ recording_mbid: id, score: 1 })) },
+    }),
   );
 }
 
@@ -29,7 +27,8 @@ function mockMetadata(map: Record<string, { artist: string; track: string }>) {
     const ids = new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
     const result: Record<string, unknown> = {};
     for (const id of ids) {
-      if (map[id]) result[id] = { artist: { name: map[id].artist }, recording: { name: map[id].track } };
+      if (map[id])
+        result[id] = { artist: { name: map[id].artist }, recording: { name: map[id].track } };
     }
     return HttpResponse.json(result);
   });
@@ -123,9 +122,7 @@ describe('fetchListenBrainzRecommendations', () => {
 
   it('chunks metadata calls to 25 mbids per request', async () => {
     const mbids = Array.from({ length: 60 }, (_, i) => `mbid-${i}`);
-    const metaMap = Object.fromEntries(
-      mbids.map((id) => [id, { artist: 'A', track: `T${id}` }]),
-    );
+    const metaMap = Object.fromEntries(mbids.map((id) => [id, { artist: 'A', track: `T${id}` }]));
     let metadataCalls = 0;
     let largestBatch = 0;
     mswServer.use(
@@ -133,8 +130,7 @@ describe('fetchListenBrainzRecommendations', () => {
       mockRecommendations(mbids),
       http.get('https://api.listenbrainz.org/1/metadata/recording', ({ request }) => {
         metadataCalls += 1;
-        const ids =
-          new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
+        const ids = new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
         largestBatch = Math.max(largestBatch, ids.length);
         const result: Record<string, unknown> = {};
         for (const id of ids) {
