@@ -1,6 +1,8 @@
 import { http, HttpResponse } from 'msw';
 import { setupServer } from 'msw/node';
 
+export const TEST_USER_ID = 'test-user';
+
 export const mswServer = setupServer(
   http.post('https://accounts.spotify.com/api/token', () =>
     HttpResponse.json({
@@ -9,6 +11,9 @@ export const mswServer = setupServer(
       expires_in: 3600,
       scope: 'user-read-playback-position',
     }),
+  ),
+  http.get('https://api.spotify.com/v1/me', () =>
+    HttpResponse.json({ id: TEST_USER_ID, display_name: 'Test User' }),
   ),
 );
 
@@ -92,6 +97,7 @@ export function mockUserPlaylists(playlists: PlaylistFixture[]): void {
           id: p.id,
           name: p.name ?? `Playlist ${p.id}`,
           snapshot_id: p.snapshot_id ?? `${p.id}_snap`,
+          owner: { id: TEST_USER_ID, display_name: 'Test User' },
         })),
         total: playlists.length,
         limit: 50,

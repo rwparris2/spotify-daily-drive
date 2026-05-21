@@ -5,6 +5,10 @@ process.env.SPOTIFY_PLAYLIST_ID = 'test_playlist_id';
 process.env.SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8888/callback';
 process.env.PODCASTS_CONFIG_PATH = 'src/__tests__/fixtures/podcasts.toml';
 
+// A developer's local .env may carry this; clear it so it doesn't leak real
+// network calls into tests that don't explicitly opt in.
+delete process.env.LISTENBRAINZ_USER_TOKEN;
+
 import { tmpdir } from 'node:os';
 import { mkdtempSync } from 'node:fs';
 import { join } from 'node:path';
