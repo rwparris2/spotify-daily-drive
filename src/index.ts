@@ -8,7 +8,12 @@ import {
   SourcedTrack,
 } from './DailyDrivePlaylistItem.js';
 
-const NUMBER_OF_PODCASTS = 8;
+const NUMBER_OF_PODCASTS = 10;
+// Gaps between podcasts grow 2, 3, …, n, so n(n+1)/2 + 1 fills them with 1 to spare.
+// ×1.2 gives a ~20% long tail after the final podcast.
+const NUMBER_OF_TRACKS = Math.ceil(
+  ((NUMBER_OF_PODCASTS * (NUMBER_OF_PODCASTS + 1)) / 2 + 1) * 1.2,
+);
 
 const dryRun = process.argv.includes('--dry-run');
 
@@ -16,7 +21,7 @@ let podcasts: (SourcedEpisode | undefined)[] = await fetchSpotifyPodcasts({
   numberOfPodcasts: NUMBER_OF_PODCASTS,
 });
 const tracks: SourcedTrack[] = await fetchSpotifyTracks({
-  numberOfTracks: NUMBER_OF_PODCASTS * 5,
+  numberOfTracks: NUMBER_OF_TRACKS,
 });
 
 // HACK
