@@ -189,4 +189,32 @@ describe('fetchListenBrainzRecommendations', () => {
       track: { id: 'cached-spot-1' },
     });
   });
+
+  it('persists negative cache entries when Spotify search returns no match', async () => {
+    mswServer.use(
+      mockValidate(),
+      mockRecommendations(['mbid-miss']),
+      mockMetadata({ 'mbid-miss': { artist: 'A', track: 'T' } }),
+      mockSpotifySearch(null),
+    );
+    await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+
+    const { getCachedListenBrainzTrack } = await import('./ListenBrainzSpotifyCache.js');
+    expect(await getCachedListenBrainzTrack('mbid-miss')).toBeNull();
+  });
+
+  it('persists negative cache entries when metadata lacks artist or track name', async () => {
+    mswServer.use(
+      mockValidate(),
+      mockRecommendations(['mbid-meta-bad']),
+      http.get('https://api.listenbrainz.org/1/metadata/recording', () =>
+        HttpResponse.json({ 'mbid-meta-bad': { recording: { name: 'T' } } }),
+      ),
+      mockSpotifySearch(null),
+    );
+    await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+
+    const { getCachedListenBrainzTrack } = await import('./ListenBrainzSpotifyCache.js');
+    expect(await getCachedListenBrainzTrack('mbid-meta-bad')).toBeNull();
+  });
 });
