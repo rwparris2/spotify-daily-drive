@@ -21,6 +21,7 @@ TypeScript Node CLI that rebuilds a single persistent Spotify playlist by interl
 - `src/SpotifyPlaylist.ts` — `PUT` then chunked `POST` to replace items, then renames + redescribes the playlist
 - `src/SpotifyClient.ts` — refresh-token-based auth; custom `fetch` with 429 backoff (top-level await)
 - `src/SpotifyPlaylistTracksCache.ts` — JSON cache keyed by `playlistId + snapshotId`; path overridable via `SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH`
+- `src/ListenBrainzSpotifyCache.ts` — JSON cache keyed by ListenBrainz MBID; stores resolved Spotify `Track` or `null` for known misses; path overridable via `LISTENBRAINZ_SPOTIFY_CACHE_PATH`
 - `src/ListenBrainz.ts` — optional CF recommendations resolved to Spotify tracks via search; no-op without `LISTENBRAINZ_USER_TOKEN`
 - `src/PodcastConfig.ts` — `smol-toml` loader for `podcasts.toml`
 - `src/config.ts` — env var validation; `process.exit(2)` on any missing required value
