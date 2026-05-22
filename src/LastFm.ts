@@ -10,8 +10,11 @@ import {
 const LASTFM_BASE = 'https://ws.audioscrobbler.com/2.0/';
 
 type LastFmTrack = { name?: string; artist?: { name?: string } };
+type LastFmArtist = { name?: string };
 
 type TrackSimilarResponse = { similartracks?: { track?: LastFmTrack[] } };
+type ArtistSimilarResponse = { similarartists?: { artist?: LastFmArtist[] } };
+type ArtistTopTracksResponse = { toptracks?: { track?: LastFmTrack[] } };
 
 interface Candidate {
   artistName: string;
@@ -49,6 +52,41 @@ export async function fetchLastFmDiscoveries(options: {
         trackName: t.name,
         source: `last.fm — similar track to "${trackName}"`,
       });
+    }
+  }
+
+  const artistSeedTracks = _.sampleSize(options.seedTracks, 5);
+
+  for (const seedTrack of artistSeedTracks) {
+    const seedArtist = seedTrack.artists[0]?.name;
+    if (!seedArtist) continue;
+
+    const similarArtistsResp = await lastFmGet<ArtistSimilarResponse>(
+      apiKey,
+      'artist.getSimilar',
+      { artist: seedArtist, limit: '20' },
+    );
+    const similarArtists = (similarArtistsResp?.similarartists?.artist ?? [])
+      .map((a) => a.name)
+      .filter((n): n is string => !!n);
+    const sampledSimilarArtists = _.sampleSize(similarArtists, 5);
+
+    for (const similarArtist of sampledSimilarArtists) {
+      const topTracksResp = await lastFmGet<ArtistTopTracksResponse>(
+        apiKey,
+        'artist.getTopTracks',
+        { artist: similarArtist, limit: '50' },
+      );
+      const topTracks = topTracksResp?.toptracks?.track ?? [];
+      const sampledTopTracks = _.sampleSize(topTracks, 2);
+      for (const t of sampledTopTracks) {
+        if (!t.name || !t.artist?.name) continue;
+        candidates.push({
+          artistName: t.artist.name,
+          trackName: t.name,
+          source: `last.fm — similar artist to ${seedArtist}`,
+        });
+      }
     }
   }
 

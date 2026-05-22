@@ -136,6 +136,66 @@ describe('fetchLastFmDiscoveries', () => {
     expect(result[0].track.id).toBe('spot-similar');
   });
 
+  it('returns tagged tracks from artist.getSimilar → artist.getTopTracks chain', async () => {
+    const seed = makeTrack('s2', 'Anchor Song', 'Anchor Artist');
+    mswServer.use(
+      mockLastFm({
+        // No track similarity — artist-similarity-only test.
+        trackSimilar: {},
+        artistSimilar: {
+          'Anchor Artist': [
+            { name: 'Similar1' },
+            { name: 'Similar2' },
+            { name: 'Similar3' },
+            { name: 'Similar4' },
+            { name: 'Similar5' },
+          ],
+        },
+        artistTopTracks: {
+          Similar1: [{ name: 'S1T1', artist: 'Similar1' }, { name: 'S1T2', artist: 'Similar1' }],
+          Similar2: [{ name: 'S2T1', artist: 'Similar2' }, { name: 'S2T2', artist: 'Similar2' }],
+          Similar3: [{ name: 'S3T1', artist: 'Similar3' }, { name: 'S3T2', artist: 'Similar3' }],
+          Similar4: [{ name: 'S4T1', artist: 'Similar4' }, { name: 'S4T2', artist: 'Similar4' }],
+          Similar5: [{ name: 'S5T1', artist: 'Similar5' }, { name: 'S5T2', artist: 'Similar5' }],
+        },
+      }),
+      // Resolve every possible candidate name to a unique Spotify id.
+      http.get('https://api.spotify.com/v1/search', ({ request }) => {
+        const q = new URL(request.url).searchParams.get('q') ?? '';
+        const match = q.match(/track:"([^"]+)" artist:"([^"]+)"/);
+        if (!match) return HttpResponse.json({ tracks: { items: [] } });
+        const [, trackName, artistName] = match;
+        return HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: `spot-${trackName}`,
+                name: trackName,
+                uri: `spotify:track:spot-${trackName}`,
+                artists: [{ name: artistName }],
+                type: 'track',
+              },
+            ],
+          },
+        });
+      }),
+    );
+
+    const result = await fetchLastFmDiscoveries({ seedTracks: [seed], numberOfTracks: 20 });
+
+    expect(result.length).toBeGreaterThan(0);
+    // All results should be tagged from the artist-similarity chain since no track.getSimilar entries match.
+    for (const st of result) {
+      expect(st.source).toBe('last.fm — similar artist to Anchor Artist');
+    }
+    // Sanity: results should come from the Similar1..Similar5 artist universe.
+    for (const st of result) {
+      expect(['Similar1', 'Similar2', 'Similar3', 'Similar4', 'Similar5']).toContain(
+        st.track.artists[0].name,
+      );
+    }
+  });
+
   it('uses the cache: on second call with same candidates, Spotify search is not invoked', async () => {
     const seed = makeTrack('s-cache', 'Cache Song', 'Cache Artist');
     let spotifySearchCalls = 0;
