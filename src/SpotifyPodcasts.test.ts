@@ -332,4 +332,23 @@ describe('fetchSpotifyPodcasts', () => {
     expect(episodes.map((e) => e.episode.id)).not.toContain('flightpod_ep_c');
     expect(episodes[1]?.episode.id).toBe('thedaily_ep');
   });
+
+  it('unknown mode value: treats show as default mode and warns', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    mockShowEpisodes('flightpod', [freshEpisode('flightpod')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+    mockShowEpisodes('typoshow', [freshEpisode('typoshow')]);
+
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 10 });
+
+    // typoshow's typo'd mode falls back to default behavior, which returns its
+    // fresh episode (passes the 6-month cutoff, not fully_played) for slot 10.
+    expect(episodes.map((e) => e.episode.id)).toContain('typoshow_ep');
+    expect(warn).toHaveBeenCalledWith(expect.stringContaining('typoshow'));
+  });
 });

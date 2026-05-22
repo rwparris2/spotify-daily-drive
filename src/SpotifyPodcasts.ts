@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import type { SimplifiedEpisode } from '@spotify/web-api-ts-sdk';
-import { loadPodcastConfig, type PodcastConfig } from './PodcastConfig.js';
+import { loadPodcastConfig, type PodcastConfig, type PodcastMode } from './PodcastConfig.js';
 import { spotifyClient } from './SpotifyClient.js';
 import type { SourcedEpisode } from './DailyDrivePlaylistItem.js';
 
@@ -53,11 +53,23 @@ export const fetchSpotifyPodcasts = async (opts: {
   return selected;
 };
 
+const KNOWN_MODES: ReadonlySet<PodcastMode> = new Set(['default', 'latest_only', 'sequential']);
+
+function resolveMode(show: PodcastShowConfig): PodcastMode {
+  const raw = show.mode;
+  if (raw === undefined) return 'default';
+  if (KNOWN_MODES.has(raw as PodcastMode)) return raw as PodcastMode;
+  console.warn(
+    `Unknown podcast mode "${raw}" for show "${show.name}" (id=${show.spotify_show_id}); treating as "default".`,
+  );
+  return 'default';
+}
+
 async function pickLatestEligibleEpisode(
   show: PodcastShowConfig,
   cutoff: Date,
 ): Promise<SimplifiedEpisode | undefined> {
-  const mode = show.mode ?? 'default';
+  const mode = resolveMode(show);
 
   if (mode === 'sequential') {
     return pickOldestUnplayedSequential(show);

@@ -39,3 +39,9 @@ name = "Flight Pod"
 spotify_show_id = "flightpod"
 pin_slot = 2
 mode = "sequential"
+
+[[shows]]
+name = "Typo Show"
+spotify_show_id = "typoshow"
+pin_slot = 10
+mode = "sequencial"
