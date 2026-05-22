@@ -96,29 +96,33 @@ export async function fetchLastFmDiscoveries(options: {
     (c) => !seedArtistNamesLower.has(c.artistName.toLowerCase()),
   );
 
+  const shuffledCandidates = _.shuffle(filteredCandidates);
   const resolved: SourcedTrack[] = [];
+  const seenTrackIds = new Set<string>();
   let cacheHits = 0;
   let cacheMisses = 0;
-  for (const c of filteredCandidates) {
+  for (const c of shuffledCandidates) {
+    if (resolved.length >= options.numberOfTracks) break;
     const cached = await getCachedLastFmTrack(c.artistName, c.trackName);
+    let hit: Track | undefined;
     if (cached !== undefined) {
       cacheHits += 1;
-      if (cached) resolved.push({ kind: 'track', track: cached, source: c.source });
-      continue;
+      if (cached) hit = cached;
+    } else {
+      cacheMisses += 1;
+      hit = await searchSpotifyTrack(c.artistName, c.trackName);
+      await persistCacheEntry(c.artistName, c.trackName, hit ?? null);
     }
-    cacheMisses += 1;
-    const hit = await searchSpotifyTrack(c.artistName, c.trackName);
-    await persistCacheEntry(c.artistName, c.trackName, hit ?? null);
-    if (hit) resolved.push({ kind: 'track', track: hit, source: c.source });
+    if (hit && !seenTrackIds.has(hit.id)) {
+      seenTrackIds.add(hit.id);
+      resolved.push({ kind: 'track', track: hit, source: c.source });
+    }
   }
   if (cacheHits > 0 || cacheMisses > 0) {
     console.log(`Last.fm→Spotify cache: ${cacheHits} hit(s), ${cacheMisses} miss(es)`);
   }
 
-  return _(resolved)
-    .uniqBy((st) => st.track.id)
-    .sampleSize(options.numberOfTracks)
-    .value();
+  return resolved;
 }
 
 async function lastFmGet<T>(
