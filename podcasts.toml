@@ -11,6 +11,12 @@ pin_slot = 2
 mode = "latest_only"
 
 [[shows]]
+name = "<FILL IN: name of Spotify show id 4XQyGRnBcNrvmXwfP13pKH>"
+spotify_show_id = "4XQyGRnBcNrvmXwfP13pKH"
+pin_slot = 2
+mode = "sequential"
+
+[[shows]]
 name = "The Daily"
 spotify_show_id = "3IM0lmZxpFAY7CwMuv9H4g"
 pin_slot = 3
