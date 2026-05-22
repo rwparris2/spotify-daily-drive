@@ -86,7 +86,10 @@ async function playlistTracks(): Promise<SourcedTrack[]> {
     const cached = await getCachedPlaylistTracks(p.id, p.snapshot_id);
     if (cached) {
       console.log(`Cache hit for ${p.name} (${cached.length} tracks)`);
-      results = [...results, ...cached.map((track): SourcedTrack => ({ kind: 'track', track, source }))];
+      results = [
+        ...results,
+        ...cached.map((track): SourcedTrack => ({ kind: 'track', track, source })),
+      ];
       continue;
     }
     const { tracks, complete } = await fetchSongsFromPlayList(p);
@@ -100,7 +103,10 @@ async function playlistTracks(): Promise<SourcedTrack[]> {
         );
       }
     }
-    results = [...results, ...tracks.map((track): SourcedTrack => ({ kind: 'track', track, source }))];
+    results = [
+      ...results,
+      ...tracks.map((track): SourcedTrack => ({ kind: 'track', track, source })),
+    ];
   }
   return _(results)
     .chain()

@@ -57,8 +57,9 @@ describe('fetchSpotifyTracks', () => {
     mockRecentlyPlayed(range('rp', 10));
     mockSavedTracks(range('sv', 10));
     mswServer.use(
-      http.get('https://api.spotify.com/v1/me/top/tracks', () =>
-        new HttpResponse('boom', { status: 500 }),
+      http.get(
+        'https://api.spotify.com/v1/me/top/tracks',
+        () => new HttpResponse('boom', { status: 500 }),
       ),
     );
 
@@ -77,7 +78,17 @@ describe('fetchSpotifyTracks', () => {
       http.get('https://api.spotify.com/v1/playlists/p1/items', () =>
         HttpResponse.json({
           items: [
-            { track: { id: 'real', uri: 'spotify:track:real', name: 'Real', artists: [{ name: 'A' }], album: { name: 'B', images: [] }, duration_ms: 1, type: 'track' } },
+            {
+              track: {
+                id: 'real',
+                uri: 'spotify:track:real',
+                name: 'Real',
+                artists: [{ name: 'A' }],
+                album: { name: 'B', images: [] },
+                duration_ms: 1,
+                type: 'track',
+              },
+            },
             { track: { id: 'ep1', uri: 'spotify:episode:ep1', name: 'Episode', type: 'episode' } },
           ],
           total: 2,

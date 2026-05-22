@@ -2,10 +2,7 @@ import type { Track } from '@spotify/web-api-ts-sdk';
 import _ from 'lodash';
 import { spotifyClient } from './SpotifyClient.js';
 import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
-import {
-  getCachedLastFmTrack,
-  setCachedLastFmTrack,
-} from './LastFmSpotifyCache.js';
+import { getCachedLastFmTrack, setCachedLastFmTrack } from './LastFmSpotifyCache.js';
 
 const LASTFM_BASE = 'https://ws.audioscrobbler.com/2.0/';
 
@@ -61,11 +58,10 @@ export async function fetchLastFmDiscoveries(options: {
     const seedArtist = seedTrack.artists[0]?.name;
     if (!seedArtist) continue;
 
-    const similarArtistsResp = await lastFmGet<ArtistSimilarResponse>(
-      apiKey,
-      'artist.getSimilar',
-      { artist: seedArtist, limit: '20' },
-    );
+    const similarArtistsResp = await lastFmGet<ArtistSimilarResponse>(apiKey, 'artist.getSimilar', {
+      artist: seedArtist,
+      limit: '20',
+    });
     const similarArtists = (similarArtistsResp?.similarartists?.artist ?? [])
       .map((a) => a.name)
       .filter((n): n is string => !!n);

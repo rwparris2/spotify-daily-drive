@@ -2,8 +2,7 @@ import { readFile, writeFile, mkdir } from 'fs/promises';
 import { dirname } from 'path';
 import type { Track } from '@spotify/web-api-ts-sdk';
 
-const CACHE_PATH =
-  process.env.LASTFM_SPOTIFY_CACHE_PATH ?? '.cache/lastfm-spotify-tracks.json';
+const CACHE_PATH = process.env.LASTFM_SPOTIFY_CACHE_PATH ?? '.cache/lastfm-spotify-tracks.json';
 
 type CacheValue = Track | null;
 type CacheShape = Record<string, CacheValue>;

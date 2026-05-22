@@ -72,7 +72,16 @@ function makeTrack(id: string, name: string, artist: string): Track {
     name,
     uri: `spotify:track:${id}`,
     type: 'track',
-    artists: [{ name: artist, id: `${id}_artist`, uri: '', external_urls: { spotify: '' }, href: '', type: 'artist' }],
+    artists: [
+      {
+        name: artist,
+        id: `${id}_artist`,
+        uri: '',
+        external_urls: { spotify: '' },
+        href: '',
+        type: 'artist',
+      },
+    ],
     album: {} as Track['album'],
     duration_ms: 200_000,
     explicit: false,
@@ -152,11 +161,26 @@ describe('fetchLastFmDiscoveries', () => {
           ],
         },
         artistTopTracks: {
-          Similar1: [{ name: 'S1T1', artist: 'Similar1' }, { name: 'S1T2', artist: 'Similar1' }],
-          Similar2: [{ name: 'S2T1', artist: 'Similar2' }, { name: 'S2T2', artist: 'Similar2' }],
-          Similar3: [{ name: 'S3T1', artist: 'Similar3' }, { name: 'S3T2', artist: 'Similar3' }],
-          Similar4: [{ name: 'S4T1', artist: 'Similar4' }, { name: 'S4T2', artist: 'Similar4' }],
-          Similar5: [{ name: 'S5T1', artist: 'Similar5' }, { name: 'S5T2', artist: 'Similar5' }],
+          Similar1: [
+            { name: 'S1T1', artist: 'Similar1' },
+            { name: 'S1T2', artist: 'Similar1' },
+          ],
+          Similar2: [
+            { name: 'S2T1', artist: 'Similar2' },
+            { name: 'S2T2', artist: 'Similar2' },
+          ],
+          Similar3: [
+            { name: 'S3T1', artist: 'Similar3' },
+            { name: 'S3T2', artist: 'Similar3' },
+          ],
+          Similar4: [
+            { name: 'S4T1', artist: 'Similar4' },
+            { name: 'S4T2', artist: 'Similar4' },
+          ],
+          Similar5: [
+            { name: 'S5T1', artist: 'Similar5' },
+            { name: 'S5T2', artist: 'Similar5' },
+          ],
         },
       }),
       // Resolve every possible candidate name to a unique Spotify id.
@@ -203,7 +227,7 @@ describe('fetchLastFmDiscoveries', () => {
         trackSimilar: {
           'Seed Artist|Seed Song': [
             { name: 'Self Song', artist: 'seed artist' }, // case-insensitive seed-artist match — should be dropped
-            { name: 'Discovery', artist: 'New Artist' },  // legit discovery — should remain
+            { name: 'Discovery', artist: 'New Artist' }, // legit discovery — should remain
           ],
         },
       }),

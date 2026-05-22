@@ -53,11 +53,15 @@ There's no state file: variety comes from random sampling and Spotify's `fully_p
 
 ### Schedule it on GitHub Actions
 
-Push to GitHub — [`.github/workflows/daily-drive.yml`](.github/workflows/daily-drive.yml) runs the CLI on a daily cron and commits the refreshed track cache back to the repo so it persists across runs. Add `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, and `SPOTIFY_PLAYLIST_ID` as Actions secrets.
+Push to GitHub — [`.github/workflows/daily-drive.yml`](.github/workflows/daily-drive.yml) runs the CLI on a daily cron and commits the refreshed track cache back to the repo so it persists across runs. Add `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, `SPOTIFY_PLAYLIST_ID`, and (optionally) `LASTFM_API_KEY` as Actions secrets.
 
 ### Optional: ListenBrainz
 
 Set `LISTENBRAINZ_USER_TOKEN` (from <https://listenbrainz.org/profile/>) to mix in collaborative-filter recommendations. Unset, it's skipped silently.
+
+### Optional: Last.fm
+
+Set `LASTFM_API_KEY` (free, register at <https://www.last.fm/api/account/create>) to mix in stylistically-similar discoveries from Last.fm's similarity graph. Unset, it's skipped silently.
 
 ## Tests
 
