@@ -302,4 +302,34 @@ describe('fetchSpotifyPodcasts', () => {
 
     expect(episodes[1]?.episode.id).toBe('flightpod_ep_ancient');
   });
+
+  it('sequential mode: returns no episode when every episode is fully_played', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    mockShowEpisodesPaginated('flightpod', [
+      [
+        ep('flightpod', '2026-05-20', true, '_a'),
+        ep('flightpod', '2026-05-13', true, '_b'),
+        ep('flightpod', '2020-06-01', true, '_c'),
+      ],
+    ]);
+
+    // Force the slot-2 pool to try flightpod first. With every episode played,
+    // pickOldestUnplayedSequential returns undefined and tryPick falls back to
+    // thedaily (also in the tied pool). thedaily is mocked, so slot 2 = thedaily.
+    vi.restoreAllMocks();
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(_, 'random').mockImplementation((n: number) => n);
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(episodes.map((e) => e.episode.id)).not.toContain('flightpod_ep_a');
+    expect(episodes.map((e) => e.episode.id)).not.toContain('flightpod_ep_b');
+    expect(episodes.map((e) => e.episode.id)).not.toContain('flightpod_ep_c');
+    expect(episodes[1]?.episode.id).toBe('thedaily_ep');
+  });
 });
