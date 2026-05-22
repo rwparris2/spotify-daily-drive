@@ -5,6 +5,4 @@ dist/
 *.tsbuildinfo
 .DS_Store
 .spotify-token.json
-.cache/*
-!.cache/spotify-playlist-tracks.json
 .claude/
