@@ -213,4 +213,53 @@ describe('fetchListenBrainzRecommendations', () => {
     const { getCachedListenBrainzTrack } = await import('./ListenBrainzSpotifyCache.js');
     expect(await getCachedListenBrainzTrack('mbid-meta-bad')).toBeNull();
   });
+
+  it('stops resolving once numberOfTracks tracks have been collected', async () => {
+    const mbids = Array.from({ length: 60 }, (_, i) => `lazy-mbid-${i}`);
+    const metaMap = Object.fromEntries(
+      mbids.map((id) => [id, { artist: `Artist-${id}`, track: `Track-${id}` }]),
+    );
+    let searchCalls = 0;
+
+    mswServer.use(
+      mockValidate(),
+      mockRecommendations(mbids),
+      http.get('https://api.listenbrainz.org/1/metadata/recording', ({ request }) => {
+        const ids = new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
+        const result: Record<string, unknown> = {};
+        for (const id of ids) {
+          result[id] = {
+            artist: { name: metaMap[id]!.artist },
+            recording: { name: metaMap[id]!.track },
+          };
+        }
+        return HttpResponse.json(result);
+      }),
+      http.get('https://api.spotify.com/v1/search', ({ request }) => {
+        searchCalls += 1;
+        const q = new URL(request.url).searchParams.get('q') ?? '';
+        const match = q.match(/track:"([^"]+)" artist:"([^"]+)"/);
+        if (!match) return HttpResponse.json({ tracks: { items: [] } });
+        const [, trackName] = match;
+        return HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: `spot-${trackName}`,
+                name: trackName,
+                uri: `spotify:track:spot-${trackName}`,
+                artists: [{ name: 'Artist' }],
+                type: 'track',
+              },
+            ],
+          },
+        });
+      }),
+    );
+
+    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+
+    expect(result.length).toBe(5);
+    expect(searchCalls).toBe(5);
+  });
 });

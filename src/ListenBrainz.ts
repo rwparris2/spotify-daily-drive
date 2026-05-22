@@ -1,4 +1,5 @@
 import type { Track } from '@spotify/web-api-ts-sdk';
+import _ from 'lodash';
 import { spotifyClient } from './SpotifyClient.js';
 import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
 import {
@@ -55,7 +56,7 @@ export async function fetchListenBrainzRecommendations(options: {
     uncachedMbids.length > 0 ? await fetchRecordingMetadata(uncachedMbids) : {};
 
   const tracks: SourcedTrack[] = [];
-  for (const musicBrainzId of musicBrainzIds) {
+  for (const musicBrainzId of _.shuffle(musicBrainzIds)) {
     if (tracks.length >= options.numberOfTracks) break;
 
     if (cachedByMbid.has(musicBrainzId)) {

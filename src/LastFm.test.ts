@@ -356,6 +356,46 @@ describe('fetchLastFmDiscoveries', () => {
     expect(sharedHits.length).toBe(1);
   });
 
+  it('stops resolving once numberOfTracks unique tracks have been collected', async () => {
+    const seed = makeTrack('lazy-seed', 'Lazy Seed Song', 'Lazy Seed Artist');
+    const similarTracks = Array.from({ length: 100 }, (_, i) => ({
+      name: `Sim${i}`,
+      artist: `SimArtist${i}`,
+    }));
+    let spotifySearchCalls = 0;
+
+    mswServer.use(
+      mockLastFm({
+        trackSimilar: { 'Lazy Seed Artist|Lazy Seed Song': similarTracks },
+      }),
+      http.get('https://api.spotify.com/v1/search', ({ request }) => {
+        spotifySearchCalls += 1;
+        const q = new URL(request.url).searchParams.get('q') ?? '';
+        const match = q.match(/track:"([^"]+)" artist:"([^"]+)"/);
+        if (!match) return HttpResponse.json({ tracks: { items: [] } });
+        const [, trackName, artistName] = match;
+        return HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: `spot-${trackName}`,
+                name: trackName,
+                uri: `spotify:track:spot-${trackName}`,
+                artists: [{ name: artistName }],
+                type: 'track',
+              },
+            ],
+          },
+        });
+      }),
+    );
+
+    const result = await fetchLastFmDiscoveries({ seedTracks: [seed], numberOfTracks: 5 });
+
+    expect(result.length).toBe(5);
+    expect(spotifySearchCalls).toBe(5);
+  });
+
   it('uses the cache: on second call with same candidates, Spotify search is not invoked', async () => {
     const seed = makeTrack('s-cache', 'Cache Song', 'Cache Artist');
     let spotifySearchCalls = 0;
