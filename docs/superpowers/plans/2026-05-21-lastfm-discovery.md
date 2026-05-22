@@ -890,27 +890,27 @@
 
 - [ ] **Step 4: Refactor `fetchSpotifyTracks` in `src/SpotifyTracks.ts`**
 
-  Add the import near the top:
+  **Note:** The current `fetchSpotifyTracks` uses a module-level `PER_SOURCE_TRACK_COUNT` constant (= 25), and the per-source helpers `playlistTracks()/topTracks()/recentlyPlayedTracks()/savedTracks()` take no arguments. Only `fetchListenBrainzRecommendations` takes `{ numberOfTracks }`. Match that pattern.
+
+  Add the import near the top of `src/SpotifyTracks.ts`:
 
   ```ts
   import { fetchLastFmDiscoveries } from './LastFm.js';
   ```
 
-  Replace the existing body of `fetchSpotifyTracks` (lines ~186 onward in the current file):
+  Replace the existing body of `fetchSpotifyTracks`:
 
   ```ts
   export async function fetchSpotifyTracks(options: {
     numberOfTracks: number;
   }): Promise<SourcedTrack[]> {
-    const requiredContributionPerSource = Math.ceil(options.numberOfTracks / 4);
-
     const [playlistResults, topResults, recentResults, savedResults, listenBrainzResults] =
       await Promise.all([
-        playlistTracks({ numberOfTracks: requiredContributionPerSource }),
-        topTracks({ numberOfTracks: requiredContributionPerSource }),
-        recentlyPlayedTracks({ numberOfTracks: requiredContributionPerSource }),
-        savedTracks({ numberOfTracks: requiredContributionPerSource }),
-        fetchListenBrainzRecommendations({ numberOfTracks: requiredContributionPerSource }),
+        playlistTracks(),
+        topTracks(),
+        recentlyPlayedTracks(),
+        savedTracks(),
+        fetchListenBrainzRecommendations({ numberOfTracks: PER_SOURCE_TRACK_COUNT }),
       ]);
 
     const spotifyNativePool: Track[] = [
@@ -922,7 +922,7 @@
 
     const lastFmResults = await fetchLastFmDiscoveries({
       seedTracks: spotifyNativePool,
-      numberOfTracks: requiredContributionPerSource,
+      numberOfTracks: PER_SOURCE_TRACK_COUNT,
     });
 
     const allAvailableTracks = [
