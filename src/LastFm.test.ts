@@ -135,4 +135,44 @@ describe('fetchLastFmDiscoveries', () => {
     });
     expect(result[0].track.id).toBe('spot-similar');
   });
+
+  it('uses the cache: on second call with same candidates, Spotify search is not invoked', async () => {
+    const seed = makeTrack('s-cache', 'Cache Song', 'Cache Artist');
+    let spotifySearchCalls = 0;
+
+    mswServer.use(
+      mockLastFm({
+        trackSimilar: {
+          'Cache Artist|Cache Song': [{ name: 'Cached Hit', artist: 'Hit Artist' }],
+        },
+      }),
+      http.get('https://api.spotify.com/v1/search', () => {
+        spotifySearchCalls += 1;
+        return HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: 'spot-cached',
+                name: 'Cached Hit',
+                uri: 'spotify:track:spot-cached',
+                artists: [{ name: 'Hit Artist' }],
+                type: 'track',
+              },
+            ],
+          },
+        });
+      }),
+    );
+
+    // First run — Spotify search is hit; cache gets populated.
+    const first = await fetchLastFmDiscoveries({ seedTracks: [seed], numberOfTracks: 5 });
+    expect(first.length).toBe(1);
+    expect(spotifySearchCalls).toBe(1);
+
+    // Second run — cache hit; no further Spotify search.
+    const second = await fetchLastFmDiscoveries({ seedTracks: [seed], numberOfTracks: 5 });
+    expect(second.length).toBe(1);
+    expect(second[0].track.id).toBe('spot-cached');
+    expect(spotifySearchCalls).toBe(1);
+  });
 });

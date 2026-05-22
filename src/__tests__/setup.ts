@@ -16,6 +16,7 @@ import { join } from 'node:path';
 const testCacheDir = mkdtempSync(join(tmpdir(), 'spotify-daily-drive-test-'));
 process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH = join(testCacheDir, 'playlist-tracks.json');
 process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH = join(testCacheDir, 'listenbrainz-spotify-tracks.json');
+process.env.LASTFM_SPOTIFY_CACHE_PATH = join(testCacheDir, 'lastfm-spotify-tracks.json');
 
 import { afterAll, afterEach } from 'vitest';
 import { mswServer } from './mswServer.js';

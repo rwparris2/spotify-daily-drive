@@ -2,6 +2,10 @@ import type { Track } from '@spotify/web-api-ts-sdk';
 import _ from 'lodash';
 import { spotifyClient } from './SpotifyClient.js';
 import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
+import {
+  getCachedLastFmTrack,
+  setCachedLastFmTrack,
+} from './LastFmSpotifyCache.js';
 
 const LASTFM_BASE = 'https://ws.audioscrobbler.com/2.0/';
 
@@ -49,9 +53,22 @@ export async function fetchLastFmDiscoveries(options: {
   }
 
   const resolved: SourcedTrack[] = [];
+  let cacheHits = 0;
+  let cacheMisses = 0;
   for (const c of candidates) {
+    const cached = await getCachedLastFmTrack(c.artistName, c.trackName);
+    if (cached !== undefined) {
+      cacheHits += 1;
+      if (cached) resolved.push({ kind: 'track', track: cached, source: c.source });
+      continue;
+    }
+    cacheMisses += 1;
     const hit = await searchSpotifyTrack(c.artistName, c.trackName);
+    await persistCacheEntry(c.artistName, c.trackName, hit ?? null);
     if (hit) resolved.push({ kind: 'track', track: hit, source: c.source });
+  }
+  if (cacheHits > 0 || cacheMisses > 0) {
+    console.log(`Last.fm→Spotify cache: ${cacheHits} hit(s), ${cacheMisses} miss(es)`);
   }
 
   return _(resolved)
@@ -95,5 +112,20 @@ async function searchSpotifyTrack(
       (e as Error).message,
     );
     return undefined;
+  }
+}
+
+async function persistCacheEntry(
+  artistName: string,
+  trackName: string,
+  value: Track | null,
+): Promise<void> {
+  try {
+    await setCachedLastFmTrack(artistName, trackName, value);
+  } catch (e) {
+    console.error(
+      `Failed to persist Last.fm→Spotify cache for "${trackName}" by ${artistName}:`,
+      (e as Error).message,
+    );
   }
 }
