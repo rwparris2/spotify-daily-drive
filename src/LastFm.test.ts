@@ -236,6 +236,102 @@ describe('fetchLastFmDiscoveries', () => {
     expect(trackNames).toContain('Discovery');
   });
 
+  it('isolates per-seed failures — one bad seed does not kill other seeds', async () => {
+    const goodSeed = makeTrack('g1', 'Good Song', 'Good Artist');
+    const badSeed = makeTrack('b1', 'Bad Song', 'Bad Artist');
+
+    mswServer.use(
+      http.get('https://ws.audioscrobbler.com/2.0/', ({ request }) => {
+        const url = new URL(request.url);
+        const method = url.searchParams.get('method');
+        const artist = url.searchParams.get('artist') ?? '';
+        const track = url.searchParams.get('track') ?? '';
+        if (method === 'track.getSimilar' && artist === 'Bad Artist') {
+          return new HttpResponse('boom', { status: 500 });
+        }
+        if (method === 'track.getSimilar' && artist === 'Good Artist' && track === 'Good Song') {
+          return HttpResponse.json({
+            similartracks: {
+              track: [{ name: 'Survivor', artist: { name: 'Survivor Artist' } }],
+            },
+          });
+        }
+        // Stub the artist-similarity chain as empty so this test isolates track-similarity.
+        if (method === 'artist.getSimilar') {
+          return HttpResponse.json({ similarartists: { artist: [] } });
+        }
+        return HttpResponse.json({});
+      }),
+      http.get('https://api.spotify.com/v1/search', ({ request }) => {
+        const q = new URL(request.url).searchParams.get('q') ?? '';
+        if (q.includes('Survivor')) {
+          return HttpResponse.json({
+            tracks: {
+              items: [
+                {
+                  id: 'spot-survivor',
+                  name: 'Survivor',
+                  uri: 'spotify:track:spot-survivor',
+                  artists: [{ name: 'Survivor Artist' }],
+                  type: 'track',
+                },
+              ],
+            },
+          });
+        }
+        return HttpResponse.json({ tracks: { items: [] } });
+      }),
+    );
+
+    const result = await fetchLastFmDiscoveries({
+      seedTracks: [goodSeed, badSeed],
+      numberOfTracks: 5,
+    });
+
+    // The good seed's discovery survives the bad seed's failure.
+    const trackNames = result.map((st) => st.track.name);
+    expect(trackNames).toContain('Survivor');
+  });
+
+  it('dedupes when the same Spotify track id is surfaced via both passes', async () => {
+    const seed = makeTrack('s4', 'Shared Seed', 'Shared Artist');
+    mswServer.use(
+      mockLastFm({
+        // track.getSimilar returns a track that will resolve to spot-shared.
+        trackSimilar: {
+          'Shared Artist|Shared Seed': [{ name: 'Shared Hit', artist: 'Other Artist' }],
+        },
+        // artist.getSimilar → artist.getTopTracks also returns a track that resolves to spot-shared.
+        artistSimilar: {
+          'Shared Artist': [{ name: 'Other Artist' }],
+        },
+        artistTopTracks: {
+          'Other Artist': [{ name: 'Shared Hit', artist: 'Other Artist' }],
+        },
+      }),
+      // Both paths land on the same Spotify id.
+      http.get('https://api.spotify.com/v1/search', () =>
+        HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: 'spot-shared',
+                name: 'Shared Hit',
+                uri: 'spotify:track:spot-shared',
+                artists: [{ name: 'Other Artist' }],
+                type: 'track',
+              },
+            ],
+          },
+        }),
+      ),
+    );
+
+    const result = await fetchLastFmDiscoveries({ seedTracks: [seed], numberOfTracks: 20 });
+    const sharedHits = result.filter((st) => st.track.id === 'spot-shared');
+    expect(sharedHits.length).toBe(1);
+  });
+
   it('uses the cache: on second call with same candidates, Spotify search is not invoked', async () => {
     const seed = makeTrack('s-cache', 'Cache Song', 'Cache Artist');
     let spotifySearchCalls = 0;
