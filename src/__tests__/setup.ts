@@ -5,10 +5,12 @@ process.env.SPOTIFY_PLAYLIST_ID = 'test_playlist_id';
 process.env.SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8888/callback';
 process.env.PODCASTS_CONFIG_PATH = 'src/__tests__/fixtures/podcasts.toml';
 
-// A developer's local .env may carry these; clear them so they don't leak real
-// network calls into tests that don't explicitly opt in.
-delete process.env.LISTENBRAINZ_USER_TOKEN;
-delete process.env.LASTFM_API_KEY;
+// A developer's local .env may carry these; set to '' (not delete) so the
+// `import 'dotenv/config'` that runs later via config.ts can't re-populate
+// them from .env. dotenv's default override:false skips keys that already
+// own a property on process.env, even if the value is empty.
+process.env.LISTENBRAINZ_USER_TOKEN = '';
+process.env.LASTFM_API_KEY = '';
 
 import { tmpdir } from 'node:os';
 import { mkdtempSync } from 'node:fs';
