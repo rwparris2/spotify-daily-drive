@@ -2,13 +2,13 @@
 name = "Up First from NPR"
 spotify_show_id = "upfirst"
 pin_slot = 1
-latest_only = true
+mode = "latest_only"
 
 [[shows]]
 name = "The Daily"
 spotify_show_id = "thedaily"
 pin_slot = 2
-latest_only = true
+mode = "latest_only"
 
 [[shows]]
 name = "Other A"

@@ -2,12 +2,14 @@ import { readFile } from 'fs/promises';
 import { parse } from 'smol-toml';
 import { PODCASTS_CONFIG_PATH } from './config.js';
 
+export type PodcastMode = 'default' | 'latest_only' | 'sequential';
+
 export type PodcastConfig = {
   shows: {
     name: string;
     spotify_show_id: string;
     pin_slot?: number;
-    latest_only?: boolean;
+    mode?: PodcastMode;
   }[];
 };
 

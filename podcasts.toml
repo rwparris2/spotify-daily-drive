@@ -2,19 +2,19 @@
 name = "Up First from NPR"
 spotify_show_id = "2mTUnDkuKUkhiueKcVWoP0"
 pin_slot = 1
-latest_only = true
+mode = "latest_only"
 
 [[shows]]
 name = "BirdNote Daily"
 spotify_show_id = "6jQh9jTz81rZzv7WwrtiAi"
 pin_slot = 2
-latest_only = true
+mode = "latest_only"
 
 [[shows]]
 name = "The Daily"
 spotify_show_id = "3IM0lmZxpFAY7CwMuv9H4g"
 pin_slot = 3
-latest_only = true
+mode = "latest_only"
 
 [[shows]]
 name = "30 for 30 Podcasts"
@@ -91,7 +91,7 @@ spotify_show_id = "0Ddvex5OtYOvhyyK6ckG3A"
 [[shows]]
 name = "GD POLITICS"
 spotify_show_id = "3XUkLfwsKGL1n7DF2tbyQS"
-latest_only = true
+mode = "latest_only"
 
 [[shows]]
 name = "GOTO - The Brightest Minds in Tech"
@@ -140,7 +140,7 @@ spotify_show_id = "78sw99DhVbbNg3g1MGCeSM"
 [[shows]]
 name = "Magic Mics Podcast"
 spotify_show_id = "35p9JGGXN973O1Nn7G4J8d"
-latest_only = true
+mode = "latest_only"
 
 [[shows]]
 name = "Master Plan"
@@ -177,7 +177,7 @@ spotify_show_id = "10LYbliXlNZe1VStsTkcC0"
 [[shows]]
 name = "NPR News Now"
 spotify_show_id = "6BRSvIBNQnB68GuoXJRCnQ"
-latest_only = true
+mode = "latest_only"
 
 [[shows]]
 name = "Ologies with Alie Ward"
