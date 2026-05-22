@@ -1,5 +1,6 @@
+import _ from 'lodash';
 import { http, HttpResponse } from 'msw';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import {
   mockShowEpisodes,
   mockShowEpisodesEmpty,
@@ -28,6 +29,18 @@ afterEach(() => {
 });
 
 describe('fetchSpotifyPodcasts', () => {
+  beforeEach(() => {
+    // Deterministically pick the first entry of any random pool — keeps
+    // every pre-existing assertion stable now that slot 2 has a tied entry.
+    // We spy on _.random directly because lodash captures Math.random at
+    // module load time and vi.spyOn(Math, 'random') would not intercept it.
+    vi.spyOn(_, 'random').mockReturnValue(0);
+    // The catch-and-fall-through in pickLatestEligibleEpisode logs to
+    // console.error whenever a fixture show isn't mocked. Tests that need
+    // to verify error logging do their own local spy below.
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+  });
+
   it('returns N episodes with pinned slots filled first', async () => {
     mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
     mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
@@ -170,5 +183,29 @@ describe('fetchSpotifyPodcasts', () => {
 
     expect(episodes.map((e) => e.episode.id)).not.toContain('upfirst_ep_newest');
     expect(episodes.map((e) => e.episode.id)).not.toContain('upfirst_ep_older');
+  });
+
+  it('tied pin_slot: both shows are reachable depending on the random roll', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    mockShowEpisodes('flightpod', [freshEpisode('flightpod')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    // beforeEach already pinned _.random = () => 0 — picks the first entry
+    // in any tied pool, so slot 2 resolves to thedaily.
+    const first = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    // Re-pin _.random to always return the last index of any pool — picks
+    // flightpod (index 1) for the 2-element slot-2 pool, and still works
+    // for single-element pools (index 0) because _.random(0) → 0.
+    vi.restoreAllMocks();
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(_, 'random').mockImplementation((n: number) => n);
+    const second = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(first[1]?.episode.id).toBe('thedaily_ep');
+    expect(second[1]?.episode.id).toBe('flightpod_ep');
   });
 });

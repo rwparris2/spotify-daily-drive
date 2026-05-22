@@ -33,3 +33,9 @@ spotify_show_id = "otherE"
 [[shows]]
 name = "Other F"
 spotify_show_id = "otherF"
+
+[[shows]]
+name = "Flight Pod"
+spotify_show_id = "flightpod"
+pin_slot = 2
+mode = "sequential"
