@@ -3939,5 +3939,675 @@
     "track_number": 4,
     "type": "track",
     "uri": "spotify:track:3GuV0aBylgSrYTjAcuqxVZ"
+  },
+  "92e8f3c9-ec04-42d6-8f2b-c3d7fc4f65c2": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2ooIqOf4X2uz4mMptXCtie"
+          },
+          "href": "https://api.spotify.com/v1/artists/2ooIqOf4X2uz4mMptXCtie",
+          "id": "2ooIqOf4X2uz4mMptXCtie",
+          "name": "Neutral Milk Hotel",
+          "type": "artist",
+          "uri": "spotify:artist:2ooIqOf4X2uz4mMptXCtie"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/17q5eeNk3HAjX1gzQnkTX7"
+      },
+      "href": "https://api.spotify.com/v1/albums/17q5eeNk3HAjX1gzQnkTX7",
+      "id": "17q5eeNk3HAjX1gzQnkTX7",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bc1e41eed3ddbdfff6f2d74b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bc1e41eed3ddbdfff6f2d74b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bc1e41eed3ddbdfff6f2d74b"
+        }
+      ],
+      "is_playable": true,
+      "name": "In the Aeroplane Over the Sea",
+      "release_date": "1998-02-20",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:17q5eeNk3HAjX1gzQnkTX7"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2ooIqOf4X2uz4mMptXCtie"
+        },
+        "href": "https://api.spotify.com/v1/artists/2ooIqOf4X2uz4mMptXCtie",
+        "id": "2ooIqOf4X2uz4mMptXCtie",
+        "name": "Neutral Milk Hotel",
+        "type": "artist",
+        "uri": "spotify:artist:2ooIqOf4X2uz4mMptXCtie"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 202346,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMRG0316017"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1NiAMp0CzUdG6e97VYRB1a"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1NiAMp0CzUdG6e97VYRB1a",
+    "id": "1NiAMp0CzUdG6e97VYRB1a",
+    "is_local": false,
+    "is_playable": true,
+    "name": "In the Aeroplane Over the Sea",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:1NiAMp0CzUdG6e97VYRB1a"
+  },
+  "fc62ab7f-a3d4-4891-af4d-9f59b13c8d18": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2TwOrUcYnAlIiKmVQkkoSZ"
+          },
+          "href": "https://api.spotify.com/v1/artists/2TwOrUcYnAlIiKmVQkkoSZ",
+          "id": "2TwOrUcYnAlIiKmVQkkoSZ",
+          "name": "Wet Leg",
+          "type": "artist",
+          "uri": "spotify:artist:2TwOrUcYnAlIiKmVQkkoSZ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3YVnHpyms4rLr3fXS0ROQy"
+      },
+      "href": "https://api.spotify.com/v1/albums/3YVnHpyms4rLr3fXS0ROQy",
+      "id": "3YVnHpyms4rLr3fXS0ROQy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732f9e981ef2f67e481a6bac03"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022f9e981ef2f67e481a6bac03"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512f9e981ef2f67e481a6bac03"
+        }
+      ],
+      "is_playable": true,
+      "name": "moisturizer",
+      "release_date": "2025-07-11",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:3YVnHpyms4rLr3fXS0ROQy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2TwOrUcYnAlIiKmVQkkoSZ"
+        },
+        "href": "https://api.spotify.com/v1/artists/2TwOrUcYnAlIiKmVQkkoSZ",
+        "id": "2TwOrUcYnAlIiKmVQkkoSZ",
+        "name": "Wet Leg",
+        "type": "artist",
+        "uri": "spotify:artist:2TwOrUcYnAlIiKmVQkkoSZ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 227794,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "GBCEL2400960"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4KVYz4U1Vm3pvjhhhS1E6s"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4KVYz4U1Vm3pvjhhhS1E6s",
+    "id": "4KVYz4U1Vm3pvjhhhS1E6s",
+    "is_local": false,
+    "is_playable": true,
+    "name": "davina mccall",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:4KVYz4U1Vm3pvjhhhS1E6s"
+  },
+  "7a84cef9-dc6c-4db2-80e8-3bfc78853093": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+          },
+          "href": "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+          "id": "09hVIj6vWgoCDtT03h8ZCa",
+          "name": "A Tribe Called Quest",
+          "type": "artist",
+          "uri": "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5DMRGZTzA3vVcLDNQS1ynv"
+      },
+      "href": "https://api.spotify.com/v1/albums/5DMRGZTzA3vVcLDNQS1ynv",
+      "id": "5DMRGZTzA3vVcLDNQS1ynv",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731093b1a9528d6ac67479228b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021093b1a9528d6ac67479228b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511093b1a9528d6ac67479228b"
+        }
+      ],
+      "is_playable": true,
+      "name": "People's Instinctive Travels and the Paths of Rhythm (25th Anniversary Edition)",
+      "release_date": "1990",
+      "release_date_precision": "year",
+      "total_tracks": 20,
+      "type": "album",
+      "uri": "spotify:album:5DMRGZTzA3vVcLDNQS1ynv"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href": "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id": "09hVIj6vWgoCDtT03h8ZCa",
+        "name": "A Tribe Called Quest",
+        "type": "artist",
+        "uri": "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 251790,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USJI10300400"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1gSDTZHemEViEBiXysrlo0"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1gSDTZHemEViEBiXysrlo0",
+    "id": "1gSDTZHemEViEBiXysrlo0",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Can I Kick It?",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:1gSDTZHemEViEBiXysrlo0"
+  },
+  "c23e6045-09d3-4936-a3ed-3c122e02d76e": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4sj6D0zlMOl25nprDJBiU9"
+          },
+          "href": "https://api.spotify.com/v1/artists/4sj6D0zlMOl25nprDJBiU9",
+          "id": "4sj6D0zlMOl25nprDJBiU9",
+          "name": "Andy Williams",
+          "type": "artist",
+          "uri": "spotify:artist:4sj6D0zlMOl25nprDJBiU9"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/30eO7X0doSEWKhDLAFLMuW"
+      },
+      "href": "https://api.spotify.com/v1/albums/30eO7X0doSEWKhDLAFLMuW",
+      "id": "30eO7X0doSEWKhDLAFLMuW",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273585897779cf3591ba0f07650"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02585897779cf3591ba0f07650"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851585897779cf3591ba0f07650"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Andy Williams Christmas Album",
+      "release_date": "1963",
+      "release_date_precision": "year",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:30eO7X0doSEWKhDLAFLMuW"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4sj6D0zlMOl25nprDJBiU9"
+        },
+        "href": "https://api.spotify.com/v1/artists/4sj6D0zlMOl25nprDJBiU9",
+        "id": "4sj6D0zlMOl25nprDJBiU9",
+        "name": "Andy Williams",
+        "type": "artist",
+        "uri": "spotify:artist:4sj6D0zlMOl25nprDJBiU9"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 151000,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM16300086"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1IcR6RlgvDczfvoWJSSY2A"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1IcR6RlgvDczfvoWJSSY2A",
+    "id": "1IcR6RlgvDczfvoWJSSY2A",
+    "is_local": false,
+    "is_playable": true,
+    "name": "It's the Most Wonderful Time of the Year",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:1IcR6RlgvDczfvoWJSSY2A"
+  },
+  "e202e217-2db2-478d-95b8-5f64e553ea81": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7mW7Tv7NvywKKXqafZo0Lc"
+          },
+          "href": "https://api.spotify.com/v1/artists/7mW7Tv7NvywKKXqafZo0Lc",
+          "id": "7mW7Tv7NvywKKXqafZo0Lc",
+          "name": "KPop Demon Hunters Cast",
+          "type": "artist",
+          "uri": "spotify:artist:7mW7Tv7NvywKKXqafZo0Lc"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2yNNYQBChuox9A5Ka93BIn"
+          },
+          "href": "https://api.spotify.com/v1/artists/2yNNYQBChuox9A5Ka93BIn",
+          "id": "2yNNYQBChuox9A5Ka93BIn",
+          "name": "HUNTR/X",
+          "type": "artist",
+          "uri": "spotify:artist:2yNNYQBChuox9A5Ka93BIn"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0BJ2EjOqcfgFvlZXNKrNbE"
+          },
+          "href": "https://api.spotify.com/v1/artists/0BJ2EjOqcfgFvlZXNKrNbE",
+          "id": "0BJ2EjOqcfgFvlZXNKrNbE",
+          "name": "Saja Boys",
+          "type": "artist",
+          "uri": "spotify:artist:0BJ2EjOqcfgFvlZXNKrNbE"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/50O9cXkFsQs8z0RV0UOvvl"
+      },
+      "href": "https://api.spotify.com/v1/albums/50O9cXkFsQs8z0RV0UOvvl",
+      "id": "50O9cXkFsQs8z0RV0UOvvl",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731615e7967ac3430d802939c3"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021615e7967ac3430d802939c3"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511615e7967ac3430d802939c3"
+        }
+      ],
+      "is_playable": true,
+      "name": "KPop Demon Hunters (Soundtrack from the Netflix Film / Deluxe Version)",
+      "release_date": "2025-09-05",
+      "release_date_precision": "day",
+      "total_tracks": 35,
+      "type": "album",
+      "uri": "spotify:album:50O9cXkFsQs8z0RV0UOvvl"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2yNNYQBChuox9A5Ka93BIn"
+        },
+        "href": "https://api.spotify.com/v1/artists/2yNNYQBChuox9A5Ka93BIn",
+        "id": "2yNNYQBChuox9A5Ka93BIn",
+        "name": "HUNTR/X",
+        "type": "artist",
+        "uri": "spotify:artist:2yNNYQBChuox9A5Ka93BIn"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0RMJOzHDhAKY1o2j0W0vxY"
+        },
+        "href": "https://api.spotify.com/v1/artists/0RMJOzHDhAKY1o2j0W0vxY",
+        "id": "0RMJOzHDhAKY1o2j0W0vxY",
+        "name": "EJAE",
+        "type": "artist",
+        "uri": "spotify:artist:0RMJOzHDhAKY1o2j0W0vxY"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0Wwji82sLA0Hcvtuak3omb"
+        },
+        "href": "https://api.spotify.com/v1/artists/0Wwji82sLA0Hcvtuak3omb",
+        "id": "0Wwji82sLA0Hcvtuak3omb",
+        "name": "AUDREY NUNA",
+        "type": "artist",
+        "uri": "spotify:artist:0Wwji82sLA0Hcvtuak3omb"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6U1dV7aL68N7Gb0Naq34V5"
+        },
+        "href": "https://api.spotify.com/v1/artists/6U1dV7aL68N7Gb0Naq34V5",
+        "id": "6U1dV7aL68N7Gb0Naq34V5",
+        "name": "REI AMI",
+        "type": "artist",
+        "uri": "spotify:artist:6U1dV7aL68N7Gb0Naq34V5"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7mW7Tv7NvywKKXqafZo0Lc"
+        },
+        "href": "https://api.spotify.com/v1/artists/7mW7Tv7NvywKKXqafZo0Lc",
+        "id": "7mW7Tv7NvywKKXqafZo0Lc",
+        "name": "KPop Demon Hunters Cast",
+        "type": "artist",
+        "uri": "spotify:artist:7mW7Tv7NvywKKXqafZo0Lc"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 176059,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QZ8BZ2513508"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5p9UNx7gLRdRoaEHd8TAnz"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5p9UNx7gLRdRoaEHd8TAnz",
+    "id": "5p9UNx7gLRdRoaEHd8TAnz",
+    "is_local": false,
+    "is_playable": true,
+    "name": "How It’s Done",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:5p9UNx7gLRdRoaEHd8TAnz"
+  },
+  "5098d5cd-7f48-4cd7-8928-43e4f84cae0f": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"
+          },
+          "href": "https://api.spotify.com/v1/artists/4q3ewBCX7sLwd24euuV69X",
+          "id": "4q3ewBCX7sLwd24euuV69X",
+          "name": "Bad Bunny",
+          "type": "artist",
+          "uri": "spotify:artist:4q3ewBCX7sLwd24euuV69X"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5K79FLRUCSysQnVESLcTdb"
+      },
+      "href": "https://api.spotify.com/v1/albums/5K79FLRUCSysQnVESLcTdb",
+      "id": "5K79FLRUCSysQnVESLcTdb",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bbd45c8d36e0e045ef640411"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bbd45c8d36e0e045ef640411"
+        }
+      ],
+      "is_playable": true,
+      "name": "DeBÍ TiRAR MáS FOToS",
+      "release_date": "2025-01-05",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:5K79FLRUCSysQnVESLcTdb"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"
+        },
+        "href": "https://api.spotify.com/v1/artists/4q3ewBCX7sLwd24euuV69X",
+        "id": "4q3ewBCX7sLwd24euuV69X",
+        "name": "Bad Bunny",
+        "type": "artist",
+        "uri": "spotify:artist:4q3ewBCX7sLwd24euuV69X"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 237117,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QMFMF2447070"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3sK8wGT43QFpWrvNQsrQya"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3sK8wGT43QFpWrvNQsrQya",
+    "id": "3sK8wGT43QFpWrvNQsrQya",
+    "is_local": false,
+    "is_playable": true,
+    "name": "DtMF",
+    "track_number": 16,
+    "type": "track",
+    "uri": "spotify:track:3sK8wGT43QFpWrvNQsrQya"
+  },
+  "1a9540f1-6c65-42ed-bdff-ed5c7d703eab": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+          },
+          "href": "https://api.spotify.com/v1/artists/0WCo84qtCKfbyIf1lqQWB4",
+          "id": "0WCo84qtCKfbyIf1lqQWB4",
+          "name": "Geese",
+          "type": "artist",
+          "uri": "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0eeXb23yMW6EaIgm63xxPC"
+      },
+      "href": "https://api.spotify.com/v1/albums/0eeXb23yMW6EaIgm63xxPC",
+      "id": "0eeXb23yMW6EaIgm63xxPC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27345e82ae0372a50834825c018"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0245e82ae0372a50834825c018"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485145e82ae0372a50834825c018"
+        }
+      ],
+      "is_playable": true,
+      "name": "Getting Killed",
+      "release_date": "2025-09-26",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:0eeXb23yMW6EaIgm63xxPC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+        },
+        "href": "https://api.spotify.com/v1/artists/0WCo84qtCKfbyIf1lqQWB4",
+        "id": "0WCo84qtCKfbyIf1lqQWB4",
+        "name": "Geese",
+        "type": "artist",
+        "uri": "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 284532,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USBQU2500079"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4gXvwRoP7GYoipYRTXQUxW"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4gXvwRoP7GYoipYRTXQUxW",
+    "id": "4gXvwRoP7GYoipYRTXQUxW",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Getting Killed",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:4gXvwRoP7GYoipYRTXQUxW"
+  },
+  "5dcf0f17-d13b-47c1-8386-fea1f5e25875": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3eVa5w3URK5duf6eyVDbu9"
+          },
+          "href": "https://api.spotify.com/v1/artists/3eVa5w3URK5duf6eyVDbu9",
+          "id": "3eVa5w3URK5duf6eyVDbu9",
+          "name": "ROSÉ",
+          "type": "artist",
+          "uri": "spotify:artist:3eVa5w3URK5duf6eyVDbu9"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7kFyd5oyJdVX2pIi6P4iHE"
+      },
+      "href": "https://api.spotify.com/v1/albums/7kFyd5oyJdVX2pIi6P4iHE",
+      "id": "7kFyd5oyJdVX2pIi6P4iHE",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737be65ce6672ed7e5aac6e966"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027be65ce6672ed7e5aac6e966"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517be65ce6672ed7e5aac6e966"
+        }
+      ],
+      "is_playable": true,
+      "name": "rosie",
+      "release_date": "2024-12-06",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:7kFyd5oyJdVX2pIi6P4iHE"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3eVa5w3URK5duf6eyVDbu9"
+        },
+        "href": "https://api.spotify.com/v1/artists/3eVa5w3URK5duf6eyVDbu9",
+        "id": "3eVa5w3URK5duf6eyVDbu9",
+        "name": "ROSÉ",
+        "type": "artist",
+        "uri": "spotify:artist:3eVa5w3URK5duf6eyVDbu9"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C"
+        },
+        "href": "https://api.spotify.com/v1/artists/0du5cEVh5yTK9QJze8zA0C",
+        "id": "0du5cEVh5yTK9QJze8zA0C",
+        "name": "Bruno Mars",
+        "type": "artist",
+        "uri": "spotify:artist:0du5cEVh5yTK9QJze8zA0C"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 169917,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USAT22409172"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4wJ5Qq0jBN4ajy7ouZIV1c"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4wJ5Qq0jBN4ajy7ouZIV1c",
+    "id": "4wJ5Qq0jBN4ajy7ouZIV1c",
+    "is_local": false,
+    "is_playable": true,
+    "name": "APT.",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:4wJ5Qq0jBN4ajy7ouZIV1c"
   }
 }
