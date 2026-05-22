@@ -5,6 +5,7 @@ import {
   mockShowEpisodes,
   mockShowEpisodesEmpty,
   mockShowEpisodesError,
+  mockShowEpisodesPaginated,
   mswServer,
 } from './__tests__/mswServer.js';
 import { fetchSpotifyPodcasts } from './SpotifyPodcasts.js';
@@ -207,5 +208,37 @@ describe('fetchSpotifyPodcasts', () => {
 
     expect(first[1]?.episode.id).toBe('thedaily_ep');
     expect(second[1]?.episode.id).toBe('flightpod_ep');
+  });
+
+  it('sequential mode: picks the oldest unplayed episode across paginated pages', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    // Two pages: page 1 (newest) all played; page 2 (older) has the oldest unplayed.
+    mockShowEpisodesPaginated('flightpod', [
+      [
+        ep('flightpod', '2026-05-20', true, '_p1_a'),
+        ep('flightpod', '2026-05-13', true, '_p1_b'),
+      ],
+      [
+        ep('flightpod', '2020-06-01', false, '_p2_old_unplayed'),
+        ep('flightpod', '2020-05-25', true, '_p2_old_played'),
+      ],
+    ]);
+
+    // Force the tied slot-2 pool to pick flightpod (last entry).
+    // NOTE: Spying on Math.random does NOT work — lodash captures Math.random at
+    // module load. We must spy on _.random directly. The mockImplementation
+    // `(n) => n` picks the last index of any pool (also returns 0 for n=0).
+    vi.restoreAllMocks();
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(_, 'random').mockImplementation((n: number) => n);
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(episodes[1]?.episode.id).toBe('flightpod_ep_p2_old_unplayed');
   });
 });

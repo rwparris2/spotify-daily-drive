@@ -70,6 +70,37 @@ export function mockShowEpisodesError(
   );
 }
 
+export function mockShowEpisodesPaginated(
+  showId: string,
+  pages: EpisodeFixture[][],
+): void {
+  const flat = pages.flat();
+  mswServer.use(
+    http.get(`https://api.spotify.com/v1/shows/${showId}/episodes`, ({ request }) => {
+      const url = new URL(request.url);
+      const limit = Number(url.searchParams.get('limit') ?? 50);
+      const offset = Number(url.searchParams.get('offset') ?? 0);
+      const slice = flat.slice(offset, offset + limit);
+      return HttpResponse.json({
+        items: slice.map((ep) => ({
+          id: ep.id,
+          name: ep.name,
+          release_date: ep.release_date,
+          duration_ms: ep.duration_ms ?? 30 * 60 * 1000,
+          is_playable: ep.is_playable ?? true,
+          resume_point: { fully_played: ep.fully_played ?? false, resume_position_ms: 0 },
+        })),
+        total: flat.length,
+        limit,
+        offset,
+        next: offset + limit < flat.length ? 'next' : null,
+        previous: offset > 0 ? 'prev' : null,
+        href: '',
+      });
+    }),
+  );
+}
+
 export type TrackFixture = {
   id: string;
   name?: string;
