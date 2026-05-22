@@ -196,6 +196,46 @@ describe('fetchLastFmDiscoveries', () => {
     }
   });
 
+  it('drops candidates whose artist (case-insensitive) appears in the seed-artist set', async () => {
+    const seed = makeTrack('s3', 'Seed Song', 'Seed Artist');
+    mswServer.use(
+      mockLastFm({
+        trackSimilar: {
+          'Seed Artist|Seed Song': [
+            { name: 'Self Song', artist: 'seed artist' }, // case-insensitive seed-artist match — should be dropped
+            { name: 'Discovery', artist: 'New Artist' },  // legit discovery — should remain
+          ],
+        },
+      }),
+      http.get('https://api.spotify.com/v1/search', ({ request }) => {
+        const q = new URL(request.url).searchParams.get('q') ?? '';
+        const match = q.match(/track:"([^"]+)" artist:"([^"]+)"/);
+        if (!match) return HttpResponse.json({ tracks: { items: [] } });
+        const [, trackName, artistName] = match;
+        return HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: `spot-${trackName}`,
+                name: trackName,
+                uri: `spotify:track:spot-${trackName}`,
+                artists: [{ name: artistName }],
+                type: 'track',
+              },
+            ],
+          },
+        });
+      }),
+    );
+
+    const result = await fetchLastFmDiscoveries({ seedTracks: [seed], numberOfTracks: 5 });
+
+    // The Self Song candidate must be filtered out.
+    const trackNames = result.map((st) => st.track.name);
+    expect(trackNames).not.toContain('Self Song');
+    expect(trackNames).toContain('Discovery');
+  });
+
   it('uses the cache: on second call with same candidates, Spotify search is not invoked', async () => {
     const seed = makeTrack('s-cache', 'Cache Song', 'Cache Artist');
     let spotifySearchCalls = 0;

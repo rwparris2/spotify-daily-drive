@@ -90,10 +90,20 @@ export async function fetchLastFmDiscoveries(options: {
     }
   }
 
+  const seedArtistNamesLower = new Set<string>(
+    [...trackSeeds, ...artistSeedTracks]
+      .map((t) => t.artists[0]?.name?.toLowerCase())
+      .filter((n): n is string => !!n),
+  );
+
+  const filteredCandidates = candidates.filter(
+    (c) => !seedArtistNamesLower.has(c.artistName.toLowerCase()),
+  );
+
   const resolved: SourcedTrack[] = [];
   let cacheHits = 0;
   let cacheMisses = 0;
-  for (const c of candidates) {
+  for (const c of filteredCandidates) {
     const cached = await getCachedLastFmTrack(c.artistName, c.trackName);
     if (cached !== undefined) {
       cacheHits += 1;
