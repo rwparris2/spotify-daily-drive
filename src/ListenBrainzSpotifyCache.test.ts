@@ -2,7 +2,7 @@ import type { Track } from '@spotify/web-api-ts-sdk';
 import { writeFileSync, mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import {
   getCachedListenBrainzTrack,
   setCachedListenBrainzTrack,
@@ -52,7 +52,6 @@ describe('ListenBrainzSpotifyCache', () => {
   });
 
   it('surfaces a clear error when the cache file is corrupt JSON', async () => {
-    vi.resetModules();
     const dir = mkdtempSync(join(tmpdir(), 'lb-cache-corrupt-'));
     const corruptPath = join(dir, 'cache.json');
     writeFileSync(corruptPath, '{not valid json', 'utf8');
@@ -60,9 +59,7 @@ describe('ListenBrainzSpotifyCache', () => {
     const originalPath = process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH;
     process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH = corruptPath;
     try {
-      const { getCachedListenBrainzTrack: fresh } =
-        await import('./ListenBrainzSpotifyCache.js?corrupt');
-      await expect(fresh('any')).rejects.toThrow(/corrupt|Delete the file/);
+      await expect(getCachedListenBrainzTrack('any')).rejects.toThrow(/corrupt|Delete the file/);
     } finally {
       if (originalPath === undefined) delete process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH;
       else process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH = originalPath;

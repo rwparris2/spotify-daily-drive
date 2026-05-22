@@ -55,8 +55,7 @@ describe('LastFmSpotifyCache', () => {
     const originalPath = process.env.LASTFM_SPOTIFY_CACHE_PATH;
     process.env.LASTFM_SPOTIFY_CACHE_PATH = corruptPath;
     try {
-      const { getCachedLastFmTrack: fresh } = await import('./LastFmSpotifyCache.js?corrupt');
-      await expect(fresh('any', 'any')).rejects.toThrow(/corrupt|Delete the file/);
+      await expect(getCachedLastFmTrack('any', 'any')).rejects.toThrow(/corrupt|Delete the file/);
     } finally {
       if (originalPath === undefined) delete process.env.LASTFM_SPOTIFY_CACHE_PATH;
       else process.env.LASTFM_SPOTIFY_CACHE_PATH = originalPath;
