@@ -11,7 +11,7 @@ type CacheShape = Record<string, CacheValue>;
 let cache: CacheShape | undefined;
 
 function cacheKey(artistName: string, trackName: string): string {
-  return `${artistName.trim().toLowerCase()}|${trackName.trim().toLowerCase()}`;
+  return JSON.stringify([artistName.trim().toLowerCase(), trackName.trim().toLowerCase()]);
 }
 
 async function load(): Promise<CacheShape> {
