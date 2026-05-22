@@ -23,13 +23,22 @@ process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH = join(
 );
 process.env.LASTFM_SPOTIFY_CACHE_PATH = join(testCacheDir, 'lastfm-spotify-tracks.json');
 
+import { rmSync } from 'node:fs';
 import { afterAll, afterEach } from 'vitest';
 import { mswServer } from './mswServer.js';
+import { resetCacheForTest as resetLastFmCache } from '../LastFmSpotifyCache.js';
+import { resetCacheForTest as resetListenBrainzCache } from '../ListenBrainzSpotifyCache.js';
 
 mswServer.listen({ onUnhandledRequest: 'error' });
 
 afterEach(() => {
   mswServer.resetHandlers();
+  // Reset in-memory cache state and remove the per-test-worker disk file so
+  // each test runs against a cold cache.
+  resetLastFmCache();
+  resetListenBrainzCache();
+  rmSync(process.env.LASTFM_SPOTIFY_CACHE_PATH ?? '', { force: true });
+  rmSync(process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH ?? '', { force: true });
 });
 
 afterAll(() => {
