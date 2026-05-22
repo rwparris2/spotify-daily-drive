@@ -34,6 +34,7 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
           SPOTIFY_PLAYLIST_ID: ${{ secrets.SPOTIFY_PLAYLIST_ID }}
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LISTENBRAINZ_USER_TOKEN: ${{ secrets.LISTENBRAINZ_USER_TOKEN }}
       - name: Commit refreshed cache
         run: |
           git config user.name "github-actions[bot]"
