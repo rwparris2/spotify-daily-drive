@@ -93,7 +93,10 @@ describe('replacePlaylist', () => {
         posts.push(((await request.json()) as { uris: string[] }).uris);
         return HttpResponse.json({ snapshot_id: 'snap' });
       }),
-      http.put('https://api.spotify.com/v1/playlists/playlist123', () => new HttpResponse(null, { status: 200 })),
+      http.put(
+        'https://api.spotify.com/v1/playlists/playlist123',
+        () => new HttpResponse(null, { status: 200 }),
+      ),
     );
 
     await replacePlaylist('playlist123', big);
@@ -114,7 +117,9 @@ describe('replacePlaylist', () => {
 
     await expect(replacePlaylist('playlist123', [])).rejects.toThrow(/process\.exit/);
     expect(exitSpy).toHaveBeenCalledWith(1);
-    expect(errorSpy).toHaveBeenCalledWith(expect.stringContaining('Refusing to publish an empty playlist'));
+    expect(errorSpy).toHaveBeenCalledWith(
+      expect.stringContaining('Refusing to publish an empty playlist'),
+    );
 
     exitSpy.mockRestore();
     errorSpy.mockRestore();
@@ -122,8 +127,9 @@ describe('replacePlaylist', () => {
 
   it('tags which phase failed when the replace PUT errors', async () => {
     mswServer.use(
-      http.put('https://api.spotify.com/v1/playlists/playlist123/items', () =>
-        new HttpResponse('boom', { status: 500 }),
+      http.put(
+        'https://api.spotify.com/v1/playlists/playlist123/items',
+        () => new HttpResponse('boom', { status: 500 }),
       ),
     );
     await expect(replacePlaylist('playlist123', samplePlaylist)).rejects.toThrow(
@@ -137,8 +143,9 @@ describe('replacePlaylist', () => {
       http.put('https://api.spotify.com/v1/playlists/playlist123/items', () =>
         HttpResponse.json({ snapshot_id: 'snap' }),
       ),
-      http.post('https://api.spotify.com/v1/playlists/playlist123/items', () =>
-        new HttpResponse('boom', { status: 500 }),
+      http.post(
+        'https://api.spotify.com/v1/playlists/playlist123/items',
+        () => new HttpResponse('boom', { status: 500 }),
       ),
     );
     await expect(replacePlaylist('playlist123', big)).rejects.toThrow(

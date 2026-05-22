@@ -53,13 +53,19 @@ export function mockShowEpisodesEmpty(showId: string): void {
   mockShowEpisodes(showId, []);
 }
 
-export function mockShowEpisodesError(showId: string, status = 429, retryAfterSeconds = 3600): void {
+export function mockShowEpisodesError(
+  showId: string,
+  status = 429,
+  retryAfterSeconds = 3600,
+): void {
   mswServer.use(
-    http.get(`https://api.spotify.com/v1/shows/${showId}/episodes`, () =>
-      new HttpResponse('rate limited', {
-        status,
-        headers: { 'retry-after': String(retryAfterSeconds) },
-      }),
+    http.get(
+      `https://api.spotify.com/v1/shows/${showId}/episodes`,
+      () =>
+        new HttpResponse('rate limited', {
+          status,
+          headers: { 'retry-after': String(retryAfterSeconds) },
+        }),
     ),
   );
 }
@@ -123,9 +129,11 @@ export function mockUserPlaylists(playlists: PlaylistFixture[]): void {
   );
 }
 
-export function mockTopTracks(
-  perHorizon: { short_term?: TrackFixture[]; medium_term?: TrackFixture[]; long_term?: TrackFixture[] },
-): void {
+export function mockTopTracks(perHorizon: {
+  short_term?: TrackFixture[];
+  medium_term?: TrackFixture[];
+  long_term?: TrackFixture[];
+}): void {
   mswServer.use(
     http.get('https://api.spotify.com/v1/me/top/tracks', ({ request }) => {
       const url = new URL(request.url);

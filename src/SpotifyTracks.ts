@@ -2,6 +2,7 @@ import { Page, SimplifiedPlaylist, Track } from '@spotify/web-api-ts-sdk';
 import { spotifyClient } from './SpotifyClient.js';
 import { getCachedPlaylistTracks, setCachedPlaylistTracks } from './SpotifyPlaylistTracksCache.js';
 import { fetchListenBrainzRecommendations } from './ListenBrainz.js';
+import { fetchLastFmDiscoveries } from './LastFm.js';
 import _ from 'lodash';
 import { SPOTIFY_PLAYLIST_ID } from './config.js';
 import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
@@ -85,7 +86,10 @@ async function playlistTracks(): Promise<SourcedTrack[]> {
     const cached = await getCachedPlaylistTracks(p.id, p.snapshot_id);
     if (cached) {
       console.log(`Cache hit for ${p.name} (${cached.length} tracks)`);
-      results = [...results, ...cached.map((track): SourcedTrack => ({ kind: 'track', track, source }))];
+      results = [
+        ...results,
+        ...cached.map((track): SourcedTrack => ({ kind: 'track', track, source })),
+      ];
       continue;
     }
     const { tracks, complete } = await fetchSongsFromPlayList(p);
@@ -99,7 +103,10 @@ async function playlistTracks(): Promise<SourcedTrack[]> {
         );
       }
     }
-    results = [...results, ...tracks.map((track): SourcedTrack => ({ kind: 'track', track, source }))];
+    results = [
+      ...results,
+      ...tracks.map((track): SourcedTrack => ({ kind: 'track', track, source })),
+    ];
   }
   return _(results)
     .chain()
@@ -183,15 +190,35 @@ async function savedTracks(): Promise<SourcedTrack[]> {
 export async function fetchSpotifyTracks(options: {
   numberOfTracks: number;
 }): Promise<SourcedTrack[]> {
-  const allAvailableTracks = (
+  const [playlistResults, topResults, recentResults, savedResults, listenBrainzResults] =
     await Promise.all([
       playlistTracks(),
       topTracks(),
       recentlyPlayedTracks(),
       savedTracks(),
       fetchListenBrainzRecommendations({ numberOfTracks: PER_SOURCE_TRACK_COUNT }),
-    ])
-  ).flat();
+    ]);
+
+  const spotifyNativePool: Track[] = [
+    ...playlistResults,
+    ...topResults,
+    ...recentResults,
+    ...savedResults,
+  ].map((st) => st.track);
+
+  const lastFmResults = await fetchLastFmDiscoveries({
+    seedTracks: spotifyNativePool,
+    numberOfTracks: PER_SOURCE_TRACK_COUNT,
+  });
+
+  const allAvailableTracks = [
+    ...playlistResults,
+    ...topResults,
+    ...recentResults,
+    ...savedResults,
+    ...listenBrainzResults,
+    ...lastFmResults,
+  ];
 
   return _(allAvailableTracks)
     .chain()

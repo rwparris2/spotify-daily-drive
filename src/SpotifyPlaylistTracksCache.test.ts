@@ -4,10 +4,7 @@ import { mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it, vi } from 'vitest';
-import {
-  getCachedPlaylistTracks,
-  setCachedPlaylistTracks,
-} from './SpotifyPlaylistTracksCache.js';
+import { getCachedPlaylistTracks, setCachedPlaylistTracks } from './SpotifyPlaylistTracksCache.js';
 
 function tr(id: string): Track {
   return { id, name: `Track ${id}`, uri: `spotify:track:${id}` } as unknown as Track;
@@ -42,7 +39,10 @@ describe('SpotifyPlaylistTracksCache', () => {
     await setCachedPlaylistTracks('cache_test_iso_b', 'snap_b', [tr('b1'), tr('b2')]);
 
     expect(await getCachedPlaylistTracks('cache_test_iso_a', 'snap_a')).toEqual([tr('a1')]);
-    expect(await getCachedPlaylistTracks('cache_test_iso_b', 'snap_b')).toEqual([tr('b1'), tr('b2')]);
+    expect(await getCachedPlaylistTracks('cache_test_iso_b', 'snap_b')).toEqual([
+      tr('b1'),
+      tr('b2'),
+    ]);
   });
 
   it('overwrites the entry when set with a new snapshot id', async () => {
@@ -63,9 +63,8 @@ describe('SpotifyPlaylistTracksCache', () => {
     const originalPath = process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH;
     process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH = corruptPath;
     try {
-      const { getCachedPlaylistTracks: fresh } = await import(
-        './SpotifyPlaylistTracksCache.js?corrupt'
-      );
+      const { getCachedPlaylistTracks: fresh } =
+        await import('./SpotifyPlaylistTracksCache.js?corrupt');
       await expect(fresh('any', 'any')).rejects.toThrow(/corrupt|Delete the file/);
     } finally {
       if (originalPath === undefined) delete process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH;

@@ -26,7 +26,7 @@ export async function replacePlaylist(
   if (uris.length === 0) {
     console.error(
       'Refusing to publish an empty playlist — PUT /items with [] is a no-op on Spotify ' +
-        'and would leave yesterday\'s items in place under today\'s title. ' +
+        "and would leave yesterday's items in place under today's title. " +
         'Check upstream fetch errors and re-run.',
     );
     process.exit(1);

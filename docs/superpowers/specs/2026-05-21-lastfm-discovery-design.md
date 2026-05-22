@@ -60,7 +60,7 @@ Two independent sampling passes — one for track-similarity, one for artist-sim
 
 3. **Filter** — drop any candidate whose artist (case-insensitive) appears in the seed-artist set (the 5 artists from the artist-similarity pass, plus the artists of the 15 track-similarity seeds). We want discovery, not "more songs by artists we already have queued".
 
-4. **Resolve to Spotify** — for each remaining candidate, `spotifyClient.search('track:"X" artist:"Y"', ['track'], 1)` and take the top hit. Same pattern as `ListenBrainz.ts:searchSpotifyTrack`. Candidates that don't resolve are silently dropped.
+4. **Resolve to Spotify (cached)** — for each remaining candidate, first check the Last.fm → Spotify cache (`src/LastFmSpotifyCache.ts`, keyed by lowercased `"artist|track"`). On hit, use the cached `Track` (or skip if cached `null` from a prior negative result). On miss, `spotifyClient.search('track:"X" artist:"Y"', ['track'], 1)`, take the top hit, persist the result (or `null` for misses) to the cache. Same pattern as `ListenBrainzSpotifyCache`. Candidates that don't resolve are silently dropped.
 
 5. **Dedupe and sample** — `uniqBy(track.id)` then `sampleSize(numberOfTracks)`.
 
@@ -73,9 +73,10 @@ Two independent sampling passes — one for track-similarity, one for artist-sim
 
 ## Configuration
 
-### New env var
+### New env vars
 
 - `LASTFM_API_KEY` — Last.fm API key (free registration at <https://www.last.fm/api/account/create>). Single string, no per-user scope.
+- `LASTFM_SPOTIFY_CACHE_PATH` — optional override for the Last.fm → Spotify resolution cache file. Defaults to `.cache/lastfm-spotify-tracks.json`. Mirrors `LISTENBRAINZ_SPOTIFY_CACHE_PATH`.
 
 ### Optional, not required
 
@@ -199,10 +200,12 @@ Extend the existing end-to-end test in `src/__tests__/` (if one exists for `fetc
 | File | Change |
 | --- | --- |
 | `src/LastFm.ts` | New module — implements `fetchLastFmDiscoveries` |
+| `src/LastFmSpotifyCache.ts` | New module — persists Last.fm artist+track → Spotify `Track` resolutions (mirrors `ListenBrainzSpotifyCache.ts`) |
 | `src/SpotifyTracks.ts` | Refactor `fetchSpotifyTracks` to two-stage flow; add Last.fm to the merge |
 | `src/__tests__/LastFm.test.ts` | New test file |
-| `src/__tests__/msw-handlers.ts` (or wherever Spotify handlers live) | Add Last.fm handlers |
-| `.env.example` | Add `LASTFM_API_KEY=` |
+| `src/__tests__/LastFmSpotifyCache.test.ts` | New test file for the cache module |
+| `src/__tests__/setup.ts` | Route `LASTFM_SPOTIFY_CACHE_PATH` to a per-test tmpdir |
+| `.env.example` | Add `LASTFM_API_KEY=` and `LASTFM_SPOTIFY_CACHE_PATH=` |
 | `README.md` | Document `LASTFM_API_KEY` env var |
 | `.github/workflows/daily-drive.yml` | Add `LASTFM_API_KEY` to env block from secrets |
 

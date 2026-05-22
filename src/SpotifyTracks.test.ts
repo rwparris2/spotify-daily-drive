@@ -57,8 +57,9 @@ describe('fetchSpotifyTracks', () => {
     mockRecentlyPlayed(range('rp', 10));
     mockSavedTracks(range('sv', 10));
     mswServer.use(
-      http.get('https://api.spotify.com/v1/me/top/tracks', () =>
-        new HttpResponse('boom', { status: 500 }),
+      http.get(
+        'https://api.spotify.com/v1/me/top/tracks',
+        () => new HttpResponse('boom', { status: 500 }),
       ),
     );
 
@@ -77,7 +78,17 @@ describe('fetchSpotifyTracks', () => {
       http.get('https://api.spotify.com/v1/playlists/p1/items', () =>
         HttpResponse.json({
           items: [
-            { track: { id: 'real', uri: 'spotify:track:real', name: 'Real', artists: [{ name: 'A' }], album: { name: 'B', images: [] }, duration_ms: 1, type: 'track' } },
+            {
+              track: {
+                id: 'real',
+                uri: 'spotify:track:real',
+                name: 'Real',
+                artists: [{ name: 'A' }],
+                album: { name: 'B', images: [] },
+                duration_ms: 1,
+                type: 'track',
+              },
+            },
             { track: { id: 'ep1', uri: 'spotify:episode:ep1', name: 'Episode', type: 'episode' } },
           ],
           total: 2,
@@ -109,5 +120,63 @@ describe('fetchSpotifyTracks', () => {
     expect(tracks.length).toBeGreaterThanOrEqual(40);
     expect(tracks.length).toBeLessThanOrEqual(60);
     expect(new Set(tracks.map((t) => t.track.id)).size).toBe(tracks.length);
+  });
+
+  it('includes Last.fm-tagged discoveries in the merged output when LASTFM_API_KEY is set', async () => {
+    process.env.LASTFM_API_KEY = 'test_lastfm_key';
+    try {
+      // Stub the four Spotify-native sources with at least one track that has a recognizable artist.
+      mockUserPlaylists([
+        { id: 'p1', tracks: [{ id: 't1', name: 'Seed Song', artist: 'Seed Artist' }] },
+      ]);
+      mockTopTracks({ short_term: [], medium_term: [], long_term: [] });
+      mockRecentlyPlayed([]);
+      mockSavedTracks([]);
+
+      // Stub Last.fm to return a discovery for the seed.
+      mswServer.use(
+        http.get('https://ws.audioscrobbler.com/2.0/', ({ request }) => {
+          const url = new URL(request.url);
+          const method = url.searchParams.get('method');
+          if (method === 'track.getSimilar') {
+            return HttpResponse.json({
+              similartracks: {
+                track: [{ name: 'Discovery Song', artist: { name: 'Discovery Artist' } }],
+              },
+            });
+          }
+          if (method === 'artist.getSimilar') {
+            return HttpResponse.json({ similarartists: { artist: [] } });
+          }
+          return HttpResponse.json({});
+        }),
+        http.get('https://api.spotify.com/v1/search', ({ request }) => {
+          const q = new URL(request.url).searchParams.get('q') ?? '';
+          if (q.includes('Discovery Song')) {
+            return HttpResponse.json({
+              tracks: {
+                items: [
+                  {
+                    id: 'spot-discovery',
+                    name: 'Discovery Song',
+                    uri: 'spotify:track:spot-discovery',
+                    artists: [{ name: 'Discovery Artist' }],
+                    type: 'track',
+                  },
+                ],
+              },
+            });
+          }
+          return HttpResponse.json({ tracks: { items: [] } });
+        }),
+      );
+
+      const result = await fetchSpotifyTracks({ numberOfTracks: 20 });
+
+      const lastFmSourced = result.filter((st) => st.source.startsWith('last.fm'));
+      expect(lastFmSourced.length).toBeGreaterThan(0);
+    } finally {
+      delete process.env.LASTFM_API_KEY;
+    }
   });
 });
