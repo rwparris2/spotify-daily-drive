@@ -16,12 +16,14 @@
 
 | File | Action | Responsibility |
 | --- | --- | --- |
-| `src/LastFm.ts` | Create | `fetchLastFmDiscoveries` — given Spotify seed tracks, return Spotify-resolved Last.fm discoveries |
+| `src/LastFm.ts` | Create | `fetchLastFmDiscoveries` — given Spotify seed tracks, return Spotify-resolved Last.fm discoveries (uses the cache for resolution) |
 | `src/LastFm.test.ts` | Create | Unit + integration tests for `fetchLastFmDiscoveries` |
-| `src/__tests__/setup.ts` | Modify | Delete `LASTFM_API_KEY` from test env (same pattern as `LISTENBRAINZ_USER_TOKEN`) |
+| `src/LastFmSpotifyCache.ts` | Create | Persists artist+track → Spotify `Track` resolutions (mirrors `ListenBrainzSpotifyCache.ts`) |
+| `src/LastFmSpotifyCache.test.ts` | Create | Unit tests for the cache module |
+| `src/__tests__/setup.ts` | Modify | Delete `LASTFM_API_KEY` and route `LASTFM_SPOTIFY_CACHE_PATH` to a per-test tmpdir |
 | `src/SpotifyTracks.ts` | Modify | Refactor `fetchSpotifyTracks` to two-stage flow that calls `fetchLastFmDiscoveries` after the parallel fan-out |
 | `src/SpotifyTracks.test.ts` | Modify | Add integration assertion that Last.fm-tagged tracks appear in the merged output when mocked |
-| `.env.template` | Modify | Add `LASTFM_API_KEY` to the Optional section |
+| `.env.template` | Modify | Add `LASTFM_API_KEY` and `LASTFM_SPOTIFY_CACHE_PATH` to the Optional section |
 | `README.md` | Modify | Document `LASTFM_API_KEY` under a new "Optional: Last.fm" subsection |
 | `.github/workflows/daily-drive.yml` | Modify | Add `LASTFM_API_KEY` to the `npm start` step's `env:` block |
 
@@ -415,7 +417,330 @@
 
 ---
 
-## Task 4: Artist-similarity chain (`artist.getSimilar` → `artist.getTopTracks`)
+## Task 4: Cache Last.fm → Spotify track resolution
+
+**Files:**
+
+- Create: `src/LastFmSpotifyCache.ts`
+- Create: `src/LastFmSpotifyCache.test.ts`
+- Modify: `src/__tests__/setup.ts`
+- Modify: `src/LastFm.ts`
+- Modify: `src/LastFm.test.ts`
+
+**Why:** Each Last.fm candidate triggers a Spotify search. Day-to-day the same candidates recur often, so caching artist+track → Spotify `Track` resolutions cuts Spotify search API calls significantly. Mirror the existing `ListenBrainzSpotifyCache` pattern, but keyed by lowercased `"artist|track"` (Last.fm's similarity endpoints don't return stable MusicBrainz IDs).
+
+**Reference files** (read these before starting):
+- `src/ListenBrainzSpotifyCache.ts` — the cache module to mirror
+- `src/ListenBrainzSpotifyCache.test.ts` — the test pattern to mirror
+- `src/ListenBrainz.ts` — see how the cache is wired into the resolution loop (lines ~38–77 and `persistCacheEntry` helper)
+
+- [ ] **Step 1: Route `LASTFM_SPOTIFY_CACHE_PATH` to a tmpdir in tests**
+
+  Edit `src/__tests__/setup.ts`. Find the existing line:
+
+  ```ts
+  process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH = join(testCacheDir, 'listenbrainz-spotify-tracks.json');
+  ```
+
+  Add a sibling line immediately below:
+
+  ```ts
+  process.env.LASTFM_SPOTIFY_CACHE_PATH = join(testCacheDir, 'lastfm-spotify-tracks.json');
+  ```
+
+- [ ] **Step 2: Write the failing cache-module tests**
+
+  Create `src/LastFmSpotifyCache.test.ts`:
+
+  ```ts
+  import type { Track } from '@spotify/web-api-ts-sdk';
+  import { writeFileSync, mkdtempSync } from 'node:fs';
+  import { tmpdir } from 'node:os';
+  import { join } from 'node:path';
+  import { describe, expect, it } from 'vitest';
+  import {
+    getCachedLastFmTrack,
+    setCachedLastFmTrack,
+  } from './LastFmSpotifyCache.js';
+
+  function tr(id: string): Track {
+    return { id, name: `Track ${id}`, uri: `spotify:track:${id}` } as unknown as Track;
+  }
+
+  describe('LastFmSpotifyCache', () => {
+    it('returns undefined for an unknown (artist, track) pair', async () => {
+      const cached = await getCachedLastFmTrack('Nobody', 'Nothing');
+      expect(cached).toBeUndefined();
+    });
+
+    it('round-trips a Track under the same (artist, track) key', async () => {
+      const track = tr('spot-rt');
+      await setCachedLastFmTrack('Artist RT', 'Track RT', track);
+      const cached = await getCachedLastFmTrack('Artist RT', 'Track RT');
+      expect(cached).toEqual(track);
+    });
+
+    it('treats keys case-insensitively (normalizes to lowercase)', async () => {
+      await setCachedLastFmTrack('Artist Mixed', 'Track Mixed', tr('spot-mixed'));
+      expect(await getCachedLastFmTrack('artist mixed', 'track mixed')).toEqual(tr('spot-mixed'));
+      expect(await getCachedLastFmTrack('ARTIST MIXED', 'TRACK MIXED')).toEqual(tr('spot-mixed'));
+    });
+
+    it('remembers a negative-cache (null) entry as distinct from "missing"', async () => {
+      await setCachedLastFmTrack('Artist Neg', 'Track Neg', null);
+      const cached = await getCachedLastFmTrack('Artist Neg', 'Track Neg');
+      expect(cached).toBeNull();
+    });
+
+    it('keeps cache entries for different (artist, track) pairs independent', async () => {
+      await setCachedLastFmTrack('Iso A', 'Track A', tr('a1'));
+      await setCachedLastFmTrack('Iso B', 'Track B', null);
+      expect(await getCachedLastFmTrack('Iso A', 'Track A')).toEqual(tr('a1'));
+      expect(await getCachedLastFmTrack('Iso B', 'Track B')).toBeNull();
+    });
+
+    it('overwrites a previous entry when set again', async () => {
+      await setCachedLastFmTrack('Artist OW', 'Track OW', null);
+      await setCachedLastFmTrack('Artist OW', 'Track OW', tr('replacement'));
+      expect(await getCachedLastFmTrack('Artist OW', 'Track OW')).toEqual(tr('replacement'));
+    });
+
+    it('surfaces a clear error when the cache file is corrupt JSON', async () => {
+      const dir = mkdtempSync(join(tmpdir(), 'lastfm-cache-corrupt-'));
+      const corruptPath = join(dir, 'cache.json');
+      writeFileSync(corruptPath, '{not valid json', 'utf8');
+
+      const originalPath = process.env.LASTFM_SPOTIFY_CACHE_PATH;
+      process.env.LASTFM_SPOTIFY_CACHE_PATH = corruptPath;
+      try {
+        const { getCachedLastFmTrack: fresh } = await import('./LastFmSpotifyCache.js?corrupt');
+        await expect(fresh('any', 'any')).rejects.toThrow(/corrupt|Delete the file/);
+      } finally {
+        if (originalPath === undefined) delete process.env.LASTFM_SPOTIFY_CACHE_PATH;
+        else process.env.LASTFM_SPOTIFY_CACHE_PATH = originalPath;
+      }
+    });
+  });
+  ```
+
+- [ ] **Step 3: Run the test to verify it fails**
+
+  Run: `npm test -- src/LastFmSpotifyCache.test.ts`
+  Expected: FAIL — module doesn't exist.
+
+- [ ] **Step 4: Create the cache module**
+
+  Create `src/LastFmSpotifyCache.ts`:
+
+  ```ts
+  import { readFile, writeFile, mkdir } from 'fs/promises';
+  import { dirname } from 'path';
+  import type { Track } from '@spotify/web-api-ts-sdk';
+
+  const CACHE_PATH =
+    process.env.LASTFM_SPOTIFY_CACHE_PATH ?? '.cache/lastfm-spotify-tracks.json';
+
+  type CacheValue = Track | null;
+  type CacheShape = Record<string, CacheValue>;
+
+  let cache: CacheShape | undefined;
+
+  function cacheKey(artistName: string, trackName: string): string {
+    return `${artistName.trim().toLowerCase()}|${trackName.trim().toLowerCase()}`;
+  }
+
+  async function load(): Promise<CacheShape> {
+    if (cache) return cache;
+    let raw: string;
+    try {
+      raw = await readFile(CACHE_PATH, 'utf8');
+    } catch (e) {
+      if ((e as NodeJS.ErrnoException).code === 'ENOENT') {
+        cache = {};
+        return cache;
+      }
+      throw new Error(
+        `Failed to read Last.fm→Spotify cache at ${CACHE_PATH}: ${(e as Error).message}`,
+        { cause: e },
+      );
+    }
+    try {
+      cache = JSON.parse(raw) as CacheShape;
+    } catch (e) {
+      throw new Error(
+        `Last.fm→Spotify cache at ${CACHE_PATH} is corrupt (${(e as Error).message}). ` +
+          `Delete the file to rebuild from scratch.`,
+        { cause: e },
+      );
+    }
+    return cache;
+  }
+
+  async function persist(): Promise<void> {
+    if (!cache) return;
+    await mkdir(dirname(CACHE_PATH), { recursive: true });
+    await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
+  }
+
+  export async function getCachedLastFmTrack(
+    artistName: string,
+    trackName: string,
+  ): Promise<Track | null | undefined> {
+    const store = await load();
+    const key = cacheKey(artistName, trackName);
+    return key in store ? store[key] : undefined;
+  }
+
+  export async function setCachedLastFmTrack(
+    artistName: string,
+    trackName: string,
+    track: Track | null,
+  ): Promise<void> {
+    const store = await load();
+    store[cacheKey(artistName, trackName)] = track;
+    await persist();
+  }
+  ```
+
+- [ ] **Step 5: Run cache tests to verify they pass**
+
+  Run: `npm test -- src/LastFmSpotifyCache.test.ts`
+  Expected: 7 passing.
+
+- [ ] **Step 6: Write the failing cache-integration test in `src/LastFm.test.ts`**
+
+  Add to `src/LastFm.test.ts` inside the `describe('fetchLastFmDiscoveries', ...)` block:
+
+  ```ts
+  it('uses the cache: on second call with same candidates, Spotify search is not invoked', async () => {
+    const seed = makeTrack('s-cache', 'Cache Song', 'Cache Artist');
+    let spotifySearchCalls = 0;
+
+    mswServer.use(
+      mockLastFm({
+        trackSimilar: {
+          'Cache Artist|Cache Song': [{ name: 'Cached Hit', artist: 'Hit Artist' }],
+        },
+      }),
+      http.get('https://api.spotify.com/v1/search', () => {
+        spotifySearchCalls += 1;
+        return HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: 'spot-cached',
+                name: 'Cached Hit',
+                uri: 'spotify:track:spot-cached',
+                artists: [{ name: 'Hit Artist' }],
+                type: 'track',
+              },
+            ],
+          },
+        });
+      }),
+    );
+
+    // First run — Spotify search is hit; cache gets populated.
+    const first = await fetchLastFmDiscoveries({ seedTracks: [seed], numberOfTracks: 5 });
+    expect(first.length).toBe(1);
+    expect(spotifySearchCalls).toBe(1);
+
+    // Second run — cache hit; no further Spotify search.
+    const second = await fetchLastFmDiscoveries({ seedTracks: [seed], numberOfTracks: 5 });
+    expect(second.length).toBe(1);
+    expect(second[0].track.id).toBe('spot-cached');
+    expect(spotifySearchCalls).toBe(1);
+  });
+  ```
+
+- [ ] **Step 7: Run to verify it fails**
+
+  Run: `npm test -- src/LastFm.test.ts`
+  Expected: FAIL — `spotifySearchCalls` ends at 2 because no cache is wired in yet.
+
+- [ ] **Step 8: Wire the cache into `src/LastFm.ts`**
+
+  Add the cache import near the top:
+
+  ```ts
+  import {
+    getCachedLastFmTrack,
+    setCachedLastFmTrack,
+  } from './LastFmSpotifyCache.js';
+  ```
+
+  Replace the Spotify-resolution loop. The existing loop is:
+
+  ```ts
+  const resolved: SourcedTrack[] = [];
+  for (const c of candidates) {
+    const hit = await searchSpotifyTrack(c.artistName, c.trackName);
+    if (hit) resolved.push({ kind: 'track', track: hit, source: c.source });
+  }
+  ```
+
+  Change it to:
+
+  ```ts
+  const resolved: SourcedTrack[] = [];
+  let cacheHits = 0;
+  let cacheMisses = 0;
+  for (const c of candidates) {
+    const cached = await getCachedLastFmTrack(c.artistName, c.trackName);
+    if (cached !== undefined) {
+      cacheHits += 1;
+      if (cached) resolved.push({ kind: 'track', track: cached, source: c.source });
+      continue;
+    }
+    cacheMisses += 1;
+    const hit = await searchSpotifyTrack(c.artistName, c.trackName);
+    await persistCacheEntry(c.artistName, c.trackName, hit ?? null);
+    if (hit) resolved.push({ kind: 'track', track: hit, source: c.source });
+  }
+  if (cacheHits > 0 || cacheMisses > 0) {
+    console.log(`Last.fm→Spotify cache: ${cacheHits} hit(s), ${cacheMisses} miss(es)`);
+  }
+  ```
+
+  Add the `persistCacheEntry` helper at the bottom of the file, next to `searchSpotifyTrack`:
+
+  ```ts
+  async function persistCacheEntry(
+    artistName: string,
+    trackName: string,
+    value: Track | null,
+  ): Promise<void> {
+    try {
+      await setCachedLastFmTrack(artistName, trackName, value);
+    } catch (e) {
+      console.error(
+        `Failed to persist Last.fm→Spotify cache for "${trackName}" by ${artistName}:`,
+        (e as Error).message,
+      );
+    }
+  }
+  ```
+
+- [ ] **Step 9: Run all tests to verify they pass**
+
+  Run: `npm test`
+  Expected: All tests pass (cache tests + LastFm tests + existing project tests).
+
+- [ ] **Step 10: Typecheck**
+
+  Run: `npm run typecheck`
+  Expected: No errors.
+
+- [ ] **Step 11: Commit**
+
+  ```bash
+  git add src/LastFmSpotifyCache.ts src/LastFmSpotifyCache.test.ts src/LastFm.ts src/LastFm.test.ts src/__tests__/setup.ts
+  git commit -m "feat(lastfm): cache artist+track → Spotify resolution"
+  ```
+
+---
+
+## Task 5: Artist-similarity chain (`artist.getSimilar` → `artist.getTopTracks`)
 
 **Files:**
 
@@ -549,7 +874,7 @@
 - [ ] **Step 4: Run the test to verify it passes**
 
   Run: `npm test -- src/LastFm.test.ts`
-  Expected: PASS — 3 passing.
+  Expected: PASS — 4 passing in `src/LastFm.test.ts`.
 
 - [ ] **Step 5: Typecheck**
 
@@ -565,7 +890,7 @@
 
 ---
 
-## Task 5: Seed-artist filter
+## Task 6: Seed-artist filter
 
 **Files:**
 
@@ -653,7 +978,7 @@
 - [ ] **Step 4: Run the test to verify it passes**
 
   Run: `npm test -- src/LastFm.test.ts`
-  Expected: PASS — 4 passing.
+  Expected: PASS — 5 passing in `src/LastFm.test.ts`.
 
 - [ ] **Step 5: Commit**
 
@@ -664,7 +989,7 @@
 
 ---
 
-## Task 6: Per-seed failure isolation and cross-pass dedupe
+## Task 7: Per-seed failure isolation and cross-pass dedupe
 
 **Files:**
 
@@ -738,7 +1063,7 @@
 - [ ] **Step 2: Run the test**
 
   Run: `npm test -- src/LastFm.test.ts`
-  Expected: PASS — 5 passing (existing per-seed try/catch in `lastFmGet` already handles failure).
+  Expected: PASS — 6 passing in `src/LastFm.test.ts` (existing per-seed try/catch in `lastFmGet` already handles failure).
 
   If it FAILS, the implementation is missing per-seed isolation — fix by ensuring `lastFmGet` returns `undefined` on non-OK / thrown responses and that the surrounding loop tolerates `undefined` (already the case in the current implementation).
 
@@ -790,7 +1115,7 @@
 - [ ] **Step 4: Run the test**
 
   Run: `npm test -- src/LastFm.test.ts`
-  Expected: PASS — 6 passing (existing `uniqBy(track.id)` in `fetchLastFmDiscoveries` already handles this).
+  Expected: PASS — 7 passing in `src/LastFm.test.ts` (existing `uniqBy(track.id)` in `fetchLastFmDiscoveries` already handles this).
 
   If it FAILS, the `_.uniqBy((st) => st.track.id)` at the end of `fetchLastFmDiscoveries` was lost in a previous task — restore it.
 
@@ -803,7 +1128,7 @@
 
 ---
 
-## Task 7: Wire Last.fm into `fetchSpotifyTracks`
+## Task 8: Wire Last.fm into `fetchSpotifyTracks`
 
 **Files:**
 
@@ -971,7 +1296,7 @@
 
 ---
 
-## Task 8: Documentation and CI updates
+## Task 9: Documentation and CI updates
 
 **Files:**
 
@@ -981,7 +1306,7 @@
 
 **Why:** Make the new optional env var discoverable for humans (`.env.template`, `README.md`) and available to scheduled CI runs (workflow env block).
 
-- [ ] **Step 1: Append `LASTFM_API_KEY` to `.env.template`**
+- [ ] **Step 1: Append `LASTFM_API_KEY` (and optional cache-path override) to `.env.template`**
 
   Add at the end of the file (after the `LISTENBRAINZ_USER_TOKEN` block):
 
@@ -992,6 +1317,10 @@
   # https://www.last.fm/api/account/create.
   # When unset, Last.fm discovery is skipped entirely (no error).
   # LASTFM_API_KEY=
+
+  # Where to persist the Last.fm → Spotify track resolution cache.
+  # Default: .cache/lastfm-spotify-tracks.json
+  # LASTFM_SPOTIFY_CACHE_PATH=.cache/lastfm-spotify-tracks.json
   ```
 
 - [ ] **Step 2: Add a "Optional: Last.fm" subsection to `README.md`**
@@ -1062,7 +1391,8 @@
 
 ## Done When
 
-- All eight tasks complete and committed.
+- All nine tasks complete and committed.
 - `npm test` and `npm run typecheck` both clean.
-- A local dry-run (`npm start -- --dry-run`) with `LASTFM_API_KEY` set in `.env` logs Last.fm discoveries and they appear in the planned playlist.
+- A local dry-run (`npm start -- --dry-run`) with `LASTFM_API_KEY` set in `.env` logs Last.fm discoveries and they appear in the planned playlist; the cache log line shows hit/miss counts.
+- A second back-to-back local dry-run reports near-100% Last.fm→Spotify cache hits (proves the cache persists and is consulted).
 - A local dry-run with `LASTFM_API_KEY` unset shows the warning "LASTFM_API_KEY not set; skipping Last.fm discoveries." and otherwise runs unchanged.
