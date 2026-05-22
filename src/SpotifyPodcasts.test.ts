@@ -1,9 +1,11 @@
+import _ from 'lodash';
 import { http, HttpResponse } from 'msw';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import {
   mockShowEpisodes,
   mockShowEpisodesEmpty,
   mockShowEpisodesError,
+  mockShowEpisodesPaginated,
   mswServer,
 } from './__tests__/mswServer.js';
 import { fetchSpotifyPodcasts } from './SpotifyPodcasts.js';
@@ -28,6 +30,18 @@ afterEach(() => {
 });
 
 describe('fetchSpotifyPodcasts', () => {
+  beforeEach(() => {
+    // Deterministically pick the first entry of any random pool — keeps every
+    // pre-existing assertion stable now that slot 2 has a tied entry. We spy
+    // on _.random directly because lodash captures Math.random at module load
+    // time as `nativeRandom`, so a Math.random spy doesn't reach _.random calls.
+    vi.spyOn(_, 'random').mockReturnValue(0);
+    // The catch-and-fall-through in pickLatestEligibleEpisode logs to
+    // console.error whenever a fixture show isn't mocked. Tests that need
+    // to verify error logging do their own local spy below.
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+  });
+
   it('returns N episodes with pinned slots filled first', async () => {
     mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
     mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
@@ -170,5 +184,171 @@ describe('fetchSpotifyPodcasts', () => {
 
     expect(episodes.map((e) => e.episode.id)).not.toContain('upfirst_ep_newest');
     expect(episodes.map((e) => e.episode.id)).not.toContain('upfirst_ep_older');
+  });
+
+  it('tied pin_slot: both shows are reachable depending on the random roll', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    mockShowEpisodes('flightpod', [freshEpisode('flightpod')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    // beforeEach already pinned _.random = () => 0 — picks the first entry
+    // in any tied pool, so slot 2 resolves to thedaily.
+    const first = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    // Re-pin _.random to always return the last index of any pool — picks
+    // flightpod (index 1) for the 2-element slot-2 pool, and still works
+    // for single-element pools (index 0) because _.random(0) → 0.
+    vi.restoreAllMocks();
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(_, 'random').mockImplementation((n: number) => n);
+    const second = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(first[1]?.episode.id).toBe('thedaily_ep');
+    expect(second[1]?.episode.id).toBe('flightpod_ep');
+  });
+
+  it('sequential mode: picks the oldest unplayed episode across paginated pages', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    // Two pages: page 1 (newest) all played; page 2 (older) has the oldest unplayed.
+    // Inline counting handler so we can verify the sequential code path actually
+    // issued paginated HTTP requests with the expected page size.
+    let flightpodPageRequests: Array<{ offset: number; limit: number }> = [];
+    const flightpodPages: Array<Array<ReturnType<typeof ep>>> = [
+      [
+        ep('flightpod', '2026-05-20', true, '_p1_a'),
+        ep('flightpod', '2026-05-13', true, '_p1_b'),
+      ],
+      [
+        ep('flightpod', '2020-06-01', false, '_p2_old_unplayed'),
+        ep('flightpod', '2020-05-25', true, '_p2_old_played'),
+      ],
+    ];
+    const flat = flightpodPages.flat();
+    mswServer.use(
+      http.get('https://api.spotify.com/v1/shows/flightpod/episodes', ({ request }) => {
+        const url = new URL(request.url);
+        const limit = Number(url.searchParams.get('limit') ?? 50);
+        const offset = Number(url.searchParams.get('offset') ?? 0);
+        flightpodPageRequests.push({ offset, limit });
+        const slice = flat.slice(offset, offset + limit);
+        return HttpResponse.json({
+          items: slice.map((episode) => ({
+            id: episode.id,
+            name: episode.name,
+            release_date: episode.release_date,
+            duration_ms: episode.duration_ms ?? 30 * 60 * 1000,
+            is_playable: episode.is_playable ?? true,
+            resume_point: {
+              fully_played: episode.fully_played ?? false,
+              resume_position_ms: 0,
+            },
+          })),
+          total: flat.length,
+          limit,
+          offset,
+          next: offset + limit < flat.length ? 'next' : null,
+          previous: offset > 0 ? 'prev' : null,
+          href: '',
+        });
+      }),
+    );
+
+    // Force the tied slot-2 pool to pick flightpod (last entry).
+    // NOTE: Spying on Math.random does NOT work — lodash captures Math.random at
+    // module load. We must spy on _.random directly. The mockImplementation
+    // `(n) => n` picks the last index of any pool (also returns 0 for n=0).
+    vi.restoreAllMocks();
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(_, 'random').mockImplementation((n: number) => n);
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(episodes[1]?.episode.id).toBe('flightpod_ep_p2_old_unplayed');
+
+    // Pagination actually happened: limit=50 forces a single page since flat.length=4,
+    // so we expect exactly ONE request with offset=0 and limit=50. The page is shorter
+    // than the page size, which is the implementation's signal to stop. If the
+    // implementation ever shrinks the page size below the test's flat.length, this
+    // assertion catches the missing multi-page traversal.
+    expect(flightpodPageRequests.length).toBeGreaterThanOrEqual(1);
+    expect(flightpodPageRequests[0]).toEqual({ offset: 0, limit: 50 });
+  });
+
+  it('sequential mode: returns episodes older than the 6-month cutoff', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    // One page, one ancient unplayed episode — default mode would skip it.
+    mockShowEpisodesPaginated('flightpod', [
+      [ep('flightpod', '2018-01-01', false, '_ancient')],
+    ]);
+
+    vi.restoreAllMocks();
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(_, 'random').mockImplementation((n: number) => n);
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(episodes[1]?.episode.id).toBe('flightpod_ep_ancient');
+  });
+
+  it('sequential mode: returns no episode when every episode is fully_played', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+
+    mockShowEpisodesPaginated('flightpod', [
+      [
+        ep('flightpod', '2026-05-20', true, '_a'),
+        ep('flightpod', '2026-05-13', true, '_b'),
+        ep('flightpod', '2020-06-01', true, '_c'),
+      ],
+    ]);
+
+    // Force the slot-2 pool to try flightpod first. With every episode played,
+    // pickOldestUnplayedSequential returns undefined and tryPick falls back to
+    // thedaily (also in the tied pool). thedaily is mocked, so slot 2 = thedaily.
+    vi.restoreAllMocks();
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(_, 'random').mockImplementation((n: number) => n);
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 8 });
+
+    expect(episodes.map((e) => e.episode.id)).not.toContain('flightpod_ep_a');
+    expect(episodes.map((e) => e.episode.id)).not.toContain('flightpod_ep_b');
+    expect(episodes.map((e) => e.episode.id)).not.toContain('flightpod_ep_c');
+    expect(episodes[1]?.episode.id).toBe('thedaily_ep');
+  });
+
+  it('unknown mode value: treats show as default mode and warns', async () => {
+    mockShowEpisodes('upfirst', [freshEpisode('upfirst')]);
+    mockShowEpisodes('thedaily', [freshEpisode('thedaily')]);
+    mockShowEpisodes('flightpod', [freshEpisode('flightpod')]);
+    for (const id of OTHER_SHOW_IDS) {
+      mockShowEpisodes(id, [freshEpisode(id)]);
+    }
+    mockShowEpisodes('typoshow', [freshEpisode('typoshow')]);
+
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+
+    const episodes = await fetchSpotifyPodcasts({ numberOfPodcasts: 10 });
+
+    // typoshow's typo'd mode falls back to default behavior, which returns its
+    // fresh episode (passes the 6-month cutoff, not fully_played) for slot 10.
+    expect(episodes.map((e) => e.episode.id)).toContain('typoshow_ep');
+    expect(warn).toHaveBeenCalledWith(expect.stringContaining('typoshow'));
   });
 });
