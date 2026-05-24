@@ -5120,5 +5120,390 @@
     "track_number": 6,
     "type": "track",
     "uri": "spotify:track:2JENu7srINnXlZC6JtLyEA"
+  },
+  "c03667ab-2390-4c39-ba8c-4184a6e95f6a": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/75mafsNqNE1WSEVxIKuY5C"
+          },
+          "href": "https://api.spotify.com/v1/artists/75mafsNqNE1WSEVxIKuY5C",
+          "id": "75mafsNqNE1WSEVxIKuY5C",
+          "name": "IDLES",
+          "type": "artist",
+          "uri": "spotify:artist:75mafsNqNE1WSEVxIKuY5C"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/13fXtIpIyvz4D5Ny3TSHym"
+      },
+      "href": "https://api.spotify.com/v1/albums/13fXtIpIyvz4D5Ny3TSHym",
+      "id": "13fXtIpIyvz4D5Ny3TSHym",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27396732b262617773d930edc69"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0296732b262617773d930edc69"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485196732b262617773d930edc69"
+        }
+      ],
+      "is_playable": true,
+      "name": "TANGK",
+      "release_date": "2024-02-16",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:13fXtIpIyvz4D5Ny3TSHym"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/75mafsNqNE1WSEVxIKuY5C"
+        },
+        "href": "https://api.spotify.com/v1/artists/75mafsNqNE1WSEVxIKuY5C",
+        "id": "75mafsNqNE1WSEVxIKuY5C",
+        "name": "IDLES",
+        "type": "artist",
+        "uri": "spotify:artist:75mafsNqNE1WSEVxIKuY5C"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/066X20Nz7iquqkkCW6Jxy6"
+        },
+        "href": "https://api.spotify.com/v1/artists/066X20Nz7iquqkkCW6Jxy6",
+        "id": "066X20Nz7iquqkkCW6Jxy6",
+        "name": "LCD Soundsystem",
+        "type": "artist",
+        "uri": "spotify:artist:066X20Nz7iquqkkCW6Jxy6"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 189493,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USBQU2300133"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/15uzP4I5pMX4dfQ9Lx72h1"
+    },
+    "href": "https://api.spotify.com/v1/tracks/15uzP4I5pMX4dfQ9Lx72h1",
+    "id": "15uzP4I5pMX4dfQ9Lx72h1",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Dancer",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:15uzP4I5pMX4dfQ9Lx72h1"
+  },
+  "e66ea0ae-72e9-4471-a3ab-964b6c25696b": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2x9SpqnPi8rlE9pjHBwmSC"
+          },
+          "href": "https://api.spotify.com/v1/artists/2x9SpqnPi8rlE9pjHBwmSC",
+          "id": "2x9SpqnPi8rlE9pjHBwmSC",
+          "name": "Talking Heads",
+          "type": "artist",
+          "uri": "spotify:artist:2x9SpqnPi8rlE9pjHBwmSC"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4r5Y05sv2a63SQizB3hgan"
+      },
+      "href": "https://api.spotify.com/v1/albums/4r5Y05sv2a63SQizB3hgan",
+      "id": "4r5Y05sv2a63SQizB3hgan",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c7d1bce1d038a13ffab1c498"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c7d1bce1d038a13ffab1c498"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c7d1bce1d038a13ffab1c498"
+        }
+      ],
+      "is_playable": true,
+      "name": "Talking Heads: 77 (Super Deluxe Edition) [2024 Remaster]",
+      "release_date": "1977-09-16",
+      "release_date_precision": "day",
+      "total_tracks": 36,
+      "type": "album",
+      "uri": "spotify:album:4r5Y05sv2a63SQizB3hgan"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2x9SpqnPi8rlE9pjHBwmSC"
+        },
+        "href": "https://api.spotify.com/v1/artists/2x9SpqnPi8rlE9pjHBwmSC",
+        "id": "2x9SpqnPi8rlE9pjHBwmSC",
+        "name": "Talking Heads",
+        "type": "artist",
+        "uri": "spotify:artist:2x9SpqnPi8rlE9pjHBwmSC"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 260927,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRH12302157"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2T42dHq61RCZKioz0Cn0vR"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2T42dHq61RCZKioz0Cn0vR",
+    "id": "2T42dHq61RCZKioz0Cn0vR",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Psycho Killer - 2024 Remaster",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:2T42dHq61RCZKioz0Cn0vR"
+  },
+  "e619cd9d-ee35-4e37-8ee1-51b992ab95d7": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5FpyDuVxglPgdmN9fOxf0E"
+      },
+      "href": "https://api.spotify.com/v1/albums/5FpyDuVxglPgdmN9fOxf0E",
+      "id": "5FpyDuVxglPgdmN9fOxf0E",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27390cc4ea8792a9225895ff12a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0290cc4ea8792a9225895ff12a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485190cc4ea8792a9225895ff12a"
+        }
+      ],
+      "is_playable": true,
+      "name": "eu no meu dia menos fã de pop",
+      "release_date": "2024-07-15",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:5FpyDuVxglPgdmN9fOxf0E"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7GlBOeep6PqTfFi59PTUUN"
+        },
+        "href": "https://api.spotify.com/v1/artists/7GlBOeep6PqTfFi59PTUUN",
+        "id": "7GlBOeep6PqTfFi59PTUUN",
+        "name": "Chappell Roan",
+        "type": "artist",
+        "uri": "spotify:artist:7GlBOeep6PqTfFi59PTUUN"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 184841,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUG12305911"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/29M4UC9Lr3X8X1AoehvMH4"
+    },
+    "href": "https://api.spotify.com/v1/tracks/29M4UC9Lr3X8X1AoehvMH4",
+    "id": "29M4UC9Lr3X8X1AoehvMH4",
+    "is_local": false,
+    "is_playable": true,
+    "name": "HOT TO GO!",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:29M4UC9Lr3X8X1AoehvMH4"
+  },
+  "49b3a5c3-4fda-4947-9dd8-f7d5713b2391": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF"
+          },
+          "href": "https://api.spotify.com/v1/artists/4V8LLVI7PbaPR0K2TGSxFF",
+          "id": "4V8LLVI7PbaPR0K2TGSxFF",
+          "name": "Tyler, The Creator",
+          "type": "artist",
+          "uri": "spotify:artist:4V8LLVI7PbaPR0K2TGSxFF"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1jzv3jwZbt8lYfEtMjiD1R"
+      },
+      "href": "https://api.spotify.com/v1/albums/1jzv3jwZbt8lYfEtMjiD1R",
+      "id": "1jzv3jwZbt8lYfEtMjiD1R",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734b7fbb849ed845ddedcce346"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024b7fbb849ed845ddedcce346"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514b7fbb849ed845ddedcce346"
+        }
+      ],
+      "is_playable": true,
+      "name": "DON'T TAP THE GLASS",
+      "release_date": "2025-07-21",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:1jzv3jwZbt8lYfEtMjiD1R"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF"
+        },
+        "href": "https://api.spotify.com/v1/artists/4V8LLVI7PbaPR0K2TGSxFF",
+        "id": "4V8LLVI7PbaPR0K2TGSxFF",
+        "name": "Tyler, The Creator",
+        "type": "artist",
+        "uri": "spotify:artist:4V8LLVI7PbaPR0K2TGSxFF"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 153332,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USQX92503270"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6xV7Be6XEvkSnighmh2Tzj"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6xV7Be6XEvkSnighmh2Tzj",
+    "id": "6xV7Be6XEvkSnighmh2Tzj",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sugar On My Tongue",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:6xV7Be6XEvkSnighmh2Tzj"
+  },
+  "248cc9d1-97ea-493e-84d4-4c5ec718683b": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/08GQAI4eElDnROBrJRGE0X"
+          },
+          "href": "https://api.spotify.com/v1/artists/08GQAI4eElDnROBrJRGE0X",
+          "id": "08GQAI4eElDnROBrJRGE0X",
+          "name": "Fleetwood Mac",
+          "type": "artist",
+          "uri": "spotify:artist:08GQAI4eElDnROBrJRGE0X"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1bt6q2SruMsBtcerNVtpZB"
+      },
+      "href": "https://api.spotify.com/v1/albums/1bt6q2SruMsBtcerNVtpZB",
+      "id": "1bt6q2SruMsBtcerNVtpZB",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27357df7ce0eac715cf70e519a7"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0257df7ce0eac715cf70e519a7"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485157df7ce0eac715cf70e519a7"
+        }
+      ],
+      "is_playable": true,
+      "name": "Rumours",
+      "release_date": "1977-02-04",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:1bt6q2SruMsBtcerNVtpZB"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/08GQAI4eElDnROBrJRGE0X"
+        },
+        "href": "https://api.spotify.com/v1/artists/08GQAI4eElDnROBrJRGE0X",
+        "id": "08GQAI4eElDnROBrJRGE0X",
+        "name": "Fleetwood Mac",
+        "type": "artist",
+        "uri": "spotify:artist:08GQAI4eElDnROBrJRGE0X"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 257800,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USWB10400046"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5TDZyWDfbQFQJabbPwImVY"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5TDZyWDfbQFQJabbPwImVY",
+    "id": "5TDZyWDfbQFQJabbPwImVY",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Dreams - 2004 Remaster",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:5TDZyWDfbQFQJabbPwImVY"
   }
 }
