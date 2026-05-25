@@ -5955,5 +5955,230 @@
     "track_number": 10,
     "type": "track",
     "uri": "spotify:track:2jVR7cFjuVKsaBWwy9kKe3"
+  },
+  "655af9b0-d470-4fa1-b791-4da42b3be519": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2nAKP6etu8wXNnezKXgqgg"
+          },
+          "href": "https://api.spotify.com/v1/artists/2nAKP6etu8wXNnezKXgqgg",
+          "id": "2nAKP6etu8wXNnezKXgqgg",
+          "name": "Viagra Boys",
+          "type": "artist",
+          "uri": "spotify:artist:2nAKP6etu8wXNnezKXgqgg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2IC2TP7bnwkfl56vjabLQt"
+      },
+      "href": "https://api.spotify.com/v1/albums/2IC2TP7bnwkfl56vjabLQt",
+      "id": "2IC2TP7bnwkfl56vjabLQt",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f77d64b0ee2dc42b32606faa"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f77d64b0ee2dc42b32606faa"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f77d64b0ee2dc42b32606faa"
+        }
+      ],
+      "is_playable": true,
+      "name": "Cave World",
+      "release_date": "2022-07-08",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:2IC2TP7bnwkfl56vjabLQt"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2nAKP6etu8wXNnezKXgqgg"
+        },
+        "href": "https://api.spotify.com/v1/artists/2nAKP6etu8wXNnezKXgqgg",
+        "id": "2nAKP6etu8wXNnezKXgqgg",
+        "name": "Viagra Boys",
+        "type": "artist",
+        "uri": "spotify:artist:2nAKP6etu8wXNnezKXgqgg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 199732,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "SE5AJ2201623"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2FHMM1A7ozaPLn0wIY4SET"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2FHMM1A7ozaPLn0wIY4SET",
+    "id": "2FHMM1A7ozaPLn0wIY4SET",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Troglodyte",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:2FHMM1A7ozaPLn0wIY4SET"
+  },
+  "1c7dd9ca-2cfc-4882-a9c2-57822046a449": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2fSaE6BXtQy0x7R7v9IOmZ"
+          },
+          "href": "https://api.spotify.com/v1/artists/2fSaE6BXtQy0x7R7v9IOmZ",
+          "id": "2fSaE6BXtQy0x7R7v9IOmZ",
+          "name": "Aesop Rock",
+          "type": "artist",
+          "uri": "spotify:artist:2fSaE6BXtQy0x7R7v9IOmZ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0FUznat4Kw5r3i8trH7ds5"
+      },
+      "href": "https://api.spotify.com/v1/albums/0FUznat4Kw5r3i8trH7ds5",
+      "id": "0FUznat4Kw5r3i8trH7ds5",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27308120721cea85e0f4c2dea36"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0208120721cea85e0f4c2dea36"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485108120721cea85e0f4c2dea36"
+        }
+      ],
+      "is_playable": true,
+      "name": "I Heard It's A Mess There Too",
+      "release_date": "2025-10-29",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:0FUznat4Kw5r3i8trH7ds5"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2fSaE6BXtQy0x7R7v9IOmZ"
+        },
+        "href": "https://api.spotify.com/v1/artists/2fSaE6BXtQy0x7R7v9IOmZ",
+        "id": "2fSaE6BXtQy0x7R7v9IOmZ",
+        "name": "Aesop Rock",
+        "type": "artist",
+        "uri": "spotify:artist:2fSaE6BXtQy0x7R7v9IOmZ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 91106,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USBWK2500224"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2o5IIprbpqJfv9Cz18Bi7M"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2o5IIprbpqJfv9Cz18Bi7M",
+    "id": "2o5IIprbpqJfv9Cz18Bi7M",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Crystals and Herbs",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:2o5IIprbpqJfv9Cz18Bi7M"
+  },
+  "125addf1-ab28-44f2-82af-da66e72d07aa": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2TwOrUcYnAlIiKmVQkkoSZ"
+          },
+          "href": "https://api.spotify.com/v1/artists/2TwOrUcYnAlIiKmVQkkoSZ",
+          "id": "2TwOrUcYnAlIiKmVQkkoSZ",
+          "name": "Wet Leg",
+          "type": "artist",
+          "uri": "spotify:artist:2TwOrUcYnAlIiKmVQkkoSZ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3YVnHpyms4rLr3fXS0ROQy"
+      },
+      "href": "https://api.spotify.com/v1/albums/3YVnHpyms4rLr3fXS0ROQy",
+      "id": "3YVnHpyms4rLr3fXS0ROQy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732f9e981ef2f67e481a6bac03"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022f9e981ef2f67e481a6bac03"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512f9e981ef2f67e481a6bac03"
+        }
+      ],
+      "is_playable": true,
+      "name": "moisturizer",
+      "release_date": "2025-07-11",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:3YVnHpyms4rLr3fXS0ROQy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2TwOrUcYnAlIiKmVQkkoSZ"
+        },
+        "href": "https://api.spotify.com/v1/artists/2TwOrUcYnAlIiKmVQkkoSZ",
+        "id": "2TwOrUcYnAlIiKmVQkkoSZ",
+        "name": "Wet Leg",
+        "type": "artist",
+        "uri": "spotify:artist:2TwOrUcYnAlIiKmVQkkoSZ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 147754,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "GBCEL2400958"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7qLc5KYxAvBPgjUkqUozVn"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7qLc5KYxAvBPgjUkqUozVn",
+    "id": "7qLc5KYxAvBPgjUkqUozVn",
+    "is_local": false,
+    "is_playable": true,
+    "name": "liquidize",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:7qLc5KYxAvBPgjUkqUozVn"
   }
 }
