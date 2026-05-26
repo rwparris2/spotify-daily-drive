@@ -2,9 +2,6 @@ name: Daily Drive
 
 on:
   schedule:
-    # Diagnostic probe: bare UTC cron, fires 1h before the ET one (9:30 UTC = 5:30 EDT).
-    # If this fires but the ET one doesn't, the timezone field is the issue.
-    - cron: "30 9 * * *"
     - cron: "30 6 * * *"
       timezone: "America/New_York"
   workflow_dispatch:
