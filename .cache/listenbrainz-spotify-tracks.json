@@ -6705,5 +6705,381 @@
     "track_number": 7,
     "type": "track",
     "uri": "spotify:track:0t5EGxGtcu4voodQuS9me4"
+  },
+  "ac19684f-febb-47ae-8d5f-72a4c4c1aa3d": null,
+  "2558f091-dcb9-4c97-8c47-af8eb5318c62": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE"
+          },
+          "href": "https://api.spotify.com/v1/artists/0pWR7TsFhvSCnbmHDjWgrE",
+          "id": "0pWR7TsFhvSCnbmHDjWgrE",
+          "name": "Creepy Nuts",
+          "type": "artist",
+          "uri": "spotify:artist:0pWR7TsFhvSCnbmHDjWgrE"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7zI1wDJmkfHMBwZpbwJn8H"
+      },
+      "href": "https://api.spotify.com/v1/albums/7zI1wDJmkfHMBwZpbwJn8H",
+      "id": "7zI1wDJmkfHMBwZpbwJn8H",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731596b18678ae04bd27f85f41"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021596b18678ae04bd27f85f41"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511596b18678ae04bd27f85f41"
+        }
+      ],
+      "is_playable": true,
+      "name": "オトノケ - Otonoke",
+      "release_date": "2024-10-04",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:7zI1wDJmkfHMBwZpbwJn8H"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE"
+        },
+        "href": "https://api.spotify.com/v1/artists/0pWR7TsFhvSCnbmHDjWgrE",
+        "id": "0pWR7TsFhvSCnbmHDjWgrE",
+        "name": "Creepy Nuts",
+        "type": "artist",
+        "uri": "spotify:artist:0pWR7TsFhvSCnbmHDjWgrE"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 185626,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "JPU902402594"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6KYOlIwDHbrbeBbJEtQ0Fj"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6KYOlIwDHbrbeBbJEtQ0Fj",
+    "id": "6KYOlIwDHbrbeBbJEtQ0Fj",
+    "is_local": false,
+    "is_playable": true,
+    "name": "オトノケ - Otonoke",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6KYOlIwDHbrbeBbJEtQ0Fj"
+  },
+  "398bf241-7d57-4993-860b-1f9ef496c97f": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+          },
+          "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+          "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+          "name": "Kendrick Lamar",
+          "type": "artist",
+          "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY"
+      },
+      "href": "https://api.spotify.com/v1/albums/4eLPsYPBmXABThSJ821sqY",
+      "id": "4eLPsYPBmXABThSJ821sqY",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028b52c6b9bc4e43d873869699"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518b52c6b9bc4e43d873869699"
+        }
+      ],
+      "is_playable": true,
+      "name": "DAMN.",
+      "release_date": "2017-04-14",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:4eLPsYPBmXABThSJ821sqY"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+        },
+        "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+        "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+        "name": "Kendrick Lamar",
+        "type": "artist",
+        "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 177000,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USUM71703085"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7KXjTSCq5nL1LoYtL7XAwS"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7KXjTSCq5nL1LoYtL7XAwS",
+    "id": "7KXjTSCq5nL1LoYtL7XAwS",
+    "is_local": false,
+    "is_playable": true,
+    "name": "HUMBLE.",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:7KXjTSCq5nL1LoYtL7XAwS"
+  },
+  "451690ff-5d48-4724-bd69-56951dbbf733": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+          },
+          "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+          "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+          "name": "Kendrick Lamar",
+          "type": "artist",
+          "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0hvT3yIEysuuvkK73vgdcW"
+      },
+      "href": "https://api.spotify.com/v1/albums/0hvT3yIEysuuvkK73vgdcW",
+      "id": "0hvT3yIEysuuvkK73vgdcW",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e2a0a166493a2bde5480a420"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e2a0a166493a2bde5480a420"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e2a0a166493a2bde5480a420"
+        }
+      ],
+      "is_playable": true,
+      "name": "GNX",
+      "release_date": "2024-11-22",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:0hvT3yIEysuuvkK73vgdcW"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+        },
+        "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+        "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+        "name": "Kendrick Lamar",
+        "type": "artist",
+        "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 157992,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USUG12408494"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0nj9Bq5sHDiTxSHunhgkFb"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0nj9Bq5sHDiTxSHunhgkFb",
+    "id": "0nj9Bq5sHDiTxSHunhgkFb",
+    "is_local": false,
+    "is_playable": true,
+    "name": "squabble up",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:0nj9Bq5sHDiTxSHunhgkFb"
+  },
+  "4e0e2ac4-1f5a-48a2-ba7e-6ee24f83a844": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+          },
+          "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms",
+          "id": "1HY2Jd0NmPuamShAr6KMms",
+          "name": "Lady Gaga",
+          "type": "artist",
+          "uri": "spotify:artist:1HY2Jd0NmPuamShAr6KMms"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2MHUaRi9OCyTN02SoyRRBJ"
+      },
+      "href": "https://api.spotify.com/v1/albums/2MHUaRi9OCyTN02SoyRRBJ",
+      "id": "2MHUaRi9OCyTN02SoyRRBJ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b0860cf0a98e09663c82290c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b0860cf0a98e09663c82290c"
+        }
+      ],
+      "is_playable": true,
+      "name": "MAYHEM",
+      "release_date": "2025-03-07",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:2MHUaRi9OCyTN02SoyRRBJ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+        },
+        "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms",
+        "id": "1HY2Jd0NmPuamShAr6KMms",
+        "name": "Lady Gaga",
+        "type": "artist",
+        "uri": "spotify:artist:1HY2Jd0NmPuamShAr6KMms"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 223398,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUM72412581"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2LHNTC9QZxsL3nWpt8iaSR",
+    "id": "2LHNTC9QZxsL3nWpt8iaSR",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Abracadabra",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:2LHNTC9QZxsL3nWpt8iaSR"
+  },
+  "f1a6a40f-78f5-4918-968d-f64363bae94c": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+          },
+          "href": "https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi",
+          "id": "4tZwfgrHOc3mvqYlEYSvVi",
+          "name": "Daft Punk",
+          "type": "artist",
+          "uri": "spotify:artist:4tZwfgrHOc3mvqYlEYSvVi"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2noRn2Aes5aoNVsU6iWThc"
+      },
+      "href": "https://api.spotify.com/v1/albums/2noRn2Aes5aoNVsU6iWThc",
+      "id": "2noRn2Aes5aoNVsU6iWThc",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021e81bff9807a9e629fce5ade"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511e81bff9807a9e629fce5ade"
+        }
+      ],
+      "is_playable": true,
+      "name": "Discovery",
+      "release_date": "2001-03-12",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:2noRn2Aes5aoNVsU6iWThc"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+        },
+        "href": "https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi",
+        "id": "4tZwfgrHOc3mvqYlEYSvVi",
+        "name": "Daft Punk",
+        "type": "artist",
+        "uri": "spotify:artist:4tZwfgrHOc3mvqYlEYSvVi"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 226413,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBDUW0000059"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5W3cjX2J3tjhG8zb6u0qHn"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5W3cjX2J3tjhG8zb6u0qHn",
+    "id": "5W3cjX2J3tjhG8zb6u0qHn",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Harder, Better, Faster, Stronger",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:5W3cjX2J3tjhG8zb6u0qHn"
   }
 }
