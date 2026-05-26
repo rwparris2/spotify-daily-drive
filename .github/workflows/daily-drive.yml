@@ -1,9 +1,8 @@
 name: Daily Drive
 
 on:
-  schedule:
-    - cron: "30 6 * * *"
-      timezone: "America/New_York"
+  # Triggered by the Cloudflare Worker in cron-trigger/ — GitHub's own scheduled runs
+  # were 2–5h late, so the schedule lives there now.
   workflow_dispatch:
 
 permissions:

@@ -1,0 +1,22 @@
+name = "spotify-daily-drive-trigger"
+main = "src/index.ts"
+compatibility_date = "2026-05-26"
+
+# This Worker only has a scheduled() handler — no fetch handler, no public surface needed.
+workers_dev = false
+preview_urls = false
+
+[triggers]
+# 11:00 UTC = 6am EST / 7am EDT. Workers cron is UTC only — DST shifts the ET fire time by 1h.
+# If you want exact 6am ET year-round, use crons = ["0 10 * * *", "0 11 * * *"] and rely on the
+# workflow's `concurrency: daily-drive` group + `cancel-in-progress: false` to let one win.
+crons = ["0 11 * * *"]
+
+[vars]
+GITHUB_OWNER = "rwparris2"
+GITHUB_REPO = "spotify-daily-drive"
+WORKFLOW_FILE = "daily-drive.yml"
+GITHUB_REF = "main"
+
+# Secret (set via `wrangler secret put GITHUB_TOKEN`):
+#   GITHUB_TOKEN — fine-grained PAT, this repo only, Actions: Read and write

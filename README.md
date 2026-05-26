@@ -51,9 +51,18 @@ There's no state file: variety comes from random sampling and Spotify's `fully_p
    npm start                  # rebuild the playlist for real
    ```
 
-### Schedule it on GitHub Actions
+### Schedule it (GitHub Actions + Cloudflare Worker)
 
-Push to GitHub — [`.github/workflows/daily-drive.yml`](.github/workflows/daily-drive.yml) runs the CLI on a daily cron and commits the refreshed track cache back to the repo so it persists across runs. Add `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, `SPOTIFY_PLAYLIST_ID`, and (optionally) `LASTFM_API_KEY` as Actions secrets.
+The scheduling story is split in two because GitHub's own scheduled workflows were running 2–5 hours late under peak load:
+
+- [`.github/workflows/daily-drive.yml`](.github/workflows/daily-drive.yml) runs the CLI and commits the refreshed track cache back to the repo so it persists across runs. It only fires on `workflow_dispatch` (no GitHub-native cron).
+- [`cron-trigger/`](cron-trigger/) is a tiny Cloudflare Worker that pokes the workflow on schedule via the GitHub API. See [`cron-trigger/README.md`](cron-trigger/README.md) for one-time setup.
+
+**GitHub side:** add `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, `SPOTIFY_PLAYLIST_ID`, and (optionally) `LASTFM_API_KEY` / `LISTENBRAINZ_USER_TOKEN` as Actions secrets.
+
+**Cloudflare side:** deploy the Worker (`cd cron-trigger && npx wrangler deploy`) with a `GITHUB_TOKEN` secret (a fine-grained PAT with `Actions: Read and write` on this repo). The Worker fires `0 11 * * *` UTC (≈ 6am EST / 7am EDT).
+
+If you don't care about exact timing, you can skip the Worker and add `schedule: cron: "0 11 * * *"` back to the workflow — just be prepared for the runs to drift by hours.
 
 ### Optional: ListenBrainz
 
