@@ -6480,5 +6480,230 @@
     "track_number": 2,
     "type": "track",
     "uri": "spotify:track:59WN2psjkt1tyaxjspN8fp"
+  },
+  "e094efe9-3c07-449e-83cf-4ffbad92e95d": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7ltDVBr6mKbRvohxheJ9h1"
+          },
+          "href": "https://api.spotify.com/v1/artists/7ltDVBr6mKbRvohxheJ9h1",
+          "id": "7ltDVBr6mKbRvohxheJ9h1",
+          "name": "ROSALÍA",
+          "type": "artist",
+          "uri": "spotify:artist:7ltDVBr6mKbRvohxheJ9h1"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3SUEJULSGgBDG1j4GQhfYY"
+      },
+      "href": "https://api.spotify.com/v1/albums/3SUEJULSGgBDG1j4GQhfYY",
+      "id": "3SUEJULSGgBDG1j4GQhfYY",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27393ee2e2f2dfb7de9befcc164"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0293ee2e2f2dfb7de9befcc164"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485193ee2e2f2dfb7de9befcc164"
+        }
+      ],
+      "is_playable": true,
+      "name": "LUX",
+      "release_date": "2025-11-07",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:3SUEJULSGgBDG1j4GQhfYY"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7ltDVBr6mKbRvohxheJ9h1"
+        },
+        "href": "https://api.spotify.com/v1/artists/7ltDVBr6mKbRvohxheJ9h1",
+        "id": "7ltDVBr6mKbRvohxheJ9h1",
+        "name": "ROSALÍA",
+        "type": "artist",
+        "uri": "spotify:artist:7ltDVBr6mKbRvohxheJ9h1"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 140760,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM12504029"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1dp0MRcrgCxEESP1LrF2yA"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1dp0MRcrgCxEESP1LrF2yA",
+    "id": "1dp0MRcrgCxEESP1LrF2yA",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sexo, Violencia y Llantas",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:1dp0MRcrgCxEESP1LrF2yA"
+  },
+  "9fec8121-33f0-4df1-a5f7-5f96948f07a9": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7h6flFUnmQ6WNQJlax8c98"
+      },
+      "href": "https://api.spotify.com/v1/albums/7h6flFUnmQ6WNQJlax8c98",
+      "id": "7h6flFUnmQ6WNQJlax8c98",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e8500b4a4afe8a4c14d6019f"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e8500b4a4afe8a4c14d6019f"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e8500b4a4afe8a4c14d6019f"
+        }
+      ],
+      "is_playable": true,
+      "name": "Alternativo Top",
+      "release_date": "2025-05-13",
+      "release_date_precision": "day",
+      "total_tracks": 25,
+      "type": "album",
+      "uri": "spotify:album:7h6flFUnmQ6WNQJlax8c98"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2qnpHrOzdmOo1S4ox3j17x"
+        },
+        "href": "https://api.spotify.com/v1/artists/2qnpHrOzdmOo1S4ox3j17x",
+        "id": "2qnpHrOzdmOo1S4ox3j17x",
+        "name": "Turnstile",
+        "type": "artist",
+        "uri": "spotify:artist:2qnpHrOzdmOo1S4ox3j17x"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 287159,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "NLA322500053"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0vtQ2xj2QknAldtwgoJh3E"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0vtQ2xj2QknAldtwgoJh3E",
+    "id": "0vtQ2xj2QknAldtwgoJh3E",
+    "is_local": false,
+    "is_playable": true,
+    "name": "NEVER ENOUGH",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:0vtQ2xj2QknAldtwgoJh3E"
+  },
+  "9cbc01fc-1b58-4d82-b75c-de5d8d5d824c": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+          },
+          "href": "https://api.spotify.com/v1/artists/0WCo84qtCKfbyIf1lqQWB4",
+          "id": "0WCo84qtCKfbyIf1lqQWB4",
+          "name": "Geese",
+          "type": "artist",
+          "uri": "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0eeXb23yMW6EaIgm63xxPC"
+      },
+      "href": "https://api.spotify.com/v1/albums/0eeXb23yMW6EaIgm63xxPC",
+      "id": "0eeXb23yMW6EaIgm63xxPC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27345e82ae0372a50834825c018"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0245e82ae0372a50834825c018"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485145e82ae0372a50834825c018"
+        }
+      ],
+      "is_playable": true,
+      "name": "Getting Killed",
+      "release_date": "2025-09-26",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:0eeXb23yMW6EaIgm63xxPC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+        },
+        "href": "https://api.spotify.com/v1/artists/0WCo84qtCKfbyIf1lqQWB4",
+        "id": "0WCo84qtCKfbyIf1lqQWB4",
+        "name": "Geese",
+        "type": "artist",
+        "uri": "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 202201,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USBQU2500082"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0t5EGxGtcu4voodQuS9me4"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0t5EGxGtcu4voodQuS9me4",
+    "id": "0t5EGxGtcu4voodQuS9me4",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Half Real",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:0t5EGxGtcu4voodQuS9me4"
   }
 }
