@@ -8,29 +8,54 @@ import {
   setCachedListenBrainzTrack,
 } from './ListenBrainzSpotifyCache.js';
 
+const PLAYLIST_EXT_KEY = 'https://musicbrainz.org/doc/jspf#playlist';
+
 function mockValidate(username = 'user', valid = true) {
   return http.get('https://api.listenbrainz.org/1/validate-token', () =>
     HttpResponse.json({ valid, user_name: valid ? username : undefined }),
   );
 }
 
-function mockRecommendations(mbids: string[]) {
-  return http.get('https://api.listenbrainz.org/1/cf/recommendation/user/:username/recording', () =>
-    HttpResponse.json({
-      payload: { mbids: mbids.map((id) => ({ recording_mbid: id, score: 1 })) },
-    }),
+type PlaylistFixture = {
+  mbid: string;
+  sourcePatch: string;
+  tracks: { mbid: string; artist: string; title: string }[];
+};
+
+function mockCreatedFor(playlists: PlaylistFixture[]) {
+  return http.get(
+    'https://api.listenbrainz.org/1/user/:username/playlists/createdfor',
+    () =>
+      HttpResponse.json({
+        playlists: playlists.map((p) => ({
+          playlist: {
+            identifier: `https://listenbrainz.org/playlist/${p.mbid}`,
+            extension: {
+              [PLAYLIST_EXT_KEY]: {
+                additional_metadata: { algorithm_metadata: { source_patch: p.sourcePatch } },
+              },
+            },
+            track: [],
+          },
+        })),
+      }),
   );
 }
 
-function mockMetadata(map: Record<string, { artist: string; track: string }>) {
-  return http.get('https://api.listenbrainz.org/1/metadata/recording', ({ request }) => {
-    const ids = new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
-    const result: Record<string, unknown> = {};
-    for (const id of ids) {
-      if (map[id])
-        result[id] = { artist: { name: map[id].artist }, recording: { name: map[id].track } };
-    }
-    return HttpResponse.json(result);
+function mockPlaylist(playlists: PlaylistFixture[]) {
+  return http.get('https://api.listenbrainz.org/1/playlist/:mbid', ({ params }) => {
+    const fixture = playlists.find((p) => p.mbid === params.mbid);
+    if (!fixture) return HttpResponse.json({ playlist: { track: [] } });
+    return HttpResponse.json({
+      playlist: {
+        identifier: `https://listenbrainz.org/playlist/${fixture.mbid}`,
+        track: fixture.tracks.map((t) => ({
+          creator: t.artist,
+          title: t.title,
+          identifier: [`https://musicbrainz.org/recording/${t.mbid}`],
+        })),
+      },
+    });
   });
 }
 
@@ -54,6 +79,9 @@ function mockSpotifySearch(hit: { id: string; name: string } | null) {
   );
 }
 
+const JAMS_MBID = '11111111-1111-1111-1111-111111111111';
+const EXPLORATION_MBID = '22222222-2222-2222-2222-222222222222';
+
 describe('fetchListenBrainzRecommendations', () => {
   const originalToken = process.env.LISTENBRAINZ_USER_TOKEN;
   beforeEach(() => {
@@ -76,178 +104,75 @@ describe('fetchListenBrainzRecommendations', () => {
     expect(result).toEqual([]);
   });
 
-  it('returns [] when recommendations endpoint returns empty body (model not trained yet)', async () => {
+  it('returns [] when createdfor returns no playlists', async () => {
     mswServer.use(
       mockValidate(),
-      http.get(
-        'https://api.listenbrainz.org/1/cf/recommendation/user/:username/recording',
-        () => new HttpResponse('', { status: 200 }),
+      http.get('https://api.listenbrainz.org/1/user/:username/playlists/createdfor', () =>
+        HttpResponse.json({ playlists: [] }),
       ),
     );
     const result = await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
     expect(result).toEqual([]);
   });
 
-  it('resolves recommendations into tagged sourced tracks', async () => {
+  it('returns [] when no playlists match weekly-jams or weekly-exploration', async () => {
     mswServer.use(
       mockValidate(),
-      mockRecommendations(['mbid-1', 'mbid-2']),
-      mockMetadata({
-        'mbid-1': { artist: 'A1', track: 'T1' },
-        'mbid-2': { artist: 'A2', track: 'T2' },
-      }),
-      mockSpotifySearch({ id: 'spot-1', name: 'T1' }),
-    );
-    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 2 });
-    expect(result.length).toBeGreaterThan(0);
-    expect(result[0]).toMatchObject({ kind: 'track', source: 'listenbrainz suggestion' });
-  });
-
-  it('skips mbids whose metadata is missing artist or track name', async () => {
-    mswServer.use(
-      mockValidate(),
-      mockRecommendations(['ok', 'no-artist', 'no-track']),
-      http.get('https://api.listenbrainz.org/1/metadata/recording', () =>
-        HttpResponse.json({
-          ok: { artist: { name: 'A' }, recording: { name: 'T' } },
-          'no-artist': { recording: { name: 'T' } },
-          'no-track': { artist: { name: 'A' } },
-        }),
-      ),
-      mockSpotifySearch({ id: 'spot-ok', name: 'T' }),
+      mockCreatedFor([
+        {
+          mbid: '33333333-3333-3333-3333-333333333333',
+          sourcePatch: 'daily-jams',
+          tracks: [],
+        },
+      ]),
+      mockPlaylist([]),
     );
     const result = await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
-    expect(result.length).toBe(1);
+    expect(result).toEqual([]);
   });
 
-  it('chunks metadata calls to 25 mbids per request', async () => {
-    const mbids = Array.from({ length: 60 }, (_, i) => `mbid-${i}`);
-    const metaMap = Object.fromEntries(mbids.map((id) => [id, { artist: 'A', track: `T${id}` }]));
-    let metadataCalls = 0;
-    let largestBatch = 0;
+  it('resolves tracks from both weekly playlists with distinct source labels', async () => {
+    const fixtures: PlaylistFixture[] = [
+      {
+        mbid: JAMS_MBID,
+        sourcePatch: 'weekly-jams',
+        tracks: [
+          {
+            mbid: 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
+            artist: 'Jams Artist',
+            title: 'Jams Track',
+          },
+        ],
+      },
+      {
+        mbid: EXPLORATION_MBID,
+        sourcePatch: 'weekly-exploration',
+        tracks: [
+          {
+            mbid: 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb',
+            artist: 'Exploration Artist',
+            title: 'Exploration Track',
+          },
+        ],
+      },
+    ];
+    let searchCount = 0;
     mswServer.use(
       mockValidate(),
-      mockRecommendations(mbids),
-      http.get('https://api.listenbrainz.org/1/metadata/recording', ({ request }) => {
-        metadataCalls += 1;
-        const ids = new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
-        largestBatch = Math.max(largestBatch, ids.length);
-        const result: Record<string, unknown> = {};
-        for (const id of ids) {
-          result[id] = {
-            artist: { name: metaMap[id]!.artist },
-            recording: { name: metaMap[id]!.track },
-          };
-        }
-        return HttpResponse.json(result);
-      }),
-      mockSpotifySearch({ id: 'spot', name: 'T' }),
-    );
-    await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
-    expect(largestBatch).toBeLessThanOrEqual(25);
-    expect(metadataCalls).toBe(Math.ceil(60 / 25));
-  });
-
-  it('uses the cached Spotify track and skips metadata + search on a cache hit', async () => {
-    // Pre-seed: cache hit for cache-hit-mbid-1, cache miss (negative) for cache-hit-mbid-2.
-    const cachedTrack = {
-      id: 'cached-spot-1',
-      name: 'Cached T1',
-      uri: 'spotify:track:cached-spot-1',
-      artists: [{ name: 'A1' }],
-      type: 'track',
-    } as unknown as Track;
-    await setCachedListenBrainzTrack('cache-hit-mbid-1', cachedTrack);
-    await setCachedListenBrainzTrack('cache-hit-mbid-2', null);
-
-    let metadataCalls = 0;
-    let searchCalls = 0;
-    mswServer.use(
-      mockValidate(),
-      mockRecommendations(['cache-hit-mbid-1', 'cache-hit-mbid-2']),
-      http.get('https://api.listenbrainz.org/1/metadata/recording', () => {
-        metadataCalls += 1;
-        return HttpResponse.json({});
-      }),
-      http.get('https://api.spotify.com/v1/search', () => {
-        searchCalls += 1;
-        return HttpResponse.json({ tracks: { items: [] } });
-      }),
-    );
-
-    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
-    expect(metadataCalls).toBe(0);
-    expect(searchCalls).toBe(0);
-    expect(result).toHaveLength(1);
-    expect(result[0]).toMatchObject({
-      kind: 'track',
-      source: 'listenbrainz suggestion',
-      track: { id: 'cached-spot-1' },
-    });
-  });
-
-  it('persists negative cache entries when Spotify search returns no match', async () => {
-    mswServer.use(
-      mockValidate(),
-      mockRecommendations(['mbid-miss']),
-      mockMetadata({ 'mbid-miss': { artist: 'A', track: 'T' } }),
-      mockSpotifySearch(null),
-    );
-    await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
-
-    const { getCachedListenBrainzTrack } = await import('./ListenBrainzSpotifyCache.js');
-    expect(await getCachedListenBrainzTrack('mbid-miss')).toBeNull();
-  });
-
-  it('persists negative cache entries when metadata lacks artist or track name', async () => {
-    mswServer.use(
-      mockValidate(),
-      mockRecommendations(['mbid-meta-bad']),
-      http.get('https://api.listenbrainz.org/1/metadata/recording', () =>
-        HttpResponse.json({ 'mbid-meta-bad': { recording: { name: 'T' } } }),
-      ),
-      mockSpotifySearch(null),
-    );
-    await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
-
-    const { getCachedListenBrainzTrack } = await import('./ListenBrainzSpotifyCache.js');
-    expect(await getCachedListenBrainzTrack('mbid-meta-bad')).toBeNull();
-  });
-
-  it('stops resolving once numberOfTracks tracks have been collected', async () => {
-    const mbids = Array.from({ length: 60 }, (_, i) => `lazy-mbid-${i}`);
-    const metaMap = Object.fromEntries(
-      mbids.map((id) => [id, { artist: `Artist-${id}`, track: `Track-${id}` }]),
-    );
-    let searchCalls = 0;
-
-    mswServer.use(
-      mockValidate(),
-      mockRecommendations(mbids),
-      http.get('https://api.listenbrainz.org/1/metadata/recording', ({ request }) => {
-        const ids = new URL(request.url).searchParams.get('recording_mbids')?.split(',') ?? [];
-        const result: Record<string, unknown> = {};
-        for (const id of ids) {
-          result[id] = {
-            artist: { name: metaMap[id]!.artist },
-            recording: { name: metaMap[id]!.track },
-          };
-        }
-        return HttpResponse.json(result);
-      }),
+      mockCreatedFor(fixtures),
+      mockPlaylist(fixtures),
       http.get('https://api.spotify.com/v1/search', ({ request }) => {
-        searchCalls += 1;
+        searchCount += 1;
         const q = new URL(request.url).searchParams.get('q') ?? '';
         const match = q.match(/track:"([^"]+)" artist:"([^"]+)"/);
-        if (!match) return HttpResponse.json({ tracks: { items: [] } });
-        const [, trackName] = match;
+        const title = match?.[1] ?? 'unknown';
         return HttpResponse.json({
           tracks: {
             items: [
               {
-                id: `spot-${trackName}`,
-                name: trackName,
-                uri: `spotify:track:spot-${trackName}`,
+                id: `spot-${title}`,
+                name: title,
+                uri: `spotify:track:spot-${title}`,
                 artists: [{ name: 'Artist' }],
                 type: 'track',
               },
@@ -257,9 +182,162 @@ describe('fetchListenBrainzRecommendations', () => {
       }),
     );
 
-    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 10 });
+    expect(searchCount).toBe(2);
+    expect(result).toHaveLength(2);
+    const sources = result.map((r) => r.source).sort();
+    expect(sources).toEqual(['listenbrainz weekly exploration', 'listenbrainz weekly jams']);
+  });
 
-    expect(result.length).toBe(5);
-    expect(searchCalls).toBe(5);
+  it('skips tracks missing artist, title, or recording MBID', async () => {
+    const fixtures: PlaylistFixture[] = [
+      {
+        mbid: JAMS_MBID,
+        sourcePatch: 'weekly-jams',
+        tracks: [
+          { mbid: 'cccccccc-cccc-cccc-cccc-cccccccccccc', artist: 'A', title: 'OK' },
+        ],
+      },
+    ];
+    let searchCount = 0;
+    mswServer.use(
+      mockValidate(),
+      mockCreatedFor(fixtures),
+      http.get('https://api.listenbrainz.org/1/playlist/:mbid', () =>
+        HttpResponse.json({
+          playlist: {
+            track: [
+              {
+                creator: 'A',
+                title: 'OK',
+                identifier: ['https://musicbrainz.org/recording/cccccccc-cccc-cccc-cccc-cccccccccccc'],
+              },
+              { creator: 'A', identifier: ['https://musicbrainz.org/recording/dddddddd-dddd-dddd-dddd-dddddddddddd'] },
+              { title: 'No Artist', identifier: ['https://musicbrainz.org/recording/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee'] },
+              { creator: 'A', title: 'No MBID', identifier: ['https://example.com/foo'] },
+            ],
+          },
+        }),
+      ),
+      http.get('https://api.spotify.com/v1/search', () => {
+        searchCount += 1;
+        return HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: 'spot-ok',
+                name: 'OK',
+                uri: 'spotify:track:spot-ok',
+                artists: [{ name: 'A' }],
+                type: 'track',
+              },
+            ],
+          },
+        });
+      }),
+    );
+
+    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 10 });
+    expect(searchCount).toBe(1);
+    expect(result).toHaveLength(1);
+  });
+
+  it('uses cached Spotify track and skips search on cache hit', async () => {
+    const cachedTrack = {
+      id: 'cached-spot-1',
+      name: 'Cached Track',
+      uri: 'spotify:track:cached-spot-1',
+      artists: [{ name: 'A' }],
+      type: 'track',
+    } as unknown as Track;
+    await setCachedListenBrainzTrack('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', cachedTrack);
+    await setCachedListenBrainzTrack('bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', null);
+
+    const fixtures: PlaylistFixture[] = [
+      {
+        mbid: JAMS_MBID,
+        sourcePatch: 'weekly-jams',
+        tracks: [
+          { mbid: 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', artist: 'A', title: 'Cached' },
+          { mbid: 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', artist: 'A', title: 'Negative Cached' },
+        ],
+      },
+    ];
+    let searchCount = 0;
+    mswServer.use(
+      mockValidate(),
+      mockCreatedFor(fixtures),
+      mockPlaylist(fixtures),
+      http.get('https://api.spotify.com/v1/search', () => {
+        searchCount += 1;
+        return HttpResponse.json({ tracks: { items: [] } });
+      }),
+    );
+
+    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+    expect(searchCount).toBe(0);
+    expect(result).toHaveLength(1);
+    expect(result[0]).toMatchObject({
+      kind: 'track',
+      source: 'listenbrainz weekly jams',
+      track: { id: 'cached-spot-1' },
+    });
+  });
+
+  it('persists negative cache entries when Spotify search returns no match', async () => {
+    const missMbid = 'ffffffff-ffff-ffff-ffff-ffffffffffff';
+    const fixtures: PlaylistFixture[] = [
+      {
+        mbid: JAMS_MBID,
+        sourcePatch: 'weekly-jams',
+        tracks: [{ mbid: missMbid, artist: 'A', title: 'T' }],
+      },
+    ];
+    mswServer.use(
+      mockValidate(),
+      mockCreatedFor(fixtures),
+      mockPlaylist(fixtures),
+      mockSpotifySearch(null),
+    );
+    await fetchListenBrainzRecommendations({ numberOfTracks: 5 });
+    expect(await getCachedListenBrainzTrack(missMbid)).toBeNull();
+  });
+
+  it('samples up to numberOfTracks across both playlists', async () => {
+    const makeTracks = (prefix: string, count: number) =>
+      Array.from({ length: count }, (_, i) => ({
+        mbid: `${prefix}${String(i).padStart(8, '0')}-0000-0000-0000-000000000000`,
+        artist: `Artist-${prefix}-${i}`,
+        title: `Track-${prefix}-${i}`,
+      }));
+    const fixtures: PlaylistFixture[] = [
+      { mbid: JAMS_MBID, sourcePatch: 'weekly-jams', tracks: makeTracks('a', 20) },
+      { mbid: EXPLORATION_MBID, sourcePatch: 'weekly-exploration', tracks: makeTracks('b', 20) },
+    ];
+    mswServer.use(
+      mockValidate(),
+      mockCreatedFor(fixtures),
+      mockPlaylist(fixtures),
+      http.get('https://api.spotify.com/v1/search', ({ request }) => {
+        const q = new URL(request.url).searchParams.get('q') ?? '';
+        const title = q.match(/track:"([^"]+)"/)?.[1] ?? 'x';
+        return HttpResponse.json({
+          tracks: {
+            items: [
+              {
+                id: `spot-${title}`,
+                name: title,
+                uri: `spotify:track:spot-${title}`,
+                artists: [{ name: 'A' }],
+                type: 'track',
+              },
+            ],
+          },
+        });
+      }),
+    );
+
+    const result = await fetchListenBrainzRecommendations({ numberOfTracks: 15 });
+    expect(result).toHaveLength(15);
   });
 });

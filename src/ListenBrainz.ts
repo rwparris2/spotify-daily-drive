@@ -8,18 +8,37 @@ import {
 } from './ListenBrainzSpotifyCache.js';
 
 const LB_BASE = 'https://api.listenbrainz.org';
+const PLAYLIST_EXT_KEY = 'https://musicbrainz.org/doc/jspf#playlist';
 
 type MusicBrainzId = string;
 
 type ValidateTokenResponse = { valid: boolean; user_name?: string };
-type RecommendationsResponse = {
-  payload?: { mbids?: { recording_mbid: MusicBrainzId; score: number }[] };
+
+type JspfTrack = {
+  creator?: string;
+  title?: string;
+  identifier?: string | string[];
 };
-type RecordingMetadata = {
-  recording?: { name?: string };
-  artist?: { name?: string };
+
+type JspfPlaylist = {
+  identifier?: string;
+  extension?: {
+    [PLAYLIST_EXT_KEY]?: {
+      additional_metadata?: {
+        algorithm_metadata?: { source_patch?: string };
+      };
+    };
+  };
+  track?: JspfTrack[];
 };
-type MetadataResponse = Record<MusicBrainzId, RecordingMetadata | undefined>;
+
+type CreatedForResponse = { playlists?: { playlist?: JspfPlaylist }[] };
+type PlaylistResponse = { playlist?: JspfPlaylist };
+
+const PLAYLIST_SOURCES = [
+  { sourcePatch: 'weekly-jams', label: 'listenbrainz weekly jams' },
+  { sourcePatch: 'weekly-exploration', label: 'listenbrainz weekly exploration' },
+] as const;
 
 export async function fetchListenBrainzRecommendations(options: {
   numberOfTracks: number;
@@ -33,51 +52,115 @@ export async function fetchListenBrainzRecommendations(options: {
   const username = await validateListenBrainzToken(token);
   if (!username) return [];
 
-  const musicBrainzIds = await fetchRecommendations(username, options.numberOfTracks * 3);
-  if (musicBrainzIds.length === 0) return [];
+  const createdFor = await fetchCreatedForPlaylists(username);
+  if (createdFor.length === 0) return [];
 
-  const cachedByMbid = new Map<MusicBrainzId, Track | null>();
-  const uncachedMbids: MusicBrainzId[] = [];
-  for (const mbid of musicBrainzIds) {
-    const cached = await getCachedListenBrainzTrack(mbid);
-    if (cached === undefined) {
-      uncachedMbids.push(mbid);
-    } else {
-      cachedByMbid.set(mbid, cached);
-    }
-  }
-  if (cachedByMbid.size > 0) {
-    console.log(
-      `ListenBrainz cache: ${cachedByMbid.size} hit(s), ${uncachedMbids.length} miss(es)`,
+  const collected: SourcedTrack[] = [];
+  let cacheHits = 0;
+  let cacheMisses = 0;
+
+  for (const { sourcePatch, label } of PLAYLIST_SOURCES) {
+    const match = createdFor.find(
+      (p) =>
+        p.extension?.[PLAYLIST_EXT_KEY]?.additional_metadata?.algorithm_metadata?.source_patch ===
+        sourcePatch,
     );
-  }
-
-  const metadata: MetadataResponse =
-    uncachedMbids.length > 0 ? await fetchRecordingMetadata(uncachedMbids) : {};
-
-  const tracks: SourcedTrack[] = [];
-  for (const musicBrainzId of _.shuffle(musicBrainzIds)) {
-    if (tracks.length >= options.numberOfTracks) break;
-
-    if (cachedByMbid.has(musicBrainzId)) {
-      const cached = cachedByMbid.get(musicBrainzId);
-      if (cached) tracks.push({ kind: 'track', track: cached, source: 'listenbrainz suggestion' });
+    if (!match) {
+      console.warn(`ListenBrainz: no "${sourcePatch}" playlist found for ${username}.`);
       continue;
     }
+    const playlistMbid = extractPlaylistMbid(match.identifier);
+    if (!playlistMbid) continue;
 
-    const meta = metadata[musicBrainzId];
-    const artistName = meta?.artist?.name;
-    const trackName = meta?.recording?.name;
-    if (!artistName || !trackName) {
-      await persistCacheEntry(musicBrainzId, null);
-      continue;
+    const jspfTracks = await fetchPlaylistTracks(playlistMbid);
+    for (const jspf of jspfTracks) {
+      const resolved = await resolveJspfTrack(jspf, label);
+      if (!resolved) continue;
+      if (resolved.fromCache) cacheHits += 1;
+      else cacheMisses += 1;
+      if (resolved.sourcedTrack) collected.push(resolved.sourcedTrack);
     }
-    const hit = await searchSpotifyTrack(artistName, trackName);
-    await persistCacheEntry(musicBrainzId, hit ?? null);
-    if (hit) tracks.push({ kind: 'track', track: hit, source: 'listenbrainz suggestion' });
   }
 
-  return tracks;
+  if (cacheHits > 0 || cacheMisses > 0) {
+    console.log(`ListenBrainz cache: ${cacheHits} hit(s), ${cacheMisses} miss(es)`);
+  }
+
+  return _(collected)
+    .chain()
+    .uniqBy((t) => t.track.id)
+    .sampleSize(options.numberOfTracks)
+    .value();
+}
+
+type ResolvedJspf = { sourcedTrack: SourcedTrack | undefined; fromCache: boolean };
+
+async function resolveJspfTrack(jspf: JspfTrack, source: string): Promise<ResolvedJspf | undefined> {
+  const mbid = extractRecordingMbid(jspf.identifier);
+  const artist = jspf.creator;
+  const title = jspf.title;
+  if (!mbid || !artist || !title) return undefined;
+
+  const cached = await getCachedListenBrainzTrack(mbid);
+  if (cached !== undefined) {
+    return {
+      sourcedTrack: cached ? { kind: 'track', track: cached, source } : undefined,
+      fromCache: true,
+    };
+  }
+
+  const hit = await searchSpotifyTrack(artist, title);
+  await persistCacheEntry(mbid, hit ?? null);
+  return {
+    sourcedTrack: hit ? { kind: 'track', track: hit, source } : undefined,
+    fromCache: false,
+  };
+}
+
+function extractRecordingMbid(identifier?: string | string[]): MusicBrainzId | undefined {
+  const candidates = Array.isArray(identifier) ? identifier : identifier ? [identifier] : [];
+  for (const c of candidates) {
+    const m = c.match(/musicbrainz\.org\/recording\/([0-9a-f-]{36})/i);
+    if (m) return m[1];
+  }
+  return undefined;
+}
+
+function extractPlaylistMbid(identifier?: string): MusicBrainzId | undefined {
+  if (!identifier) return undefined;
+  return identifier.match(/listenbrainz\.org\/playlist\/([0-9a-f-]{36})/i)?.[1];
+}
+
+async function fetchCreatedForPlaylists(username: string): Promise<JspfPlaylist[]> {
+  try {
+    const res = await fetch(
+      `${LB_BASE}/1/user/${encodeURIComponent(username)}/playlists/createdfor?count=25`,
+    );
+    if (!res.ok) {
+      console.error(`ListenBrainz createdfor failed: ${res.status}`);
+      return [];
+    }
+    const data = (await res.json()) as CreatedForResponse;
+    return (data.playlists ?? []).map((p) => p.playlist).filter((p): p is JspfPlaylist => !!p);
+  } catch (e) {
+    console.error('ListenBrainz createdfor error:', (e as Error).message);
+    return [];
+  }
+}
+
+async function fetchPlaylistTracks(playlistMbid: MusicBrainzId): Promise<JspfTrack[]> {
+  try {
+    const res = await fetch(`${LB_BASE}/1/playlist/${playlistMbid}`);
+    if (!res.ok) {
+      console.error(`ListenBrainz playlist ${playlistMbid} failed: ${res.status}`);
+      return [];
+    }
+    const data = (await res.json()) as PlaylistResponse;
+    return data.playlist?.track ?? [];
+  } catch (e) {
+    console.error(`ListenBrainz playlist ${playlistMbid} error:`, (e as Error).message);
+    return [];
+  }
 }
 
 async function persistCacheEntry(mbid: MusicBrainzId, value: Track | null): Promise<void> {
@@ -110,57 +193,6 @@ async function validateListenBrainzToken(token: string): Promise<string | undefi
     console.error('ListenBrainz token validation error:', (e as Error).message);
     return undefined;
   }
-}
-
-async function fetchRecommendations(username: string, count: number): Promise<MusicBrainzId[]> {
-  try {
-    const res = await fetch(
-      `${LB_BASE}/1/cf/recommendation/user/${encodeURIComponent(username)}/recording?count=${count}`,
-    );
-    if (!res.ok) {
-      console.error(`ListenBrainz recommendations failed: ${res.status}`);
-      return [];
-    }
-    const text = await res.text();
-    if (!text) {
-      console.warn(
-        `ListenBrainz has no collaborative-filter recommendations for "${username}" yet ` +
-          `(empty body). Scrobble more listens to enable, or wait for the model to retrain.`,
-      );
-      return [];
-    }
-    const data = JSON.parse(text) as RecommendationsResponse;
-    const musicBrainzIds = data.payload?.mbids?.map((m) => m.recording_mbid) ?? [];
-    if (musicBrainzIds.length === 0) {
-      console.warn(`ListenBrainz returned no recommendations for "${username}".`);
-    }
-    return musicBrainzIds;
-  } catch (e) {
-    console.error('ListenBrainz recommendations error:', (e as Error).message);
-    return [];
-  }
-}
-
-const LB_METADATA_CHUNK_SIZE = 25;
-
-async function fetchRecordingMetadata(musicBrainzIds: MusicBrainzId[]): Promise<MetadataResponse> {
-  const merged: MetadataResponse = {};
-  for (let i = 0; i < musicBrainzIds.length; i += LB_METADATA_CHUNK_SIZE) {
-    const chunk = musicBrainzIds.slice(i, i + LB_METADATA_CHUNK_SIZE);
-    try {
-      const res = await fetch(
-        `${LB_BASE}/1/metadata/recording?recording_mbids=${chunk.join(',')}&inc=artist`,
-      );
-      if (!res.ok) {
-        console.error(`ListenBrainz metadata failed: ${res.status}`);
-        continue;
-      }
-      Object.assign(merged, (await res.json()) as MetadataResponse);
-    } catch (e) {
-      console.error('ListenBrainz metadata error:', (e as Error).message);
-    }
-  }
-  return merged;
 }
 
 async function searchSpotifyTrack(
