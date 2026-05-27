@@ -6,8 +6,8 @@ import { DailyDrivePlaylistItem, SourcedEpisode, SourcedTrack } from './DailyDri
 
 const NUMBER_OF_PODCASTS = 10;
 // Gaps between podcasts grow 2, 3, …, n, so n(n+1)/2 + 1 fills them with 1 to spare.
-// ×1.2 gives a ~20% long tail after the final podcast.
-const NUMBER_OF_TRACKS = Math.ceil(((NUMBER_OF_PODCASTS * (NUMBER_OF_PODCASTS + 1)) / 2 + 1) * 1.2);
+// ×1.5 gives a long tail of songs after the final podcast.
+const NUMBER_OF_TRACKS = Math.ceil(((NUMBER_OF_PODCASTS * (NUMBER_OF_PODCASTS + 1)) / 2 + 1) * 1.5);
 
 const dryRun = process.argv.includes('--dry-run');
 
