@@ -7,10 +7,16 @@ workers_dev = false
 preview_urls = false
 
 [triggers]
-# 11:00 UTC = 6am EST / 7am EDT. Workers cron is UTC only — DST shifts the ET fire time by 1h.
-# If you want exact 6am ET year-round, use crons = ["0 10 * * *", "0 11 * * *"] and rely on the
-# workflow's `concurrency: daily-drive` group + `cancel-in-progress: false` to let one win.
-crons = ["0 11 * * *"]
+# Slot 1 is pinned to "Up First from NPR" (latest_only), so the fire time is timed to land
+# AFTER Up First publishes — otherwise the run grabs the prior day's episode. Workers cron is
+# UTC only, so each window must clear the ET drop in both EST and EDT (DST shifts ET by 1h).
+#   - Up First weekdays:  6:30am ET  → 11:00 UTC (7am EDT / 6am EST) clears it.
+#   - Up First Saturday:  9:00am ET  ┐ 14:30 UTC (10:30am EDT / 9:30am EST) clears both, with
+#   - "The Sunday Story": 8:00am ET  ┘ buffer, year-round.
+# Mon–Fri fire early so the playlist is ready for the morning drive; Sat/Sun fire later so the
+# weekend news editions are actually out.
+# NB: Cloudflare day-of-week is 1=Sun..7=Sat, so use names (mon-fri / sat,sun) to avoid the off-by-one.
+crons = ["0 11 * * mon-fri", "30 14 * * sat,sun"]
 
 [vars]
 GITHUB_OWNER = "rwparris2"
