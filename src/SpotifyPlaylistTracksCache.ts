@@ -48,5 +48,5 @@ export async function setCachedPlaylistTracks(
 ): Promise<void> {
   await mkdir(CACHE_DIR, { recursive: true });
   const entry: CacheEntry = { snapshotId, tracks };
-  await writeFile(fileFor(playlistId), JSON.stringify(entry), 'utf8');
+  await writeFile(fileFor(playlistId), JSON.stringify(entry, null, 2), 'utf8');
 }
