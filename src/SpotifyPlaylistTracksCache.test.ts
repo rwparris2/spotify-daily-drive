@@ -54,21 +54,20 @@ describe('SpotifyPlaylistTracksCache', () => {
     expect(await getCachedPlaylistTracks(playlistId, 'snap_v2')).toEqual([tr('new1'), tr('new2')]);
   });
 
-  it('surfaces a clear error when the cache file is corrupt JSON', async () => {
+  it('surfaces a clear error when a playlist cache file is corrupt JSON', async () => {
     vi.resetModules();
     const dir = mkdtempSync(join(tmpdir(), 'cache-corrupt-'));
-    const corruptPath = join(dir, 'cache.json');
-    writeFileSync(corruptPath, '{not valid json', 'utf8');
+    writeFileSync(join(dir, 'corrupt_pl.json'), '{not valid json', 'utf8');
 
-    const originalPath = process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH;
-    process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH = corruptPath;
+    const originalDir = process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_DIR;
+    process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_DIR = dir;
     try {
       const { getCachedPlaylistTracks: fresh } =
         await import('./SpotifyPlaylistTracksCache.js?corrupt');
-      await expect(fresh('any', 'any')).rejects.toThrow(/corrupt|Delete the file/);
+      await expect(fresh('corrupt_pl', 'any')).rejects.toThrow(/corrupt|Delete the file/);
     } finally {
-      if (originalPath === undefined) delete process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH;
-      else process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH = originalPath;
+      if (originalDir === undefined) delete process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_DIR;
+      else process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_DIR = originalDir;
     }
   });
 });

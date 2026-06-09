@@ -16,7 +16,7 @@ import { tmpdir } from 'node:os';
 import { mkdtempSync } from 'node:fs';
 import { join } from 'node:path';
 const testCacheDir = mkdtempSync(join(tmpdir(), 'spotify-daily-drive-test-'));
-process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH = join(testCacheDir, 'playlist-tracks.json');
+process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_DIR = join(testCacheDir, 'playlist-tracks');
 process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH = join(
   testCacheDir,
   'listenbrainz-spotify-tracks.json',

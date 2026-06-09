@@ -20,7 +20,7 @@ TypeScript Node CLI that rebuilds a single persistent Spotify playlist by interl
 - `src/SpotifyTracks.ts` — fans out to playlist / top-items / recently-played / saved / ListenBrainz sources, dedupes by track id, samples
 - `src/SpotifyPlaylist.ts` — `PUT` then chunked `POST` to replace items, then renames + redescribes the playlist
 - `src/SpotifyClient.ts` — refresh-token-based auth; custom `fetch` with 429 backoff (top-level await)
-- `src/SpotifyPlaylistTracksCache.ts` — JSON cache keyed by `playlistId + snapshotId`; path overridable via `SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH`
+- `src/SpotifyPlaylistTracksCache.ts` — one JSON file per playlist (named `<playlistId>.json`) under a cache dir, each keyed by `snapshotId`; dir overridable via `SPOTIFY_PLAYLIST_TRACKS_CACHE_DIR`
 - `src/ListenBrainzSpotifyCache.ts` — JSON cache keyed by ListenBrainz MBID; stores resolved Spotify `Track` or `null` for known misses; path overridable via `LISTENBRAINZ_SPOTIFY_CACHE_PATH`
 - `src/ListenBrainz.ts` — optional CF recommendations resolved to Spotify tracks via search; no-op without `LISTENBRAINZ_USER_TOKEN`
 - `src/PodcastConfig.ts` — `smol-toml` loader for `podcasts.toml`
@@ -38,4 +38,4 @@ TypeScript Node CLI that rebuilds a single persistent Spotify playlist by interl
 
 ## Scheduling
 
-`.github/workflows/daily-drive.yml` runs the CLI on cron, then commits the refreshed `.cache/spotify-playlist-tracks.json` back to the repo as `github-actions[bot]` so the cache persists across runs. Required GitHub secrets: `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, `SPOTIFY_PLAYLIST_ID`.
+`.github/workflows/daily-drive.yml` runs the CLI on cron, then commits the refreshed `.cache/` (per-playlist track files under `spotify-playlist-tracks/`, plus the other cache files) back to the repo as `github-actions[bot]` so the cache persists across runs. Required GitHub secrets: `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, `SPOTIFY_PLAYLIST_ID`.

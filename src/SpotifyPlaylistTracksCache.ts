@@ -1,55 +1,44 @@
 import { readFile, writeFile, mkdir } from 'fs/promises';
-import { dirname } from 'path';
+import { join } from 'path';
 import type { Track } from '@spotify/web-api-ts-sdk';
 
-const CACHE_PATH =
-  process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH ?? '.cache/spotify-playlist-tracks.json';
+const CACHE_DIR = process.env.SPOTIFY_PLAYLIST_TRACKS_CACHE_DIR ?? '.cache/spotify-playlist-tracks';
 
 type CacheEntry = { snapshotId: string; tracks: Track[] };
-type CacheShape = Record<string, CacheEntry>;
 
-let cache: CacheShape | undefined;
-
-async function load(): Promise<CacheShape> {
-  if (cache) return cache;
-  let raw: string;
-  try {
-    raw = await readFile(CACHE_PATH, 'utf8');
-  } catch (e) {
-    if ((e as NodeJS.ErrnoException).code === 'ENOENT') {
-      cache = {};
-      return cache;
-    }
-    throw new Error(
-      `Failed to read playlist tracks cache at ${CACHE_PATH}: ${(e as Error).message}`,
-      { cause: e },
-    );
-  }
-  try {
-    cache = JSON.parse(raw) as CacheShape;
-  } catch (e) {
-    throw new Error(
-      `Playlist tracks cache at ${CACHE_PATH} is corrupt (${(e as Error).message}). ` +
-        `Delete the file to rebuild from scratch.`,
-      { cause: e },
-    );
-  }
-  return cache;
-}
-
-async function persist(): Promise<void> {
-  if (!cache) return;
-  await mkdir(dirname(CACHE_PATH), { recursive: true });
-  await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
+// One file per playlist, named by its Spotify id (base-62, always filename-safe).
+// Keeping playlists in separate files means a run only rewrites the playlists that
+// actually changed, so the committed cache produces small git diffs instead of one
+// multi-megabyte blob churning on every run.
+function fileFor(playlistId: string): string {
+  return join(CACHE_DIR, `${playlistId}.json`);
 }
 
 export async function getCachedPlaylistTracks(
   playlistId: string,
   currentSnapshotId: string,
 ): Promise<Track[] | undefined> {
-  const store = await load();
-  const entry = store[playlistId];
-  return entry?.snapshotId === currentSnapshotId ? entry.tracks : undefined;
+  const path = fileFor(playlistId);
+  let raw: string;
+  try {
+    raw = await readFile(path, 'utf8');
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code === 'ENOENT') return undefined;
+    throw new Error(`Failed to read playlist tracks cache at ${path}: ${(e as Error).message}`, {
+      cause: e,
+    });
+  }
+  let entry: CacheEntry;
+  try {
+    entry = JSON.parse(raw) as CacheEntry;
+  } catch (e) {
+    throw new Error(
+      `Playlist tracks cache at ${path} is corrupt (${(e as Error).message}). ` +
+        `Delete the file to rebuild it from scratch.`,
+      { cause: e },
+    );
+  }
+  return entry.snapshotId === currentSnapshotId ? entry.tracks : undefined;
 }
 
 export async function setCachedPlaylistTracks(
@@ -57,7 +46,7 @@ export async function setCachedPlaylistTracks(
   snapshotId: string,
   tracks: Track[],
 ): Promise<void> {
-  const store = await load();
-  store[playlistId] = { snapshotId, tracks };
-  await persist();
+  await mkdir(CACHE_DIR, { recursive: true });
+  const entry: CacheEntry = { snapshotId, tracks };
+  await writeFile(fileFor(playlistId), JSON.stringify(entry), 'utf8');
 }
