@@ -70,10 +70,7 @@ export function mockShowEpisodesError(
   );
 }
 
-export function mockShowEpisodesPaginated(
-  showId: string,
-  pages: EpisodeFixture[][],
-): void {
+export function mockShowEpisodesPaginated(showId: string, pages: EpisodeFixture[][]): void {
   const flat = pages.flat();
   mswServer.use(
     http.get(`https://api.spotify.com/v1/shows/${showId}/episodes`, ({ request }) => {

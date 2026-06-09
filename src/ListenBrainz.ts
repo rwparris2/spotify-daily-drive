@@ -95,7 +95,10 @@ export async function fetchListenBrainzRecommendations(options: {
 
 type ResolvedJspf = { sourcedTrack: SourcedTrack | undefined; fromCache: boolean };
 
-async function resolveJspfTrack(jspf: JspfTrack, source: string): Promise<ResolvedJspf | undefined> {
+async function resolveJspfTrack(
+  jspf: JspfTrack,
+  source: string,
+): Promise<ResolvedJspf | undefined> {
   const mbid = extractRecordingMbid(jspf.identifier);
   const artist = jspf.creator;
   const title = jspf.title;

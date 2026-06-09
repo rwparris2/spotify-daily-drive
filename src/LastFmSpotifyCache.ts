@@ -31,10 +31,9 @@ async function load(): Promise<CacheShape> {
       cache = {};
       return cache;
     }
-    throw new Error(
-      `Failed to read Last.fm→Spotify cache at ${path}: ${(e as Error).message}`,
-      { cause: e },
-    );
+    throw new Error(`Failed to read Last.fm→Spotify cache at ${path}: ${(e as Error).message}`, {
+      cause: e,
+    });
   }
   try {
     cache = JSON.parse(raw) as CacheShape;

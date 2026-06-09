@@ -222,10 +222,7 @@ describe('fetchSpotifyPodcasts', () => {
     // issued paginated HTTP requests with the expected page size.
     let flightpodPageRequests: Array<{ offset: number; limit: number }> = [];
     const flightpodPages: Array<Array<ReturnType<typeof ep>>> = [
-      [
-        ep('flightpod', '2026-05-20', true, '_p1_a'),
-        ep('flightpod', '2026-05-13', true, '_p1_b'),
-      ],
+      [ep('flightpod', '2026-05-20', true, '_p1_a'), ep('flightpod', '2026-05-13', true, '_p1_b')],
       [
         ep('flightpod', '2020-06-01', false, '_p2_old_unplayed'),
         ep('flightpod', '2020-05-25', true, '_p2_old_played'),
@@ -290,9 +287,7 @@ describe('fetchSpotifyPodcasts', () => {
     }
 
     // One page, one ancient unplayed episode — default mode would skip it.
-    mockShowEpisodesPaginated('flightpod', [
-      [ep('flightpod', '2018-01-01', false, '_ancient')],
-    ]);
+    mockShowEpisodesPaginated('flightpod', [[ep('flightpod', '2018-01-01', false, '_ancient')]]);
 
     vi.restoreAllMocks();
     vi.spyOn(console, 'error').mockImplementation(() => {});

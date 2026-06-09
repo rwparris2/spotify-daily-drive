@@ -23,22 +23,20 @@ type PlaylistFixture = {
 };
 
 function mockCreatedFor(playlists: PlaylistFixture[]) {
-  return http.get(
-    'https://api.listenbrainz.org/1/user/:username/playlists/createdfor',
-    () =>
-      HttpResponse.json({
-        playlists: playlists.map((p) => ({
-          playlist: {
-            identifier: `https://listenbrainz.org/playlist/${p.mbid}`,
-            extension: {
-              [PLAYLIST_EXT_KEY]: {
-                additional_metadata: { algorithm_metadata: { source_patch: p.sourcePatch } },
-              },
+  return http.get('https://api.listenbrainz.org/1/user/:username/playlists/createdfor', () =>
+    HttpResponse.json({
+      playlists: playlists.map((p) => ({
+        playlist: {
+          identifier: `https://listenbrainz.org/playlist/${p.mbid}`,
+          extension: {
+            [PLAYLIST_EXT_KEY]: {
+              additional_metadata: { algorithm_metadata: { source_patch: p.sourcePatch } },
             },
-            track: [],
           },
-        })),
-      }),
+          track: [],
+        },
+      })),
+    }),
   );
 }
 
@@ -194,9 +192,7 @@ describe('fetchListenBrainzRecommendations', () => {
       {
         mbid: JAMS_MBID,
         sourcePatch: 'weekly-jams',
-        tracks: [
-          { mbid: 'cccccccc-cccc-cccc-cccc-cccccccccccc', artist: 'A', title: 'OK' },
-        ],
+        tracks: [{ mbid: 'cccccccc-cccc-cccc-cccc-cccccccccccc', artist: 'A', title: 'OK' }],
       },
     ];
     let searchCount = 0;
@@ -210,10 +206,22 @@ describe('fetchListenBrainzRecommendations', () => {
               {
                 creator: 'A',
                 title: 'OK',
-                identifier: ['https://musicbrainz.org/recording/cccccccc-cccc-cccc-cccc-cccccccccccc'],
+                identifier: [
+                  'https://musicbrainz.org/recording/cccccccc-cccc-cccc-cccc-cccccccccccc',
+                ],
               },
-              { creator: 'A', identifier: ['https://musicbrainz.org/recording/dddddddd-dddd-dddd-dddd-dddddddddddd'] },
-              { title: 'No Artist', identifier: ['https://musicbrainz.org/recording/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee'] },
+              {
+                creator: 'A',
+                identifier: [
+                  'https://musicbrainz.org/recording/dddddddd-dddd-dddd-dddd-dddddddddddd',
+                ],
+              },
+              {
+                title: 'No Artist',
+                identifier: [
+                  'https://musicbrainz.org/recording/eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee',
+                ],
+              },
               { creator: 'A', title: 'No MBID', identifier: ['https://example.com/foo'] },
             ],
           },
