@@ -122,6 +122,33 @@ describe('fetchSpotifyTracks', () => {
     expect(new Set(tracks.map((t) => t.track.id)).size).toBe(tracks.length);
   });
 
+  it('excludes tracks by banned artists across all sources', async () => {
+    // Unique playlist id + snapshot so the persistent playlist-tracks cache
+    // (not reset between tests) can't return stale tracks from another case.
+    mockUserPlaylists([
+      {
+        id: 'pban',
+        snapshot_id: 'pban_snap',
+        tracks: [
+          { id: 'allowed', name: 'Allowed Song', artist: 'Good Artist' },
+          { id: 'banned', name: 'Banned Song', artist: 'Banned Artist' },
+        ],
+      },
+    ]);
+    mockTopTracks({
+      short_term: [{ id: 'banned2', name: 'Another Ban', artist: 'banned artist' }],
+    });
+    mockRecentlyPlayed([]);
+    mockSavedTracks([]);
+
+    const tracks = await fetchSpotifyTracks({ numberOfTracks: 60 });
+
+    const ids = tracks.map((t) => t.track.id);
+    expect(ids).toContain('allowed');
+    expect(ids).not.toContain('banned');
+    expect(ids).not.toContain('banned2');
+  });
+
   it('includes Last.fm-tagged discoveries in the merged output when LASTFM_API_KEY is set', async () => {
     process.env.LASTFM_API_KEY = 'test_lastfm_key';
     try {

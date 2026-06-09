@@ -17,13 +17,14 @@ TypeScript Node CLI that rebuilds a single persistent Spotify playlist by interl
 
 - `src/index.ts` — entry point; fetch podcasts → fetch tracks → interleave → replace playlist (top-level await)
 - `src/SpotifyPodcasts.ts` — picks one episode per slot, honoring `pin_slot` and `latest_only`; falls back to the unpinned pool when a pin is exhausted
-- `src/SpotifyTracks.ts` — fans out to playlist / top-items / recently-played / saved / ListenBrainz sources, dedupes by track id, samples
+- `src/SpotifyTracks.ts` — fans out to playlist / top-items / recently-played / saved / ListenBrainz sources, dedupes by track id, drops banned artists, samples
 - `src/SpotifyPlaylist.ts` — `PUT` then chunked `POST` to replace items, then renames + redescribes the playlist
 - `src/SpotifyClient.ts` — refresh-token-based auth; custom `fetch` with 429 backoff (top-level await)
 - `src/SpotifyPlaylistTracksCache.ts` — JSON cache keyed by `playlistId + snapshotId`; path overridable via `SPOTIFY_PLAYLIST_TRACKS_CACHE_PATH`
 - `src/ListenBrainzSpotifyCache.ts` — JSON cache keyed by ListenBrainz MBID; stores resolved Spotify `Track` or `null` for known misses; path overridable via `LISTENBRAINZ_SPOTIFY_CACHE_PATH`
 - `src/ListenBrainz.ts` — optional CF recommendations resolved to Spotify tracks via search; no-op without `LISTENBRAINZ_USER_TOKEN`
 - `src/PodcastConfig.ts` — `smol-toml` loader for `podcasts.toml`
+- `src/BannedArtists.ts` — `smol-toml` loader for `banned-artists.toml`; matches tracks by artist name (case-insensitive) or Spotify artist id; path overridable via `BANNED_ARTISTS_CONFIG_PATH`
 - `src/config.ts` — env var validation; `process.exit(2)` on any missing required value
 - `src/SpotifyBootstrapAuth.ts` — local HTTP callback server for the one-time OAuth flow
 

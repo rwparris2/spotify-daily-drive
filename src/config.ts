@@ -19,3 +19,5 @@ export const SPOTIFY_REDIRECT_URI =
 export const SPOTIFY_PLAYLIST_ID = required('SPOTIFY_PLAYLIST_ID');
 export const SPOTIFY_REFRESH_TOKEN = required('SPOTIFY_REFRESH_TOKEN');
 export const PODCASTS_CONFIG_PATH = process.env.PODCASTS_CONFIG_PATH ?? 'podcasts.toml';
+export const BANNED_ARTISTS_CONFIG_PATH =
+  process.env.BANNED_ARTISTS_CONFIG_PATH ?? 'banned-artists.toml';

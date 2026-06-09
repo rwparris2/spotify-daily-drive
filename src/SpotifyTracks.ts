@@ -5,6 +5,7 @@ import { fetchListenBrainzRecommendations } from './ListenBrainz.js';
 import { fetchLastFmDiscoveries } from './LastFm.js';
 import _ from 'lodash';
 import { SPOTIFY_PLAYLIST_ID } from './config.js';
+import { filterBannedTracks, loadBannedArtists } from './BannedArtists.js';
 import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
 
 async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
@@ -220,7 +221,15 @@ export async function fetchSpotifyTracks(options: {
     ...lastFmResults,
   ];
 
-  return _(allAvailableTracks)
+  // Drop banned artists before sampling so they don't consume target slots.
+  const banned = await loadBannedArtists();
+  const { kept, removed } = filterBannedTracks(allAvailableTracks, banned);
+  if (removed.length > 0) {
+    const artists = _.uniq(removed.flatMap((t) => t.track.artists.map((a) => a.name)));
+    console.log(`Filtered ${removed.length} track(s) by banned artist(s): ${artists.join(', ')}`);
+  }
+
+  return _(kept)
     .chain()
     .filter((t) => !!t.track)
     .uniqBy((t) => t.track.id)
