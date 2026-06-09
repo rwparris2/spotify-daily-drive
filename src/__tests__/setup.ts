@@ -4,6 +4,7 @@ process.env.SPOTIFY_REFRESH_TOKEN = 'test_refresh_token';
 process.env.SPOTIFY_PLAYLIST_ID = 'test_playlist_id';
 process.env.SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8888/callback';
 process.env.PODCASTS_CONFIG_PATH = 'src/__tests__/fixtures/podcasts.toml';
+process.env.BANNED_ARTISTS_CONFIG_PATH = 'src/__tests__/fixtures/banned-artists.toml';
 
 // A developer's local .env may carry these; set to '' (not delete) so the
 // `import 'dotenv/config'` that runs later via config.ts can't re-populate

@@ -72,6 +72,17 @@ Set `LISTENBRAINZ_USER_TOKEN` (from <https://listenbrainz.org/profile/>) to mix 
 
 Set `LASTFM_API_KEY` (free, register at <https://www.last.fm/api/account/create>) to mix in stylistically-similar discoveries from Last.fm's similarity graph. Unset, it's skipped silently.
 
+### Optional: Ban artists
+
+Drop specific artists from every song source by listing them in `banned-artists.toml`:
+
+```toml
+names = ["Musiscape", "HUNTR/X"]   # case-insensitive match on artist name
+ids   = []                          # exact Spotify artist ids, for ambiguous names
+```
+
+A track is excluded if **any** of its credited artists matches. The file is optional — remove it (or empty both lists) to ban nothing. It's checked into the repo, so the scheduled run picks it up automatically (no secret needed).
+
 ## Tests
 
 ```bash

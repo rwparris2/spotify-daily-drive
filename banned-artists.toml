@@ -1,0 +1,12 @@
+# Artists banned from the Daily Drive playlist.
+#
+# Any track with a matching artist is dropped from every song source — your
+# playlists, top/recently-played/saved tracks, ListenBrainz, and Last.fm.
+#
+#   names — case-insensitive, whitespace-trimmed match on the artist's name.
+#   ids   — exact Spotify artist id match; use when names are ambiguous.
+#
+# A track is banned if ANY of its credited artists matches. This file is
+# optional: delete it (or empty both lists) to ban nothing.
+names = ["Musiscape", "HUNTR/X"]
+ids = []
