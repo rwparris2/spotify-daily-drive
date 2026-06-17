@@ -80,7 +80,7 @@ const PER_SOURCE_TRACK_COUNT = 25;
 
 async function playlistTracks(): Promise<SourcedTrack[]> {
   const playlists = await fetchAllPlaylists();
-  const playlistsToFetch = _.sampleSize(playlists, 3);
+  const playlistsToFetch = _.sampleSize(playlists, 5);
   let results: SourcedTrack[] = [];
   for (const p of playlistsToFetch) {
     const source = `user playlist - ${p.name}`;
