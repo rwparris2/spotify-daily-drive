@@ -85046,5 +85046,1590 @@
     "track_number": 5,
     "type": "track",
     "uri": "spotify:track:50ObiBT0yVAbtYKYRlD27Q"
+  },
+  "[\"hayley kiyoko\",\"cliffs edge\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3LjhVl7GzYsza1biQjTpaN"
+          },
+          "href": "https://api.spotify.com/v1/artists/3LjhVl7GzYsza1biQjTpaN",
+          "id": "3LjhVl7GzYsza1biQjTpaN",
+          "name": "Hayley Kiyoko",
+          "type": "artist",
+          "uri": "spotify:artist:3LjhVl7GzYsza1biQjTpaN"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1DBeQGiRdap7iuvuxSx3bD"
+      },
+      "href": "https://api.spotify.com/v1/albums/1DBeQGiRdap7iuvuxSx3bD",
+      "id": "1DBeQGiRdap7iuvuxSx3bD",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2730488b28f942bcedaa3310bb8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e020488b28f942bcedaa3310bb8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048510488b28f942bcedaa3310bb8"
+        }
+      ],
+      "is_playable": true,
+      "name": "This Side of Paradise",
+      "release_date": "2015-02-03",
+      "release_date_precision": "day",
+      "total_tracks": 5,
+      "type": "album",
+      "uri": "spotify:album:1DBeQGiRdap7iuvuxSx3bD"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3LjhVl7GzYsza1biQjTpaN"
+        },
+        "href": "https://api.spotify.com/v1/artists/3LjhVl7GzYsza1biQjTpaN",
+        "id": "3LjhVl7GzYsza1biQjTpaN",
+        "name": "Hayley Kiyoko",
+        "type": "artist",
+        "uri": "spotify:artist:3LjhVl7GzYsza1biQjTpaN"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 213261,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUYG1060443"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5Q7Z26cX90eA14VaVg3xtB"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5Q7Z26cX90eA14VaVg3xtB",
+    "id": "5Q7Z26cX90eA14VaVg3xtB",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Cliffs Edge",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:5Q7Z26cX90eA14VaVg3xtB"
+  },
+  "[\"chris cornell\",\"billie jean\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0XHiH53dHrvbwfjYM7en7I"
+          },
+          "href": "https://api.spotify.com/v1/artists/0XHiH53dHrvbwfjYM7en7I",
+          "id": "0XHiH53dHrvbwfjYM7en7I",
+          "name": "Chris Cornell",
+          "type": "artist",
+          "uri": "spotify:artist:0XHiH53dHrvbwfjYM7en7I"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7DTYi2YCfQZGDyeedTdNGb"
+      },
+      "href": "https://api.spotify.com/v1/albums/7DTYi2YCfQZGDyeedTdNGb",
+      "id": "7DTYi2YCfQZGDyeedTdNGb",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273fb54ccff8c7b63c0575222d9"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02fb54ccff8c7b63c0575222d9"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851fb54ccff8c7b63c0575222d9"
+        }
+      ],
+      "is_playable": true,
+      "name": "Carry On",
+      "release_date": "2007-05-28",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:7DTYi2YCfQZGDyeedTdNGb"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0XHiH53dHrvbwfjYM7en7I"
+        },
+        "href": "https://api.spotify.com/v1/artists/0XHiH53dHrvbwfjYM7en7I",
+        "id": "0XHiH53dHrvbwfjYM7en7I",
+        "name": "Chris Cornell",
+        "type": "artist",
+        "uri": "spotify:artist:0XHiH53dHrvbwfjYM7en7I"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 281373,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUM70730465"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7sZD8tOmfRUObogGX8VzfZ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7sZD8tOmfRUObogGX8VzfZ",
+    "id": "7sZD8tOmfRUObogGX8VzfZ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Billie Jean",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:7sZD8tOmfRUObogGX8VzfZ"
+  },
+  "[\"closure in moscow\",\"neoprene byzantine\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4I1DvdLsieFgvgYbr8NRfh"
+          },
+          "href": "https://api.spotify.com/v1/artists/4I1DvdLsieFgvgYbr8NRfh",
+          "id": "4I1DvdLsieFgvgYbr8NRfh",
+          "name": "Closure in Moscow",
+          "type": "artist",
+          "uri": "spotify:artist:4I1DvdLsieFgvgYbr8NRfh"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1S0dJcSjS7imowLavbihCs"
+      },
+      "href": "https://api.spotify.com/v1/albums/1S0dJcSjS7imowLavbihCs",
+      "id": "1S0dJcSjS7imowLavbihCs",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27336836f3554326d9f9a87533f"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0236836f3554326d9f9a87533f"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485136836f3554326d9f9a87533f"
+        }
+      ],
+      "is_playable": true,
+      "name": "Pink Lemonade",
+      "release_date": "2014-05-09",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:1S0dJcSjS7imowLavbihCs"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4I1DvdLsieFgvgYbr8NRfh"
+        },
+        "href": "https://api.spotify.com/v1/artists/4I1DvdLsieFgvgYbr8NRfh",
+        "id": "4I1DvdLsieFgvgYbr8NRfh",
+        "name": "Closure in Moscow",
+        "type": "artist",
+        "uri": "spotify:artist:4I1DvdLsieFgvgYbr8NRfh"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 234488,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "AUZH11400068"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1s83A4kZY8hU8oN8Okhtqc"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1s83A4kZY8hU8oN8Okhtqc",
+    "id": "1s83A4kZY8hU8oN8Okhtqc",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Neoprene Byzantine",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:1s83A4kZY8hU8oN8Okhtqc"
+  },
+  "[\"four tet\",\"so blue\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7Eu1txygG6nJttLHbZdQOh"
+          },
+          "href": "https://api.spotify.com/v1/artists/7Eu1txygG6nJttLHbZdQOh",
+          "id": "7Eu1txygG6nJttLHbZdQOh",
+          "name": "Four Tet",
+          "type": "artist",
+          "uri": "spotify:artist:7Eu1txygG6nJttLHbZdQOh"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7mpTSR6E855VhdCeoPgpCF"
+      },
+      "href": "https://api.spotify.com/v1/albums/7mpTSR6E855VhdCeoPgpCF",
+      "id": "7mpTSR6E855VhdCeoPgpCF",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731cbbdaaa1d4b3bca2272f31c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021cbbdaaa1d4b3bca2272f31c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511cbbdaaa1d4b3bca2272f31c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Three",
+      "release_date": "2024-03-15",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:7mpTSR6E855VhdCeoPgpCF"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7Eu1txygG6nJttLHbZdQOh"
+        },
+        "href": "https://api.spotify.com/v1/artists/7Eu1txygG6nJttLHbZdQOh",
+        "id": "7Eu1txygG6nJttLHbZdQOh",
+        "name": "Four Tet",
+        "type": "artist",
+        "uri": "spotify:artist:7Eu1txygG6nJttLHbZdQOh"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 329590,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBXNG2456007"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0oLurbsZupVj0mUCiWJx2Z"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0oLurbsZupVj0mUCiWJx2Z",
+    "id": "0oLurbsZupVj0mUCiWJx2Z",
+    "is_local": false,
+    "is_playable": true,
+    "name": "So Blue",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:0oLurbsZupVj0mUCiWJx2Z"
+  },
+  "[\"pixies\",\"ana\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6zvul52xwTWzilBZl6BUbT"
+          },
+          "href": "https://api.spotify.com/v1/artists/6zvul52xwTWzilBZl6BUbT",
+          "id": "6zvul52xwTWzilBZl6BUbT",
+          "name": "Pixies",
+          "type": "artist",
+          "uri": "spotify:artist:6zvul52xwTWzilBZl6BUbT"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0BK1LxNNcaNUtAqTBQAOR8"
+      },
+      "href": "https://api.spotify.com/v1/albums/0BK1LxNNcaNUtAqTBQAOR8",
+      "id": "0BK1LxNNcaNUtAqTBQAOR8",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27367b1e90642787fe722e01af2"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0267b1e90642787fe722e01af2"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485167b1e90642787fe722e01af2"
+        }
+      ],
+      "is_playable": true,
+      "name": "Bossanova",
+      "release_date": "1990-08-13",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:0BK1LxNNcaNUtAqTBQAOR8"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6zvul52xwTWzilBZl6BUbT"
+        },
+        "href": "https://api.spotify.com/v1/artists/6zvul52xwTWzilBZl6BUbT",
+        "id": "6zvul52xwTWzilBZl6BUbT",
+        "name": "Pixies",
+        "type": "artist",
+        "uri": "spotify:artist:6zvul52xwTWzilBZl6BUbT"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 129440,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAFL9000306"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4lSqfVzoGBmBGnBZrSrKOJ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4lSqfVzoGBmBGnBZrSrKOJ",
+    "id": "4lSqfVzoGBmBGnBZrSrKOJ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Ana",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:4lSqfVzoGBmBGnBZrSrKOJ"
+  },
+  "[\"the dice man\",\"polygon window\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0P9O7BGwJrEGFj6BvpIphD"
+      },
+      "href": "https://api.spotify.com/v1/albums/0P9O7BGwJrEGFj6BvpIphD",
+      "id": "0P9O7BGwJrEGFj6BvpIphD",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bf38d5c923c30f4e4d563a02"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bf38d5c923c30f4e4d563a02"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bf38d5c923c30f4e4d563a02"
+        }
+      ],
+      "is_playable": true,
+      "name": "Artificial Intelligence",
+      "release_date": "1992-07-06",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:0P9O7BGwJrEGFj6BvpIphD"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1wlHPHcCIdTdREQqZ2bOZz"
+        },
+        "href": "https://api.spotify.com/v1/artists/1wlHPHcCIdTdREQqZ2bOZz",
+        "id": "1wlHPHcCIdTdREQqZ2bOZz",
+        "name": "The Dice Man",
+        "type": "artist",
+        "uri": "spotify:artist:1wlHPHcCIdTdREQqZ2bOZz"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 312200,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBBPW9200030"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0AiyJw9evPC73BD6gSj461"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0AiyJw9evPC73BD6gSj461",
+    "id": "0AiyJw9evPC73BD6gSj461",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Polygon Window",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:0AiyJw9evPC73BD6gSj461"
+  },
+  "[\"queens of the stone age\",\"villains of circumstance\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4pejUc4iciQfgdX6OKulQn"
+          },
+          "href": "https://api.spotify.com/v1/artists/4pejUc4iciQfgdX6OKulQn",
+          "id": "4pejUc4iciQfgdX6OKulQn",
+          "name": "Queens of the Stone Age",
+          "type": "artist",
+          "uri": "spotify:artist:4pejUc4iciQfgdX6OKulQn"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7vuIN24G18PAUAvjnICyA6"
+      },
+      "href": "https://api.spotify.com/v1/albums/7vuIN24G18PAUAvjnICyA6",
+      "id": "7vuIN24G18PAUAvjnICyA6",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27389401ba9a9c231e2add35ae8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0289401ba9a9c231e2add35ae8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485189401ba9a9c231e2add35ae8"
+        }
+      ],
+      "is_playable": true,
+      "name": "Villains",
+      "release_date": "2017-08-25",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:7vuIN24G18PAUAvjnICyA6"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4pejUc4iciQfgdX6OKulQn"
+        },
+        "href": "https://api.spotify.com/v1/artists/4pejUc4iciQfgdX6OKulQn",
+        "id": "4pejUc4iciQfgdX6OKulQn",
+        "name": "Queens of the Stone Age",
+        "type": "artist",
+        "uri": "spotify:artist:4pejUc4iciQfgdX6OKulQn"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 369338,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMTD1709780"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/02Q2zqHcJqBFv8OrtFTe88"
+    },
+    "href": "https://api.spotify.com/v1/tracks/02Q2zqHcJqBFv8OrtFTe88",
+    "id": "02Q2zqHcJqBFv8OrtFTe88",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Villains of Circumstance",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:02Q2zqHcJqBFv8OrtFTe88"
+  },
+  "[\"ought\",\"pill\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2VhVBXSB8n2KxuzKVZNxTY"
+          },
+          "href": "https://api.spotify.com/v1/artists/2VhVBXSB8n2KxuzKVZNxTY",
+          "id": "2VhVBXSB8n2KxuzKVZNxTY",
+          "name": "Ought",
+          "type": "artist",
+          "uri": "spotify:artist:2VhVBXSB8n2KxuzKVZNxTY"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2JFoSALYdxG8eX4p1XODb9"
+      },
+      "href": "https://api.spotify.com/v1/albums/2JFoSALYdxG8eX4p1XODb9",
+      "id": "2JFoSALYdxG8eX4p1XODb9",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734d66ab304ed3ff2a8f07d636"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024d66ab304ed3ff2a8f07d636"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514d66ab304ed3ff2a8f07d636"
+        }
+      ],
+      "is_playable": true,
+      "name": "Once More With Feeling…",
+      "release_date": "2014-10-28",
+      "release_date_precision": "day",
+      "total_tracks": 4,
+      "type": "album",
+      "uri": "spotify:album:2JFoSALYdxG8eX4p1XODb9"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2VhVBXSB8n2KxuzKVZNxTY"
+        },
+        "href": "https://api.spotify.com/v1/artists/2VhVBXSB8n2KxuzKVZNxTY",
+        "id": "2VhVBXSB8n2KxuzKVZNxTY",
+        "name": "Ought",
+        "type": "artist",
+        "uri": "spotify:artist:2VhVBXSB8n2KxuzKVZNxTY"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 323198,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "CACQ21410801"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3KiYLzScpYfFWekqBjLHuQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3KiYLzScpYfFWekqBjLHuQ",
+    "id": "3KiYLzScpYfFWekqBjLHuQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Pill",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:3KiYLzScpYfFWekqBjLHuQ"
+  },
+  "[\"king crimson\",\"the devil’s triangle\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
+          },
+          "href": "https://api.spotify.com/v1/artists/7M1FPw29m5FbicYzS2xdpi",
+          "id": "7M1FPw29m5FbicYzS2xdpi",
+          "name": "King Crimson",
+          "type": "artist",
+          "uri": "spotify:artist:7M1FPw29m5FbicYzS2xdpi"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/68W3ppXWhsOLOURmxzRkyA"
+      },
+      "href": "https://api.spotify.com/v1/albums/68W3ppXWhsOLOURmxzRkyA",
+      "id": "68W3ppXWhsOLOURmxzRkyA",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273df0ca9c1749f68f803f9f42b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02df0ca9c1749f68f803f9f42b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851df0ca9c1749f68f803f9f42b"
+        }
+      ],
+      "is_playable": true,
+      "name": "In The Wake Of Poseidon",
+      "release_date": "1970-05-15",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:68W3ppXWhsOLOURmxzRkyA"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
+        },
+        "href": "https://api.spotify.com/v1/artists/7M1FPw29m5FbicYzS2xdpi",
+        "id": "7M1FPw29m5FbicYzS2xdpi",
+        "name": "King Crimson",
+        "type": "artist",
+        "uri": "spotify:artist:7M1FPw29m5FbicYzS2xdpi"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 697023,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBCTX1500270"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5qmlexKxaI31MvFhObUCZm"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5qmlexKxaI31MvFhObUCZm",
+    "id": "5qmlexKxaI31MvFhObUCZm",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Devils Triangle",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:5qmlexKxaI31MvFhObUCZm"
+  },
+  "[\"hemlocke springs\",\"stranger danger!\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/52PdgUJOjvS6Mpmjy1SAlx"
+          },
+          "href": "https://api.spotify.com/v1/artists/52PdgUJOjvS6Mpmjy1SAlx",
+          "id": "52PdgUJOjvS6Mpmjy1SAlx",
+          "name": "hemlocke springs",
+          "type": "artist",
+          "uri": "spotify:artist:52PdgUJOjvS6Mpmjy1SAlx"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2I7SwNPGo5QQupmfiXKE5d"
+      },
+      "href": "https://api.spotify.com/v1/albums/2I7SwNPGo5QQupmfiXKE5d",
+      "id": "2I7SwNPGo5QQupmfiXKE5d",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a84762c9a7d5b0a91e81d68a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a84762c9a7d5b0a91e81d68a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a84762c9a7d5b0a91e81d68a"
+        }
+      ],
+      "is_playable": true,
+      "name": "stranger danger!",
+      "release_date": "2023-01-13",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:2I7SwNPGo5QQupmfiXKE5d"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/52PdgUJOjvS6Mpmjy1SAlx"
+        },
+        "href": "https://api.spotify.com/v1/artists/52PdgUJOjvS6Mpmjy1SAlx",
+        "id": "52PdgUJOjvS6Mpmjy1SAlx",
+        "name": "hemlocke springs",
+        "type": "artist",
+        "uri": "spotify:artist:52PdgUJOjvS6Mpmjy1SAlx"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 221409,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QZTBB2267571"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1nyLZYAeEVQaTM0KMGJous"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1nyLZYAeEVQaTM0KMGJous",
+    "id": "1nyLZYAeEVQaTM0KMGJous",
+    "is_local": false,
+    "is_playable": true,
+    "name": "stranger danger!",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:1nyLZYAeEVQaTM0KMGJous"
+  },
+  "[\"el-p\",\"up all night\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/57UnSUpae3SbRekxNa5Kgl"
+          },
+          "href": "https://api.spotify.com/v1/artists/57UnSUpae3SbRekxNa5Kgl",
+          "id": "57UnSUpae3SbRekxNa5Kgl",
+          "name": "El-P",
+          "type": "artist",
+          "uri": "spotify:artist:57UnSUpae3SbRekxNa5Kgl"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6gZudQwiObndOhXqqDx5GD"
+      },
+      "href": "https://api.spotify.com/v1/albums/6gZudQwiObndOhXqqDx5GD",
+      "id": "6gZudQwiObndOhXqqDx5GD",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732aa0a5641ecf138c1e47a330"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022aa0a5641ecf138c1e47a330"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512aa0a5641ecf138c1e47a330"
+        }
+      ],
+      "is_playable": true,
+      "name": "I'll Sleep When You're Dead",
+      "release_date": "2007-03-20",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:6gZudQwiObndOhXqqDx5GD"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/57UnSUpae3SbRekxNa5Kgl"
+        },
+        "href": "https://api.spotify.com/v1/artists/57UnSUpae3SbRekxNa5Kgl",
+        "id": "57UnSUpae3SbRekxNa5Kgl",
+        "name": "El-P",
+        "type": "artist",
+        "uri": "spotify:artist:57UnSUpae3SbRekxNa5Kgl"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 156173,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USA4T0713903"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0yRZBIFlSC1O2zZmIcCbup"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0yRZBIFlSC1O2zZmIcCbup",
+    "id": "0yRZBIFlSC1O2zZmIcCbup",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Up All Night",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:0yRZBIFlSC1O2zZmIcCbup"
+  },
+  "[\"lisa\",\"money\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5L1lO4eRHmJ7a0Q6csE5cT"
+          },
+          "href": "https://api.spotify.com/v1/artists/5L1lO4eRHmJ7a0Q6csE5cT",
+          "id": "5L1lO4eRHmJ7a0Q6csE5cT",
+          "name": "LISA",
+          "type": "artist",
+          "uri": "spotify:artist:5L1lO4eRHmJ7a0Q6csE5cT"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/66OYt73mqan1hWa78BhfPd"
+      },
+      "href": "https://api.spotify.com/v1/albums/66OYt73mqan1hWa78BhfPd",
+      "id": "66OYt73mqan1hWa78BhfPd",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273330f11fb125bb80b760f9e19"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02330f11fb125bb80b760f9e19"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851330f11fb125bb80b760f9e19"
+        }
+      ],
+      "is_playable": true,
+      "name": "LALISA",
+      "release_date": "2021-09-10",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:66OYt73mqan1hWa78BhfPd"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5L1lO4eRHmJ7a0Q6csE5cT"
+        },
+        "href": "https://api.spotify.com/v1/artists/5L1lO4eRHmJ7a0Q6csE5cT",
+        "id": "5L1lO4eRHmJ7a0Q6csE5cT",
+        "name": "LISA",
+        "type": "artist",
+        "uri": "spotify:artist:5L1lO4eRHmJ7a0Q6csE5cT"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 168227,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "KRA402100099"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7hU3IHwjX150XLoTVmjD0q"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7hU3IHwjX150XLoTVmjD0q",
+    "id": "7hU3IHwjX150XLoTVmjD0q",
+    "is_local": false,
+    "is_playable": true,
+    "name": "MONEY",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:7hU3IHwjX150XLoTVmjD0q"
+  },
+  "[\"bob marley\",\"could you be loved\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2QsynagSdAqZj3U9HgDzjD"
+          },
+          "href": "https://api.spotify.com/v1/artists/2QsynagSdAqZj3U9HgDzjD",
+          "id": "2QsynagSdAqZj3U9HgDzjD",
+          "name": "Bob Marley & The Wailers",
+          "type": "artist",
+          "uri": "spotify:artist:2QsynagSdAqZj3U9HgDzjD"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/321q9p7PELvzcFAWxml7VX"
+      },
+      "href": "https://api.spotify.com/v1/albums/321q9p7PELvzcFAWxml7VX",
+      "id": "321q9p7PELvzcFAWxml7VX",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731c40418d1c37d727e8e91b04"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021c40418d1c37d727e8e91b04"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511c40418d1c37d727e8e91b04"
+        }
+      ],
+      "is_playable": true,
+      "name": "Uprising",
+      "release_date": "1980-06-10",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:321q9p7PELvzcFAWxml7VX"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2QsynagSdAqZj3U9HgDzjD"
+        },
+        "href": "https://api.spotify.com/v1/artists/2QsynagSdAqZj3U9HgDzjD",
+        "id": "2QsynagSdAqZj3U9HgDzjD",
+        "name": "Bob Marley & The Wailers",
+        "type": "artist",
+        "uri": "spotify:artist:2QsynagSdAqZj3U9HgDzjD"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 237000,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USIR28000016"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5O4erNlJ74PIF6kGol1ZrC"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5O4erNlJ74PIF6kGol1ZrC",
+    "id": "5O4erNlJ74PIF6kGol1ZrC",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Could You Be Loved",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:5O4erNlJ74PIF6kGol1ZrC"
+  },
+  "[\"the vines\",\"amnesia\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7vkiEK5D7Gf0z4M1Va0CXD"
+          },
+          "href": "https://api.spotify.com/v1/artists/7vkiEK5D7Gf0z4M1Va0CXD",
+          "id": "7vkiEK5D7Gf0z4M1Va0CXD",
+          "name": "The Vines",
+          "type": "artist",
+          "uri": "spotify:artist:7vkiEK5D7Gf0z4M1Va0CXD"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2lS3dL4u18BRaiPmIzlJoO"
+      },
+      "href": "https://api.spotify.com/v1/albums/2lS3dL4u18BRaiPmIzlJoO",
+      "id": "2lS3dL4u18BRaiPmIzlJoO",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bb28196cb6b6231afb5e7deb"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bb28196cb6b6231afb5e7deb"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bb28196cb6b6231afb5e7deb"
+        }
+      ],
+      "is_playable": true,
+      "name": "Winning Days",
+      "release_date": "2004-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:2lS3dL4u18BRaiPmIzlJoO"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7vkiEK5D7Gf0z4M1Va0CXD"
+        },
+        "href": "https://api.spotify.com/v1/artists/7vkiEK5D7Gf0z4M1Va0CXD",
+        "id": "7vkiEK5D7Gf0z4M1Va0CXD",
+        "name": "The Vines",
+        "type": "artist",
+        "uri": "spotify:artist:7vkiEK5D7Gf0z4M1Va0CXD"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 281160,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCA20300816"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4FhXmZxw4xoBvYhQvdSivQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4FhXmZxw4xoBvYhQvdSivQ",
+    "id": "4FhXmZxw4xoBvYhQvdSivQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Amnesia",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:4FhXmZxw4xoBvYhQvdSivQ"
+  },
+  "[\"tei shi\",\"even if it hurts (feat. blood orange)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1xcMOgFUM1IYZE22YjCvsL"
+          },
+          "href": "https://api.spotify.com/v1/artists/1xcMOgFUM1IYZE22YjCvsL",
+          "id": "1xcMOgFUM1IYZE22YjCvsL",
+          "name": "Tei Shi",
+          "type": "artist",
+          "uri": "spotify:artist:1xcMOgFUM1IYZE22YjCvsL"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6axdrDevYp68353P89wkFk"
+      },
+      "href": "https://api.spotify.com/v1/albums/6axdrDevYp68353P89wkFk",
+      "id": "6axdrDevYp68353P89wkFk",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27391edc2325b3887455eac9559"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0291edc2325b3887455eac9559"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485191edc2325b3887455eac9559"
+        }
+      ],
+      "is_playable": true,
+      "name": "La Linda",
+      "release_date": "2019-11-15",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:6axdrDevYp68353P89wkFk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1xcMOgFUM1IYZE22YjCvsL"
+        },
+        "href": "https://api.spotify.com/v1/artists/1xcMOgFUM1IYZE22YjCvsL",
+        "id": "1xcMOgFUM1IYZE22YjCvsL",
+        "name": "Tei Shi",
+        "type": "artist",
+        "uri": "spotify:artist:1xcMOgFUM1IYZE22YjCvsL"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6LEeAFiJF8OuPx747e1wxR"
+        },
+        "href": "https://api.spotify.com/v1/artists/6LEeAFiJF8OuPx747e1wxR",
+        "id": "6LEeAFiJF8OuPx747e1wxR",
+        "name": "Blood Orange",
+        "type": "artist",
+        "uri": "spotify:artist:6LEeAFiJF8OuPx747e1wxR"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 250920,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBKPL1963724"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0rxQTgJzd0HCUk4QUxSkjK"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0rxQTgJzd0HCUk4QUxSkjK",
+    "id": "0rxQTgJzd0HCUk4QUxSkjK",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Even If It Hurts (feat. Blood Orange)",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:0rxQTgJzd0HCUk4QUxSkjK"
+  },
+  "[\"autechre\",\"slip\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6WH1V41LwGDGmlPUhSZLHO"
+          },
+          "href": "https://api.spotify.com/v1/artists/6WH1V41LwGDGmlPUhSZLHO",
+          "id": "6WH1V41LwGDGmlPUhSZLHO",
+          "name": "Autechre",
+          "type": "artist",
+          "uri": "spotify:artist:6WH1V41LwGDGmlPUhSZLHO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1brMCJ3wB9KNzAANIKJf32"
+      },
+      "href": "https://api.spotify.com/v1/albums/1brMCJ3wB9KNzAANIKJf32",
+      "id": "1brMCJ3wB9KNzAANIKJf32",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27333411ff5d74ae290a12fdc44"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0233411ff5d74ae290a12fdc44"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485133411ff5d74ae290a12fdc44"
+        }
+      ],
+      "is_playable": true,
+      "name": "Amber",
+      "release_date": "1994-11-07",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:1brMCJ3wB9KNzAANIKJf32"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6WH1V41LwGDGmlPUhSZLHO"
+        },
+        "href": "https://api.spotify.com/v1/artists/6WH1V41LwGDGmlPUhSZLHO",
+        "id": "6WH1V41LwGDGmlPUhSZLHO",
+        "name": "Autechre",
+        "type": "artist",
+        "uri": "spotify:artist:6WH1V41LwGDGmlPUhSZLHO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 381106,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBBPW9400140"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/33zDGjUK3BiqgFxoIpUWLy"
+    },
+    "href": "https://api.spotify.com/v1/tracks/33zDGjUK3BiqgFxoIpUWLy",
+    "id": "33zDGjUK3BiqgFxoIpUWLy",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Slip",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:33zDGjUK3BiqgFxoIpUWLy"
+  },
+  "[\"buffalo springfield\",\"bluebird\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3eskO5m0H4yiF64vRySBjr"
+          },
+          "href": "https://api.spotify.com/v1/artists/3eskO5m0H4yiF64vRySBjr",
+          "id": "3eskO5m0H4yiF64vRySBjr",
+          "name": "Buffalo Springfield",
+          "type": "artist",
+          "uri": "spotify:artist:3eskO5m0H4yiF64vRySBjr"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1XVx6Y90Bh0tACDHEU2Yde"
+      },
+      "href": "https://api.spotify.com/v1/albums/1XVx6Y90Bh0tACDHEU2Yde",
+      "id": "1XVx6Y90Bh0tACDHEU2Yde",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a7513bed9181cefe208288fc"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a7513bed9181cefe208288fc"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a7513bed9181cefe208288fc"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Best of Buffalo Springfield: Retrospective",
+      "release_date": "2009-02-24",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:1XVx6Y90Bh0tACDHEU2Yde"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3eskO5m0H4yiF64vRySBjr"
+        },
+        "href": "https://api.spotify.com/v1/artists/3eskO5m0H4yiF64vRySBjr",
+        "id": "3eskO5m0H4yiF64vRySBjr",
+        "name": "Buffalo Springfield",
+        "type": "artist",
+        "uri": "spotify:artist:3eskO5m0H4yiF64vRySBjr"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 276506,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USEE10900076"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3Wq9UcmwILpu8rSv10X7At"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3Wq9UcmwILpu8rSv10X7At",
+    "id": "3Wq9UcmwILpu8rSv10X7At",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Bluebird",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:3Wq9UcmwILpu8rSv10X7At"
+  },
+  "[\"ataxia\",\"dust\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/24FHFsVLTOio4dqqVMq5pe"
+          },
+          "href": "https://api.spotify.com/v1/artists/24FHFsVLTOio4dqqVMq5pe",
+          "id": "24FHFsVLTOio4dqqVMq5pe",
+          "name": "Ataxia",
+          "type": "artist",
+          "uri": "spotify:artist:24FHFsVLTOio4dqqVMq5pe"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2W4FYloQ0s0Fb8lKawb0iC"
+      },
+      "href": "https://api.spotify.com/v1/albums/2W4FYloQ0s0Fb8lKawb0iC",
+      "id": "2W4FYloQ0s0Fb8lKawb0iC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273902d4082a5f61075e5fed0aa"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02902d4082a5f61075e5fed0aa"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851902d4082a5f61075e5fed0aa"
+        }
+      ],
+      "is_playable": true,
+      "name": "Automatic Writing",
+      "release_date": "2004-08-10",
+      "release_date_precision": "day",
+      "total_tracks": 5,
+      "type": "album",
+      "uri": "spotify:album:2W4FYloQ0s0Fb8lKawb0iC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/24FHFsVLTOio4dqqVMq5pe"
+        },
+        "href": "https://api.spotify.com/v1/artists/24FHFsVLTOio4dqqVMq5pe",
+        "id": "24FHFsVLTOio4dqqVMq5pe",
+        "name": "Ataxia",
+        "type": "artist",
+        "uri": "spotify:artist:24FHFsVLTOio4dqqVMq5pe"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 536800,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRC20400040"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6J3HgkeSAs4vL4147wBhtQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6J3HgkeSAs4vL4147wBhtQ",
+    "id": "6J3HgkeSAs4vL4147wBhtQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Dust",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6J3HgkeSAs4vL4147wBhtQ"
+  },
+  "[\"porridge radio\",\"god of everything else\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4vAQ4M7vgItwBtmBTgRu48"
+          },
+          "href": "https://api.spotify.com/v1/artists/4vAQ4M7vgItwBtmBTgRu48",
+          "id": "4vAQ4M7vgItwBtmBTgRu48",
+          "name": "Porridge Radio",
+          "type": "artist",
+          "uri": "spotify:artist:4vAQ4M7vgItwBtmBTgRu48"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2iXwKeYYKuXjalgAXtx9sd"
+      },
+      "href": "https://api.spotify.com/v1/albums/2iXwKeYYKuXjalgAXtx9sd",
+      "id": "2iXwKeYYKuXjalgAXtx9sd",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273615ef17893823e5ef70d0ce8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02615ef17893823e5ef70d0ce8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851615ef17893823e5ef70d0ce8"
+        }
+      ],
+      "is_playable": true,
+      "name": "Clouds In The Sky They Will Always Be There For Me",
+      "release_date": "2024-10-18",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:2iXwKeYYKuXjalgAXtx9sd"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4vAQ4M7vgItwBtmBTgRu48"
+        },
+        "href": "https://api.spotify.com/v1/artists/4vAQ4M7vgItwBtmBTgRu48",
+        "id": "4vAQ4M7vgItwBtmBTgRu48",
+        "name": "Porridge Radio",
+        "type": "artist",
+        "uri": "spotify:artist:4vAQ4M7vgItwBtmBTgRu48"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 204880,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US38W2448304"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0hRS0vTwEtGQrpOHqIEJBB"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0hRS0vTwEtGQrpOHqIEJBB",
+    "id": "0hRS0vTwEtGQrpOHqIEJBB",
+    "is_local": false,
+    "is_playable": true,
+    "name": "God Of Everything Else",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:0hRS0vTwEtGQrpOHqIEJBB"
+  },
+  "[\"alborosie\",\"kingston town\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/78u1jLVBjPSXQVmHBV43yG"
+          },
+          "href": "https://api.spotify.com/v1/artists/78u1jLVBjPSXQVmHBV43yG",
+          "id": "78u1jLVBjPSXQVmHBV43yG",
+          "name": "Alborosie",
+          "type": "artist",
+          "uri": "spotify:artist:78u1jLVBjPSXQVmHBV43yG"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3hhWPRjFBsNYm3v3nbOqQC"
+      },
+      "href": "https://api.spotify.com/v1/albums/3hhWPRjFBsNYm3v3nbOqQC",
+      "id": "3hhWPRjFBsNYm3v3nbOqQC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/2f6db9fd9319c6d8e30ed034fd7a8f19fc41c65f"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ef9b95184c7d04a48d71f75a74ec29874ac42eb2"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ca9d906ea2f59d51a1b174a0b29993b2aad966ce"
+        }
+      ],
+      "is_playable": true,
+      "name": "Soul Pirate",
+      "release_date": "2008-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:3hhWPRjFBsNYm3v3nbOqQC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/78u1jLVBjPSXQVmHBV43yG"
+        },
+        "href": "https://api.spotify.com/v1/artists/78u1jLVBjPSXQVmHBV43yG",
+        "id": "78u1jLVBjPSXQVmHBV43yG",
+        "name": "Alborosie",
+        "type": "artist",
+        "uri": "spotify:artist:78u1jLVBjPSXQVmHBV43yG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 192400,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBEZT0800021"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2OHQhOiGIYaXqqJVIMpNrF"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2OHQhOiGIYaXqqJVIMpNrF",
+    "id": "2OHQhOiGIYaXqqJVIMpNrF",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Kingston Town",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:2OHQhOiGIYaXqqJVIMpNrF"
+  },
+  "[\"moby grape\",\"8:05\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0NHSh9S0VQiFfsEFbvhRXN"
+          },
+          "href": "https://api.spotify.com/v1/artists/0NHSh9S0VQiFfsEFbvhRXN",
+          "id": "0NHSh9S0VQiFfsEFbvhRXN",
+          "name": "Moby Grape",
+          "type": "artist",
+          "uri": "spotify:artist:0NHSh9S0VQiFfsEFbvhRXN"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5MTUjDTUWFuyhWW7oRqqmi"
+      },
+      "href": "https://api.spotify.com/v1/albums/5MTUjDTUWFuyhWW7oRqqmi",
+      "id": "5MTUjDTUWFuyhWW7oRqqmi",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273dd68bd72d05daa2b1f258961"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02dd68bd72d05daa2b1f258961"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851dd68bd72d05daa2b1f258961"
+        }
+      ],
+      "is_playable": true,
+      "name": "Moby Grape (with Bonus Tracks)",
+      "release_date": "1967",
+      "release_date_precision": "year",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:5MTUjDTUWFuyhWW7oRqqmi"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0NHSh9S0VQiFfsEFbvhRXN"
+        },
+        "href": "https://api.spotify.com/v1/artists/0NHSh9S0VQiFfsEFbvhRXN",
+        "id": "0NHSh9S0VQiFfsEFbvhRXN",
+        "name": "Moby Grape",
+        "type": "artist",
+        "uri": "spotify:artist:0NHSh9S0VQiFfsEFbvhRXN"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 140146,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM19906404"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/58divL3uaZBaxs73jVHisg"
+    },
+    "href": "https://api.spotify.com/v1/tracks/58divL3uaZBaxs73jVHisg",
+    "id": "58divL3uaZBaxs73jVHisg",
+    "is_local": false,
+    "is_playable": true,
+    "name": "8:05",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:58divL3uaZBaxs73jVHisg"
   }
 }
