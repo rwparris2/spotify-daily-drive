@@ -1,7 +1,7 @@
 import { http, HttpResponse } from 'msw';
 import { describe, expect, it, vi } from 'vitest';
 import { mswServer } from './__tests__/mswServer.js';
-import { rateLimitedFetch } from './SpotifyClient.js';
+import { rateLimitedFetch, refreshAccessToken } from './SpotifyClient.js';
 
 const URL = 'https://api.spotify.com/v1/test-endpoint';
 
@@ -59,5 +59,38 @@ describe('rateLimitedFetch', () => {
     const res = await promise;
     vi.useRealTimers();
     expect(res.status).toBe(200);
+  });
+});
+
+const TOKEN_URL = 'https://accounts.spotify.com/api/token';
+
+describe('refreshAccessToken', () => {
+  it('throws an actionable error when the refresh token is expired (invalid_grant)', async () => {
+    mswServer.use(
+      http.post(TOKEN_URL, () =>
+        HttpResponse.json(
+          { error: 'invalid_grant', error_description: 'Refresh token revoked' },
+          { status: 400 },
+        ),
+      ),
+    );
+    const err = await refreshAccessToken().catch((e) => e as Error);
+    expect(err.message).toMatch(/invalid_grant/);
+    expect(err.message).toContain('bootstrap-auth');
+    expect(err.message).toContain('SPOTIFY_REFRESH_TOKEN');
+  });
+
+  it('throws the generic error on a non-invalid_grant failure', async () => {
+    mswServer.use(http.post(TOKEN_URL, () => new HttpResponse('upstream boom', { status: 500 })));
+    const err = await refreshAccessToken().catch((e) => e as Error);
+    expect(err.message).toContain('Spotify token refresh failed: 500');
+    expect(err.message).not.toContain('bootstrap-auth');
+  });
+
+  it('carries the existing refresh token forward when the response omits one', async () => {
+    // The default handler returns a token without a refresh_token.
+    const token = await refreshAccessToken();
+    expect(token.access_token).toBe('fake_access_token');
+    expect(token.refresh_token).toBe('test_refresh_token');
   });
 });
