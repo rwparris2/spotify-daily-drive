@@ -162675,5 +162675,1292 @@
     "track_number": 7,
     "type": "track",
     "uri": "spotify:track:2O4VmnbxV5anVBqCDJiIIX"
+  },
+  "[\"ananda shankar\",\"jumpin' jack flash\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5ecVdsKMiLR3E6yufkCSAX"
+      },
+      "href": "https://api.spotify.com/v1/albums/5ecVdsKMiLR3E6yufkCSAX",
+      "id": "5ecVdsKMiLR3E6yufkCSAX",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27389bc58ec0231fbdfa5494382"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0289bc58ec0231fbdfa5494382"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485189bc58ec0231fbdfa5494382"
+        }
+      ],
+      "is_playable": true,
+      "name": "Crate Diggers",
+      "release_date": "2018-08-17",
+      "release_date_precision": "day",
+      "total_tracks": 20,
+      "type": "album",
+      "uri": "spotify:album:5ecVdsKMiLR3E6yufkCSAX"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5eNWwEF0woj5E5Fnu9qXaQ"
+        },
+        "href": "https://api.spotify.com/v1/artists/5eNWwEF0woj5E5Fnu9qXaQ",
+        "id": "5eNWwEF0woj5E5Fnu9qXaQ",
+        "name": "Ananda Shankar",
+        "type": "artist",
+        "uri": "spotify:artist:5eNWwEF0woj5E5Fnu9qXaQ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 215866,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRE10102343"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0PoNrq173uRnL6xY6QLjDS"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0PoNrq173uRnL6xY6QLjDS",
+    "id": "0PoNrq173uRnL6xY6QLjDS",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Jumpin' Jack Flash",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:0PoNrq173uRnL6xY6QLjDS"
+  },
+  "[\"geese\",\"getting killed\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+          },
+          "href": "https://api.spotify.com/v1/artists/0WCo84qtCKfbyIf1lqQWB4",
+          "id": "0WCo84qtCKfbyIf1lqQWB4",
+          "name": "Geese",
+          "type": "artist",
+          "uri": "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0eeXb23yMW6EaIgm63xxPC"
+      },
+      "href": "https://api.spotify.com/v1/albums/0eeXb23yMW6EaIgm63xxPC",
+      "id": "0eeXb23yMW6EaIgm63xxPC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27345e82ae0372a50834825c018"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0245e82ae0372a50834825c018"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485145e82ae0372a50834825c018"
+        }
+      ],
+      "is_playable": true,
+      "name": "Getting Killed",
+      "release_date": "2025-09-26",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:0eeXb23yMW6EaIgm63xxPC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+        },
+        "href": "https://api.spotify.com/v1/artists/0WCo84qtCKfbyIf1lqQWB4",
+        "id": "0WCo84qtCKfbyIf1lqQWB4",
+        "name": "Geese",
+        "type": "artist",
+        "uri": "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 284532,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USBQU2500079"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4gXvwRoP7GYoipYRTXQUxW"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4gXvwRoP7GYoipYRTXQUxW",
+    "id": "4gXvwRoP7GYoipYRTXQUxW",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Getting Killed",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:4gXvwRoP7GYoipYRTXQUxW"
+  },
+  "[\"prince\",\"sexy dancer\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5a2EaR3hamoenG9rDuVn8j"
+          },
+          "href": "https://api.spotify.com/v1/artists/5a2EaR3hamoenG9rDuVn8j",
+          "id": "5a2EaR3hamoenG9rDuVn8j",
+          "name": "Prince",
+          "type": "artist",
+          "uri": "spotify:artist:5a2EaR3hamoenG9rDuVn8j"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0j711DtV8bOSMZRCbphtPC"
+      },
+      "href": "https://api.spotify.com/v1/albums/0j711DtV8bOSMZRCbphtPC",
+      "id": "0j711DtV8bOSMZRCbphtPC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d539ebc9ac4dc40946532580"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d539ebc9ac4dc40946532580"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d539ebc9ac4dc40946532580"
+        }
+      ],
+      "is_playable": true,
+      "name": "Prince",
+      "release_date": "1979-10-19",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:0j711DtV8bOSMZRCbphtPC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5a2EaR3hamoenG9rDuVn8j"
+        },
+        "href": "https://api.spotify.com/v1/artists/5a2EaR3hamoenG9rDuVn8j",
+        "id": "5a2EaR3hamoenG9rDuVn8j",
+        "name": "Prince",
+        "type": "artist",
+        "uri": "spotify:artist:5a2EaR3hamoenG9rDuVn8j"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 258613,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USWB19903520"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/62swKfU8FW7mUMjsYzX7O4"
+    },
+    "href": "https://api.spotify.com/v1/tracks/62swKfU8FW7mUMjsYzX7O4",
+    "id": "62swKfU8FW7mUMjsYzX7O4",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sexy Dancer",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:62swKfU8FW7mUMjsYzX7O4"
+  },
+  "[\"buke and gase\",\"sleep gets your ghost\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7rkeuiwd38oOVhBvOtLL1P"
+          },
+          "href": "https://api.spotify.com/v1/artists/7rkeuiwd38oOVhBvOtLL1P",
+          "id": "7rkeuiwd38oOVhBvOtLL1P",
+          "name": "Buke & Gase",
+          "type": "artist",
+          "uri": "spotify:artist:7rkeuiwd38oOVhBvOtLL1P"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3s5dcB9AV4Rsp7bDRwuBdm"
+      },
+      "href": "https://api.spotify.com/v1/albums/3s5dcB9AV4Rsp7bDRwuBdm",
+      "id": "3s5dcB9AV4Rsp7bDRwuBdm",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ca81cc6b2711b40892a1cffd"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ca81cc6b2711b40892a1cffd"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ca81cc6b2711b40892a1cffd"
+        }
+      ],
+      "is_playable": true,
+      "name": "Riposte",
+      "release_date": "2010-09-14",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:3s5dcB9AV4Rsp7bDRwuBdm"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7rkeuiwd38oOVhBvOtLL1P"
+        },
+        "href": "https://api.spotify.com/v1/artists/7rkeuiwd38oOVhBvOtLL1P",
+        "id": "7rkeuiwd38oOVhBvOtLL1P",
+        "name": "Buke & Gase",
+        "type": "artist",
+        "uri": "spotify:artist:7rkeuiwd38oOVhBvOtLL1P"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 278360,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "UST841000030"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3Cqacn83MHwqbWyJOtWbIp"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3Cqacn83MHwqbWyJOtWbIp",
+    "id": "3Cqacn83MHwqbWyJOtWbIp",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sleep Gets Your Ghost",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:3Cqacn83MHwqbWyJOtWbIp"
+  },
+  "[\"the pineapple thief\",\"in exile\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4lrBMUSk8PiNnCEZfsmPAk"
+          },
+          "href": "https://api.spotify.com/v1/artists/4lrBMUSk8PiNnCEZfsmPAk",
+          "id": "4lrBMUSk8PiNnCEZfsmPAk",
+          "name": "The Pineapple Thief",
+          "type": "artist",
+          "uri": "spotify:artist:4lrBMUSk8PiNnCEZfsmPAk"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7jjzqewWL5T2lj8hU2Z4bG"
+      },
+      "href": "https://api.spotify.com/v1/albums/7jjzqewWL5T2lj8hU2Z4bG",
+      "id": "7jjzqewWL5T2lj8hU2Z4bG",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e3cb068e23cab4a0bfbd9672"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e3cb068e23cab4a0bfbd9672"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e3cb068e23cab4a0bfbd9672"
+        }
+      ],
+      "is_playable": true,
+      "name": "Your Wilderness",
+      "release_date": "2016-08-12",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:7jjzqewWL5T2lj8hU2Z4bG"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4lrBMUSk8PiNnCEZfsmPAk"
+        },
+        "href": "https://api.spotify.com/v1/artists/4lrBMUSk8PiNnCEZfsmPAk",
+        "id": "4lrBMUSk8PiNnCEZfsmPAk",
+        "name": "The Pineapple Thief",
+        "type": "artist",
+        "uri": "spotify:artist:4lrBMUSk8PiNnCEZfsmPAk"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 310209,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBCQV1600292"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0mZIRxmun8Lg6Ec9NpPAmm"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0mZIRxmun8Lg6Ec9NpPAmm",
+    "id": "0mZIRxmun8Lg6Ec9NpPAmm",
+    "is_local": false,
+    "is_playable": true,
+    "name": "In Exile",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:0mZIRxmun8Lg6Ec9NpPAmm"
+  },
+  "[\"the lonely island\",\"motherlover (feat. justin timberlake)\"]": null,
+  "[\"st. vincent\",\"severed crossed fingers\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7bcbShaqKdcyjnmv4Ix8j6"
+          },
+          "href": "https://api.spotify.com/v1/artists/7bcbShaqKdcyjnmv4Ix8j6",
+          "id": "7bcbShaqKdcyjnmv4Ix8j6",
+          "name": "St. Vincent",
+          "type": "artist",
+          "uri": "spotify:artist:7bcbShaqKdcyjnmv4Ix8j6"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2FtneRtIF1I5HPBsIxSqf0"
+      },
+      "href": "https://api.spotify.com/v1/albums/2FtneRtIF1I5HPBsIxSqf0",
+      "id": "2FtneRtIF1I5HPBsIxSqf0",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2735d0cd496494ab309d93c24c2"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e025d0cd496494ab309d93c24c2"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048515d0cd496494ab309d93c24c2"
+        }
+      ],
+      "is_playable": true,
+      "name": "St. Vincent (Deluxe Edition)",
+      "release_date": "2015-02-06",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:2FtneRtIF1I5HPBsIxSqf0"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7bcbShaqKdcyjnmv4Ix8j6"
+        },
+        "href": "https://api.spotify.com/v1/artists/7bcbShaqKdcyjnmv4Ix8j6",
+        "id": "7bcbShaqKdcyjnmv4Ix8j6",
+        "name": "St. Vincent",
+        "type": "artist",
+        "uri": "spotify:artist:7bcbShaqKdcyjnmv4Ix8j6"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 222133,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUM71318971"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/313WwxBzfH2bw6emCClpHq"
+    },
+    "href": "https://api.spotify.com/v1/tracks/313WwxBzfH2bw6emCClpHq",
+    "id": "313WwxBzfH2bw6emCClpHq",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Severed Crossed Fingers",
+    "track_number": 11,
+    "type": "track",
+    "uri": "spotify:track:313WwxBzfH2bw6emCClpHq"
+  },
+  "[\"monty python\",\"always look on the bright side of life\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5IxfhXIHjAOAqibxl90NZO"
+          },
+          "href": "https://api.spotify.com/v1/artists/5IxfhXIHjAOAqibxl90NZO",
+          "id": "5IxfhXIHjAOAqibxl90NZO",
+          "name": "Monty Python",
+          "type": "artist",
+          "uri": "spotify:artist:5IxfhXIHjAOAqibxl90NZO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2mXqXiMJqudrJncMUtunEL"
+      },
+      "href": "https://api.spotify.com/v1/albums/2mXqXiMJqudrJncMUtunEL",
+      "id": "2mXqXiMJqudrJncMUtunEL",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c0e3609ec09bd302030fb6e0"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c0e3609ec09bd302030fb6e0"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c0e3609ec09bd302030fb6e0"
+        }
+      ],
+      "is_playable": true,
+      "name": "Always Look On The Bright Side Of Life (The Unofficial England Football Anthem)",
+      "release_date": "2014-07-08",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:2mXqXiMJqudrJncMUtunEL"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5IxfhXIHjAOAqibxl90NZO"
+        },
+        "href": "https://api.spotify.com/v1/artists/5IxfhXIHjAOAqibxl90NZO",
+        "id": "5IxfhXIHjAOAqibxl90NZO",
+        "name": "Monty Python",
+        "type": "artist",
+        "uri": "spotify:artist:5IxfhXIHjAOAqibxl90NZO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 181454,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "GBUM71402606"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6eHuj3HhZ4jS9nyNVV03ET"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6eHuj3HhZ4jS9nyNVV03ET",
+    "id": "6eHuj3HhZ4jS9nyNVV03ET",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Always Look On The Bright Side Of Life - The Unofficial England Football Anthem",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6eHuj3HhZ4jS9nyNVV03ET"
+  },
+  "[\"busdriver\",\"imaginary places\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/43SXnO2N4X024u3l9MfvXD"
+          },
+          "href": "https://api.spotify.com/v1/artists/43SXnO2N4X024u3l9MfvXD",
+          "id": "43SXnO2N4X024u3l9MfvXD",
+          "name": "BUSDRIVER",
+          "type": "artist",
+          "uri": "spotify:artist:43SXnO2N4X024u3l9MfvXD"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/55hVWq7eAm1HRMuPfliLSf"
+      },
+      "href": "https://api.spotify.com/v1/albums/55hVWq7eAm1HRMuPfliLSf",
+      "id": "55hVWq7eAm1HRMuPfliLSf",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c244ffae4f44750921f96dc4"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c244ffae4f44750921f96dc4"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c244ffae4f44750921f96dc4"
+        }
+      ],
+      "is_playable": true,
+      "name": "Temporary Forever",
+      "release_date": "2002-09-24",
+      "release_date_precision": "day",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:55hVWq7eAm1HRMuPfliLSf"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/43SXnO2N4X024u3l9MfvXD"
+        },
+        "href": "https://api.spotify.com/v1/artists/43SXnO2N4X024u3l9MfvXD",
+        "id": "43SXnO2N4X024u3l9MfvXD",
+        "name": "BUSDRIVER",
+        "type": "artist",
+        "uri": "spotify:artist:43SXnO2N4X024u3l9MfvXD"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0Xqx5Wr906GcxJnRNOCPSr"
+        },
+        "href": "https://api.spotify.com/v1/artists/0Xqx5Wr906GcxJnRNOCPSr",
+        "id": "0Xqx5Wr906GcxJnRNOCPSr",
+        "name": "D-Styles",
+        "type": "artist",
+        "uri": "spotify:artist:0Xqx5Wr906GcxJnRNOCPSr"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 195000,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "US25X0801102"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3k04M45DYWlXBBW2bo4T8b"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3k04M45DYWlXBBW2bo4T8b",
+    "id": "3k04M45DYWlXBBW2bo4T8b",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Imaginary Places",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:3k04M45DYWlXBBW2bo4T8b"
+  },
+  "[\"soft play\",\"hey\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3xByNj8XW17oW0wsJhgzYL"
+          },
+          "href": "https://api.spotify.com/v1/artists/3xByNj8XW17oW0wsJhgzYL",
+          "id": "3xByNj8XW17oW0wsJhgzYL",
+          "name": "SOFT PLAY",
+          "type": "artist",
+          "uri": "spotify:artist:3xByNj8XW17oW0wsJhgzYL"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5P0x1IlBvV5UIJ4mpCD8Fk"
+      },
+      "href": "https://api.spotify.com/v1/albums/5P0x1IlBvV5UIJ4mpCD8Fk",
+      "id": "5P0x1IlBvV5UIJ4mpCD8Fk",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2733f8eb4b61194339bd394c7b1"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e023f8eb4b61194339bd394c7b1"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048513f8eb4b61194339bd394c7b1"
+        }
+      ],
+      "is_playable": true,
+      "name": "Are You Satisfied?",
+      "release_date": "2014-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 22,
+      "type": "album",
+      "uri": "spotify:album:5P0x1IlBvV5UIJ4mpCD8Fk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3xByNj8XW17oW0wsJhgzYL"
+        },
+        "href": "https://api.spotify.com/v1/artists/3xByNj8XW17oW0wsJhgzYL",
+        "id": "3xByNj8XW17oW0wsJhgzYL",
+        "name": "SOFT PLAY",
+        "type": "artist",
+        "uri": "spotify:artist:3xByNj8XW17oW0wsJhgzYL"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 145133,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM71404322"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4fONOBV4QqRVim7hPJdbSG"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4fONOBV4QqRVim7hPJdbSG",
+    "id": "4fONOBV4QqRVim7hPJdbSG",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Hey",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:4fONOBV4QqRVim7hPJdbSG"
+  },
+  "[\"heavy lungs\",\"rock, paper, scissors\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/07eIrj0b3z5mgvtkDmWoxo"
+          },
+          "href": "https://api.spotify.com/v1/artists/07eIrj0b3z5mgvtkDmWoxo",
+          "id": "07eIrj0b3z5mgvtkDmWoxo",
+          "name": "Heavy Lungs",
+          "type": "artist",
+          "uri": "spotify:artist:07eIrj0b3z5mgvtkDmWoxo"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7uFApnZEzaty0y3SAUbqE8"
+      },
+      "href": "https://api.spotify.com/v1/albums/7uFApnZEzaty0y3SAUbqE8",
+      "id": "7uFApnZEzaty0y3SAUbqE8",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2735099b3ca2fa1a4d939fc4069"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e025099b3ca2fa1a4d939fc4069"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048515099b3ca2fa1a4d939fc4069"
+        }
+      ],
+      "is_playable": true,
+      "name": "All Gas No Brakes",
+      "release_date": "2023-09-29",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:7uFApnZEzaty0y3SAUbqE8"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/07eIrj0b3z5mgvtkDmWoxo"
+        },
+        "href": "https://api.spotify.com/v1/artists/07eIrj0b3z5mgvtkDmWoxo",
+        "id": "07eIrj0b3z5mgvtkDmWoxo",
+        "name": "Heavy Lungs",
+        "type": "artist",
+        "uri": "spotify:artist:07eIrj0b3z5mgvtkDmWoxo"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 189409,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBZ522326009"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2oWGCojIEXYVxeK7kVkvzs"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2oWGCojIEXYVxeK7kVkvzs",
+    "id": "2oWGCojIEXYVxeK7kVkvzs",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Rock, Paper, Scissors",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:2oWGCojIEXYVxeK7kVkvzs"
+  },
+  "[\"bad company\",\"ready for love - 2015 remaster\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5AEG63ajney2BoDXi0Vb84"
+          },
+          "href": "https://api.spotify.com/v1/artists/5AEG63ajney2BoDXi0Vb84",
+          "id": "5AEG63ajney2BoDXi0Vb84",
+          "name": "Bad Company",
+          "type": "artist",
+          "uri": "spotify:artist:5AEG63ajney2BoDXi0Vb84"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4fuDpBLCt9ChDlqw48bj7p"
+      },
+      "href": "https://api.spotify.com/v1/albums/4fuDpBLCt9ChDlqw48bj7p",
+      "id": "4fuDpBLCt9ChDlqw48bj7p",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2739adafd7f9d57380d1d0373af"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e029adafd7f9d57380d1d0373af"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048519adafd7f9d57380d1d0373af"
+        }
+      ],
+      "is_playable": true,
+      "name": "Bad Company (Deluxe)",
+      "release_date": "1974",
+      "release_date_precision": "year",
+      "total_tracks": 21,
+      "type": "album",
+      "uri": "spotify:album:4fuDpBLCt9ChDlqw48bj7p"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5AEG63ajney2BoDXi0Vb84"
+        },
+        "href": "https://api.spotify.com/v1/artists/5AEG63ajney2BoDXi0Vb84",
+        "id": "5AEG63ajney2BoDXi0Vb84",
+        "name": "Bad Company",
+        "type": "artist",
+        "uri": "spotify:artist:5AEG63ajney2BoDXi0Vb84"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 299826,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USAT21405161"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/08JVaI77aIffN0wNjTOG4b"
+    },
+    "href": "https://api.spotify.com/v1/tracks/08JVaI77aIffN0wNjTOG4b",
+    "id": "08JVaI77aIffN0wNjTOG4b",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Ready for Love - 2015 Remaster",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:08JVaI77aIffN0wNjTOG4b"
+  },
+  "[\"geese\",\"i see myself (live)\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+          },
+          "href": "https://api.spotify.com/v1/artists/0WCo84qtCKfbyIf1lqQWB4",
+          "id": "0WCo84qtCKfbyIf1lqQWB4",
+          "name": "Geese",
+          "type": "artist",
+          "uri": "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5UxGKnWOyfgEDBq3Vcv7wh"
+      },
+      "href": "https://api.spotify.com/v1/albums/5UxGKnWOyfgEDBq3Vcv7wh",
+      "id": "5UxGKnWOyfgEDBq3Vcv7wh",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27353879eed0a967c5ff630f6c2"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0253879eed0a967c5ff630f6c2"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485153879eed0a967c5ff630f6c2"
+        }
+      ],
+      "is_playable": true,
+      "name": "Alive & In Person",
+      "release_date": "2024-06-28",
+      "release_date_precision": "day",
+      "total_tracks": 7,
+      "type": "album",
+      "uri": "spotify:album:5UxGKnWOyfgEDBq3Vcv7wh"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+        },
+        "href": "https://api.spotify.com/v1/artists/0WCo84qtCKfbyIf1lqQWB4",
+        "id": "0WCo84qtCKfbyIf1lqQWB4",
+        "name": "Geese",
+        "type": "artist",
+        "uri": "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 214995,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USBQU2400132"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2LnVHYu6vJJBLQEZP4WY6r"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2LnVHYu6vJJBLQEZP4WY6r",
+    "id": "2LnVHYu6vJJBLQEZP4WY6r",
+    "is_local": false,
+    "is_playable": true,
+    "name": "I See Myself (Live)",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:2LnVHYu6vJJBLQEZP4WY6r"
+  },
+  "[\"groove collective\",\"everything is changing\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4jtNe96TPlvnre0tgcL5pg"
+          },
+          "href": "https://api.spotify.com/v1/artists/4jtNe96TPlvnre0tgcL5pg",
+          "id": "4jtNe96TPlvnre0tgcL5pg",
+          "name": "Groove Collective",
+          "type": "artist",
+          "uri": "spotify:artist:4jtNe96TPlvnre0tgcL5pg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5Qi3Ifed8PIXJjlpGEcsMk"
+      },
+      "href": "https://api.spotify.com/v1/albums/5Qi3Ifed8PIXJjlpGEcsMk",
+      "id": "5Qi3Ifed8PIXJjlpGEcsMk",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736b1e0136c983ed1ed0f5da30"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026b1e0136c983ed1ed0f5da30"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516b1e0136c983ed1ed0f5da30"
+        }
+      ],
+      "is_playable": true,
+      "name": "Declassified",
+      "release_date": "1999-07-20",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:5Qi3Ifed8PIXJjlpGEcsMk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4jtNe96TPlvnre0tgcL5pg"
+        },
+        "href": "https://api.spotify.com/v1/artists/4jtNe96TPlvnre0tgcL5pg",
+        "id": "4jtNe96TPlvnre0tgcL5pg",
+        "name": "Groove Collective",
+        "type": "artist",
+        "uri": "spotify:artist:4jtNe96TPlvnre0tgcL5pg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 349440,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA560558106"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5CB7h8v5ASu05I9oN2AThZ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5CB7h8v5ASu05I9oN2AThZ",
+    "id": "5CB7h8v5ASu05I9oN2AThZ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Everything Is Changing",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:5CB7h8v5ASu05I9oN2AThZ"
+  },
+  "[\"the brand new heavies\",\"you are the universe\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3DEveX6KVzhPDqq2VRuN14"
+          },
+          "href": "https://api.spotify.com/v1/artists/3DEveX6KVzhPDqq2VRuN14",
+          "id": "3DEveX6KVzhPDqq2VRuN14",
+          "name": "The Brand New Heavies",
+          "type": "artist",
+          "uri": "spotify:artist:3DEveX6KVzhPDqq2VRuN14"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0c9Ixyl94wsxMiW1k4Obh9"
+      },
+      "href": "https://api.spotify.com/v1/albums/0c9Ixyl94wsxMiW1k4Obh9",
+      "id": "0c9Ixyl94wsxMiW1k4Obh9",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738481995d4d072c2da38cb106"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028481995d4d072c2da38cb106"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518481995d4d072c2da38cb106"
+        }
+      ],
+      "is_playable": true,
+      "name": "Shelter",
+      "release_date": "1997-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:0c9Ixyl94wsxMiW1k4Obh9"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3DEveX6KVzhPDqq2VRuN14"
+        },
+        "href": "https://api.spotify.com/v1/artists/3DEveX6KVzhPDqq2VRuN14",
+        "id": "3DEveX6KVzhPDqq2VRuN14",
+        "name": "The Brand New Heavies",
+        "type": "artist",
+        "uri": "spotify:artist:3DEveX6KVzhPDqq2VRuN14"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 252760,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA370507694"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2dpdNFBxyAXoINC4McJat8"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2dpdNFBxyAXoINC4McJat8",
+    "id": "2dpdNFBxyAXoINC4McJat8",
+    "is_local": false,
+    "is_playable": true,
+    "name": "You Are The Universe",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:2dpdNFBxyAXoINC4McJat8"
+  },
+  "[\"ufo\",\"queen of the deep - 2007 remaster\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2Omy3P5hFZym7FKum1JA1s"
+          },
+          "href": "https://api.spotify.com/v1/artists/2Omy3P5hFZym7FKum1JA1s",
+          "id": "2Omy3P5hFZym7FKum1JA1s",
+          "name": "UFO",
+          "type": "artist",
+          "uri": "spotify:artist:2Omy3P5hFZym7FKum1JA1s"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0t7jKe5qt4N57sUWX33Zew"
+      },
+      "href": "https://api.spotify.com/v1/albums/0t7jKe5qt4N57sUWX33Zew",
+      "id": "0t7jKe5qt4N57sUWX33Zew",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731aebacc79b33347a31c79afe"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021aebacc79b33347a31c79afe"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511aebacc79b33347a31c79afe"
+        }
+      ],
+      "is_playable": true,
+      "name": "Phenomenon (2007 Remaster)",
+      "release_date": "1974-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:0t7jKe5qt4N57sUWX33Zew"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2Omy3P5hFZym7FKum1JA1s"
+        },
+        "href": "https://api.spotify.com/v1/artists/2Omy3P5hFZym7FKum1JA1s",
+        "id": "2Omy3P5hFZym7FKum1JA1s",
+        "name": "UFO",
+        "type": "artist",
+        "uri": "spotify:artist:2Omy3P5hFZym7FKum1JA1s"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 344600,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAYK0700210"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/11u8c6LbxMGj5JmwYCJoo0"
+    },
+    "href": "https://api.spotify.com/v1/tracks/11u8c6LbxMGj5JmwYCJoo0",
+    "id": "11u8c6LbxMGj5JmwYCJoo0",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Queen of the Deep - 2007 Remaster",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:11u8c6LbxMGj5JmwYCJoo0"
+  },
+  "[\"manfred hübler & siegfried schwab\",\"the lions and the cucumber\"]": null,
+  "[\"melanie c\",\"reason\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/60vX3zLcdKRXvKLITVh5Df"
+          },
+          "href": "https://api.spotify.com/v1/artists/60vX3zLcdKRXvKLITVh5Df",
+          "id": "60vX3zLcdKRXvKLITVh5Df",
+          "name": "Melanie C",
+          "type": "artist",
+          "uri": "spotify:artist:60vX3zLcdKRXvKLITVh5Df"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5V8o4GfIEwUlEs4YKnR7jb"
+      },
+      "href": "https://api.spotify.com/v1/albums/5V8o4GfIEwUlEs4YKnR7jb",
+      "id": "5V8o4GfIEwUlEs4YKnR7jb",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2730be7b05d07a95cabb3d2a582"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e020be7b05d07a95cabb3d2a582"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048510be7b05d07a95cabb3d2a582"
+        }
+      ],
+      "is_playable": true,
+      "name": "Reason",
+      "release_date": "2003-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:5V8o4GfIEwUlEs4YKnR7jb"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/60vX3zLcdKRXvKLITVh5Df"
+        },
+        "href": "https://api.spotify.com/v1/artists/60vX3zLcdKRXvKLITVh5Df",
+        "id": "60vX3zLcdKRXvKLITVh5Df",
+        "name": "Melanie C",
+        "type": "artist",
+        "uri": "spotify:artist:60vX3zLcdKRXvKLITVh5Df"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 260933,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAAA0300074"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7MYe413BRf9YdCNZY8YRzs"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7MYe413BRf9YdCNZY8YRzs",
+    "id": "7MYe413BRf9YdCNZY8YRzs",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Reason",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:7MYe413BRf9YdCNZY8YRzs"
+  },
+  "[\"van halen\",\"beautiful girls - 2015 remaster\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2cnMpRsOVqtPMfq7YiFE6K"
+          },
+          "href": "https://api.spotify.com/v1/artists/2cnMpRsOVqtPMfq7YiFE6K",
+          "id": "2cnMpRsOVqtPMfq7YiFE6K",
+          "name": "Van Halen",
+          "type": "artist",
+          "uri": "spotify:artist:2cnMpRsOVqtPMfq7YiFE6K"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3w93PGkmXAmEAdJVvmPbzI"
+      },
+      "href": "https://api.spotify.com/v1/albums/3w93PGkmXAmEAdJVvmPbzI",
+      "id": "3w93PGkmXAmEAdJVvmPbzI",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f09b618bc81755c0d817bd20"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f09b618bc81755c0d817bd20"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f09b618bc81755c0d817bd20"
+        }
+      ],
+      "is_playable": true,
+      "name": "Van Halen II (Remastered)",
+      "release_date": "1979-03-23",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:3w93PGkmXAmEAdJVvmPbzI"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2cnMpRsOVqtPMfq7YiFE6K"
+        },
+        "href": "https://api.spotify.com/v1/artists/2cnMpRsOVqtPMfq7YiFE6K",
+        "id": "2cnMpRsOVqtPMfq7YiFE6K",
+        "name": "Van Halen",
+        "type": "artist",
+        "uri": "spotify:artist:2cnMpRsOVqtPMfq7YiFE6K"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 236240,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USWB11500827"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7Ly4DzymgujObKg7wWVHZV"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7Ly4DzymgujObKg7wWVHZV",
+    "id": "7Ly4DzymgujObKg7wWVHZV",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Beautiful Girls - 2015 Remaster",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:7Ly4DzymgujObKg7wWVHZV"
   }
 }
