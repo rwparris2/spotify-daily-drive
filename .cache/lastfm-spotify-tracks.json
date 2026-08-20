@@ -183725,5 +183725,1600 @@
     "track_number": 2,
     "type": "track",
     "uri": "spotify:track:4a3Ermac4BukpusiOdMNw6"
+  },
+  "[\"toquinho\",\"canto de ossanha\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7rPqFVgJYARiFsLDlN6W6y"
+          },
+          "href": "https://api.spotify.com/v1/artists/7rPqFVgJYARiFsLDlN6W6y",
+          "id": "7rPqFVgJYARiFsLDlN6W6y",
+          "name": "Toquinho",
+          "type": "artist",
+          "uri": "spotify:artist:7rPqFVgJYARiFsLDlN6W6y"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5HlnN6xF2MD87KhGRmCRTd"
+          },
+          "href": "https://api.spotify.com/v1/artists/5HlnN6xF2MD87KhGRmCRTd",
+          "id": "5HlnN6xF2MD87KhGRmCRTd",
+          "name": "Vinícius de Moraes",
+          "type": "artist",
+          "uri": "spotify:artist:5HlnN6xF2MD87KhGRmCRTd"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4cOgC6zXMJwrgmIvC6GJfF"
+      },
+      "href": "https://api.spotify.com/v1/albums/4cOgC6zXMJwrgmIvC6GJfF",
+      "id": "4cOgC6zXMJwrgmIvC6GJfF",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27351be6ae701580fbd8734c6f1"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0251be6ae701580fbd8734c6f1"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485151be6ae701580fbd8734c6f1"
+        }
+      ],
+      "is_playable": true,
+      "name": "O Poeta e o Violão",
+      "release_date": "1975-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:4cOgC6zXMJwrgmIvC6GJfF"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7rPqFVgJYARiFsLDlN6W6y"
+        },
+        "href": "https://api.spotify.com/v1/artists/7rPqFVgJYARiFsLDlN6W6y",
+        "id": "7rPqFVgJYARiFsLDlN6W6y",
+        "name": "Toquinho",
+        "type": "artist",
+        "uri": "spotify:artist:7rPqFVgJYARiFsLDlN6W6y"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5HlnN6xF2MD87KhGRmCRTd"
+        },
+        "href": "https://api.spotify.com/v1/artists/5HlnN6xF2MD87KhGRmCRTd",
+        "id": "5HlnN6xF2MD87KhGRmCRTd",
+        "name": "Vinícius de Moraes",
+        "type": "artist",
+        "uri": "spotify:artist:5HlnN6xF2MD87KhGRmCRTd"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 167506,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "BRRGE7500023"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3nBGaKwZtlOpOJg5oUv1YQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3nBGaKwZtlOpOJg5oUv1YQ",
+    "id": "3nBGaKwZtlOpOJg5oUv1YQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Canto de Ossanha",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:3nBGaKwZtlOpOJg5oUv1YQ"
+  },
+  "[\"curumin\",\"vem menina\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1W1k6LUPDR0l4zwvKR4YLI"
+          },
+          "href": "https://api.spotify.com/v1/artists/1W1k6LUPDR0l4zwvKR4YLI",
+          "id": "1W1k6LUPDR0l4zwvKR4YLI",
+          "name": "Curumin",
+          "type": "artist",
+          "uri": "spotify:artist:1W1k6LUPDR0l4zwvKR4YLI"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0LAhdzSnR5XGs75Ial3VEk"
+      },
+      "href": "https://api.spotify.com/v1/albums/0LAhdzSnR5XGs75Ial3VEk",
+      "id": "0LAhdzSnR5XGs75Ial3VEk",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273353875cb4c4475c388ba56e0"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02353875cb4c4475c388ba56e0"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851353875cb4c4475c388ba56e0"
+        }
+      ],
+      "is_playable": true,
+      "name": "Achados e Perdidos",
+      "release_date": "2002-12-10",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:0LAhdzSnR5XGs75Ial3VEk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1W1k6LUPDR0l4zwvKR4YLI"
+        },
+        "href": "https://api.spotify.com/v1/artists/1W1k6LUPDR0l4zwvKR4YLI",
+        "id": "1W1k6LUPDR0l4zwvKR4YLI",
+        "name": "Curumin",
+        "type": "artist",
+        "uri": "spotify:artist:1W1k6LUPDR0l4zwvKR4YLI"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 259040,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "BRAGL0300009"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2c4Ecmj9hYHm21KOmnZZ9B"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2c4Ecmj9hYHm21KOmnZZ9B",
+    "id": "2c4Ecmj9hYHm21KOmnZZ9B",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Vem Menina",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:2c4Ecmj9hYHm21KOmnZZ9B"
+  },
+  "[\"the impressions\",\"you've been cheatin'\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1b1N51wmSK0ckxFAMPSSHO"
+          },
+          "href": "https://api.spotify.com/v1/artists/1b1N51wmSK0ckxFAMPSSHO",
+          "id": "1b1N51wmSK0ckxFAMPSSHO",
+          "name": "The Impressions",
+          "type": "artist",
+          "uri": "spotify:artist:1b1N51wmSK0ckxFAMPSSHO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6ywCMi95jUcEqk4ur0taYo"
+      },
+      "href": "https://api.spotify.com/v1/albums/6ywCMi95jUcEqk4ur0taYo",
+      "id": "6ywCMi95jUcEqk4ur0taYo",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737dd29630ee8d2efc01dd28da"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027dd29630ee8d2efc01dd28da"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517dd29630ee8d2efc01dd28da"
+        }
+      ],
+      "is_playable": true,
+      "name": "People Get Ready: The Best Of The Impressions Featuring Curtis Mayfield 1961 - 1968",
+      "release_date": "1997-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 23,
+      "type": "album",
+      "uri": "spotify:album:6ywCMi95jUcEqk4ur0taYo"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1b1N51wmSK0ckxFAMPSSHO"
+        },
+        "href": "https://api.spotify.com/v1/artists/1b1N51wmSK0ckxFAMPSSHO",
+        "id": "1b1N51wmSK0ckxFAMPSSHO",
+        "name": "The Impressions",
+        "type": "artist",
+        "uri": "spotify:artist:1b1N51wmSK0ckxFAMPSSHO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 151160,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMC16548278"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4mkkncTtp9mVQneL3Q3x1W"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4mkkncTtp9mVQneL3Q3x1W",
+    "id": "4mkkncTtp9mVQneL3Q3x1W",
+    "is_local": false,
+    "is_playable": true,
+    "name": "You've Been Cheatin'",
+    "track_number": 20,
+    "type": "track",
+    "uri": "spotify:track:4mkkncTtp9mVQneL3Q3x1W"
+  },
+  "[\"carlos careqa\",\"garota de guarulhos\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0Y0FlNEcMGIBaQ616MrXJU"
+          },
+          "href": "https://api.spotify.com/v1/artists/0Y0FlNEcMGIBaQ616MrXJU",
+          "id": "0Y0FlNEcMGIBaQ616MrXJU",
+          "name": "Carlos Careqa",
+          "type": "artist",
+          "uri": "spotify:artist:0Y0FlNEcMGIBaQ616MrXJU"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5iCHESOAGSK6ywpxBVpICn"
+      },
+      "href": "https://api.spotify.com/v1/albums/5iCHESOAGSK6ywpxBVpICn",
+      "id": "5iCHESOAGSK6ywpxBVpICn",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273fb489f2972287455236b6ca8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02fb489f2972287455236b6ca8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851fb489f2972287455236b6ca8"
+        }
+      ],
+      "is_playable": true,
+      "name": "À Espera de Tom",
+      "release_date": "2007",
+      "release_date_precision": "year",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:5iCHESOAGSK6ywpxBVpICn"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0Y0FlNEcMGIBaQ616MrXJU"
+        },
+        "href": "https://api.spotify.com/v1/artists/0Y0FlNEcMGIBaQ616MrXJU",
+        "id": "0Y0FlNEcMGIBaQ616MrXJU",
+        "name": "Carlos Careqa",
+        "type": "artist",
+        "uri": "spotify:artist:0Y0FlNEcMGIBaQ616MrXJU"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 212506,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "BRTGP0700004"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0wB8QamghvvP3YwOlrgsPg"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0wB8QamghvvP3YwOlrgsPg",
+    "id": "0wB8QamghvvP3YwOlrgsPg",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Garota de Guarulhos",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:0wB8QamghvvP3YwOlrgsPg"
+  },
+  "[\"the lonely island\",\"finest girl (bin laden song)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1f5GqyOPo0CkotzzRwviBu"
+          },
+          "href": "https://api.spotify.com/v1/artists/1f5GqyOPo0CkotzzRwviBu",
+          "id": "1f5GqyOPo0CkotzzRwviBu",
+          "name": "The Lonely Island",
+          "type": "artist",
+          "uri": "spotify:artist:1f5GqyOPo0CkotzzRwviBu"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/07fcZXkBS0y4Y80GT60PZq"
+      },
+      "href": "https://api.spotify.com/v1/albums/07fcZXkBS0y4Y80GT60PZq",
+      "id": "07fcZXkBS0y4Y80GT60PZq",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736ae9fceea4261e3c23d6f3b7"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026ae9fceea4261e3c23d6f3b7"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516ae9fceea4261e3c23d6f3b7"
+        }
+      ],
+      "is_playable": true,
+      "name": "Popstar: Never Stop Never Stopping",
+      "release_date": "2016-06-03",
+      "release_date_precision": "day",
+      "total_tracks": 28,
+      "type": "album",
+      "uri": "spotify:album:07fcZXkBS0y4Y80GT60PZq"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1f5GqyOPo0CkotzzRwviBu"
+        },
+        "href": "https://api.spotify.com/v1/artists/1f5GqyOPo0CkotzzRwviBu",
+        "id": "1f5GqyOPo0CkotzzRwviBu",
+        "name": "The Lonely Island",
+        "type": "artist",
+        "uri": "spotify:artist:1f5GqyOPo0CkotzzRwviBu"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 150586,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USQ4E1602129"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1LpjlPR8Gv52B04UQNLZAw"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1LpjlPR8Gv52B04UQNLZAw",
+    "id": "1LpjlPR8Gv52B04UQNLZAw",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Finest Girl (Bin Laden Song)",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:1LpjlPR8Gv52B04UQNLZAw"
+  },
+  "[\"leith ross\",\"we'll never have sex\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4nxKz1dRYXnsGzN1lUURtG"
+          },
+          "href": "https://api.spotify.com/v1/artists/4nxKz1dRYXnsGzN1lUURtG",
+          "id": "4nxKz1dRYXnsGzN1lUURtG",
+          "name": "Leith Ross",
+          "type": "artist",
+          "uri": "spotify:artist:4nxKz1dRYXnsGzN1lUURtG"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7ji2CX2KOzJgYY1Du1aaS3"
+      },
+      "href": "https://api.spotify.com/v1/albums/7ji2CX2KOzJgYY1Du1aaS3",
+      "id": "7ji2CX2KOzJgYY1Du1aaS3",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a6ab37b64dcecad21b9f53c8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a6ab37b64dcecad21b9f53c8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a6ab37b64dcecad21b9f53c8"
+        }
+      ],
+      "is_playable": true,
+      "name": "We'll Never Have Sex",
+      "release_date": "2022-03-25",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:7ji2CX2KOzJgYY1Du1aaS3"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4nxKz1dRYXnsGzN1lUURtG"
+        },
+        "href": "https://api.spotify.com/v1/artists/4nxKz1dRYXnsGzN1lUURtG",
+        "id": "4nxKz1dRYXnsGzN1lUURtG",
+        "name": "Leith Ross",
+        "type": "artist",
+        "uri": "spotify:artist:4nxKz1dRYXnsGzN1lUURtG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 99620,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUM72203822"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4zXuYQNDmw3dlauyc8q3Kd"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4zXuYQNDmw3dlauyc8q3Kd",
+    "id": "4zXuYQNDmw3dlauyc8q3Kd",
+    "is_local": false,
+    "is_playable": true,
+    "name": "We'll Never Have Sex",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:4zXuYQNDmw3dlauyc8q3Kd"
+  },
+  "[\"twenty one pilots\",\"hometown\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+          },
+          "href": "https://api.spotify.com/v1/artists/3YQKmKGau1PzlVlkL1iodx",
+          "id": "3YQKmKGau1PzlVlkL1iodx",
+          "name": "Twenty One Pilots",
+          "type": "artist",
+          "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3cQO7jp5S9qLBoIVtbkSM1"
+      },
+      "href": "https://api.spotify.com/v1/albums/3cQO7jp5S9qLBoIVtbkSM1",
+      "id": "3cQO7jp5S9qLBoIVtbkSM1",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7"
+        }
+      ],
+      "is_playable": true,
+      "name": "Blurryface",
+      "release_date": "2015-05-15",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+        },
+        "href": "https://api.spotify.com/v1/artists/3YQKmKGau1PzlVlkL1iodx",
+        "id": "3YQKmKGau1PzlVlkL1iodx",
+        "name": "Twenty One Pilots",
+        "type": "artist",
+        "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 234946,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USAT21500605"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/40sRwFjfrRnaTdYPJIg4CP"
+    },
+    "href": "https://api.spotify.com/v1/tracks/40sRwFjfrRnaTdYPJIg4CP",
+    "id": "40sRwFjfrRnaTdYPJIg4CP",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Hometown",
+    "track_number": 12,
+    "type": "track",
+    "uri": "spotify:track:40sRwFjfrRnaTdYPJIg4CP"
+  },
+  "[\"michael jackson\",\"don't stop 'til you get enough\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
+          },
+          "href": "https://api.spotify.com/v1/artists/3fMbdgg4jU18AjLCKBhRSm",
+          "id": "3fMbdgg4jU18AjLCKBhRSm",
+          "name": "Michael Jackson",
+          "type": "artist",
+          "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2ZytN2cY4Zjrr9ukb2rqTP"
+      },
+      "href": "https://api.spotify.com/v1/albums/2ZytN2cY4Zjrr9ukb2rqTP",
+      "id": "2ZytN2cY4Zjrr9ukb2rqTP",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732b74bf21c7e4f56758610949"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022b74bf21c7e4f56758610949"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512b74bf21c7e4f56758610949"
+        }
+      ],
+      "is_playable": true,
+      "name": "Off the Wall",
+      "release_date": "1979-08-10",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:2ZytN2cY4Zjrr9ukb2rqTP"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
+        },
+        "href": "https://api.spotify.com/v1/artists/3fMbdgg4jU18AjLCKBhRSm",
+        "id": "3fMbdgg4jU18AjLCKBhRSm",
+        "name": "Michael Jackson",
+        "type": "artist",
+        "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 364441,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM17900816"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/46eu3SBuFCXWsPT39Yg3tJ",
+    "id": "46eu3SBuFCXWsPT39Yg3tJ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Don't Stop 'Til You Get Enough",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:46eu3SBuFCXWsPT39Yg3tJ"
+  },
+  "[\"imagine dragons\",\"it's time\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q"
+          },
+          "href": "https://api.spotify.com/v1/artists/53XhwfbYqKCa1cC15pYq2q",
+          "id": "53XhwfbYqKCa1cC15pYq2q",
+          "name": "Imagine Dragons",
+          "type": "artist",
+          "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0LLA5YL3g2UReWlP7nWqGh"
+      },
+      "href": "https://api.spotify.com/v1/albums/0LLA5YL3g2UReWlP7nWqGh",
+      "id": "0LLA5YL3g2UReWlP7nWqGh",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27381eeace38068e9444cb28a3e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0281eeace38068e9444cb28a3e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485181eeace38068e9444cb28a3e"
+        }
+      ],
+      "is_playable": true,
+      "name": "Night Visions (Expanded Edition / Super Deluxe)",
+      "release_date": "2022-09-09",
+      "release_date_precision": "day",
+      "total_tracks": 54,
+      "type": "album",
+      "uri": "spotify:album:0LLA5YL3g2UReWlP7nWqGh"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q"
+        },
+        "href": "https://api.spotify.com/v1/artists/53XhwfbYqKCa1cC15pYq2q",
+        "id": "53XhwfbYqKCa1cC15pYq2q",
+        "name": "Imagine Dragons",
+        "type": "artist",
+        "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 240306,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUM71200987"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3VWFolbrJzoVHgGUFuaW8I"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3VWFolbrJzoVHgGUFuaW8I",
+    "id": "3VWFolbrJzoVHgGUFuaW8I",
+    "is_local": false,
+    "is_playable": true,
+    "name": "It's Time",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:3VWFolbrJzoVHgGUFuaW8I"
+  },
+  "[\"the temptations\",\"my girl\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3skIYvBBPqebmVwvc5comu"
+      },
+      "href": "https://api.spotify.com/v1/albums/3skIYvBBPqebmVwvc5comu",
+      "id": "3skIYvBBPqebmVwvc5comu",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2730dd6041db01724380752e525"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e020dd6041db01724380752e525"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048510dd6041db01724380752e525"
+        }
+      ],
+      "is_playable": true,
+      "name": "Golden Oldies",
+      "release_date": "2021-04-09",
+      "release_date_precision": "day",
+      "total_tracks": 28,
+      "type": "album",
+      "uri": "spotify:album:3skIYvBBPqebmVwvc5comu"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3RwQ26hR2tJtA8F9p2n7jG"
+        },
+        "href": "https://api.spotify.com/v1/artists/3RwQ26hR2tJtA8F9p2n7jG",
+        "id": "3RwQ26hR2tJtA8F9p2n7jG",
+        "name": "The Temptations",
+        "type": "artist",
+        "uri": "spotify:artist:3RwQ26hR2tJtA8F9p2n7jG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 175933,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMO16490001"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2GT3IKgDVU89ZRakYgAjyF"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2GT3IKgDVU89ZRakYgAjyF",
+    "id": "2GT3IKgDVU89ZRakYgAjyF",
+    "is_local": false,
+    "is_playable": true,
+    "name": "My Girl",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:2GT3IKgDVU89ZRakYgAjyF"
+  },
+  "[\"coheed and cambria\",\"always & never\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3utxjLheHaVEd9bPjQRsy8"
+          },
+          "href": "https://api.spotify.com/v1/artists/3utxjLheHaVEd9bPjQRsy8",
+          "id": "3utxjLheHaVEd9bPjQRsy8",
+          "name": "Coheed and Cambria",
+          "type": "artist",
+          "uri": "spotify:artist:3utxjLheHaVEd9bPjQRsy8"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4nYsnQpTAQaPzrPc6rOsBN"
+      },
+      "href": "https://api.spotify.com/v1/albums/4nYsnQpTAQaPzrPc6rOsBN",
+      "id": "4nYsnQpTAQaPzrPc6rOsBN",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b7ded75d35cf4364ba3f5267"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b7ded75d35cf4364ba3f5267"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b7ded75d35cf4364ba3f5267"
+        }
+      ],
+      "is_playable": true,
+      "name": "Good Apollo I'm Burning Star IV Volume One: From Fear Through The Eyes Of Madness",
+      "release_date": "2005-01-15",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:4nYsnQpTAQaPzrPc6rOsBN"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3utxjLheHaVEd9bPjQRsy8"
+        },
+        "href": "https://api.spotify.com/v1/artists/3utxjLheHaVEd9bPjQRsy8",
+        "id": "3utxjLheHaVEd9bPjQRsy8",
+        "name": "Coheed and Cambria",
+        "type": "artist",
+        "uri": "spotify:artist:3utxjLheHaVEd9bPjQRsy8"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 143666,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USSM10504107"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3Qeh8jOesgJI8EBegb5B4y"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3Qeh8jOesgJI8EBegb5B4y",
+    "id": "3Qeh8jOesgJI8EBegb5B4y",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Always & Never",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:3Qeh8jOesgJI8EBegb5B4y"
+  },
+  "[\"bee gees\",\"stayin alive\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1LZEQNv7sE11VDY3SdxQeN"
+          },
+          "href": "https://api.spotify.com/v1/artists/1LZEQNv7sE11VDY3SdxQeN",
+          "id": "1LZEQNv7sE11VDY3SdxQeN",
+          "name": "Bee Gees",
+          "type": "artist",
+          "uri": "spotify:artist:1LZEQNv7sE11VDY3SdxQeN"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5GucSY3249qHDx4v1Hcxry"
+      },
+      "href": "https://api.spotify.com/v1/albums/5GucSY3249qHDx4v1Hcxry",
+      "id": "5GucSY3249qHDx4v1Hcxry",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27322219b7ba681368a16c219fe"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0222219b7ba681368a16c219fe"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485122219b7ba681368a16c219fe"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Ultimate Bee Gees",
+      "release_date": "2009-11-03",
+      "release_date_precision": "day",
+      "total_tracks": 40,
+      "type": "album",
+      "uri": "spotify:album:5GucSY3249qHDx4v1Hcxry"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1LZEQNv7sE11VDY3SdxQeN"
+        },
+        "href": "https://api.spotify.com/v1/artists/1LZEQNv7sE11VDY3SdxQeN",
+        "id": "1LZEQNv7sE11VDY3SdxQeN",
+        "name": "Bee Gees",
+        "type": "artist",
+        "uri": "spotify:artist:1LZEQNv7sE11VDY3SdxQeN"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 283146,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRH10721057"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7qK3JFriCqLorQivsJYG2X"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7qK3JFriCqLorQivsJYG2X",
+    "id": "7qK3JFriCqLorQivsJYG2X",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Stayin Alive",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:7qK3JFriCqLorQivsJYG2X"
+  },
+  "[\"george harrison\",\"my sweet lord - 2014 remaster\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7FIoB5PHdrMZVC3q2HE5MS"
+          },
+          "href": "https://api.spotify.com/v1/artists/7FIoB5PHdrMZVC3q2HE5MS",
+          "id": "7FIoB5PHdrMZVC3q2HE5MS",
+          "name": "George Harrison",
+          "type": "artist",
+          "uri": "spotify:artist:7FIoB5PHdrMZVC3q2HE5MS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7j7lsExGJtBHLgDYzjclwk"
+      },
+      "href": "https://api.spotify.com/v1/albums/7j7lsExGJtBHLgDYzjclwk",
+      "id": "7j7lsExGJtBHLgDYzjclwk",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736c6610322fc60bfb41481273"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026c6610322fc60bfb41481273"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516c6610322fc60bfb41481273"
+        }
+      ],
+      "is_playable": true,
+      "name": "All Things Must Pass (2014 Remaster)",
+      "release_date": "1970-11-20",
+      "release_date_precision": "day",
+      "total_tracks": 28,
+      "type": "album",
+      "uri": "spotify:album:7j7lsExGJtBHLgDYzjclwk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7FIoB5PHdrMZVC3q2HE5MS"
+        },
+        "href": "https://api.spotify.com/v1/artists/7FIoB5PHdrMZVC3q2HE5MS",
+        "id": "7FIoB5PHdrMZVC3q2HE5MS",
+        "name": "George Harrison",
+        "type": "artist",
+        "uri": "spotify:artist:7FIoB5PHdrMZVC3q2HE5MS"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 281231,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GB77R1400026"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0KZodeWxqxd88F9wY1cqgs"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0KZodeWxqxd88F9wY1cqgs",
+    "id": "0KZodeWxqxd88F9wY1cqgs",
+    "is_local": false,
+    "is_playable": true,
+    "name": "My Sweet Lord - 2014 Remaster",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:0KZodeWxqxd88F9wY1cqgs"
+  },
+  "[\"miracle musical\",\"murders\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2FRXiAz5Uz78LLLSwEUhLt"
+          },
+          "href": "https://api.spotify.com/v1/artists/2FRXiAz5Uz78LLLSwEUhLt",
+          "id": "2FRXiAz5Uz78LLLSwEUhLt",
+          "name": "Miracle Musical",
+          "type": "artist",
+          "uri": "spotify:artist:2FRXiAz5Uz78LLLSwEUhLt"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1CbtBQqibzdxhmpiLD7vzN"
+      },
+      "href": "https://api.spotify.com/v1/albums/1CbtBQqibzdxhmpiLD7vzN",
+      "id": "1CbtBQqibzdxhmpiLD7vzN",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b3d0bf02a5fb2f676c748432"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b3d0bf02a5fb2f676c748432"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b3d0bf02a5fb2f676c748432"
+        }
+      ],
+      "is_playable": true,
+      "name": "Hawaii: Part II",
+      "release_date": "2012-12-12",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:1CbtBQqibzdxhmpiLD7vzN"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2FRXiAz5Uz78LLLSwEUhLt"
+        },
+        "href": "https://api.spotify.com/v1/artists/2FRXiAz5Uz78LLLSwEUhLt",
+        "id": "2FRXiAz5Uz78LLLSwEUhLt",
+        "name": "Miracle Musical",
+        "type": "artist",
+        "uri": "spotify:artist:2FRXiAz5Uz78LLLSwEUhLt"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 222985,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "TCACB1435453"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0AFydkgl5Creero3gNjqvF"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0AFydkgl5Creero3gNjqvF",
+    "id": "0AFydkgl5Creero3gNjqvF",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Murders",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:0AFydkgl5Creero3gNjqvF"
+  },
+  "[\"tim minchin\",\"youtube lament\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4adgHnoK84DgtLot2jxrp2"
+          },
+          "href": "https://api.spotify.com/v1/artists/4adgHnoK84DgtLot2jxrp2",
+          "id": "4adgHnoK84DgtLot2jxrp2",
+          "name": "Tim Minchin",
+          "type": "artist",
+          "uri": "spotify:artist:4adgHnoK84DgtLot2jxrp2"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1y5MdMBLAX8BL7cceh7Nyf"
+      },
+      "href": "https://api.spotify.com/v1/albums/1y5MdMBLAX8BL7cceh7Nyf",
+      "id": "1y5MdMBLAX8BL7cceh7Nyf",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f7905700e22001914bcf74aa"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f7905700e22001914bcf74aa"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f7905700e22001914bcf74aa"
+        }
+      ],
+      "is_playable": true,
+      "name": "Ready For This ?",
+      "release_date": "2009-07-20",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:1y5MdMBLAX8BL7cceh7Nyf"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4adgHnoK84DgtLot2jxrp2"
+        },
+        "href": "https://api.spotify.com/v1/artists/4adgHnoK84DgtLot2jxrp2",
+        "id": "4adgHnoK84DgtLot2jxrp2",
+        "name": "Tim Minchin",
+        "type": "artist",
+        "uri": "spotify:artist:4adgHnoK84DgtLot2jxrp2"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 149813,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBHWV0901194"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2l8batb1XaG3BsK3OnwzRo"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2l8batb1XaG3BsK3OnwzRo",
+    "id": "2l8batb1XaG3BsK3OnwzRo",
+    "is_local": false,
+    "is_playable": true,
+    "name": "YouTube Lament",
+    "track_number": 11,
+    "type": "track",
+    "uri": "spotify:track:2l8batb1XaG3BsK3OnwzRo"
+  },
+  "[\"ylvis\",\"the fox (what does the fox say?)\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2lEOFtf3cCyzomQcMHJGfZ"
+          },
+          "href": "https://api.spotify.com/v1/artists/2lEOFtf3cCyzomQcMHJGfZ",
+          "id": "2lEOFtf3cCyzomQcMHJGfZ",
+          "name": "Ylvis",
+          "type": "artist",
+          "uri": "spotify:artist:2lEOFtf3cCyzomQcMHJGfZ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/77QwsMRvonZJn7adV47V78"
+      },
+      "href": "https://api.spotify.com/v1/albums/77QwsMRvonZJn7adV47V78",
+      "id": "77QwsMRvonZJn7adV47V78",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273078f1176c3c725de8e95f490"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02078f1176c3c725de8e95f490"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851078f1176c3c725de8e95f490"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Fox (What Does the Fox Say?)",
+      "release_date": "2013-09-02",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:77QwsMRvonZJn7adV47V78"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2lEOFtf3cCyzomQcMHJGfZ"
+        },
+        "href": "https://api.spotify.com/v1/artists/2lEOFtf3cCyzomQcMHJGfZ",
+        "id": "2lEOFtf3cCyzomQcMHJGfZ",
+        "name": "Ylvis",
+        "type": "artist",
+        "uri": "spotify:artist:2lEOFtf3cCyzomQcMHJGfZ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 213708,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "NOAGW1300374"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5HOpkTTVcmZHnthgyxrIL8"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5HOpkTTVcmZHnthgyxrIL8",
+    "id": "5HOpkTTVcmZHnthgyxrIL8",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Fox (What Does the Fox Say?)",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:5HOpkTTVcmZHnthgyxrIL8"
+  },
+  "[\"joji\",\"gimme love\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3MZsBdqDrRTJihTHQrO6Dq"
+          },
+          "href": "https://api.spotify.com/v1/artists/3MZsBdqDrRTJihTHQrO6Dq",
+          "id": "3MZsBdqDrRTJihTHQrO6Dq",
+          "name": "Joji",
+          "type": "artist",
+          "uri": "spotify:artist:3MZsBdqDrRTJihTHQrO6Dq"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6gJ8VKn5PAFcCIVaf3B2uE"
+      },
+      "href": "https://api.spotify.com/v1/albums/6gJ8VKn5PAFcCIVaf3B2uE",
+      "id": "6gJ8VKn5PAFcCIVaf3B2uE",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f733e50079838090eebc3fe4"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f733e50079838090eebc3fe4"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f733e50079838090eebc3fe4"
+        }
+      ],
+      "is_playable": true,
+      "name": "Nectar",
+      "release_date": "2020-09-24",
+      "release_date_precision": "day",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:6gJ8VKn5PAFcCIVaf3B2uE"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3MZsBdqDrRTJihTHQrO6Dq"
+        },
+        "href": "https://api.spotify.com/v1/artists/3MZsBdqDrRTJihTHQrO6Dq",
+        "id": "3MZsBdqDrRTJihTHQrO6Dq",
+        "name": "Joji",
+        "type": "artist",
+        "uri": "spotify:artist:3MZsBdqDrRTJihTHQrO6Dq"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 214557,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "ZZOPM2002154"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0eF8TYM3rYzdS26URcs4U6"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0eF8TYM3rYzdS26URcs4U6",
+    "id": "0eF8TYM3rYzdS26URcs4U6",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Gimme Love",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:0eF8TYM3rYzdS26URcs4U6"
+  },
+  "[\"zé ramalho\",\"dear prudence\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7JoWcJHDOG58JYTe6d400S"
+          },
+          "href": "https://api.spotify.com/v1/artists/7JoWcJHDOG58JYTe6d400S",
+          "id": "7JoWcJHDOG58JYTe6d400S",
+          "name": "Zé Ramalho",
+          "type": "artist",
+          "uri": "spotify:artist:7JoWcJHDOG58JYTe6d400S"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4KVNMMVNjwYWE9un1KMbLy"
+      },
+      "href": "https://api.spotify.com/v1/albums/4KVNMMVNjwYWE9un1KMbLy",
+      "id": "4KVNMMVNjwYWE9un1KMbLy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27361e174ac3f5132f6d8ccbd5a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0261e174ac3f5132f6d8ccbd5a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485161e174ac3f5132f6d8ccbd5a"
+        }
+      ],
+      "is_playable": true,
+      "name": "Zé Ramalho Canta Beatles",
+      "release_date": "2011-08-01",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:4KVNMMVNjwYWE9un1KMbLy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7JoWcJHDOG58JYTe6d400S"
+        },
+        "href": "https://api.spotify.com/v1/artists/7JoWcJHDOG58JYTe6d400S",
+        "id": "7JoWcJHDOG58JYTe6d400S",
+        "name": "Zé Ramalho",
+        "type": "artist",
+        "uri": "spotify:artist:7JoWcJHDOG58JYTe6d400S"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 317053,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "BR2RA0800067"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/261zf8rERqMyj5WLuNR4ph"
+    },
+    "href": "https://api.spotify.com/v1/tracks/261zf8rERqMyj5WLuNR4ph",
+    "id": "261zf8rERqMyj5WLuNR4ph",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Dear Prudence",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:261zf8rERqMyj5WLuNR4ph"
+  },
+  "[\"björk\",\"human behaviour\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7w29UYBi0qsHi5RTcv3lmA"
+          },
+          "href": "https://api.spotify.com/v1/artists/7w29UYBi0qsHi5RTcv3lmA",
+          "id": "7w29UYBi0qsHi5RTcv3lmA",
+          "name": "Björk",
+          "type": "artist",
+          "uri": "spotify:artist:7w29UYBi0qsHi5RTcv3lmA"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3icT9XGrBfhlV8BKK4WEGX"
+      },
+      "href": "https://api.spotify.com/v1/albums/3icT9XGrBfhlV8BKK4WEGX",
+      "id": "3icT9XGrBfhlV8BKK4WEGX",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2730bd598408bc507d070b7ba4c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e020bd598408bc507d070b7ba4c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048510bd598408bc507d070b7ba4c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Debut",
+      "release_date": "1993-07-05",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:3icT9XGrBfhlV8BKK4WEGX"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7w29UYBi0qsHi5RTcv3lmA"
+        },
+        "href": "https://api.spotify.com/v1/artists/7w29UYBi0qsHi5RTcv3lmA",
+        "id": "7w29UYBi0qsHi5RTcv3lmA",
+        "name": "Björk",
+        "type": "artist",
+        "uri": "spotify:artist:7w29UYBi0qsHi5RTcv3lmA"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 252360,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBBTF9300001"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5OnyZ56HLhrWOXdzeETqLk"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5OnyZ56HLhrWOXdzeETqLk",
+    "id": "5OnyZ56HLhrWOXdzeETqLk",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Human Behaviour",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:5OnyZ56HLhrWOXdzeETqLk"
+  },
+  "[\"beck\",\"lonesome tears\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3vbKDsSS70ZX9D2OcvbZmS"
+          },
+          "href": "https://api.spotify.com/v1/artists/3vbKDsSS70ZX9D2OcvbZmS",
+          "id": "3vbKDsSS70ZX9D2OcvbZmS",
+          "name": "Beck",
+          "type": "artist",
+          "uri": "spotify:artist:3vbKDsSS70ZX9D2OcvbZmS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5ieP11rJQvuYz0Ov3k03cy"
+      },
+      "href": "https://api.spotify.com/v1/albums/5ieP11rJQvuYz0Ov3k03cy",
+      "id": "5ieP11rJQvuYz0Ov3k03cy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e7fc5b50ff71f92809db9d79"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e7fc5b50ff71f92809db9d79"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e7fc5b50ff71f92809db9d79"
+        }
+      ],
+      "is_playable": true,
+      "name": "Sea Change",
+      "release_date": "2002-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:5ieP11rJQvuYz0Ov3k03cy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3vbKDsSS70ZX9D2OcvbZmS"
+        },
+        "href": "https://api.spotify.com/v1/artists/3vbKDsSS70ZX9D2OcvbZmS",
+        "id": "3vbKDsSS70ZX9D2OcvbZmS",
+        "name": "Beck",
+        "type": "artist",
+        "uri": "spotify:artist:3vbKDsSS70ZX9D2OcvbZmS"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 337640,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USIR10211454"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/67mU5cleylyJ0QBP0hlmuG"
+    },
+    "href": "https://api.spotify.com/v1/tracks/67mU5cleylyJ0QBP0hlmuG",
+    "id": "67mU5cleylyJ0QBP0hlmuG",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lonesome Tears",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:67mU5cleylyJ0QBP0hlmuG"
+  },
+  "[\"al green\",\"let's stay together\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3dkbV4qihUeMsqN4vBGg93"
+          },
+          "href": "https://api.spotify.com/v1/artists/3dkbV4qihUeMsqN4vBGg93",
+          "id": "3dkbV4qihUeMsqN4vBGg93",
+          "name": "Al Green",
+          "type": "artist",
+          "uri": "spotify:artist:3dkbV4qihUeMsqN4vBGg93"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6W0V8B0fJItvOwC8v114rZ"
+      },
+      "href": "https://api.spotify.com/v1/albums/6W0V8B0fJItvOwC8v114rZ",
+      "id": "6W0V8B0fJItvOwC8v114rZ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273400cef779a4cd24ebe742e9c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02400cef779a4cd24ebe742e9c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851400cef779a4cd24ebe742e9c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Greatest Hits",
+      "release_date": "1975-05-29",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:6W0V8B0fJItvOwC8v114rZ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3dkbV4qihUeMsqN4vBGg93"
+        },
+        "href": "https://api.spotify.com/v1/artists/3dkbV4qihUeMsqN4vBGg93",
+        "id": "3dkbV4qihUeMsqN4vBGg93",
+        "name": "Al Green",
+        "type": "artist",
+        "uri": "spotify:artist:3dkbV4qihUeMsqN4vBGg93"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 198400,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US2HK0914206"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/43YXZFad8aVLWojvBLZ62V"
+    },
+    "href": "https://api.spotify.com/v1/tracks/43YXZFad8aVLWojvBLZ62V",
+    "id": "43YXZFad8aVLWojvBLZ62V",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Let's Stay Together",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:43YXZFad8aVLWojvBLZ62V"
   }
 }
