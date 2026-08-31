@@ -201077,5 +201077,1762 @@
     "track_number": 5,
     "type": "track",
     "uri": "spotify:track:3LaHsdzzmvhx6TJedpomVy"
+  },
+  "[\"benson boone\",\"sorry i'm here for someone else\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0wPnek8Ph8dAe0CbLgcS53"
+      },
+      "href": "https://api.spotify.com/v1/albums/0wPnek8Ph8dAe0CbLgcS53",
+      "id": "0wPnek8Ph8dAe0CbLgcS53",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a3ba8dbd54c6d9cdc5232fa5"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a3ba8dbd54c6d9cdc5232fa5"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a3ba8dbd54c6d9cdc5232fa5"
+        }
+      ],
+      "is_playable": true,
+      "name": "Clean Pop Aux Hits",
+      "release_date": "2025-08-05",
+      "release_date_precision": "day",
+      "total_tracks": 35,
+      "type": "album",
+      "uri": "spotify:album:0wPnek8Ph8dAe0CbLgcS53"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/22wbnEMDvgVIAGdFeek6ET"
+        },
+        "href": "https://api.spotify.com/v1/artists/22wbnEMDvgVIAGdFeek6ET",
+        "id": "22wbnEMDvgVIAGdFeek6ET",
+        "name": "Benson Boone",
+        "type": "artist",
+        "uri": "spotify:artist:22wbnEMDvgVIAGdFeek6ET"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 156582,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USWB12500464"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0pfqWu05VGbNbYC0NgwZyw"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0pfqWu05VGbNbYC0NgwZyw",
+    "id": "0pfqWu05VGbNbYC0NgwZyw",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sorry I'm Here for Someone Else",
+    "track_number": 26,
+    "type": "track",
+    "uri": "spotify:track:0pfqWu05VGbNbYC0NgwZyw"
+  },
+  "[\"coheed and cambria\",\"in keeping secrets of silent earth: 3\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3utxjLheHaVEd9bPjQRsy8"
+          },
+          "href": "https://api.spotify.com/v1/artists/3utxjLheHaVEd9bPjQRsy8",
+          "id": "3utxjLheHaVEd9bPjQRsy8",
+          "name": "Coheed and Cambria",
+          "type": "artist",
+          "uri": "spotify:artist:3utxjLheHaVEd9bPjQRsy8"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2oWXmi9uLRKn60yRmY22MB"
+      },
+      "href": "https://api.spotify.com/v1/albums/2oWXmi9uLRKn60yRmY22MB",
+      "id": "2oWXmi9uLRKn60yRmY22MB",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737d579219fc2611dc45ef36fb"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027d579219fc2611dc45ef36fb"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517d579219fc2611dc45ef36fb"
+        }
+      ],
+      "is_playable": true,
+      "name": "In Keeping Secrets Of Silent Earth: 3",
+      "release_date": "2003-03-30",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:2oWXmi9uLRKn60yRmY22MB"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3utxjLheHaVEd9bPjQRsy8"
+        },
+        "href": "https://api.spotify.com/v1/artists/3utxjLheHaVEd9bPjQRsy8",
+        "id": "3utxjLheHaVEd9bPjQRsy8",
+        "name": "Coheed and Cambria",
+        "type": "artist",
+        "uri": "spotify:artist:3utxjLheHaVEd9bPjQRsy8"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 492301,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM10406032"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/44oenYNFrmOCz85bAcwN5t"
+    },
+    "href": "https://api.spotify.com/v1/tracks/44oenYNFrmOCz85bAcwN5t",
+    "id": "44oenYNFrmOCz85bAcwN5t",
+    "is_local": false,
+    "is_playable": true,
+    "name": "In Keeping Secrets of Silent Earth: 3",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:44oenYNFrmOCz85bAcwN5t"
+  },
+  "[\"camel\",\"freefall\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3Uz6jx81OY2J5K8Z4wmy2P"
+          },
+          "href": "https://api.spotify.com/v1/artists/3Uz6jx81OY2J5K8Z4wmy2P",
+          "id": "3Uz6jx81OY2J5K8Z4wmy2P",
+          "name": "Camel",
+          "type": "artist",
+          "uri": "spotify:artist:3Uz6jx81OY2J5K8Z4wmy2P"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2dfny28poOXsb8HxYGbRYf"
+      },
+      "href": "https://api.spotify.com/v1/albums/2dfny28poOXsb8HxYGbRYf",
+      "id": "2dfny28poOXsb8HxYGbRYf",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d154fb02b202c608d2255b86"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d154fb02b202c608d2255b86"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d154fb02b202c608d2255b86"
+        }
+      ],
+      "is_playable": true,
+      "name": "Mirage (2023 Remastered & Expanded Edition)",
+      "release_date": "2023-10-20",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:2dfny28poOXsb8HxYGbRYf"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3Uz6jx81OY2J5K8Z4wmy2P"
+        },
+        "href": "https://api.spotify.com/v1/artists/3Uz6jx81OY2J5K8Z4wmy2P",
+        "id": "3Uz6jx81OY2J5K8Z4wmy2P",
+        "name": "Camel",
+        "type": "artist",
+        "uri": "spotify:artist:3Uz6jx81OY2J5K8Z4wmy2P"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 354786,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM72208291"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1zoZ9cRhvjD0sVJBS3xu1D"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1zoZ9cRhvjD0sVJBS3xu1D",
+    "id": "1zoZ9cRhvjD0sVJBS3xu1D",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Freefall - Remastered 2023",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:1zoZ9cRhvjD0sVJBS3xu1D"
+  },
+  "[\"baby keem\",\"family ties (with kendrick lamar)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1"
+          },
+          "href": "https://api.spotify.com/v1/artists/5SXuuuRpukkTvsLuUknva1",
+          "id": "5SXuuuRpukkTvsLuUknva1",
+          "name": "Baby Keem",
+          "type": "artist",
+          "uri": "spotify:artist:5SXuuuRpukkTvsLuUknva1"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3r46DPIQeBQbjvjjV5mXGg"
+      },
+      "href": "https://api.spotify.com/v1/albums/3r46DPIQeBQbjvjjV5mXGg",
+      "id": "3r46DPIQeBQbjvjjV5mXGg",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27335a8a0c8b82b525679eceda6"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0235a8a0c8b82b525679eceda6"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485135a8a0c8b82b525679eceda6"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Melodic Blue",
+      "release_date": "2021-09-10",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:3r46DPIQeBQbjvjjV5mXGg"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1"
+        },
+        "href": "https://api.spotify.com/v1/artists/5SXuuuRpukkTvsLuUknva1",
+        "id": "5SXuuuRpukkTvsLuUknva1",
+        "name": "Baby Keem",
+        "type": "artist",
+        "uri": "spotify:artist:5SXuuuRpukkTvsLuUknva1"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+        },
+        "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+        "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+        "name": "Kendrick Lamar",
+        "type": "artist",
+        "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 252262,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USSM12105949"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3QFInJAm9eyaho5vBzxInN"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3QFInJAm9eyaho5vBzxInN",
+    "id": "3QFInJAm9eyaho5vBzxInN",
+    "is_local": false,
+    "is_playable": true,
+    "name": "family ties (with Kendrick Lamar)",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:3QFInJAm9eyaho5vBzxInN"
+  },
+  "[\"ub40\",\"tears from my eyes\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/69MEO1AADKg1IZrq2XLzo5"
+          },
+          "href": "https://api.spotify.com/v1/artists/69MEO1AADKg1IZrq2XLzo5",
+          "id": "69MEO1AADKg1IZrq2XLzo5",
+          "name": "UB40",
+          "type": "artist",
+          "uri": "spotify:artist:69MEO1AADKg1IZrq2XLzo5"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2jfea3275Ef5g1nUwnf1fg"
+      },
+      "href": "https://api.spotify.com/v1/albums/2jfea3275Ef5g1nUwnf1fg",
+      "id": "2jfea3275Ef5g1nUwnf1fg",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738949d9805df054b4bc9cd563"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028949d9805df054b4bc9cd563"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518949d9805df054b4bc9cd563"
+        }
+      ],
+      "is_playable": true,
+      "name": "Labour Of Love II",
+      "release_date": "1989-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:2jfea3275Ef5g1nUwnf1fg"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/69MEO1AADKg1IZrq2XLzo5"
+        },
+        "href": "https://api.spotify.com/v1/artists/69MEO1AADKg1IZrq2XLzo5",
+        "id": "69MEO1AADKg1IZrq2XLzo5",
+        "name": "UB40",
+        "type": "artist",
+        "uri": "spotify:artist:69MEO1AADKg1IZrq2XLzo5"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 230800,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAAA8900061"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0HCqURLdYUv7jqz02kZHZ4"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0HCqURLdYUv7jqz02kZHZ4",
+    "id": "0HCqURLdYUv7jqz02kZHZ4",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Tears From My Eyes",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:0HCqURLdYUv7jqz02kZHZ4"
+  },
+  "[\"jaco pastorius\",\"chicken\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3U3C9o6UTYNdEsDckpRyvX"
+          },
+          "href": "https://api.spotify.com/v1/artists/3U3C9o6UTYNdEsDckpRyvX",
+          "id": "3U3C9o6UTYNdEsDckpRyvX",
+          "name": "Jaco Pastorius",
+          "type": "artist",
+          "uri": "spotify:artist:3U3C9o6UTYNdEsDckpRyvX"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7sZtHAjAPbZmch3HLiA3g7"
+      },
+      "href": "https://api.spotify.com/v1/albums/7sZtHAjAPbZmch3HLiA3g7",
+      "id": "7sZtHAjAPbZmch3HLiA3g7",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273413b32aa3c185a2b601185e8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02413b32aa3c185a2b601185e8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851413b32aa3c185a2b601185e8"
+        }
+      ],
+      "is_playable": true,
+      "name": "Broadway Blues",
+      "release_date": "1999",
+      "release_date_precision": "year",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:7sZtHAjAPbZmch3HLiA3g7"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3U3C9o6UTYNdEsDckpRyvX"
+        },
+        "href": "https://api.spotify.com/v1/artists/3U3C9o6UTYNdEsDckpRyvX",
+        "id": "3U3C9o6UTYNdEsDckpRyvX",
+        "name": "Jaco Pastorius",
+        "type": "artist",
+        "uri": "spotify:artist:3U3C9o6UTYNdEsDckpRyvX"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0YktrlH17JaZBzywJCcNma"
+        },
+        "href": "https://api.spotify.com/v1/artists/0YktrlH17JaZBzywJCcNma",
+        "id": "0YktrlH17JaZBzywJCcNma",
+        "name": "Peter Lübke",
+        "type": "artist",
+        "uri": "spotify:artist:0YktrlH17JaZBzywJCcNma"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0G3ug1mpFw0I50kvAIxNhS"
+        },
+        "href": "https://api.spotify.com/v1/artists/0G3ug1mpFw0I50kvAIxNhS",
+        "id": "0G3ug1mpFw0I50kvAIxNhS",
+        "name": "Biréli Lagrène",
+        "type": "artist",
+        "uri": "spotify:artist:0G3ug1mpFw0I50kvAIxNhS"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 351599,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA371061868"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4IDdUssauEYJ9kTit6tOU6"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4IDdUssauEYJ9kTit6tOU6",
+    "id": "4IDdUssauEYJ9kTit6tOU6",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Chicken",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:4IDdUssauEYJ9kTit6tOU6"
+  },
+  "[\"zz top\",\"gimme all your lovin'\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2AM4ilv6UzW0uMRuqKtDgN"
+          },
+          "href": "https://api.spotify.com/v1/artists/2AM4ilv6UzW0uMRuqKtDgN",
+          "id": "2AM4ilv6UzW0uMRuqKtDgN",
+          "name": "ZZ Top",
+          "type": "artist",
+          "uri": "spotify:artist:2AM4ilv6UzW0uMRuqKtDgN"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4KW6YVbF8E3kexYcl0k4IK"
+      },
+      "href": "https://api.spotify.com/v1/albums/4KW6YVbF8E3kexYcl0k4IK",
+      "id": "4KW6YVbF8E3kexYcl0k4IK",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a2b4f98f60e3cacf3866b2e3"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a2b4f98f60e3cacf3866b2e3"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a2b4f98f60e3cacf3866b2e3"
+        }
+      ],
+      "is_playable": true,
+      "name": "Eliminator",
+      "release_date": "1983-03-23",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:4KW6YVbF8E3kexYcl0k4IK"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2AM4ilv6UzW0uMRuqKtDgN"
+        },
+        "href": "https://api.spotify.com/v1/artists/2AM4ilv6UzW0uMRuqKtDgN",
+        "id": "2AM4ilv6UzW0uMRuqKtDgN",
+        "name": "ZZ Top",
+        "type": "artist",
+        "uri": "spotify:artist:2AM4ilv6UzW0uMRuqKtDgN"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 241080,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USWB10702680"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/29uKzagduhFDTWPCjqaGOg"
+    },
+    "href": "https://api.spotify.com/v1/tracks/29uKzagduhFDTWPCjqaGOg",
+    "id": "29uKzagduhFDTWPCjqaGOg",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Gimme All Your Lovin'",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:29uKzagduhFDTWPCjqaGOg"
+  },
+  "[\"freddie hubbard\",\"cold turkey\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0fTHKjepK5HWOrb2rkS5Em"
+          },
+          "href": "https://api.spotify.com/v1/artists/0fTHKjepK5HWOrb2rkS5Em",
+          "id": "0fTHKjepK5HWOrb2rkS5Em",
+          "name": "Freddie Hubbard",
+          "type": "artist",
+          "uri": "spotify:artist:0fTHKjepK5HWOrb2rkS5Em"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1EKOKpUcbqvwxFcmek60Za"
+      },
+      "href": "https://api.spotify.com/v1/albums/1EKOKpUcbqvwxFcmek60Za",
+      "id": "1EKOKpUcbqvwxFcmek60Za",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27377d2f5109e3c0765d45af6f9"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0277d2f5109e3c0765d45af6f9"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485177d2f5109e3c0765d45af6f9"
+        }
+      ],
+      "is_playable": true,
+      "name": "Red Clay",
+      "release_date": "1970",
+      "release_date_precision": "year",
+      "total_tracks": 6,
+      "type": "album",
+      "uri": "spotify:album:1EKOKpUcbqvwxFcmek60Za"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0fTHKjepK5HWOrb2rkS5Em"
+        },
+        "href": "https://api.spotify.com/v1/artists/0fTHKjepK5HWOrb2rkS5Em",
+        "id": "0fTHKjepK5HWOrb2rkS5Em",
+        "name": "Freddie Hubbard",
+        "type": "artist",
+        "uri": "spotify:artist:0fTHKjepK5HWOrb2rkS5Em"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 627134,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM10113452"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1AJEfhkGLdDOS1wivzkohr"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1AJEfhkGLdDOS1wivzkohr",
+    "id": "1AJEfhkGLdDOS1wivzkohr",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Cold Turkey",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:1AJEfhkGLdDOS1wivzkohr"
+  },
+  "[\"galactic\",\"church\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4rMUtWPGbE6waga7PQO0oQ"
+          },
+          "href": "https://api.spotify.com/v1/artists/4rMUtWPGbE6waga7PQO0oQ",
+          "id": "4rMUtWPGbE6waga7PQO0oQ",
+          "name": "Galactic",
+          "type": "artist",
+          "uri": "spotify:artist:4rMUtWPGbE6waga7PQO0oQ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0xkOcQLjAB9PIEDrGbl4OI"
+      },
+      "href": "https://api.spotify.com/v1/albums/0xkOcQLjAB9PIEDrGbl4OI",
+      "id": "0xkOcQLjAB9PIEDrGbl4OI",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bc52ea3d9436648e20cc50da"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bc52ea3d9436648e20cc50da"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bc52ea3d9436648e20cc50da"
+        }
+      ],
+      "is_playable": true,
+      "name": "Coolin' Off",
+      "release_date": "1996-02-05",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:0xkOcQLjAB9PIEDrGbl4OI"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4rMUtWPGbE6waga7PQO0oQ"
+        },
+        "href": "https://api.spotify.com/v1/artists/4rMUtWPGbE6waga7PQO0oQ",
+        "id": "4rMUtWPGbE6waga7PQO0oQ",
+        "name": "Galactic",
+        "type": "artist",
+        "uri": "spotify:artist:4rMUtWPGbE6waga7PQO0oQ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 353973,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCA19886816"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0MzO0c9Lr1d4mTUQtGhSJX"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0MzO0c9Lr1d4mTUQtGhSJX",
+    "id": "0MzO0c9Lr1d4mTUQtGhSJX",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Church",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:0MzO0c9Lr1d4mTUQtGhSJX"
+  },
+  "[\"aphex twin\",\"cornish acid\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6kBDZFXuLrZgHnvmPu9NsG"
+          },
+          "href": "https://api.spotify.com/v1/artists/6kBDZFXuLrZgHnvmPu9NsG",
+          "id": "6kBDZFXuLrZgHnvmPu9NsG",
+          "name": "Aphex Twin",
+          "type": "artist",
+          "uri": "spotify:artist:6kBDZFXuLrZgHnvmPu9NsG"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/77Lae5VorRCNpgZFMW8yRO"
+      },
+      "href": "https://api.spotify.com/v1/albums/77Lae5VorRCNpgZFMW8yRO",
+      "id": "77Lae5VorRCNpgZFMW8yRO",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731298f1ce7b0e4fb6a3caba57"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021298f1ce7b0e4fb6a3caba57"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511298f1ce7b0e4fb6a3caba57"
+        }
+      ],
+      "is_playable": true,
+      "name": "Richard D. James Album",
+      "release_date": "1996-11-04",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:77Lae5VorRCNpgZFMW8yRO"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6kBDZFXuLrZgHnvmPu9NsG"
+        },
+        "href": "https://api.spotify.com/v1/artists/6kBDZFXuLrZgHnvmPu9NsG",
+        "id": "6kBDZFXuLrZgHnvmPu9NsG",
+        "name": "Aphex Twin",
+        "type": "artist",
+        "uri": "spotify:artist:6kBDZFXuLrZgHnvmPu9NsG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 134840,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBBPW9600137"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4aRLOuRBuy3FhHkHJfCqDR"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4aRLOuRBuy3FhHkHJfCqDR",
+    "id": "4aRLOuRBuy3FhHkHJfCqDR",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Cornish Acid",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:4aRLOuRBuy3FhHkHJfCqDR"
+  },
+  "[\"camel\",\"earthrise\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3Uz6jx81OY2J5K8Z4wmy2P"
+          },
+          "href": "https://api.spotify.com/v1/artists/3Uz6jx81OY2J5K8Z4wmy2P",
+          "id": "3Uz6jx81OY2J5K8Z4wmy2P",
+          "name": "Camel",
+          "type": "artist",
+          "uri": "spotify:artist:3Uz6jx81OY2J5K8Z4wmy2P"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2dfny28poOXsb8HxYGbRYf"
+      },
+      "href": "https://api.spotify.com/v1/albums/2dfny28poOXsb8HxYGbRYf",
+      "id": "2dfny28poOXsb8HxYGbRYf",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d154fb02b202c608d2255b86"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d154fb02b202c608d2255b86"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d154fb02b202c608d2255b86"
+        }
+      ],
+      "is_playable": true,
+      "name": "Mirage (2023 Remastered & Expanded Edition)",
+      "release_date": "2023-10-20",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:2dfny28poOXsb8HxYGbRYf"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3Uz6jx81OY2J5K8Z4wmy2P"
+        },
+        "href": "https://api.spotify.com/v1/artists/3Uz6jx81OY2J5K8Z4wmy2P",
+        "id": "3Uz6jx81OY2J5K8Z4wmy2P",
+        "name": "Camel",
+        "type": "artist",
+        "uri": "spotify:artist:3Uz6jx81OY2J5K8Z4wmy2P"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 401946,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM72208294"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4ZuilI3GqubKxMFMyuWGWH"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4ZuilI3GqubKxMFMyuWGWH",
+    "id": "4ZuilI3GqubKxMFMyuWGWH",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Earthrise - Remastered 2023",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:4ZuilI3GqubKxMFMyuWGWH"
+  },
+  "[\"four tet\",\"hands\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7Eu1txygG6nJttLHbZdQOh"
+          },
+          "href": "https://api.spotify.com/v1/artists/7Eu1txygG6nJttLHbZdQOh",
+          "id": "7Eu1txygG6nJttLHbZdQOh",
+          "name": "Four Tet",
+          "type": "artist",
+          "uri": "spotify:artist:7Eu1txygG6nJttLHbZdQOh"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6ebN0Gkim6B1SDSp2ZbwI1"
+      },
+      "href": "https://api.spotify.com/v1/albums/6ebN0Gkim6B1SDSp2ZbwI1",
+      "id": "6ebN0Gkim6B1SDSp2ZbwI1",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273dca90a8f11f73b22d83c82e7"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02dca90a8f11f73b22d83c82e7"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851dca90a8f11f73b22d83c82e7"
+        }
+      ],
+      "is_playable": true,
+      "name": "Rounds (Special Anniversary Edition)",
+      "release_date": "2003",
+      "release_date_precision": "year",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:6ebN0Gkim6B1SDSp2ZbwI1"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7Eu1txygG6nJttLHbZdQOh"
+        },
+        "href": "https://api.spotify.com/v1/artists/7Eu1txygG6nJttLHbZdQOh",
+        "id": "7Eu1txygG6nJttLHbZdQOh",
+        "name": "Four Tet",
+        "type": "artist",
+        "uri": "spotify:artist:7Eu1txygG6nJttLHbZdQOh"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 341160,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBCEL0300058"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2UFR9rHVRKPVMC5DeZvO1P"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2UFR9rHVRKPVMC5DeZvO1P",
+    "id": "2UFR9rHVRKPVMC5DeZvO1P",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Hands",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:2UFR9rHVRKPVMC5DeZvO1P"
+  },
+  "[\"down to the bone\",\"sound as a pound\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LTnvdWwpOFwGtVIOrhwZb"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LTnvdWwpOFwGtVIOrhwZb",
+          "id": "6LTnvdWwpOFwGtVIOrhwZb",
+          "name": "Down To The Bone",
+          "type": "artist",
+          "uri": "spotify:artist:6LTnvdWwpOFwGtVIOrhwZb"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2qXG4R3vcMfJCBLsIVJQfU"
+      },
+      "href": "https://api.spotify.com/v1/albums/2qXG4R3vcMfJCBLsIVJQfU",
+      "id": "2qXG4R3vcMfJCBLsIVJQfU",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e7b9b94a8e95c44620f3e650"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e7b9b94a8e95c44620f3e650"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e7b9b94a8e95c44620f3e650"
+        }
+      ],
+      "is_playable": true,
+      "name": "Classic Album Series",
+      "release_date": "2019-04-26",
+      "release_date_precision": "day",
+      "total_tracks": 36,
+      "type": "album",
+      "uri": "spotify:album:2qXG4R3vcMfJCBLsIVJQfU"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6LTnvdWwpOFwGtVIOrhwZb"
+        },
+        "href": "https://api.spotify.com/v1/artists/6LTnvdWwpOFwGtVIOrhwZb",
+        "id": "6LTnvdWwpOFwGtVIOrhwZb",
+        "name": "Down To The Bone",
+        "type": "artist",
+        "uri": "spotify:artist:6LTnvdWwpOFwGtVIOrhwZb"
+      }
+    ],
+    "disc_number": 3,
+    "duration_ms": 410106,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GB7NU0100002"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/517R94RfthWXhCRHaCJx4Y"
+    },
+    "href": "https://api.spotify.com/v1/tracks/517R94RfthWXhCRHaCJx4Y",
+    "id": "517R94RfthWXhCRHaCJx4Y",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sound as a Pound",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:517R94RfthWXhCRHaCJx4Y"
+  },
+  "[\"charles & eddie\",\"house is not a home\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5rIhaCHkbFVvLJpKHWwOJD"
+          },
+          "href": "https://api.spotify.com/v1/artists/5rIhaCHkbFVvLJpKHWwOJD",
+          "id": "5rIhaCHkbFVvLJpKHWwOJD",
+          "name": "Charles & Eddie",
+          "type": "artist",
+          "uri": "spotify:artist:5rIhaCHkbFVvLJpKHWwOJD"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2qSjYxNL8dN8QCTTQyuNOA"
+      },
+      "href": "https://api.spotify.com/v1/albums/2qSjYxNL8dN8QCTTQyuNOA",
+      "id": "2qSjYxNL8dN8QCTTQyuNOA",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27389b7e43727abe4600a56855f"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0289b7e43727abe4600a56855f"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485189b7e43727abe4600a56855f"
+        }
+      ],
+      "is_playable": true,
+      "name": "Duophonic",
+      "release_date": "1992-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:2qSjYxNL8dN8QCTTQyuNOA"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5rIhaCHkbFVvLJpKHWwOJD"
+        },
+        "href": "https://api.spotify.com/v1/artists/5rIhaCHkbFVvLJpKHWwOJD",
+        "id": "5rIhaCHkbFVvLJpKHWwOJD",
+        "name": "Charles & Eddie",
+        "type": "artist",
+        "uri": "spotify:artist:5rIhaCHkbFVvLJpKHWwOJD"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 289333,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCA29200278"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6H0c1D5MbnElTMNEejw66u"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6H0c1D5MbnElTMNEejw66u",
+    "id": "6H0c1D5MbnElTMNEejw66u",
+    "is_local": false,
+    "is_playable": true,
+    "name": "House Is Not A Home",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6H0c1D5MbnElTMNEejw66u"
+  },
+  "[\"mad lion\",\"real ting\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3xpJzqE3evjd4GzQ9pcHNr"
+          },
+          "href": "https://api.spotify.com/v1/artists/3xpJzqE3evjd4GzQ9pcHNr",
+          "id": "3xpJzqE3evjd4GzQ9pcHNr",
+          "name": "Mad Lion",
+          "type": "artist",
+          "uri": "spotify:artist:3xpJzqE3evjd4GzQ9pcHNr"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/77TAXykeiDR4rt2i5hzkmi"
+      },
+      "href": "https://api.spotify.com/v1/albums/77TAXykeiDR4rt2i5hzkmi",
+      "id": "77TAXykeiDR4rt2i5hzkmi",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737fa309b6c87f5030d9a321e2"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027fa309b6c87f5030d9a321e2"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517fa309b6c87f5030d9a321e2"
+        }
+      ],
+      "is_playable": true,
+      "name": "Real Ting",
+      "release_date": "2012-11-19",
+      "release_date_precision": "day",
+      "total_tracks": 4,
+      "type": "album",
+      "uri": "spotify:album:77TAXykeiDR4rt2i5hzkmi"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3xpJzqE3evjd4GzQ9pcHNr"
+        },
+        "href": "https://api.spotify.com/v1/artists/3xpJzqE3evjd4GzQ9pcHNr",
+        "id": "3xpJzqE3evjd4GzQ9pcHNr",
+        "name": "Mad Lion",
+        "type": "artist",
+        "uri": "spotify:artist:3xpJzqE3evjd4GzQ9pcHNr"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 243965,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USNRS1230301"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2w0mjsCwDP9SRRlDI77Kbq"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2w0mjsCwDP9SRRlDI77Kbq",
+    "id": "2w0mjsCwDP9SRRlDI77Kbq",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Real Ting - Original Mix",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:2w0mjsCwDP9SRRlDI77Kbq"
+  },
+  "[\"dua lipa\",\"physical\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
+          },
+          "href": "https://api.spotify.com/v1/artists/6M2wZ9GZgrQXHCFfjv46we",
+          "id": "6M2wZ9GZgrQXHCFfjv46we",
+          "name": "Dua Lipa",
+          "type": "artist",
+          "uri": "spotify:artist:6M2wZ9GZgrQXHCFfjv46we"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5lKlFlReHOLShQKyRv6AL9"
+      },
+      "href": "https://api.spotify.com/v1/albums/5lKlFlReHOLShQKyRv6AL9",
+      "id": "5lKlFlReHOLShQKyRv6AL9",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734aa538a481e67131c214135a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024aa538a481e67131c214135a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514aa538a481e67131c214135a"
+        }
+      ],
+      "is_playable": true,
+      "name": "Future Nostalgia",
+      "release_date": "2020-03-27",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:5lKlFlReHOLShQKyRv6AL9"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
+        },
+        "href": "https://api.spotify.com/v1/artists/6M2wZ9GZgrQXHCFfjv46we",
+        "id": "6M2wZ9GZgrQXHCFfjv46we",
+        "name": "Dua Lipa",
+        "type": "artist",
+        "uri": "spotify:artist:6M2wZ9GZgrQXHCFfjv46we"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 193829,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAHT1901298"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7toYVidBIpAmM8Ife3LGrP"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7toYVidBIpAmM8Ife3LGrP",
+    "id": "7toYVidBIpAmM8Ife3LGrP",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Physical",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:7toYVidBIpAmM8Ife3LGrP"
+  },
+  "[\"medeski, martin and wood\",\"queen bee\"]": null,
+  "[\"jid\",\"gz\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6U3ybJ9UHNKEdsH7ktGBZ7"
+          },
+          "href": "https://api.spotify.com/v1/artists/6U3ybJ9UHNKEdsH7ktGBZ7",
+          "id": "6U3ybJ9UHNKEdsH7ktGBZ7",
+          "name": "JID",
+          "type": "artist",
+          "uri": "spotify:artist:6U3ybJ9UHNKEdsH7ktGBZ7"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2tU04u3hxtziB4sOVJKak3"
+      },
+      "href": "https://api.spotify.com/v1/albums/2tU04u3hxtziB4sOVJKak3",
+      "id": "2tU04u3hxtziB4sOVJKak3",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273023f060f2e91b7b2e62c021e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02023f060f2e91b7b2e62c021e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851023f060f2e91b7b2e62c021e"
+        }
+      ],
+      "is_playable": true,
+      "name": "God Does Like Ugly",
+      "release_date": "2025-08-08",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:2tU04u3hxtziB4sOVJKak3"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6U3ybJ9UHNKEdsH7ktGBZ7"
+        },
+        "href": "https://api.spotify.com/v1/artists/6U3ybJ9UHNKEdsH7ktGBZ7",
+        "id": "6U3ybJ9UHNKEdsH7ktGBZ7",
+        "name": "JID",
+        "type": "artist",
+        "uri": "spotify:artist:6U3ybJ9UHNKEdsH7ktGBZ7"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 208651,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USUM72503421"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0vH25LloTmsmsh5uCuj0JC"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0vH25LloTmsmsh5uCuj0JC",
+    "id": "0vH25LloTmsmsh5uCuj0JC",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Gz",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:0vH25LloTmsmsh5uCuj0JC"
+  },
+  "[\"mr. bungle\",\"none of them knew they were robots\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2zq0uqN9Wq12tqrQQt1ozw"
+          },
+          "href": "https://api.spotify.com/v1/artists/2zq0uqN9Wq12tqrQQt1ozw",
+          "id": "2zq0uqN9Wq12tqrQQt1ozw",
+          "name": "Mr. Bungle",
+          "type": "artist",
+          "uri": "spotify:artist:2zq0uqN9Wq12tqrQQt1ozw"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6QAKD1wqCrmkBYw1AsZfEy"
+      },
+      "href": "https://api.spotify.com/v1/albums/6QAKD1wqCrmkBYw1AsZfEy",
+      "id": "6QAKD1wqCrmkBYw1AsZfEy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c383eff4368b19f5f05b3108"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c383eff4368b19f5f05b3108"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c383eff4368b19f5f05b3108"
+        }
+      ],
+      "is_playable": true,
+      "name": "California",
+      "release_date": "1999-07-02",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:6QAKD1wqCrmkBYw1AsZfEy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2zq0uqN9Wq12tqrQQt1ozw"
+        },
+        "href": "https://api.spotify.com/v1/artists/2zq0uqN9Wq12tqrQQt1ozw",
+        "id": "2zq0uqN9Wq12tqrQQt1ozw",
+        "name": "Mr. Bungle",
+        "type": "artist",
+        "uri": "spotify:artist:2zq0uqN9Wq12tqrQQt1ozw"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 363933,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USWB19900577"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7tLedixoCWqEJpMZru3Ecf"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7tLedixoCWqEJpMZru3Ecf",
+    "id": "7tLedixoCWqEJpMZru3Ecf",
+    "is_local": false,
+    "is_playable": true,
+    "name": "None of Them Knew They Were Robots",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:7tLedixoCWqEJpMZru3Ecf"
+  },
+  "[\"the bad plus\",\"mint\"]": null,
+  "[\"candy claws\",\"charade (fern prairie)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/34Xay0uKsALHCrn5LkrYeh"
+          },
+          "href": "https://api.spotify.com/v1/artists/34Xay0uKsALHCrn5LkrYeh",
+          "id": "34Xay0uKsALHCrn5LkrYeh",
+          "name": "Candy Claws",
+          "type": "artist",
+          "uri": "spotify:artist:34Xay0uKsALHCrn5LkrYeh"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5KkGAZrad4N4rc5FriwgzU"
+      },
+      "href": "https://api.spotify.com/v1/albums/5KkGAZrad4N4rc5FriwgzU",
+      "id": "5KkGAZrad4N4rc5FriwgzU",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2735410c06685415d50ea87a012"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e025410c06685415d50ea87a012"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048515410c06685415d50ea87a012"
+        }
+      ],
+      "is_playable": true,
+      "name": "Ceres & Calypso in the Deep Time",
+      "release_date": "2013-06-25",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:5KkGAZrad4N4rc5FriwgzU"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/34Xay0uKsALHCrn5LkrYeh"
+        },
+        "href": "https://api.spotify.com/v1/artists/34Xay0uKsALHCrn5LkrYeh",
+        "id": "34Xay0uKsALHCrn5LkrYeh",
+        "name": "Candy Claws",
+        "type": "artist",
+        "uri": "spotify:artist:34Xay0uKsALHCrn5LkrYeh"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 199797,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USME31203120"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4TZCgYaoOkM4lJf26BVK8D"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4TZCgYaoOkM4lJf26BVK8D",
+    "id": "4TZCgYaoOkM4lJf26BVK8D",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Charade (Fern Prairie)",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:4TZCgYaoOkM4lJf26BVK8D"
+  },
+  "[\"hüsker dü\",\"whatever\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/16bN8mhtDFdegWbg0z3s10"
+          },
+          "href": "https://api.spotify.com/v1/artists/16bN8mhtDFdegWbg0z3s10",
+          "id": "16bN8mhtDFdegWbg0z3s10",
+          "name": "Hüsker Dü",
+          "type": "artist",
+          "uri": "spotify:artist:16bN8mhtDFdegWbg0z3s10"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0J1DP5GvKrzWumwzlcFhLc"
+      },
+      "href": "https://api.spotify.com/v1/albums/0J1DP5GvKrzWumwzlcFhLc",
+      "id": "0J1DP5GvKrzWumwzlcFhLc",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/8a403ef64b2939cd2775a7e907a9415e7d0f18c8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/f27eda51e3f6c69751bb0f600b1528a38d3fecbd"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/b2a594d591342c673e421465a84861ba180e98ab"
+        }
+      ],
+      "is_playable": true,
+      "name": "Zen Arcade",
+      "release_date": "1984-07-01",
+      "release_date_precision": "day",
+      "total_tracks": 23,
+      "type": "album",
+      "uri": "spotify:album:0J1DP5GvKrzWumwzlcFhLc"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/16bN8mhtDFdegWbg0z3s10"
+        },
+        "href": "https://api.spotify.com/v1/artists/16bN8mhtDFdegWbg0z3s10",
+        "id": "16bN8mhtDFdegWbg0z3s10",
+        "name": "Hüsker Dü",
+        "type": "artist",
+        "uri": "spotify:artist:16bN8mhtDFdegWbg0z3s10"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 232533,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA560766822"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5t2XszsbXVsweWaGvjHHWy"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5t2XszsbXVsweWaGvjHHWy",
+    "id": "5t2XszsbXVsweWaGvjHHWy",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Whatever",
+    "track_number": 20,
+    "type": "track",
+    "uri": "spotify:track:5t2XszsbXVsweWaGvjHHWy"
+  },
+  "[\"free\",\"mr. big (live fairfield halls, croydon / 1970)\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2e53aHBQdCMKWqHDuyJsjC"
+          },
+          "href": "https://api.spotify.com/v1/artists/2e53aHBQdCMKWqHDuyJsjC",
+          "id": "2e53aHBQdCMKWqHDuyJsjC",
+          "name": "Free",
+          "type": "artist",
+          "uri": "spotify:artist:2e53aHBQdCMKWqHDuyJsjC"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4tOtQGGOptXhcpliT3JCPr"
+      },
+      "href": "https://api.spotify.com/v1/albums/4tOtQGGOptXhcpliT3JCPr",
+      "id": "4tOtQGGOptXhcpliT3JCPr",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27348bf1917149208754a138c6d"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0248bf1917149208754a138c6d"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485148bf1917149208754a138c6d"
+        }
+      ],
+      "is_playable": true,
+      "name": "Free Live! (Remastered / Expanded Edition)",
+      "release_date": "2002-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:4tOtQGGOptXhcpliT3JCPr"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2e53aHBQdCMKWqHDuyJsjC"
+        },
+        "href": "https://api.spotify.com/v1/artists/2e53aHBQdCMKWqHDuyJsjC",
+        "id": "2e53aHBQdCMKWqHDuyJsjC",
+        "name": "Free",
+        "type": "artist",
+        "uri": "spotify:artist:2e53aHBQdCMKWqHDuyJsjC"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 380826,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAAN7100004"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1y0dFcQ2c3xNgCzmnONHQs"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1y0dFcQ2c3xNgCzmnONHQs",
+    "id": "1y0dFcQ2c3xNgCzmnONHQs",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Mr. Big - Live Fairfield Halls, Croydon / 1970",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:1y0dFcQ2c3xNgCzmnONHQs"
+  },
+  "[\"dean blunt\",\"the rot\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5CFSYjc0PAiQvndFjafabk"
+          },
+          "href": "https://api.spotify.com/v1/artists/5CFSYjc0PAiQvndFjafabk",
+          "id": "5CFSYjc0PAiQvndFjafabk",
+          "name": "Dean Blunt",
+          "type": "artist",
+          "uri": "spotify:artist:5CFSYjc0PAiQvndFjafabk"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/33xbAWdpX79o2YtXBiBWQv"
+      },
+      "href": "https://api.spotify.com/v1/albums/33xbAWdpX79o2YtXBiBWQv",
+      "id": "33xbAWdpX79o2YtXBiBWQv",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ad24c5e36ddcd1957ad35677"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ad24c5e36ddcd1957ad35677"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ad24c5e36ddcd1957ad35677"
+        }
+      ],
+      "is_playable": true,
+      "name": "BLACK METAL 2",
+      "release_date": "2021-06-11",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:33xbAWdpX79o2YtXBiBWQv"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5CFSYjc0PAiQvndFjafabk"
+        },
+        "href": "https://api.spotify.com/v1/artists/5CFSYjc0PAiQvndFjafabk",
+        "id": "5CFSYjc0PAiQvndFjafabk",
+        "name": "Dean Blunt",
+        "type": "artist",
+        "uri": "spotify:artist:5CFSYjc0PAiQvndFjafabk"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 223826,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "GBCVZ2100118"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3ESXgEbWaaoCJcHkiG6yF1"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3ESXgEbWaaoCJcHkiG6yF1",
+    "id": "3ESXgEbWaaoCJcHkiG6yF1",
+    "is_local": false,
+    "is_playable": true,
+    "name": "the rot",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:3ESXgEbWaaoCJcHkiG6yF1"
+  },
+  "[\"marina\",\"cupid's girl\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6CwfuxIqcltXDGjfZsMd9A"
+          },
+          "href": "https://api.spotify.com/v1/artists/6CwfuxIqcltXDGjfZsMd9A",
+          "id": "6CwfuxIqcltXDGjfZsMd9A",
+          "name": "MARINA",
+          "type": "artist",
+          "uri": "spotify:artist:6CwfuxIqcltXDGjfZsMd9A"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2rjfRdmVDBMFT5mamSsVeU"
+      },
+      "href": "https://api.spotify.com/v1/albums/2rjfRdmVDBMFT5mamSsVeU",
+      "id": "2rjfRdmVDBMFT5mamSsVeU",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737ce4002911f389a2a4465d6f"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027ce4002911f389a2a4465d6f"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517ce4002911f389a2a4465d6f"
+        }
+      ],
+      "is_playable": true,
+      "name": "PRINCESS OF POWER",
+      "release_date": "2025-06-06",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:2rjfRdmVDBMFT5mamSsVeU"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6CwfuxIqcltXDGjfZsMd9A"
+        },
+        "href": "https://api.spotify.com/v1/artists/6CwfuxIqcltXDGjfZsMd9A",
+        "id": "6CwfuxIqcltXDGjfZsMd9A",
+        "name": "MARINA",
+        "type": "artist",
+        "uri": "spotify:artist:6CwfuxIqcltXDGjfZsMd9A"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 208114,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GB5KW2500220"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0LNefTzUzZxPEvB6AkcLS1"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0LNefTzUzZxPEvB6AkcLS1",
+    "id": "0LNefTzUzZxPEvB6AkcLS1",
+    "is_local": false,
+    "is_playable": true,
+    "name": "CUPID'S GIRL",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:0LNefTzUzZxPEvB6AkcLS1"
   }
 }
