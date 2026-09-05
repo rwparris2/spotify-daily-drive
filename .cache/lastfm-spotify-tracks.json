@@ -209832,5 +209832,1515 @@
     "track_number": 1,
     "type": "track",
     "uri": "spotify:track:7KNcY52YH6VFnYYabMgxLM"
+  },
+  "[\"cunninlynguists\",\"hey\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7EA0bLf8dXCIUkwC3lnaJa"
+          },
+          "href": "https://api.spotify.com/v1/artists/7EA0bLf8dXCIUkwC3lnaJa",
+          "id": "7EA0bLf8dXCIUkwC3lnaJa",
+          "name": "CunninLynguists",
+          "type": "artist",
+          "uri": "spotify:artist:7EA0bLf8dXCIUkwC3lnaJa"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0W3sL4Mi1QSoYug9wdmxYH"
+      },
+      "href": "https://api.spotify.com/v1/albums/0W3sL4Mi1QSoYug9wdmxYH",
+      "id": "0W3sL4Mi1QSoYug9wdmxYH",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27357a410281766717911b1de34"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0257a410281766717911b1de34"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485157a410281766717911b1de34"
+        }
+      ],
+      "is_playable": true,
+      "name": "Will Rap for Food (Deluxe Edition)",
+      "release_date": "2001-10-30",
+      "release_date_precision": "day",
+      "total_tracks": 30,
+      "type": "album",
+      "uri": "spotify:album:0W3sL4Mi1QSoYug9wdmxYH"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7EA0bLf8dXCIUkwC3lnaJa"
+        },
+        "href": "https://api.spotify.com/v1/artists/7EA0bLf8dXCIUkwC3lnaJa",
+        "id": "7EA0bLf8dXCIUkwC3lnaJa",
+        "name": "CunninLynguists",
+        "type": "artist",
+        "uri": "spotify:artist:7EA0bLf8dXCIUkwC3lnaJa"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 27653,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "TCABH1268842"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3JsMdN5fi36zK31TVVCAW6"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3JsMdN5fi36zK31TVVCAW6",
+    "id": "3JsMdN5fi36zK31TVVCAW6",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Hey",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:3JsMdN5fi36zK31TVVCAW6"
+  },
+  "[\"50 cent\",\"in da club\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3q7HBObVc0L8jNeTe5Gofh"
+          },
+          "href": "https://api.spotify.com/v1/artists/3q7HBObVc0L8jNeTe5Gofh",
+          "id": "3q7HBObVc0L8jNeTe5Gofh",
+          "name": "50 Cent",
+          "type": "artist",
+          "uri": "spotify:artist:3q7HBObVc0L8jNeTe5Gofh"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4ycNE7y1rp5215g1kkqk1P"
+      },
+      "href": "https://api.spotify.com/v1/albums/4ycNE7y1rp5215g1kkqk1P",
+      "id": "4ycNE7y1rp5215g1kkqk1P",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f7f74100d5cc850e01172cbf"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f7f74100d5cc850e01172cbf"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f7f74100d5cc850e01172cbf"
+        }
+      ],
+      "is_playable": true,
+      "name": "Get Rich Or Die Tryin'",
+      "release_date": "2003-02-06",
+      "release_date_precision": "day",
+      "total_tracks": 19,
+      "type": "album",
+      "uri": "spotify:album:4ycNE7y1rp5215g1kkqk1P"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3q7HBObVc0L8jNeTe5Gofh"
+        },
+        "href": "https://api.spotify.com/v1/artists/3q7HBObVc0L8jNeTe5Gofh",
+        "id": "3q7HBObVc0L8jNeTe5Gofh",
+        "name": "50 Cent",
+        "type": "artist",
+        "uri": "spotify:artist:3q7HBObVc0L8jNeTe5Gofh"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 193466,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USIR10300033"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4RY96Asd9IefaL3X4LOLZ8"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4RY96Asd9IefaL3X4LOLZ8",
+    "id": "4RY96Asd9IefaL3X4LOLZ8",
+    "is_local": false,
+    "is_playable": true,
+    "name": "In Da Club",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:4RY96Asd9IefaL3X4LOLZ8"
+  },
+  "[\"derek and the dominos\",\"layla\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6PAt558ZEZl0DmdXlnjMgD"
+          },
+          "href": "https://api.spotify.com/v1/artists/6PAt558ZEZl0DmdXlnjMgD",
+          "id": "6PAt558ZEZl0DmdXlnjMgD",
+          "name": "Eric Clapton",
+          "type": "artist",
+          "uri": "spotify:artist:6PAt558ZEZl0DmdXlnjMgD"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6U0JzNMI6NWGERxXU7lFEs"
+      },
+      "href": "https://api.spotify.com/v1/albums/6U0JzNMI6NWGERxXU7lFEs",
+      "id": "6U0JzNMI6NWGERxXU7lFEs",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2739902eb06a4322a45a1079046"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e029902eb06a4322a45a1079046"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048519902eb06a4322a45a1079046"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Best Of Eric Clapton 20th Century Masters The Millennium Collection",
+      "release_date": "2004-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:6U0JzNMI6NWGERxXU7lFEs"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2rc78XDH9zuJP6bm78lU8Z"
+        },
+        "href": "https://api.spotify.com/v1/artists/2rc78XDH9zuJP6bm78lU8Z",
+        "id": "2rc78XDH9zuJP6bm78lU8Z",
+        "name": "Derek & The Dominos",
+        "type": "artist",
+        "uri": "spotify:artist:2rc78XDH9zuJP6bm78lU8Z"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 423680,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "NLF057090038"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/01zdD7epF5uS0gGb0jNjhN"
+    },
+    "href": "https://api.spotify.com/v1/tracks/01zdD7epF5uS0gGb0jNjhN",
+    "id": "01zdD7epF5uS0gGb0jNjhN",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Layla",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:01zdD7epF5uS0gGb0jNjhN"
+  },
+  "[\"oliver tree\",\"bury me alive\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6TLwD7HPWuiOzvXEa3oCNe"
+          },
+          "href": "https://api.spotify.com/v1/artists/6TLwD7HPWuiOzvXEa3oCNe",
+          "id": "6TLwD7HPWuiOzvXEa3oCNe",
+          "name": "Oliver Tree",
+          "type": "artist",
+          "uri": "spotify:artist:6TLwD7HPWuiOzvXEa3oCNe"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5vP0fNictdWyU48o83Q7ob"
+      },
+      "href": "https://api.spotify.com/v1/albums/5vP0fNictdWyU48o83Q7ob",
+      "id": "5vP0fNictdWyU48o83Q7ob",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bf118f32a37c18511647b54a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bf118f32a37c18511647b54a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bf118f32a37c18511647b54a"
+        }
+      ],
+      "is_playable": true,
+      "name": "Ugly is Beautiful: Shorter, Thicker & Uglier (Deluxe)",
+      "release_date": "2021-05-28",
+      "release_date_precision": "day",
+      "total_tracks": 21,
+      "type": "album",
+      "uri": "spotify:album:5vP0fNictdWyU48o83Q7ob"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6TLwD7HPWuiOzvXEa3oCNe"
+        },
+        "href": "https://api.spotify.com/v1/artists/6TLwD7HPWuiOzvXEa3oCNe",
+        "id": "6TLwD7HPWuiOzvXEa3oCNe",
+        "name": "Oliver Tree",
+        "type": "artist",
+        "uri": "spotify:artist:6TLwD7HPWuiOzvXEa3oCNe"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 164188,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USAT22000467"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0CMx7HD62N2PDxs1eqycJQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0CMx7HD62N2PDxs1eqycJQ",
+    "id": "0CMx7HD62N2PDxs1eqycJQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Bury Me Alive",
+    "track_number": 13,
+    "type": "track",
+    "uri": "spotify:track:0CMx7HD62N2PDxs1eqycJQ"
+  },
+  "[\"coldplay\",\"twisted logic\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
+          },
+          "href": "https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU",
+          "id": "4gzpq5DPGxSnKTe4SA8HAU",
+          "name": "Coldplay",
+          "type": "artist",
+          "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4E7bV0pzG0LciBSWTszra6"
+      },
+      "href": "https://api.spotify.com/v1/albums/4E7bV0pzG0LciBSWTszra6",
+      "id": "4E7bV0pzG0LciBSWTszra6",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514e0362c225863f6ae2432651"
+        }
+      ],
+      "is_playable": true,
+      "name": "X&Y",
+      "release_date": "2005-06-07",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:4E7bV0pzG0LciBSWTszra6"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
+        },
+        "href": "https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU",
+        "id": "4gzpq5DPGxSnKTe4SA8HAU",
+        "name": "Coldplay",
+        "type": "artist",
+        "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 271860,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAYE0501029"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6kevl5fnM7GRJ2K2rBBnxq"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6kevl5fnM7GRJ2K2rBBnxq",
+    "id": "6kevl5fnM7GRJ2K2rBBnxq",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Twisted Logic",
+    "track_number": 12,
+    "type": "track",
+    "uri": "spotify:track:6kevl5fnM7GRJ2K2rBBnxq"
+  },
+  "[\"dr. dre\",\"still d.r.e.\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6DPYiyq5kWVQS4RGwxzPC7"
+          },
+          "href": "https://api.spotify.com/v1/artists/6DPYiyq5kWVQS4RGwxzPC7",
+          "id": "6DPYiyq5kWVQS4RGwxzPC7",
+          "name": "Dr. Dre",
+          "type": "artist",
+          "uri": "spotify:artist:6DPYiyq5kWVQS4RGwxzPC7"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7q2B4M5EiBkqrlsNW8lB7N"
+      },
+      "href": "https://api.spotify.com/v1/albums/7q2B4M5EiBkqrlsNW8lB7N",
+      "id": "7q2B4M5EiBkqrlsNW8lB7N",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2739b19c107109de740bad72df5"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e029b19c107109de740bad72df5"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048519b19c107109de740bad72df5"
+        }
+      ],
+      "is_playable": true,
+      "name": "2001",
+      "release_date": "1999-11-16",
+      "release_date_precision": "day",
+      "total_tracks": 23,
+      "type": "album",
+      "uri": "spotify:album:7q2B4M5EiBkqrlsNW8lB7N"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6DPYiyq5kWVQS4RGwxzPC7"
+        },
+        "href": "https://api.spotify.com/v1/artists/6DPYiyq5kWVQS4RGwxzPC7",
+        "id": "6DPYiyq5kWVQS4RGwxzPC7",
+        "name": "Dr. Dre",
+        "type": "artist",
+        "uri": "spotify:artist:6DPYiyq5kWVQS4RGwxzPC7"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7hJcb9fa4alzcOq3EaNPoG"
+        },
+        "href": "https://api.spotify.com/v1/artists/7hJcb9fa4alzcOq3EaNPoG",
+        "id": "7hJcb9fa4alzcOq3EaNPoG",
+        "name": "Snoop Dogg",
+        "type": "artist",
+        "uri": "spotify:artist:7hJcb9fa4alzcOq3EaNPoG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 270586,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USIR19905031"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/503OTo2dSqe7qk76rgsbep"
+    },
+    "href": "https://api.spotify.com/v1/tracks/503OTo2dSqe7qk76rgsbep",
+    "id": "503OTo2dSqe7qk76rgsbep",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Still D.R.E.",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:503OTo2dSqe7qk76rgsbep"
+  },
+  "[\"tom cardy\",\"why am i anxious?\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0hQBkU2vuMYXucmd89JUSw"
+          },
+          "href": "https://api.spotify.com/v1/artists/0hQBkU2vuMYXucmd89JUSw",
+          "id": "0hQBkU2vuMYXucmd89JUSw",
+          "name": "Tom Cardy",
+          "type": "artist",
+          "uri": "spotify:artist:0hQBkU2vuMYXucmd89JUSw"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0p3PojNPjYC8LHkJCwinTd"
+      },
+      "href": "https://api.spotify.com/v1/albums/0p3PojNPjYC8LHkJCwinTd",
+      "id": "0p3PojNPjYC8LHkJCwinTd",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27378f5c629df4c0dfe7425b5e6"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0278f5c629df4c0dfe7425b5e6"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485178f5c629df4c0dfe7425b5e6"
+        }
+      ],
+      "is_playable": true,
+      "name": "Artificial Intelligence",
+      "release_date": "2021-08-06",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:0p3PojNPjYC8LHkJCwinTd"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0hQBkU2vuMYXucmd89JUSw"
+        },
+        "href": "https://api.spotify.com/v1/artists/0hQBkU2vuMYXucmd89JUSw",
+        "id": "0hQBkU2vuMYXucmd89JUSw",
+        "name": "Tom Cardy",
+        "type": "artist",
+        "uri": "spotify:artist:0hQBkU2vuMYXucmd89JUSw"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 110181,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "AUMEV2153677"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/58vdp7XF93MfrqqL8y7nwx"
+    },
+    "href": "https://api.spotify.com/v1/tracks/58vdp7XF93MfrqqL8y7nwx",
+    "id": "58vdp7XF93MfrqqL8y7nwx",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Why Am I Anxious",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:58vdp7XF93MfrqqL8y7nwx"
+  },
+  "[\"vince staples\",\"745\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/68kEuyFKyqrdQQLLsmiatm"
+          },
+          "href": "https://api.spotify.com/v1/artists/68kEuyFKyqrdQQLLsmiatm",
+          "id": "68kEuyFKyqrdQQLLsmiatm",
+          "name": "Vince Staples",
+          "type": "artist",
+          "uri": "spotify:artist:68kEuyFKyqrdQQLLsmiatm"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5h3WJG0aZjNOrayFu3MhCS"
+      },
+      "href": "https://api.spotify.com/v1/albums/5h3WJG0aZjNOrayFu3MhCS",
+      "id": "5h3WJG0aZjNOrayFu3MhCS",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737ba7b4d23c717f3211717946"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027ba7b4d23c717f3211717946"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517ba7b4d23c717f3211717946"
+        }
+      ],
+      "is_playable": true,
+      "name": "Big Fish Theory",
+      "release_date": "2017-06-23",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:5h3WJG0aZjNOrayFu3MhCS"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/68kEuyFKyqrdQQLLsmiatm"
+        },
+        "href": "https://api.spotify.com/v1/artists/68kEuyFKyqrdQQLLsmiatm",
+        "id": "68kEuyFKyqrdQQLLsmiatm",
+        "name": "Vince Staples",
+        "type": "artist",
+        "uri": "spotify:artist:68kEuyFKyqrdQQLLsmiatm"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 227560,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUM71705067"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2fRoKHW3lzNUKIUTade8nL"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2fRoKHW3lzNUKIUTade8nL",
+    "id": "2fRoKHW3lzNUKIUTade8nL",
+    "is_local": false,
+    "is_playable": true,
+    "name": "745",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:2fRoKHW3lzNUKIUTade8nL"
+  },
+  "[\"stephen lynch\",\"albino\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1z4MOvDCbCQ0ZFqnSkVSUC"
+          },
+          "href": "https://api.spotify.com/v1/artists/1z4MOvDCbCQ0ZFqnSkVSUC",
+          "id": "1z4MOvDCbCQ0ZFqnSkVSUC",
+          "name": "Stephen Lynch",
+          "type": "artist",
+          "uri": "spotify:artist:1z4MOvDCbCQ0ZFqnSkVSUC"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3hv1OMt1ahPSvAh1U2AV7w"
+      },
+      "href": "https://api.spotify.com/v1/albums/3hv1OMt1ahPSvAh1U2AV7w",
+      "id": "3hv1OMt1ahPSvAh1U2AV7w",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734c0c8c7ecfbd89d2c2e74c1c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024c0c8c7ecfbd89d2c2e74c1c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514c0c8c7ecfbd89d2c2e74c1c"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Craig Machine",
+      "release_date": "2005-10-05",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:3hv1OMt1ahPSvAh1U2AV7w"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1z4MOvDCbCQ0ZFqnSkVSUC"
+        },
+        "href": "https://api.spotify.com/v1/artists/1z4MOvDCbCQ0ZFqnSkVSUC",
+        "id": "1z4MOvDCbCQ0ZFqnSkVSUC",
+        "name": "Stephen Lynch",
+        "type": "artist",
+        "uri": "spotify:artist:1z4MOvDCbCQ0ZFqnSkVSUC"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 112306,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA6B0500607"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4BbqpQfHAka71HSxpMcsM1"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4BbqpQfHAka71HSxpMcsM1",
+    "id": "4BbqpQfHAka71HSxpMcsM1",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Albino",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:4BbqpQfHAka71HSxpMcsM1"
+  },
+  "[\"mewithoutyou\",\"yellow spider\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3D4qYDvoPn5cQxtBm4oseo"
+          },
+          "href": "https://api.spotify.com/v1/artists/3D4qYDvoPn5cQxtBm4oseo",
+          "id": "3D4qYDvoPn5cQxtBm4oseo",
+          "name": "mewithoutYou",
+          "type": "artist",
+          "uri": "spotify:artist:3D4qYDvoPn5cQxtBm4oseo"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4yItCYzksCSiB8RcUsAdSg"
+      },
+      "href": "https://api.spotify.com/v1/albums/4yItCYzksCSiB8RcUsAdSg",
+      "id": "4yItCYzksCSiB8RcUsAdSg",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c3834c0b6955a4e1f0c8dfca"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c3834c0b6955a4e1f0c8dfca"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c3834c0b6955a4e1f0c8dfca"
+        }
+      ],
+      "is_playable": true,
+      "name": "Brother, Sister",
+      "release_date": "2006-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:4yItCYzksCSiB8RcUsAdSg"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3D4qYDvoPn5cQxtBm4oseo"
+        },
+        "href": "https://api.spotify.com/v1/artists/3D4qYDvoPn5cQxtBm4oseo",
+        "id": "3D4qYDvoPn5cQxtBm4oseo",
+        "name": "mewithoutYou",
+        "type": "artist",
+        "uri": "spotify:artist:3D4qYDvoPn5cQxtBm4oseo"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 70893,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USTN10600215"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2XpkKKeib9PCRW60q3Fkmn"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2XpkKKeib9PCRW60q3Fkmn",
+    "id": "2XpkKKeib9PCRW60q3Fkmn",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Yellow Spider",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:2XpkKKeib9PCRW60q3Fkmn"
+  },
+  "[\"dirty projectors\",\"swing lo magellan\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5VF0YkVLeVD4ytyiyVSIiF"
+          },
+          "href": "https://api.spotify.com/v1/artists/5VF0YkVLeVD4ytyiyVSIiF",
+          "id": "5VF0YkVLeVD4ytyiyVSIiF",
+          "name": "Dirty Projectors",
+          "type": "artist",
+          "uri": "spotify:artist:5VF0YkVLeVD4ytyiyVSIiF"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5leXnIiFPYSr7yHgdwxMDG"
+      },
+      "href": "https://api.spotify.com/v1/albums/5leXnIiFPYSr7yHgdwxMDG",
+      "id": "5leXnIiFPYSr7yHgdwxMDG",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27328f844b0afeeb2492be74022"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0228f844b0afeeb2492be74022"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485128f844b0afeeb2492be74022"
+        }
+      ],
+      "is_playable": true,
+      "name": "Swing Lo Magellan",
+      "release_date": "2012-07-09",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:5leXnIiFPYSr7yHgdwxMDG"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5VF0YkVLeVD4ytyiyVSIiF"
+        },
+        "href": "https://api.spotify.com/v1/artists/5VF0YkVLeVD4ytyiyVSIiF",
+        "id": "5VF0YkVLeVD4ytyiyVSIiF",
+        "name": "Dirty Projectors",
+        "type": "artist",
+        "uri": "spotify:artist:5VF0YkVLeVD4ytyiyVSIiF"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 157800,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBCEL1200120"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0ZRmhs9YjaMmj5QGCw0lDe"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0ZRmhs9YjaMmj5QGCw0lDe",
+    "id": "0ZRmhs9YjaMmj5QGCw0lDe",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Swing Lo Magellan",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:0ZRmhs9YjaMmj5QGCw0lDe"
+  },
+  "[\"joan baez\",\"sweet sir galahad\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1EevBGfUh3RSQSGpluxgBm"
+          },
+          "href": "https://api.spotify.com/v1/artists/1EevBGfUh3RSQSGpluxgBm",
+          "id": "1EevBGfUh3RSQSGpluxgBm",
+          "name": "Joan Baez",
+          "type": "artist",
+          "uri": "spotify:artist:1EevBGfUh3RSQSGpluxgBm"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4r2BckN3R24ifqfXKUUbMn"
+      },
+      "href": "https://api.spotify.com/v1/albums/4r2BckN3R24ifqfXKUUbMn",
+      "id": "4r2BckN3R24ifqfXKUUbMn",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273cb68e4708859c90c8efc44ff"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02cb68e4708859c90c8efc44ff"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851cb68e4708859c90c8efc44ff"
+        }
+      ],
+      "is_playable": true,
+      "name": "The First 10 Years",
+      "release_date": "1970",
+      "release_date_precision": "year",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:4r2BckN3R24ifqfXKUUbMn"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1EevBGfUh3RSQSGpluxgBm"
+        },
+        "href": "https://api.spotify.com/v1/artists/1EevBGfUh3RSQSGpluxgBm",
+        "id": "1EevBGfUh3RSQSGpluxgBm",
+        "name": "Joan Baez",
+        "type": "artist",
+        "uri": "spotify:artist:1EevBGfUh3RSQSGpluxgBm"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 223733,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USVG20500097"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0wVsSz391qR4eORwDy3Xvg"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0wVsSz391qR4eORwDy3Xvg",
+    "id": "0wVsSz391qR4eORwDy3Xvg",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sweet Sir Galahad",
+    "track_number": 15,
+    "type": "track",
+    "uri": "spotify:track:0wVsSz391qR4eORwDy3Xvg"
+  },
+  "[\"tom waits\",\"christmas card from a hooker in minneapolis\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7x83XhcMbOTl1UdYsPTuZM"
+          },
+          "href": "https://api.spotify.com/v1/artists/7x83XhcMbOTl1UdYsPTuZM",
+          "id": "7x83XhcMbOTl1UdYsPTuZM",
+          "name": "Tom Waits",
+          "type": "artist",
+          "uri": "spotify:artist:7x83XhcMbOTl1UdYsPTuZM"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2fgQN85UzwZMRIBTs06FjX"
+      },
+      "href": "https://api.spotify.com/v1/albums/2fgQN85UzwZMRIBTs06FjX",
+      "id": "2fgQN85UzwZMRIBTs06FjX",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2739456e6961c9a705617b709ca"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e029456e6961c9a705617b709ca"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048519456e6961c9a705617b709ca"
+        }
+      ],
+      "is_playable": true,
+      "name": "Blue Valentine (Remastered)",
+      "release_date": "1978-09-05",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:2fgQN85UzwZMRIBTs06FjX"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7x83XhcMbOTl1UdYsPTuZM"
+        },
+        "href": "https://api.spotify.com/v1/artists/7x83XhcMbOTl1UdYsPTuZM",
+        "id": "7x83XhcMbOTl1UdYsPTuZM",
+        "name": "Tom Waits",
+        "type": "artist",
+        "uri": "spotify:artist:7x83XhcMbOTl1UdYsPTuZM"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 272982,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USEP41718491"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6BRg8FpfpKUbXeE4Jv7U5u"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6BRg8FpfpKUbXeE4Jv7U5u",
+    "id": "6BRg8FpfpKUbXeE4Jv7U5u",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Christmas Card From A Hooker In Minneapolis",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:6BRg8FpfpKUbXeE4Jv7U5u"
+  },
+  "[\"childish gambino\",\"not going back\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+          },
+          "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+          "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+          "name": "Childish Gambino",
+          "type": "artist",
+          "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6L4gtDcKB0RBRpx2DhHrsQ"
+      },
+      "href": "https://api.spotify.com/v1/albums/6L4gtDcKB0RBRpx2DhHrsQ",
+      "id": "6L4gtDcKB0RBRpx2DhHrsQ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273699c9024367879e4357c3e5d"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02699c9024367879e4357c3e5d"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851699c9024367879e4357c3e5d"
+        }
+      ],
+      "is_playable": true,
+      "name": "EP (2011 Re-Release)",
+      "release_date": "2018-01-31",
+      "release_date_precision": "day",
+      "total_tracks": 5,
+      "type": "album",
+      "uri": "spotify:album:6L4gtDcKB0RBRpx2DhHrsQ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+        },
+        "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+        "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+        "name": "Childish Gambino",
+        "type": "artist",
+        "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 280869,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QM24S1700355"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4sy3B9TPNMIze8oFrDJnUN"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4sy3B9TPNMIze8oFrDJnUN",
+    "id": "4sy3B9TPNMIze8oFrDJnUN",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Not Going Back",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:4sy3B9TPNMIze8oFrDJnUN"
+  },
+  "[\"joan baez\",\"rake and rambling boy\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1EevBGfUh3RSQSGpluxgBm"
+          },
+          "href": "https://api.spotify.com/v1/artists/1EevBGfUh3RSQSGpluxgBm",
+          "id": "1EevBGfUh3RSQSGpluxgBm",
+          "name": "Joan Baez",
+          "type": "artist",
+          "uri": "spotify:artist:1EevBGfUh3RSQSGpluxgBm"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/734AFYo34Q1zRpg9N8E2Ho"
+      },
+      "href": "https://api.spotify.com/v1/albums/734AFYo34Q1zRpg9N8E2Ho",
+      "id": "734AFYo34Q1zRpg9N8E2Ho",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ba6b36bfd63afd21d01fde3e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ba6b36bfd63afd21d01fde3e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ba6b36bfd63afd21d01fde3e"
+        }
+      ],
+      "is_playable": true,
+      "name": "Joan Baez",
+      "release_date": "1960",
+      "release_date_precision": "year",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:734AFYo34Q1zRpg9N8E2Ho"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1EevBGfUh3RSQSGpluxgBm"
+        },
+        "href": "https://api.spotify.com/v1/artists/1EevBGfUh3RSQSGpluxgBm",
+        "id": "1EevBGfUh3RSQSGpluxgBm",
+        "name": "Joan Baez",
+        "type": "artist",
+        "uri": "spotify:artist:1EevBGfUh3RSQSGpluxgBm"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 119360,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USVG20185977"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2VyKXzrtialaXBc4uIA58Z"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2VyKXzrtialaXBc4uIA58Z",
+    "id": "2VyKXzrtialaXBc4uIA58Z",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Rake And Rambling Boy",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:2VyKXzrtialaXBc4uIA58Z"
+  },
+  "[\"deas vail\",\"balance\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6Ot9O7VY8GvclUApiA3ili"
+          },
+          "href": "https://api.spotify.com/v1/artists/6Ot9O7VY8GvclUApiA3ili",
+          "id": "6Ot9O7VY8GvclUApiA3ili",
+          "name": "Deas Vail",
+          "type": "artist",
+          "uri": "spotify:artist:6Ot9O7VY8GvclUApiA3ili"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/52k0Tq5rP02Eo5yIzCiFKN"
+      },
+      "href": "https://api.spotify.com/v1/albums/52k0Tq5rP02Eo5yIzCiFKN",
+      "id": "52k0Tq5rP02Eo5yIzCiFKN",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273cb869d9776955c19310ddd60"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02cb869d9776955c19310ddd60"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851cb869d9776955c19310ddd60"
+        }
+      ],
+      "is_playable": true,
+      "name": "White Lights",
+      "release_date": "2008-08-26",
+      "release_date_precision": "day",
+      "total_tracks": 6,
+      "type": "album",
+      "uri": "spotify:album:52k0Tq5rP02Eo5yIzCiFKN"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6Ot9O7VY8GvclUApiA3ili"
+        },
+        "href": "https://api.spotify.com/v1/artists/6Ot9O7VY8GvclUApiA3ili",
+        "id": "6Ot9O7VY8GvclUApiA3ili",
+        "name": "Deas Vail",
+        "type": "artist",
+        "uri": "spotify:artist:6Ot9O7VY8GvclUApiA3ili"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 226826,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US32E0811105"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5XL1see4w3oE7mEnIlvYP7"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5XL1see4w3oE7mEnIlvYP7",
+    "id": "5XL1see4w3oE7mEnIlvYP7",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Balance",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:5XL1see4w3oE7mEnIlvYP7"
+  },
+  "[\"hope sandoval & the warm inventions\",\"charlotte\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/38u18VoGaIwVeSyVoA0eU5"
+          },
+          "href": "https://api.spotify.com/v1/artists/38u18VoGaIwVeSyVoA0eU5",
+          "id": "38u18VoGaIwVeSyVoA0eU5",
+          "name": "Hope Sandoval & The Warm Inventions",
+          "type": "artist",
+          "uri": "spotify:artist:38u18VoGaIwVeSyVoA0eU5"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7JAh6mfXLsGojvj9a4fnDT"
+      },
+      "href": "https://api.spotify.com/v1/albums/7JAh6mfXLsGojvj9a4fnDT",
+      "id": "7JAh6mfXLsGojvj9a4fnDT",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27354a30ecfc3b9254b4eb598e6"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0254a30ecfc3b9254b4eb598e6"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485154a30ecfc3b9254b4eb598e6"
+        }
+      ],
+      "is_playable": true,
+      "name": "Bavarian Fruit Bread",
+      "release_date": "2001-10-23",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:7JAh6mfXLsGojvj9a4fnDT"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/38u18VoGaIwVeSyVoA0eU5"
+        },
+        "href": "https://api.spotify.com/v1/artists/38u18VoGaIwVeSyVoA0eU5",
+        "id": "38u18VoGaIwVeSyVoA0eU5",
+        "name": "Hope Sandoval & The Warm Inventions",
+        "type": "artist",
+        "uri": "spotify:artist:38u18VoGaIwVeSyVoA0eU5"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 274546,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA2P1382443"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2PPYvWQkWTGeu4fuSNrdKQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2PPYvWQkWTGeu4fuSNrdKQ",
+    "id": "2PPYvWQkWTGeu4fuSNrdKQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Charlotte",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:2PPYvWQkWTGeu4fuSNrdKQ"
+  },
+  "[\"tom cardy\",\"the ballad of smokin' joe rudeboy\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0hQBkU2vuMYXucmd89JUSw"
+          },
+          "href": "https://api.spotify.com/v1/artists/0hQBkU2vuMYXucmd89JUSw",
+          "id": "0hQBkU2vuMYXucmd89JUSw",
+          "name": "Tom Cardy",
+          "type": "artist",
+          "uri": "spotify:artist:0hQBkU2vuMYXucmd89JUSw"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0bh9TnPCRsV5oJYb5K8Ytp"
+      },
+      "href": "https://api.spotify.com/v1/albums/0bh9TnPCRsV5oJYb5K8Ytp",
+      "id": "0bh9TnPCRsV5oJYb5K8Ytp",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f4a6d27556b82cd2bb60598c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f4a6d27556b82cd2bb60598c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f4a6d27556b82cd2bb60598c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Big Dumb Idiot",
+      "release_date": "2022-12-09",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:0bh9TnPCRsV5oJYb5K8Ytp"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0hQBkU2vuMYXucmd89JUSw"
+        },
+        "href": "https://api.spotify.com/v1/artists/0hQBkU2vuMYXucmd89JUSw",
+        "id": "0hQBkU2vuMYXucmd89JUSw",
+        "name": "Tom Cardy",
+        "type": "artist",
+        "uri": "spotify:artist:0hQBkU2vuMYXucmd89JUSw"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 247458,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "AUGBT2229818"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5aIZ0C0OE0KeWx35GeZEUW"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5aIZ0C0OE0KeWx35GeZEUW",
+    "id": "5aIZ0C0OE0KeWx35GeZEUW",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Ballad of Smokin' Joe Rudeboy",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:5aIZ0C0OE0KeWx35GeZEUW"
+  },
+  "[\"the doors\",\"been down so long\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/22WZ7M8sxp5THdruNY3gXt"
+          },
+          "href": "https://api.spotify.com/v1/artists/22WZ7M8sxp5THdruNY3gXt",
+          "id": "22WZ7M8sxp5THdruNY3gXt",
+          "name": "The Doors",
+          "type": "artist",
+          "uri": "spotify:artist:22WZ7M8sxp5THdruNY3gXt"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7IKUTIc9UWuVngyGPtqNHS"
+      },
+      "href": "https://api.spotify.com/v1/albums/7IKUTIc9UWuVngyGPtqNHS",
+      "id": "7IKUTIc9UWuVngyGPtqNHS",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27311d9db4f0db1e2689ca22c3d"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0211d9db4f0db1e2689ca22c3d"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485111d9db4f0db1e2689ca22c3d"
+        }
+      ],
+      "is_playable": true,
+      "name": "L.A. Woman",
+      "release_date": "1971-04-19",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:7IKUTIc9UWuVngyGPtqNHS"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/22WZ7M8sxp5THdruNY3gXt"
+        },
+        "href": "https://api.spotify.com/v1/artists/22WZ7M8sxp5THdruNY3gXt",
+        "id": "22WZ7M8sxp5THdruNY3gXt",
+        "name": "The Doors",
+        "type": "artist",
+        "uri": "spotify:artist:22WZ7M8sxp5THdruNY3gXt"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 279866,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USEE19900766"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1E7qCptwRPfvZrIDyDDgjh"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1E7qCptwRPfvZrIDyDDgjh",
+    "id": "1E7qCptwRPfvZrIDyDDgjh",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Been down so Long",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:1E7qCptwRPfvZrIDyDDgjh"
+  },
+  "[\"tally hall\",\"ruler of everything\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7lqaPghwYv2mE9baz5XQmL"
+          },
+          "href": "https://api.spotify.com/v1/artists/7lqaPghwYv2mE9baz5XQmL",
+          "id": "7lqaPghwYv2mE9baz5XQmL",
+          "name": "Tally Hall",
+          "type": "artist",
+          "uri": "spotify:artist:7lqaPghwYv2mE9baz5XQmL"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2TN3NIEBmAOGWmvP96DFs5"
+      },
+      "href": "https://api.spotify.com/v1/albums/2TN3NIEBmAOGWmvP96DFs5",
+      "id": "2TN3NIEBmAOGWmvP96DFs5",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b9ccb466665c2ac10dc0d628"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b9ccb466665c2ac10dc0d628"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b9ccb466665c2ac10dc0d628"
+        }
+      ],
+      "is_playable": true,
+      "name": "Marvin's Marvelous Mechanical Museum",
+      "release_date": "2005-10-24",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:2TN3NIEBmAOGWmvP96DFs5"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7lqaPghwYv2mE9baz5XQmL"
+        },
+        "href": "https://api.spotify.com/v1/artists/7lqaPghwYv2mE9baz5XQmL",
+        "id": "7lqaPghwYv2mE9baz5XQmL",
+        "name": "Tally Hall",
+        "type": "artist",
+        "uri": "spotify:artist:7lqaPghwYv2mE9baz5XQmL"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 222106,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "TCAAY1158676"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3vFZheR74pxUkzxqhXTZ2X"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3vFZheR74pxUkzxqhXTZ2X",
+    "id": "3vFZheR74pxUkzxqhXTZ2X",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Ruler of Everything",
+    "track_number": 14,
+    "type": "track",
+    "uri": "spotify:track:3vFZheR74pxUkzxqhXTZ2X"
   }
 }
