@@ -211342,5 +211342,1836 @@
     "track_number": 14,
     "type": "track",
     "uri": "spotify:track:3vFZheR74pxUkzxqhXTZ2X"
+  },
+  "[\"warmduscher\",\"the chimp\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1CWwXncu9sk7EIdbvqcquR"
+          },
+          "href": "https://api.spotify.com/v1/artists/1CWwXncu9sk7EIdbvqcquR",
+          "id": "1CWwXncu9sk7EIdbvqcquR",
+          "name": "Warmduscher",
+          "type": "artist",
+          "uri": "spotify:artist:1CWwXncu9sk7EIdbvqcquR"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1OayjjI9jcTkZuliqxYpzJ"
+      },
+      "href": "https://api.spotify.com/v1/albums/1OayjjI9jcTkZuliqxYpzJ",
+      "id": "1OayjjI9jcTkZuliqxYpzJ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736eab489782ffba38b7b92c57"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026eab489782ffba38b7b92c57"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516eab489782ffba38b7b92c57"
+        }
+      ],
+      "is_playable": true,
+      "name": "Tainted Lunch",
+      "release_date": "2019-11-01",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:1OayjjI9jcTkZuliqxYpzJ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1CWwXncu9sk7EIdbvqcquR"
+        },
+        "href": "https://api.spotify.com/v1/artists/1CWwXncu9sk7EIdbvqcquR",
+        "id": "1CWwXncu9sk7EIdbvqcquR",
+        "name": "Warmduscher",
+        "type": "artist",
+        "uri": "spotify:artist:1CWwXncu9sk7EIdbvqcquR"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 42762,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBCKB1911507"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2JB1Owf7Xj1YVzOXiaQawY"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2JB1Owf7Xj1YVzOXiaQawY",
+    "id": "2JB1Owf7Xj1YVzOXiaQawY",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Chimp",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:2JB1Owf7Xj1YVzOXiaQawY"
+  },
+  "[\"john coltrane quartet\",\"too young to go steady\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/67PZTxaHKMZBFRUh8wIzCy"
+          },
+          "href": "https://api.spotify.com/v1/artists/67PZTxaHKMZBFRUh8wIzCy",
+          "id": "67PZTxaHKMZBFRUh8wIzCy",
+          "name": "John Coltrane Quartet",
+          "type": "artist",
+          "uri": "spotify:artist:67PZTxaHKMZBFRUh8wIzCy"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0Ydakb7npXmyTwFLvKc5qt"
+      },
+      "href": "https://api.spotify.com/v1/albums/0Ydakb7npXmyTwFLvKc5qt",
+      "id": "0Ydakb7npXmyTwFLvKc5qt",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a3d4884d3433efed2c4a0563"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a3d4884d3433efed2c4a0563"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a3d4884d3433efed2c4a0563"
+        }
+      ],
+      "is_playable": true,
+      "name": "Ballads (Deluxe Edition - Rudy Van Gelder Remaster)",
+      "release_date": "1963",
+      "release_date_precision": "year",
+      "total_tracks": 22,
+      "type": "album",
+      "uri": "spotify:album:0Ydakb7npXmyTwFLvKc5qt"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/67PZTxaHKMZBFRUh8wIzCy"
+        },
+        "href": "https://api.spotify.com/v1/artists/67PZTxaHKMZBFRUh8wIzCy",
+        "id": "67PZTxaHKMZBFRUh8wIzCy",
+        "name": "John Coltrane Quartet",
+        "type": "artist",
+        "uri": "spotify:artist:67PZTxaHKMZBFRUh8wIzCy"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 259812,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMC16211161"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1qeO0T3LIqlUvrELz3Gngk"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1qeO0T3LIqlUvrELz3Gngk",
+    "id": "1qeO0T3LIqlUvrELz3Gngk",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Too Young To Go Steady",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:1qeO0T3LIqlUvrELz3Gngk"
+  },
+  "[\"bauhaus\",\"honeymoon croon\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5N5tQ9Dx1h8Od7aRmGj7Fi"
+          },
+          "href": "https://api.spotify.com/v1/artists/5N5tQ9Dx1h8Od7aRmGj7Fi",
+          "id": "5N5tQ9Dx1h8Od7aRmGj7Fi",
+          "name": "Bauhaus",
+          "type": "artist",
+          "uri": "spotify:artist:5N5tQ9Dx1h8Od7aRmGj7Fi"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7oaHUMs14oldwahz1WaVaR"
+      },
+      "href": "https://api.spotify.com/v1/albums/7oaHUMs14oldwahz1WaVaR",
+      "id": "7oaHUMs14oldwahz1WaVaR",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27342ae5adff53514870d55614b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0242ae5adff53514870d55614b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485142ae5adff53514870d55614b"
+        }
+      ],
+      "is_playable": true,
+      "name": "Burning from the Inside",
+      "release_date": "1983",
+      "release_date_precision": "year",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:7oaHUMs14oldwahz1WaVaR"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5N5tQ9Dx1h8Od7aRmGj7Fi"
+        },
+        "href": "https://api.spotify.com/v1/artists/5N5tQ9Dx1h8Od7aRmGj7Fi",
+        "id": "5N5tQ9Dx1h8Od7aRmGj7Fi",
+        "name": "Bauhaus",
+        "type": "artist",
+        "uri": "spotify:artist:5N5tQ9Dx1h8Od7aRmGj7Fi"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 175426,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAZP8300038"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5UbDd2NBwXMWigXPFqTT1K"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5UbDd2NBwXMWigXPFqTT1K",
+    "id": "5UbDd2NBwXMWigXPFqTT1K",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Honeymoon Croon",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:5UbDd2NBwXMWigXPFqTT1K"
+  },
+  "[\"earth, wind & fire\",\"september\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+          },
+          "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+          "id": "4QQgXkCYTt3BlENzhyNETg",
+          "name": "Earth, Wind & Fire",
+          "type": "artist",
+          "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/52sC6oWMYjYcxxqVmaZ1TN"
+      },
+      "href": "https://api.spotify.com/v1/albums/52sC6oWMYjYcxxqVmaZ1TN",
+      "id": "52sC6oWMYjYcxxqVmaZ1TN",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27302d3e2b3729135c22156bed0"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0202d3e2b3729135c22156bed0"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485102d3e2b3729135c22156bed0"
+        }
+      ],
+      "is_playable": true,
+      "name": "Greatest Hits",
+      "release_date": "1998-11-17",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:52sC6oWMYjYcxxqVmaZ1TN"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+        },
+        "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+        "id": "4QQgXkCYTt3BlENzhyNETg",
+        "name": "Earth, Wind & Fire",
+        "type": "artist",
+        "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 214866,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM17800845"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/748uyF14KEMCplV2CPAua7"
+    },
+    "href": "https://api.spotify.com/v1/tracks/748uyF14KEMCplV2CPAua7",
+    "id": "748uyF14KEMCplV2CPAua7",
+    "is_local": false,
+    "is_playable": true,
+    "name": "September",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:748uyF14KEMCplV2CPAua7"
+  },
+  "[\"thelonious monk\",\"i surrender dear\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4PDpGtF16XpqvXxsrFwQnN"
+          },
+          "href": "https://api.spotify.com/v1/artists/4PDpGtF16XpqvXxsrFwQnN",
+          "id": "4PDpGtF16XpqvXxsrFwQnN",
+          "name": "Thelonious Monk",
+          "type": "artist",
+          "uri": "spotify:artist:4PDpGtF16XpqvXxsrFwQnN"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4Bxg4OFb2wA6IjoeuWilRF"
+      },
+      "href": "https://api.spotify.com/v1/albums/4Bxg4OFb2wA6IjoeuWilRF",
+      "id": "4Bxg4OFb2wA6IjoeuWilRF",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bd7d4673627a7674f0103c1d"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bd7d4673627a7674f0103c1d"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bd7d4673627a7674f0103c1d"
+        }
+      ],
+      "is_playable": true,
+      "name": "Solo Monk (Expanded Edition)",
+      "release_date": "1964",
+      "release_date_precision": "year",
+      "total_tracks": 21,
+      "type": "album",
+      "uri": "spotify:album:4Bxg4OFb2wA6IjoeuWilRF"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4PDpGtF16XpqvXxsrFwQnN"
+        },
+        "href": "https://api.spotify.com/v1/artists/4PDpGtF16XpqvXxsrFwQnN",
+        "id": "4PDpGtF16XpqvXxsrFwQnN",
+        "name": "Thelonious Monk",
+        "type": "artist",
+        "uri": "spotify:artist:4PDpGtF16XpqvXxsrFwQnN"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 225266,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM10306590"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3zhTCpKwIqdQMmmFg7Bnrf"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3zhTCpKwIqdQMmmFg7Bnrf",
+    "id": "3zhTCpKwIqdQMmmFg7Bnrf",
+    "is_local": false,
+    "is_playable": true,
+    "name": "I Surrender, Dear",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:3zhTCpKwIqdQMmmFg7Bnrf"
+  },
+  "[\"the damned\",\"is it a dream\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6VeL8VhaMjHTPc5uovFl3h"
+          },
+          "href": "https://api.spotify.com/v1/artists/6VeL8VhaMjHTPc5uovFl3h",
+          "id": "6VeL8VhaMjHTPc5uovFl3h",
+          "name": "The Damned",
+          "type": "artist",
+          "uri": "spotify:artist:6VeL8VhaMjHTPc5uovFl3h"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1uLToBhDc3RDVXJhhZ0yK2"
+      },
+      "href": "https://api.spotify.com/v1/albums/1uLToBhDc3RDVXJhhZ0yK2",
+      "id": "1uLToBhDc3RDVXJhhZ0yK2",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273296cd297c2de2fefefe188d7"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02296cd297c2de2fefefe188d7"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851296cd297c2de2fefefe188d7"
+        }
+      ],
+      "is_playable": true,
+      "name": "Phantasmagoria",
+      "release_date": "1985-07-01",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:1uLToBhDc3RDVXJhhZ0yK2"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6VeL8VhaMjHTPc5uovFl3h"
+        },
+        "href": "https://api.spotify.com/v1/artists/6VeL8VhaMjHTPc5uovFl3h",
+        "id": "6VeL8VhaMjHTPc5uovFl3h",
+        "name": "The Damned",
+        "type": "artist",
+        "uri": "spotify:artist:6VeL8VhaMjHTPc5uovFl3h"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 207000,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBBBY0300041"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0jjguESh57YRMKJvuIXIDL"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0jjguESh57YRMKJvuIXIDL",
+    "id": "0jjguESh57YRMKJvuIXIDL",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Is It A Dream",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:0jjguESh57YRMKJvuIXIDL"
+  },
+  "[\"jethro tull\",\"we used to know\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6w6z8m4WXX7Tub4Rb6Lu7R"
+          },
+          "href": "https://api.spotify.com/v1/artists/6w6z8m4WXX7Tub4Rb6Lu7R",
+          "id": "6w6z8m4WXX7Tub4Rb6Lu7R",
+          "name": "Jethro Tull",
+          "type": "artist",
+          "uri": "spotify:artist:6w6z8m4WXX7Tub4Rb6Lu7R"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7kHvpj74cgrJuJ2K6E0mUm"
+      },
+      "href": "https://api.spotify.com/v1/albums/7kHvpj74cgrJuJ2K6E0mUm",
+      "id": "7kHvpj74cgrJuJ2K6E0mUm",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27301760906028d3ea549f10a8c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0201760906028d3ea549f10a8c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485101760906028d3ea549f10a8c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Stand Up",
+      "release_date": "1969-08-01",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:7kHvpj74cgrJuJ2K6E0mUm"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6w6z8m4WXX7Tub4Rb6Lu7R"
+        },
+        "href": "https://api.spotify.com/v1/artists/6w6z8m4WXX7Tub4Rb6Lu7R",
+        "id": "6w6z8m4WXX7Tub4Rb6Lu7R",
+        "name": "Jethro Tull",
+        "type": "artist",
+        "uri": "spotify:artist:6w6z8m4WXX7Tub4Rb6Lu7R"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 243373,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAYK0100145"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5bSSkaqVo0qsOmtYOcPpp3"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5bSSkaqVo0qsOmtYOcPpp3",
+    "id": "5bSSkaqVo0qsOmtYOcPpp3",
+    "is_local": false,
+    "is_playable": true,
+    "name": "We Used to Know",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:5bSSkaqVo0qsOmtYOcPpp3"
+  },
+  "[\"john coltrane quartet\",\"all or nothing at all\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/67PZTxaHKMZBFRUh8wIzCy"
+          },
+          "href": "https://api.spotify.com/v1/artists/67PZTxaHKMZBFRUh8wIzCy",
+          "id": "67PZTxaHKMZBFRUh8wIzCy",
+          "name": "John Coltrane Quartet",
+          "type": "artist",
+          "uri": "spotify:artist:67PZTxaHKMZBFRUh8wIzCy"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0Ydakb7npXmyTwFLvKc5qt"
+      },
+      "href": "https://api.spotify.com/v1/albums/0Ydakb7npXmyTwFLvKc5qt",
+      "id": "0Ydakb7npXmyTwFLvKc5qt",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a3d4884d3433efed2c4a0563"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a3d4884d3433efed2c4a0563"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a3d4884d3433efed2c4a0563"
+        }
+      ],
+      "is_playable": true,
+      "name": "Ballads (Deluxe Edition - Rudy Van Gelder Remaster)",
+      "release_date": "1963",
+      "release_date_precision": "year",
+      "total_tracks": 22,
+      "type": "album",
+      "uri": "spotify:album:0Ydakb7npXmyTwFLvKc5qt"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/67PZTxaHKMZBFRUh8wIzCy"
+        },
+        "href": "https://api.spotify.com/v1/artists/67PZTxaHKMZBFRUh8wIzCy",
+        "id": "67PZTxaHKMZBFRUh8wIzCy",
+        "name": "John Coltrane Quartet",
+        "type": "artist",
+        "uri": "spotify:artist:67PZTxaHKMZBFRUh8wIzCy"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 215040,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMC16253798"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/34awem0NGNdHpLkTt3t1vI"
+    },
+    "href": "https://api.spotify.com/v1/tracks/34awem0NGNdHpLkTt3t1vI",
+    "id": "34awem0NGNdHpLkTt3t1vI",
+    "is_local": false,
+    "is_playable": true,
+    "name": "All Or Nothing At All",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:34awem0NGNdHpLkTt3t1vI"
+  },
+  "[\"neil young\",\"heart of gold\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6v8FB84lnmJs434UJf2Mrm"
+          },
+          "href": "https://api.spotify.com/v1/artists/6v8FB84lnmJs434UJf2Mrm",
+          "id": "6v8FB84lnmJs434UJf2Mrm",
+          "name": "Neil Young",
+          "type": "artist",
+          "uri": "spotify:artist:6v8FB84lnmJs434UJf2Mrm"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2LOpi63tYGh0Suy8eLJDVQ"
+      },
+      "href": "https://api.spotify.com/v1/albums/2LOpi63tYGh0Suy8eLJDVQ",
+      "id": "2LOpi63tYGh0Suy8eLJDVQ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273dd19d44cf651a37e3532a945"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02dd19d44cf651a37e3532a945"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851dd19d44cf651a37e3532a945"
+        }
+      ],
+      "is_playable": true,
+      "name": "Harvest (50th Anniversary Edition)",
+      "release_date": "1972-02-01",
+      "release_date_precision": "day",
+      "total_tracks": 27,
+      "type": "album",
+      "uri": "spotify:album:2LOpi63tYGh0Suy8eLJDVQ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6v8FB84lnmJs434UJf2Mrm"
+        },
+        "href": "https://api.spotify.com/v1/artists/6v8FB84lnmJs434UJf2Mrm",
+        "id": "6v8FB84lnmJs434UJf2Mrm",
+        "name": "Neil Young",
+        "type": "artist",
+        "uri": "spotify:artist:6v8FB84lnmJs434UJf2Mrm"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 187110,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRE12200586"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/26QKxvjlCo2fSd3T4c8Zpb"
+    },
+    "href": "https://api.spotify.com/v1/tracks/26QKxvjlCo2fSd3T4c8Zpb",
+    "id": "26QKxvjlCo2fSd3T4c8Zpb",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Heart of Gold",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:26QKxvjlCo2fSd3T4c8Zpb"
+  },
+  "[\"eric b. & rakim\",\"my melody\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6jHG1YQkqgojdEzerwvrVv"
+          },
+          "href": "https://api.spotify.com/v1/artists/6jHG1YQkqgojdEzerwvrVv",
+          "id": "6jHG1YQkqgojdEzerwvrVv",
+          "name": "Eric B. & Rakim",
+          "type": "artist",
+          "uri": "spotify:artist:6jHG1YQkqgojdEzerwvrVv"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3miZDfDnP7SmOXAJXWdFmz"
+      },
+      "href": "https://api.spotify.com/v1/albums/3miZDfDnP7SmOXAJXWdFmz",
+      "id": "3miZDfDnP7SmOXAJXWdFmz",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d9a71c225d94b8cb6638bb91"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d9a71c225d94b8cb6638bb91"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d9a71c225d94b8cb6638bb91"
+        }
+      ],
+      "is_playable": true,
+      "name": "Paid In Full",
+      "release_date": "1987-07-07",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:3miZDfDnP7SmOXAJXWdFmz"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6jHG1YQkqgojdEzerwvrVv"
+        },
+        "href": "https://api.spotify.com/v1/artists/6jHG1YQkqgojdEzerwvrVv",
+        "id": "6jHG1YQkqgojdEzerwvrVv",
+        "name": "Eric B. & Rakim",
+        "type": "artist",
+        "uri": "spotify:artist:6jHG1YQkqgojdEzerwvrVv"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0AqfGv5Nifg1klh0iH4Nqs"
+        },
+        "href": "https://api.spotify.com/v1/artists/0AqfGv5Nifg1klh0iH4Nqs",
+        "id": "0AqfGv5Nifg1klh0iH4Nqs",
+        "name": "Marley Marl",
+        "type": "artist",
+        "uri": "spotify:artist:0AqfGv5Nifg1klh0iH4Nqs"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 407133,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USIR28600373"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7FWaqDbIq3OGZsC04CfuV9"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7FWaqDbIq3OGZsC04CfuV9",
+    "id": "7FWaqDbIq3OGZsC04CfuV9",
+    "is_local": false,
+    "is_playable": true,
+    "name": "My Melody",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:7FWaqDbIq3OGZsC04CfuV9"
+  },
+  "[\"wayne shorter\",\"wild flower\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0ZqhrTXYPA9DZR527ZnFdO"
+          },
+          "href": "https://api.spotify.com/v1/artists/0ZqhrTXYPA9DZR527ZnFdO",
+          "id": "0ZqhrTXYPA9DZR527ZnFdO",
+          "name": "Wayne Shorter",
+          "type": "artist",
+          "uri": "spotify:artist:0ZqhrTXYPA9DZR527ZnFdO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/27Rl7A8jXEQOkIfUKOa6ZU"
+      },
+      "href": "https://api.spotify.com/v1/albums/27Rl7A8jXEQOkIfUKOa6ZU",
+      "id": "27Rl7A8jXEQOkIfUKOa6ZU",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bdd696feff94e70314535022"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bdd696feff94e70314535022"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bdd696feff94e70314535022"
+        }
+      ],
+      "is_playable": true,
+      "name": "Speak No Evil (The Rudy Van Gelder Edition)",
+      "release_date": "1966-06-01",
+      "release_date_precision": "day",
+      "total_tracks": 7,
+      "type": "album",
+      "uri": "spotify:album:27Rl7A8jXEQOkIfUKOa6ZU"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0ZqhrTXYPA9DZR527ZnFdO"
+        },
+        "href": "https://api.spotify.com/v1/artists/0ZqhrTXYPA9DZR527ZnFdO",
+        "id": "0ZqhrTXYPA9DZR527ZnFdO",
+        "name": "Wayne Shorter",
+        "type": "artist",
+        "uri": "spotify:artist:0ZqhrTXYPA9DZR527ZnFdO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 366973,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USBN29801014"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6tadSGrUKQXnYRusoqtNx0"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6tadSGrUKQXnYRusoqtNx0",
+    "id": "6tadSGrUKQXnYRusoqtNx0",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Wild Flower - Remastered1998/Rudy Van Gelder Edition",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:6tadSGrUKQXnYRusoqtNx0"
+  },
+  "[\"strawberry switchblade\",\"trees and flowers - extended mix\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4z5NjzIMyaQC4dPxxzxF6e"
+          },
+          "href": "https://api.spotify.com/v1/artists/4z5NjzIMyaQC4dPxxzxF6e",
+          "id": "4z5NjzIMyaQC4dPxxzxF6e",
+          "name": "Strawberry Switchblade",
+          "type": "artist",
+          "uri": "spotify:artist:4z5NjzIMyaQC4dPxxzxF6e"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6ypn6HP6UuJCBSGRRCQLd6"
+      },
+      "href": "https://api.spotify.com/v1/albums/6ypn6HP6UuJCBSGRRCQLd6",
+      "id": "6ypn6HP6UuJCBSGRRCQLd6",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273cd52ae379c71f1859c599b8c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02cd52ae379c71f1859c599b8c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851cd52ae379c71f1859c599b8c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Strawberry Switchblade",
+      "release_date": "1985-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 20,
+      "type": "album",
+      "uri": "spotify:album:6ypn6HP6UuJCBSGRRCQLd6"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4z5NjzIMyaQC4dPxxzxF6e"
+        },
+        "href": "https://api.spotify.com/v1/artists/4z5NjzIMyaQC4dPxxzxF6e",
+        "id": "4z5NjzIMyaQC4dPxxzxF6e",
+        "name": "Strawberry Switchblade",
+        "type": "artist",
+        "uri": "spotify:artist:4z5NjzIMyaQC4dPxxzxF6e"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 402293,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAHT0200089"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5mfVFjhICWH1HM8SO0Q4WV"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5mfVFjhICWH1HM8SO0Q4WV",
+    "id": "5mfVFjhICWH1HM8SO0Q4WV",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Trees and Flowers - Extended Mix",
+    "track_number": 17,
+    "type": "track",
+    "uri": "spotify:track:5mfVFjhICWH1HM8SO0Q4WV"
+  },
+  "[\"alfa mist\",\"brian\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2i1CPudyCUjL50Wqjv8AMI"
+          },
+          "href": "https://api.spotify.com/v1/artists/2i1CPudyCUjL50Wqjv8AMI",
+          "id": "2i1CPudyCUjL50Wqjv8AMI",
+          "name": "Alfa Mist",
+          "type": "artist",
+          "uri": "spotify:artist:2i1CPudyCUjL50Wqjv8AMI"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3joOXpEsCgg8oS1Tba7neT"
+      },
+      "href": "https://api.spotify.com/v1/albums/3joOXpEsCgg8oS1Tba7neT",
+      "id": "3joOXpEsCgg8oS1Tba7neT",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2735d46b069ef33382b235b296a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e025d46b069ef33382b235b296a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048515d46b069ef33382b235b296a"
+        }
+      ],
+      "is_playable": true,
+      "name": "Antiphon",
+      "release_date": "2017-03-03",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:3joOXpEsCgg8oS1Tba7neT"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2i1CPudyCUjL50Wqjv8AMI"
+        },
+        "href": "https://api.spotify.com/v1/artists/2i1CPudyCUjL50Wqjv8AMI",
+        "id": "2i1CPudyCUjL50Wqjv8AMI",
+        "name": "Alfa Mist",
+        "type": "artist",
+        "uri": "spotify:artist:2i1CPudyCUjL50Wqjv8AMI"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 154866,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCGH1770631"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3ejqlgVNAYr7PWuBSXl4K2"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3ejqlgVNAYr7PWuBSXl4K2",
+    "id": "3ejqlgVNAYr7PWuBSXl4K2",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Brian",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:3ejqlgVNAYr7PWuBSXl4K2"
+  },
+  "[\"badbadnotgood\",\"speaking gently\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/65dGLGjkw3UbddUg2GKQoZ"
+          },
+          "href": "https://api.spotify.com/v1/artists/65dGLGjkw3UbddUg2GKQoZ",
+          "id": "65dGLGjkw3UbddUg2GKQoZ",
+          "name": "BADBADNOTGOOD",
+          "type": "artist",
+          "uri": "spotify:artist:65dGLGjkw3UbddUg2GKQoZ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5wAGlQICfKYQfaBppnUbmP"
+      },
+      "href": "https://api.spotify.com/v1/albums/5wAGlQICfKYQfaBppnUbmP",
+      "id": "5wAGlQICfKYQfaBppnUbmP",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27340080ed5a2ec3c92bf445247"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0240080ed5a2ec3c92bf445247"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485140080ed5a2ec3c92bf445247"
+        }
+      ],
+      "is_playable": true,
+      "name": "IV",
+      "release_date": "2016-07-08",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:5wAGlQICfKYQfaBppnUbmP"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/65dGLGjkw3UbddUg2GKQoZ"
+        },
+        "href": "https://api.spotify.com/v1/artists/65dGLGjkw3UbddUg2GKQoZ",
+        "id": "65dGLGjkw3UbddUg2GKQoZ",
+        "name": "BADBADNOTGOOD",
+        "type": "artist",
+        "uri": "spotify:artist:65dGLGjkw3UbddUg2GKQoZ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 247839,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USD8D1634002"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4B61IBnoLZOUO3RWRVzUJ1"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4B61IBnoLZOUO3RWRVzUJ1",
+    "id": "4B61IBnoLZOUO3RWRVzUJ1",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Speaking Gently",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:4B61IBnoLZOUO3RWRVzUJ1"
+  },
+  "[\"siouxsie and the banshees\",\"desert kisses\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1n65zfwYIj5kKEtNgxUlWb"
+          },
+          "href": "https://api.spotify.com/v1/artists/1n65zfwYIj5kKEtNgxUlWb",
+          "id": "1n65zfwYIj5kKEtNgxUlWb",
+          "name": "Siouxsie and the Banshees",
+          "type": "artist",
+          "uri": "spotify:artist:1n65zfwYIj5kKEtNgxUlWb"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5jynqY8ZyDoeqrIfYSwF8P"
+      },
+      "href": "https://api.spotify.com/v1/albums/5jynqY8ZyDoeqrIfYSwF8P",
+      "id": "5jynqY8ZyDoeqrIfYSwF8P",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27304272eb83a6af47cc14ccf76"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0204272eb83a6af47cc14ccf76"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485104272eb83a6af47cc14ccf76"
+        }
+      ],
+      "is_playable": true,
+      "name": "Kaleidoscope (Remastered & Expanded)",
+      "release_date": "1980-08-01",
+      "release_date_precision": "day",
+      "total_tracks": 20,
+      "type": "album",
+      "uri": "spotify:album:5jynqY8ZyDoeqrIfYSwF8P"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1n65zfwYIj5kKEtNgxUlWb"
+        },
+        "href": "https://api.spotify.com/v1/artists/1n65zfwYIj5kKEtNgxUlWb",
+        "id": "1n65zfwYIj5kKEtNgxUlWb",
+        "name": "Siouxsie and the Banshees",
+        "type": "artist",
+        "uri": "spotify:artist:1n65zfwYIj5kKEtNgxUlWb"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 254733,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBF068025090"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4omtbo3g8ctec377xpmzhy"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4omtbo3g8ctec377xpmzhy",
+    "id": "4omtbo3g8ctec377xpmzhy",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Desert Kisses",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:4omtbo3g8ctec377xpmzhy"
+  },
+  "[\"earth, wind & fire\",\"sing a song\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+          },
+          "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+          "id": "4QQgXkCYTt3BlENzhyNETg",
+          "name": "Earth, Wind & Fire",
+          "type": "artist",
+          "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7AqOsJkpKZdkiap6CmIJ3Z"
+      },
+      "href": "https://api.spotify.com/v1/albums/7AqOsJkpKZdkiap6CmIJ3Z",
+      "id": "7AqOsJkpKZdkiap6CmIJ3Z",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2733198748d60857d3248fbb6ba"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e023198748d60857d3248fbb6ba"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048513198748d60857d3248fbb6ba"
+        }
+      ],
+      "is_playable": true,
+      "name": "Gratitude",
+      "release_date": "1975-11-11",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:7AqOsJkpKZdkiap6CmIJ3Z"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+        },
+        "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+        "id": "4QQgXkCYTt3BlENzhyNETg",
+        "name": "Earth, Wind & Fire",
+        "type": "artist",
+        "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 201911,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM17500611"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5W5FVsgGCe3T9nIMkiXqNo"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5W5FVsgGCe3T9nIMkiXqNo",
+    "id": "5W5FVsgGCe3T9nIMkiXqNo",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sing a Song",
+    "track_number": 12,
+    "type": "track",
+    "uri": "spotify:track:5W5FVsgGCe3T9nIMkiXqNo"
+  },
+  "[\"siouxsie and the banshees\",\"pointing bone\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1n65zfwYIj5kKEtNgxUlWb"
+          },
+          "href": "https://api.spotify.com/v1/artists/1n65zfwYIj5kKEtNgxUlWb",
+          "id": "1n65zfwYIj5kKEtNgxUlWb",
+          "name": "Siouxsie and the Banshees",
+          "type": "artist",
+          "uri": "spotify:artist:1n65zfwYIj5kKEtNgxUlWb"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0PF97T9K2E95PV4AbICNjr"
+      },
+      "href": "https://api.spotify.com/v1/albums/0PF97T9K2E95PV4AbICNjr",
+      "id": "0PF97T9K2E95PV4AbICNjr",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27398a9b4da7c5cdf6210c36258"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0298a9b4da7c5cdf6210c36258"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485198a9b4da7c5cdf6210c36258"
+        }
+      ],
+      "is_playable": true,
+      "name": "Hyaena (Remastered And Expanded)",
+      "release_date": "1984-06-08",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:0PF97T9K2E95PV4AbICNjr"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1n65zfwYIj5kKEtNgxUlWb"
+        },
+        "href": "https://api.spotify.com/v1/artists/1n65zfwYIj5kKEtNgxUlWb",
+        "id": "1n65zfwYIj5kKEtNgxUlWb",
+        "name": "Siouxsie and the Banshees",
+        "type": "artist",
+        "uri": "spotify:artist:1n65zfwYIj5kKEtNgxUlWb"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 229106,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBF068400170"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0vdDBWOLNSFFLAqcA0ZF96"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0vdDBWOLNSFFLAqcA0ZF96",
+    "id": "0vdDBWOLNSFFLAqcA0ZF96",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Pointing Bone",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:0vdDBWOLNSFFLAqcA0ZF96"
+  },
+  "[\"janelle monáe\",\"make me feel\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6ueGR6SWhUJfvEhqkvMsVs"
+          },
+          "href": "https://api.spotify.com/v1/artists/6ueGR6SWhUJfvEhqkvMsVs",
+          "id": "6ueGR6SWhUJfvEhqkvMsVs",
+          "name": "Janelle Monáe",
+          "type": "artist",
+          "uri": "spotify:artist:6ueGR6SWhUJfvEhqkvMsVs"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1GQur7dDvAWhKT9u9YwBJZ"
+          },
+          "href": "https://api.spotify.com/v1/artists/1GQur7dDvAWhKT9u9YwBJZ",
+          "id": "1GQur7dDvAWhKT9u9YwBJZ",
+          "name": "Seun Kuti",
+          "type": "artist",
+          "uri": "spotify:artist:1GQur7dDvAWhKT9u9YwBJZ"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6L71LxY17w8Yzh1zUphpiW"
+          },
+          "href": "https://api.spotify.com/v1/artists/6L71LxY17w8Yzh1zUphpiW",
+          "id": "6L71LxY17w8Yzh1zUphpiW",
+          "name": "Egypt 80",
+          "type": "artist",
+          "uri": "spotify:artist:6L71LxY17w8Yzh1zUphpiW"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5NEE5X6PJ8N5LEskKm2Wkc"
+      },
+      "href": "https://api.spotify.com/v1/albums/5NEE5X6PJ8N5LEskKm2Wkc",
+      "id": "5NEE5X6PJ8N5LEskKm2Wkc",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273733072500066367c80bcb574"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02733072500066367c80bcb574"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851733072500066367c80bcb574"
+        }
+      ],
+      "is_playable": true,
+      "name": "Float (feat. Seun Kuti & Egypt 80)",
+      "release_date": "2023-03-13",
+      "release_date_precision": "day",
+      "total_tracks": 6,
+      "type": "album",
+      "uri": "spotify:album:5NEE5X6PJ8N5LEskKm2Wkc"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6ueGR6SWhUJfvEhqkvMsVs"
+        },
+        "href": "https://api.spotify.com/v1/artists/6ueGR6SWhUJfvEhqkvMsVs",
+        "id": "6ueGR6SWhUJfvEhqkvMsVs",
+        "name": "Janelle Monáe",
+        "type": "artist",
+        "uri": "spotify:artist:6ueGR6SWhUJfvEhqkvMsVs"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 194230,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USAT21800745"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7uIVAcPdoETc0LRgKyVjVZ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7uIVAcPdoETc0LRgKyVjVZ",
+    "id": "7uIVAcPdoETc0LRgKyVjVZ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Make Me Feel",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:7uIVAcPdoETc0LRgKyVjVZ"
+  },
+  "[\"thelonious monk\",\"monk's point\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4PDpGtF16XpqvXxsrFwQnN"
+          },
+          "href": "https://api.spotify.com/v1/artists/4PDpGtF16XpqvXxsrFwQnN",
+          "id": "4PDpGtF16XpqvXxsrFwQnN",
+          "name": "Thelonious Monk",
+          "type": "artist",
+          "uri": "spotify:artist:4PDpGtF16XpqvXxsrFwQnN"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4Bxg4OFb2wA6IjoeuWilRF"
+      },
+      "href": "https://api.spotify.com/v1/albums/4Bxg4OFb2wA6IjoeuWilRF",
+      "id": "4Bxg4OFb2wA6IjoeuWilRF",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bd7d4673627a7674f0103c1d"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bd7d4673627a7674f0103c1d"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bd7d4673627a7674f0103c1d"
+        }
+      ],
+      "is_playable": true,
+      "name": "Solo Monk (Expanded Edition)",
+      "release_date": "1964",
+      "release_date_precision": "year",
+      "total_tracks": 21,
+      "type": "album",
+      "uri": "spotify:album:4Bxg4OFb2wA6IjoeuWilRF"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4PDpGtF16XpqvXxsrFwQnN"
+        },
+        "href": "https://api.spotify.com/v1/artists/4PDpGtF16XpqvXxsrFwQnN",
+        "id": "4PDpGtF16XpqvXxsrFwQnN",
+        "name": "Thelonious Monk",
+        "type": "artist",
+        "uri": "spotify:artist:4PDpGtF16XpqvXxsrFwQnN"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 137866,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM10306597"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4yaXmRVOjJP2pS0yycxcVO"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4yaXmRVOjJP2pS0yycxcVO",
+    "id": "4yaXmRVOjJP2pS0yycxcVO",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Monk's Point",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:4yaXmRVOjJP2pS0yycxcVO"
+  },
+  "[\"queen\",\"'39 - remastered 2011\"]": null,
+  "[\"jools tv\",\"shapes song\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7ssReBmPT2Ls9U8lAHTSJN"
+          },
+          "href": "https://api.spotify.com/v1/artists/7ssReBmPT2Ls9U8lAHTSJN",
+          "id": "7ssReBmPT2Ls9U8lAHTSJN",
+          "name": "Jools TV",
+          "type": "artist",
+          "uri": "spotify:artist:7ssReBmPT2Ls9U8lAHTSJN"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6VObnYkmbHc6rgM64QFNg4"
+      },
+      "href": "https://api.spotify.com/v1/albums/6VObnYkmbHc6rgM64QFNg4",
+      "id": "6VObnYkmbHc6rgM64QFNg4",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27382a9d06d304fa32dcbab77de"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0282a9d06d304fa32dcbab77de"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485182a9d06d304fa32dcbab77de"
+        }
+      ],
+      "is_playable": true,
+      "name": "Shapes Song",
+      "release_date": "2024-01-25",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:6VObnYkmbHc6rgM64QFNg4"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7ssReBmPT2Ls9U8lAHTSJN"
+        },
+        "href": "https://api.spotify.com/v1/artists/7ssReBmPT2Ls9U8lAHTSJN",
+        "id": "7ssReBmPT2Ls9U8lAHTSJN",
+        "name": "Jools TV",
+        "type": "artist",
+        "uri": "spotify:artist:7ssReBmPT2Ls9U8lAHTSJN"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 163916,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QZFZ62473853"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6Wngc5yIuzpZMMvYtICxNy"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6Wngc5yIuzpZMMvYtICxNy",
+    "id": "6Wngc5yIuzpZMMvYtICxNy",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Shapes Song",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6Wngc5yIuzpZMMvYtICxNy"
+  },
+  "[\"afroman\",\"12 j's of x-mas\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4Icvbp9RDt5aY2TWDOVDsr"
+          },
+          "href": "https://api.spotify.com/v1/artists/4Icvbp9RDt5aY2TWDOVDsr",
+          "id": "4Icvbp9RDt5aY2TWDOVDsr",
+          "name": "Afroman",
+          "type": "artist",
+          "uri": "spotify:artist:4Icvbp9RDt5aY2TWDOVDsr"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/76bwyNf9AF51RC0rAjHHOI"
+      },
+      "href": "https://api.spotify.com/v1/albums/76bwyNf9AF51RC0rAjHHOI",
+      "id": "76bwyNf9AF51RC0rAjHHOI",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27355bb1044761f801ec92adffb"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0255bb1044761f801ec92adffb"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485155bb1044761f801ec92adffb"
+        }
+      ],
+      "is_playable": true,
+      "name": "A Colt 45 Christmas",
+      "release_date": "2006",
+      "release_date_precision": "year",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:76bwyNf9AF51RC0rAjHHOI"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4Icvbp9RDt5aY2TWDOVDsr"
+        },
+        "href": "https://api.spotify.com/v1/artists/4Icvbp9RDt5aY2TWDOVDsr",
+        "id": "4Icvbp9RDt5aY2TWDOVDsr",
+        "name": "Afroman",
+        "type": "artist",
+        "uri": "spotify:artist:4Icvbp9RDt5aY2TWDOVDsr"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 138120,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USME30801358"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2DnvWlFTuYkgdOUTOHI2HN"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2DnvWlFTuYkgdOUTOHI2HN",
+    "id": "2DnvWlFTuYkgdOUTOHI2HN",
+    "is_local": false,
+    "is_playable": true,
+    "name": "12 J's of X-Mas",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:2DnvWlFTuYkgdOUTOHI2HN"
+  },
+  "[\"watsky\",\"send in the sun\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3mJ9GlkLzj8Ka7Z7EQaCMi"
+          },
+          "href": "https://api.spotify.com/v1/artists/3mJ9GlkLzj8Ka7Z7EQaCMi",
+          "id": "3mJ9GlkLzj8Ka7Z7EQaCMi",
+          "name": "Watsky",
+          "type": "artist",
+          "uri": "spotify:artist:3mJ9GlkLzj8Ka7Z7EQaCMi"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0DgsDOuUx1092GFDemIzYb"
+      },
+      "href": "https://api.spotify.com/v1/albums/0DgsDOuUx1092GFDemIzYb",
+      "id": "0DgsDOuUx1092GFDemIzYb",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27377763526db121b0eb18b2eb3"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0277763526db121b0eb18b2eb3"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485177763526db121b0eb18b2eb3"
+        }
+      ],
+      "is_playable": true,
+      "name": "Cardboard Castles",
+      "release_date": "2013-03-12",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:0DgsDOuUx1092GFDemIzYb"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3mJ9GlkLzj8Ka7Z7EQaCMi"
+        },
+        "href": "https://api.spotify.com/v1/artists/3mJ9GlkLzj8Ka7Z7EQaCMi",
+        "id": "3mJ9GlkLzj8Ka7Z7EQaCMi",
+        "name": "Watsky",
+        "type": "artist",
+        "uri": "spotify:artist:3mJ9GlkLzj8Ka7Z7EQaCMi"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 263573,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USJPQ1300016"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1zMdwQJOe7Rz0vIMbgKhjG"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1zMdwQJOe7Rz0vIMbgKhjG",
+    "id": "1zMdwQJOe7Rz0vIMbgKhjG",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Send in the Sun",
+    "track_number": 16,
+    "type": "track",
+    "uri": "spotify:track:1zMdwQJOe7Rz0vIMbgKhjG"
+  },
+  "[\"snarky puppy\",\"lingus\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7ENzCHnmJUr20nUjoZ0zZ1"
+          },
+          "href": "https://api.spotify.com/v1/artists/7ENzCHnmJUr20nUjoZ0zZ1",
+          "id": "7ENzCHnmJUr20nUjoZ0zZ1",
+          "name": "Snarky Puppy",
+          "type": "artist",
+          "uri": "spotify:artist:7ENzCHnmJUr20nUjoZ0zZ1"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4GzjQ0xXRlLl78ih481BUi"
+      },
+      "href": "https://api.spotify.com/v1/albums/4GzjQ0xXRlLl78ih481BUi",
+      "id": "4GzjQ0xXRlLl78ih481BUi",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a29d1ada28cf3d9d5fe1972d"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a29d1ada28cf3d9d5fe1972d"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a29d1ada28cf3d9d5fe1972d"
+        }
+      ],
+      "is_playable": true,
+      "name": "We Like It Here",
+      "release_date": "2014-02-25",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:4GzjQ0xXRlLl78ih481BUi"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7ENzCHnmJUr20nUjoZ0zZ1"
+        },
+        "href": "https://api.spotify.com/v1/artists/7ENzCHnmJUr20nUjoZ0zZ1",
+        "id": "7ENzCHnmJUr20nUjoZ0zZ1",
+        "name": "Snarky Puppy",
+        "type": "artist",
+        "uri": "spotify:artist:7ENzCHnmJUr20nUjoZ0zZ1"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 645720,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US8JA1411008"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/68d6ZfyMUYURol2y15Ta2Y"
+    },
+    "href": "https://api.spotify.com/v1/tracks/68d6ZfyMUYURol2y15Ta2Y",
+    "id": "68d6ZfyMUYURol2y15Ta2Y",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lingus",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:68d6ZfyMUYURol2y15Ta2Y"
+  },
+  "[\"danny baranowsky\",\"in the beginning...\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2CivYlBeDSjMj9Azw9cIHB"
+          },
+          "href": "https://api.spotify.com/v1/artists/2CivYlBeDSjMj9Azw9cIHB",
+          "id": "2CivYlBeDSjMj9Azw9cIHB",
+          "name": "Danny Baranowsky",
+          "type": "artist",
+          "uri": "spotify:artist:2CivYlBeDSjMj9Azw9cIHB"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5qmkhxRuUmLSxlQ9MIrAM4"
+      },
+      "href": "https://api.spotify.com/v1/albums/5qmkhxRuUmLSxlQ9MIrAM4",
+      "id": "5qmkhxRuUmLSxlQ9MIrAM4",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bc54105bb8c3d6be346afd36"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bc54105bb8c3d6be346afd36"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bc54105bb8c3d6be346afd36"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Binding of Isaac",
+      "release_date": "2011-09-28",
+      "release_date_precision": "day",
+      "total_tracks": 40,
+      "type": "album",
+      "uri": "spotify:album:5qmkhxRuUmLSxlQ9MIrAM4"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2CivYlBeDSjMj9Azw9cIHB"
+        },
+        "href": "https://api.spotify.com/v1/artists/2CivYlBeDSjMj9Azw9cIHB",
+        "id": "2CivYlBeDSjMj9Azw9cIHB",
+        "name": "Danny Baranowsky",
+        "type": "artist",
+        "uri": "spotify:artist:2CivYlBeDSjMj9Azw9cIHB"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 141150,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "TCABR1346000"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/20tZuYVLINZhwAIysv82wO"
+    },
+    "href": "https://api.spotify.com/v1/tracks/20tZuYVLINZhwAIysv82wO",
+    "id": "20tZuYVLINZhwAIysv82wO",
+    "is_local": false,
+    "is_playable": true,
+    "name": "In the Beginning...",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:20tZuYVLINZhwAIysv82wO"
   }
 }
