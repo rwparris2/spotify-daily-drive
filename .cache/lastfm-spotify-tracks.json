@@ -227451,5 +227451,1681 @@
     "track_number": 8,
     "type": "track",
     "uri": "spotify:track:2egC7Ka3dFfREP6P0VJprQ"
+  },
+  "[\"yussef dayes\",\"raisins under the sun (feat. shabaka hutchings)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2rspptKP0lPBdlJJAJHqht"
+          },
+          "href": "https://api.spotify.com/v1/artists/2rspptKP0lPBdlJJAJHqht",
+          "id": "2rspptKP0lPBdlJJAJHqht",
+          "name": "Yussef Dayes",
+          "type": "artist",
+          "uri": "spotify:artist:2rspptKP0lPBdlJJAJHqht"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5uw3ZBsmxonVJGmocj8EET"
+      },
+      "href": "https://api.spotify.com/v1/albums/5uw3ZBsmxonVJGmocj8EET",
+      "id": "5uw3ZBsmxonVJGmocj8EET",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273dd7cb838198e61322964f7b0"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02dd7cb838198e61322964f7b0"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851dd7cb838198e61322964f7b0"
+        }
+      ],
+      "is_playable": true,
+      "name": "Black Classical Music",
+      "release_date": "2023-09-08",
+      "release_date_precision": "day",
+      "total_tracks": 19,
+      "type": "album",
+      "uri": "spotify:album:5uw3ZBsmxonVJGmocj8EET"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2rspptKP0lPBdlJJAJHqht"
+        },
+        "href": "https://api.spotify.com/v1/artists/2rspptKP0lPBdlJJAJHqht",
+        "id": "2rspptKP0lPBdlJJAJHqht",
+        "name": "Yussef Dayes",
+        "type": "artist",
+        "uri": "spotify:artist:2rspptKP0lPBdlJJAJHqht"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6ywMpa6AmGJpV5Sbyy58Js"
+        },
+        "href": "https://api.spotify.com/v1/artists/6ywMpa6AmGJpV5Sbyy58Js",
+        "id": "6ywMpa6AmGJpV5Sbyy58Js",
+        "name": "Shabaka",
+        "type": "artist",
+        "uri": "spotify:artist:6ywMpa6AmGJpV5Sbyy58Js"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 271826,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAYE2300247"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/24ZA5a59iToToWe7pPT0A7"
+    },
+    "href": "https://api.spotify.com/v1/tracks/24ZA5a59iToToWe7pPT0A7",
+    "id": "24ZA5a59iToToWe7pPT0A7",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Raisins Under the Sun (feat. Shabaka Hutchings)",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:24ZA5a59iToToWe7pPT0A7"
+  },
+  "[\"brockhampton\",\"heat\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1Bl6wpkWCQ4KVgnASpvzzA"
+          },
+          "href": "https://api.spotify.com/v1/artists/1Bl6wpkWCQ4KVgnASpvzzA",
+          "id": "1Bl6wpkWCQ4KVgnASpvzzA",
+          "name": "BROCKHAMPTON",
+          "type": "artist",
+          "uri": "spotify:artist:1Bl6wpkWCQ4KVgnASpvzzA"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/67smHJOf5YlFwad6dAlppm"
+      },
+      "href": "https://api.spotify.com/v1/albums/67smHJOf5YlFwad6dAlppm",
+      "id": "67smHJOf5YlFwad6dAlppm",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a0c4a585a7d73b4943b9bf13"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a0c4a585a7d73b4943b9bf13"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a0c4a585a7d73b4943b9bf13"
+        }
+      ],
+      "is_playable": true,
+      "name": "SATURATION",
+      "release_date": "2017-06-09",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:67smHJOf5YlFwad6dAlppm"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1Bl6wpkWCQ4KVgnASpvzzA"
+        },
+        "href": "https://api.spotify.com/v1/artists/1Bl6wpkWCQ4KVgnASpvzzA",
+        "id": "1Bl6wpkWCQ4KVgnASpvzzA",
+        "name": "BROCKHAMPTON",
+        "type": "artist",
+        "uri": "spotify:artist:1Bl6wpkWCQ4KVgnASpvzzA"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 272378,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USUYG1144822"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2maEFaoAyNjQVv14Hm4esN"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2maEFaoAyNjQVv14Hm4esN",
+    "id": "2maEFaoAyNjQVv14Hm4esN",
+    "is_local": false,
+    "is_playable": true,
+    "name": "HEAT",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:2maEFaoAyNjQVv14Hm4esN"
+  },
+  "[\"dua lipa\",\"houdini\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
+          },
+          "href": "https://api.spotify.com/v1/artists/6M2wZ9GZgrQXHCFfjv46we",
+          "id": "6M2wZ9GZgrQXHCFfjv46we",
+          "name": "Dua Lipa",
+          "type": "artist",
+          "uri": "spotify:artist:6M2wZ9GZgrQXHCFfjv46we"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2vYjXjQbGaL3hXrDHzqTVz"
+      },
+      "href": "https://api.spotify.com/v1/albums/2vYjXjQbGaL3hXrDHzqTVz",
+      "id": "2vYjXjQbGaL3hXrDHzqTVz",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736935e3eff251761f0cd4e0d4"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026935e3eff251761f0cd4e0d4"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516935e3eff251761f0cd4e0d4"
+        }
+      ],
+      "is_playable": true,
+      "name": "Houdini",
+      "release_date": "2023-11-09",
+      "release_date_precision": "day",
+      "total_tracks": 3,
+      "type": "album",
+      "uri": "spotify:album:2vYjXjQbGaL3hXrDHzqTVz"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
+        },
+        "href": "https://api.spotify.com/v1/artists/6M2wZ9GZgrQXHCFfjv46we",
+        "id": "6M2wZ9GZgrQXHCFfjv46we",
+        "name": "Dua Lipa",
+        "type": "artist",
+        "uri": "spotify:artist:6M2wZ9GZgrQXHCFfjv46we"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 185917,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAHT2301246"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/65AjgsSuwgD1vj7Y7XGe6I"
+    },
+    "href": "https://api.spotify.com/v1/tracks/65AjgsSuwgD1vj7Y7XGe6I",
+    "id": "65AjgsSuwgD1vj7Y7XGe6I",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Houdini",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:65AjgsSuwgD1vj7Y7XGe6I"
+  },
+  "[\"kanye west\",\"send it up\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+          },
+          "href": "https://api.spotify.com/v1/artists/5K4W6rqBFWDnAN6FQUkS6x",
+          "id": "5K4W6rqBFWDnAN6FQUkS6x",
+          "name": "Kanye West",
+          "type": "artist",
+          "uri": "spotify:artist:5K4W6rqBFWDnAN6FQUkS6x"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7D2NdGvBHIavgLhmcwhluK"
+      },
+      "href": "https://api.spotify.com/v1/albums/7D2NdGvBHIavgLhmcwhluK",
+      "id": "7D2NdGvBHIavgLhmcwhluK",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731dacfbc31cc873d132958af9"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021dacfbc31cc873d132958af9"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511dacfbc31cc873d132958af9"
+        }
+      ],
+      "is_playable": true,
+      "name": "Yeezus",
+      "release_date": "2013-06-18",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:7D2NdGvBHIavgLhmcwhluK"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+        },
+        "href": "https://api.spotify.com/v1/artists/5K4W6rqBFWDnAN6FQUkS6x",
+        "id": "5K4W6rqBFWDnAN6FQUkS6x",
+        "name": "Kanye West",
+        "type": "artist",
+        "uri": "spotify:artist:5K4W6rqBFWDnAN6FQUkS6x"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 178040,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USUM71307511"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3RKblQNJs8HPvWBgXmq6nn"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3RKblQNJs8HPvWBgXmq6nn",
+    "id": "3RKblQNJs8HPvWBgXmq6nn",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Send It Up",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:3RKblQNJs8HPvWBgXmq6nn"
+  },
+  "[\"sean paul\",\"temperature\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3EsmrI2MfAdd7FA9HtIRYc"
+      },
+      "href": "https://api.spotify.com/v1/albums/3EsmrI2MfAdd7FA9HtIRYc",
+      "id": "3EsmrI2MfAdd7FA9HtIRYc",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27391f03813b4b4904c202a7226"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0291f03813b4b4904c202a7226"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485191f03813b4b4904c202a7226"
+        }
+      ],
+      "is_playable": true,
+      "name": "Viral Hip Hop",
+      "release_date": "2022-03-04",
+      "release_date_precision": "day",
+      "total_tracks": 35,
+      "type": "album",
+      "uri": "spotify:album:3EsmrI2MfAdd7FA9HtIRYc"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3Isy6kedDrgPYoTS1dazA9"
+        },
+        "href": "https://api.spotify.com/v1/artists/3Isy6kedDrgPYoTS1dazA9",
+        "id": "3Isy6kedDrgPYoTS1dazA9",
+        "name": "Sean Paul",
+        "type": "artist",
+        "uri": "spotify:artist:3Isy6kedDrgPYoTS1dazA9"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 218720,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USAT21700968"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3KIMvpqWTGEvFr5Ufjl14B"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3KIMvpqWTGEvFr5Ufjl14B",
+    "id": "3KIMvpqWTGEvFr5Ufjl14B",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Temperature",
+    "track_number": 15,
+    "type": "track",
+    "uri": "spotify:track:3KIMvpqWTGEvFr5Ufjl14B"
+  },
+  "[\"t.o.k.\",\"your smile\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1Mxqyy3pSjf8kZZL4QVxS0"
+          },
+          "href": "https://api.spotify.com/v1/artists/1Mxqyy3pSjf8kZZL4QVxS0",
+          "id": "1Mxqyy3pSjf8kZZL4QVxS0",
+          "name": "Frank Sinatra",
+          "type": "artist",
+          "uri": "spotify:artist:1Mxqyy3pSjf8kZZL4QVxS0"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0rnnzYSJbxKoxcp9U5I2zF"
+      },
+      "href": "https://api.spotify.com/v1/albums/0rnnzYSJbxKoxcp9U5I2zF",
+      "id": "0rnnzYSJbxKoxcp9U5I2zF",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273834431f515ee8a5ac5a845b2"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02834431f515ee8a5ac5a845b2"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851834431f515ee8a5ac5a845b2"
+        }
+      ],
+      "is_playable": true,
+      "name": "Sinatra's Swingin' Session!!! And More (Remastered / Expanded Edition)",
+      "release_date": "1961",
+      "release_date_precision": "year",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:0rnnzYSJbxKoxcp9U5I2zF"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1Mxqyy3pSjf8kZZL4QVxS0"
+        },
+        "href": "https://api.spotify.com/v1/artists/1Mxqyy3pSjf8kZZL4QVxS0",
+        "id": "1Mxqyy3pSjf8kZZL4QVxS0",
+        "name": "Frank Sinatra",
+        "type": "artist",
+        "uri": "spotify:artist:1Mxqyy3pSjf8kZZL4QVxS0"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 120333,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCA29800165"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4v79iygQ4tRn5GDwxDEN45"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4v79iygQ4tRn5GDwxDEN45",
+    "id": "4v79iygQ4tRn5GDwxDEN45",
+    "is_local": false,
+    "is_playable": true,
+    "name": "When You're Smiling (The Whole World Smiles With You) - 1999 Remastered",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:4v79iygQ4tRn5GDwxDEN45"
+  },
+  "[\"lady gaga, ariana grande\",\"rain on me (with ariana grande)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+          },
+          "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms",
+          "id": "1HY2Jd0NmPuamShAr6KMms",
+          "name": "Lady Gaga",
+          "type": "artist",
+          "uri": "spotify:artist:1HY2Jd0NmPuamShAr6KMms"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/05c49JgPmL4Uz2ZeqRx5SP"
+      },
+      "href": "https://api.spotify.com/v1/albums/05c49JgPmL4Uz2ZeqRx5SP",
+      "id": "05c49JgPmL4Uz2ZeqRx5SP",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736040effba89b9b00a6f6743a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026040effba89b9b00a6f6743a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516040effba89b9b00a6f6743a"
+        }
+      ],
+      "is_playable": true,
+      "name": "Chromatica",
+      "release_date": "2020-05-29",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:05c49JgPmL4Uz2ZeqRx5SP"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+        },
+        "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms",
+        "id": "1HY2Jd0NmPuamShAr6KMms",
+        "name": "Lady Gaga",
+        "type": "artist",
+        "uri": "spotify:artist:1HY2Jd0NmPuamShAr6KMms"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR"
+        },
+        "href": "https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR",
+        "id": "66CXWjxzNUsdJxJ2JdwvnR",
+        "name": "Ariana Grande",
+        "type": "artist",
+        "uri": "spotify:artist:66CXWjxzNUsdJxJ2JdwvnR"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 182200,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUM72004304"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7ju97lgwC2rKQ6wwsf9no9"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7ju97lgwC2rKQ6wwsf9no9",
+    "id": "7ju97lgwC2rKQ6wwsf9no9",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Rain On Me (with Ariana Grande)",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:7ju97lgwC2rKQ6wwsf9no9"
+  },
+  "[\"slum village\",\"fall n love (instrumental)\"]": null,
+  "[\"jessie ware\",\"i could get used to this\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5Mq7iqCWBzofK39FBqblNc"
+          },
+          "href": "https://api.spotify.com/v1/artists/5Mq7iqCWBzofK39FBqblNc",
+          "id": "5Mq7iqCWBzofK39FBqblNc",
+          "name": "Jessie Ware",
+          "type": "artist",
+          "uri": "spotify:artist:5Mq7iqCWBzofK39FBqblNc"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/56sKKg6lpmwyvbvLw3nVCN"
+      },
+      "href": "https://api.spotify.com/v1/albums/56sKKg6lpmwyvbvLw3nVCN",
+      "id": "56sKKg6lpmwyvbvLw3nVCN",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273fc729e4f9d5e6d9a65f974c9"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02fc729e4f9d5e6d9a65f974c9"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851fc729e4f9d5e6d9a65f974c9"
+        }
+      ],
+      "is_playable": true,
+      "name": "Superbloom",
+      "release_date": "2026-04-17",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:56sKKg6lpmwyvbvLw3nVCN"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5Mq7iqCWBzofK39FBqblNc"
+        },
+        "href": "https://api.spotify.com/v1/artists/5Mq7iqCWBzofK39FBqblNc",
+        "id": "5Mq7iqCWBzofK39FBqblNc",
+        "name": "Jessie Ware",
+        "type": "artist",
+        "uri": "spotify:artist:5Mq7iqCWBzofK39FBqblNc"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 221586,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM72508194"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5Tp8BO1Ocodur1mclvhQu9"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5Tp8BO1Ocodur1mclvhQu9",
+    "id": "5Tp8BO1Ocodur1mclvhQu9",
+    "is_local": false,
+    "is_playable": true,
+    "name": "I Could Get Used To This",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:5Tp8BO1Ocodur1mclvhQu9"
+  },
+  "[\"yussef dayes\",\"black classical music (feat. venna & charlie stacey)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2rspptKP0lPBdlJJAJHqht"
+          },
+          "href": "https://api.spotify.com/v1/artists/2rspptKP0lPBdlJJAJHqht",
+          "id": "2rspptKP0lPBdlJJAJHqht",
+          "name": "Yussef Dayes",
+          "type": "artist",
+          "uri": "spotify:artist:2rspptKP0lPBdlJJAJHqht"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5uw3ZBsmxonVJGmocj8EET"
+      },
+      "href": "https://api.spotify.com/v1/albums/5uw3ZBsmxonVJGmocj8EET",
+      "id": "5uw3ZBsmxonVJGmocj8EET",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273dd7cb838198e61322964f7b0"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02dd7cb838198e61322964f7b0"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851dd7cb838198e61322964f7b0"
+        }
+      ],
+      "is_playable": true,
+      "name": "Black Classical Music",
+      "release_date": "2023-09-08",
+      "release_date_precision": "day",
+      "total_tracks": 19,
+      "type": "album",
+      "uri": "spotify:album:5uw3ZBsmxonVJGmocj8EET"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2rspptKP0lPBdlJJAJHqht"
+        },
+        "href": "https://api.spotify.com/v1/artists/2rspptKP0lPBdlJJAJHqht",
+        "id": "2rspptKP0lPBdlJJAJHqht",
+        "name": "Yussef Dayes",
+        "type": "artist",
+        "uri": "spotify:artist:2rspptKP0lPBdlJJAJHqht"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7qKJMpPZfyGHHwPgsjgFCP"
+        },
+        "href": "https://api.spotify.com/v1/artists/7qKJMpPZfyGHHwPgsjgFCP",
+        "id": "7qKJMpPZfyGHHwPgsjgFCP",
+        "name": "Venna",
+        "type": "artist",
+        "uri": "spotify:artist:7qKJMpPZfyGHHwPgsjgFCP"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3Uw7i8bbD7k8eOD5SIqn9g"
+        },
+        "href": "https://api.spotify.com/v1/artists/3Uw7i8bbD7k8eOD5SIqn9g",
+        "id": "3Uw7i8bbD7k8eOD5SIqn9g",
+        "name": "Charlie Stacey",
+        "type": "artist",
+        "uri": "spotify:artist:3Uw7i8bbD7k8eOD5SIqn9g"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 319040,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAYE2300245"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3hmCHZFkgE4tkJKSqpOUhz"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3hmCHZFkgE4tkJKSqpOUhz",
+    "id": "3hmCHZFkgE4tkJKSqpOUhz",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Black Classical Music (feat. Venna & Charlie Stacey)",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:3hmCHZFkgE4tkJKSqpOUhz"
+  },
+  "[\"david crosby\",\"mama lion\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2mDlls63YpRsMjgpyXxyu6"
+          },
+          "href": "https://api.spotify.com/v1/artists/2mDlls63YpRsMjgpyXxyu6",
+          "id": "2mDlls63YpRsMjgpyXxyu6",
+          "name": "Crosby & Nash",
+          "type": "artist",
+          "uri": "spotify:artist:2mDlls63YpRsMjgpyXxyu6"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/21Ib9p6CPmysyoRG55DlgT"
+      },
+      "href": "https://api.spotify.com/v1/albums/21Ib9p6CPmysyoRG55DlgT",
+      "id": "21Ib9p6CPmysyoRG55DlgT",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732a76db55f232052ec9660343"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022a76db55f232052ec9660343"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512a76db55f232052ec9660343"
+        }
+      ],
+      "is_playable": true,
+      "name": "Wind On The Water",
+      "release_date": "1975",
+      "release_date_precision": "year",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:21Ib9p6CPmysyoRG55DlgT"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/59zdhVoWxSoHMc74n098Re"
+        },
+        "href": "https://api.spotify.com/v1/artists/59zdhVoWxSoHMc74n098Re",
+        "id": "59zdhVoWxSoHMc74n098Re",
+        "name": "David Crosby",
+        "type": "artist",
+        "uri": "spotify:artist:59zdhVoWxSoHMc74n098Re"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2E6Roj0oQnJIm2BeXwDica"
+        },
+        "href": "https://api.spotify.com/v1/artists/2E6Roj0oQnJIm2BeXwDica",
+        "id": "2E6Roj0oQnJIm2BeXwDica",
+        "name": "Graham Nash",
+        "type": "artist",
+        "uri": "spotify:artist:2E6Roj0oQnJIm2BeXwDica"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 196160,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMC17546551"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3mZLpsN5k2h9DSKDMkHF17"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3mZLpsN5k2h9DSKDMkHF17",
+    "id": "3mZLpsN5k2h9DSKDMkHF17",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Mama Lion",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:3mZLpsN5k2h9DSKDMkHF17"
+  },
+  "[\"dead & company\",\"brown-eyed women - live at playing in the sand, riviera maya, mx 2/15/18\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4QMYdqiJf5bEC7P0EHbnxn"
+          },
+          "href": "https://api.spotify.com/v1/artists/4QMYdqiJf5bEC7P0EHbnxn",
+          "id": "4QMYdqiJf5bEC7P0EHbnxn",
+          "name": "Dead & Company",
+          "type": "artist",
+          "uri": "spotify:artist:4QMYdqiJf5bEC7P0EHbnxn"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/610XNFFPZpCdWNeukLsl3I"
+      },
+      "href": "https://api.spotify.com/v1/albums/610XNFFPZpCdWNeukLsl3I",
+      "id": "610XNFFPZpCdWNeukLsl3I",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b1ff0ddb1505bedb2f653588"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b1ff0ddb1505bedb2f653588"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b1ff0ddb1505bedb2f653588"
+        }
+      ],
+      "is_playable": true,
+      "name": "Playing In The Sand, Riviera Maya, 2/15/18 (Live)",
+      "release_date": "2019-01-10",
+      "release_date_precision": "day",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:610XNFFPZpCdWNeukLsl3I"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4QMYdqiJf5bEC7P0EHbnxn"
+        },
+        "href": "https://api.spotify.com/v1/artists/4QMYdqiJf5bEC7P0EHbnxn",
+        "id": "4QMYdqiJf5bEC7P0EHbnxn",
+        "name": "Dead & Company",
+        "type": "artist",
+        "uri": "spotify:artist:4QMYdqiJf5bEC7P0EHbnxn"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 594099,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRH11803969"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0hxd6Q8SFbuGbJTJ46qNzQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0hxd6Q8SFbuGbJTJ46qNzQ",
+    "id": "0hxd6Q8SFbuGbJTJ46qNzQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Brown-Eyed Women - Live at Playing In The Sand, Riviera Maya, MX 2/15/18",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:0hxd6Q8SFbuGbJTJ46qNzQ"
+  },
+  "[\"jj doom\",\"banished\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5BxMS9rhKHbSagaYFBICun"
+          },
+          "href": "https://api.spotify.com/v1/artists/5BxMS9rhKHbSagaYFBICun",
+          "id": "5BxMS9rhKHbSagaYFBICun",
+          "name": "JJ DOOM",
+          "type": "artist",
+          "uri": "spotify:artist:5BxMS9rhKHbSagaYFBICun"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6ci2j8VD2muJN7BTcyXtWw"
+      },
+      "href": "https://api.spotify.com/v1/albums/6ci2j8VD2muJN7BTcyXtWw",
+      "id": "6ci2j8VD2muJN7BTcyXtWw",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27366d96861c92649cae4ed4959"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0266d96861c92649cae4ed4959"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485166d96861c92649cae4ed4959"
+        }
+      ],
+      "is_playable": true,
+      "name": "Key to the Kuffs (Butter Edition)",
+      "release_date": "2013-08-20",
+      "release_date_precision": "day",
+      "total_tracks": 23,
+      "type": "album",
+      "uri": "spotify:album:6ci2j8VD2muJN7BTcyXtWw"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5BxMS9rhKHbSagaYFBICun"
+        },
+        "href": "https://api.spotify.com/v1/artists/5BxMS9rhKHbSagaYFBICun",
+        "id": "5BxMS9rhKHbSagaYFBICun",
+        "name": "JJ DOOM",
+        "type": "artist",
+        "uri": "spotify:artist:5BxMS9rhKHbSagaYFBICun"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3vbKDsSS70ZX9D2OcvbZmS"
+        },
+        "href": "https://api.spotify.com/v1/artists/3vbKDsSS70ZX9D2OcvbZmS",
+        "id": "3vbKDsSS70ZX9D2OcvbZmS",
+        "name": "Beck",
+        "type": "artist",
+        "uri": "spotify:artist:3vbKDsSS70ZX9D2OcvbZmS"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 244480,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBMYF1300034"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3oMdtGVakJmrtUKkHtLu5C"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3oMdtGVakJmrtUKkHtLu5C",
+    "id": "3oMdtGVakJmrtUKkHtLu5C",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Banished - Beck Remix",
+    "track_number": 23,
+    "type": "track",
+    "uri": "spotify:track:3oMdtGVakJmrtUKkHtLu5C"
+  },
+  "[\"metric\",\"false dichotomy\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1rCIEwPp5OnXW0ornlSsRl"
+          },
+          "href": "https://api.spotify.com/v1/artists/1rCIEwPp5OnXW0ornlSsRl",
+          "id": "1rCIEwPp5OnXW0ornlSsRl",
+          "name": "Metric",
+          "type": "artist",
+          "uri": "spotify:artist:1rCIEwPp5OnXW0ornlSsRl"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1S5vq5vSHCnCJnMljIiuS6"
+      },
+      "href": "https://api.spotify.com/v1/albums/1S5vq5vSHCnCJnMljIiuS6",
+      "id": "1S5vq5vSHCnCJnMljIiuS6",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273482cdd0d7eeb0f7db191df26"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02482cdd0d7eeb0f7db191df26"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851482cdd0d7eeb0f7db191df26"
+        }
+      ],
+      "is_playable": true,
+      "name": "Formentera",
+      "release_date": "2022-07-08",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:1S5vq5vSHCnCJnMljIiuS6"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1rCIEwPp5OnXW0ornlSsRl"
+        },
+        "href": "https://api.spotify.com/v1/artists/1rCIEwPp5OnXW0ornlSsRl",
+        "id": "1rCIEwPp5OnXW0ornlSsRl",
+        "name": "Metric",
+        "type": "artist",
+        "uri": "spotify:artist:1rCIEwPp5OnXW0ornlSsRl"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 219866,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "CBBEL2200007"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6Lg3XL27eplXv3TENt2Twa"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6Lg3XL27eplXv3TENt2Twa",
+    "id": "6Lg3XL27eplXv3TENt2Twa",
+    "is_local": false,
+    "is_playable": true,
+    "name": "False Dichotomy",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:6Lg3XL27eplXv3TENt2Twa"
+  },
+  "[\"jpegmafia\",\"thug tears\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO"
+          },
+          "href": "https://api.spotify.com/v1/artists/6yJ6QQ3Y5l0s0tn7b0arrO",
+          "id": "6yJ6QQ3Y5l0s0tn7b0arrO",
+          "name": "JPEGMAFIA",
+          "type": "artist",
+          "uri": "spotify:artist:6yJ6QQ3Y5l0s0tn7b0arrO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/468fNHUNiTbZuBY9DXJVOp"
+      },
+      "href": "https://api.spotify.com/v1/albums/468fNHUNiTbZuBY9DXJVOp",
+      "id": "468fNHUNiTbZuBY9DXJVOp",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273947a926195193c56d1dc45d8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02947a926195193c56d1dc45d8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851947a926195193c56d1dc45d8"
+        }
+      ],
+      "is_playable": true,
+      "name": "Veteran",
+      "release_date": "2018-01-19",
+      "release_date_precision": "day",
+      "total_tracks": 19,
+      "type": "album",
+      "uri": "spotify:album:468fNHUNiTbZuBY9DXJVOp"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO"
+        },
+        "href": "https://api.spotify.com/v1/artists/6yJ6QQ3Y5l0s0tn7b0arrO",
+        "id": "6yJ6QQ3Y5l0s0tn7b0arrO",
+        "name": "JPEGMAFIA",
+        "type": "artist",
+        "uri": "spotify:artist:6yJ6QQ3Y5l0s0tn7b0arrO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 198310,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QM24S1800044"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1tOOL2a0zlcTs57hRcV9nT"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1tOOL2a0zlcTs57hRcV9nT",
+    "id": "1tOOL2a0zlcTs57hRcV9nT",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Thug Tears",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:1tOOL2a0zlcTs57hRcV9nT"
+  },
+  "[\"jpegmafia\",\"dayum\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO"
+          },
+          "href": "https://api.spotify.com/v1/artists/6yJ6QQ3Y5l0s0tn7b0arrO",
+          "id": "6yJ6QQ3Y5l0s0tn7b0arrO",
+          "name": "JPEGMAFIA",
+          "type": "artist",
+          "uri": "spotify:artist:6yJ6QQ3Y5l0s0tn7b0arrO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/468fNHUNiTbZuBY9DXJVOp"
+      },
+      "href": "https://api.spotify.com/v1/albums/468fNHUNiTbZuBY9DXJVOp",
+      "id": "468fNHUNiTbZuBY9DXJVOp",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273947a926195193c56d1dc45d8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02947a926195193c56d1dc45d8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851947a926195193c56d1dc45d8"
+        }
+      ],
+      "is_playable": true,
+      "name": "Veteran",
+      "release_date": "2018-01-19",
+      "release_date_precision": "day",
+      "total_tracks": 19,
+      "type": "album",
+      "uri": "spotify:album:468fNHUNiTbZuBY9DXJVOp"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO"
+        },
+        "href": "https://api.spotify.com/v1/artists/6yJ6QQ3Y5l0s0tn7b0arrO",
+        "id": "6yJ6QQ3Y5l0s0tn7b0arrO",
+        "name": "JPEGMAFIA",
+        "type": "artist",
+        "uri": "spotify:artist:6yJ6QQ3Y5l0s0tn7b0arrO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 85109,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QM24S1800045"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7IVQ9ohWq4uVsILhIUXJgf"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7IVQ9ohWq4uVsILhIUXJgf",
+    "id": "7IVQ9ohWq4uVsILhIUXJgf",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Dayum",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:7IVQ9ohWq4uVsILhIUXJgf"
+  },
+  "[\"swans\",\"her mouth is filled with honey\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/79S80ZWgVhIPMCHuvl6SkA"
+          },
+          "href": "https://api.spotify.com/v1/artists/79S80ZWgVhIPMCHuvl6SkA",
+          "id": "79S80ZWgVhIPMCHuvl6SkA",
+          "name": "Swans",
+          "type": "artist",
+          "uri": "spotify:artist:79S80ZWgVhIPMCHuvl6SkA"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/40aCknK9NwtjoieiNyNLqf"
+      },
+      "href": "https://api.spotify.com/v1/albums/40aCknK9NwtjoieiNyNLqf",
+      "id": "40aCknK9NwtjoieiNyNLqf",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27305ad23554f6e33f99868527a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0205ad23554f6e33f99868527a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485105ad23554f6e33f99868527a"
+        }
+      ],
+      "is_playable": true,
+      "name": "Soundtracks For The Blind",
+      "release_date": "2001-09-24",
+      "release_date_precision": "day",
+      "total_tracks": 26,
+      "type": "album",
+      "uri": "spotify:album:40aCknK9NwtjoieiNyNLqf"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/79S80ZWgVhIPMCHuvl6SkA"
+        },
+        "href": "https://api.spotify.com/v1/artists/79S80ZWgVhIPMCHuvl6SkA",
+        "id": "79S80ZWgVhIPMCHuvl6SkA",
+        "name": "Swans",
+        "type": "artist",
+        "uri": "spotify:artist:79S80ZWgVhIPMCHuvl6SkA"
+      }
+    ],
+    "disc_number": 2,
+    "duration_ms": 198933,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA3T0400015"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6dy5hqToxGwe6jdwpMrW1p"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6dy5hqToxGwe6jdwpMrW1p",
+    "id": "6dy5hqToxGwe6jdwpMrW1p",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Her Mouth Is Filled With Honey",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:6dy5hqToxGwe6jdwpMrW1p"
+  },
+  "[\"jpegmafia\",\"bald!\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO"
+          },
+          "href": "https://api.spotify.com/v1/artists/6yJ6QQ3Y5l0s0tn7b0arrO",
+          "id": "6yJ6QQ3Y5l0s0tn7b0arrO",
+          "name": "JPEGMAFIA",
+          "type": "artist",
+          "uri": "spotify:artist:6yJ6QQ3Y5l0s0tn7b0arrO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1uULaqGNfDrWb8pxKcxB9i"
+      },
+      "href": "https://api.spotify.com/v1/albums/1uULaqGNfDrWb8pxKcxB9i",
+      "id": "1uULaqGNfDrWb8pxKcxB9i",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2735a8c72a8c75ba0ae4929cd46"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e025a8c72a8c75ba0ae4929cd46"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048515a8c72a8c75ba0ae4929cd46"
+        }
+      ],
+      "is_playable": true,
+      "name": "EP!",
+      "release_date": "2020-11-06",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:1uULaqGNfDrWb8pxKcxB9i"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO"
+        },
+        "href": "https://api.spotify.com/v1/artists/6yJ6QQ3Y5l0s0tn7b0arrO",
+        "id": "6yJ6QQ3Y5l0s0tn7b0arrO",
+        "name": "JPEGMAFIA",
+        "type": "artist",
+        "uri": "spotify:artist:6yJ6QQ3Y5l0s0tn7b0arrO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 153932,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QZD5H2000171"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3djWekEDgbhAtkXGdFNbFt"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3djWekEDgbhAtkXGdFNbFt",
+    "id": "3djWekEDgbhAtkXGdFNbFt",
+    "is_local": false,
+    "is_playable": true,
+    "name": "BALD!",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:3djWekEDgbhAtkXGdFNbFt"
+  },
+  "[\"the orion experience\",\"the cult of dionysus\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2qU0jqxiFeXrw5NTV1bIQM"
+          },
+          "href": "https://api.spotify.com/v1/artists/2qU0jqxiFeXrw5NTV1bIQM",
+          "id": "2qU0jqxiFeXrw5NTV1bIQM",
+          "name": "The Orion Experience",
+          "type": "artist",
+          "uri": "spotify:artist:2qU0jqxiFeXrw5NTV1bIQM"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5W8NoCn4BTWzfiCH4VsOAb"
+      },
+      "href": "https://api.spotify.com/v1/albums/5W8NoCn4BTWzfiCH4VsOAb",
+      "id": "5W8NoCn4BTWzfiCH4VsOAb",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273daccecee61b39522fbae9884"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02daccecee61b39522fbae9884"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851daccecee61b39522fbae9884"
+        }
+      ],
+      "is_playable": true,
+      "name": "Cosmicandy",
+      "release_date": "2006-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:5W8NoCn4BTWzfiCH4VsOAb"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2qU0jqxiFeXrw5NTV1bIQM"
+        },
+        "href": "https://api.spotify.com/v1/artists/2qU0jqxiFeXrw5NTV1bIQM",
+        "id": "2qU0jqxiFeXrw5NTV1bIQM",
+        "name": "The Orion Experience",
+        "type": "artist",
+        "uri": "spotify:artist:2qU0jqxiFeXrw5NTV1bIQM"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0G9jJv1t51ZzzHkqlK0olw"
+        },
+        "href": "https://api.spotify.com/v1/artists/0G9jJv1t51ZzzHkqlK0olw",
+        "id": "0G9jJv1t51ZzzHkqlK0olw",
+        "name": "ORION",
+        "type": "artist",
+        "uri": "spotify:artist:0G9jJv1t51ZzzHkqlK0olw"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5Ky8EGI88BSDV3UIqnxE50"
+        },
+        "href": "https://api.spotify.com/v1/artists/5Ky8EGI88BSDV3UIqnxE50",
+        "id": "5Ky8EGI88BSDV3UIqnxE50",
+        "name": "Linda XO",
+        "type": "artist",
+        "uri": "spotify:artist:5Ky8EGI88BSDV3UIqnxE50"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 187385,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCGH0714735"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/08KTQSs3ickNki7FFTb6fY"
+    },
+    "href": "https://api.spotify.com/v1/tracks/08KTQSs3ickNki7FFTb6fY",
+    "id": "08KTQSs3ickNki7FFTb6fY",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Cult of Dionysus",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:08KTQSs3ickNki7FFTb6fY"
+  },
+  "[\"action bronson\",\"dmtri\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7BMccF0hQFBpP6417k1OtQ"
+          },
+          "href": "https://api.spotify.com/v1/artists/7BMccF0hQFBpP6417k1OtQ",
+          "id": "7BMccF0hQFBpP6417k1OtQ",
+          "name": "Action Bronson",
+          "type": "artist",
+          "uri": "spotify:artist:7BMccF0hQFBpP6417k1OtQ"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0eVyjRhzZKke2KFYTcDkeu"
+          },
+          "href": "https://api.spotify.com/v1/artists/0eVyjRhzZKke2KFYTcDkeu",
+          "id": "0eVyjRhzZKke2KFYTcDkeu",
+          "name": "The Alchemist",
+          "type": "artist",
+          "uri": "spotify:artist:0eVyjRhzZKke2KFYTcDkeu"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3BPX4x5EQOd9vzpPC2rMrm"
+      },
+      "href": "https://api.spotify.com/v1/albums/3BPX4x5EQOd9vzpPC2rMrm",
+      "id": "3BPX4x5EQOd9vzpPC2rMrm",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731680695dc187004fe5627b04"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021680695dc187004fe5627b04"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511680695dc187004fe5627b04"
+        }
+      ],
+      "is_playable": true,
+      "name": "Lamb Over Rice",
+      "release_date": "2019-11-22",
+      "release_date_precision": "day",
+      "total_tracks": 7,
+      "type": "album",
+      "uri": "spotify:album:3BPX4x5EQOd9vzpPC2rMrm"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7BMccF0hQFBpP6417k1OtQ"
+        },
+        "href": "https://api.spotify.com/v1/artists/7BMccF0hQFBpP6417k1OtQ",
+        "id": "7BMccF0hQFBpP6417k1OtQ",
+        "name": "Action Bronson",
+        "type": "artist",
+        "uri": "spotify:artist:7BMccF0hQFBpP6417k1OtQ"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0eVyjRhzZKke2KFYTcDkeu"
+        },
+        "href": "https://api.spotify.com/v1/artists/0eVyjRhzZKke2KFYTcDkeu",
+        "id": "0eVyjRhzZKke2KFYTcDkeu",
+        "name": "The Alchemist",
+        "type": "artist",
+        "uri": "spotify:artist:0eVyjRhzZKke2KFYTcDkeu"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 274133,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USUYG1283786"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1CEVg3GpmapQ5rK5feHbFc"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1CEVg3GpmapQ5rK5feHbFc",
+    "id": "1CEVg3GpmapQ5rK5feHbFc",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Dmtri",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:1CEVg3GpmapQ5rK5feHbFc"
+  },
+  "[\"genesis owusu\",\"leaving the light\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1HvH97rzvCH6lfnLlgyfke"
+          },
+          "href": "https://api.spotify.com/v1/artists/1HvH97rzvCH6lfnLlgyfke",
+          "id": "1HvH97rzvCH6lfnLlgyfke",
+          "name": "Genesis Owusu",
+          "type": "artist",
+          "uri": "spotify:artist:1HvH97rzvCH6lfnLlgyfke"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1mzWBk8fzEEMumcy5IuVcf"
+      },
+      "href": "https://api.spotify.com/v1/albums/1mzWBk8fzEEMumcy5IuVcf",
+      "id": "1mzWBk8fzEEMumcy5IuVcf",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b79995bb1505e8e4f5efae7e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b79995bb1505e8e4f5efae7e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b79995bb1505e8e4f5efae7e"
+        }
+      ],
+      "is_playable": true,
+      "name": "STRUGGLER",
+      "release_date": "2023-08-18",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:1mzWBk8fzEEMumcy5IuVcf"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1HvH97rzvCH6lfnLlgyfke"
+        },
+        "href": "https://api.spotify.com/v1/artists/1HvH97rzvCH6lfnLlgyfke",
+        "id": "1HvH97rzvCH6lfnLlgyfke",
+        "name": "Genesis Owusu",
+        "type": "artist",
+        "uri": "spotify:artist:1HvH97rzvCH6lfnLlgyfke"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 190053,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QM6N22378304"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/35nOLWeyoXbZvhcczCzQit"
+    },
+    "href": "https://api.spotify.com/v1/tracks/35nOLWeyoXbZvhcczCzQit",
+    "id": "35nOLWeyoXbZvhcczCzQit",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Leaving The Light",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:35nOLWeyoXbZvhcczCzQit"
+  },
+  "[\"vince staples\",\"bagbak\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/68kEuyFKyqrdQQLLsmiatm"
+          },
+          "href": "https://api.spotify.com/v1/artists/68kEuyFKyqrdQQLLsmiatm",
+          "id": "68kEuyFKyqrdQQLLsmiatm",
+          "name": "Vince Staples",
+          "type": "artist",
+          "uri": "spotify:artist:68kEuyFKyqrdQQLLsmiatm"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5h3WJG0aZjNOrayFu3MhCS"
+      },
+      "href": "https://api.spotify.com/v1/albums/5h3WJG0aZjNOrayFu3MhCS",
+      "id": "5h3WJG0aZjNOrayFu3MhCS",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737ba7b4d23c717f3211717946"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027ba7b4d23c717f3211717946"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517ba7b4d23c717f3211717946"
+        }
+      ],
+      "is_playable": true,
+      "name": "Big Fish Theory",
+      "release_date": "2017-06-23",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:5h3WJG0aZjNOrayFu3MhCS"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/68kEuyFKyqrdQQLLsmiatm"
+        },
+        "href": "https://api.spotify.com/v1/artists/68kEuyFKyqrdQQLLsmiatm",
+        "id": "68kEuyFKyqrdQQLLsmiatm",
+        "name": "Vince Staples",
+        "type": "artist",
+        "uri": "spotify:artist:68kEuyFKyqrdQQLLsmiatm"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 160506,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USUM71700511"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5POEFQCKtD0QxYLfZ2kqEx"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5POEFQCKtD0QxYLfZ2kqEx",
+    "id": "5POEFQCKtD0QxYLfZ2kqEx",
+    "is_local": false,
+    "is_playable": true,
+    "name": "BagBak",
+    "track_number": 11,
+    "type": "track",
+    "uri": "spotify:track:5POEFQCKtD0QxYLfZ2kqEx"
   }
 }
