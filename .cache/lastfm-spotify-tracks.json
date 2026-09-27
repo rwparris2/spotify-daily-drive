@@ -245545,5 +245545,1208 @@
     "track_number": 5,
     "type": "track",
     "uri": "spotify:track:7BfnmWeEBPLWsIEfybTBYT"
+  },
+  "[\"swordes\",\"finally found!\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7uMvaQWf3NvJ0sxnKhhWkb"
+          },
+          "href": "https://api.spotify.com/v1/artists/7uMvaQWf3NvJ0sxnKhhWkb",
+          "id": "7uMvaQWf3NvJ0sxnKhhWkb",
+          "name": "Swordes",
+          "type": "artist",
+          "uri": "spotify:artist:7uMvaQWf3NvJ0sxnKhhWkb"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2gcxSuX2hYm8T1kr8m7t7E"
+      },
+      "href": "https://api.spotify.com/v1/albums/2gcxSuX2hYm8T1kr8m7t7E",
+      "id": "2gcxSuX2hYm8T1kr8m7t7E",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27388b64c584bdca32b23243a80"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0288b64c584bdca32b23243a80"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485188b64c584bdca32b23243a80"
+        }
+      ],
+      "is_playable": true,
+      "name": "Finally Found!",
+      "release_date": "2025-09-10",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:2gcxSuX2hYm8T1kr8m7t7E"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7uMvaQWf3NvJ0sxnKhhWkb"
+        },
+        "href": "https://api.spotify.com/v1/artists/7uMvaQWf3NvJ0sxnKhhWkb",
+        "id": "7uMvaQWf3NvJ0sxnKhhWkb",
+        "name": "Swordes",
+        "type": "artist",
+        "uri": "spotify:artist:7uMvaQWf3NvJ0sxnKhhWkb"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 221500,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QZQAY2566498"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3O7jaswsXpdgdf2Jd18ej5"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3O7jaswsXpdgdf2Jd18ej5",
+    "id": "3O7jaswsXpdgdf2Jd18ej5",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Finally Found!",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:3O7jaswsXpdgdf2Jd18ej5"
+  },
+  "[\"stevie nicks\",\"edge of seventeen - 2016 remaster\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7crPfGd2k81ekOoSqQKWWz"
+          },
+          "href": "https://api.spotify.com/v1/artists/7crPfGd2k81ekOoSqQKWWz",
+          "id": "7crPfGd2k81ekOoSqQKWWz",
+          "name": "Stevie Nicks",
+          "type": "artist",
+          "uri": "spotify:artist:7crPfGd2k81ekOoSqQKWWz"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2g3QzVCFx0kEmYICkjHj2N"
+      },
+      "href": "https://api.spotify.com/v1/albums/2g3QzVCFx0kEmYICkjHj2N",
+      "id": "2g3QzVCFx0kEmYICkjHj2N",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2735a640236b018d1cef1e01211"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e025a640236b018d1cef1e01211"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048515a640236b018d1cef1e01211"
+        }
+      ],
+      "is_playable": true,
+      "name": "Complete Studio Albums & Rarities",
+      "release_date": "2023-07-28",
+      "release_date_precision": "day",
+      "total_tracks": 121,
+      "type": "album",
+      "uri": "spotify:album:2g3QzVCFx0kEmYICkjHj2N"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7crPfGd2k81ekOoSqQKWWz"
+        },
+        "href": "https://api.spotify.com/v1/artists/7crPfGd2k81ekOoSqQKWWz",
+        "id": "7crPfGd2k81ekOoSqQKWWz",
+        "name": "Stevie Nicks",
+        "type": "artist",
+        "uri": "spotify:artist:7crPfGd2k81ekOoSqQKWWz"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 329413,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRH11604198"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3HrRdfAVsnyvzjx3CrASiU"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3HrRdfAVsnyvzjx3CrASiU",
+    "id": "3HrRdfAVsnyvzjx3CrASiU",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Edge of Seventeen - 2016 Remaster",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:3HrRdfAVsnyvzjx3CrASiU"
+  },
+  "[\"fontaines d.c.\",\"chequeless reckless\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6"
+          },
+          "href": "https://api.spotify.com/v1/artists/3SXwqSqAoBz9WCI9PDQzY6",
+          "id": "3SXwqSqAoBz9WCI9PDQzY6",
+          "name": "Fontaines D.C.",
+          "type": "artist",
+          "uri": "spotify:artist:3SXwqSqAoBz9WCI9PDQzY6"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2lK23mYbRD6bCJpjI8BbdC"
+      },
+      "href": "https://api.spotify.com/v1/albums/2lK23mYbRD6bCJpjI8BbdC",
+      "id": "2lK23mYbRD6bCJpjI8BbdC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27341097c26aa8fd44a2986ad26"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0241097c26aa8fd44a2986ad26"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485141097c26aa8fd44a2986ad26"
+        }
+      ],
+      "is_playable": true,
+      "name": "Dogrel",
+      "release_date": "2019-04-12",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:2lK23mYbRD6bCJpjI8BbdC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6"
+        },
+        "href": "https://api.spotify.com/v1/artists/3SXwqSqAoBz9WCI9PDQzY6",
+        "id": "3SXwqSqAoBz9WCI9PDQzY6",
+        "name": "Fontaines D.C.",
+        "type": "artist",
+        "uri": "spotify:artist:3SXwqSqAoBz9WCI9PDQzY6"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 135635,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USBQU1800210"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/74V78cT1LRX36THeJhvzOB"
+    },
+    "href": "https://api.spotify.com/v1/tracks/74V78cT1LRX36THeJhvzOB",
+    "id": "74V78cT1LRX36THeJhvzOB",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Chequeless Reckless",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:74V78cT1LRX36THeJhvzOB"
+  },
+  "[\"elton john\",\"goodbye yellow brick road - remastered 2014\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3PhoLpVuITZKcymswpck5b"
+          },
+          "href": "https://api.spotify.com/v1/artists/3PhoLpVuITZKcymswpck5b",
+          "id": "3PhoLpVuITZKcymswpck5b",
+          "name": "Elton John",
+          "type": "artist",
+          "uri": "spotify:artist:3PhoLpVuITZKcymswpck5b"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5WupqgR68HfuHt3BMJtgun"
+      },
+      "href": "https://api.spotify.com/v1/albums/5WupqgR68HfuHt3BMJtgun",
+      "id": "5WupqgR68HfuHt3BMJtgun",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f72f1e38e9bd48f18a17ed9b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f72f1e38e9bd48f18a17ed9b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f72f1e38e9bd48f18a17ed9b"
+        }
+      ],
+      "is_playable": true,
+      "name": "Goodbye Yellow Brick Road (Remastered)",
+      "release_date": "1973-10-05",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:5WupqgR68HfuHt3BMJtgun"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3PhoLpVuITZKcymswpck5b"
+        },
+        "href": "https://api.spotify.com/v1/artists/3PhoLpVuITZKcymswpck5b",
+        "id": "3PhoLpVuITZKcymswpck5b",
+        "name": "Elton John",
+        "type": "artist",
+        "uri": "spotify:artist:3PhoLpVuITZKcymswpck5b"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 192826,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM71304956"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4IRHwIZHzlHT1FQpRa5RdE"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4IRHwIZHzlHT1FQpRa5RdE",
+    "id": "4IRHwIZHzlHT1FQpRa5RdE",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Goodbye Yellow Brick Road - Remastered 2014",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:4IRHwIZHzlHT1FQpRa5RdE"
+  },
+  "[\"sweet\",\"ballroom blitz\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3JaAGmSTpJK35DqWrDUzBz"
+          },
+          "href": "https://api.spotify.com/v1/artists/3JaAGmSTpJK35DqWrDUzBz",
+          "id": "3JaAGmSTpJK35DqWrDUzBz",
+          "name": "Sweet",
+          "type": "artist",
+          "uri": "spotify:artist:3JaAGmSTpJK35DqWrDUzBz"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3PsFboiPeObjAc6gbQHt54"
+      },
+      "href": "https://api.spotify.com/v1/albums/3PsFboiPeObjAc6gbQHt54",
+      "id": "3PsFboiPeObjAc6gbQHt54",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bff2e9307284c5375b2a407a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bff2e9307284c5375b2a407a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bff2e9307284c5375b2a407a"
+        }
+      ],
+      "is_playable": true,
+      "name": "Desolation Boulevard",
+      "release_date": "1974-11",
+      "release_date_precision": "month",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:3PsFboiPeObjAc6gbQHt54"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3JaAGmSTpJK35DqWrDUzBz"
+        },
+        "href": "https://api.spotify.com/v1/artists/3JaAGmSTpJK35DqWrDUzBz",
+        "id": "3JaAGmSTpJK35DqWrDUzBz",
+        "name": "Sweet",
+        "type": "artist",
+        "uri": "spotify:artist:3JaAGmSTpJK35DqWrDUzBz"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 246573,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCA28800090"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3Pu3IChaAoa5EjgUBv5F6x"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3Pu3IChaAoa5EjgUBv5F6x",
+    "id": "3Pu3IChaAoa5EjgUBv5F6x",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Ballroom Blitz",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:3Pu3IChaAoa5EjgUBv5F6x"
+  },
+  "[\"the williams brothers\",\"never let go of your hand\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6deBxd8qgegXF4iFZOuW2R"
+          },
+          "href": "https://api.spotify.com/v1/artists/6deBxd8qgegXF4iFZOuW2R",
+          "id": "6deBxd8qgegXF4iFZOuW2R",
+          "name": "The Williams Brothers",
+          "type": "artist",
+          "uri": "spotify:artist:6deBxd8qgegXF4iFZOuW2R"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7kHoYxdABHDCyYaHzkUdry"
+      },
+      "href": "https://api.spotify.com/v1/albums/7kHoYxdABHDCyYaHzkUdry",
+      "id": "7kHoYxdABHDCyYaHzkUdry",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273fc854ae310a736463a9696ac"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02fc854ae310a736463a9696ac"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851fc854ae310a736463a9696ac"
+        }
+      ],
+      "is_playable": true,
+      "name": "Blessed",
+      "release_date": "1985-02-22",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:7kHoYxdABHDCyYaHzkUdry"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6deBxd8qgegXF4iFZOuW2R"
+        },
+        "href": "https://api.spotify.com/v1/artists/6deBxd8qgegXF4iFZOuW2R",
+        "id": "6deBxd8qgegXF4iFZOuW2R",
+        "name": "The Williams Brothers",
+        "type": "artist",
+        "uri": "spotify:artist:6deBxd8qgegXF4iFZOuW2R"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 228533,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMR50440604"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2ArtAOMqI9nR39pllIQHyO"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2ArtAOMqI9nR39pllIQHyO",
+    "id": "2ArtAOMqI9nR39pllIQHyO",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Never Let Go of Your Hand",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:2ArtAOMqI9nR39pllIQHyO"
+  },
+  "[\"chicago\",\"you're the inspiration - 2006 remaster\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3iDD7bnsjL9J4fO298r0L0"
+          },
+          "href": "https://api.spotify.com/v1/artists/3iDD7bnsjL9J4fO298r0L0",
+          "id": "3iDD7bnsjL9J4fO298r0L0",
+          "name": "Chicago",
+          "type": "artist",
+          "uri": "spotify:artist:3iDD7bnsjL9J4fO298r0L0"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1ICKrl6sDjJD1YdR9VDfPR"
+      },
+      "href": "https://api.spotify.com/v1/albums/1ICKrl6sDjJD1YdR9VDfPR",
+      "id": "1ICKrl6sDjJD1YdR9VDfPR",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273192f3a588427f2cbf8365506"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02192f3a588427f2cbf8365506"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851192f3a588427f2cbf8365506"
+        }
+      ],
+      "is_playable": true,
+      "name": "Chicago 17 (Expanded & Remastered)",
+      "release_date": "1984-05-14",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:1ICKrl6sDjJD1YdR9VDfPR"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3iDD7bnsjL9J4fO298r0L0"
+        },
+        "href": "https://api.spotify.com/v1/artists/3iDD7bnsjL9J4fO298r0L0",
+        "id": "3iDD7bnsjL9J4fO298r0L0",
+        "name": "Chicago",
+        "type": "artist",
+        "uri": "spotify:artist:3iDD7bnsjL9J4fO298r0L0"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 229240,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USWB10603152"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/36lkJSDyMEZoWTqtRj8Q8q"
+    },
+    "href": "https://api.spotify.com/v1/tracks/36lkJSDyMEZoWTqtRj8Q8q",
+    "id": "36lkJSDyMEZoWTqtRj8Q8q",
+    "is_local": false,
+    "is_playable": true,
+    "name": "You're the Inspiration - 2006 Remaster",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:36lkJSDyMEZoWTqtRj8Q8q"
+  },
+  "[\"mississippi mass choir\",\"having you there\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/30aMh21vdYVIjdVgIgHaqW"
+          },
+          "href": "https://api.spotify.com/v1/artists/30aMh21vdYVIjdVgIgHaqW",
+          "id": "30aMh21vdYVIjdVgIgHaqW",
+          "name": "Mississippi Mass Choir",
+          "type": "artist",
+          "uri": "spotify:artist:30aMh21vdYVIjdVgIgHaqW"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0k4D7v1TImrWqiZCPzpvDw"
+      },
+      "href": "https://api.spotify.com/v1/albums/0k4D7v1TImrWqiZCPzpvDw",
+      "id": "0k4D7v1TImrWqiZCPzpvDw",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732c109b8e7b5be271b39d674c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022c109b8e7b5be271b39d674c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512c109b8e7b5be271b39d674c"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Mississippi Mass Choir",
+      "release_date": "1987",
+      "release_date_precision": "year",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:0k4D7v1TImrWqiZCPzpvDw"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/30aMh21vdYVIjdVgIgHaqW"
+        },
+        "href": "https://api.spotify.com/v1/artists/30aMh21vdYVIjdVgIgHaqW",
+        "id": "30aMh21vdYVIjdVgIgHaqW",
+        "name": "Mississippi Mass Choir",
+        "type": "artist",
+        "uri": "spotify:artist:30aMh21vdYVIjdVgIgHaqW"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 332773,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMR50440342"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0ap5HZBkYOZwOjvSE3Mw5C"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0ap5HZBkYOZwOjvSE3Mw5C",
+    "id": "0ap5HZBkYOZwOjvSE3Mw5C",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Having You There",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:0ap5HZBkYOZwOjvSE3Mw5C"
+  },
+  "[\"10cc\",\"it doesn't matter at all\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6i6WlGzQtXtz7GcC5H5st5"
+          },
+          "href": "https://api.spotify.com/v1/artists/6i6WlGzQtXtz7GcC5H5st5",
+          "id": "6i6WlGzQtXtz7GcC5H5st5",
+          "name": "10cc",
+          "type": "artist",
+          "uri": "spotify:artist:6i6WlGzQtXtz7GcC5H5st5"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/31QbsXQzz5JS0mQDOpL0sU"
+      },
+      "href": "https://api.spotify.com/v1/albums/31QbsXQzz5JS0mQDOpL0sU",
+      "id": "31QbsXQzz5JS0mQDOpL0sU",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273dc40966d3b21bc1d6d7aee75"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02dc40966d3b21bc1d6d7aee75"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851dc40966d3b21bc1d6d7aee75"
+        }
+      ],
+      "is_playable": true,
+      "name": "Look Hear",
+      "release_date": "1980-03-28",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:31QbsXQzz5JS0mQDOpL0sU"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6i6WlGzQtXtz7GcC5H5st5"
+        },
+        "href": "https://api.spotify.com/v1/artists/6i6WlGzQtXtz7GcC5H5st5",
+        "id": "6i6WlGzQtXtz7GcC5H5st5",
+        "name": "10cc",
+        "type": "artist",
+        "uri": "spotify:artist:6i6WlGzQtXtz7GcC5H5st5"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 241533,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBF088000015"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/15H4nh6FpFmIms3o52pF2q"
+    },
+    "href": "https://api.spotify.com/v1/tracks/15H4nh6FpFmIms3o52pF2q",
+    "id": "15H4nh6FpFmIms3o52pF2q",
+    "is_local": false,
+    "is_playable": true,
+    "name": "It Doesn't Matter At All",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:15H4nh6FpFmIms3o52pF2q"
+  },
+  "[\"lexi\",\"trust in me only\"]": null,
+  "[\"xiu xiu\",\"boy soprano\"]": null,
+  "[\"reel big fish\",\"sell out\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3bXhZFreBJF4QDUUiMmtZW"
+          },
+          "href": "https://api.spotify.com/v1/artists/3bXhZFreBJF4QDUUiMmtZW",
+          "id": "3bXhZFreBJF4QDUUiMmtZW",
+          "name": "Reel Big Fish",
+          "type": "artist",
+          "uri": "spotify:artist:3bXhZFreBJF4QDUUiMmtZW"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5nO5x1Qgnf7zwmO83qrHRn"
+      },
+      "href": "https://api.spotify.com/v1/albums/5nO5x1Qgnf7zwmO83qrHRn",
+      "id": "5nO5x1Qgnf7zwmO83qrHRn",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ef883c94c02915cacc3b5b36"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ef883c94c02915cacc3b5b36"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ef883c94c02915cacc3b5b36"
+        }
+      ],
+      "is_playable": true,
+      "name": "Turn The Radio Off",
+      "release_date": "1996",
+      "release_date_precision": "year",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:5nO5x1Qgnf7zwmO83qrHRn"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3bXhZFreBJF4QDUUiMmtZW"
+        },
+        "href": "https://api.spotify.com/v1/artists/3bXhZFreBJF4QDUUiMmtZW",
+        "id": "3bXhZFreBJF4QDUUiMmtZW",
+        "name": "Reel Big Fish",
+        "type": "artist",
+        "uri": "spotify:artist:3bXhZFreBJF4QDUUiMmtZW"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 227493,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USJI10200004"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6SJ1hWFVBIiUgGgHKvwXCQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6SJ1hWFVBIiUgGgHKvwXCQ",
+    "id": "6SJ1hWFVBIiUgGgHKvwXCQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sell Out",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6SJ1hWFVBIiUgGgHKvwXCQ"
+  },
+  "[\"toto\",\"africa\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0PFtn5NtBbbUNbU9EAmIWF"
+          },
+          "href": "https://api.spotify.com/v1/artists/0PFtn5NtBbbUNbU9EAmIWF",
+          "id": "0PFtn5NtBbbUNbU9EAmIWF",
+          "name": "TOTO",
+          "type": "artist",
+          "uri": "spotify:artist:0PFtn5NtBbbUNbU9EAmIWF"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/62U7xIHcID94o20Of5ea4D"
+      },
+      "href": "https://api.spotify.com/v1/albums/62U7xIHcID94o20Of5ea4D",
+      "id": "62U7xIHcID94o20Of5ea4D",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ebd6d20c0082524244ef83df"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ebd6d20c0082524244ef83df"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ebd6d20c0082524244ef83df"
+        }
+      ],
+      "is_playable": true,
+      "name": "Toto IV",
+      "release_date": "1982-04-08",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:62U7xIHcID94o20Of5ea4D"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0PFtn5NtBbbUNbU9EAmIWF"
+        },
+        "href": "https://api.spotify.com/v1/artists/0PFtn5NtBbbUNbU9EAmIWF",
+        "id": "0PFtn5NtBbbUNbU9EAmIWF",
+        "name": "TOTO",
+        "type": "artist",
+        "uri": "spotify:artist:0PFtn5NtBbbUNbU9EAmIWF"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 295282,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM19801941"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2374M0fQpWi3dLnB54qaLX"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2374M0fQpWi3dLnB54qaLX",
+    "id": "2374M0fQpWi3dLnB54qaLX",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Africa",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:2374M0fQpWi3dLnB54qaLX"
+  },
+  "[\"storybots\",\"brush your teeth\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6N6lLMxDF4as6slJ878Rgg"
+          },
+          "href": "https://api.spotify.com/v1/artists/6N6lLMxDF4as6slJ878Rgg",
+          "id": "6N6lLMxDF4as6slJ878Rgg",
+          "name": "StoryBots",
+          "type": "artist",
+          "uri": "spotify:artist:6N6lLMxDF4as6slJ878Rgg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/37wRLIupMBMkx1o2AGYalC"
+      },
+      "href": "https://api.spotify.com/v1/albums/37wRLIupMBMkx1o2AGYalC",
+      "id": "37wRLIupMBMkx1o2AGYalC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27374279a4759085e085d2340a8"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0274279a4759085e085d2340a8"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485174279a4759085e085d2340a8"
+        }
+      ],
+      "is_playable": true,
+      "name": "StoryBots Behaviors (Music from the Netflix Series)",
+      "release_date": "2018-03-09",
+      "release_date_precision": "day",
+      "total_tracks": 6,
+      "type": "album",
+      "uri": "spotify:album:37wRLIupMBMkx1o2AGYalC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6N6lLMxDF4as6slJ878Rgg"
+        },
+        "href": "https://api.spotify.com/v1/artists/6N6lLMxDF4as6slJ878Rgg",
+        "id": "6N6lLMxDF4as6slJ878Rgg",
+        "name": "StoryBots",
+        "type": "artist",
+        "uri": "spotify:artist:6N6lLMxDF4as6slJ878Rgg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 64291,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRZR1800007"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4yshDd5K3ZeS0pWjPwRvUT"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4yshDd5K3ZeS0pWjPwRvUT",
+    "id": "4yshDd5K3ZeS0pWjPwRvUT",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Brush Your Teeth",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:4yshDd5K3ZeS0pWjPwRvUT"
+  },
+  "[\"iggy pop\",\"the passenger\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/33EUXrFKGjpUSGacqEHhU4"
+          },
+          "href": "https://api.spotify.com/v1/artists/33EUXrFKGjpUSGacqEHhU4",
+          "id": "33EUXrFKGjpUSGacqEHhU4",
+          "name": "Iggy Pop",
+          "type": "artist",
+          "uri": "spotify:artist:33EUXrFKGjpUSGacqEHhU4"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2jnV6ytZOmt71iEC5xHEYz"
+      },
+      "href": "https://api.spotify.com/v1/albums/2jnV6ytZOmt71iEC5xHEYz",
+      "id": "2jnV6ytZOmt71iEC5xHEYz",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734aa5f679427e35409a06f225"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024aa5f679427e35409a06f225"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514aa5f679427e35409a06f225"
+        }
+      ],
+      "is_playable": true,
+      "name": "Lust For Life",
+      "release_date": "1977-08-29",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:2jnV6ytZOmt71iEC5xHEYz"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/33EUXrFKGjpUSGacqEHhU4"
+        },
+        "href": "https://api.spotify.com/v1/artists/33EUXrFKGjpUSGacqEHhU4",
+        "id": "33EUXrFKGjpUSGacqEHhU4",
+        "name": "Iggy Pop",
+        "type": "artist",
+        "uri": "spotify:artist:33EUXrFKGjpUSGacqEHhU4"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 283360,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USVI20700278"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/15BQ7vEDv2LJuh8TxWIhtd"
+    },
+    "href": "https://api.spotify.com/v1/tracks/15BQ7vEDv2LJuh8TxWIhtd",
+    "id": "15BQ7vEDv2LJuh8TxWIhtd",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Passenger",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:15BQ7vEDv2LJuh8TxWIhtd"
+  },
+  "[\"king gizzard & the lizard wizard\",\"witchcraft\"]": null,
+  "[\"redbone\",\"come and get your love\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0w7HLMvZOHatWVbAKee1zF"
+          },
+          "href": "https://api.spotify.com/v1/artists/0w7HLMvZOHatWVbAKee1zF",
+          "id": "0w7HLMvZOHatWVbAKee1zF",
+          "name": "Redbone",
+          "type": "artist",
+          "uri": "spotify:artist:0w7HLMvZOHatWVbAKee1zF"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7HNboS0n64gNVx0rV3qT6a"
+      },
+      "href": "https://api.spotify.com/v1/albums/7HNboS0n64gNVx0rV3qT6a",
+      "id": "7HNboS0n64gNVx0rV3qT6a",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738be3306724801aa328dccb13"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028be3306724801aa328dccb13"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518be3306724801aa328dccb13"
+        }
+      ],
+      "is_playable": true,
+      "name": "Wovoka",
+      "release_date": "1973-11-01",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:7HNboS0n64gNVx0rV3qT6a"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0w7HLMvZOHatWVbAKee1zF"
+        },
+        "href": "https://api.spotify.com/v1/artists/0w7HLMvZOHatWVbAKee1zF",
+        "id": "0w7HLMvZOHatWVbAKee1zF",
+        "name": "Redbone",
+        "type": "artist",
+        "uri": "spotify:artist:0w7HLMvZOHatWVbAKee1zF"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 300666,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM19913629"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/23hrvdvkIi1X1voQG2bJH9"
+    },
+    "href": "https://api.spotify.com/v1/tracks/23hrvdvkIi1X1voQG2bJH9",
+    "id": "23hrvdvkIi1X1voQG2bJH9",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Come and Get Your Love",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:23hrvdvkIi1X1voQG2bJH9"
+  },
+  "[\"al green\",\"truth 'n' time\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3dkbV4qihUeMsqN4vBGg93"
+          },
+          "href": "https://api.spotify.com/v1/artists/3dkbV4qihUeMsqN4vBGg93",
+          "id": "3dkbV4qihUeMsqN4vBGg93",
+          "name": "Al Green",
+          "type": "artist",
+          "uri": "spotify:artist:3dkbV4qihUeMsqN4vBGg93"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7DKYWECMpNS2fepnrtN55W"
+      },
+      "href": "https://api.spotify.com/v1/albums/7DKYWECMpNS2fepnrtN55W",
+      "id": "7DKYWECMpNS2fepnrtN55W",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27327951633c1275201db3d5541"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0227951633c1275201db3d5541"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485127951633c1275201db3d5541"
+        }
+      ],
+      "is_playable": true,
+      "name": "Truth N' Time",
+      "release_date": "1978",
+      "release_date_precision": "year",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:7DKYWECMpNS2fepnrtN55W"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3dkbV4qihUeMsqN4vBGg93"
+        },
+        "href": "https://api.spotify.com/v1/artists/3dkbV4qihUeMsqN4vBGg93",
+        "id": "3dkbV4qihUeMsqN4vBGg93",
+        "name": "Al Green",
+        "type": "artist",
+        "uri": "spotify:artist:3dkbV4qihUeMsqN4vBGg93"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 222213,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US2HK1419605"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7o9OVmPIE0oGbxP67WiT5r"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7o9OVmPIE0oGbxP67WiT5r",
+    "id": "7o9OVmPIE0oGbxP67WiT5r",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Truth N' Time",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:7o9OVmPIE0oGbxP67WiT5r"
+  },
+  "[\"lafa taylor\",\"thunder\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0j0HBDnIuT6rsn840ec18A"
+          },
+          "href": "https://api.spotify.com/v1/artists/0j0HBDnIuT6rsn840ec18A",
+          "id": "0j0HBDnIuT6rsn840ec18A",
+          "name": "Lafa Taylor",
+          "type": "artist",
+          "uri": "spotify:artist:0j0HBDnIuT6rsn840ec18A"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/46H0jutpi96RVouN9pHPLT"
+      },
+      "href": "https://api.spotify.com/v1/albums/46H0jutpi96RVouN9pHPLT",
+      "id": "46H0jutpi96RVouN9pHPLT",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737b2f6aa5e871fa57655da4e1"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027b2f6aa5e871fa57655da4e1"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517b2f6aa5e871fa57655da4e1"
+        }
+      ],
+      "is_playable": true,
+      "name": "Thunder",
+      "release_date": "2019-06-19",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:46H0jutpi96RVouN9pHPLT"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0j0HBDnIuT6rsn840ec18A"
+        },
+        "href": "https://api.spotify.com/v1/artists/0j0HBDnIuT6rsn840ec18A",
+        "id": "0j0HBDnIuT6rsn840ec18A",
+        "name": "Lafa Taylor",
+        "type": "artist",
+        "uri": "spotify:artist:0j0HBDnIuT6rsn840ec18A"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 152432,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "ushm21939028"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6KsCkAYEcJ8HA3nfubyqDS"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6KsCkAYEcJ8HA3nfubyqDS",
+    "id": "6KsCkAYEcJ8HA3nfubyqDS",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Thunder",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6KsCkAYEcJ8HA3nfubyqDS"
   }
 }
