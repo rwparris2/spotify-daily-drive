@@ -249773,5 +249773,1226 @@
     "track_number": 5,
     "type": "track",
     "uri": "spotify:track:7Gumr4H9DOWAtnRfpFONwd"
+  },
+  "[\"the hives\",\"tick tick boom\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4DToQR3aKrHQSSRzSz8Nzt"
+          },
+          "href": "https://api.spotify.com/v1/artists/4DToQR3aKrHQSSRzSz8Nzt",
+          "id": "4DToQR3aKrHQSSRzSz8Nzt",
+          "name": "The Hives",
+          "type": "artist",
+          "uri": "spotify:artist:4DToQR3aKrHQSSRzSz8Nzt"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0kGG0cYU829iWwfpQFm6Ue"
+      },
+      "href": "https://api.spotify.com/v1/albums/0kGG0cYU829iWwfpQFm6Ue",
+      "id": "0kGG0cYU829iWwfpQFm6Ue",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273560d24c1b0b6039154c0c3dd"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02560d24c1b0b6039154c0c3dd"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851560d24c1b0b6039154c0c3dd"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Black And White Album",
+      "release_date": "2007-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:0kGG0cYU829iWwfpQFm6Ue"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4DToQR3aKrHQSSRzSz8Nzt"
+        },
+        "href": "https://api.spotify.com/v1/artists/4DToQR3aKrHQSSRzSz8Nzt",
+        "id": "4DToQR3aKrHQSSRzSz8Nzt",
+        "name": "The Hives",
+        "type": "artist",
+        "uri": "spotify:artist:4DToQR3aKrHQSSRzSz8Nzt"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 205413,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM70708690"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6tedQ1ZmbygqhbdcfJL7Xb"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6tedQ1ZmbygqhbdcfJL7Xb",
+    "id": "6tedQ1ZmbygqhbdcfJL7Xb",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Tick Tick Boom",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6tedQ1ZmbygqhbdcfJL7Xb"
+  },
+  "[\"cake\",\"the distance\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6A43Djmhbe9100UwnI7epV"
+          },
+          "href": "https://api.spotify.com/v1/artists/6A43Djmhbe9100UwnI7epV",
+          "id": "6A43Djmhbe9100UwnI7epV",
+          "name": "CAKE",
+          "type": "artist",
+          "uri": "spotify:artist:6A43Djmhbe9100UwnI7epV"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0xqBjioTJ32aszn90qV2m1"
+      },
+      "href": "https://api.spotify.com/v1/albums/0xqBjioTJ32aszn90qV2m1",
+      "id": "0xqBjioTJ32aszn90qV2m1",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27338c44888655cc7d2e10122ba"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0238c44888655cc7d2e10122ba"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485138c44888655cc7d2e10122ba"
+        }
+      ],
+      "is_playable": true,
+      "name": "Fashion Nugget",
+      "release_date": "1996-09-16",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:0xqBjioTJ32aszn90qV2m1"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6A43Djmhbe9100UwnI7epV"
+        },
+        "href": "https://api.spotify.com/v1/artists/6A43Djmhbe9100UwnI7epV",
+        "id": "6A43Djmhbe9100UwnI7epV",
+        "name": "CAKE",
+        "type": "artist",
+        "uri": "spotify:artist:6A43Djmhbe9100UwnI7epV"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 180627,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCA19686701"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1szwDbVdIdoQq5mG5GXAmJ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1szwDbVdIdoQq5mG5GXAmJ",
+    "id": "1szwDbVdIdoQq5mG5GXAmJ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Distance",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:1szwDbVdIdoQq5mG5GXAmJ"
+  },
+  "[\"white denim\",\"drug\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0RdRumkn2UydUjqytNJ2Cp"
+          },
+          "href": "https://api.spotify.com/v1/artists/0RdRumkn2UydUjqytNJ2Cp",
+          "id": "0RdRumkn2UydUjqytNJ2Cp",
+          "name": "White Denim",
+          "type": "artist",
+          "uri": "spotify:artist:0RdRumkn2UydUjqytNJ2Cp"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/24l0lgTXOsgBms7ISsLKcn"
+      },
+      "href": "https://api.spotify.com/v1/albums/24l0lgTXOsgBms7ISsLKcn",
+      "id": "24l0lgTXOsgBms7ISsLKcn",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273594b56a4aa99a58f2262becc"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02594b56a4aa99a58f2262becc"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851594b56a4aa99a58f2262becc"
+        }
+      ],
+      "is_playable": true,
+      "name": "D",
+      "release_date": "2011-05-30",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:24l0lgTXOsgBms7ISsLKcn"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0RdRumkn2UydUjqytNJ2Cp"
+        },
+        "href": "https://api.spotify.com/v1/artists/0RdRumkn2UydUjqytNJ2Cp",
+        "id": "0RdRumkn2UydUjqytNJ2Cp",
+        "name": "White Denim",
+        "type": "artist",
+        "uri": "spotify:artist:0RdRumkn2UydUjqytNJ2Cp"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 182293,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCJ81100614"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3EQK10RbcGlRv4ZwrUzUyk"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3EQK10RbcGlRv4ZwrUzUyk",
+    "id": "3EQK10RbcGlRv4ZwrUzUyk",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Drug",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:3EQK10RbcGlRv4ZwrUzUyk"
+  },
+  "[\"the black keys\",\"girl is on my mind\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7mnBLXK823vNxN3UWB7Gfz"
+          },
+          "href": "https://api.spotify.com/v1/artists/7mnBLXK823vNxN3UWB7Gfz",
+          "id": "7mnBLXK823vNxN3UWB7Gfz",
+          "name": "The Black Keys",
+          "type": "artist",
+          "uri": "spotify:artist:7mnBLXK823vNxN3UWB7Gfz"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1rlGDm1KQJfDyT5v1U8Xk5"
+      },
+      "href": "https://api.spotify.com/v1/albums/1rlGDm1KQJfDyT5v1U8Xk5",
+      "id": "1rlGDm1KQJfDyT5v1U8Xk5",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27309ed0b59f23120e6517ec9f5"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0209ed0b59f23120e6517ec9f5"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485109ed0b59f23120e6517ec9f5"
+        }
+      ],
+      "is_playable": true,
+      "name": "Rubber Factory",
+      "release_date": "2016-12-01",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:1rlGDm1KQJfDyT5v1U8Xk5"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7mnBLXK823vNxN3UWB7Gfz"
+        },
+        "href": "https://api.spotify.com/v1/artists/7mnBLXK823vNxN3UWB7Gfz",
+        "id": "7mnBLXK823vNxN3UWB7Gfz",
+        "name": "The Black Keys",
+        "type": "artist",
+        "uri": "spotify:artist:7mnBLXK823vNxN3UWB7Gfz"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 208173,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USFP60401106"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4KVYCdoWmDa4KS1OY6sgMa"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4KVYCdoWmDa4KS1OY6sgMa",
+    "id": "4KVYCdoWmDa4KS1OY6sgMa",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Girl Is on My Mind",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:4KVYCdoWmDa4KS1OY6sgMa"
+  },
+  "[\"melt-banana\",\"sick zip everywhere\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1aDpQ3bo57IlYWmsG5sdlp"
+          },
+          "href": "https://api.spotify.com/v1/artists/1aDpQ3bo57IlYWmsG5sdlp",
+          "id": "1aDpQ3bo57IlYWmsG5sdlp",
+          "name": "Melt-Banana",
+          "type": "artist",
+          "uri": "spotify:artist:1aDpQ3bo57IlYWmsG5sdlp"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/415zkL4R6OUtSdHlpfbTM2"
+      },
+      "href": "https://api.spotify.com/v1/albums/415zkL4R6OUtSdHlpfbTM2",
+      "id": "415zkL4R6OUtSdHlpfbTM2",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27378ff2b8a8777b786a903ebae"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0278ff2b8a8777b786a903ebae"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485178ff2b8a8777b786a903ebae"
+        }
+      ],
+      "is_playable": true,
+      "name": "Scratch or Stitch",
+      "release_date": "1996",
+      "release_date_precision": "year",
+      "total_tracks": 22,
+      "type": "album",
+      "uri": "spotify:album:415zkL4R6OUtSdHlpfbTM2"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1aDpQ3bo57IlYWmsG5sdlp"
+        },
+        "href": "https://api.spotify.com/v1/artists/1aDpQ3bo57IlYWmsG5sdlp",
+        "id": "1aDpQ3bo57IlYWmsG5sdlp",
+        "name": "Melt-Banana",
+        "type": "artist",
+        "uri": "spotify:artist:1aDpQ3bo57IlYWmsG5sdlp"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 111666,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USKBH0710190"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6m3xN6zI9lOghRyqichNnF"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6m3xN6zI9lOghRyqichNnF",
+    "id": "6m3xN6zI9lOghRyqichNnF",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sick ZiP Everywhere",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:6m3xN6zI9lOghRyqichNnF"
+  },
+  "[\"datach'i\",\"what it is\"]": null,
+  "[\"datach'i\",\"nebulae v2\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6ZULITXmOFWJwJKilsFRm7"
+          },
+          "href": "https://api.spotify.com/v1/artists/6ZULITXmOFWJwJKilsFRm7",
+          "id": "6ZULITXmOFWJwJKilsFRm7",
+          "name": "Datach'i",
+          "type": "artist",
+          "uri": "spotify:artist:6ZULITXmOFWJwJKilsFRm7"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2vk5hfSbqycqvFhb35dbqM"
+      },
+      "href": "https://api.spotify.com/v1/albums/2vk5hfSbqycqvFhb35dbqM",
+      "id": "2vk5hfSbqycqvFhb35dbqM",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27389168ba81cb5952844ef8e33"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0289168ba81cb5952844ef8e33"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485189168ba81cb5952844ef8e33"
+        }
+      ],
+      "is_playable": true,
+      "name": "System",
+      "release_date": "2016-08-19",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:2vk5hfSbqycqvFhb35dbqM"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6ZULITXmOFWJwJKilsFRm7"
+        },
+        "href": "https://api.spotify.com/v1/artists/6ZULITXmOFWJwJKilsFRm7",
+        "id": "6ZULITXmOFWJwJKilsFRm7",
+        "name": "Datach'i",
+        "type": "artist",
+        "uri": "spotify:artist:6ZULITXmOFWJwJKilsFRm7"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 138080,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA2B1601996"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0a0cRSKRxzua372b006p7m"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0a0cRSKRxzua372b006p7m",
+    "id": "0a0cRSKRxzua372b006p7m",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Nebulae V2",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:0a0cRSKRxzua372b006p7m"
+  },
+  "[\"the last shadow puppets\",\"in the heat of the morning\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2Z7UcsdweVlRbAk5wH5fsf"
+          },
+          "href": "https://api.spotify.com/v1/artists/2Z7UcsdweVlRbAk5wH5fsf",
+          "id": "2Z7UcsdweVlRbAk5wH5fsf",
+          "name": "The Last Shadow Puppets",
+          "type": "artist",
+          "uri": "spotify:artist:2Z7UcsdweVlRbAk5wH5fsf"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1Rsm7e7fnLx87MDgV7w7ZM"
+      },
+      "href": "https://api.spotify.com/v1/albums/1Rsm7e7fnLx87MDgV7w7ZM",
+      "id": "1Rsm7e7fnLx87MDgV7w7ZM",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f79c62c90bafbacdd24e88d7"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f79c62c90bafbacdd24e88d7"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f79c62c90bafbacdd24e88d7"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Age Of The Understatement",
+      "release_date": "2008-04-10",
+      "release_date_precision": "day",
+      "total_tracks": 4,
+      "type": "album",
+      "uri": "spotify:album:1Rsm7e7fnLx87MDgV7w7ZM"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2Z7UcsdweVlRbAk5wH5fsf"
+        },
+        "href": "https://api.spotify.com/v1/artists/2Z7UcsdweVlRbAk5wH5fsf",
+        "id": "2Z7UcsdweVlRbAk5wH5fsf",
+        "name": "The Last Shadow Puppets",
+        "type": "artist",
+        "uri": "spotify:artist:2Z7UcsdweVlRbAk5wH5fsf"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1ctkBmvz80MGyi72Ix055S"
+        },
+        "href": "https://api.spotify.com/v1/artists/1ctkBmvz80MGyi72Ix055S",
+        "id": "1ctkBmvz80MGyi72Ix055S",
+        "name": "Alex Turner",
+        "type": "artist",
+        "uri": "spotify:artist:1ctkBmvz80MGyi72Ix055S"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3M0H4efyA5YcijrKlaKbYn"
+        },
+        "href": "https://api.spotify.com/v1/artists/3M0H4efyA5YcijrKlaKbYn",
+        "id": "3M0H4efyA5YcijrKlaKbYn",
+        "name": "Miles Kane",
+        "type": "artist",
+        "uri": "spotify:artist:3M0H4efyA5YcijrKlaKbYn"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 161333,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBCEL0800201"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2pAm0eho3UtxAK1bsRuOK7"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2pAm0eho3UtxAK1bsRuOK7",
+    "id": "2pAm0eho3UtxAK1bsRuOK7",
+    "is_local": false,
+    "is_playable": true,
+    "name": "In The Heat Of The Morning",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:2pAm0eho3UtxAK1bsRuOK7"
+  },
+  "[\"polvo\",\"feather of forgiveness\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0pbIqPTefLfuOcbM2ojXdl"
+          },
+          "href": "https://api.spotify.com/v1/artists/0pbIqPTefLfuOcbM2ojXdl",
+          "id": "0pbIqPTefLfuOcbM2ojXdl",
+          "name": "Polvo",
+          "type": "artist",
+          "uri": "spotify:artist:0pbIqPTefLfuOcbM2ojXdl"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4jNgQvDvsBDPrlDJfPWcFI"
+      },
+      "href": "https://api.spotify.com/v1/albums/4jNgQvDvsBDPrlDJfPWcFI",
+      "id": "4jNgQvDvsBDPrlDJfPWcFI",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273435bb23b0bc0e62323aac61f"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02435bb23b0bc0e62323aac61f"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851435bb23b0bc0e62323aac61f"
+        }
+      ],
+      "is_playable": true,
+      "name": "Exploded Drawing",
+      "release_date": "1996-04-30",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:4jNgQvDvsBDPrlDJfPWcFI"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0pbIqPTefLfuOcbM2ojXdl"
+        },
+        "href": "https://api.spotify.com/v1/artists/0pbIqPTefLfuOcbM2ojXdl",
+        "id": "0pbIqPTefLfuOcbM2ojXdl",
+        "name": "Polvo",
+        "type": "artist",
+        "uri": "spotify:artist:0pbIqPTefLfuOcbM2ojXdl"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 225200,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USTG39616203"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1AJnDt2rqz7UCcGRWhsUI4"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1AJnDt2rqz7UCcGRWhsUI4",
+    "id": "1AJnDt2rqz7UCcGRWhsUI4",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Feather of Forgiveness",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:1AJnDt2rqz7UCcGRWhsUI4"
+  },
+  "[\"beth stelling\",\"beth stelling\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2ijJD427cOeyevEGUmQS9u"
+      },
+      "href": "https://api.spotify.com/v1/albums/2ijJD427cOeyevEGUmQS9u",
+      "id": "2ijJD427cOeyevEGUmQS9u",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27330563e01ac2f3b82a45f9d0b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0230563e01ac2f3b82a45f9d0b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485130563e01ac2f3b82a45f9d0b"
+        }
+      ],
+      "is_playable": true,
+      "name": "Holy Fuck. Live Comedy.",
+      "release_date": "2013-05-29",
+      "release_date_precision": "day",
+      "total_tracks": 47,
+      "type": "album",
+      "uri": "spotify:album:2ijJD427cOeyevEGUmQS9u"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/62ZRXSTgwuPWP4aa8ICbps"
+        },
+        "href": "https://api.spotify.com/v1/artists/62ZRXSTgwuPWP4aa8ICbps",
+        "id": "62ZRXSTgwuPWP4aa8ICbps",
+        "name": "Beth Stelling",
+        "type": "artist",
+        "uri": "spotify:artist:62ZRXSTgwuPWP4aa8ICbps"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 159417,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USLQZ1301895"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4y0JS0qmLPTGj0nWW9Yo6s"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4y0JS0qmLPTGj0nWW9Yo6s",
+    "id": "4y0JS0qmLPTGj0nWW9Yo6s",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Beth Stelling",
+    "track_number": 15,
+    "type": "track",
+    "uri": "spotify:track:4y0JS0qmLPTGj0nWW9Yo6s"
+  },
+  "[\"awolnation\",\"sail\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4njdEjTnLfcGImKZu1iSrz"
+          },
+          "href": "https://api.spotify.com/v1/artists/4njdEjTnLfcGImKZu1iSrz",
+          "id": "4njdEjTnLfcGImKZu1iSrz",
+          "name": "AWOLNATION",
+          "type": "artist",
+          "uri": "spotify:artist:4njdEjTnLfcGImKZu1iSrz"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1fag8cnc5p4Umu4tRMAsLv"
+      },
+      "href": "https://api.spotify.com/v1/albums/1fag8cnc5p4Umu4tRMAsLv",
+      "id": "1fag8cnc5p4Umu4tRMAsLv",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27332f1572738340ddc9569c54b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0232f1572738340ddc9569c54b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485132f1572738340ddc9569c54b"
+        }
+      ],
+      "is_playable": true,
+      "name": "Megalithic Symphony",
+      "release_date": "2011-03-15",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:1fag8cnc5p4Umu4tRMAsLv"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4njdEjTnLfcGImKZu1iSrz"
+        },
+        "href": "https://api.spotify.com/v1/artists/4njdEjTnLfcGImKZu1iSrz",
+        "id": "4njdEjTnLfcGImKZu1iSrz",
+        "name": "AWOLNATION",
+        "type": "artist",
+        "uri": "spotify:artist:4njdEjTnLfcGImKZu1iSrz"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 259093,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USP6L1000053"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7ueP5u2qkdZbIPN2YA6LR0"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7ueP5u2qkdZbIPN2YA6LR0",
+    "id": "7ueP5u2qkdZbIPN2YA6LR0",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sail",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:7ueP5u2qkdZbIPN2YA6LR0"
+  },
+  "[\"the jesus lizard\",\"thumper\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6r26MaDr8bqNALjXgYPXMa"
+          },
+          "href": "https://api.spotify.com/v1/artists/6r26MaDr8bqNALjXgYPXMa",
+          "id": "6r26MaDr8bqNALjXgYPXMa",
+          "name": "The Jesus Lizard",
+          "type": "artist",
+          "uri": "spotify:artist:6r26MaDr8bqNALjXgYPXMa"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4AKupidP5zwI0MVsHFhlfq"
+      },
+      "href": "https://api.spotify.com/v1/albums/4AKupidP5zwI0MVsHFhlfq",
+      "id": "4AKupidP5zwI0MVsHFhlfq",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736cddadd992b598c55e9bc288"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026cddadd992b598c55e9bc288"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516cddadd992b598c55e9bc288"
+        }
+      ],
+      "is_playable": true,
+      "name": "Shot",
+      "release_date": "1996-04-16",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:4AKupidP5zwI0MVsHFhlfq"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6r26MaDr8bqNALjXgYPXMa"
+        },
+        "href": "https://api.spotify.com/v1/artists/6r26MaDr8bqNALjXgYPXMa",
+        "id": "6r26MaDr8bqNALjXgYPXMa",
+        "name": "The Jesus Lizard",
+        "type": "artist",
+        "uri": "spotify:artist:6r26MaDr8bqNALjXgYPXMa"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 211866,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCA29600695"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0ar7kvNdBppCI4J5g4lmBf"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0ar7kvNdBppCI4J5g4lmBf",
+    "id": "0ar7kvNdBppCI4J5g4lmBf",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Thumper",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:0ar7kvNdBppCI4J5g4lmBf"
+  },
+  "[\"parts & labor\",\"timeline\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1GBLRB4wLAQH8hq8Eu28uR"
+          },
+          "href": "https://api.spotify.com/v1/artists/1GBLRB4wLAQH8hq8Eu28uR",
+          "id": "1GBLRB4wLAQH8hq8Eu28uR",
+          "name": "Parts & Labor",
+          "type": "artist",
+          "uri": "spotify:artist:1GBLRB4wLAQH8hq8Eu28uR"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3e4Aq9cRXDcIijUJU2Xh3k"
+      },
+      "href": "https://api.spotify.com/v1/albums/3e4Aq9cRXDcIijUJU2Xh3k",
+      "id": "3e4Aq9cRXDcIijUJU2Xh3k",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732cb90dec53a85977a02e4d61"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022cb90dec53a85977a02e4d61"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512cb90dec53a85977a02e4d61"
+        }
+      ],
+      "is_playable": true,
+      "name": "Stay Afraid",
+      "release_date": "2006-04-11",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:3e4Aq9cRXDcIijUJU2Xh3k"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1GBLRB4wLAQH8hq8Eu28uR"
+        },
+        "href": "https://api.spotify.com/v1/artists/1GBLRB4wLAQH8hq8Eu28uR",
+        "id": "1GBLRB4wLAQH8hq8Eu28uR",
+        "name": "Parts & Labor",
+        "type": "artist",
+        "uri": "spotify:artist:1GBLRB4wLAQH8hq8Eu28uR"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 112640,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US38Y0607706"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5tiQP7ISFh0mY04OwEtnff"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5tiQP7ISFh0mY04OwEtnff",
+    "id": "5tiQP7ISFh0mY04OwEtnff",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Timeline",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:5tiQP7ISFh0mY04OwEtnff"
+  },
+  "[\"whitney cummings\",\"gynecologist\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5nrXNyP5XC1DIgN1CPycmy"
+          },
+          "href": "https://api.spotify.com/v1/artists/5nrXNyP5XC1DIgN1CPycmy",
+          "id": "5nrXNyP5XC1DIgN1CPycmy",
+          "name": "Whitney Cummings",
+          "type": "artist",
+          "uri": "spotify:artist:5nrXNyP5XC1DIgN1CPycmy"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7hkvi64EuIYftfrrdOikRh"
+      },
+      "href": "https://api.spotify.com/v1/albums/7hkvi64EuIYftfrrdOikRh",
+      "id": "7hkvi64EuIYftfrrdOikRh",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27371b5c93bb760a1c9febb39f7"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0271b5c93bb760a1c9febb39f7"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485171b5c93bb760a1c9febb39f7"
+        }
+      ],
+      "is_playable": true,
+      "name": "Emotional Ninja",
+      "release_date": "2013-12-09",
+      "release_date_precision": "day",
+      "total_tracks": 33,
+      "type": "album",
+      "uri": "spotify:album:7hkvi64EuIYftfrrdOikRh"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5nrXNyP5XC1DIgN1CPycmy"
+        },
+        "href": "https://api.spotify.com/v1/artists/5nrXNyP5XC1DIgN1CPycmy",
+        "id": "5nrXNyP5XC1DIgN1CPycmy",
+        "name": "Whitney Cummings",
+        "type": "artist",
+        "uri": "spotify:artist:5nrXNyP5XC1DIgN1CPycmy"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 117851,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QMJYX1333404"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5bHGb4ddgPWmfePaif0W7M"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5bHGb4ddgPWmfePaif0W7M",
+    "id": "5bHGb4ddgPWmfePaif0W7M",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Gynecologist",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:5bHGb4ddgPWmfePaif0W7M"
+  },
+  "[\"the dead c\",\"the magicians\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6TA37XSAq0gFy4lI3LMSHq"
+          },
+          "href": "https://api.spotify.com/v1/artists/6TA37XSAq0gFy4lI3LMSHq",
+          "id": "6TA37XSAq0gFy4lI3LMSHq",
+          "name": "The Dead C",
+          "type": "artist",
+          "uri": "spotify:artist:6TA37XSAq0gFy4lI3LMSHq"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2BgchaGTzgMpiFOSHyGVf7"
+      },
+      "href": "https://api.spotify.com/v1/albums/2BgchaGTzgMpiFOSHyGVf7",
+      "id": "2BgchaGTzgMpiFOSHyGVf7",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27360ca706ce4e909c691ddb862"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0260ca706ce4e909c691ddb862"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485160ca706ce4e909c691ddb862"
+        }
+      ],
+      "is_playable": true,
+      "name": "Future Artists",
+      "release_date": "2007-05-29",
+      "release_date_precision": "day",
+      "total_tracks": 5,
+      "type": "album",
+      "uri": "spotify:album:2BgchaGTzgMpiFOSHyGVf7"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6TA37XSAq0gFy4lI3LMSHq"
+        },
+        "href": "https://api.spotify.com/v1/artists/6TA37XSAq0gFy4lI3LMSHq",
+        "id": "6TA37XSAq0gFy4lI3LMSHq",
+        "name": "The Dead C",
+        "type": "artist",
+        "uri": "spotify:artist:6TA37XSAq0gFy4lI3LMSHq"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 225040,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCPT0700016"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1qc0BVapuMeRJ5kPfNjObq"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1qc0BVapuMeRJ5kPfNjObq",
+    "id": "1qc0BVapuMeRJ5kPfNjObq",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Magicians",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:1qc0BVapuMeRJ5kPfNjObq"
+  },
+  "[\"royal blood\",\"million and one\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2S5hlvw4CMtMGswFtfdK15"
+          },
+          "href": "https://api.spotify.com/v1/artists/2S5hlvw4CMtMGswFtfdK15",
+          "id": "2S5hlvw4CMtMGswFtfdK15",
+          "name": "Royal Blood",
+          "type": "artist",
+          "uri": "spotify:artist:2S5hlvw4CMtMGswFtfdK15"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/05aqnnpYVOvsX0SIzmIuxi"
+      },
+      "href": "https://api.spotify.com/v1/albums/05aqnnpYVOvsX0SIzmIuxi",
+      "id": "05aqnnpYVOvsX0SIzmIuxi",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273722fae9a2431e499d89416a3"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02722fae9a2431e499d89416a3"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851722fae9a2431e499d89416a3"
+        }
+      ],
+      "is_playable": true,
+      "name": "Typhoons",
+      "release_date": "2021-04-30",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:05aqnnpYVOvsX0SIzmIuxi"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2S5hlvw4CMtMGswFtfdK15"
+        },
+        "href": "https://api.spotify.com/v1/artists/2S5hlvw4CMtMGswFtfdK15",
+        "id": "2S5hlvw4CMtMGswFtfdK15",
+        "name": "Royal Blood",
+        "type": "artist",
+        "uri": "spotify:artist:2S5hlvw4CMtMGswFtfdK15"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 258773,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAHT2001123"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/47ZR035nISkB5YG5mmxX9c"
+    },
+    "href": "https://api.spotify.com/v1/tracks/47ZR035nISkB5YG5mmxX9c",
+    "id": "47ZR035nISkB5YG5mmxX9c",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Million and One",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:47ZR035nISkB5YG5mmxX9c"
+  },
+  "[\"pixies\",\"winterlong\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6zvul52xwTWzilBZl6BUbT"
+          },
+          "href": "https://api.spotify.com/v1/artists/6zvul52xwTWzilBZl6BUbT",
+          "id": "6zvul52xwTWzilBZl6BUbT",
+          "name": "Pixies",
+          "type": "artist",
+          "uri": "spotify:artist:6zvul52xwTWzilBZl6BUbT"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/22Ap3fW66CK8SFxQAElBBk"
+      },
+      "href": "https://api.spotify.com/v1/albums/22Ap3fW66CK8SFxQAElBBk",
+      "id": "22Ap3fW66CK8SFxQAElBBk",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2739c786d4895fa1cdd9ce3af58"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e029c786d4895fa1cdd9ce3af58"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048519c786d4895fa1cdd9ce3af58"
+        }
+      ],
+      "is_playable": true,
+      "name": "Dig for Fire",
+      "release_date": "1990-10-22",
+      "release_date_precision": "day",
+      "total_tracks": 4,
+      "type": "album",
+      "uri": "spotify:album:22Ap3fW66CK8SFxQAElBBk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6zvul52xwTWzilBZl6BUbT"
+        },
+        "href": "https://api.spotify.com/v1/artists/6zvul52xwTWzilBZl6BUbT",
+        "id": "6zvul52xwTWzilBZl6BUbT",
+        "name": "Pixies",
+        "type": "artist",
+        "uri": "spotify:artist:6zvul52xwTWzilBZl6BUbT"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 187093,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAFL9000047"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0WKyfuiS9k92NXs68lXXXL"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0WKyfuiS9k92NXs68lXXXL",
+    "id": "0WKyfuiS9k92NXs68lXXXL",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Winterlong",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:0WKyfuiS9k92NXs68lXXXL"
   }
 }
