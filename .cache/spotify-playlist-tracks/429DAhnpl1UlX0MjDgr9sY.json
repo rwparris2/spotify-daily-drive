@@ -1,5 +1,5 @@
 {
-  "snapshotId": "AAAA9eIVunEVWqb98r59bRHSgaZ5RiRa",
+  "snapshotId": "AAAA92VLhnCgP2Gfgi3n+ldZ6pjUq8H4",
   "tracks": [
     {
       "is_playable": true,
@@ -401,17 +401,17 @@
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b2739ef5f0d63ad90c3ddef7d3b1",
+            "url": "https://i.scdn.co/image/ab67616d0000b27300ba4f81fa6a774456ba4bf3",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e029ef5f0d63ad90c3ddef7d3b1",
+            "url": "https://i.scdn.co/image/ab67616d00001e0200ba4f81fa6a774456ba4bf3",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d000048519ef5f0d63ad90c3ddef7d3b1",
+            "url": "https://i.scdn.co/image/ab67616d0000485100ba4f81fa6a774456ba4bf3",
             "width": 64
           }
         ],
@@ -450,7 +450,7 @@
       ],
       "disc_number": 1,
       "track_number": 1,
-      "duration_ms": 167384,
+      "duration_ms": 167386,
       "external_ids": {
         "isrc": "USAT20902287"
       },
@@ -1710,17 +1710,17 @@
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273be6e758fe8300a72eceddb8f",
+            "url": "https://i.scdn.co/image/ab67616d0000b2738bc3269ba09264dcf9a5b924",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02be6e758fe8300a72eceddb8f",
+            "url": "https://i.scdn.co/image/ab67616d00001e028bc3269ba09264dcf9a5b924",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851be6e758fe8300a72eceddb8f",
+            "url": "https://i.scdn.co/image/ab67616d000048518bc3269ba09264dcf9a5b924",
             "width": 64
           }
         ],
@@ -4064,7 +4064,7 @@
             "width": 64
           }
         ],
-        "name": "1 (Remastered)",
+        "name": "1 (Remastered 2015)",
         "release_date": "2000-11-13",
         "release_date_precision": "day",
         "uri": "spotify:album:7vEJAtP3KgKSpOHVgwm3Eh",
@@ -5914,17 +5914,17 @@
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273a7d2baa04a56c87de579db69",
+            "url": "https://i.scdn.co/image/ab67616d0000b27305f68ca95a483823a8f5a676",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02a7d2baa04a56c87de579db69",
+            "url": "https://i.scdn.co/image/ab67616d00001e0205f68ca95a483823a8f5a676",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851a7d2baa04a56c87de579db69",
+            "url": "https://i.scdn.co/image/ab67616d0000485105f68ca95a483823a8f5a676",
             "width": 64
           }
         ],
@@ -7143,7 +7143,7 @@
       "album": {
         "is_playable": true,
         "type": "album",
-        "album_type": "compilation",
+        "album_type": "album",
         "href": "https://api.spotify.com/v1/albums/42hCHiMtfs7mfBTVX3V6k7",
         "id": "42hCHiMtfs7mfBTVX3V6k7",
         "images": [
@@ -8375,7 +8375,7 @@
       "album": {
         "is_playable": true,
         "type": "album",
-        "album_type": "album",
+        "album_type": "compilation",
         "href": "https://api.spotify.com/v1/albums/3MsjDAlSSBQQhys1zYmCI2",
         "id": "3MsjDAlSSBQQhys1zYmCI2",
         "images": [
@@ -10854,7 +10854,7 @@
             "width": 64
           }
         ],
-        "name": "1 (Remastered)",
+        "name": "1 (Remastered 2015)",
         "release_date": "2000-11-13",
         "release_date_precision": "day",
         "uri": "spotify:album:7vEJAtP3KgKSpOHVgwm3Eh",
@@ -12252,7 +12252,10 @@
       "is_local": false
     },
     {
-      "is_playable": true,
+      "restrictions": {
+        "reason": "market"
+      },
+      "is_playable": false,
       "explicit": false,
       "type": "track",
       "episode": false,
@@ -12266,17 +12269,17 @@
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273923d244ec9f72e3be7b08efe",
+            "url": "https://i.scdn.co/image/ab67616d0000b2737fbd0c13f3f696b707bb4679",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02923d244ec9f72e3be7b08efe",
+            "url": "https://i.scdn.co/image/ab67616d00001e027fbd0c13f3f696b707bb4679",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851923d244ec9f72e3be7b08efe",
+            "url": "https://i.scdn.co/image/ab67616d000048517fbd0c13f3f696b707bb4679",
             "width": 64
           }
         ],
@@ -13007,6 +13010,26 @@
           "name": "Felt",
           "type": "artist",
           "uri": "spotify:artist:3mFM4GwCwLD0296KrCQkoD"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/75Y8ilM4OZNisUbITXgRbd"
+          },
+          "href": "https://api.spotify.com/v1/artists/75Y8ilM4OZNisUbITXgRbd",
+          "id": "75Y8ilM4OZNisUbITXgRbd",
+          "name": "Myke Jackson",
+          "type": "artist",
+          "uri": "spotify:artist:75Y8ilM4OZNisUbITXgRbd"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3HrukpYIm6a3f4tsZvaKN5"
+          },
+          "href": "https://api.spotify.com/v1/artists/3HrukpYIm6a3f4tsZvaKN5",
+          "id": "3HrukpYIm6a3f4tsZvaKN5",
+          "name": "Mike Neel",
+          "type": "artist",
+          "uri": "spotify:artist:3HrukpYIm6a3f4tsZvaKN5"
         }
       ],
       "disc_number": 1,
@@ -13378,13 +13401,13 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/6YB0tbDGk01Q0P6wcHPjpC"
+              "spotify": "https://open.spotify.com/artist/5AAsyaUXf42etNHi3Rz1Fi"
             },
-            "href": "https://api.spotify.com/v1/artists/6YB0tbDGk01Q0P6wcHPjpC",
-            "id": "6YB0tbDGk01Q0P6wcHPjpC",
-            "name": "Bob Weir",
+            "href": "https://api.spotify.com/v1/artists/5AAsyaUXf42etNHi3Rz1Fi",
+            "id": "5AAsyaUXf42etNHi3Rz1Fi",
+            "name": "Bobby Weir",
             "type": "artist",
-            "uri": "spotify:artist:6YB0tbDGk01Q0P6wcHPjpC"
+            "uri": "spotify:artist:5AAsyaUXf42etNHi3Rz1Fi"
           }
         ],
         "external_urls": {
@@ -13395,13 +13418,13 @@
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/6YB0tbDGk01Q0P6wcHPjpC"
+            "spotify": "https://open.spotify.com/artist/5AAsyaUXf42etNHi3Rz1Fi"
           },
-          "href": "https://api.spotify.com/v1/artists/6YB0tbDGk01Q0P6wcHPjpC",
-          "id": "6YB0tbDGk01Q0P6wcHPjpC",
-          "name": "Bob Weir",
+          "href": "https://api.spotify.com/v1/artists/5AAsyaUXf42etNHi3Rz1Fi",
+          "id": "5AAsyaUXf42etNHi3Rz1Fi",
+          "name": "Bobby Weir",
           "type": "artist",
-          "uri": "spotify:artist:6YB0tbDGk01Q0P6wcHPjpC"
+          "uri": "spotify:artist:5AAsyaUXf42etNHi3Rz1Fi"
         }
       ],
       "disc_number": 1,
@@ -14127,17 +14150,17 @@
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273f12a8a7e0b2cbe16d2bef4dc",
+            "url": "https://i.scdn.co/image/ab67616d0000b2735a395a75b03347163aa8dab9",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02f12a8a7e0b2cbe16d2bef4dc",
+            "url": "https://i.scdn.co/image/ab67616d00001e025a395a75b03347163aa8dab9",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851f12a8a7e0b2cbe16d2bef4dc",
+            "url": "https://i.scdn.co/image/ab67616d000048515a395a75b03347163aa8dab9",
             "width": 64
           }
         ],
