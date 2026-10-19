@@ -276670,5 +276670,1357 @@
     "track_number": 6,
     "type": "track",
     "uri": "spotify:track:3yrvQHw6pQemsrCQEpMnKv"
+  },
+  "[\"ted leo and the pharmacists\",\"where have all the rude boys gone?\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5hbH3dvtk49g07qpc1QwPe"
+          },
+          "href": "https://api.spotify.com/v1/artists/5hbH3dvtk49g07qpc1QwPe",
+          "id": "5hbH3dvtk49g07qpc1QwPe",
+          "name": "Ted Leo and the Pharmacists",
+          "type": "artist",
+          "uri": "spotify:artist:5hbH3dvtk49g07qpc1QwPe"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0k38q7xKqXcVvJi6sn4D7H"
+      },
+      "href": "https://api.spotify.com/v1/albums/0k38q7xKqXcVvJi6sn4D7H",
+      "id": "0k38q7xKqXcVvJi6sn4D7H",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27374bea870dc7acac6a77ac3c6"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0274bea870dc7acac6a77ac3c6"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485174bea870dc7acac6a77ac3c6"
+        }
+      ],
+      "is_playable": true,
+      "name": "Hearts of Oak",
+      "release_date": "2003",
+      "release_date_precision": "year",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:0k38q7xKqXcVvJi6sn4D7H"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5hbH3dvtk49g07qpc1QwPe"
+        },
+        "href": "https://api.spotify.com/v1/artists/5hbH3dvtk49g07qpc1QwPe",
+        "id": "5hbH3dvtk49g07qpc1QwPe",
+        "name": "Ted Leo and the Pharmacists",
+        "type": "artist",
+        "uri": "spotify:artist:5hbH3dvtk49g07qpc1QwPe"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 302133,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA561410888"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7MgTipXW8eSBbTiGIEv8A5"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7MgTipXW8eSBbTiGIEv8A5",
+    "id": "7MgTipXW8eSBbTiGIEv8A5",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Where Have All the Rude Boys Gone",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:7MgTipXW8eSBbTiGIEv8A5"
+  },
+  "[\"slum village\",\"fall in love\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1020a42xVklY6c56imNcaa"
+          },
+          "href": "https://api.spotify.com/v1/artists/1020a42xVklY6c56imNcaa",
+          "id": "1020a42xVklY6c56imNcaa",
+          "name": "Slum Village",
+          "type": "artist",
+          "uri": "spotify:artist:1020a42xVklY6c56imNcaa"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4V9gXcZsoUVujuOGTQkjEk"
+      },
+      "href": "https://api.spotify.com/v1/albums/4V9gXcZsoUVujuOGTQkjEk",
+      "id": "4V9gXcZsoUVujuOGTQkjEk",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b80234dbdd89ee945716d3cb"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b80234dbdd89ee945716d3cb"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b80234dbdd89ee945716d3cb"
+        }
+      ],
+      "is_playable": true,
+      "name": "Fantastic, Vol 2:10",
+      "release_date": "2010-10-12",
+      "release_date_precision": "day",
+      "total_tracks": 36,
+      "type": "album",
+      "uri": "spotify:album:4V9gXcZsoUVujuOGTQkjEk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1020a42xVklY6c56imNcaa"
+        },
+        "href": "https://api.spotify.com/v1/artists/1020a42xVklY6c56imNcaa",
+        "id": "1020a42xVklY6c56imNcaa",
+        "name": "Slum Village",
+        "type": "artist",
+        "uri": "spotify:artist:1020a42xVklY6c56imNcaa"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 235212,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USBCE1010011"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0DyR3WFGySwyI2BqDM9POZ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0DyR3WFGySwyI2BqDM9POZ",
+    "id": "0DyR3WFGySwyI2BqDM9POZ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Fall In Love",
+    "track_number": 11,
+    "type": "track",
+    "uri": "spotify:track:0DyR3WFGySwyI2BqDM9POZ"
+  },
+  "[\"laura fisher\",\"airbrush the soul\"]": null,
+  "[\"the horn the hunt\",\"lungs\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6Oe37513ndEu6DlGBH7Vbo"
+          },
+          "href": "https://api.spotify.com/v1/artists/6Oe37513ndEu6DlGBH7Vbo",
+          "id": "6Oe37513ndEu6DlGBH7Vbo",
+          "name": "The Horn The Hunt",
+          "type": "artist",
+          "uri": "spotify:artist:6Oe37513ndEu6DlGBH7Vbo"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/296V7PmpO5JLbmcUL3psgI"
+      },
+      "href": "https://api.spotify.com/v1/albums/296V7PmpO5JLbmcUL3psgI",
+      "id": "296V7PmpO5JLbmcUL3psgI",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2733709d67d28822f720441b175"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e023709d67d28822f720441b175"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048513709d67d28822f720441b175"
+        }
+      ],
+      "is_playable": true,
+      "name": "Terrafidella",
+      "release_date": "2014-07-07",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:296V7PmpO5JLbmcUL3psgI"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6Oe37513ndEu6DlGBH7Vbo"
+        },
+        "href": "https://api.spotify.com/v1/artists/6Oe37513ndEu6DlGBH7Vbo",
+        "id": "6Oe37513ndEu6DlGBH7Vbo",
+        "name": "The Horn The Hunt",
+        "type": "artist",
+        "uri": "spotify:artist:6Oe37513ndEu6DlGBH7Vbo"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 329085,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBKPL1411336"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6UqV1R91GFmLqHtzof74Nu"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6UqV1R91GFmLqHtzof74Nu",
+    "id": "6UqV1R91GFmLqHtzof74Nu",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lungs",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:6UqV1R91GFmLqHtzof74Nu"
+  },
+  "[\"klô pelgag\",\"le dermatologue\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7vYe47XsRmlUuaA9ZSC9fi"
+          },
+          "href": "https://api.spotify.com/v1/artists/7vYe47XsRmlUuaA9ZSC9fi",
+          "id": "7vYe47XsRmlUuaA9ZSC9fi",
+          "name": "Klô Pelgag",
+          "type": "artist",
+          "uri": "spotify:artist:7vYe47XsRmlUuaA9ZSC9fi"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3TnyH2xuuIFbpYLynYWMfS"
+      },
+      "href": "https://api.spotify.com/v1/albums/3TnyH2xuuIFbpYLynYWMfS",
+      "id": "3TnyH2xuuIFbpYLynYWMfS",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27312481910a44cfd1e642bd9e5"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0212481910a44cfd1e642bd9e5"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485112481910a44cfd1e642bd9e5"
+        }
+      ],
+      "is_playable": true,
+      "name": "L'alchimie des monstres",
+      "release_date": "2013-09-24",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:3TnyH2xuuIFbpYLynYWMfS"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7vYe47XsRmlUuaA9ZSC9fi"
+        },
+        "href": "https://api.spotify.com/v1/artists/7vYe47XsRmlUuaA9ZSC9fi",
+        "id": "7vYe47XsRmlUuaA9ZSC9fi",
+        "name": "Klô Pelgag",
+        "type": "artist",
+        "uri": "spotify:artist:7vYe47XsRmlUuaA9ZSC9fi"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 222386,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "CAF661300120"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6sKrRij3GOjUBFrM7WWIqt"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6sKrRij3GOjUBFrM7WWIqt",
+    "id": "6sKrRij3GOjUBFrM7WWIqt",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Le dermatologue",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6sKrRij3GOjUBFrM7WWIqt"
+  },
+  "[\"meriposa\",\"savage moon\"]": null,
+  "[\"mates of state\",\"lullaby haze\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4IELX7NrLBXuw8f51cUZuM"
+          },
+          "href": "https://api.spotify.com/v1/artists/4IELX7NrLBXuw8f51cUZuM",
+          "id": "4IELX7NrLBXuw8f51cUZuM",
+          "name": "Mates of State",
+          "type": "artist",
+          "uri": "spotify:artist:4IELX7NrLBXuw8f51cUZuM"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7aYGiBAhqMpSZzNSS1Aaiy"
+      },
+      "href": "https://api.spotify.com/v1/albums/7aYGiBAhqMpSZzNSS1Aaiy",
+      "id": "7aYGiBAhqMpSZzNSS1Aaiy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a189d5891a06fd25761b4896"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a189d5891a06fd25761b4896"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a189d5891a06fd25761b4896"
+        }
+      ],
+      "is_playable": true,
+      "name": "Re-Arrange Us",
+      "release_date": "2008",
+      "release_date_precision": "year",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:7aYGiBAhqMpSZzNSS1Aaiy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4IELX7NrLBXuw8f51cUZuM"
+        },
+        "href": "https://api.spotify.com/v1/artists/4IELX7NrLBXuw8f51cUZuM",
+        "id": "4IELX7NrLBXuw8f51cUZuM",
+        "name": "Mates of State",
+        "type": "artist",
+        "uri": "spotify:artist:4IELX7NrLBXuw8f51cUZuM"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 265893,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USBS50830846"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4R1JR7QJSZb0UYlLmq0RX1"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4R1JR7QJSZb0UYlLmq0RX1",
+    "id": "4R1JR7QJSZb0UYlLmq0RX1",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lullaby Haze",
+    "track_number": 10,
+    "type": "track",
+    "uri": "spotify:track:4R1JR7QJSZb0UYlLmq0RX1"
+  },
+  "[\"randy crawford\",\"street life\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id": "0LyfQWJT6nXafLPZqxe9Of",
+          "name": "Various Artists",
+          "type": "artist",
+          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1f0FdT3X5hFNDNj39v4Km8"
+      },
+      "href": "https://api.spotify.com/v1/albums/1f0FdT3X5hFNDNj39v4Km8",
+      "id": "1f0FdT3X5hFNDNj39v4Km8",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c07df3b0ae16c214ecd796e3"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c07df3b0ae16c214ecd796e3"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c07df3b0ae16c214ecd796e3"
+        }
+      ],
+      "is_playable": true,
+      "name": "Jackie Brown (Music from the Miramax Motion Picture)",
+      "release_date": "1997-12-09",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:1f0FdT3X5hFNDNj39v4Km8"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1twC2fwPG5FkvYcMpVBQRz"
+        },
+        "href": "https://api.spotify.com/v1/artists/1twC2fwPG5FkvYcMpVBQRz",
+        "id": "1twC2fwPG5FkvYcMpVBQRz",
+        "name": "Randy Crawford",
+        "type": "artist",
+        "uri": "spotify:artist:1twC2fwPG5FkvYcMpVBQRz"
+      }
+    ],
+    "disc_number": 2,
+    "duration_ms": 256613,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USWB18100015"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4CWUGKyUi4aJOq7tF6HAIF"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4CWUGKyUi4aJOq7tF6HAIF",
+    "id": "4CWUGKyUi4aJOq7tF6HAIF",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Street Life",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:4CWUGKyUi4aJOq7tF6HAIF"
+  },
+  "[\"clarence clarity\",\"meadow hopping, traffic stopping, death splash\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/25u5QFxy3HVQsbcbxHOP62"
+          },
+          "href": "https://api.spotify.com/v1/artists/25u5QFxy3HVQsbcbxHOP62",
+          "id": "25u5QFxy3HVQsbcbxHOP62",
+          "name": "Clarence Clarity",
+          "type": "artist",
+          "uri": "spotify:artist:25u5QFxy3HVQsbcbxHOP62"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0baF9vmYPxlYUIyJxkmseH"
+      },
+      "href": "https://api.spotify.com/v1/albums/0baF9vmYPxlYUIyJxkmseH",
+      "id": "0baF9vmYPxlYUIyJxkmseH",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27363c223d263c578327b7bc09f"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0263c223d263c578327b7bc09f"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485163c223d263c578327b7bc09f"
+        }
+      ],
+      "is_playable": true,
+      "name": "NO NOW",
+      "release_date": "2015-03-02",
+      "release_date_precision": "day",
+      "total_tracks": 20,
+      "type": "album",
+      "uri": "spotify:album:0baF9vmYPxlYUIyJxkmseH"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/25u5QFxy3HVQsbcbxHOP62"
+        },
+        "href": "https://api.spotify.com/v1/artists/25u5QFxy3HVQsbcbxHOP62",
+        "id": "25u5QFxy3HVQsbcbxHOP62",
+        "name": "Clarence Clarity",
+        "type": "artist",
+        "uri": "spotify:artist:25u5QFxy3HVQsbcbxHOP62"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 185636,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBBRP1548111"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7v7wWQJdAbC2qImMqgpUbU"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7v7wWQJdAbC2qImMqgpUbU",
+    "id": "7v7wWQJdAbC2qImMqgpUbU",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Meadow Hopping, Traffic Stopping, Death Splash",
+    "track_number": 11,
+    "type": "track",
+    "uri": "spotify:track:7v7wWQJdAbC2qImMqgpUbU"
+  },
+  "[\"afi\",\"the boy who destroyed the world\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/19I4tYiChJoxEO5EuviXpz"
+          },
+          "href": "https://api.spotify.com/v1/artists/19I4tYiChJoxEO5EuviXpz",
+          "id": "19I4tYiChJoxEO5EuviXpz",
+          "name": "AFI",
+          "type": "artist",
+          "uri": "spotify:artist:19I4tYiChJoxEO5EuviXpz"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1g3XMX2gmUF6zAwll0jqN6"
+      },
+      "href": "https://api.spotify.com/v1/albums/1g3XMX2gmUF6zAwll0jqN6",
+      "id": "1g3XMX2gmUF6zAwll0jqN6",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a693840be8633a41d31b4e9b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a693840be8633a41d31b4e9b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a693840be8633a41d31b4e9b"
+        }
+      ],
+      "is_playable": true,
+      "name": "All Hallows EP",
+      "release_date": "1999-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 4,
+      "type": "album",
+      "uri": "spotify:album:1g3XMX2gmUF6zAwll0jqN6"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/19I4tYiChJoxEO5EuviXpz"
+        },
+        "href": "https://api.spotify.com/v1/artists/19I4tYiChJoxEO5EuviXpz",
+        "id": "19I4tYiChJoxEO5EuviXpz",
+        "name": "AFI",
+        "type": "artist",
+        "uri": "spotify:artist:19I4tYiChJoxEO5EuviXpz"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 185360,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USNRR0400302"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7mXieDbl55P3L8kPE33gcC"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7mXieDbl55P3L8kPE33gcC",
+    "id": "7mXieDbl55P3L8kPE33gcC",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Boy Who Destroyed The World",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:7mXieDbl55P3L8kPE33gcC"
+  },
+  "[\"corook\",\"your mom - acoustic\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1rNVlQNJSIESCd5mixdqMt"
+          },
+          "href": "https://api.spotify.com/v1/artists/1rNVlQNJSIESCd5mixdqMt",
+          "id": "1rNVlQNJSIESCd5mixdqMt",
+          "name": "corook",
+          "type": "artist",
+          "uri": "spotify:artist:1rNVlQNJSIESCd5mixdqMt"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6wuKstVw56zxyVbKUQJJjG"
+      },
+      "href": "https://api.spotify.com/v1/albums/6wuKstVw56zxyVbKUQJJjG",
+      "id": "6wuKstVw56zxyVbKUQJJjG",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734dead9b63be1c0085ba08fff"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024dead9b63be1c0085ba08fff"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514dead9b63be1c0085ba08fff"
+        }
+      ],
+      "is_playable": true,
+      "name": "your mom (acoustic)",
+      "release_date": "2022-12-30",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:6wuKstVw56zxyVbKUQJJjG"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1rNVlQNJSIESCd5mixdqMt"
+        },
+        "href": "https://api.spotify.com/v1/artists/1rNVlQNJSIESCd5mixdqMt",
+        "id": "1rNVlQNJSIESCd5mixdqMt",
+        "name": "corook",
+        "type": "artist",
+        "uri": "spotify:artist:1rNVlQNJSIESCd5mixdqMt"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 164563,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USAT22222302"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3u69OP5fq5dZYSgzGvHvl0"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3u69OP5fq5dZYSgzGvHvl0",
+    "id": "3u69OP5fq5dZYSgzGvHvl0",
+    "is_local": false,
+    "is_playable": true,
+    "name": "your mom - acoustic",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:3u69OP5fq5dZYSgzGvHvl0"
+  },
+  "[\"laura shigihara\",\"zombies on your lawn\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2RnGA202UcoKq6KjzQCbNR"
+          },
+          "href": "https://api.spotify.com/v1/artists/2RnGA202UcoKq6KjzQCbNR",
+          "id": "2RnGA202UcoKq6KjzQCbNR",
+          "name": "Laura Shigihara",
+          "type": "artist",
+          "uri": "spotify:artist:2RnGA202UcoKq6KjzQCbNR"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3nG37CdJEbz1c7KrOOQn4Z"
+      },
+      "href": "https://api.spotify.com/v1/albums/3nG37CdJEbz1c7KrOOQn4Z",
+      "id": "3nG37CdJEbz1c7KrOOQn4Z",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273486983be2d3af3d6d09d20d4"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02486983be2d3af3d6d09d20d4"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851486983be2d3af3d6d09d20d4"
+        }
+      ],
+      "is_playable": true,
+      "name": "Plants Vs. Zombies (Original Video Game Soundtrack)",
+      "release_date": "2010-11-22",
+      "release_date_precision": "day",
+      "total_tracks": 29,
+      "type": "album",
+      "uri": "spotify:album:3nG37CdJEbz1c7KrOOQn4Z"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2RnGA202UcoKq6KjzQCbNR"
+        },
+        "href": "https://api.spotify.com/v1/artists/2RnGA202UcoKq6KjzQCbNR",
+        "id": "2RnGA202UcoKq6KjzQCbNR",
+        "name": "Laura Shigihara",
+        "type": "artist",
+        "uri": "spotify:artist:2RnGA202UcoKq6KjzQCbNR"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 159381,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QZHNC1954358"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4xAoWpiEREH6iMffSDTqTh"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4xAoWpiEREH6iMffSDTqTh",
+    "id": "4xAoWpiEREH6iMffSDTqTh",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Zombies on Your Lawn",
+    "track_number": 15,
+    "type": "track",
+    "uri": "spotify:track:4xAoWpiEREH6iMffSDTqTh"
+  },
+  "[\"loudon wainwright iii\",\"passion play\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3loACRmkzdtOMNJEaB6j8L"
+          },
+          "href": "https://api.spotify.com/v1/artists/3loACRmkzdtOMNJEaB6j8L",
+          "id": "3loACRmkzdtOMNJEaB6j8L",
+          "name": "Loudon Wainwright III",
+          "type": "artist",
+          "uri": "spotify:artist:3loACRmkzdtOMNJEaB6j8L"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6L1QV8S8MbJxRdm3UqQyz9"
+      },
+      "href": "https://api.spotify.com/v1/albums/6L1QV8S8MbJxRdm3UqQyz9",
+      "id": "6L1QV8S8MbJxRdm3UqQyz9",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734054ad4034544e1d65497b06"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024054ad4034544e1d65497b06"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514054ad4034544e1d65497b06"
+        }
+      ],
+      "is_playable": true,
+      "name": "Strange Weirdos: Music From And Inspired By The Film Knocked Up",
+      "release_date": "2007-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:6L1QV8S8MbJxRdm3UqQyz9"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3loACRmkzdtOMNJEaB6j8L"
+        },
+        "href": "https://api.spotify.com/v1/artists/3loACRmkzdtOMNJEaB6j8L",
+        "id": "3loACRmkzdtOMNJEaB6j8L",
+        "name": "Loudon Wainwright III",
+        "type": "artist",
+        "uri": "spotify:artist:3loACRmkzdtOMNJEaB6j8L"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 174253,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USC4R0714467"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5gM9o6FCwU9njIAd3NZm6M"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5gM9o6FCwU9njIAd3NZm6M",
+    "id": "5gM9o6FCwU9njIAd3NZm6M",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Passion Play",
+    "track_number": 14,
+    "type": "track",
+    "uri": "spotify:track:5gM9o6FCwU9njIAd3NZm6M"
+  },
+  "[\"clap your hands say yeah\",\"the skin of my yellow country teeth\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1jSaZgaKHmgc7VTgML528r"
+          },
+          "href": "https://api.spotify.com/v1/artists/1jSaZgaKHmgc7VTgML528r",
+          "id": "1jSaZgaKHmgc7VTgML528r",
+          "name": "Clap Your Hands Say Yeah",
+          "type": "artist",
+          "uri": "spotify:artist:1jSaZgaKHmgc7VTgML528r"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/23pU48SJQenRgzDDek2bor"
+      },
+      "href": "https://api.spotify.com/v1/albums/23pU48SJQenRgzDDek2bor",
+      "id": "23pU48SJQenRgzDDek2bor",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273767b6fb2ca6416973d8a2867"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02767b6fb2ca6416973d8a2867"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851767b6fb2ca6416973d8a2867"
+        }
+      ],
+      "is_playable": true,
+      "name": "Clap Your Hands Say Yeah",
+      "release_date": "2005-09-13",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:23pU48SJQenRgzDDek2bor"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1jSaZgaKHmgc7VTgML528r"
+        },
+        "href": "https://api.spotify.com/v1/artists/1jSaZgaKHmgc7VTgML528r",
+        "id": "1jSaZgaKHmgc7VTgML528r",
+        "name": "Clap Your Hands Say Yeah",
+        "type": "artist",
+        "uri": "spotify:artist:1jSaZgaKHmgc7VTgML528r"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 343773,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US99Z0500006"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/57rAvblBMBmdPBugRF1T77"
+    },
+    "href": "https://api.spotify.com/v1/tracks/57rAvblBMBmdPBugRF1T77",
+    "id": "57rAvblBMBmdPBugRF1T77",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Skin of My Yellow Country Teeth",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:57rAvblBMBmdPBugRF1T77"
+  },
+  "[\"wings\",\"single pigeon - 2018 remaster\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3sFhA6G1N0gG1pszb6kk1m"
+          },
+          "href": "https://api.spotify.com/v1/artists/3sFhA6G1N0gG1pszb6kk1m",
+          "id": "3sFhA6G1N0gG1pszb6kk1m",
+          "name": "Wings",
+          "type": "artist",
+          "uri": "spotify:artist:3sFhA6G1N0gG1pszb6kk1m"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1RzrSgWinUzgsnw3oQDXOy"
+      },
+      "href": "https://api.spotify.com/v1/albums/1RzrSgWinUzgsnw3oQDXOy",
+      "id": "1RzrSgWinUzgsnw3oQDXOy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273395734c8512bd160c6ee3f56"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02395734c8512bd160c6ee3f56"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851395734c8512bd160c6ee3f56"
+        }
+      ],
+      "is_playable": true,
+      "name": "Red Rose Speedway (Archive Collection)",
+      "release_date": "1973-04-30",
+      "release_date_precision": "day",
+      "total_tracks": 27,
+      "type": "album",
+      "uri": "spotify:album:1RzrSgWinUzgsnw3oQDXOy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3sFhA6G1N0gG1pszb6kk1m"
+        },
+        "href": "https://api.spotify.com/v1/artists/3sFhA6G1N0gG1pszb6kk1m",
+        "id": "3sFhA6G1N0gG1pszb6kk1m",
+        "name": "Wings",
+        "type": "artist",
+        "uri": "spotify:artist:3sFhA6G1N0gG1pszb6kk1m"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 113160,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBCCS1800080"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4MzH62XWSlNMwp8XcnUD2K"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4MzH62XWSlNMwp8XcnUD2K",
+    "id": "4MzH62XWSlNMwp8XcnUD2K",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Single Pigeon - 2018 Remaster",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:4MzH62XWSlNMwp8XcnUD2K"
+  },
+  "[\"ben prunty\",\"debris (explore)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/546MXGKJRNfO5to1oqkfqe"
+          },
+          "href": "https://api.spotify.com/v1/artists/546MXGKJRNfO5to1oqkfqe",
+          "id": "546MXGKJRNfO5to1oqkfqe",
+          "name": "Ben Prunty",
+          "type": "artist",
+          "uri": "spotify:artist:546MXGKJRNfO5to1oqkfqe"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7us4WRnwvqCE3cppHVNjIu"
+      },
+      "href": "https://api.spotify.com/v1/albums/7us4WRnwvqCE3cppHVNjIu",
+      "id": "7us4WRnwvqCE3cppHVNjIu",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273771656be2fd0cc9c38fee74c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02771656be2fd0cc9c38fee74c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851771656be2fd0cc9c38fee74c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Ftl: Faster Than Light - Original Soundtrack",
+      "release_date": "2012-09-14",
+      "release_date_precision": "day",
+      "total_tracks": 29,
+      "type": "album",
+      "uri": "spotify:album:7us4WRnwvqCE3cppHVNjIu"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/546MXGKJRNfO5to1oqkfqe"
+        },
+        "href": "https://api.spotify.com/v1/artists/546MXGKJRNfO5to1oqkfqe",
+        "id": "546MXGKJRNfO5to1oqkfqe",
+        "name": "Ben Prunty",
+        "type": "artist",
+        "uri": "spotify:artist:546MXGKJRNfO5to1oqkfqe"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 173349,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "TCABO1396031"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3fG916NkWhwqEYhAf0cmzk"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3fG916NkWhwqEYhAf0cmzk",
+    "id": "3fG916NkWhwqEYhAf0cmzk",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Debris (Explore)",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:3fG916NkWhwqEYhAf0cmzk"
+  },
+  "[\"marvin gaye\",\"mercy mercy me (the ecology)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3koiLjNrgRTNbOwViDipeA"
+          },
+          "href": "https://api.spotify.com/v1/artists/3koiLjNrgRTNbOwViDipeA",
+          "id": "3koiLjNrgRTNbOwViDipeA",
+          "name": "Marvin Gaye",
+          "type": "artist",
+          "uri": "spotify:artist:3koiLjNrgRTNbOwViDipeA"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2v6ANhWhZBUKkg6pJJBs3B"
+      },
+      "href": "https://api.spotify.com/v1/albums/2v6ANhWhZBUKkg6pJJBs3B",
+      "id": "2v6ANhWhZBUKkg6pJJBs3B",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b36949bee43217351961ffbc"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b36949bee43217351961ffbc"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b36949bee43217351961ffbc"
+        }
+      ],
+      "is_playable": true,
+      "name": "What's Going On",
+      "release_date": "1971-05-21",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:2v6ANhWhZBUKkg6pJJBs3B"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3koiLjNrgRTNbOwViDipeA"
+        },
+        "href": "https://api.spotify.com/v1/artists/3koiLjNrgRTNbOwViDipeA",
+        "id": "3koiLjNrgRTNbOwViDipeA",
+        "name": "Marvin Gaye",
+        "type": "artist",
+        "uri": "spotify:artist:3koiLjNrgRTNbOwViDipeA"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 193573,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMO17100046"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3IDc87lrpEHWFBASmgTgFV"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3IDc87lrpEHWFBASmgTgFV",
+    "id": "3IDc87lrpEHWFBASmgTgFV",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Mercy Mercy Me (The Ecology)",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:3IDc87lrpEHWFBASmgTgFV"
+  },
+  "[\"george harrison\",\"isn't it a pity - 2014 remaster\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7FIoB5PHdrMZVC3q2HE5MS"
+          },
+          "href": "https://api.spotify.com/v1/artists/7FIoB5PHdrMZVC3q2HE5MS",
+          "id": "7FIoB5PHdrMZVC3q2HE5MS",
+          "name": "George Harrison",
+          "type": "artist",
+          "uri": "spotify:artist:7FIoB5PHdrMZVC3q2HE5MS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7j7lsExGJtBHLgDYzjclwk"
+      },
+      "href": "https://api.spotify.com/v1/albums/7j7lsExGJtBHLgDYzjclwk",
+      "id": "7j7lsExGJtBHLgDYzjclwk",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736c6610322fc60bfb41481273"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026c6610322fc60bfb41481273"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516c6610322fc60bfb41481273"
+        }
+      ],
+      "is_playable": true,
+      "name": "All Things Must Pass (2014 Remaster)",
+      "release_date": "1970-11-20",
+      "release_date_precision": "day",
+      "total_tracks": 28,
+      "type": "album",
+      "uri": "spotify:album:7j7lsExGJtBHLgDYzjclwk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7FIoB5PHdrMZVC3q2HE5MS"
+        },
+        "href": "https://api.spotify.com/v1/artists/7FIoB5PHdrMZVC3q2HE5MS",
+        "id": "7FIoB5PHdrMZVC3q2HE5MS",
+        "name": "George Harrison",
+        "type": "artist",
+        "uri": "spotify:artist:7FIoB5PHdrMZVC3q2HE5MS"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 430877,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GB77R1400028"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0vTvkf24wkCG3DTKgoNnih"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0vTvkf24wkCG3DTKgoNnih",
+    "id": "0vTvkf24wkCG3DTKgoNnih",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Isn't It a Pity - 2014 Remaster",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:0vTvkf24wkCG3DTKgoNnih"
+  },
+  "[\"deptford goth\",\"particles\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3f8b2H7fazJlShrwj38XiS"
+          },
+          "href": "https://api.spotify.com/v1/artists/3f8b2H7fazJlShrwj38XiS",
+          "id": "3f8b2H7fazJlShrwj38XiS",
+          "name": "Deptford Goth",
+          "type": "artist",
+          "uri": "spotify:artist:3f8b2H7fazJlShrwj38XiS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1lVbGkA3yBx3Ns0p1JiOin"
+      },
+      "href": "https://api.spotify.com/v1/albums/1lVbGkA3yBx3Ns0p1JiOin",
+      "id": "1lVbGkA3yBx3Ns0p1JiOin",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273cd36109dd136611313e7ce74"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02cd36109dd136611313e7ce74"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851cd36109dd136611313e7ce74"
+        }
+      ],
+      "is_playable": true,
+      "name": "Life After Defo",
+      "release_date": "2000-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:1lVbGkA3yBx3Ns0p1JiOin"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3f8b2H7fazJlShrwj38XiS"
+        },
+        "href": "https://api.spotify.com/v1/artists/3f8b2H7fazJlShrwj38XiS",
+        "id": "3f8b2H7fazJlShrwj38XiS",
+        "name": "Deptford Goth",
+        "type": "artist",
+        "uri": "spotify:artist:3f8b2H7fazJlShrwj38XiS"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 227626,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBMWL1200018"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7bPv4QKTi6LGgjgEdjabx5"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7bPv4QKTi6LGgjgEdjabx5",
+    "id": "7bPv4QKTi6LGgjgEdjabx5",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Particles",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:7bPv4QKTi6LGgjgEdjabx5"
+  },
+  "[\"pram\",\"salt & sand\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2aFm5gM8lQefcKzOvP2eH8"
+          },
+          "href": "https://api.spotify.com/v1/artists/2aFm5gM8lQefcKzOvP2eH8",
+          "id": "2aFm5gM8lQefcKzOvP2eH8",
+          "name": "Pram",
+          "type": "artist",
+          "uri": "spotify:artist:2aFm5gM8lQefcKzOvP2eH8"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/56ZARXfhgmSljqbyanUzdC"
+      },
+      "href": "https://api.spotify.com/v1/albums/56ZARXfhgmSljqbyanUzdC",
+      "id": "56ZARXfhgmSljqbyanUzdC",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d150604ef172a953be6f9748"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d150604ef172a953be6f9748"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d150604ef172a953be6f9748"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Moving Frontier",
+      "release_date": "2007-09-28",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:56ZARXfhgmSljqbyanUzdC"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2aFm5gM8lQefcKzOvP2eH8"
+        },
+        "href": "https://api.spotify.com/v1/artists/2aFm5gM8lQefcKzOvP2eH8",
+        "id": "2aFm5gM8lQefcKzOvP2eH8",
+        "name": "Pram",
+        "type": "artist",
+        "uri": "spotify:artist:2aFm5gM8lQefcKzOvP2eH8"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 250080,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBCEL0700395"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0SUpB04UZVfRTwtWshOFCo"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0SUpB04UZVfRTwtWshOFCo",
+    "id": "0SUpB04UZVfRTwtWshOFCo",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Salt And Sand",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:0SUpB04UZVfRTwtWshOFCo"
   }
 }
