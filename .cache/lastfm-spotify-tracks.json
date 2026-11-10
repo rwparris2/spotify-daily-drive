@@ -312046,5 +312046,1530 @@
     "track_number": 4,
     "type": "track",
     "uri": "spotify:track:2rxxoemGoTYUlbi29PDDeD"
+  },
+  "[\"os originais do samba\",\"no morro é assim\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4gKqxjR0MkEKjqvO3Ctvpg"
+          },
+          "href": "https://api.spotify.com/v1/artists/4gKqxjR0MkEKjqvO3Ctvpg",
+          "id": "4gKqxjR0MkEKjqvO3Ctvpg",
+          "name": "Os Originais Do Samba",
+          "type": "artist",
+          "uri": "spotify:artist:4gKqxjR0MkEKjqvO3Ctvpg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/72ITnY3eflQkRLbLYkRkaZ"
+      },
+      "href": "https://api.spotify.com/v1/albums/72ITnY3eflQkRLbLYkRkaZ",
+      "id": "72ITnY3eflQkRLbLYkRkaZ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732f047913f39af2c1f8c966c9"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022f047913f39af2c1f8c966c9"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512f047913f39af2c1f8c966c9"
+        }
+      ],
+      "is_playable": true,
+      "name": "Os Originais Do Samba",
+      "release_date": "1969-10-01",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:72ITnY3eflQkRLbLYkRkaZ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4gKqxjR0MkEKjqvO3Ctvpg"
+        },
+        "href": "https://api.spotify.com/v1/artists/4gKqxjR0MkEKjqvO3Ctvpg",
+        "id": "4gKqxjR0MkEKjqvO3Ctvpg",
+        "name": "Os Originais Do Samba",
+        "type": "artist",
+        "uri": "spotify:artist:4gKqxjR0MkEKjqvO3Ctvpg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 169800,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "BRBMG6900208"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7cY7LtsrCwgqpMWcefyHAX"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7cY7LtsrCwgqpMWcefyHAX",
+    "id": "7cY7LtsrCwgqpMWcefyHAX",
+    "is_local": false,
+    "is_playable": true,
+    "name": "No Morro É Assim",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:7cY7LtsrCwgqpMWcefyHAX"
+  },
+  "[\"atmosphere\",\"yesterday\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1GAS0rb4L8VTPvizAx2O9J"
+          },
+          "href": "https://api.spotify.com/v1/artists/1GAS0rb4L8VTPvizAx2O9J",
+          "id": "1GAS0rb4L8VTPvizAx2O9J",
+          "name": "Atmosphere",
+          "type": "artist",
+          "uri": "spotify:artist:1GAS0rb4L8VTPvizAx2O9J"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6Lz3nv3y0hhdKkyrApFCZD"
+          },
+          "href": "https://api.spotify.com/v1/artists/6Lz3nv3y0hhdKkyrApFCZD",
+          "id": "6Lz3nv3y0hhdKkyrApFCZD",
+          "name": "Slug",
+          "type": "artist",
+          "uri": "spotify:artist:6Lz3nv3y0hhdKkyrApFCZD"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/71C1AXi9lDQXnSKZjeTYiI"
+          },
+          "href": "https://api.spotify.com/v1/artists/71C1AXi9lDQXnSKZjeTYiI",
+          "id": "71C1AXi9lDQXnSKZjeTYiI",
+          "name": "Ant",
+          "type": "artist",
+          "uri": "spotify:artist:71C1AXi9lDQXnSKZjeTYiI"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1Rrqz4UccdnB1w4V4y2zYL"
+      },
+      "href": "https://api.spotify.com/v1/albums/1Rrqz4UccdnB1w4V4y2zYL",
+      "id": "1Rrqz4UccdnB1w4V4y2zYL",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27380ed8fe3bc537839f250ee8a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0280ed8fe3bc537839f250ee8a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485180ed8fe3bc537839f250ee8a"
+        }
+      ],
+      "is_playable": true,
+      "name": "When Life Gives You Lemons, You Paint That Shit Gold",
+      "release_date": "2008-04-22",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:1Rrqz4UccdnB1w4V4y2zYL"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1GAS0rb4L8VTPvizAx2O9J"
+        },
+        "href": "https://api.spotify.com/v1/artists/1GAS0rb4L8VTPvizAx2O9J",
+        "id": "1GAS0rb4L8VTPvizAx2O9J",
+        "name": "Atmosphere",
+        "type": "artist",
+        "uri": "spotify:artist:1GAS0rb4L8VTPvizAx2O9J"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6Lz3nv3y0hhdKkyrApFCZD"
+        },
+        "href": "https://api.spotify.com/v1/artists/6Lz3nv3y0hhdKkyrApFCZD",
+        "id": "6Lz3nv3y0hhdKkyrApFCZD",
+        "name": "Slug",
+        "type": "artist",
+        "uri": "spotify:artist:6Lz3nv3y0hhdKkyrApFCZD"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/71C1AXi9lDQXnSKZjeTYiI"
+        },
+        "href": "https://api.spotify.com/v1/artists/71C1AXi9lDQXnSKZjeTYiI",
+        "id": "71C1AXi9lDQXnSKZjeTYiI",
+        "name": "Ant",
+        "type": "artist",
+        "uri": "spotify:artist:71C1AXi9lDQXnSKZjeTYiI"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 203720,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USBWK0700173"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4txpC7uzAR3JeNfs4Yd0DZ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4txpC7uzAR3JeNfs4Yd0DZ",
+    "id": "4txpC7uzAR3JeNfs4Yd0DZ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Yesterday",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:4txpC7uzAR3JeNfs4Yd0DZ"
+  },
+  "[\"death cab for cutie\",\"bixby canyon bridge\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0YrtvWJMgSdVrk3SfNjTbx"
+          },
+          "href": "https://api.spotify.com/v1/artists/0YrtvWJMgSdVrk3SfNjTbx",
+          "id": "0YrtvWJMgSdVrk3SfNjTbx",
+          "name": "Death Cab for Cutie",
+          "type": "artist",
+          "uri": "spotify:artist:0YrtvWJMgSdVrk3SfNjTbx"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7G84Q2FcA43cjLeWBSIedv"
+      },
+      "href": "https://api.spotify.com/v1/albums/7G84Q2FcA43cjLeWBSIedv",
+      "id": "7G84Q2FcA43cjLeWBSIedv",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f0ca43f61811a852d3eb5a83"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f0ca43f61811a852d3eb5a83"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f0ca43f61811a852d3eb5a83"
+        }
+      ],
+      "is_playable": true,
+      "name": "Narrow Stairs",
+      "release_date": "2008-05-09",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:7G84Q2FcA43cjLeWBSIedv"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0YrtvWJMgSdVrk3SfNjTbx"
+        },
+        "href": "https://api.spotify.com/v1/artists/0YrtvWJMgSdVrk3SfNjTbx",
+        "id": "0YrtvWJMgSdVrk3SfNjTbx",
+        "name": "Death Cab for Cutie",
+        "type": "artist",
+        "uri": "spotify:artist:0YrtvWJMgSdVrk3SfNjTbx"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 315386,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USAT20801862"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1xFKRN7Dx8KP8zdg7zs7XN"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1xFKRN7Dx8KP8zdg7zs7XN",
+    "id": "1xFKRN7Dx8KP8zdg7zs7XN",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Bixby Canyon Bridge",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:1xFKRN7Dx8KP8zdg7zs7XN"
+  },
+  "[\"tomahawk\",\"ghost dance\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6yyZgcrQ10gThrJxzqogiP"
+          },
+          "href": "https://api.spotify.com/v1/artists/6yyZgcrQ10gThrJxzqogiP",
+          "id": "6yyZgcrQ10gThrJxzqogiP",
+          "name": "Tomahawk",
+          "type": "artist",
+          "uri": "spotify:artist:6yyZgcrQ10gThrJxzqogiP"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3jzrmZ35EjYroLQuQh4Lj9"
+      },
+      "href": "https://api.spotify.com/v1/albums/3jzrmZ35EjYroLQuQh4Lj9",
+      "id": "3jzrmZ35EjYroLQuQh4Lj9",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2735280b118d3061ef0f7e58504"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e025280b118d3061ef0f7e58504"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048515280b118d3061ef0f7e58504"
+        }
+      ],
+      "is_playable": true,
+      "name": "Anonymous",
+      "release_date": "2007-06-19",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:3jzrmZ35EjYroLQuQh4Lj9"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6yyZgcrQ10gThrJxzqogiP"
+        },
+        "href": "https://api.spotify.com/v1/artists/6yyZgcrQ10gThrJxzqogiP",
+        "id": "6yyZgcrQ10gThrJxzqogiP",
+        "name": "Tomahawk",
+        "type": "artist",
+        "uri": "spotify:artist:6yyZgcrQ10gThrJxzqogiP"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 224374,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US4N80700559"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2SeQ7h1InbQw34d4tFYZeK"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2SeQ7h1InbQw34d4tFYZeK",
+    "id": "2SeQ7h1InbQw34d4tFYZeK",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Ghost Dance",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:2SeQ7h1InbQw34d4tFYZeK"
+  },
+  "[\"el-p\",\"never look back\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4RnBFZRiMLRyZy0AzzTg2C"
+          },
+          "href": "https://api.spotify.com/v1/artists/4RnBFZRiMLRyZy0AzzTg2C",
+          "id": "4RnBFZRiMLRyZy0AzzTg2C",
+          "name": "Run The Jewels",
+          "type": "artist",
+          "uri": "spotify:artist:4RnBFZRiMLRyZy0AzzTg2C"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/57UnSUpae3SbRekxNa5Kgl"
+          },
+          "href": "https://api.spotify.com/v1/artists/57UnSUpae3SbRekxNa5Kgl",
+          "id": "57UnSUpae3SbRekxNa5Kgl",
+          "name": "El-P",
+          "type": "artist",
+          "uri": "spotify:artist:57UnSUpae3SbRekxNa5Kgl"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2N4EYkIlG1kv25g6Wv8LGI"
+          },
+          "href": "https://api.spotify.com/v1/artists/2N4EYkIlG1kv25g6Wv8LGI",
+          "id": "2N4EYkIlG1kv25g6Wv8LGI",
+          "name": "Killer Mike",
+          "type": "artist",
+          "uri": "spotify:artist:2N4EYkIlG1kv25g6Wv8LGI"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/74LenWKjMdGa2qJiI1sxwT"
+      },
+      "href": "https://api.spotify.com/v1/albums/74LenWKjMdGa2qJiI1sxwT",
+      "id": "74LenWKjMdGa2qJiI1sxwT",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27342898aa855aa284ad4b2c1ff"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0242898aa855aa284ad4b2c1ff"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485142898aa855aa284ad4b2c1ff"
+        }
+      ],
+      "is_playable": true,
+      "name": "RTJ4",
+      "release_date": "2020-06-03",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:74LenWKjMdGa2qJiI1sxwT"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/57UnSUpae3SbRekxNa5Kgl"
+        },
+        "href": "https://api.spotify.com/v1/artists/57UnSUpae3SbRekxNa5Kgl",
+        "id": "57UnSUpae3SbRekxNa5Kgl",
+        "name": "El-P",
+        "type": "artist",
+        "uri": "spotify:artist:57UnSUpae3SbRekxNa5Kgl"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2N4EYkIlG1kv25g6Wv8LGI"
+        },
+        "href": "https://api.spotify.com/v1/artists/2N4EYkIlG1kv25g6Wv8LGI",
+        "id": "2N4EYkIlG1kv25g6Wv8LGI",
+        "name": "Killer Mike",
+        "type": "artist",
+        "uri": "spotify:artist:2N4EYkIlG1kv25g6Wv8LGI"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4RnBFZRiMLRyZy0AzzTg2C"
+        },
+        "href": "https://api.spotify.com/v1/artists/4RnBFZRiMLRyZy0AzzTg2C",
+        "id": "4RnBFZRiMLRyZy0AzzTg2C",
+        "name": "Run The Jewels",
+        "type": "artist",
+        "uri": "spotify:artist:4RnBFZRiMLRyZy0AzzTg2C"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 177933,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QMRSZ2001025"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/13Dzvh6mqoK1B2Bb3iuJL3"
+    },
+    "href": "https://api.spotify.com/v1/tracks/13Dzvh6mqoK1B2Bb3iuJL3",
+    "id": "13Dzvh6mqoK1B2Bb3iuJL3",
+    "is_local": false,
+    "is_playable": true,
+    "name": "never look back",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:13Dzvh6mqoK1B2Bb3iuJL3"
+  },
+  "[\"sharon van etten\",\"(what's so funny 'bout) peace, love and understanding?\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2wJ4vsxWd7df7dRU4KcoDe"
+          },
+          "href": "https://api.spotify.com/v1/artists/2wJ4vsxWd7df7dRU4KcoDe",
+          "id": "2wJ4vsxWd7df7dRU4KcoDe",
+          "name": "Sharon Van Etten",
+          "type": "artist",
+          "uri": "spotify:artist:2wJ4vsxWd7df7dRU4KcoDe"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1bnHokFfRX2PzFA6Ok0l93"
+      },
+      "href": "https://api.spotify.com/v1/albums/1bnHokFfRX2PzFA6Ok0l93",
+      "id": "1bnHokFfRX2PzFA6Ok0l93",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a1334898c90013471de89c22"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a1334898c90013471de89c22"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a1334898c90013471de89c22"
+        }
+      ],
+      "is_playable": true,
+      "name": "(What's So Funny 'Bout) Peace, Love and Understanding?",
+      "release_date": "2020-05-15",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:1bnHokFfRX2PzFA6Ok0l93"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2wJ4vsxWd7df7dRU4KcoDe"
+        },
+        "href": "https://api.spotify.com/v1/artists/2wJ4vsxWd7df7dRU4KcoDe",
+        "id": "2wJ4vsxWd7df7dRU4KcoDe",
+        "name": "Sharon Van Etten",
+        "type": "artist",
+        "uri": "spotify:artist:2wJ4vsxWd7df7dRU4KcoDe"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/03xb2BUdIFzuRQ6o88yfCB"
+        },
+        "href": "https://api.spotify.com/v1/artists/03xb2BUdIFzuRQ6o88yfCB",
+        "id": "03xb2BUdIFzuRQ6o88yfCB",
+        "name": "Josh Homme",
+        "type": "artist",
+        "uri": "spotify:artist:03xb2BUdIFzuRQ6o88yfCB"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 266093,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USANG2079126"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6x3FDEUutORhqa30G4klKD"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6x3FDEUutORhqa30G4klKD",
+    "id": "6x3FDEUutORhqa30G4klKD",
+    "is_local": false,
+    "is_playable": true,
+    "name": "(What's So Funny 'Bout) Peace, Love and Understanding?",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6x3FDEUutORhqa30G4klKD"
+  },
+  "[\"pavement\",\"cream of gold\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3inCNiUr4R6XQ3W43s9Aqi"
+          },
+          "href": "https://api.spotify.com/v1/artists/3inCNiUr4R6XQ3W43s9Aqi",
+          "id": "3inCNiUr4R6XQ3W43s9Aqi",
+          "name": "Pavement",
+          "type": "artist",
+          "uri": "spotify:artist:3inCNiUr4R6XQ3W43s9Aqi"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6LvzAzZDazPb9hKNjj1JRN"
+      },
+      "href": "https://api.spotify.com/v1/albums/6LvzAzZDazPb9hKNjj1JRN",
+      "id": "6LvzAzZDazPb9hKNjj1JRN",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738dd01f5c9071f55fd7c7471b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028dd01f5c9071f55fd7c7471b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518dd01f5c9071f55fd7c7471b"
+        }
+      ],
+      "is_playable": true,
+      "name": "Terror Twilight",
+      "release_date": "1999-06-08",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:6LvzAzZDazPb9hKNjj1JRN"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3inCNiUr4R6XQ3W43s9Aqi"
+        },
+        "href": "https://api.spotify.com/v1/artists/3inCNiUr4R6XQ3W43s9Aqi",
+        "id": "3inCNiUr4R6XQ3W43s9Aqi",
+        "name": "Pavement",
+        "type": "artist",
+        "uri": "spotify:artist:3inCNiUr4R6XQ3W43s9Aqi"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 227506,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMTD9926004"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3fI2DzDZDoeGFlNnPv25KQ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3fI2DzDZDoeGFlNnPv25KQ",
+    "id": "3fI2DzDZDoeGFlNnPv25KQ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Cream of Gold",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:3fI2DzDZDoeGFlNnPv25KQ"
+  },
+  "[\"jay-z\",\"22 two's\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3nFkdlSjzX9mRTtwJOzDYB"
+          },
+          "href": "https://api.spotify.com/v1/artists/3nFkdlSjzX9mRTtwJOzDYB",
+          "id": "3nFkdlSjzX9mRTtwJOzDYB",
+          "name": "JAŸ-Z",
+          "type": "artist",
+          "uri": "spotify:artist:3nFkdlSjzX9mRTtwJOzDYB"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3YPK0bNOuayhmSrs0sIIBR"
+      },
+      "href": "https://api.spotify.com/v1/albums/3YPK0bNOuayhmSrs0sIIBR",
+      "id": "3YPK0bNOuayhmSrs0sIIBR",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737a353e74db759af39d3f26b0"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027a353e74db759af39d3f26b0"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517a353e74db759af39d3f26b0"
+        }
+      ],
+      "is_playable": true,
+      "name": "Reasonable Doubt",
+      "release_date": "1996-06-25",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:3YPK0bNOuayhmSrs0sIIBR"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3nFkdlSjzX9mRTtwJOzDYB"
+        },
+        "href": "https://api.spotify.com/v1/artists/3nFkdlSjzX9mRTtwJOzDYB",
+        "id": "3nFkdlSjzX9mRTtwJOzDYB",
+        "name": "JAŸ-Z",
+        "type": "artist",
+        "uri": "spotify:artist:3nFkdlSjzX9mRTtwJOzDYB"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 208973,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USTC30767899"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4AKGxJq7lp5CT08pA7PDxF"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4AKGxJq7lp5CT08pA7PDxF",
+    "id": "4AKGxJq7lp5CT08pA7PDxF",
+    "is_local": false,
+    "is_playable": true,
+    "name": "22 Two's",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:4AKGxJq7lp5CT08pA7PDxF"
+  },
+  "[\"blackalicious\",\"making progress\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/42Np3r8zXnaKcjLQsQSjyG"
+          },
+          "href": "https://api.spotify.com/v1/artists/42Np3r8zXnaKcjLQsQSjyG",
+          "id": "42Np3r8zXnaKcjLQsQSjyG",
+          "name": "Blackalicious",
+          "type": "artist",
+          "uri": "spotify:artist:42Np3r8zXnaKcjLQsQSjyG"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3p6jhqOzFLzlC50KKv629I"
+      },
+      "href": "https://api.spotify.com/v1/albums/3p6jhqOzFLzlC50KKv629I",
+      "id": "3p6jhqOzFLzlC50KKv629I",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737dea920e48c7894eb7816f48"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027dea920e48c7894eb7816f48"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517dea920e48c7894eb7816f48"
+        }
+      ],
+      "is_playable": true,
+      "name": "Nia",
+      "release_date": "1999-08-30",
+      "release_date_precision": "day",
+      "total_tracks": 19,
+      "type": "album",
+      "uri": "spotify:album:3p6jhqOzFLzlC50KKv629I"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/42Np3r8zXnaKcjLQsQSjyG"
+        },
+        "href": "https://api.spotify.com/v1/artists/42Np3r8zXnaKcjLQsQSjyG",
+        "id": "42Np3r8zXnaKcjLQsQSjyG",
+        "name": "Blackalicious",
+        "type": "artist",
+        "uri": "spotify:artist:42Np3r8zXnaKcjLQsQSjyG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 191866,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US2P20410433"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/11gZYfOcrjhwzTub891Oe4"
+    },
+    "href": "https://api.spotify.com/v1/tracks/11gZYfOcrjhwzTub891Oe4",
+    "id": "11gZYfOcrjhwzTub891Oe4",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Making Progress",
+    "track_number": 17,
+    "type": "track",
+    "uri": "spotify:track:11gZYfOcrjhwzTub891Oe4"
+  },
+  "[\"adoniran barbosa\",\"deus te abençõe\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7vTlV3ajnMxl5l0ahupUeP"
+          },
+          "href": "https://api.spotify.com/v1/artists/7vTlV3ajnMxl5l0ahupUeP",
+          "id": "7vTlV3ajnMxl5l0ahupUeP",
+          "name": "Adoniran Barbosa",
+          "type": "artist",
+          "uri": "spotify:artist:7vTlV3ajnMxl5l0ahupUeP"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0hQxcmPGVDIzaobybrpnRn"
+      },
+      "href": "https://api.spotify.com/v1/albums/0hQxcmPGVDIzaobybrpnRn",
+      "id": "0hQxcmPGVDIzaobybrpnRn",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273461cde35fc625f475ed01a4e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02461cde35fc625f475ed01a4e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851461cde35fc625f475ed01a4e"
+        }
+      ],
+      "is_playable": true,
+      "name": "Adoniran Barbosa",
+      "release_date": "2006-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:0hQxcmPGVDIzaobybrpnRn"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7vTlV3ajnMxl5l0ahupUeP"
+        },
+        "href": "https://api.spotify.com/v1/artists/7vTlV3ajnMxl5l0ahupUeP",
+        "id": "7vTlV3ajnMxl5l0ahupUeP",
+        "name": "Adoniran Barbosa",
+        "type": "artist",
+        "uri": "spotify:artist:7vTlV3ajnMxl5l0ahupUeP"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 165453,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "BREMI7400797"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0LDPUN6DROOLbpx2SXiNJA"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0LDPUN6DROOLbpx2SXiNJA",
+    "id": "0LDPUN6DROOLbpx2SXiNJA",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Deus Te Abençõe",
+    "track_number": 11,
+    "type": "track",
+    "uri": "spotify:track:0LDPUN6DROOLbpx2SXiNJA"
+  },
+  "[\"clipse\",\"ma, i don't love her (feat. faith evans)\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2J257euzcjnDLipsyJH3F2"
+          },
+          "href": "https://api.spotify.com/v1/artists/2J257euzcjnDLipsyJH3F2",
+          "id": "2J257euzcjnDLipsyJH3F2",
+          "name": "Clipse",
+          "type": "artist",
+          "uri": "spotify:artist:2J257euzcjnDLipsyJH3F2"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1Q83nQO2QG81TVa10hW7LX"
+      },
+      "href": "https://api.spotify.com/v1/albums/1Q83nQO2QG81TVa10hW7LX",
+      "id": "1Q83nQO2QG81TVa10hW7LX",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27395bf7f7dac7b61a95d47f07e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0295bf7f7dac7b61a95d47f07e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485195bf7f7dac7b61a95d47f07e"
+        }
+      ],
+      "is_playable": true,
+      "name": "Lord Willin'",
+      "release_date": "2002-04-01",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:1Q83nQO2QG81TVa10hW7LX"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2J257euzcjnDLipsyJH3F2"
+        },
+        "href": "https://api.spotify.com/v1/artists/2J257euzcjnDLipsyJH3F2",
+        "id": "2J257euzcjnDLipsyJH3F2",
+        "name": "Clipse",
+        "type": "artist",
+        "uri": "spotify:artist:2J257euzcjnDLipsyJH3F2"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5NDMothbpdpq2xHqSjrrWn"
+        },
+        "href": "https://api.spotify.com/v1/artists/5NDMothbpdpq2xHqSjrrWn",
+        "id": "5NDMothbpdpq2xHqSjrrWn",
+        "name": "Faith Evans",
+        "type": "artist",
+        "uri": "spotify:artist:5NDMothbpdpq2xHqSjrrWn"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 257493,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USAR10200838"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3VbPE4nMEkIB9PWWquCSGB"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3VbPE4nMEkIB9PWWquCSGB",
+    "id": "3VbPE4nMEkIB9PWWquCSGB",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Ma, I Don't Love Her (feat. Faith Evans)",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:3VbPE4nMEkIB9PWWquCSGB"
+  },
+  "[\"pixies\",\"gigantic\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6zvul52xwTWzilBZl6BUbT"
+          },
+          "href": "https://api.spotify.com/v1/artists/6zvul52xwTWzilBZl6BUbT",
+          "id": "6zvul52xwTWzilBZl6BUbT",
+          "name": "Pixies",
+          "type": "artist",
+          "uri": "spotify:artist:6zvul52xwTWzilBZl6BUbT"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/50j4Wm1b9hLpSpPIA39Vp9"
+      },
+      "href": "https://api.spotify.com/v1/albums/50j4Wm1b9hLpSpPIA39Vp9",
+      "id": "50j4Wm1b9hLpSpPIA39Vp9",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738aa545a0ea869940cce358b5"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028aa545a0ea869940cce358b5"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518aa545a0ea869940cce358b5"
+        }
+      ],
+      "is_playable": true,
+      "name": "Surfer Rosa (2007 Remaster)",
+      "release_date": "1988-03-21",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:50j4Wm1b9hLpSpPIA39Vp9"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6zvul52xwTWzilBZl6BUbT"
+        },
+        "href": "https://api.spotify.com/v1/artists/6zvul52xwTWzilBZl6BUbT",
+        "id": "6zvul52xwTWzilBZl6BUbT",
+        "name": "Pixies",
+        "type": "artist",
+        "uri": "spotify:artist:6zvul52xwTWzilBZl6BUbT"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 235706,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAFL0700143"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5G2g1EbEtFSMkMbAnhl7FV"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5G2g1EbEtFSMkMbAnhl7FV",
+    "id": "5G2g1EbEtFSMkMbAnhl7FV",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Gigantic - 2007 Remaster",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:5G2g1EbEtFSMkMbAnhl7FV"
+  },
+  "[\"blackalicious\",\"swan lake\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/42Np3r8zXnaKcjLQsQSjyG"
+          },
+          "href": "https://api.spotify.com/v1/artists/42Np3r8zXnaKcjLQsQSjyG",
+          "id": "42Np3r8zXnaKcjLQsQSjyG",
+          "name": "Blackalicious",
+          "type": "artist",
+          "uri": "spotify:artist:42Np3r8zXnaKcjLQsQSjyG"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5Q0ftXrC4HM2tUghMVUDmc"
+      },
+      "href": "https://api.spotify.com/v1/albums/5Q0ftXrC4HM2tUghMVUDmc",
+      "id": "5Q0ftXrC4HM2tUghMVUDmc",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273eb67a5a25eef938fee193f3a"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02eb67a5a25eef938fee193f3a"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851eb67a5a25eef938fee193f3a"
+        }
+      ],
+      "is_playable": true,
+      "name": "Melodica",
+      "release_date": "1994-01-18",
+      "release_date_precision": "day",
+      "total_tracks": 7,
+      "type": "album",
+      "uri": "spotify:album:5Q0ftXrC4HM2tUghMVUDmc"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/42Np3r8zXnaKcjLQsQSjyG"
+        },
+        "href": "https://api.spotify.com/v1/artists/42Np3r8zXnaKcjLQsQSjyG",
+        "id": "42Np3r8zXnaKcjLQsQSjyG",
+        "name": "Blackalicious",
+        "type": "artist",
+        "uri": "spotify:artist:42Np3r8zXnaKcjLQsQSjyG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 339386,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "US2P20410445"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4b4rns5xgAxhW0uDW2OCO1"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4b4rns5xgAxhW0uDW2OCO1",
+    "id": "4b4rns5xgAxhW0uDW2OCO1",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Swan Lake",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:4b4rns5xgAxhW0uDW2OCO1"
+  },
+  "[\"rilo kiley\",\"science vs. romance\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2cevwbv7ISD92VMNLYLHZA"
+          },
+          "href": "https://api.spotify.com/v1/artists/2cevwbv7ISD92VMNLYLHZA",
+          "id": "2cevwbv7ISD92VMNLYLHZA",
+          "name": "Rilo Kiley",
+          "type": "artist",
+          "uri": "spotify:artist:2cevwbv7ISD92VMNLYLHZA"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7wCKIseB72EdOAYGJwytBt"
+      },
+      "href": "https://api.spotify.com/v1/albums/7wCKIseB72EdOAYGJwytBt",
+      "id": "7wCKIseB72EdOAYGJwytBt",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27304f03d878190712670521b60"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0204f03d878190712670521b60"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485104f03d878190712670521b60"
+        }
+      ],
+      "is_playable": true,
+      "name": "Take Offs And Landings",
+      "release_date": "2001",
+      "release_date_precision": "year",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:7wCKIseB72EdOAYGJwytBt"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2cevwbv7ISD92VMNLYLHZA"
+        },
+        "href": "https://api.spotify.com/v1/artists/2cevwbv7ISD92VMNLYLHZA",
+        "id": "2cevwbv7ISD92VMNLYLHZA",
+        "name": "Rilo Kiley",
+        "type": "artist",
+        "uri": "spotify:artist:2cevwbv7ISD92VMNLYLHZA"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 343160,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USBS50310137"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1YDMec7wxyKoD0AtOfGG9Q"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1YDMec7wxyKoD0AtOfGG9Q",
+    "id": "1YDMec7wxyKoD0AtOfGG9Q",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Science Vs. Romance",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:1YDMec7wxyKoD0AtOfGG9Q"
+  },
+  "[\"arcade fire\",\"the suburbs\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3kjuyTCjPG1WMFCiyc5IuB"
+          },
+          "href": "https://api.spotify.com/v1/artists/3kjuyTCjPG1WMFCiyc5IuB",
+          "id": "3kjuyTCjPG1WMFCiyc5IuB",
+          "name": "Arcade Fire",
+          "type": "artist",
+          "uri": "spotify:artist:3kjuyTCjPG1WMFCiyc5IuB"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0gkUcpkyW2SXN49Yktkf6F"
+      },
+      "href": "https://api.spotify.com/v1/albums/0gkUcpkyW2SXN49Yktkf6F",
+      "id": "0gkUcpkyW2SXN49Yktkf6F",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731d6b4b0418200b6324734062"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021d6b4b0418200b6324734062"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511d6b4b0418200b6324734062"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Suburbs (Deluxe)",
+      "release_date": "2010-07-01",
+      "release_date_precision": "day",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:0gkUcpkyW2SXN49Yktkf6F"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3kjuyTCjPG1WMFCiyc5IuB"
+        },
+        "href": "https://api.spotify.com/v1/artists/3kjuyTCjPG1WMFCiyc5IuB",
+        "id": "3kjuyTCjPG1WMFCiyc5IuB",
+        "name": "Arcade Fire",
+        "type": "artist",
+        "uri": "spotify:artist:3kjuyTCjPG1WMFCiyc5IuB"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 315026,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM71018417"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5iItYl3Q6wCnKVfpK1uNVf"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5iItYl3Q6wCnKVfpK1uNVf",
+    "id": "5iItYl3Q6wCnKVfpK1uNVf",
+    "is_local": false,
+    "is_playable": true,
+    "name": "The Suburbs",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:5iItYl3Q6wCnKVfpK1uNVf"
+  },
+  "[\"warmduscher\",\"fill it, don't spill it\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1CWwXncu9sk7EIdbvqcquR"
+          },
+          "href": "https://api.spotify.com/v1/artists/1CWwXncu9sk7EIdbvqcquR",
+          "id": "1CWwXncu9sk7EIdbvqcquR",
+          "name": "Warmduscher",
+          "type": "artist",
+          "uri": "spotify:artist:1CWwXncu9sk7EIdbvqcquR"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1OayjjI9jcTkZuliqxYpzJ"
+      },
+      "href": "https://api.spotify.com/v1/albums/1OayjjI9jcTkZuliqxYpzJ",
+      "id": "1OayjjI9jcTkZuliqxYpzJ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736eab489782ffba38b7b92c57"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026eab489782ffba38b7b92c57"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516eab489782ffba38b7b92c57"
+        }
+      ],
+      "is_playable": true,
+      "name": "Tainted Lunch",
+      "release_date": "2019-11-01",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:1OayjjI9jcTkZuliqxYpzJ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1CWwXncu9sk7EIdbvqcquR"
+        },
+        "href": "https://api.spotify.com/v1/artists/1CWwXncu9sk7EIdbvqcquR",
+        "id": "1CWwXncu9sk7EIdbvqcquR",
+        "name": "Warmduscher",
+        "type": "artist",
+        "uri": "spotify:artist:1CWwXncu9sk7EIdbvqcquR"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 142755,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "GBCKB1911505"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0Rgpsue5svRF2O08PEa2rd"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0Rgpsue5svRF2O08PEa2rd",
+    "id": "0Rgpsue5svRF2O08PEa2rd",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Fill It, Don't Spill It",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:0Rgpsue5svRF2O08PEa2rd"
+  },
+  "[\"radiohead\",\"karma police\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
+          },
+          "href": "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb",
+          "id": "4Z8W4fKeB5YxbusRsdQVPb",
+          "name": "Radiohead",
+          "type": "artist",
+          "uri": "spotify:artist:4Z8W4fKeB5YxbusRsdQVPb"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE"
+      },
+      "href": "https://api.spotify.com/v1/albums/6dVIqQ8qmQ5GBnJ9shOYGE",
+      "id": "6dVIqQ8qmQ5GBnJ9shOYGE",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c8b444df094279e70d0ed856"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c8b444df094279e70d0ed856"
+        }
+      ],
+      "is_playable": true,
+      "name": "OK Computer",
+      "release_date": "1997-05-28",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:6dVIqQ8qmQ5GBnJ9shOYGE"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
+        },
+        "href": "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb",
+        "id": "4Z8W4fKeB5YxbusRsdQVPb",
+        "name": "Radiohead",
+        "type": "artist",
+        "uri": "spotify:artist:4Z8W4fKeB5YxbusRsdQVPb"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 264066,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAYE9701368"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/63OQupATfueTdZMWTxW03A"
+    },
+    "href": "https://api.spotify.com/v1/tracks/63OQupATfueTdZMWTxW03A",
+    "id": "63OQupATfueTdZMWTxW03A",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Karma Police",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:63OQupATfueTdZMWTxW03A"
+  },
+  "[\"protomartyr\",\"i forgive you\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2YFBqMMiIIL4XyiEwqySUQ"
+          },
+          "href": "https://api.spotify.com/v1/artists/2YFBqMMiIIL4XyiEwqySUQ",
+          "id": "2YFBqMMiIIL4XyiEwqySUQ",
+          "name": "Protomartyr",
+          "type": "artist",
+          "uri": "spotify:artist:2YFBqMMiIIL4XyiEwqySUQ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7wMrFduh4Gyqq3EeeOJL0V"
+      },
+      "href": "https://api.spotify.com/v1/albums/7wMrFduh4Gyqq3EeeOJL0V",
+      "id": "7wMrFduh4Gyqq3EeeOJL0V",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738c4876859d1ba7cc475c24bf"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028c4876859d1ba7cc475c24bf"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518c4876859d1ba7cc475c24bf"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Agent Intellect",
+      "release_date": "2015-10-09",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:7wMrFduh4Gyqq3EeeOJL0V"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2YFBqMMiIIL4XyiEwqySUQ"
+        },
+        "href": "https://api.spotify.com/v1/artists/2YFBqMMiIIL4XyiEwqySUQ",
+        "id": "2YFBqMMiIIL4XyiEwqySUQ",
+        "name": "Protomartyr",
+        "type": "artist",
+        "uri": "spotify:artist:2YFBqMMiIIL4XyiEwqySUQ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 181266,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USHF31509103"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/20TJ4uqzxj9O1JZY0PxUEA"
+    },
+    "href": "https://api.spotify.com/v1/tracks/20TJ4uqzxj9O1JZY0PxUEA",
+    "id": "20TJ4uqzxj9O1JZY0PxUEA",
+    "is_local": false,
+    "is_playable": true,
+    "name": "I Forgive You",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:20TJ4uqzxj9O1JZY0PxUEA"
+  },
+  "[\"fontaines d.c.\",\"living in america\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6"
+          },
+          "href": "https://api.spotify.com/v1/artists/3SXwqSqAoBz9WCI9PDQzY6",
+          "id": "3SXwqSqAoBz9WCI9PDQzY6",
+          "name": "Fontaines D.C.",
+          "type": "artist",
+          "uri": "spotify:artist:3SXwqSqAoBz9WCI9PDQzY6"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/307RtUHysY6w6RO29i9YNL"
+      },
+      "href": "https://api.spotify.com/v1/albums/307RtUHysY6w6RO29i9YNL",
+      "id": "307RtUHysY6w6RO29i9YNL",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a9552ae3fd8261f0e5ad7606"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a9552ae3fd8261f0e5ad7606"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a9552ae3fd8261f0e5ad7606"
+        }
+      ],
+      "is_playable": true,
+      "name": "A Hero's Death",
+      "release_date": "2020-07-31",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:307RtUHysY6w6RO29i9YNL"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6"
+        },
+        "href": "https://api.spotify.com/v1/artists/3SXwqSqAoBz9WCI9PDQzY6",
+        "id": "3SXwqSqAoBz9WCI9PDQzY6",
+        "name": "Fontaines D.C.",
+        "type": "artist",
+        "uri": "spotify:artist:3SXwqSqAoBz9WCI9PDQzY6"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 297053,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USBQU1900229"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3d97fccl5TxavRC29ahP5J"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3d97fccl5TxavRC29ahP5J",
+    "id": "3d97fccl5TxavRC29ahP5J",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Living In America",
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:3d97fccl5TxavRC29ahP5J"
   }
 }
