@@ -23,6 +23,7 @@ process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH = join(
   'listenbrainz-spotify-tracks.json',
 );
 process.env.LASTFM_SPOTIFY_CACHE_PATH = join(testCacheDir, 'lastfm-spotify-tracks.json');
+process.env.TRACK_HISTORY_PATH = join(testCacheDir, 'track-history.json');
 
 import { rmSync } from 'node:fs';
 import { afterAll, afterEach } from 'vitest';
@@ -40,6 +41,7 @@ afterEach(() => {
   resetListenBrainzCache();
   rmSync(process.env.LASTFM_SPOTIFY_CACHE_PATH ?? '', { force: true });
   rmSync(process.env.LISTENBRAINZ_SPOTIFY_CACHE_PATH ?? '', { force: true });
+  rmSync(process.env.TRACK_HISTORY_PATH ?? '', { force: true });
 });
 
 afterAll(() => {

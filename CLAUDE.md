@@ -34,7 +34,7 @@ TypeScript Node CLI that rebuilds a single persistent Spotify playlist by interl
 - Top-level `await` is used — keep Node ≥ 20
 - Tests live in `src/__tests__/` and `src/*.test.ts`; MSW handlers stub Spotify endpoints, so no network or real credentials are needed
 - Lodash is used for sampling / `uniqBy` / `chunk` — keep it
-- No state file by design: variety comes from random sampling + Spotify's `fully_played` flag
+- One state file: `src/TrackHistory.ts` records which tracks were on each day's playlist in `.cache/track-history.json` (path overridable via `TRACK_HISTORY_PATH`). A track is skipped if it was on yesterday's playlist or on 2 of the past 6 days, unless there are too few fresh tracks to fill the playlist (then repeats top it up). Otherwise variety comes from random sampling + Spotify's `fully_played` flag
 - Partial failures are intentional — each fetch helper logs and returns `[]` on error rather than throwing, so one source failing doesn't kill the run
 
 ## Scheduling

@@ -7,6 +7,7 @@ import _ from 'lodash';
 import { SPOTIFY_PLAYLIST_ID } from './config.js';
 import { filterBannedTracks, loadBannedArtists } from './BannedArtists.js';
 import type { SourcedTrack } from './DailyDrivePlaylistItem.js';
+import { isBlockedByHistory, loadTrackHistory, todayUtc } from './TrackHistory.js';
 
 async function fetchAllPlaylists<T>(): Promise<SimplifiedPlaylist[]> {
   const pageSize = 50;
@@ -229,10 +230,29 @@ export async function fetchSpotifyTracks(options: {
     console.log(`Filtered ${removed.length} track(s) by banned artist(s): ${artists.join(', ')}`);
   }
 
-  return _(kept)
-    .chain()
-    .filter((t) => !!t.track)
-    .uniqBy((t) => t.track.id)
-    .sampleSize(options.numberOfTracks)
-    .value();
+  const pool = _.uniqBy(
+    kept.filter((t) => !!t.track),
+    (t) => t.track.id,
+  );
+  const history = await loadTrackHistory();
+  const today = todayUtc();
+  const [fresh, repeats] = _.partition(
+    pool,
+    (t) => !isBlockedByHistory(history, t.track.id, today),
+  );
+  const picked = _.sampleSize(fresh, options.numberOfTracks);
+
+  // Too few fresh tracks: top up with recent repeats rather than ship a short playlist.
+  const shortfall = options.numberOfTracks - picked.length;
+  if (shortfall > 0 && repeats.length > 0) {
+    const topUp = _.sampleSize(repeats, shortfall);
+    console.log(
+      `Only ${fresh.length} fresh track(s); topped up with ${topUp.length} recent repeat(s)`,
+    );
+    return _.shuffle([...picked, ...topUp]);
+  }
+  if (repeats.length > 0) {
+    console.log(`Skipped ${repeats.length} track(s) played yesterday or twice this week`);
+  }
+  return picked;
 }
