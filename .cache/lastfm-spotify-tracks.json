@@ -322251,5 +322251,1141 @@
     "track_number": 1,
     "type": "track",
     "uri": "spotify:track:5KtuQpmQkNQTWsBF8QuCQb"
+  },
+  "[\"the wiggles\",\"introduction to central park new york\"]": null,
+  "[\"aphex twin\",\"meltphace 6\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6kBDZFXuLrZgHnvmPu9NsG"
+          },
+          "href": "https://api.spotify.com/v1/artists/6kBDZFXuLrZgHnvmPu9NsG",
+          "id": "6kBDZFXuLrZgHnvmPu9NsG",
+          "name": "Aphex Twin",
+          "type": "artist",
+          "uri": "spotify:artist:6kBDZFXuLrZgHnvmPu9NsG"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0KFEayVJto9FySIVo4ODUn"
+      },
+      "href": "https://api.spotify.com/v1/albums/0KFEayVJto9FySIVo4ODUn",
+      "id": "0KFEayVJto9FySIVo4ODUn",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27399b926eff3daa4ffc41e28ec"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0299b926eff3daa4ffc41e28ec"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485199b926eff3daa4ffc41e28ec"
+        }
+      ],
+      "is_playable": true,
+      "name": "Drukqs (Expanded Edition)",
+      "release_date": "2026-11-13",
+      "release_date_precision": "day",
+      "total_tracks": 35,
+      "type": "album",
+      "uri": "spotify:album:0KFEayVJto9FySIVo4ODUn"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6kBDZFXuLrZgHnvmPu9NsG"
+        },
+        "href": "https://api.spotify.com/v1/artists/6kBDZFXuLrZgHnvmPu9NsG",
+        "id": "6kBDZFXuLrZgHnvmPu9NsG",
+        "name": "Aphex Twin",
+        "type": "artist",
+        "uri": "spotify:artist:6kBDZFXuLrZgHnvmPu9NsG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 384106,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBBPW0100157"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/46x5PM4MkhvVbDMYFiUyQN"
+    },
+    "href": "https://api.spotify.com/v1/tracks/46x5PM4MkhvVbDMYFiUyQN",
+    "id": "46x5PM4MkhvVbDMYFiUyQN",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Meltphace 6",
+    "track_number": 20,
+    "type": "track",
+    "uri": "spotify:track:46x5PM4MkhvVbDMYFiUyQN"
+  },
+  "[\"spoon\",\"is love forever?\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0K1q0nXQ8is36PzOKAMbNe"
+          },
+          "href": "https://api.spotify.com/v1/artists/0K1q0nXQ8is36PzOKAMbNe",
+          "id": "0K1q0nXQ8is36PzOKAMbNe",
+          "name": "Spoon",
+          "type": "artist",
+          "uri": "spotify:artist:0K1q0nXQ8is36PzOKAMbNe"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5ypZiViPNDX7ahiPSWQYTW"
+      },
+      "href": "https://api.spotify.com/v1/albums/5ypZiViPNDX7ahiPSWQYTW",
+      "id": "5ypZiViPNDX7ahiPSWQYTW",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27360bbca5cd7263a3b5de1d6c1"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0260bbca5cd7263a3b5de1d6c1"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485160bbca5cd7263a3b5de1d6c1"
+        }
+      ],
+      "is_playable": true,
+      "name": "Transference",
+      "release_date": "2010-01-19",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:5ypZiViPNDX7ahiPSWQYTW"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0K1q0nXQ8is36PzOKAMbNe"
+        },
+        "href": "https://api.spotify.com/v1/artists/0K1q0nXQ8is36PzOKAMbNe",
+        "id": "0K1q0nXQ8is36PzOKAMbNe",
+        "name": "Spoon",
+        "type": "artist",
+        "uri": "spotify:artist:0K1q0nXQ8is36PzOKAMbNe"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 127213,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMRG1036502"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2Az1B6Br3UfX2IYGAf1Biy"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2Az1B6Br3UfX2IYGAf1Biy",
+    "id": "2Az1B6Br3UfX2IYGAf1Biy",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Is Love Forever?",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:2Az1B6Br3UfX2IYGAf1Biy"
+  },
+  "[\"iluka\",\"wings\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1QiAR2OBtc5ZsYQ5bPnpdO"
+          },
+          "href": "https://api.spotify.com/v1/artists/1QiAR2OBtc5ZsYQ5bPnpdO",
+          "id": "1QiAR2OBtc5ZsYQ5bPnpdO",
+          "name": "ILUKA",
+          "type": "artist",
+          "uri": "spotify:artist:1QiAR2OBtc5ZsYQ5bPnpdO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5HRTO3VPXz185L1l7DxSvu"
+      },
+      "href": "https://api.spotify.com/v1/albums/5HRTO3VPXz185L1l7DxSvu",
+      "id": "5HRTO3VPXz185L1l7DxSvu",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738e5aafab87537d04dded962d"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028e5aafab87537d04dded962d"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518e5aafab87537d04dded962d"
+        }
+      ],
+      "is_playable": true,
+      "name": "the wild, the innocent & the raging",
+      "release_date": "2025-11-21",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:5HRTO3VPXz185L1l7DxSvu"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1QiAR2OBtc5ZsYQ5bPnpdO"
+        },
+        "href": "https://api.spotify.com/v1/artists/1QiAR2OBtc5ZsYQ5bPnpdO",
+        "id": "1QiAR2OBtc5ZsYQ5bPnpdO",
+        "name": "ILUKA",
+        "type": "artist",
+        "uri": "spotify:artist:1QiAR2OBtc5ZsYQ5bPnpdO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 185370,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "QMDA62407866"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/49HcHALp3BHSTjJQzHJjUK"
+    },
+    "href": "https://api.spotify.com/v1/tracks/49HcHALp3BHSTjJQzHJjUK",
+    "id": "49HcHALp3BHSTjJQzHJjUK",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Wings",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:49HcHALp3BHSTjJQzHJjUK"
+  },
+  "[\"yes\",\"roundabout\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7AC976RDJzL2asmZuz7qil"
+          },
+          "href": "https://api.spotify.com/v1/artists/7AC976RDJzL2asmZuz7qil",
+          "id": "7AC976RDJzL2asmZuz7qil",
+          "name": "Yes",
+          "type": "artist",
+          "uri": "spotify:artist:7AC976RDJzL2asmZuz7qil"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1WWIQYhFqD2IVbG2WLVaO1"
+      },
+      "href": "https://api.spotify.com/v1/albums/1WWIQYhFqD2IVbG2WLVaO1",
+      "id": "1WWIQYhFqD2IVbG2WLVaO1",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2737dd79091b7e562355202b97e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e027dd79091b7e562355202b97e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048517dd79091b7e562355202b97e"
+        }
+      ],
+      "is_playable": true,
+      "name": "Yesstory",
+      "release_date": "1992-09-01",
+      "release_date_precision": "day",
+      "total_tracks": 20,
+      "type": "album",
+      "uri": "spotify:album:1WWIQYhFqD2IVbG2WLVaO1"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7AC976RDJzL2asmZuz7qil"
+        },
+        "href": "https://api.spotify.com/v1/artists/7AC976RDJzL2asmZuz7qil",
+        "id": "7AC976RDJzL2asmZuz7qil",
+        "name": "Yes",
+        "type": "artist",
+        "uri": "spotify:artist:7AC976RDJzL2asmZuz7qil"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 512386,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USEW19900103"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0l2kEdf5XjlckyybbNjmYS"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0l2kEdf5XjlckyybbNjmYS",
+    "id": "0l2kEdf5XjlckyybbNjmYS",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Roundabout",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:0l2kEdf5XjlckyybbNjmYS"
+  },
+  "[\"badly drawn boy\",\"magic in the air\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/244fcyNSuyhbRlMGfMbYrO"
+          },
+          "href": "https://api.spotify.com/v1/artists/244fcyNSuyhbRlMGfMbYrO",
+          "id": "244fcyNSuyhbRlMGfMbYrO",
+          "name": "Badly Drawn Boy",
+          "type": "artist",
+          "uri": "spotify:artist:244fcyNSuyhbRlMGfMbYrO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7y0QwysyQgSf9fyBFr6Q3x"
+      },
+      "href": "https://api.spotify.com/v1/albums/7y0QwysyQgSf9fyBFr6Q3x",
+      "id": "7y0QwysyQgSf9fyBFr6Q3x",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273254f5b9a048c746142be98bc"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02254f5b9a048c746142be98bc"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851254f5b9a048c746142be98bc"
+        }
+      ],
+      "is_playable": true,
+      "name": "The Hour of Bewilderbeast",
+      "release_date": "1999-09-06",
+      "release_date_precision": "day",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:7y0QwysyQgSf9fyBFr6Q3x"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/244fcyNSuyhbRlMGfMbYrO"
+        },
+        "href": "https://api.spotify.com/v1/artists/244fcyNSuyhbRlMGfMbYrO",
+        "id": "244fcyNSuyhbRlMGfMbYrO",
+        "name": "Badly Drawn Boy",
+        "type": "artist",
+        "uri": "spotify:artist:244fcyNSuyhbRlMGfMbYrO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 223466,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBBKS0000016"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3CAuBe4iBim8OVLVGqBq14"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3CAuBe4iBim8OVLVGqBq14",
+    "id": "3CAuBe4iBim8OVLVGqBq14",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Magic in the Air",
+    "track_number": 12,
+    "type": "track",
+    "uri": "spotify:track:3CAuBe4iBim8OVLVGqBq14"
+  },
+  "[\"mike d\",\"switch up\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1Um2jYfcrBnrDlqvW2KGw8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1Um2jYfcrBnrDlqvW2KGw8",
+          "id": "1Um2jYfcrBnrDlqvW2KGw8",
+          "name": "Mike D",
+          "type": "artist",
+          "uri": "spotify:artist:1Um2jYfcrBnrDlqvW2KGw8"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1atCF7KORZky8sOL0aq0SJ"
+      },
+      "href": "https://api.spotify.com/v1/albums/1atCF7KORZky8sOL0aq0SJ",
+      "id": "1atCF7KORZky8sOL0aq0SJ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736eb01697a86d9953fa8d5063"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026eb01697a86d9953fa8d5063"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516eb01697a86d9953fa8d5063"
+        }
+      ],
+      "is_playable": true,
+      "name": "Thank You",
+      "release_date": "2026-08-27",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:1atCF7KORZky8sOL0aq0SJ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1Um2jYfcrBnrDlqvW2KGw8"
+        },
+        "href": "https://api.spotify.com/v1/artists/1Um2jYfcrBnrDlqvW2KGw8",
+        "id": "1Um2jYfcrBnrDlqvW2KGw8",
+        "name": "Mike D",
+        "type": "artist",
+        "uri": "spotify:artist:1Um2jYfcrBnrDlqvW2KGw8"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 215375,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USUG12603817"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7umZS0zU5ZND8wbakn8GJu"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7umZS0zU5ZND8wbakn8GJu",
+    "id": "7umZS0zU5ZND8wbakn8GJu",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Switch Up",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:7umZS0zU5ZND8wbakn8GJu"
+  },
+  "[\"quicksilver messenger service\",\"dino's song\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7DCnwoFMqGN6eZULdcLZeL"
+          },
+          "href": "https://api.spotify.com/v1/artists/7DCnwoFMqGN6eZULdcLZeL",
+          "id": "7DCnwoFMqGN6eZULdcLZeL",
+          "name": "Quicksilver Messenger Service",
+          "type": "artist",
+          "uri": "spotify:artist:7DCnwoFMqGN6eZULdcLZeL"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2jQEpak8oXYb6dh9sCZqqY"
+      },
+      "href": "https://api.spotify.com/v1/albums/2jQEpak8oXYb6dh9sCZqqY",
+      "id": "2jQEpak8oXYb6dh9sCZqqY",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ff9a52d3cb00af4f3bf0adb7"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ff9a52d3cb00af4f3bf0adb7"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ff9a52d3cb00af4f3bf0adb7"
+        }
+      ],
+      "is_playable": true,
+      "name": "Quicksilver Messenger Service",
+      "release_date": "1968",
+      "release_date_precision": "year",
+      "total_tracks": 6,
+      "type": "album",
+      "uri": "spotify:album:2jQEpak8oXYb6dh9sCZqqY"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7DCnwoFMqGN6eZULdcLZeL"
+        },
+        "href": "https://api.spotify.com/v1/artists/7DCnwoFMqGN6eZULdcLZeL",
+        "id": "7DCnwoFMqGN6eZULdcLZeL",
+        "name": "Quicksilver Messenger Service",
+        "type": "artist",
+        "uri": "spotify:artist:7DCnwoFMqGN6eZULdcLZeL"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 188493,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USCA28800188"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0Z1gFxgGNXrikEBAUXxx7J"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0Z1gFxgGNXrikEBAUXxx7J",
+    "id": "0Z1gFxgGNXrikEBAUXxx7J",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Dino's Song",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:0Z1gFxgGNXrikEBAUXxx7J"
+  },
+  "[\"rose gray\",\"club to your arms\"]": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5YYrWH3w4JYijU4JZrOXWA"
+          },
+          "href": "https://api.spotify.com/v1/artists/5YYrWH3w4JYijU4JZrOXWA",
+          "id": "5YYrWH3w4JYijU4JZrOXWA",
+          "name": "Rose Gray",
+          "type": "artist",
+          "uri": "spotify:artist:5YYrWH3w4JYijU4JZrOXWA"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0ZBDOza0k1CPMkZiHpglFZ"
+      },
+      "href": "https://api.spotify.com/v1/albums/0ZBDOza0k1CPMkZiHpglFZ",
+      "id": "0ZBDOza0k1CPMkZiHpglFZ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273754ee0f1f0202d6458bd9c0c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02754ee0f1f0202d6458bd9c0c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851754ee0f1f0202d6458bd9c0c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Club To Your Arms / Just Be Bodies",
+      "release_date": "2026-07-17",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:0ZBDOza0k1CPMkZiHpglFZ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5YYrWH3w4JYijU4JZrOXWA"
+        },
+        "href": "https://api.spotify.com/v1/artists/5YYrWH3w4JYijU4JZrOXWA",
+        "id": "5YYrWH3w4JYijU4JZrOXWA",
+        "name": "Rose Gray",
+        "type": "artist",
+        "uri": "spotify:artist:5YYrWH3w4JYijU4JZrOXWA"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 191596,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "GBUM72602244"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3mpp8OFMyvQAQXTA8L5Q5C"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3mpp8OFMyvQAQXTA8L5Q5C",
+    "id": "3mpp8OFMyvQAQXTA8L5Q5C",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Club To Your Arms",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:3mpp8OFMyvQAQXTA8L5Q5C"
+  },
+  "[\"cypress hill\",\"how i could just kill a man\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4P0dddbxPil35MNN9G2MEX"
+          },
+          "href": "https://api.spotify.com/v1/artists/4P0dddbxPil35MNN9G2MEX",
+          "id": "4P0dddbxPil35MNN9G2MEX",
+          "name": "Cypress Hill",
+          "type": "artist",
+          "uri": "spotify:artist:4P0dddbxPil35MNN9G2MEX"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/43h13ZRkKXdr6RjnnMNmsL"
+      },
+      "href": "https://api.spotify.com/v1/albums/43h13ZRkKXdr6RjnnMNmsL",
+      "id": "43h13ZRkKXdr6RjnnMNmsL",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273154b4d82311284e7a2e48b21"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02154b4d82311284e7a2e48b21"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851154b4d82311284e7a2e48b21"
+        }
+      ],
+      "is_playable": true,
+      "name": "Cypress Hill (Expanded Edition)",
+      "release_date": "1991",
+      "release_date_precision": "year",
+      "total_tracks": 19,
+      "type": "album",
+      "uri": "spotify:album:43h13ZRkKXdr6RjnnMNmsL"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4P0dddbxPil35MNN9G2MEX"
+        },
+        "href": "https://api.spotify.com/v1/artists/4P0dddbxPil35MNN9G2MEX",
+        "id": "4P0dddbxPil35MNN9G2MEX",
+        "name": "Cypress Hill",
+        "type": "artist",
+        "uri": "spotify:artist:4P0dddbxPil35MNN9G2MEX"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 248316,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USSM19901632"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4VoaJ2WLfLZMa9L5WWqsQs"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4VoaJ2WLfLZMa9L5WWqsQs",
+    "id": "4VoaJ2WLfLZMa9L5WWqsQs",
+    "is_local": false,
+    "is_playable": true,
+    "name": "How I Could Just Kill a Man",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:4VoaJ2WLfLZMa9L5WWqsQs"
+  },
+  "[\"david gilmour\",\"on an island\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2FcC4sDMXme2ziI7tGKMK8"
+          },
+          "href": "https://api.spotify.com/v1/artists/2FcC4sDMXme2ziI7tGKMK8",
+          "id": "2FcC4sDMXme2ziI7tGKMK8",
+          "name": "David Gilmour",
+          "type": "artist",
+          "uri": "spotify:artist:2FcC4sDMXme2ziI7tGKMK8"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3hhRkf54AIQsdKLMWTxVLg"
+      },
+      "href": "https://api.spotify.com/v1/albums/3hhRkf54AIQsdKLMWTxVLg",
+      "id": "3hhRkf54AIQsdKLMWTxVLg",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c57732e7c1b7657b1896b58b"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c57732e7c1b7657b1896b58b"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c57732e7c1b7657b1896b58b"
+        }
+      ],
+      "is_playable": true,
+      "name": "On An Island",
+      "release_date": "2006-03-06",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:3hhRkf54AIQsdKLMWTxVLg"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2FcC4sDMXme2ziI7tGKMK8"
+        },
+        "href": "https://api.spotify.com/v1/artists/2FcC4sDMXme2ziI7tGKMK8",
+        "id": "2FcC4sDMXme2ziI7tGKMK8",
+        "name": "David Gilmour",
+        "type": "artist",
+        "uri": "spotify:artist:2FcC4sDMXme2ziI7tGKMK8"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 407586,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBLTP0600002"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2kFvEGeKe2FmuQPZQkJjdS"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2kFvEGeKe2FmuQPZQkJjdS",
+    "id": "2kFvEGeKe2FmuQPZQkJjdS",
+    "is_local": false,
+    "is_playable": true,
+    "name": "On an Island",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:2kFvEGeKe2FmuQPZQkJjdS"
+  },
+  "[\"the white stripes\",\"blue orchid\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4F84IBURUo98rz4r61KF70"
+          },
+          "href": "https://api.spotify.com/v1/artists/4F84IBURUo98rz4r61KF70",
+          "id": "4F84IBURUo98rz4r61KF70",
+          "name": "The White Stripes",
+          "type": "artist",
+          "uri": "spotify:artist:4F84IBURUo98rz4r61KF70"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4FZ3j1oH43e7cukCALsCwf"
+          },
+          "href": "https://api.spotify.com/v1/artists/4FZ3j1oH43e7cukCALsCwf",
+          "id": "4FZ3j1oH43e7cukCALsCwf",
+          "name": "Jack White",
+          "type": "artist",
+          "uri": "spotify:artist:4FZ3j1oH43e7cukCALsCwf"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3rHeq4F5wnaLBjNtuz7Yvh"
+      },
+      "href": "https://api.spotify.com/v1/albums/3rHeq4F5wnaLBjNtuz7Yvh",
+      "id": "3rHeq4F5wnaLBjNtuz7Yvh",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e8a1ae591befe4bb0a9261ab"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e8a1ae591befe4bb0a9261ab"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e8a1ae591befe4bb0a9261ab"
+        }
+      ],
+      "is_playable": true,
+      "name": "Get Behind Me Satan",
+      "release_date": "2005-06-07",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:3rHeq4F5wnaLBjNtuz7Yvh"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4F84IBURUo98rz4r61KF70"
+        },
+        "href": "https://api.spotify.com/v1/artists/4F84IBURUo98rz4r61KF70",
+        "id": "4F84IBURUo98rz4r61KF70",
+        "name": "The White Stripes",
+        "type": "artist",
+        "uri": "spotify:artist:4F84IBURUo98rz4r61KF70"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 157560,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USVT10500076"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4jU7NPkz4HVnM4hweqNhI1"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4jU7NPkz4HVnM4hweqNhI1",
+    "id": "4jU7NPkz4HVnM4hweqNhI1",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Blue Orchid",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:4jU7NPkz4HVnM4hweqNhI1"
+  },
+  "[\"jethro tull\",\"aqualung\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6w6z8m4WXX7Tub4Rb6Lu7R"
+          },
+          "href": "https://api.spotify.com/v1/artists/6w6z8m4WXX7Tub4Rb6Lu7R",
+          "id": "6w6z8m4WXX7Tub4Rb6Lu7R",
+          "name": "Jethro Tull",
+          "type": "artist",
+          "uri": "spotify:artist:6w6z8m4WXX7Tub4Rb6Lu7R"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5DzDdfg2HwOrJspA4II9bK"
+      },
+      "href": "https://api.spotify.com/v1/albums/5DzDdfg2HwOrJspA4II9bK",
+      "id": "5DzDdfg2HwOrJspA4II9bK",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273dead63421136dccd72b90248"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02dead63421136dccd72b90248"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851dead63421136dccd72b90248"
+        }
+      ],
+      "is_playable": true,
+      "name": "50 for 50",
+      "release_date": "2018-06-01",
+      "release_date_precision": "day",
+      "total_tracks": 50,
+      "type": "album",
+      "uri": "spotify:album:5DzDdfg2HwOrJspA4II9bK"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6w6z8m4WXX7Tub4Rb6Lu7R"
+        },
+        "href": "https://api.spotify.com/v1/artists/6w6z8m4WXX7Tub4Rb6Lu7R",
+        "id": "6w6z8m4WXX7Tub4Rb6Lu7R",
+        "name": "Jethro Tull",
+        "type": "artist",
+        "uri": "spotify:artist:6w6z8m4WXX7Tub4Rb6Lu7R"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 396186,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBAYK7100012"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0sRhaWRf2CFMjXK7P2p0pN"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0sRhaWRf2CFMjXK7P2p0pN",
+    "id": "0sRhaWRf2CFMjXK7P2p0pN",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Aqualung",
+    "track_number": 13,
+    "type": "track",
+    "uri": "spotify:track:0sRhaWRf2CFMjXK7P2p0pN"
+  },
+  "[\"kansas\",\"carry on wayward son\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2hl0xAkS2AIRAu23TVMBG1"
+          },
+          "href": "https://api.spotify.com/v1/artists/2hl0xAkS2AIRAu23TVMBG1",
+          "id": "2hl0xAkS2AIRAu23TVMBG1",
+          "name": "Kansas",
+          "type": "artist",
+          "uri": "spotify:artist:2hl0xAkS2AIRAu23TVMBG1"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7MejfRSNnrpcLZIxkeZDqR"
+      },
+      "href": "https://api.spotify.com/v1/albums/7MejfRSNnrpcLZIxkeZDqR",
+      "id": "7MejfRSNnrpcLZIxkeZDqR",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731be40e44db112e123e5e8b51"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021be40e44db112e123e5e8b51"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511be40e44db112e123e5e8b51"
+        }
+      ],
+      "is_playable": true,
+      "name": "Leftoverture (Expanded Edition)",
+      "release_date": "1976",
+      "release_date_precision": "year",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:7MejfRSNnrpcLZIxkeZDqR"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2hl0xAkS2AIRAu23TVMBG1"
+        },
+        "href": "https://api.spotify.com/v1/artists/2hl0xAkS2AIRAu23TVMBG1",
+        "id": "2hl0xAkS2AIRAu23TVMBG1",
+        "name": "Kansas",
+        "type": "artist",
+        "uri": "spotify:artist:2hl0xAkS2AIRAu23TVMBG1"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 323000,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM17600874"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4DMKwE2E2iYDKY01C335Uw"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4DMKwE2E2iYDKY01C335Uw",
+    "id": "4DMKwE2E2iYDKY01C335Uw",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Carry on Wayward Son",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:4DMKwE2E2iYDKY01C335Uw"
+  },
+  "[\"mos def\",\"may-december\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0Mz5XE0kb1GBnbLQm2VbcO"
+          },
+          "href": "https://api.spotify.com/v1/artists/0Mz5XE0kb1GBnbLQm2VbcO",
+          "id": "0Mz5XE0kb1GBnbLQm2VbcO",
+          "name": "Mos Def",
+          "type": "artist",
+          "uri": "spotify:artist:0Mz5XE0kb1GBnbLQm2VbcO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5gK2l2LgWY0BA4p9uy27z6"
+      },
+      "href": "https://api.spotify.com/v1/albums/5gK2l2LgWY0BA4p9uy27z6",
+      "id": "5gK2l2LgWY0BA4p9uy27z6",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27389b56f56323925d57b38944d"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0289b56f56323925d57b38944d"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485189b56f56323925d57b38944d"
+        }
+      ],
+      "is_playable": true,
+      "name": "Black On Both Sides",
+      "release_date": "1999-10-12",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:5gK2l2LgWY0BA4p9uy27z6"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0Mz5XE0kb1GBnbLQm2VbcO"
+        },
+        "href": "https://api.spotify.com/v1/artists/0Mz5XE0kb1GBnbLQm2VbcO",
+        "id": "0Mz5XE0kb1GBnbLQm2VbcO",
+        "name": "Mos Def",
+        "type": "artist",
+        "uri": "spotify:artist:0Mz5XE0kb1GBnbLQm2VbcO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 209066,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USRW50200240"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1O5pf5R8xvppS2pD03HVy5"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1O5pf5R8xvppS2pD03HVy5",
+    "id": "1O5pf5R8xvppS2pD03HVy5",
+    "is_local": false,
+    "is_playable": true,
+    "name": "May-December",
+    "track_number": 17,
+    "type": "track",
+    "uri": "spotify:track:1O5pf5R8xvppS2pD03HVy5"
+  },
+  "[\"jefferson airplane\",\"3/5 of a mile in 10 seconds\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2qFr8w5sWUITRlzZ9kZotF"
+          },
+          "href": "https://api.spotify.com/v1/artists/2qFr8w5sWUITRlzZ9kZotF",
+          "id": "2qFr8w5sWUITRlzZ9kZotF",
+          "name": "Jefferson Airplane",
+          "type": "artist",
+          "uri": "spotify:artist:2qFr8w5sWUITRlzZ9kZotF"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6lPb7Eoon6QPbscWbMsk6a"
+      },
+      "href": "https://api.spotify.com/v1/albums/6lPb7Eoon6QPbscWbMsk6a",
+      "id": "6lPb7Eoon6QPbscWbMsk6a",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736a74089537c2dbd548c4a95e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026a74089537c2dbd548c4a95e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516a74089537c2dbd548c4a95e"
+        }
+      ],
+      "is_playable": true,
+      "name": "Surrealistic Pillow",
+      "release_date": "1967",
+      "release_date_precision": "year",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:6lPb7Eoon6QPbscWbMsk6a"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2qFr8w5sWUITRlzZ9kZotF"
+        },
+        "href": "https://api.spotify.com/v1/artists/2qFr8w5sWUITRlzZ9kZotF",
+        "id": "2qFr8w5sWUITRlzZ9kZotF",
+        "name": "Jefferson Airplane",
+        "type": "artist",
+        "uri": "spotify:artist:2qFr8w5sWUITRlzZ9kZotF"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 220186,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USRC10301012"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5uZD2015uZBis6B2VwRYUZ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5uZD2015uZBis6B2VwRYUZ",
+    "id": "5uZD2015uZBis6B2VwRYUZ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "3/5 of a Mile in 10 Seconds",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:5uZD2015uZBis6B2VwRYUZ"
   }
 }
