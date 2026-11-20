@@ -327175,5 +327175,1235 @@
     "track_number": 8,
     "type": "track",
     "uri": "spotify:track:2GItmYwnP0eGQHGbjPEnyH"
+  },
+  "[\"king tuff\",\"headbanger\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0uI2HyW0eIbTbyH3S2XDHI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0uI2HyW0eIbTbyH3S2XDHI",
+          "id": "0uI2HyW0eIbTbyH3S2XDHI",
+          "name": "King Tuff",
+          "type": "artist",
+          "uri": "spotify:artist:0uI2HyW0eIbTbyH3S2XDHI"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0XOhWOI7URvE4SmmGLTYop"
+      },
+      "href": "https://api.spotify.com/v1/albums/0XOhWOI7URvE4SmmGLTYop",
+      "id": "0XOhWOI7URvE4SmmGLTYop",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b2605e862e2fc5d5a7b0e273"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b2605e862e2fc5d5a7b0e273"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b2605e862e2fc5d5a7b0e273"
+        }
+      ],
+      "is_playable": true,
+      "name": "Black Moon Spell",
+      "release_date": "2014-09-23",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:0XOhWOI7URvE4SmmGLTYop"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0uI2HyW0eIbTbyH3S2XDHI"
+        },
+        "href": "https://api.spotify.com/v1/artists/0uI2HyW0eIbTbyH3S2XDHI",
+        "id": "0uI2HyW0eIbTbyH3S2XDHI",
+        "name": "King Tuff",
+        "type": "artist",
+        "uri": "spotify:artist:0uI2HyW0eIbTbyH3S2XDHI"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 208066,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSUB1408004"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4PcaeqHoggBGZwPBAJr5Wg"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4PcaeqHoggBGZwPBAJr5Wg",
+    "id": "4PcaeqHoggBGZwPBAJr5Wg",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Headbanger",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:4PcaeqHoggBGZwPBAJr5Wg"
+  },
+  "[\"gorilla biscuits\",\"start today\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4dJX4iJ0qbB4gjkeenbK2N"
+          },
+          "href": "https://api.spotify.com/v1/artists/4dJX4iJ0qbB4gjkeenbK2N",
+          "id": "4dJX4iJ0qbB4gjkeenbK2N",
+          "name": "Gorilla Biscuits",
+          "type": "artist",
+          "uri": "spotify:artist:4dJX4iJ0qbB4gjkeenbK2N"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1AAn8Qve9N7NET9v1dKceh"
+      },
+      "href": "https://api.spotify.com/v1/albums/1AAn8Qve9N7NET9v1dKceh",
+      "id": "1AAn8Qve9N7NET9v1dKceh",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27313d1057efdab2a1e841592d4"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0213d1057efdab2a1e841592d4"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485113d1057efdab2a1e841592d4"
+        }
+      ],
+      "is_playable": true,
+      "name": "Start Today",
+      "release_date": "1989-07-14",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:1AAn8Qve9N7NET9v1dKceh"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4dJX4iJ0qbB4gjkeenbK2N"
+        },
+        "href": "https://api.spotify.com/v1/artists/4dJX4iJ0qbB4gjkeenbK2N",
+        "id": "4dJX4iJ0qbB4gjkeenbK2N",
+        "name": "Gorilla Biscuits",
+        "type": "artist",
+        "uri": "spotify:artist:4dJX4iJ0qbB4gjkeenbK2N"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 123706,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USB4U0400303"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1izvrCbd0C75ScVDI6uVOl"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1izvrCbd0C75ScVDI6uVOl",
+    "id": "1izvrCbd0C75ScVDI6uVOl",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Start Today",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:1izvrCbd0C75ScVDI6uVOl"
+  },
+  "[\"afel bocoum\",\"ali farka\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/06Ib5crxFFg8jg3q8ZP77W"
+          },
+          "href": "https://api.spotify.com/v1/artists/06Ib5crxFFg8jg3q8ZP77W",
+          "id": "06Ib5crxFFg8jg3q8ZP77W",
+          "name": "Afel Bocoum",
+          "type": "artist",
+          "uri": "spotify:artist:06Ib5crxFFg8jg3q8ZP77W"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6nJUvluszQDzR5YKLxRQOn"
+      },
+      "href": "https://api.spotify.com/v1/albums/6nJUvluszQDzR5YKLxRQOn",
+      "id": "6nJUvluszQDzR5YKLxRQOn",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ccec22dca6665bf4198d9b24"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ccec22dca6665bf4198d9b24"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ccec22dca6665bf4198d9b24"
+        }
+      ],
+      "is_playable": true,
+      "name": "Niger",
+      "release_date": "2006",
+      "release_date_precision": "year",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:6nJUvluszQDzR5YKLxRQOn"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/06Ib5crxFFg8jg3q8ZP77W"
+        },
+        "href": "https://api.spotify.com/v1/artists/06Ib5crxFFg8jg3q8ZP77W",
+        "id": "06Ib5crxFFg8jg3q8ZP77W",
+        "name": "Afel Bocoum",
+        "type": "artist",
+        "uri": "spotify:artist:06Ib5crxFFg8jg3q8ZP77W"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/28qPm7UiTaZ9APPo4gVucm"
+        },
+        "href": "https://api.spotify.com/v1/artists/28qPm7UiTaZ9APPo4gVucm",
+        "id": "28qPm7UiTaZ9APPo4gVucm",
+        "name": "Alkibar",
+        "type": "artist",
+        "uri": "spotify:artist:28qPm7UiTaZ9APPo4gVucm"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 231626,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "BEW090601701"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1cy4L0OcTVhc2mSusTCB5o"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1cy4L0OcTVhc2mSusTCB5o",
+    "id": "1cy4L0OcTVhc2mSusTCB5o",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Ali Farka",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:1cy4L0OcTVhc2mSusTCB5o"
+  },
+  "[\"lil' wayne\",\"surf swag\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/55Aa2cqylxrFIXC767Z865"
+          },
+          "href": "https://api.spotify.com/v1/artists/55Aa2cqylxrFIXC767Z865",
+          "id": "55Aa2cqylxrFIXC767Z865",
+          "name": "Lil Wayne",
+          "type": "artist",
+          "uri": "spotify:artist:55Aa2cqylxrFIXC767Z865"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/15rah8uTv13tEhScI9Nv8z"
+      },
+      "href": "https://api.spotify.com/v1/albums/15rah8uTv13tEhScI9Nv8z",
+      "id": "15rah8uTv13tEhScI9Nv8z",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2730ecc76569dda9830ac05be7e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e020ecc76569dda9830ac05be7e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048510ecc76569dda9830ac05be7e"
+        }
+      ],
+      "is_playable": true,
+      "name": "No Ceilings",
+      "release_date": "2020-08-28",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:15rah8uTv13tEhScI9Nv8z"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/55Aa2cqylxrFIXC767Z865"
+        },
+        "href": "https://api.spotify.com/v1/artists/55Aa2cqylxrFIXC767Z865",
+        "id": "55Aa2cqylxrFIXC767Z865",
+        "name": "Lil Wayne",
+        "type": "artist",
+        "uri": "spotify:artist:55Aa2cqylxrFIXC767Z865"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 249573,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USCM52000114"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/56ehF3tXMjwLJkAmuKzRE2"
+    },
+    "href": "https://api.spotify.com/v1/tracks/56ehF3tXMjwLJkAmuKzRE2",
+    "id": "56ehF3tXMjwLJkAmuKzRE2",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Surf Swag",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:56ehF3tXMjwLJkAmuKzRE2"
+  },
+  "[\"sudan archives\",\"limitless\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2MPHBxznH1fj59jbOWY38u"
+          },
+          "href": "https://api.spotify.com/v1/artists/2MPHBxznH1fj59jbOWY38u",
+          "id": "2MPHBxznH1fj59jbOWY38u",
+          "name": "Sudan Archives",
+          "type": "artist",
+          "uri": "spotify:artist:2MPHBxznH1fj59jbOWY38u"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2Q37zGSPMHW0wck1cMtdbd"
+      },
+      "href": "https://api.spotify.com/v1/albums/2Q37zGSPMHW0wck1cMtdbd",
+      "id": "2Q37zGSPMHW0wck1cMtdbd",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f95911d7e35c1d5d9438d3ca"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f95911d7e35c1d5d9438d3ca"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f95911d7e35c1d5d9438d3ca"
+        }
+      ],
+      "is_playable": true,
+      "name": "Athena",
+      "release_date": "2019-11-01",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:2Q37zGSPMHW0wck1cMtdbd"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2MPHBxznH1fj59jbOWY38u"
+        },
+        "href": "https://api.spotify.com/v1/artists/2MPHBxznH1fj59jbOWY38u",
+        "id": "2MPHBxznH1fj59jbOWY38u",
+        "name": "Sudan Archives",
+        "type": "artist",
+        "uri": "spotify:artist:2MPHBxznH1fj59jbOWY38u"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 175601,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US2S71912012"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5rMictiMsNBe3zfDIzajUT"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5rMictiMsNBe3zfDIzajUT",
+    "id": "5rMictiMsNBe3zfDIzajUT",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Limitless",
+    "track_number": 12,
+    "type": "track",
+    "uri": "spotify:track:5rMictiMsNBe3zfDIzajUT"
+  },
+  "[\"krs-one\",\"hold\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2gINJ8xw86xawPyGvx1bla"
+          },
+          "href": "https://api.spotify.com/v1/artists/2gINJ8xw86xawPyGvx1bla",
+          "id": "2gINJ8xw86xawPyGvx1bla",
+          "name": "KRS-One",
+          "type": "artist",
+          "uri": "spotify:artist:2gINJ8xw86xawPyGvx1bla"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/17C90B1H8gxYa664SSVM9x"
+      },
+      "href": "https://api.spotify.com/v1/albums/17C90B1H8gxYa664SSVM9x",
+      "id": "17C90B1H8gxYa664SSVM9x",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d0c36501e3574923c5a4c126"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d0c36501e3574923c5a4c126"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d0c36501e3574923c5a4c126"
+        }
+      ],
+      "is_playable": true,
+      "name": "KRS-One",
+      "release_date": "1995-10-10",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:17C90B1H8gxYa664SSVM9x"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2gINJ8xw86xawPyGvx1bla"
+        },
+        "href": "https://api.spotify.com/v1/artists/2gINJ8xw86xawPyGvx1bla",
+        "id": "2gINJ8xw86xawPyGvx1bla",
+        "name": "KRS-One",
+        "type": "artist",
+        "uri": "spotify:artist:2gINJ8xw86xawPyGvx1bla"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 355400,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USJI10300688"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7uTXQJCRJkYtjC0Rvdy62y"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7uTXQJCRJkYtjC0Rvdy62y",
+    "id": "7uTXQJCRJkYtjC0Rvdy62y",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Hold",
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:7uTXQJCRJkYtjC0Rvdy62y"
+  },
+  "[\"racing mount pleasant\",\"call it easy\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5zaSiNpGxS2lOvZTIZiOQX"
+          },
+          "href": "https://api.spotify.com/v1/artists/5zaSiNpGxS2lOvZTIZiOQX",
+          "id": "5zaSiNpGxS2lOvZTIZiOQX",
+          "name": "Racing Mount Pleasant",
+          "type": "artist",
+          "uri": "spotify:artist:5zaSiNpGxS2lOvZTIZiOQX"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/037axs2AfEPUD5LtjfFYSv"
+      },
+      "href": "https://api.spotify.com/v1/albums/037axs2AfEPUD5LtjfFYSv",
+      "id": "037axs2AfEPUD5LtjfFYSv",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27352501e69190f5d7b6c9f7ab3"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0252501e69190f5d7b6c9f7ab3"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485152501e69190f5d7b6c9f7ab3"
+        }
+      ],
+      "is_playable": true,
+      "name": "Racing Mount Pleasant",
+      "release_date": "2025-08-15",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:037axs2AfEPUD5LtjfFYSv"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5zaSiNpGxS2lOvZTIZiOQX"
+        },
+        "href": "https://api.spotify.com/v1/artists/5zaSiNpGxS2lOvZTIZiOQX",
+        "id": "5zaSiNpGxS2lOvZTIZiOQX",
+        "name": "Racing Mount Pleasant",
+        "type": "artist",
+        "uri": "spotify:artist:5zaSiNpGxS2lOvZTIZiOQX"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 420458,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USA2P2509098"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/57s098FVVLAFdDNINJRogc"
+    },
+    "href": "https://api.spotify.com/v1/tracks/57s098FVVLAFdDNINJRogc",
+    "id": "57s098FVVLAFdDNINJRogc",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Call It Easy",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:57s098FVVLAFdDNINJRogc"
+  },
+  "[\"samba touré\",\"chiri hari\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3XHp0LmHYLkVBPsH3B66zi"
+          },
+          "href": "https://api.spotify.com/v1/artists/3XHp0LmHYLkVBPsH3B66zi",
+          "id": "3XHp0LmHYLkVBPsH3B66zi",
+          "name": "Samba Touré",
+          "type": "artist",
+          "uri": "spotify:artist:3XHp0LmHYLkVBPsH3B66zi"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/33aNFeKXCZ15cxpN5S9nSB"
+      },
+      "href": "https://api.spotify.com/v1/albums/33aNFeKXCZ15cxpN5S9nSB",
+      "id": "33aNFeKXCZ15cxpN5S9nSB",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273481b6ec3ba21a65f62baa090"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02481b6ec3ba21a65f62baa090"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851481b6ec3ba21a65f62baa090"
+        }
+      ],
+      "is_playable": true,
+      "name": "Gandadiko",
+      "release_date": "2015-01-30",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:33aNFeKXCZ15cxpN5S9nSB"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3XHp0LmHYLkVBPsH3B66zi"
+        },
+        "href": "https://api.spotify.com/v1/artists/3XHp0LmHYLkVBPsH3B66zi",
+        "id": "3XHp0LmHYLkVBPsH3B66zi",
+        "name": "Samba Touré",
+        "type": "artist",
+        "uri": "spotify:artist:3XHp0LmHYLkVBPsH3B66zi"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 240560,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "DEE351411749"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1YQmUOQUxVeHebdKBX6m71"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1YQmUOQUxVeHebdKBX6m71",
+    "id": "1YQmUOQUxVeHebdKBX6m71",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Chiri Hari",
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:1YQmUOQUxVeHebdKBX6m71"
+  },
+  "[\"thee oh sees\",\"strawberries 1+2\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3qYfqdVwX0fil71onLpLkh"
+          },
+          "href": "https://api.spotify.com/v1/artists/3qYfqdVwX0fil71onLpLkh",
+          "id": "3qYfqdVwX0fil71onLpLkh",
+          "name": "Thee Oh Sees",
+          "type": "artist",
+          "uri": "spotify:artist:3qYfqdVwX0fil71onLpLkh"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6UpdRU3P0AAMA6MVCzsW3c"
+      },
+      "href": "https://api.spotify.com/v1/albums/6UpdRU3P0AAMA6MVCzsW3c",
+      "id": "6UpdRU3P0AAMA6MVCzsW3c",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738d7690f3377f61bfff8e0c03"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028d7690f3377f61bfff8e0c03"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518d7690f3377f61bfff8e0c03"
+        }
+      ],
+      "is_playable": true,
+      "name": "Floating Coffin",
+      "release_date": "2013-04-16",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:6UpdRU3P0AAMA6MVCzsW3c"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3qYfqdVwX0fil71onLpLkh"
+        },
+        "href": "https://api.spotify.com/v1/artists/3qYfqdVwX0fil71onLpLkh",
+        "id": "3qYfqdVwX0fil71onLpLkh",
+        "name": "Thee Oh Sees",
+        "type": "artist",
+        "uri": "spotify:artist:3qYfqdVwX0fil71onLpLkh"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 345693,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US8HE1300005"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5GuazWg2yGUXlh2UujV58A"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5GuazWg2yGUXlh2UujV58A",
+    "id": "5GuazWg2yGUXlh2UujV58A",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Strawberries 1 + 2",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:5GuazWg2yGUXlh2UujV58A"
+  },
+  "[\"dead ghosts\",\"getting older\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3p0vuGnsU3JN0ZVBLiJwmp"
+          },
+          "href": "https://api.spotify.com/v1/artists/3p0vuGnsU3JN0ZVBLiJwmp",
+          "id": "3p0vuGnsU3JN0ZVBLiJwmp",
+          "name": "Dead Ghosts",
+          "type": "artist",
+          "uri": "spotify:artist:3p0vuGnsU3JN0ZVBLiJwmp"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6R3yKnDA6BROGqoUi2sWvI"
+      },
+      "href": "https://api.spotify.com/v1/albums/6R3yKnDA6BROGqoUi2sWvI",
+      "id": "6R3yKnDA6BROGqoUi2sWvI",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a4ed82a49ecda7e0bdaa0c62"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a4ed82a49ecda7e0bdaa0c62"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a4ed82a49ecda7e0bdaa0c62"
+        }
+      ],
+      "is_playable": true,
+      "name": "Dead Ghosts",
+      "release_date": "2010-11-02",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:6R3yKnDA6BROGqoUi2sWvI"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3p0vuGnsU3JN0ZVBLiJwmp"
+        },
+        "href": "https://api.spotify.com/v1/artists/3p0vuGnsU3JN0ZVBLiJwmp",
+        "id": "3p0vuGnsU3JN0ZVBLiJwmp",
+        "name": "Dead Ghosts",
+        "type": "artist",
+        "uri": "spotify:artist:3p0vuGnsU3JN0ZVBLiJwmp"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 127137,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "TCAHO2360565"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7itV237z8fqpAKbc2sCUcn"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7itV237z8fqpAKbc2sCUcn",
+    "id": "7itV237z8fqpAKbc2sCUcn",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Getting Older",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:7itV237z8fqpAKbc2sCUcn"
+  },
+  "[\"black sheep\",\"who's next?\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0NnCgUxhtWt1yBtpDyvFQf"
+          },
+          "href": "https://api.spotify.com/v1/artists/0NnCgUxhtWt1yBtpDyvFQf",
+          "id": "0NnCgUxhtWt1yBtpDyvFQf",
+          "name": "Black Sheep",
+          "type": "artist",
+          "uri": "spotify:artist:0NnCgUxhtWt1yBtpDyvFQf"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1vA2bu0ffT6iJS3oDkBtzE"
+      },
+      "href": "https://api.spotify.com/v1/albums/1vA2bu0ffT6iJS3oDkBtzE",
+      "id": "1vA2bu0ffT6iJS3oDkBtzE",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f94300f760d099fe0e381f09"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f94300f760d099fe0e381f09"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f94300f760d099fe0e381f09"
+        }
+      ],
+      "is_playable": true,
+      "name": "Non-Fiction",
+      "release_date": "1994-12-06",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:1vA2bu0ffT6iJS3oDkBtzE"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0NnCgUxhtWt1yBtpDyvFQf"
+        },
+        "href": "https://api.spotify.com/v1/artists/0NnCgUxhtWt1yBtpDyvFQf",
+        "id": "0NnCgUxhtWt1yBtpDyvFQf",
+        "name": "Black Sheep",
+        "type": "artist",
+        "uri": "spotify:artist:0NnCgUxhtWt1yBtpDyvFQf"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 325893,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USPR39402326"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2YDnyeqDKuwdJWKiuTcG91"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2YDnyeqDKuwdJWKiuTcG91",
+    "id": "2YDnyeqDKuwdJWKiuTcG91",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Who's Next?",
+    "track_number": 15,
+    "type": "track",
+    "uri": "spotify:track:2YDnyeqDKuwdJWKiuTcG91"
+  },
+  "[\"all them witches\",\"go-getter\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/29Wmfm1CojrjQ3aQP0FI65"
+          },
+          "href": "https://api.spotify.com/v1/artists/29Wmfm1CojrjQ3aQP0FI65",
+          "id": "29Wmfm1CojrjQ3aQP0FI65",
+          "name": "All Them Witches",
+          "type": "artist",
+          "uri": "spotify:artist:29Wmfm1CojrjQ3aQP0FI65"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7nx99MpXigxaFbx5fRpbdi"
+      },
+      "href": "https://api.spotify.com/v1/albums/7nx99MpXigxaFbx5fRpbdi",
+      "id": "7nx99MpXigxaFbx5fRpbdi",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2739f294a47d018fc8b2dc758c9"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e029f294a47d018fc8b2dc758c9"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048519f294a47d018fc8b2dc758c9"
+        }
+      ],
+      "is_playable": true,
+      "name": "House Of Mirrors",
+      "release_date": "2026-05-29",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:7nx99MpXigxaFbx5fRpbdi"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/29Wmfm1CojrjQ3aQP0FI65"
+        },
+        "href": "https://api.spotify.com/v1/artists/29Wmfm1CojrjQ3aQP0FI65",
+        "id": "29Wmfm1CojrjQ3aQP0FI65",
+        "name": "All Them Witches",
+        "type": "artist",
+        "uri": "spotify:artist:29Wmfm1CojrjQ3aQP0FI65"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 153656,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QMRSZ2600135"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/11FcqPgzMR4MPkjZuO99rJ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/11FcqPgzMR4MPkjZuO99rJ",
+    "id": "11FcqPgzMR4MPkjZuO99rJ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Go-getter",
+    "track_number": 5,
+    "type": "track",
+    "uri": "spotify:track:11FcqPgzMR4MPkjZuO99rJ"
+  },
+  "[\"adéla\",\"ain't in la\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2qanRMyA5bNuTvz1dK45OP"
+          },
+          "href": "https://api.spotify.com/v1/artists/2qanRMyA5bNuTvz1dK45OP",
+          "id": "2qanRMyA5bNuTvz1dK45OP",
+          "name": "ADÉLA",
+          "type": "artist",
+          "uri": "spotify:artist:2qanRMyA5bNuTvz1dK45OP"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2yDFVH9CeOHt0sc9eI0aBs"
+      },
+      "href": "https://api.spotify.com/v1/albums/2yDFVH9CeOHt0sc9eI0aBs",
+      "id": "2yDFVH9CeOHt0sc9eI0aBs",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ac9d5d5263e9f03802d6864c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ac9d5d5263e9f03802d6864c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ac9d5d5263e9f03802d6864c"
+        }
+      ],
+      "is_playable": true,
+      "name": "PRIMA",
+      "release_date": "2026-09-04",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:2yDFVH9CeOHt0sc9eI0aBs"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2qanRMyA5bNuTvz1dK45OP"
+        },
+        "href": "https://api.spotify.com/v1/artists/2qanRMyA5bNuTvz1dK45OP",
+        "id": "2qanRMyA5bNuTvz1dK45OP",
+        "name": "ADÉLA",
+        "type": "artist",
+        "uri": "spotify:artist:2qanRMyA5bNuTvz1dK45OP"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 184927,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USUM72605978"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6U9VpmP3dEinuezxCJ2Zg9"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6U9VpmP3dEinuezxCJ2Zg9",
+    "id": "6U9VpmP3dEinuezxCJ2Zg9",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Ain't In LA",
+    "track_number": 11,
+    "type": "track",
+    "uri": "spotify:track:6U9VpmP3dEinuezxCJ2Zg9"
+  },
+  "[\"the wiggles\",\"intro to snakes\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2JY5qzEozvTdogkDTkkOMf"
+          },
+          "href": "https://api.spotify.com/v1/artists/2JY5qzEozvTdogkDTkkOMf",
+          "id": "2JY5qzEozvTdogkDTkkOMf",
+          "name": "The Wiggles",
+          "type": "artist",
+          "uri": "spotify:artist:2JY5qzEozvTdogkDTkkOMf"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4uBQdAJ39yw05OGj5sWR6u"
+      },
+      "href": "https://api.spotify.com/v1/albums/4uBQdAJ39yw05OGj5sWR6u",
+      "id": "4uBQdAJ39yw05OGj5sWR6u",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27317de5cbc5a5a708ad0a33311"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0217de5cbc5a5a708ad0a33311"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485117de5cbc5a5a708ad0a33311"
+        }
+      ],
+      "is_playable": true,
+      "name": "Wiggly Safari",
+      "release_date": "2002-07-08",
+      "release_date_precision": "day",
+      "total_tracks": 32,
+      "type": "album",
+      "uri": "spotify:album:4uBQdAJ39yw05OGj5sWR6u"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2JY5qzEozvTdogkDTkkOMf"
+        },
+        "href": "https://api.spotify.com/v1/artists/2JY5qzEozvTdogkDTkkOMf",
+        "id": "2JY5qzEozvTdogkDTkkOMf",
+        "name": "The Wiggles",
+        "type": "artist",
+        "uri": "spotify:artist:2JY5qzEozvTdogkDTkkOMf"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 14373,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "AUAB00200348"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/2lxwHLsueWxhpEKStPWFge"
+    },
+    "href": "https://api.spotify.com/v1/tracks/2lxwHLsueWxhpEKStPWFge",
+    "id": "2lxwHLsueWxhpEKStPWFge",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Introduction To Snakes",
+    "track_number": 19,
+    "type": "track",
+    "uri": "spotify:track:2lxwHLsueWxhpEKStPWFge"
+  },
+  "[\"three 6 mafia\",\"sippin on some syrup (feat. ugk (underground kingz) & project pat)\"]": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/26s8LSolLfCIY88ysQbIuT"
+          },
+          "href": "https://api.spotify.com/v1/artists/26s8LSolLfCIY88ysQbIuT",
+          "id": "26s8LSolLfCIY88ysQbIuT",
+          "name": "Three 6 Mafia",
+          "type": "artist",
+          "uri": "spotify:artist:26s8LSolLfCIY88ysQbIuT"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5tXymXBFsOAtBsDujLvjmN"
+      },
+      "href": "https://api.spotify.com/v1/albums/5tXymXBFsOAtBsDujLvjmN",
+      "id": "5tXymXBFsOAtBsDujLvjmN",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bcdb665cc29d641449a0bf60"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bcdb665cc29d641449a0bf60"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bcdb665cc29d641449a0bf60"
+        }
+      ],
+      "is_playable": true,
+      "name": "Most Known Hits",
+      "release_date": "2005",
+      "release_date_precision": "year",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:5tXymXBFsOAtBsDujLvjmN"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/26s8LSolLfCIY88ysQbIuT"
+        },
+        "href": "https://api.spotify.com/v1/artists/26s8LSolLfCIY88ysQbIuT",
+        "id": "26s8LSolLfCIY88ysQbIuT",
+        "name": "Three 6 Mafia",
+        "type": "artist",
+        "uri": "spotify:artist:26s8LSolLfCIY88ysQbIuT"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6ZhjJOJXXwnPS8PrXdmjLw"
+        },
+        "href": "https://api.spotify.com/v1/artists/6ZhjJOJXXwnPS8PrXdmjLw",
+        "id": "6ZhjJOJXXwnPS8PrXdmjLw",
+        "name": "UGK",
+        "type": "artist",
+        "uri": "spotify:artist:6ZhjJOJXXwnPS8PrXdmjLw"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/08Ld63UgKrJ0nZnCkzHtzc"
+        },
+        "href": "https://api.spotify.com/v1/artists/08Ld63UgKrJ0nZnCkzHtzc",
+        "id": "08Ld63UgKrJ0nZnCkzHtzc",
+        "name": "Project Pat",
+        "type": "artist",
+        "uri": "spotify:artist:08Ld63UgKrJ0nZnCkzHtzc"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 261133,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "USLR50000214"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5BYE9GsJZh77KW84EGvSjl"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5BYE9GsJZh77KW84EGvSjl",
+    "id": "5BYE9GsJZh77KW84EGvSjl",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sippin On Some Syrup (feat. UGK (Underground Kingz) & Project Pat)",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:5BYE9GsJZh77KW84EGvSjl"
+  },
+  "[\"black lips\",\"time\"]": {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/35C0NSLogAwImm8HAMqEmG"
+          },
+          "href": "https://api.spotify.com/v1/artists/35C0NSLogAwImm8HAMqEmG",
+          "id": "35C0NSLogAwImm8HAMqEmG",
+          "name": "Black Lips",
+          "type": "artist",
+          "uri": "spotify:artist:35C0NSLogAwImm8HAMqEmG"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3s7GzZ3H4BkVf7Gh56FfmD"
+      },
+      "href": "https://api.spotify.com/v1/albums/3s7GzZ3H4BkVf7Gh56FfmD",
+      "id": "3s7GzZ3H4BkVf7Gh56FfmD",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273fcfc1776c67c41e85dbfbb39"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02fcfc1776c67c41e85dbfbb39"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851fcfc1776c67c41e85dbfbb39"
+        }
+      ],
+      "is_playable": true,
+      "name": "We Did Not Know the Forest Spirit Made the Flowers Grow",
+      "release_date": "2004-05-18",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:3s7GzZ3H4BkVf7Gh56FfmD"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/35C0NSLogAwImm8HAMqEmG"
+        },
+        "href": "https://api.spotify.com/v1/artists/35C0NSLogAwImm8HAMqEmG",
+        "id": "35C0NSLogAwImm8HAMqEmG",
+        "name": "Black Lips",
+        "type": "artist",
+        "uri": "spotify:artist:35C0NSLogAwImm8HAMqEmG"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 137280,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "US4EQ0408702"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/34wRERkpuBEVyZwJCrXTnH"
+    },
+    "href": "https://api.spotify.com/v1/tracks/34wRERkpuBEVyZwJCrXTnH",
+    "id": "34wRERkpuBEVyZwJCrXTnH",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Time Of The Scab",
+    "track_number": 2,
+    "type": "track",
+    "uri": "spotify:track:34wRERkpuBEVyZwJCrXTnH"
   }
 }
